@@ -2,6 +2,8 @@ library IEEE;
 use IEEE.std_logic_1164.all;
 use IEEE.numeric_std.all;
 
+--copied from digital systems b
+--25 MHz clock coming in, 15 kHz coming out
 entity timebase is
 	generic (
         CLK_SCALE : INTEGER
