@@ -3,34 +3,27 @@ use IEEE.std_logic_1164.all;
 use IEEE.numeric_std.all;
 
 entity timebase is
-	generic (
-        CLK_SCALE : INTEGER
-    );
 	port (	clk		: in	std_logic;
-		reset		: in	std_logic;
-
-		count_out	: out	std_logic_vector (19 downto 0)
+		clk15k : out std_logic;
 	);
 end entity timebase;
 
 architecture behav of timebase is
-		signal count, new_count: unsigned (19 downto 0);
-	begin
+	signal count, new_count : unsigned (9 downto 0);
+	begin 
 		process(clk)
-			begin
-				if (rising_edge(clk)) then
-					if (reset = '1') then
-						count <= (others => '0');
-					else
-						count <= new_count;
-					end if;
-				end if;
-		end process;
-
-		process (count)
 		begin
-			new_count <= count + CLK_SCALE;
+			if(rising_edge(clk)) then
+				if(to_integer(count) > 833) then
+					count <= 0;
+					if(clk15k = '0') then
+						clk15k <= '1';
+					else
+						clk15k <= '0';
+					end if;
+				else
+				count <= to_unsigned(to_integer(count) + 1);
+				end if;
+			end if;
 		end process;
-		count_out <= std_logic_vector(count);
-
 end architecture behav;
