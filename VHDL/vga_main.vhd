@@ -1,9 +1,8 @@
 library IEEE;
 use IEEE.std_logic_1164.ALL;
 
--- dit is de entity voor het VGA gedeelte die verantwoordelijk is voor het uitgeven van de h en v sync signalen
-entity main is
-   port(clk		: in std_logic;
+entity vga_main is
+    port(clk		: in std_logic;
 	rgb_IN	: in std_logic_vector(2 downto 0);
 	imgrdy	: out std_logic;
 	imgrst	: out std_logic;
@@ -11,5 +10,5 @@ entity main is
 	vsync	: out std_logic;
 	rgb_out	: out std_logic_vector(2 downto 0)
 	);
-end main;
+end vga_main;
 
