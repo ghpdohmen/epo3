@@ -9,77 +9,150 @@ z2
 cModel Technology
 Z0 d/home/etuinstra/epo3/gwtf
 T_opt
-!s110 1668786224
-VGZZ>_ZlWo>;kNPNhj6E_R0
+!s110 1669108121
+VNGMBKl?LVGk4JF]dl^TYS3
 04 25 0 work timebase_tb_behaviour_cfg 1
-=1-000ae431a4f1-6377a82f-baf7e-1a83
+=1-000ae431a4f1-637c9198-3fcbf-222e
 o-quiet -auto_acc_if_foreign -work work -L TSMCLib
 tCvgOpt 0
 n@_opt
 OL;O;10.5b;63
-R0
 Etimebase
-w1668785766
-Z1 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
-Z2 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z1 w1669108032
+Z2 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z4 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
 R0
 8VHDL/timebase.vhd
 FVHDL/timebase.vhd
 l0
-L4
-VjM8oMe=z`B1Qc6OIZ]1Do1
-!s100 b?bNVeTXoN]5S24b<8mnA0
-Z3 OL;C;10.5b;63
+L5
+VI8O=FOOg>;Q35KBP`g<6M1
+!s100 cBKhK]0oKF4j0AVY2FoO>2
+Z5 OL;C;10.5b;63
 33
-!s110 1668785766
+!s110 1669108032
 !i10b 1
-!s108 1668785766.000000
+!s108 1669108032.000000
 !s90 -2008|-lower|-explicit|-work|work|VHDL/timebase.vhd|-quiet|-nologo|
 !s107 VHDL/timebase.vhd|
 !i113 0
-Z4 o-quiet -nologo -2008 -lower -explicit -work work
-Z5 tExplicit 1 CvgOpt 0
-Abehavioural
-w1669107081
-Z6 DEx4 work 8 timebase 0 22 jM8oMe=z`B1Qc6OIZ]1Do1
-Z7 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
-R1
+Z6 o-quiet -nologo -2008 -lower -explicit -work work
+Z7 tExplicit 1 CvgOpt 0
+Abehav
+Z8 DEx4 work 8 timebase 0 22 I8O=FOOg>;Q35KBP`g<6M1
 R2
-Z8 8VHDL/timebase-behav.vhd
-Z9 FVHDL/timebase-behav.vhd
+R3
+R4
+8VHDL/timebase-behav.vhd
+FVHDL/timebase-behav.vhd
 l10
 L5
-VT`QO96_L62zjcZ<jY5V600
-!s100 PNELYgC_L[8moL3:18g4[1
-R3
+Vol42Li4ZBBMB0OCbl?Ml23
+!s100 oUOkUOf6O3e:`<WY6D_mO3
+R5
 33
-!s110 1669107081
+!s110 1669108039
 !i10b 1
-!s108 1669107081.000000
-Z10 !s90 -2008|-lower|-explicit|-work|work|VHDL/timebase-behav.vhd|-quiet|-nologo|
+!s108 1669108039.000000
+!s90 -2008|-lower|-explicit|-work|work|VHDL/timebase-behav.vhd|-quiet|-nologo|
 !s107 VHDL/timebase-behav.vhd|
 !i113 0
-R4
-R5
-Abehav
-w1668786072
 R6
 R7
-R1
+Ctimebase_behav_cfg
+etimebase
+abehav
+DAx4 work 8 timebase 5 behav 22 ol42Li4ZBBMB0OCbl?Ml23
 R2
-R8
-R9
-l7
-L5
-V;M@>5BEcoQYTdDPH69PPk3
-!s100 a5P8oVVa[2=[8R6GmZk6T0
 R3
-33
-!s110 1669106616
-!i10b 1
-!s108 1669106615.000000
-R10
-!s107 VHDL/timebase-behav.vhd|
-!i113 0
 R4
+R8
+w1669107762
+R0
+8VHDL/timebase_behav_cfg.vhd
+FVHDL/timebase_behav_cfg.vhd
+l0
+L1
+Vi00_W[djK2:_9EmOm`_aZ2
+!s100 bX:m9F6V=kNfGGJ9A96;k3
 R5
+33
+!s110 1669108042
+!i10b 0
+!s108 1669108042.000000
+!s90 -2008|-lower|-explicit|-work|work|VHDL/timebase_behav_cfg.vhd|-quiet|-nologo|
+!s107 VHDL/timebase_behav_cfg.vhd|
+!i113 0
+R6
+R7
+Etimebase_tb
+w1669107911
+R3
+R4
+R0
+8VHDL/timebase_tb.vhd
+FVHDL/timebase_tb.vhd
+l0
+L4
+Vb=K[N@GY9@0916C01@nc80
+!s100 jEKgX1c2N9GHmiT1HE3SL1
+R5
+33
+!s110 1669107911
+!i10b 1
+!s108 1669107911.000000
+!s90 -2008|-lower|-explicit|-work|work|VHDL/timebase_tb.vhd|-quiet|-nologo|
+!s107 VHDL/timebase_tb.vhd|
+!i113 0
+R6
+R7
+Abehaviour
+w1669108102
+Z9 DEx4 work 11 timebase_tb 0 22 b=K[N@GY9@0916C01@nc80
+R3
+R4
+8VHDL/timebase_tb-behaviour.vhd
+FVHDL/timebase_tb-behaviour.vhd
+l14
+L4
+V@39=IDe7m_;YP@`G1N0j=1
+!s100 gB5PhlaTk:DKmSa3=WXj41
+R5
+33
+!s110 1669108102
+!i10b 1
+!s108 1669108102.000000
+!s90 -2008|-lower|-explicit|-work|work|VHDL/timebase_tb-behaviour.vhd|-quiet|-nologo|
+!s107 VHDL/timebase_tb-behaviour.vhd|
+!i113 0
+R6
+R7
+Ctimebase_tb_behaviour_cfg
+etimebase_tb
+abehaviour
+R8
+R2
+DCx4 work 18 timebase_behav_cfg 0 22 i00_W[djK2:_9EmOm`_aZ2
+DAx4 work 11 timebase_tb 9 behaviour 22 @39=IDe7m_;YP@`G1N0j=1
+R3
+R4
+R9
+w1669108109
+R0
+8VHDL/timebase_tb_behaviour_cfg.vhd
+FVHDL/timebase_tb_behaviour_cfg.vhd
+l0
+L1
+Vfn`_ZBkIlHb:C8K:@FXm93
+!s100 dXODL_fzV=H9KH87X1W]_0
+R5
+33
+!s110 1669108109
+!i10b 0
+!s108 1669108109.000000
+!s90 -2008|-lower|-explicit|-work|work|VHDL/timebase_tb_behaviour_cfg.vhd|-quiet|-nologo|
+!s107 VHDL/timebase_tb_behaviour_cfg.vhd|
+!i113 0
+R6
+R7
