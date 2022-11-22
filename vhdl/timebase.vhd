@@ -33,14 +33,14 @@ begin
 	process(count)
 	begin
 		if(count >= std_logic_vector(to_unsigned(833,9)))
-			if(currentPulse = 1)
-				currentPulse <= 0;
+			if(currentPulse = '1')
+				currentPulse <= '0';
 			else
-				currentPulse <= 1;
+				currentPulse <= '1';
 			end if;
 			new_count <= std_logic_vector(to_unsigned(0,9));
 		else
-			new_count <= count + 1;
+			new_count <= count + '1';
 		end if;
 	end process;
 
