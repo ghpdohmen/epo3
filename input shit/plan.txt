@@ -1,0 +1,7 @@
+dus:
+3x 11bits aan input stream
+dus 33-bits shift register
+serial in, parallel out
+
+http://domoticx.com/wat-ps2-en-het-mousekeyboard-protocol/
+https://isdaman.com/alsos/hardware/mouse/ps2interface.htm
