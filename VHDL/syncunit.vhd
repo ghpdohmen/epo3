@@ -19,6 +19,5 @@ port( clk	: in std_logic;
 	h_sync : out std_logic;
 	v_sync : out std_logic;
 	enable: out std_logic);
-
 end syncunit;
 
