@@ -1,0 +1,40 @@
+Unannotated Specify Objects Report:
+===================================
+(UASP) = Unannotated specify path.
+(UATC) = Unannotated timing check.
+(IATE) = Incompltely annotated specify path transition edges.
+-------------------------------------------------------------
+/shiftregister_11bit_tb/test/data_out_reg_10: ( [DFKCND1BWP7T(fast):/data/public/common/software/opprog/sim_libs/tcb018gbwp7t.v(5435)]):
+  WIDTH: (negedge CP): 0 : (UATC)
+  WIDTH: (posedge CP): 0 : (UATC)
+/shiftregister_11bit_tb/test/data_out_reg_9: ( [DFKCND1BWP7T(fast):/data/public/common/software/opprog/sim_libs/tcb018gbwp7t.v(5435)]):
+  WIDTH: (negedge CP): 0 : (UATC)
+  WIDTH: (posedge CP): 0 : (UATC)
+/shiftregister_11bit_tb/test/data_out_reg_8: ( [DFKCND1BWP7T(fast):/data/public/common/software/opprog/sim_libs/tcb018gbwp7t.v(5435)]):
+  WIDTH: (negedge CP): 0 : (UATC)
+  WIDTH: (posedge CP): 0 : (UATC)
+/shiftregister_11bit_tb/test/data_out_reg_7: ( [DFKCND1BWP7T(fast):/data/public/common/software/opprog/sim_libs/tcb018gbwp7t.v(5435)]):
+  WIDTH: (negedge CP): 0 : (UATC)
+  WIDTH: (posedge CP): 0 : (UATC)
+/shiftregister_11bit_tb/test/data_out_reg_6: ( [DFKCND1BWP7T(fast):/data/public/common/software/opprog/sim_libs/tcb018gbwp7t.v(5435)]):
+  WIDTH: (negedge CP): 0 : (UATC)
+  WIDTH: (posedge CP): 0 : (UATC)
+/shiftregister_11bit_tb/test/data_out_reg_5: ( [DFKCND1BWP7T(fast):/data/public/common/software/opprog/sim_libs/tcb018gbwp7t.v(5435)]):
+  WIDTH: (negedge CP): 0 : (UATC)
+  WIDTH: (posedge CP): 0 : (UATC)
+/shiftregister_11bit_tb/test/data_out_reg_4: ( [DFKCND1BWP7T(fast):/data/public/common/software/opprog/sim_libs/tcb018gbwp7t.v(5435)]):
+  WIDTH: (negedge CP): 0 : (UATC)
+  WIDTH: (posedge CP): 0 : (UATC)
+/shiftregister_11bit_tb/test/data_out_reg_3: ( [DFKCND1BWP7T(fast):/data/public/common/software/opprog/sim_libs/tcb018gbwp7t.v(5435)]):
+  WIDTH: (negedge CP): 0 : (UATC)
+  WIDTH: (posedge CP): 0 : (UATC)
+/shiftregister_11bit_tb/test/data_out_reg_2: ( [DFKCND1BWP7T(fast):/data/public/common/software/opprog/sim_libs/tcb018gbwp7t.v(5435)]):
+  WIDTH: (negedge CP): 0 : (UATC)
+  WIDTH: (posedge CP): 0 : (UATC)
+/shiftregister_11bit_tb/test/data_out_reg_1: ( [DFKCND1BWP7T(fast):/data/public/common/software/opprog/sim_libs/tcb018gbwp7t.v(5435)]):
+  WIDTH: (negedge CP): 0 : (UATC)
+  WIDTH: (posedge CP): 0 : (UATC)
+/shiftregister_11bit_tb/test/data_out_reg_0: ( [DFKCND1BWP7T(fast):/data/public/common/software/opprog/sim_libs/tcb018gbwp7t.v(5435)]):
+  WIDTH: (negedge CP): 0 : (UATC)
+  WIDTH: (posedge CP): 0 : (UATC)
+Found 11 instances with unannotated or incompletely annotated specify block objects.

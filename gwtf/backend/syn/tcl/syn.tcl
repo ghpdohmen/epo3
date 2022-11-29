@@ -5,9 +5,9 @@ set_db use_scan_seqs_for_non_dft false
 
 include ../tcl/read_hdl.tcl
 
-elaborate
+elaborate shiftregister_9bit_behav_cfg
 
-include ../in/top.sdc
+include ../in/shiftregister_9bit.sdc
 
 synthesize -to_mapped
 #set_db syn_generic_effort medium
@@ -16,9 +16,9 @@ synthesize -to_mapped
 
 ungroup -all -flat
 insert_tiehilo_cells
-write_hdl -mapped > ../out/top.v
-write_sdf > ../out/top.sdf
-write_sdc > ../out/top.sdc
+write_hdl -mapped > ../out/shiftregister_9bit.v
+write_sdf > ../out/shiftregister_9bit.sdf
+write_sdc > ../out/shiftregister_9bit.sdc
 
 report timing
 report gates

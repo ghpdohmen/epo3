@@ -1,0 +1,27 @@
+library IEEE;
+use IEEE.std_logic_1164.all;
+use IEEE.numeric_std.all;
+
+architecture behav of shiftregister_11bit is
+    signal new_data  : std_logic_vector(10 downto 0);
+    
+begin
+
+    process(clk)
+        begin
+            if(rising_edge(clk)) then
+                if(reset = '1') then
+                    new_data <= (others => '0');
+		    data_out <= "00000000011";--(others => '0');
+                else 
+		    data_out <= std_logic_vector(shift_left(unsigned(data_out), 1));
+		    --data_out <= new_data;
+		    
+                    --new_data(0) <= data_in;
+		    
+                    
+                end if;
+            end if;
+        end process;
+end architecture behav;
+    
