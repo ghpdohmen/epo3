@@ -16,8 +16,7 @@ architecture behav of shiftregister_9bit_tb is
    signal data_out: std_logic;
 begin
    test: shiftregister_9bit port map (clk, data_in, reset, data_out);
-   clk <= '1' after 0 ns,
-	  '0' after 2 ns,
+   clk <=	'0' after 0 ns,
           '1' after 20 ns when clk /= '1' else '0' after 20 ns;
    data_in(0) <= '0' after 0 ns;
    data_in(1) <= '1' after 0 ns;

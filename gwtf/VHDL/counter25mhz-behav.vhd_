@@ -1,11 +1,9 @@
 library IEEE;
-use IEEE.std_logic_1164.all;
+use IEEE.std_logic_1164.ALL;
 use IEEE.numeric_std.all;
 
---Counter voor 15kHz clock van muis
-
-architecture behav of timebase is
-	signal count, new_count: unsigned (3 downto 0);
+architecture behav of counter25mhz is
+	signal count, new_count: unsigned (11 downto 0);
 begin
 	process(clk)
 		begin
@@ -23,4 +21,5 @@ begin
 		new_count <= count + 1;
 	end process;
 	count_out <= std_logic_vector(count);
-end architecture behav;
+end behav;
+

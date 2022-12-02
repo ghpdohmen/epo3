@@ -27,12 +27,6 @@ signal state, new_state : sendfsm_state;
 
 
 begin
-
-
-tb: counter25mhz port map (clk, timebaseRst, countIn);
-sr: shiftregister_9bit port map (clk15k
-
-
     process(clk) begin
         if(rising_edge(clk)) then
 

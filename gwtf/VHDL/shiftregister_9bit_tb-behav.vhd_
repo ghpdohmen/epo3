@@ -18,7 +18,7 @@ begin
    test: shiftregister_9bit port map (clk, data_in, reset, data_out);
    clk <= '1' after 0 ns,
 	  '0' after 2 ns,
-          '1' after 22 ns when clk /= '1' else '0' after 20 ns;
+          '1' after 20 ns when clk /= '1' else '0' after 20 ns;
    data_in(0) <= '0' after 0 ns;
    data_in(1) <= '1' after 0 ns;
    data_in(2) <= '0' after 0 ns;
