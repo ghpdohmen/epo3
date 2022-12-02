@@ -22,8 +22,18 @@ begin
 		    data_out <= new_new_data(0); 
                     
                 end if;
-	    elsif(rising_edge(clk_inv)) then
-		new_new_data <= std_logic_vector(shift_right(unsigned(new_new_data), 1));
+	    end if;
+	end process;
+
+
+    process(clk_inv)
+	begin
+	    if(rising_edge(clk_inv)) then
+		if(reset = '0') then
+		
+		    new_new_data <= std_logic_vector(shift_right(unsigned(new_new_data), 1));
+		end if;
+
             end if;
         end process;
 end behav;

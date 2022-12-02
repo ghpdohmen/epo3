@@ -11,335 +11,9 @@
 # //  is prohibited from disclosure under the Trade Secrets Act,
 # //  18 U.S.C. Section 1905.
 # //
-# vsim shiftregister_11bit_tb_behav_cfg -lib work -L TSMCLib -do "/data/public/common/software/opprog/do_files/init_simulator.do" 
-# Start time: 10:30:26 on Nov 29,2022
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading ieee.numeric_std(body)
-# Loading work.shiftregister_11bit_tb_behav_cfg#1
-# Loading work.shiftregister_11bit_tb(behav)#1
-# Loading work.shiftregister_11bit_behav_cfg#1
-# Loading work.shiftregister_11bit(behav)#1
-# do /data/public/common/software/opprog/do_files/init_simulator.do
-add wave -r /*
-run 250 ns
-# End time: 10:31:18 on Nov 29,2022, Elapsed time: 0:00:52
-# Errors: 0, Warnings: 0
-# reading modelsim.ini
-# vsim shiftregister_11bit_tb_behav_cfg -lib work -L TSMCLib 
-# Start time: 10:31:18 on Nov 29,2022
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading ieee.numeric_std(body)
-# Loading work.shiftregister_11bit_tb_behav_cfg#1
-# Loading work.shiftregister_11bit_tb(behav)#1
-# Loading work.shiftregister_11bit_behav_cfg#1
-# Loading work.shiftregister_11bit(behav)#1
-add wave -r /*
-run 250 ns
-# End time: 10:32:21 on Nov 29,2022, Elapsed time: 0:01:03
-# Errors: 0, Warnings: 0
-# reading modelsim.ini
-# vsim shiftregister_11bit_tb_behav_cfg -lib work -L TSMCLib 
-# Start time: 10:32:22 on Nov 29,2022
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
-# ** Warning: (vopt-13) Recompile work.shiftregister_11bit_tb_behav_cfg because work.shiftregister_11bit_tb(behav) has changed.
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading ieee.numeric_std(body)
-# Loading work.shiftregister_11bit_tb_behav_cfg#1
-# Loading work.shiftregister_11bit_tb(behav)#1
-# Loading work.shiftregister_11bit_behav_cfg#1
-# Loading work.shiftregister_11bit(behav)#1
-add wave -r /*
-run 1ms
-# End time: 10:37:27 on Nov 29,2022, Elapsed time: 0:05:05
-# Errors: 0, Warnings: 1
-# reading modelsim.ini
-# vsim shiftregister_11bit_tb_behav_cfg -lib work -L TSMCLib 
-# Start time: 10:37:27 on Nov 29,2022
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading ieee.numeric_std(body)
-# Loading work.shiftregister_11bit_tb_behav_cfg#1
-# Loading work.shiftregister_11bit_tb(behav)#1
-# Loading work.shiftregister_11bit_behav_cfg#1
-# Loading work.shiftregister_11bit(behav)#1
-add wave sim:/shiftregister_11bit_tb/test/*
-run 1000 ns
-# End time: 10:44:40 on Nov 29,2022, Elapsed time: 0:07:13
-# Errors: 0, Warnings: 0
-# reading modelsim.ini
-# vsim shiftregister_11bit_tb_behav_cfg -lib work -L TSMCLib 
-# Start time: 10:44:40 on Nov 29,2022
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading ieee.numeric_std(body)
-# Loading work.shiftregister_11bit_tb_behav_cfg#1
-# Loading work.shiftregister_11bit_tb(behav)#1
-# Loading work.shiftregister_11bit_behav_cfg#1
-# Loading work.shiftregister_11bit(behav)#1
-add wave sim:/shiftregister_11bit_tb/test/*
-run 1000 ns
-# End time: 10:46:40 on Nov 29,2022, Elapsed time: 0:02:00
-# Errors: 0, Warnings: 0
-# reading modelsim.ini
-# vsim shiftregister_11bit_tb_behav_cfg -lib work -L TSMCLib 
-# Start time: 10:46:40 on Nov 29,2022
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading ieee.numeric_std(body)
-# Loading work.shiftregister_11bit_tb_behav_cfg#1
-# Loading work.shiftregister_11bit_tb(behav)#1
-# Loading work.shiftregister_11bit_behav_cfg#1
-# Loading work.shiftregister_11bit(behav)#1
-run
-# End time: 10:47:58 on Nov 29,2022, Elapsed time: 0:01:18
-# Errors: 0, Warnings: 0
-# reading modelsim.ini
-# vsim shiftregister_11bit_tb_behav_cfg -lib work -L TSMCLib 
-# Start time: 10:47:58 on Nov 29,2022
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading ieee.numeric_std(body)
-# Loading work.shiftregister_11bit_tb_behav_cfg#1
-# Loading work.shiftregister_11bit_tb(behav)#1
-# Loading work.shiftregister_11bit_behav_cfg#1
-# Loading work.shiftregister_11bit(behav)#1
-run
-# End time: 10:51:22 on Nov 29,2022, Elapsed time: 0:03:24
-# Errors: 0, Warnings: 0
-# reading modelsim.ini
-# vsim shiftregister_11bit_tb_behav_cfg -lib work -L TSMCLib 
-# Start time: 10:51:22 on Nov 29,2022
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading ieee.numeric_std(body)
-# Loading work.shiftregister_11bit_tb_behav_cfg#1
-# Loading work.shiftregister_11bit_tb(behav)#1
-# Loading work.shiftregister_11bit_behav_cfg#1
-# Loading work.shiftregister_11bit(behav)#1
-add wave sim:/shiftregister_11bit_tb/test/*
-run -continue
-run
-# Causality operation skipped due to absence of debug database file
-# End time: 11:01:18 on Nov 29,2022, Elapsed time: 0:09:56
-# Errors: 0, Warnings: 1
-# reading modelsim.ini
-# vsim shiftregister_11bit_tb_behav_cfg -lib work -L TSMCLib 
-# Start time: 11:01:19 on Nov 29,2022
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading ieee.numeric_std(body)
-# Loading work.shiftregister_11bit_tb_behav_cfg#1
-# Loading work.shiftregister_11bit_tb(behav)#1
-# Loading work.shiftregister_11bit_behav_cfg#1
-# Loading work.shiftregister_11bit(behav)#1
-run
-# End time: 11:02:21 on Nov 29,2022, Elapsed time: 0:01:02
-# Errors: 0, Warnings: 0
-# reading modelsim.ini
-# vsim shiftregister_11bit_tb_behav_cfg -lib work -L TSMCLib 
-# Start time: 11:02:21 on Nov 29,2022
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading ieee.numeric_std(body)
-# Loading work.shiftregister_11bit_tb_behav_cfg#1
-# Loading work.shiftregister_11bit_tb(behav)#1
-# Loading work.shiftregister_11bit_behav_cfg#1
-# Loading work.shiftregister_11bit(behav)#1
-add wave sim:/shiftregister_11bit_tb/test/*
-run
-# End time: 11:08:32 on Nov 29,2022, Elapsed time: 0:06:11
-# Errors: 0, Warnings: 0
-# reading modelsim.ini
-# vsim shiftregister_11bit_tb_behav_cfg -lib work -L TSMCLib 
-# Start time: 11:08:33 on Nov 29,2022
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading ieee.numeric_std(body)
-# Loading work.shiftregister_11bit_tb_behav_cfg#1
-# Loading work.shiftregister_11bit_tb(behav)#1
-# Loading work.shiftregister_11bit_behav_cfg#1
-# Loading work.shiftregister_11bit(behav)#1
-run
-# End time: 11:19:01 on Nov 29,2022, Elapsed time: 0:10:28
-# Errors: 0, Warnings: 0
-# reading modelsim.ini
-# vsim shiftregister_11bit_tb_behav_cfg -lib work -L TSMCLib 
-# Start time: 11:19:01 on Nov 29,2022
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading ieee.numeric_std(body)
-# Loading work.shiftregister_11bit_tb_behav_cfg#1
-# Loading work.shiftregister_11bit_tb(behav)#1
-# Loading work.shiftregister_11bit_behav_cfg#1
-# Loading work.shiftregister_11bit(behav)#1
-run
-# End time: 11:23:54 on Nov 29,2022, Elapsed time: 0:04:53
-# Errors: 0, Warnings: 0
-# reading modelsim.ini
-# vsim shiftregister_11bit_tb_behav_cfg2 -lib work -L TSMCLib -sdfmax /test=VHDL/shiftregister_11bit_SYN.sdf -sdfnoerror "+sdf_verbose" -sdfreport=sdfrep 
-# Start time: 11:23:54 on Nov 29,2022
-# ** Note: (vsim-3812) Design is being optimized...
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading ieee.numeric_std(body)
-# Loading verilog.vl_types(body)
-# Loading work.shiftregister_11bit_tb_behav_cfg2#1
-# Loading work.shiftregister_11bit_tb(behav)#1
-# Loading work.shiftregister_11bit_synthesised_cfg#1
-# Loading work.shiftregister_11bit(synthesised)#1
-# Loading TSMCLib.INVD4BWP7T(fast)
-# Loading TSMCLib.DFKCND1BWP7T(fast)
-# Loading TSMCLib.DFKSND1BWP7T(fast)
-# Loading TSMCLib.DFD1BWP7T(fast)
-# Loading TSMCLib.INVD1BWP7T(fast)
-# Loading instances from VHDL/shiftregister_11bit_SYN.sdf
-#
-# ******************************* SDF Annotator ********************************
-#
-# Reading maximum timing from compiled SDF file "VHDL/shiftregister_11bit_SYN.sdf".
-#
-# Summary of constructs read: 
-#
-#           IOPATH =         34
-#             PORT =         44
-#        SETUPHOLD =         42
-#
-# ******************************************************************************
-#
-# ******************************* SDF Annotator ********************************
-#
-# Applying SDF file "VHDL/shiftregister_11bit_SYN.sdf" to instance "shiftregister_11bit_tb.test".
-#
-# Mapped 0 SDF constructs to 0 VITAL generic names.
-#
-# ******************************************************************************
-#
-# ******************************* SDF Annotator ********************************
-#
-# Applying SDF file "VHDL/shiftregister_11bit_SYN.sdf" to instance "shiftregister_11bit_tb.test".
-#
-# Summary of Verilog design objects annotated: 
-#
-#     Module path delays =         34
-#     Timing checks      =         84
-#
-# ******************************************************************************
-#
-# ******************************* SDF Annotator ********************************
-#
-# Total VITAL generics annotated in the design: 0
-#
-# ******************************************************************************
-# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
-#    Time: 0 ps  Iteration: 0  Instance: /shiftregister_11bit_tb File: VHDL/shiftregister_11bit_tb-behav.vhd
-run
-# End time: 11:26:58 on Nov 29,2022, Elapsed time: 0:03:04
-# Errors: 0, Warnings: 0
-# reading modelsim.ini
-# vsim shiftregister_11bit_tb_behav_cfg -lib work -L TSMCLib 
-# Start time: 11:26:58 on Nov 29,2022
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading ieee.numeric_std(body)
-# Loading work.shiftregister_11bit_tb_behav_cfg#1
-# Loading work.shiftregister_11bit_tb(behav)#1
-# Loading work.shiftregister_11bit_behav_cfg#1
-# Loading work.shiftregister_11bit(behav)#1
-run
-# End time: 11:28:58 on Nov 29,2022, Elapsed time: 0:02:00
-# Errors: 0, Warnings: 0
-# reading modelsim.ini
-# vsim shiftregister_11bit_tb_behav_cfg2 -lib work -L TSMCLib -sdfmax /test=VHDL/shiftregister_11bit_SYN.sdf -sdfnoerror "+sdf_verbose" -sdfreport=sdfrep 
-# Start time: 11:28:58 on Nov 29,2022
-# ** Note: (vsim-3812) Design is being optimized...
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading ieee.numeric_std(body)
-# Loading verilog.vl_types(body)
-# Loading work.shiftregister_11bit_tb_behav_cfg2#1
-# Loading work.shiftregister_11bit_tb(behav)#1
-# Loading work.shiftregister_11bit_synthesised_cfg#1
-# Loading work.shiftregister_11bit(synthesised)#1
-# Loading TSMCLib.INVD4BWP7T(fast)
-# Loading TSMCLib.DFKCND1BWP7T(fast)
-# Loading TSMCLib.INVD1BWP7T(fast)
-# Loading instances from VHDL/shiftregister_11bit_SYN.sdf
-#
-# ******************************* SDF Annotator ********************************
-#
-# Reading maximum timing from compiled SDF file "VHDL/shiftregister_11bit_SYN.sdf".
-#
-# Summary of constructs read: 
-#
-#           IOPATH =         34
-#             PORT =         45
-#        SETUPHOLD =         44
-#
-# ******************************************************************************
-#
-# ******************************* SDF Annotator ********************************
-#
-# Applying SDF file "VHDL/shiftregister_11bit_SYN.sdf" to instance "shiftregister_11bit_tb.test".
-#
-# Mapped 0 SDF constructs to 0 VITAL generic names.
-#
-# ******************************************************************************
-#
-# ******************************* SDF Annotator ********************************
-#
-# Applying SDF file "VHDL/shiftregister_11bit_SYN.sdf" to instance "shiftregister_11bit_tb.test".
-#
-# Summary of Verilog design objects annotated: 
-#
-#     Module path delays =         34
-#     Timing checks      =         88
-#
-# ******************************************************************************
-#
-# ******************************* SDF Annotator ********************************
-#
-# Total VITAL generics annotated in the design: 0
-#
-# ******************************************************************************
-# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
-#    Time: 0 ps  Iteration: 0  Instance: /shiftregister_11bit_tb File: VHDL/shiftregister_11bit_tb-behav.vhd
-run
-# End time: 12:00:49 on Nov 29,2022, Elapsed time: 0:31:51
-# Errors: 0, Warnings: 0
-# reading modelsim.ini
-# vsim shiftregister_9bit_tb_behav_cfg -lib work -L TSMCLib 
-# Start time: 12:00:50 on Nov 29,2022
-# ** Note: (vsim-3812) Design is being optimized...
+# vsim shiftregister_9bit_tb_behav_cfg -lib work -L TSMCLib -do "/data/public/common/software/opprog/do_files/init_simulator.do" 
+# Start time: 14:03:12 on Dec 02,2022
+# ** Note: (vsim-8009) Loading existing optimized design _opt2
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
@@ -348,12 +22,14 @@ run
 # Loading work.shiftregister_9bit_tb(behav)#1
 # Loading work.shiftregister_9bit_behav_cfg#1
 # Loading work.shiftregister_9bit(behav)#1
+# do /data/public/common/software/opprog/do_files/init_simulator.do
+add wave sim:/shiftregister_9bit_tb/test/*
 run
-# End time: 12:25:49 on Nov 29,2022, Elapsed time: 0:24:59
+# End time: 14:10:36 on Dec 02,2022, Elapsed time: 0:07:24
 # Errors: 0, Warnings: 0
 # reading modelsim.ini
 # vsim shiftregister_9bit_tb_behav_cfg -lib work -L TSMCLib 
-# Start time: 12:25:49 on Nov 29,2022
+# Start time: 14:10:36 on Dec 02,2022
 # ** Note: (vsim-3813) Design is being optimized due to module recompilation...
 # Loading std.standard
 # Loading std.textio(body)
@@ -364,4 +40,179 @@ run
 # Loading work.shiftregister_9bit_behav_cfg#1
 # Loading work.shiftregister_9bit(behav)#1
 add wave sim:/shiftregister_9bit_tb/test/*
-run 800ns
+run
+# End time: 14:19:37 on Dec 02,2022, Elapsed time: 0:09:01
+# Errors: 0, Warnings: 0
+# reading modelsim.ini
+# vsim shiftregister_9bit_tb_behav_cfg -lib work -L TSMCLib 
+# Start time: 14:19:38 on Dec 02,2022
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.shiftregister_9bit_tb_behav_cfg#1
+# Loading work.shiftregister_9bit_tb(behav)#1
+# Loading work.shiftregister_9bit_behav_cfg#1
+# Loading work.shiftregister_9bit(behav)#1
+run
+# End time: 14:19:54 on Dec 02,2022, Elapsed time: 0:00:16
+# Errors: 0, Warnings: 0
+# reading modelsim.ini
+# vsim shiftregister_9bit_tb_behav_cfg -lib work -L TSMCLib 
+# Start time: 14:19:54 on Dec 02,2022
+# ** Note: (vsim-8009) Loading existing optimized design _opt2
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.shiftregister_9bit_tb_behav_cfg#1
+# Loading work.shiftregister_9bit_tb(behav)#1
+# Loading work.shiftregister_9bit_behav_cfg#1
+# Loading work.shiftregister_9bit(behav)#1
+add wave sim:/shiftregister_9bit_tb/test/*
+run
+# End time: 14:22:34 on Dec 02,2022, Elapsed time: 0:02:40
+# Errors: 0, Warnings: 0
+# reading modelsim.ini
+# vsim shiftregister_9bit_tb_behav_cfg -lib work -L TSMCLib 
+# Start time: 14:22:34 on Dec 02,2022
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.shiftregister_9bit_tb_behav_cfg#1
+# Loading work.shiftregister_9bit_tb(behav)#1
+# Loading work.shiftregister_9bit_behav_cfg#1
+# Loading work.shiftregister_9bit(behav)#1
+add wave sim:/shiftregister_9bit_tb/test/*
+run
+# End time: 14:25:52 on Dec 02,2022, Elapsed time: 0:03:18
+# Errors: 0, Warnings: 0
+# reading modelsim.ini
+# vsim shiftregister_9bit_tb_behav_cfg -lib work -L TSMCLib 
+# Start time: 14:25:52 on Dec 02,2022
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.shiftregister_9bit_tb_behav_cfg#1
+# Loading work.shiftregister_9bit_tb(behav)#1
+# Loading work.shiftregister_9bit_behav_cfg#1
+# Loading work.shiftregister_9bit(behav)#1
+add wave sim:/shiftregister_9bit_tb/test/*
+run
+# End time: 14:38:04 on Dec 02,2022, Elapsed time: 0:12:12
+# Errors: 0, Warnings: 0
+# reading modelsim.ini
+# vsim shiftregister_9bit_tb_behav_cfg -lib work -L TSMCLib 
+# Start time: 14:38:05 on Dec 02,2022
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.shiftregister_9bit_tb_behav_cfg#1
+# Loading work.shiftregister_9bit_tb(behav)#1
+# Loading work.shiftregister_9bit_behav_cfg#1
+# Loading work.shiftregister_9bit(behav)#1
+add wave sim:/shiftregister_9bit_tb/test/*
+run
+# End time: 14:41:19 on Dec 02,2022, Elapsed time: 0:03:14
+# Errors: 0, Warnings: 0
+# reading modelsim.ini
+# vsim shiftregister_9bit_tb_behav_cfg -lib work -L TSMCLib 
+# Start time: 14:41:19 on Dec 02,2022
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.shiftregister_9bit_tb_behav_cfg#1
+# Loading work.shiftregister_9bit_tb(behav)#1
+# Loading work.shiftregister_9bit_behav_cfg#1
+# Loading work.shiftregister_9bit(behav)#1
+add wave sim:/shiftregister_9bit_tb/test/*
+run
+# End time: 14:43:20 on Dec 02,2022, Elapsed time: 0:02:01
+# Errors: 0, Warnings: 0
+# reading modelsim.ini
+# vsim shiftregister_9bit_tb_behav_cfg -lib work -L TSMCLib 
+# Start time: 14:43:21 on Dec 02,2022
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.shiftregister_9bit_tb_behav_cfg#1
+# Loading work.shiftregister_9bit_tb(behav)#1
+# Loading work.shiftregister_9bit_behav_cfg#1
+# Loading work.shiftregister_9bit(behav)#1
+run
+# End time: 14:43:36 on Dec 02,2022, Elapsed time: 0:00:15
+# Errors: 0, Warnings: 0
+# reading modelsim.ini
+# vsim shiftregister_9bit_tb_behav_cfg -lib work -L TSMCLib 
+# Start time: 14:43:37 on Dec 02,2022
+# ** Note: (vsim-8009) Loading existing optimized design _opt2
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.shiftregister_9bit_tb_behav_cfg#1
+# Loading work.shiftregister_9bit_tb(behav)#1
+# Loading work.shiftregister_9bit_behav_cfg#1
+# Loading work.shiftregister_9bit(behav)#1
+add wave sim:/shiftregister_9bit_tb/test/*
+run
+# End time: 14:49:14 on Dec 02,2022, Elapsed time: 0:05:37
+# Errors: 0, Warnings: 0
+# reading modelsim.ini
+# vsim shiftregister_9bit_tb_behav_cfg -lib work -L TSMCLib 
+# Start time: 14:49:15 on Dec 02,2022
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.shiftregister_9bit_tb_behav_cfg#1
+# Loading work.shiftregister_9bit_tb(behav)#1
+# Loading work.shiftregister_9bit_behav_cfg#1
+# Loading work.shiftregister_9bit(behav)#1
+add wave sim:/shiftregister_9bit_tb/test/*
+run
+# End time: 14:50:23 on Dec 02,2022, Elapsed time: 0:01:08
+# Errors: 0, Warnings: 0
+# reading modelsim.ini
+# vsim shiftregister_9bit_tb_behav_cfg -lib work -L TSMCLib 
+# Start time: 14:50:23 on Dec 02,2022
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.shiftregister_9bit_tb_behav_cfg#1
+# Loading work.shiftregister_9bit_tb(behav)#1
+# Loading work.shiftregister_9bit_behav_cfg#1
+# Loading work.shiftregister_9bit(behav)#1
+add wave sim:/shiftregister_9bit_tb/test/*
+run
+# Causality operation skipped due to absence of debug database file
+# End time: 14:54:42 on Dec 02,2022, Elapsed time: 0:04:19
+# Errors: 0, Warnings: 1
+# reading modelsim.ini
+# vsim shiftregister_9bit_tb_behav_cfg -lib work -L TSMCLib 
+# Start time: 14:54:43 on Dec 02,2022
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.shiftregister_9bit_tb_behav_cfg#1
+# Loading work.shiftregister_9bit_tb(behav)#1
+# Loading work.shiftregister_9bit_behav_cfg#1
+# Loading work.shiftregister_9bit(behav)#1
+add wave sim:/shiftregister_9bit_tb/test/*
+run

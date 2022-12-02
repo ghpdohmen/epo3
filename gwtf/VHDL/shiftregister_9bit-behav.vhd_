@@ -3,21 +3,37 @@ use IEEE.std_logic_1164.ALL;
 
 architecture behav of shiftregister_9bit is
     signal new_data, new_new_data :		std_logic_vector(8 downto 0);
+    signal clk_inv		: std_logic;
 
 begin
+    process(clk)
+	begin
+	    clk_inv <= not clk;
+ 	end process;
+	
     process(clk)
         begin
             if(rising_edge(clk)) then
                 if(reset = '1') then
 		    data_out <= '0';
-		    new_new_data <= data_in;
+		    new_new_data <= (others => '0');
 			
             		else 
 		    data_out <= new_new_data(0); 
                     
                 end if;
-	    elsif(falling_edge(clk)) then
-		new_new_data <= std_logic_vector(shift_right(unsigned(new_new_data), 1));
+	    end if;
+	end process;
+
+
+    process(clk_inv)
+	begin
+	    if(rising_edge(clk_inv)) then
+		if(reset = '0') then
+		
+		    new_new_data <= std_logic_vector(shift_right(unsigned(new_new_data), 1));
+		end if;
+
             end if;
         end process;
 end behav;
