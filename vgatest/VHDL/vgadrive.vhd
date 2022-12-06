@@ -4,8 +4,8 @@ use IEEE.std_logic_1164.ALL;
 entity vgadrive is
 port( clock            : in std_logic;  -- 25.175 Mhz clock
         red, green, blue : in std_logic;  -- input values for RGB signals
-        row, column : out std_logic_vector(9 downto 0); -- for current pixel
-        Rout, Gout, Bout, H, V : out std_logic); -- VGA drive signals
+         -- for current pixel
+        Rout, Gout, Bout, H, V, enable : out std_logic); -- VGA drive signals
   -- The signals Rout, Gout, Bout, H and V are output to the monitor.
   -- The row and column outputs are used to know when to assert red,
   -- green and blue to color the current pixel.  For VGA, the column
