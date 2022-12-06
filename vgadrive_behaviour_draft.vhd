@@ -49,15 +49,16 @@ wait until clk = '1';
 
     if horizontal >= (h_width + h_bp) and horizontal < (h_width + h_bp + h_fp) then
         hsync_out <= '0';
+        enable <= '0';
     else
         hsync_out <= '1';
+        enable <= '1';
     end if;
 
     if vertical >= (v_height + v_bp) and vertical < (v_height + v_bp + v_fp) then
         vsync_out <= '0';
     else
         vsync_out <= '1';
-        enable <= '1';
     end if;
 end process;
 
