@@ -19,6 +19,12 @@ constant v_topborder : natural := 8;
 constant v_botborder : natural := 8;
 constant h_sum: natural := h_pulse + h_fp + h_bp + h_width;
 constant v_sum : natural := v_pulse + v_fp + v_bp + v_height;
+
+  -- states 
+  type states is (reset_state, on_state, off_state);
+  signal state, new_state: states;
+  signal enable : std_logic;
+
 begin
 
 red_out <= red_in;
@@ -30,32 +36,80 @@ process
 	
 begin
 wait until clk = '1';
-if (horizontal < h_sum - 1) then
-	horizontal := horizontal + 1;
-else
-	horizontal := (others => '0');
-	if (vertical < v_sum - 1) then
-		vertical := vertical + 1;
-	else
-		vertical := (others => '0');
-	end if;
-end if;
+    if (horizontal < h_sum - 1) then
+        horizontal := horizontal + 1;
+    else
+        horizontal := (others => '0');
+        if (vertical < v_sum - 1) then
+            vertical := vertical + 1;
+        else
+            vertical := (others => '0');
+        end if;
+    end if;
 
-if horizontal >= (h_width + h_bp) and horizontal < (h_width + h_bp + h_fp) then
-	hsync_out <= '0';
-else
-	hsync_out <= '1';
-end if;
+    if horizontal >= (h_width + h_bp) and horizontal < (h_width + h_bp + h_fp) then
+        hsync_out <= '0';
+    else
+        hsync_out <= '1';
+        enable <= '1';
+    end if;
 
-if vertical >= (v_height + v_bp) and vertical < (v_height + v_bp + v_fp) then
-	vsync_out <= '0';
-else
-	vsync_out <= '1';
-end if;
-
-
+    if vertical >= (v_height + v_bp) and vertical < (v_height + v_bp + v_fp) then
+        vsync_out <= '0';
+    else
+        vsync_out <= '1';
+        enable <= '1';
+    end if;
 end process;
 
 
+---  state switcher
+stateprocess_1: process(clock)
+begin
+	if (rising_edge(clock)) then
+		if (reset = '1') then
+			state <= reset_state;
+		else
+			state <= new_state;
+		end if;
+	end if;
+end process;
+
+
+-- actual state logic
+stateprocess2: process(clock)
+begin
+	case state is 
+		when reset_state =>
+			if (enable = '1') then
+				read <= '1';
+				new_state <= on_state;
+			else
+				new_state <= reset_state;
+			end if;
+		when on_state =>
+			if (enable = '1') then 
+				read <= '1';
+        red_local <= red_in;
+        green_local <= green_in;
+        blue_local <= blue_in;
+				new_state <= on_state;
+			else 	
+				read <= '0';
+				red_local <= '0';
+				green_local <= '0';
+				blue_local <= '0';
+				new_state <= off_state;
+			end if;
+
+		when off_state =>
+			read <= '0';
+			if (enable = '1') then
+				new_state <= on_state;
+			else
+				new_state <= off_state;
+			end if;
+    end case;
+end process;
 
 end behaviour;
