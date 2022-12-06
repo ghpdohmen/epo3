@@ -10,16 +10,21 @@ architecture behaviour of vgadrive is
   -- clock frequency and are close but not exact
   -- row counter will go from 0 to 524; column counter from 0 to 799
   subtype counter is std_logic_vector(9 downto 0);
-  constant B : natural := 93;  -- horizontal blank: 3.77 us
-  constant C : natural := 45;  -- front guard: 1.89 us
+  constant B : natural := 96;  -- horizontal blank: 3.77 us
+  constant C : natural := 8;  -- front guard: 1.89 us
   constant D : natural := 640; -- horizontal columns: 25.17 us
-  constant E : natural := 22;  -- rear guard: 0.94 us
-  constant A : natural := B + C + D + E;  -- one horizontal sync cycle: 31.77 us
+  constant E : natural := 40;  -- rear guard: 0.94 us
+  constant LB : natural := 8; --left border
+  constant RB : natural := 8; --left border
+
+  constant A : natural := B + C + D + E + LB + RB;  -- one horizontal sync cycle: 31.77 us
   constant P : natural := 2;   -- vertical blank: 64 us
-  constant Q : natural := 32;  -- front guard: 1.02 ms
+  constant Q : natural := 2;  -- front guard: 1.02 ms
   constant R : natural := 480; -- vertical rows: 15.25 ms
-  constant S : natural := 11;  -- rear guard: 0.35 ms
-  constant O : natural := P + Q + R + S;  -- one vertical sync cycle: 16.6 ms
+  constant S : natural := 25;  -- rear guard: 0.35 ms
+  constant TB : natural := 8; --TOP border
+  constant BB : natural := 8; --BOTTOM border
+  constant O : natural := P + Q + R + S + TB + BB;  -- one vertical sync cycle: 16.6 ms
    
 begin
 
