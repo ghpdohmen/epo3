@@ -4,23 +4,6 @@ use IEEE.numeric_std.all;
 
 architecture behav of sendFSM is
 
-component counter25mhz is
-   port(clk       : in  std_logic;
-        reset     : in  std_logic;
-        count_out : out  std_logic_vector(11 downto 0));
-end component;
-
-component shiftregister_9bit is
-  port (
-    clk:        in std_logic;
-    data_in:    in std_logic_vector(8 downto 0);
-    reset:      in std_logic;
-    data_out:   out std_logic
-  ) ;
-end component;
-
-
-
 
 type sendfsm_state is (reset_state, clklowstate, bothlowstate, waitforclockstate);
 signal state, new_state : sendfsm_state;
@@ -28,9 +11,6 @@ signal state, new_state : sendfsm_state;
 
 begin
 
-
-tb: counter25mhz port map (clk, timebaseRst, countIn);
-sr: shiftregister_9bit port map (clk15k
 
 
     process(clk) begin
@@ -55,7 +35,10 @@ sr: shiftregister_9bit port map (clk15k
                 dataMUX <= '0';
                 if(reset = '0') then
                     new_state <= clklowstate;
+		else
+		    new_state <= state;
                 end if;
+
             when clklowstate =>
                 clkTrans <= '1';
                 dataTrans <= '0';
@@ -64,11 +47,13 @@ sr: shiftregister_9bit port map (clk15k
                 dataMUX <= '0';
                 if(to_integer(unsigned(countIn)) >= 2750) then
                     new_state <= bothlowstate;
+		else
+		    new_state <= state;
                 end if;
+
             when bothlowstate =>
                 clkTrans <= '0';
                 dataTrans <= '1';
-                new_state <= waitforclockstate;
                 regRst <= '1';
                 dataMUX <= '0';
                 if(actBit = '1') then
@@ -76,6 +61,8 @@ sr: shiftregister_9bit port map (clk15k
                 else
                     dataToReg <= "000000000"; --inverted for the transistor, FF including parity bit.
                 end if;
+		new_state <= waitforclockstate;
+
             when waitforclockstate =>
                 clkTrans <= '0';
                 regRst <= '0';

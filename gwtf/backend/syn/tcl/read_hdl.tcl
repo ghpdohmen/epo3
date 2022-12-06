@@ -1,3 +1,15 @@
+read_hdl -vhdl {counter25mhz.vhd}
+read_hdl -vhdl {input.vhd}
+read_hdl -vhdl {mux.vhd}
+read_hdl -vhdl {sendFSM.vhd}
 read_hdl -vhdl {shiftregister_9bit.vhd}
+read_hdl -vhdl {counter25mhz-behav.vhd}
+read_hdl -vhdl {input-behav.vhd}
+read_hdl -vhdl {mux-behav.vhd}
+read_hdl -vhdl {sendFSM-behav.vhd}
 read_hdl -vhdl {shiftregister_9bit-behav.vhd}
+read_hdl -vhdl {mux_behav_cfg.vhd}
+read_hdl -vhdl {sendfsm_behav_cfg.vhd}
 read_hdl -vhdl {shiftregister_9bit_behav_cfg.vhd}
+read_hdl -vhdl {counter25mhz_behav_cfg.vhd}
+read_hdl -vhdl {input_behav_cfg.vhd}

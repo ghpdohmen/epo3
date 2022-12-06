@@ -1,5 +1,5 @@
 #*********************************************************
-# synthesize script for cell: shiftregister_9bit
+# synthesize script for cell: input
 # company: ontwerp_practicum
 # designer: etuinstra
 #*********************************************************
@@ -9,14 +9,26 @@ set_db library {tcb018gbwp7twc.lib}
 set_db use_scan_seqs_for_non_dft false
 
 #include backend/syn/tcl/read_hdl.tcl
+read_hdl -vhdl {counter25mhz.vhd}
+read_hdl -vhdl {input.vhd}
+read_hdl -vhdl {mux.vhd}
+read_hdl -vhdl {sendFSM.vhd}
 read_hdl -vhdl {shiftregister_9bit.vhd}
+read_hdl -vhdl {counter25mhz-behav.vhd}
+read_hdl -vhdl {input-behav.vhd}
+read_hdl -vhdl {mux-behav.vhd}
+read_hdl -vhdl {sendFSM-behav.vhd}
 read_hdl -vhdl {shiftregister_9bit-behav.vhd}
+read_hdl -vhdl {mux_behav_cfg.vhd}
+read_hdl -vhdl {sendfsm_behav_cfg.vhd}
 read_hdl -vhdl {shiftregister_9bit_behav_cfg.vhd}
+read_hdl -vhdl {counter25mhz_behav_cfg.vhd}
+read_hdl -vhdl {input_behav_cfg.vhd}
 #endincl
 
-elaborate shiftregister_9bit_behav_cfg
+elaborate input_behav_cfg
 
-#include backend/syn/in/shiftregister_9bit.sdc
+#include backend/syn/in/input.sdc
 # but use 33 MHz as constraint to be more sure it works.
 dc::set_driving_cell -cell INVD0BWP7T [dc::all_inputs]
 dc::set_load 1 [dc::all_outputs]
@@ -29,9 +41,9 @@ synthesize -to_mapped
 
 ungroup -all -flat
 insert_tiehilo_cells
-write_hdl -mapped > ../out/shiftregister_9bit.v
-write_sdf > ../out/shiftregister_9bit.sdf
-write_sdc > ../out/shiftregister_9bit.sdc
+write_hdl -mapped > ../out/input.v
+write_sdf > ../out/input.sdf
+write_sdc > ../out/input.sdc
 
 report timing
 report gates
