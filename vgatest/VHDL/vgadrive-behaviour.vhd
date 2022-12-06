@@ -25,7 +25,7 @@ architecture behaviour of vgadrive is
   constant O : natural := P + Q + R + S;  -- one vertical sync cycle: 16.6 ms
    
 begin
-
+  
   Rout <= red;
   Gout <= green;
   Bout <= blue;
@@ -64,9 +64,15 @@ begin
         
      --define ready and enable output
       if  vertical >= (P + Q)  and  vertical < (P + Q + R) and horizontal >= (B + C) and horizontal <= (B + C + D) then
-        enable <= '1'
+        enable <= '1';
+        Rout <= red;
+        Gout <= green;
+        Bout <= blue;
       else
         enable <= '0';
+        Rout <= '0';
+        Gout <= '0';
+        Bout <= '0';
       end if;
     -- mapping of the variable to the signals
      -- negative signs are because the conversion bits are reversed
