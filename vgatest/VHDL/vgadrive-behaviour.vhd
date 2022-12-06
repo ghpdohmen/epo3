@@ -26,9 +26,9 @@ architecture behaviour of vgadrive is
    
 begin
   
-  Rout <= red;
-  Gout <= green;
-  Bout <= blue;
+  --Rout <= red;
+  --Gout <= green;
+  --Bout <= blue;
 
   process
     variable vertical, horizontal : counter;  -- define counters
