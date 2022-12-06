@@ -63,7 +63,7 @@ begin
       end if;
         
      --define ready and enable output
-      if  vertical >= (P + Q)  and  vertical < (P + Q + R) and horizontal >= (B + C) and horizontal <= (B + C + D) then
+      if  vertical < (P + Q + R) and horizontal <= (B + C + D) then
         enable <= '1';
         Rout <= red;
         Gout <= green;
