@@ -51,7 +51,6 @@ wait until clk = '1';
         hsync_out <= '0';
     else
         hsync_out <= '1';
-        enable <= '1';
     end if;
 
     if vertical >= (v_height + v_bp) and vertical < (v_height + v_bp + v_fp) then
@@ -64,9 +63,9 @@ end process;
 
 
 ---  state switcher
-stateprocess_1: process(clock)
+stateprocess_1: process(clk)
 begin
-	if (rising_edge(clock)) then
+	if (rising_edge(clk)) then
 		if (reset = '1') then
 			state <= reset_state;
 		else
@@ -77,33 +76,29 @@ end process;
 
 
 -- actual state logic
-stateprocess2: process(clock)
+stateprocess2: process(clk)
 begin
 	case state is 
 		when reset_state =>
 			if (enable = '1') then
-				read <= '1';
 				new_state <= on_state;
 			else
 				new_state <= reset_state;
 			end if;
 		when on_state =>
 			if (enable = '1') then 
-				read <= '1';
-        red_local <= red_in;
-        green_local <= green_in;
-        blue_local <= blue_in;
+                red_out <= red_in;
+                green_out <= green_in;
+                blue_out <= blue_in;
 				new_state <= on_state;
 			else 	
-				read <= '0';
-				red_local <= '0';
-				green_local <= '0';
-				blue_local <= '0';
+				red_out <= '0';
+				green_out <= '0';
+				blue_out <= '0';
 				new_state <= off_state;
 			end if;
 
 		when off_state =>
-			read <= '0';
 			if (enable = '1') then
 				new_state <= on_state;
 			else
