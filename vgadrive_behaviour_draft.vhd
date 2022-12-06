@@ -20,11 +20,6 @@ constant v_botborder : natural := 8;
 constant h_sum: natural := h_pulse + h_fp + h_bp + h_width;
 constant v_sum : natural := v_pulse + v_fp + v_bp + v_height;
 
-  -- states 
-  type states is (reset_state, on_state, off_state);
-  signal state, new_state: states;
-  signal enable : std_logic;
-
 begin
 
 red_out <= red_in;
@@ -53,6 +48,7 @@ wait until clk = '1';
     else
         hsync_out <= '1';
         enable <= '1';
+        
     end if;
 
     if vertical >= (v_height + v_bp) and vertical < (v_height + v_bp + v_fp) then
@@ -60,52 +56,6 @@ wait until clk = '1';
     else
         vsync_out <= '1';
     end if;
-end process;
-
-
----  state switcher
-stateprocess_1: process(clk)
-begin
-	if (rising_edge(clk)) then
-		if (reset = '1') then
-			state <= reset_state;
-		else
-			state <= new_state;
-		end if;
-	end if;
-end process;
-
-
--- actual state logic
-stateprocess2: process(clk)
-begin
-	case state is 
-		when reset_state =>
-			if (enable = '1') then
-				new_state <= on_state;
-			else
-				new_state <= reset_state;
-			end if;
-		when on_state =>
-			if (enable = '1') then 
-                red_out <= red_in;
-                green_out <= green_in;
-                blue_out <= blue_in;
-				new_state <= on_state;
-			else 	
-				red_out <= '0';
-				green_out <= '0';
-				blue_out <= '0';
-				new_state <= off_state;
-			end if;
-
-		when off_state =>
-			if (enable = '1') then
-				new_state <= on_state;
-			else
-				new_state <= off_state;
-			end if;
-    end case;
 end process;
 
 end behaviour;
