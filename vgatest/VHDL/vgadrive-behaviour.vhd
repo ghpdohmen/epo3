@@ -63,16 +63,29 @@ begin
       end if;
         
      --define ready and enable output
-      if   vertical >= (P) and vertical <= (P + Q + R) and  horizontal >= (B) and horizontal <= (B + C + D) then
-        enable <= '1';
+      if   vertical >= (P) and vertical <= (P + Q + R) and  horizontal >= (B+C) and horizontal <= (B + C + D) then
+        
         Rout <= red;
         Gout <= green;
         Bout <= blue;
       else
-        enable <= '0';
+        
         Rout <= '0';
         Gout <= '0';
         Bout <= '0';
+      end if;
+      if   vertical >= (P+Q) and vertical <= (P + Q + R)then
+        Venable <= '1';
+       
+      else
+        Venable <= '0';
+      end if;
+        
+      if   horizontal >= (B + C) and horizontal <= (B + C + D)then
+        Henable <= '1';
+       
+      else
+        Henable <= '0';
       end if;
     -- mapping of the variable to the signals
      -- negative signs are because the conversion bits are reversed
