@@ -20,7 +20,7 @@ begin
   -- for debugging: to view the bit order
   VGA : component vgadrive
     port map ( clock => clock, red => red, green => green, blue => blue,
-               row => row, column => column,
+               enable => enable,
                Rout => R, Gout => G, Bout => B, H => H, V => V);
  
   -- red square from 0,0 to 360, 350
