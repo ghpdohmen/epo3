@@ -26,9 +26,9 @@ architecture behaviour of vgadrive is
    
 begin
   
-  --Rout <= red;
-  --Gout <= green;
-  --Bout <= blue;
+  Rout <= red;
+  Gout <= green;
+  Bout <= blue;
 
   process
     variable vertical, horizontal : counter;  -- define counters
@@ -64,15 +64,11 @@ begin
         
      --define ready and enable output
       if   vertical >= (P) and vertical <= (P + Q + R) and  horizontal >= (B+C) and horizontal <= (B + C + D) then
+        enable = '1';
         
-        Rout <= red;
-        Gout <= green;
-        Bout <= blue;
       else
-        
-        Rout <= '0';
-        Gout <= '0';
-        Bout <= '0';
+        enable = '0';
+       
       end if;
       if   vertical >= (P+Q) and vertical <= (P + Q + R)then
         Venable <= '1';
