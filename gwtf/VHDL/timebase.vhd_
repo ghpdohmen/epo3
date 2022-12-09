@@ -3,11 +3,9 @@ use IEEE.std_logic_1164.all;
 use IEEE.numeric_std.all;
 
 entity timebase is
-	port (	clk25M		: in	std_logic;
-		clk15k		: in 	std_logic;
+	port (	
+		clk			: in 	std_logic;
 		reset		: in	std_logic;
-		clk_bool		: in 	std_logic;
-
 		count_out	: out	std_logic_vector (3 downto 0)
 	);
 end entity timebase;

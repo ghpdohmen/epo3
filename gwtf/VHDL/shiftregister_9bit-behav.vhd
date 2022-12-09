@@ -7,11 +7,13 @@ architecture behav of shiftregister_9bit is
 begin
     process(clk) begin
         if(rising_edge(clk)) then
-            if(reset = '1') then
-                new_new_data <= data_in;
-            else
-                new_new_data <= new_new_data (7 downto 0) & '0';
-            end if;
+		if(edge15k = '1') then
+            			if(reset = '1') then
+                				new_new_data <= data_in;
+            			else
+                				new_new_data <= new_new_data (7 downto 0) & '0';
+			end if;
+            		end if;
         end if;
         data_out <= new_new_data(8);
     end process;

@@ -23,6 +23,7 @@ end component;
 component shiftregister_9bit is
   port (
     clk:        in std_logic;
+    edge15k:		in std_logic;
     data_in:    in std_logic_vector(8 downto 0);
     reset:      in std_logic;
     data_out:   out std_logic
@@ -33,6 +34,7 @@ end component;
 component shiftregister_11bit is
     port (
         clk:        in std_logic;
+    	edge15k:	   in std_logic;
         data_in:    in std_logic;
         reset:      in std_logic;
         data_out:   out std_logic_vector(10 downto 0)
@@ -68,7 +70,7 @@ component sendFSM is
     );
 end component;
 
-signal cntReset25M, bit9_reg_rst, reset_send, mux_select, muxReg, muxFSM, actBit, 				:std_logic;
+signal cntReset25M, bit9_reg_rst, reset_send, mux_select, muxReg, muxFSM, actBit				:std_logic;
 signal count25M		:std_logic_vector(11 downto 0);
 signal count15k		:std_logic_vector(3 downto 0);
 signal data_sr_9bit:		std_logic_vector(8 downto 0);

@@ -11,18 +11,75 @@
 # //  is prohibited from disclosure under the Trade Secrets Act,
 # //  18 U.S.C. Section 1905.
 # //
-# vsim shiftregister_9bit_tb_behav_cfg -lib work -L TSMCLib -do "/data/public/common/software/opprog/do_files/init_simulator.do" 
-# Start time: 15:05:51 on Dec 02,2022
+# vsim timebase_tb_behav_cfg -lib work -L TSMCLib -do "/data/public/common/software/opprog/do_files/init_simulator.do" 
+# Start time: 15:26:15 on Dec 09,2022
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.timebase_tb_behav_cfg#1
+# Loading work.timebase_tb(behav)#1
+# Loading work.timebase_behav_cfg#1
+# Loading work.timebase(behav)#1
+# do /data/public/common/software/opprog/do_files/init_simulator.do
+run
+# End time: 15:27:46 on Dec 09,2022, Elapsed time: 0:01:31
+# Errors: 0, Warnings: 0
+# reading modelsim.ini
+# vsim timebase_tb_behav_cfg -lib work -L TSMCLib 
+# Start time: 15:27:47 on Dec 09,2022
 # ** Note: (vsim-3813) Design is being optimized due to module recompilation...
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
 # Loading ieee.numeric_std(body)
-# Loading work.shiftregister_9bit_tb_behav_cfg#1
-# Loading work.shiftregister_9bit_tb(behav)#1
-# Loading work.shiftregister_9bit_behav_cfg#1
-# Loading work.shiftregister_9bit(behav)#1
-# do /data/public/common/software/opprog/do_files/init_simulator.do
+# Loading work.timebase_tb_behav_cfg#1
+# Loading work.timebase_tb(behav)#1
+# Loading work.timebase_behav_cfg#1
+# Loading work.timebase(behav)#1
 run
-# End time: 15:07:56 on Dec 02,2022, Elapsed time: 0:02:05
+# End time: 15:40:16 on Dec 09,2022, Elapsed time: 0:12:29
 # Errors: 0, Warnings: 0
+# reading modelsim.ini
+# vsim timebase_tb_behav_cfg -lib work -L TSMCLib 
+# Start time: 15:40:17 on Dec 09,2022
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.timebase_tb_behav_cfg#1
+# Loading work.timebase_tb(behav)#1
+# Loading work.timebase_behav_cfg#1
+# Loading work.timebase(behav)#1
+run
+# End time: 15:40:55 on Dec 09,2022, Elapsed time: 0:00:38
+# Errors: 0, Warnings: 0
+# reading modelsim.ini
+# vsim timebase_tb_behav_cfg -lib work -L TSMCLib 
+# Start time: 15:40:56 on Dec 09,2022
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.timebase_tb_behav_cfg#1
+# Loading work.timebase_tb(behav)#1
+# Loading work.timebase_behav_cfg#1
+# Loading work.timebase(behav)#1
+run
+# End time: 16:09:41 on Dec 09,2022, Elapsed time: 0:28:45
+# Errors: 0, Warnings: 0
+# reading modelsim.ini
+# vsim edge_detector_tb_behav_cfg -lib work -L TSMCLib 
+# Start time: 16:09:42 on Dec 09,2022
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.edge_detector_tb_behav_cfg#1
+# Loading work.edge_detector_tb(behav)#1
+# Loading work.edge_detector_behav_cfg#1
+# Loading work.edge_detector(behav)#1
+run
