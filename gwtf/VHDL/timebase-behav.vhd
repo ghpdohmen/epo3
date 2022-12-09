@@ -18,6 +18,13 @@ begin
 			end if;
 	end process;
 
+	process(reset) --beetje jank, werkt mogelijk niet. ~Guus
+		begin
+			if(reset = '1') then
+				count <= (others => '0');
+			end if;
+	end process;
+
 	process (count)
 	begin
 		new_count <= count + 1;
