@@ -10,25 +10,25 @@ architecture behaviour of vgadrive is
   -- clock frequency and are close but not exact
   -- row counter will go from 0 to 524; column counter from 0 to 799
   subtype counter is std_logic_vector(9 downto 0);
-  constant B : natural := 96;  -- horizontal blank: 3.77 us
-  constant C : natural := 8;  -- front guard: 1.89 us
+  constant B : natural := 93;  -- horizontal blank: 3.77 us
+  constant C : natural := 45;  -- front guard: 1.89 us
   constant D : natural := 640; -- horizontal columns: 25.17 us
-  constant E : natural := 40;  -- rear guard: 0.94 us
+  constant E : natural := 22;  -- rear guard: 0.94 us
   
 
   constant A : natural := B + C + D + E;  -- one horizontal sync cycle: 31.77 us
   constant P : natural := 2;   -- vertical blank: 64 us
-  constant Q : natural := 2;  -- front guard: 1.02 ms
+  constant Q : natural := 32;  -- front guard: 1.02 ms
   constant R : natural := 480; -- vertical rows: 15.25 ms
-  constant S : natural := 25;  -- rear guard: 0.35 ms
+  constant S : natural := 11;  -- rear guard: 0.35 ms
   
   constant O : natural := P + Q + R + S;  -- one vertical sync cycle: 16.6 ms
    
 begin
   
-  Rout <= red;
-  Gout <= green;
-  Bout <= blue;
+  --Rout <= red;
+  --Gout <= green;
+  --Bout <= blue;
 
   process
     variable vertical, horizontal : counter;  -- define counters
@@ -63,25 +63,16 @@ begin
       end if;
         
      --define ready and enable output
-      if   vertical >= (P) and vertical <= (P + Q + R) and  horizontal >= (B+C) and horizontal <= (B + C + D) then
-        enable = '1';
-        
+      if vertical < 480 and horizontal < 640 then
+        enable <= '1';
+        Rout <= red;
+        Gout <= green;
+        Bout <= blue;
       else
-        enable = '0';
-       
-      end if;
-      if   vertical >= (P+Q) and vertical <= (P + Q + R)then
-        Venable <= '1';
-       
-      else
-        Venable <= '0';
-      end if;
-        
-      if   horizontal >= (B + C) and horizontal <= (B + C + D)then
-        Henable <= '1';
-       
-      else
-        Henable <= '0';
+        enable <= '0';
+        Rout <= '1';
+        Gout <= '0';
+        Bout <= '0';
       end if;
     -- mapping of the variable to the signals
      -- negative signs are because the conversion bits are reversed
@@ -89,4 +80,3 @@ begin
 
   end process;
 end behaviour;
-
