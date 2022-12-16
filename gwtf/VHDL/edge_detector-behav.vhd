@@ -11,12 +11,12 @@ begin
 process(clk)
 begin
    	if rising_edge(clk) then
-      		reg1  <= clk15k;
+      		reg1  <= input;
       		reg2  <= reg1;
   	end if;
 end process;
 
-edge15k <= reg1 and (not reg2);
+edges <= reg1 and (not reg2);
 
 end behav;
 

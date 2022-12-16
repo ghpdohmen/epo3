@@ -16,7 +16,7 @@ begin
   	end if;
 end process;
 
-edge <= reg1 and (not reg2);
+edge15k <= reg1 and (not reg2);
 
 end behav;
 

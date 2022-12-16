@@ -14,7 +14,11 @@ begin
    test: edge_detector port map (clk, clk15k, edge15k);
    clk <= '0' after 0 ns,
           '1' after 20 ns when clk /= '1' else '0' after 20 ns;
-   clk15k <= '0' after 0 ns;
-	     '1' after 40 ns;
+   clk15k <= '0' after 0 ns,
+	     '1' after 40 ns,
+	     '0' after 80 ns,
+	     '1' after 120 ns,
+	     '0' after 160 ns,
+	     '1' after 200 ns;
 end behav;
 

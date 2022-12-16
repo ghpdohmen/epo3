@@ -4,7 +4,7 @@ use IEEE.numeric_std.all;
 
 architecture behav of main_fsm is
 
-type mainfsm_state is (reset_state, wachtFA, wachtFA_cnt_rst, wachtAA, wachtAA_cnt_rst, enableF4, enableF4_cnt_rst, wachtFA2, wachtFA2_cnt_rst, data_1, data_1_cnt_rst, data_2, data_2_cnt_rst, data_3, data_3_cnt_rst, handshake_state);
+type mainfsm_state is (reset_state, wachtFA, wachtFA_cnt_rst, wachtAA, wachtAA_cnt_rst, enableF4, enableF4_cnt_rst, wachtFA2, wachtFA2_cnt_rst, data_1, data_1_cnt_rst, data_2, data_2_cnt_rst, data_3, data_3_cnt_rst, handshake_state, handshake_state2);
 signal state, new_state : mainfsm_state;
 
 begin
@@ -279,9 +279,9 @@ begin
 		--data bits are contained in data_in(2 t/m 9)
                 buttons				<= (others => '0');
                 y_out           <= (others => '0');
-                x_out(0)      		<= data_in(2);
-		x_out(1)      		<= data_in(3);
-		x_out(2)      		<= data_in(4);
+                y_out(0)      		<= data_in(2);
+		y_out(1)      		<= data_in(3);
+		y_out(2)      		<= data_in(4);
 		bit11_reg_rst   <= '1';
 
 		new_state <= handshake_state;
@@ -303,7 +303,34 @@ begin
                 x_out				<= (others => '0');
 		bit11_reg_rst   <= '1';
 
-		new_state <= reset_state;
+		if(handshake_in = '1') then
+			new_state <= handshake_state2 ;
+		else
+			new_state <= state;
+		end if;
+
+		when handshake_state2 => --maybe we want to add a state to read the data while not reseting the register yet cuz this might give problems. The shit inside processes is sequential tho.
+		
+                cntReset15k	    <= '1';
+                actBit          <= '0';
+                send_reset      <= '1';
+                handshake_out   <= '0';
+                x_flipflop      <= '0';
+                y_flipflop      <= '0';
+                btn_flipflop    <= '0';
+	
+		--assuming that least significant bit is data_in(9)
+		--data bits are contained in data_in(2 t/m 9)
+                buttons				<= (others => '0');
+                y_out           <= (others => '0');
+                x_out				<= (others => '0');
+		bit11_reg_rst   <= '1';
+
+		if(handshake_in = '0') then
+			new_state <= data_1;
+		else
+			new_state <= state;
+		end if;
 		
 
         end case;

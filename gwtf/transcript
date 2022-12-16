@@ -12,8 +12,8 @@
 # //  18 U.S.C. Section 1905.
 # //
 # vsim timebase_tb_behav_cfg -lib work -L TSMCLib -do "/data/public/common/software/opprog/do_files/init_simulator.do" 
-# Start time: 15:26:15 on Dec 09,2022
-# ** Note: (vsim-3812) Design is being optimized...
+# Start time: 15:52:06 on Dec 16,2022
+# ** Note: (vsim-8009) Loading existing optimized design _opt2
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
@@ -24,11 +24,11 @@
 # Loading work.timebase(behav)#1
 # do /data/public/common/software/opprog/do_files/init_simulator.do
 run
-# End time: 15:27:46 on Dec 09,2022, Elapsed time: 0:01:31
+# End time: 15:55:08 on Dec 16,2022, Elapsed time: 0:03:02
 # Errors: 0, Warnings: 0
 # reading modelsim.ini
 # vsim timebase_tb_behav_cfg -lib work -L TSMCLib 
-# Start time: 15:27:47 on Dec 09,2022
+# Start time: 15:55:08 on Dec 16,2022
 # ** Note: (vsim-3813) Design is being optimized due to module recompilation...
 # Loading std.standard
 # Loading std.textio(body)
@@ -39,42 +39,12 @@ run
 # Loading work.timebase_behav_cfg#1
 # Loading work.timebase(behav)#1
 run
-# End time: 15:40:16 on Dec 09,2022, Elapsed time: 0:12:29
-# Errors: 0, Warnings: 0
-# reading modelsim.ini
-# vsim timebase_tb_behav_cfg -lib work -L TSMCLib 
-# Start time: 15:40:17 on Dec 09,2022
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading ieee.numeric_std(body)
-# Loading work.timebase_tb_behav_cfg#1
-# Loading work.timebase_tb(behav)#1
-# Loading work.timebase_behav_cfg#1
-# Loading work.timebase(behav)#1
-run
-# End time: 15:40:55 on Dec 09,2022, Elapsed time: 0:00:38
-# Errors: 0, Warnings: 0
-# reading modelsim.ini
-# vsim timebase_tb_behav_cfg -lib work -L TSMCLib 
-# Start time: 15:40:56 on Dec 09,2022
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading ieee.numeric_std(body)
-# Loading work.timebase_tb_behav_cfg#1
-# Loading work.timebase_tb(behav)#1
-# Loading work.timebase_behav_cfg#1
-# Loading work.timebase(behav)#1
-run
-# End time: 16:09:41 on Dec 09,2022, Elapsed time: 0:28:45
+# End time: 15:57:37 on Dec 16,2022, Elapsed time: 0:02:29
 # Errors: 0, Warnings: 0
 # reading modelsim.ini
 # vsim edge_detector_tb_behav_cfg -lib work -L TSMCLib 
-# Start time: 16:09:42 on Dec 09,2022
-# ** Note: (vsim-3812) Design is being optimized...
+# Start time: 15:57:37 on Dec 16,2022
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
@@ -83,3 +53,138 @@ run
 # Loading work.edge_detector_behav_cfg#1
 # Loading work.edge_detector(behav)#1
 run
+# End time: 15:59:06 on Dec 16,2022, Elapsed time: 0:01:29
+# Errors: 0, Warnings: 0
+# reading modelsim.ini
+# vsim edge_detector_tb_behav_cfg -lib work -L TSMCLib 
+# Start time: 15:59:06 on Dec 16,2022
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.edge_detector_tb_behav_cfg#1
+# Loading work.edge_detector_tb(behav)#1
+# Loading work.edge_detector_behav_cfg#1
+# Loading work.edge_detector(behav)#1
+run
+exit -sim
+# End time: 16:00:11 on Dec 16,2022, Elapsed time: 0:01:05
+# Errors: 0, Warnings: 0
+# reading modelsim.ini
+# vsim edge_detector_tb_behav_cfg -lib work -L TSMCLib 
+# Start time: 16:07:27 on Dec 16,2022
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.edge_detector_tb_behav_cfg#1
+# Loading work.edge_detector_tb(behav)#1
+# Loading work.edge_detector_behav_cfg#1
+# Loading work.edge_detector(behav)#1
+run
+exit -sim
+# End time: 16:07:57 on Dec 16,2022, Elapsed time: 0:00:30
+# Errors: 0, Warnings: 0
+# reading modelsim.ini
+# vsim timebase_tb_behav_cfg -lib work -L TSMCLib 
+# Start time: 16:13:01 on Dec 16,2022
+# ** Note: (vsim-8009) Loading existing optimized design _opt2
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.timebase_tb_behav_cfg#1
+# Loading work.timebase_tb(behav)#1
+# Loading work.timebase_behav_cfg#1
+# Loading work.timebase(behav)#1
+run
+add wave sim:/timebase_tb/*
+add wave sim:/timebase_tb/test/*
+run
+# End time: 16:15:26 on Dec 16,2022, Elapsed time: 0:02:25
+# Errors: 0, Warnings: 0
+# reading modelsim.ini
+# vsim timebase_tb_behav_cfg -lib work -L TSMCLib 
+# Start time: 16:15:26 on Dec 16,2022
+# ** Note: (vsim-8009) Loading existing optimized design _opt2
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.timebase_tb_behav_cfg#1
+# Loading work.timebase_tb(behav)#1
+# Loading work.timebase_behav_cfg#1
+# Loading work.timebase(behav)#1
+run
+# End time: 16:24:24 on Dec 16,2022, Elapsed time: 0:08:58
+# Errors: 0, Warnings: 0
+# reading modelsim.ini
+# vsim timebase_tb_behav_cfg -lib work -L TSMCLib 
+# Start time: 16:24:25 on Dec 16,2022
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.timebase_tb_behav_cfg#1
+# Loading work.timebase_tb(behav)#1
+# Loading work.timebase_behav_cfg#1
+# Loading work.timebase(behav)#1
+run
+# End time: 16:25:54 on Dec 16,2022, Elapsed time: 0:01:29
+# Errors: 0, Warnings: 0
+# reading modelsim.ini
+# vsim timebase_tb_behav_cfg -lib work -L TSMCLib 
+# Start time: 16:25:55 on Dec 16,2022
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.timebase_tb_behav_cfg#1
+# Loading work.timebase_tb(behav)#1
+# Loading work.timebase_behav_cfg#1
+# Loading work.timebase(behav)#1
+run
+exit -sim
+# End time: 16:26:18 on Dec 16,2022, Elapsed time: 0:00:23
+# Errors: 0, Warnings: 0
+wfl2vsd -o counter15k.vsd vsim.wlf
+# invalid command name "wfl2vsd"
+wlf2vsd -o counter15k.vsd vsim.wlf
+# invalid command name "wlf2vsd"
+wlf2vcd -o counter15k.vsd vsim.wlf
+wlf2vcd -o counter15k.vcd vsim.wlf
+# reading modelsim.ini
+# vsim edge_detector_tb_behav_cfg -lib work -L TSMCLib 
+# Start time: 16:29:21 on Dec 16,2022
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.edge_detector_tb_behav_cfg#1
+# Loading work.edge_detector_tb(behav)#1
+# Loading work.edge_detector_behav_cfg#1
+# Loading work.edge_detector(behav)#1
+run
+exit -sim
+# End time: 16:29:36 on Dec 16,2022, Elapsed time: 0:00:15
+# Errors: 0, Warnings: 0
+wlf2vcd -o edgedet.vcd vsim.wlf
+# reading modelsim.ini
+# vsim counter25mhz_tb_behav_cfg -lib work -L TSMCLib 
+# Start time: 16:30:39 on Dec 16,2022
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.counter25mhz_tb_behav_cfg#1
+# Loading work.counter25mhz_tb(behav)#1
+# Loading work.counter25mhz_behav_cfg#1
+# Loading work.counter25mhz(behav)#1
+run
+exit -sim
+# End time: 16:31:35 on Dec 16,2022, Elapsed time: 0:00:56
+# Errors: 0, Warnings: 0
+wlf2vcd -o counter25M.vcd vsim.wlf

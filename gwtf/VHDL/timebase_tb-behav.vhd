@@ -18,8 +18,9 @@ begin
    test: timebase port map (clk, edge15k, reset, count_out);
    clk <= '0' after 0 ns,
           '1' after 20 ns when clk /= '1' else '0' after 20 ns;
-   edge15k <= '0' after 0 ns;
+   edge15k <= '0' after 0 ns,
+	  '1' after 100 ns when edge15k /= '1' else '0' after 20 ns;
    reset <= '1' after 0 ns,
-            '0' after 80 ns;
+            '0' after 120 ns;
 end behav;
 
