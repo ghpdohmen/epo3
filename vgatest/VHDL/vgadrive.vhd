@@ -5,6 +5,8 @@ entity vgadrive is
 port( clock            : in std_logic;  -- 25.175 Mhz clock
         red, green, blue : in std_logic;  -- input values for RGB signals
 	enable : out std_logic;
+	scale_h : out std_logic;
+	scale_v : out std_logic;
         Rout, Gout, Bout, H, V : out std_logic); -- VGA drive signals
   -- The signals Rout, Gout, Bout, H and V are output to the monitor.
   -- The row and column outputs are used to know when to assert red,

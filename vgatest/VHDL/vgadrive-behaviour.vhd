@@ -32,19 +32,24 @@ begin
 
   process
     variable vertical, horizontal : counter;  -- define counters
+    variable scale_vertical, scale_horizontal : Integer;
   begin
     wait until clock = '1';
 
   -- increment counters
       if ( horizontal < A - 1 ) then
         horizontal := horizontal + 1;
+	scale_horizontal := scale_horizontal + 1;
       else
         horizontal := (others => '0');
+	scale_horizontal := 0;
 
         if  vertical < O - 1  then -- less than oh
           vertical := vertical + 1;
+	  scale_vertical := scale_vertical + 1;
         else
           vertical := (others => '0');       -- is set to zero
+	  scale_vertical := 0;
         end if;
       end if;
 
@@ -74,6 +79,22 @@ begin
         Gout <= '0';
         Bout <= '0';
       end if;
+
+	if horizontal < 640 then
+		if (scale_horizontal mod 32) = 0 then 
+			scale_h <= '1';
+		else
+			scale_h <= '0';
+		end if; 
+	end if;
+	if vertical < 480 then
+		if (scale_vertical mod 32) = 0 then 
+			scale_v <= '1';
+		else
+			scale_v <= '0';
+		end if;
+	end if; 
+
     -- mapping of the variable to the signals
      -- negative signs are because the conversion bits are reversed
     

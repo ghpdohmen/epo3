@@ -8,6 +8,8 @@ architecture behaviour of vgatest is
 component vgadrive is
     port( clock          : in std_logic;  -- 25.175 Mhz clock
         red, green, blue : in std_logic;  -- input values for RGB signals
+	scale_h : out std_logic;
+	scale_v : out std_logic;
         Rout, Gout, Bout, H, V, enable : out std_logic); -- VGA drive signals
   end component;
   
@@ -19,7 +21,7 @@ begin
   -- for debugging: to view the bit order
   VGA : component vgadrive
     port map ( clock => clock, red => red, green => green, blue => blue,
-               enable => enable,
+               enable => enable, scale_h => scale_h, scale_v => scale_v,
                Rout => R, Gout => G, Bout => B, H => H, V => V);
  
   -- red square from 0,0 to 360, 350
