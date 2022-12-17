@@ -1,6 +1,6 @@
 # ####################################################################
 
-#  Created by Genus(TM) Synthesis Solution 17.11-s014_1 on Tue Dec 06 11:34:16 CET 2022
+#  Created by Genus(TM) Synthesis Solution 17.11-s014_1 on Sat Dec 17 16:23:01 CET 2022
 
 # ####################################################################
 
@@ -15,14 +15,14 @@ current_design input_0
 set_load -pin_load 1.0 [get_ports {mouseX[2]}]
 set_load -pin_load 1.0 [get_ports {mouseX[1]}]
 set_load -pin_load 1.0 [get_ports {mouseX[0]}]
-set_load -pin_load 1.0 [get_ports signX]
+set_load -pin_load 1.0 [get_ports {buttons[4]}]
+set_load -pin_load 1.0 [get_ports {buttons[3]}]
+set_load -pin_load 1.0 [get_ports {buttons[2]}]
+set_load -pin_load 1.0 [get_ports {buttons[1]}]
+set_load -pin_load 1.0 [get_ports {buttons[0]}]
 set_load -pin_load 1.0 [get_ports {mouseY[2]}]
 set_load -pin_load 1.0 [get_ports {mouseY[1]}]
 set_load -pin_load 1.0 [get_ports {mouseY[0]}]
-set_load -pin_load 1.0 [get_ports signY]
-set_load -pin_load 1.0 [get_ports LMB]
-set_load -pin_load 1.0 [get_ports RMB]
-set_load -pin_load 1.0 [get_ports MMB]
 set_load -pin_load 1.0 [get_ports Handshake_out]
 set_load -pin_load 1.0 [get_ports DataSwitch]
 set_load -pin_load 1.0 [get_ports ClkSwitch]

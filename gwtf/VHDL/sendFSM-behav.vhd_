@@ -25,7 +25,7 @@ begin
         end if;
     end process;
 
-    process (state, reset, countIn, clk15k) begin
+    process (state, reset, countIn) begin
         case state is
             when reset_state =>
                 clkTrans <= '0';

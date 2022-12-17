@@ -32,7 +32,7 @@ begin
                 dataTrans <= '0';
                 timebaseRst <= '1';
                 regRst <= '1';
-                dataMUX <= '0';
+                dataMUX <= '1';
                 if(reset = '0') then
                     new_state <= clklowstate;
 		else
