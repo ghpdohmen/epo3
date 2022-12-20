@@ -1,1 +1,1 @@
-ssh -XY ghpdohmen@ce-epo3-cad.ewi.tudelft.nl cd /home/ghpdohmen/epo3/epo3/gwtf/backend/syn/run\; genus -files ../tcl/syn2.tcl
+ssh -XY etuinstra@ce-epo3-cad.ewi.tudelft.nl cd /home/etuinstra/epo3/gwtf/backend/syn/run\; genus -files ../tcl/syn2.tcl
