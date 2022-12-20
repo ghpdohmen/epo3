@@ -11,7 +11,7 @@ architecture behaviour of vgadrive is
   -- row counter will go from 0 to 524; column counter from 0 to 799
   subtype counter is std_logic_vector(9 downto 0);
   subtype counter_int is INTEGER RANGE 0 to 800;
-  signal vertical, horizontal : counter;  -- define counters
+  signal vertical, horizontal : counter_int;  -- define counters
   signal scale_vertical, scale_horizontal : counter_int;
 
   constant B : natural := 93;  -- horizontal blank: 3.77 us
@@ -30,36 +30,43 @@ architecture behaviour of vgadrive is
    
 begin
 
-process(clock)
+process(clock,reset)
 variable scale_horizontal_counter, scale_vertical_counter : INTEGER RANGE 0 TO 800;
-variable horizontal_counter, vertical_counter : std_logic_vector(9 downto 0);
+variable horizontal_counter, vertical_counter : INTEGER RANGE 0 TO 800;
 begin
 if(clock='1' and clock'event) then
-
   -- increment counters
       if ( horizontal_counter = A - 1 ) then
-        horizontal_counter := horizontal_counter + 1;
-	scale_horizontal_counter := scale_horizontal_counter + 1;
-      else
-        horizontal_counter := (others => '0');
-	scale_horizontal <= 0;
-
-        if  vertical_counter = O - 1  then -- less than oh
+        
+        horizontal_counter := 0;
+	scale_horizontal_counter := 0;
+	if  vertical_counter = O - 1  then -- less than oh
+          vertical_counter := 0;       -- is set to zero
+	  scale_vertical_counter := 0;
+        else
           vertical_counter := vertical_counter + 1;
 	  scale_vertical_counter := scale_vertical_counter + 1;
-        else
-          vertical_counter := (others => '0');       -- is set to zero
-	  scale_vertical <= 0;
         end if;
-
+      else
+        
+	horizontal_counter := horizontal_counter + 1;
+	scale_horizontal_counter := scale_horizontal_counter + 1;
       end if;
-
 end if;
-  vertical <= vertical_counter;
-  horizontal <= horizontal_counter;
-  scale_vertical <= scale_vertical_counter;
-  scale_horizontal <= scale_horizontal_counter;  
-  end process;
+
+if reset = '1' then
+	horizontal_counter := 0;
+	scale_horizontal_counter := 0;
+	vertical_counter := 0;
+	scale_vertical_counter := 0;
+else
+	vertical <= vertical_counter;
+  	horizontal <= horizontal_counter;
+  	scale_vertical <= scale_vertical_counter;
+  	scale_horizontal <= scale_horizontal_counter; 
+end if;   
+
+end process;
 
 -- define H pulse
 hpulse: process(horizontal)
