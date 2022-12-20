@@ -11,12 +11,13 @@ begin
 	process(clk)
 		begin
 			if (rising_edge(clk)) then
-				if(edge15k = '1') then
-					if(reset = '1') then
+				if(reset = '1') then
 						count <= (others => '0');
 					else
+						if(edge15k = '1') then
 						count <= new_count;
 					end if;
+				
 				end if;
 			end if;
 	end process;

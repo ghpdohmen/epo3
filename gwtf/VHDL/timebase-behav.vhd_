@@ -6,24 +6,21 @@ use IEEE.numeric_std.all;
 
 architecture behav of timebase is
 	signal count, new_count: unsigned (3 downto 0);
-begin
+begin	
+
 	process(clk)
 		begin
 			if (rising_edge(clk)) then
-				if(reset = '1') then
-					count <= (others => '0');
-				else
-					count <= new_count;
+				if(edge15k = '1') then
+					if(reset = '1') then
+						count <= (others => '0');
+					else
+						count <= new_count;
+					end if;
 				end if;
 			end if;
 	end process;
 
-	--process(reset) --beetje jank, werkt mogelijk niet. ~Guus
-	--	begin
-	--		if(reset = '1') then
-	--			count <= (others => '0');
-	--		end if;
-	--end process;
 
 	process (count)
 	begin

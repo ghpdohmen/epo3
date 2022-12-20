@@ -12,7 +12,6 @@ entity sendFSM is
         dataTrans:      out std_logic; --mouse data transistor
         timebaseRst:    out std_logic;  -- 25Mhz counter.
         dataToReg:      out std_logic_vector (8 downto 0); --data stored in the register;
-	    cntreset:       out std_logic;
         regRst:         out std_logic; --shift register reset
         dataMUX:        out std_logic --multiplexer for the data line. '1' is the register and 0 is the FSM.
     );

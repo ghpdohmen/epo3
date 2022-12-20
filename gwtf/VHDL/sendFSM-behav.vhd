@@ -32,7 +32,8 @@ begin
                 dataTrans <= '0';
                 timebaseRst <= '1';
                 regRst <= '1';
-                dataMUX <= '1';
+                dataMUX <= '0';
+		dataToReg <= "000000000";
                 if(reset = '0') then
                     new_state <= clklowstate;
 		else
@@ -45,6 +46,11 @@ begin
                 timebaseRst <= '0';
                 regRst <= '1';
                 dataMUX <= '0';
+		if(actBit = '1') then
+                    dataToReg <= "000010111"; --inverted for the transistor, F4 including parity bit
+                else
+                    dataToReg <= "000000000"; --inverted for the transistor, FF including parity bit.
+                end if;
                 if(to_integer(unsigned(countIn)) >= 2750) then
                     new_state <= bothlowstate;
 		else
@@ -56,6 +62,7 @@ begin
                 dataTrans <= '1';
                 regRst <= '1';
                 dataMUX <= '0';
+		timebaseRst <= '0';
                 if(actBit = '1') then
                     dataToReg <= "000010111"; --inverted for the transistor, F4 including parity bit
                 else
@@ -67,7 +74,9 @@ begin
                 clkTrans <= '0';
                 regRst <= '0';
                 dataMUX <= '1';
-
+		dataTrans <= '0';
+		timebaseRst <= '0';
+		
         end case;
     end process;
 

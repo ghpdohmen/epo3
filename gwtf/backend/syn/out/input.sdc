@@ -1,6 +1,6 @@
 # ####################################################################
 
-#  Created by Genus(TM) Synthesis Solution 17.11-s014_1 on Sat Dec 17 16:23:01 CET 2022
+#  Created by Genus(TM) Synthesis Solution 17.11-s014_1 on Tue Dec 20 09:20:30 CET 2022
 
 # ####################################################################
 
@@ -12,6 +12,7 @@ set_units -time 1000.0ps
 # Set the current design
 current_design input_0
 
+create_clock -name "clk" -add -period 30.0 -waveform {0.0 15.0} [get_ports clk]
 set_load -pin_load 1.0 [get_ports {mouseX[2]}]
 set_load -pin_load 1.0 [get_ports {mouseX[1]}]
 set_load -pin_load 1.0 [get_ports {mouseX[0]}]
@@ -27,6 +28,25 @@ set_load -pin_load 1.0 [get_ports Handshake_out]
 set_load -pin_load 1.0 [get_ports DataSwitch]
 set_load -pin_load 1.0 [get_ports ClkSwitch]
 set_clock_gating_check -setup 0.0 
+set_input_delay -clock [get_clocks clk] -add_delay 0.2 [get_ports Handshake_in]
+set_input_delay -clock [get_clocks clk] -add_delay 0.2 [get_ports Data_in]
+set_input_delay -clock [get_clocks clk] -add_delay 0.2 [get_ports Clk15k]
+set_input_delay -clock [get_clocks clk] -add_delay 0.2 [get_ports clk]
+set_input_delay -clock [get_clocks clk] -add_delay 0.2 [get_ports reset]
+set_output_delay -clock [get_clocks clk] -add_delay 0.5 [get_ports {mouseX[2]}]
+set_output_delay -clock [get_clocks clk] -add_delay 0.5 [get_ports {mouseX[1]}]
+set_output_delay -clock [get_clocks clk] -add_delay 0.5 [get_ports {mouseX[0]}]
+set_output_delay -clock [get_clocks clk] -add_delay 0.5 [get_ports {buttons[4]}]
+set_output_delay -clock [get_clocks clk] -add_delay 0.5 [get_ports {buttons[3]}]
+set_output_delay -clock [get_clocks clk] -add_delay 0.5 [get_ports {buttons[2]}]
+set_output_delay -clock [get_clocks clk] -add_delay 0.5 [get_ports {buttons[1]}]
+set_output_delay -clock [get_clocks clk] -add_delay 0.5 [get_ports {buttons[0]}]
+set_output_delay -clock [get_clocks clk] -add_delay 0.5 [get_ports {mouseY[2]}]
+set_output_delay -clock [get_clocks clk] -add_delay 0.5 [get_ports {mouseY[1]}]
+set_output_delay -clock [get_clocks clk] -add_delay 0.5 [get_ports {mouseY[0]}]
+set_output_delay -clock [get_clocks clk] -add_delay 0.5 [get_ports Handshake_out]
+set_output_delay -clock [get_clocks clk] -add_delay 0.5 [get_ports DataSwitch]
+set_output_delay -clock [get_clocks clk] -add_delay 0.5 [get_ports ClkSwitch]
 set_driving_cell -lib_cell INVD0BWP7T -library tcb018gbwp7twc -pin "ZN" [get_ports Handshake_in]
 set_driving_cell -lib_cell INVD0BWP7T -library tcb018gbwp7twc -pin "ZN" [get_ports Data_in]
 set_driving_cell -lib_cell INVD0BWP7T -library tcb018gbwp7twc -pin "ZN" [get_ports Clk15k]

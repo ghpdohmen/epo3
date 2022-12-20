@@ -258,7 +258,7 @@ begin
 		bit11_reg_rst   <= '1';
 		new_state		<= data_2_cnt_rst_2;
 	    when data_2_cnt_rst_2 =>
-`		cntReset15k     <= '0';
+		cntReset15k     <= '0';
                 actBit          <= '0';
                 send_reset      <= '1';
                 handshake_out   <= '0';
