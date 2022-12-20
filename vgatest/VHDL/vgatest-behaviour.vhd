@@ -27,15 +27,13 @@ begin
   -- red square from 0,0 to 360, 350
   -- green square from 0,250 to 360, 640
   -- blue square from 120,150 to 480,500
-  RGB : process
+  RGB : process(clock)
   begin
-    wait until clock = '1';
-    
-    red <= '0';
-    green <= '1';
-    blue <= '1';
-
-
+    if(clock='1' and clock'event) then
+       red <= '0';
+       green <= '1';
+       blue <= '1';
+     end if;
   end process;
 end behaviour;
 
