@@ -1,6 +1,6 @@
 # ####################################################################
 
-#  Created by Genus(TM) Synthesis Solution 17.11-s014_1 on Tue Nov 29 11:28:21 CET 2022
+#  Created by Genus(TM) Synthesis Solution 17.11-s014_1 on Wed Dec 21 13:06:33 CET 2022
 
 # ####################################################################
 
@@ -26,6 +26,7 @@ set_load -pin_load 1.0 [get_ports {data_out[1]}]
 set_load -pin_load 1.0 [get_ports {data_out[0]}]
 set_clock_gating_check -setup 0.0 
 set_input_delay -clock [get_clocks clk] -add_delay 0.2 [get_ports clk]
+set_input_delay -clock [get_clocks clk] -add_delay 0.2 [get_ports edge15k]
 set_input_delay -clock [get_clocks clk] -add_delay 0.2 [get_ports data_in]
 set_input_delay -clock [get_clocks clk] -add_delay 0.2 [get_ports reset]
 set_output_delay -clock [get_clocks clk] -add_delay 0.5 [get_ports {data_out[10]}]
@@ -40,6 +41,7 @@ set_output_delay -clock [get_clocks clk] -add_delay 0.5 [get_ports {data_out[2]}
 set_output_delay -clock [get_clocks clk] -add_delay 0.5 [get_ports {data_out[1]}]
 set_output_delay -clock [get_clocks clk] -add_delay 0.5 [get_ports {data_out[0]}]
 set_driving_cell -lib_cell INVD0BWP7T -library tcb018gbwp7twc -pin "ZN" [get_ports clk]
+set_driving_cell -lib_cell INVD0BWP7T -library tcb018gbwp7twc -pin "ZN" [get_ports edge15k]
 set_driving_cell -lib_cell INVD0BWP7T -library tcb018gbwp7twc -pin "ZN" [get_ports data_in]
 set_driving_cell -lib_cell INVD0BWP7T -library tcb018gbwp7twc -pin "ZN" [get_ports reset]
 set_wire_load_mode "segmented"

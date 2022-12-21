@@ -38,7 +38,7 @@ component shiftregister_11bit is
     	edge15k:	   in std_logic;
         data_in:    in std_logic;
         reset:      in std_logic;
-        data_out:   out std_logic_vector(10 downto 0)
+        data_out:   buffer std_logic_vector(10 downto 0)
     );
 end component;
 

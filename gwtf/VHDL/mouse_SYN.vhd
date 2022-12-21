@@ -150,10 +150,6 @@ architecture synthesised of mouse is
     port(A1, A2 : in std_logic; Z : out std_logic);
   end component;
 
-  component AO22D0BWP7T
-    port(A1, A2, B1, B2 : in std_logic; Z : out std_logic);
-  end component;
-
   component LHQD1BWP7T
     port(E, D : in std_logic; Q : out std_logic);
   end component;
@@ -184,6 +180,10 @@ architecture synthesised of mouse is
 
   component AO21D0BWP7T
     port(A1, A2, B : in std_logic; Z : out std_logic);
+  end component;
+
+  component AO22D0BWP7T
+    port(A1, A2, B1, B2 : in std_logic; Z : out std_logic);
   end component;
 
   component ND2D4BWP7T
@@ -223,14 +223,12 @@ architecture synthesised of mouse is
   signal mfsm_n_49, mfsm_n_82, muxFSM, muxReg, mx_n_0 : std_logic;
   signal mx_n_1, n_0, output_edgedet, sfsm_n_0, sfsm_n_1 : std_logic;
   signal sfsm_n_2, sfsm_n_3, sfsm_n_4, sfsm_n_5, sfsm_n_6 : std_logic;
-  signal sfsm_n_7, sfsm_n_8, sfsm_n_9, sr11_data_out_0_70, sr11_data_out_1_71 : std_logic;
-  signal sr11_data_out_5_75, sr11_n_0, sr11_n_1, sr11_n_2, sr11_n_3 : std_logic;
-  signal sr11_n_4, sr11_n_5, sr11_n_6, sr11_n_7, sr11_n_8 : std_logic;
-  signal sr11_n_9, sr_n_0, sr_n_1, sr_n_2, sr_n_3 : std_logic;
-  signal sr_n_4, sr_n_5, sr_n_6, sr_n_7, sr_n_8 : std_logic;
-  signal sr_n_9, sr_n_10, sr_n_11, tb_n_0, tb_n_1 : std_logic;
-  signal tb_n_2, tb_n_3, tb_n_4, tb_n_5, tb_n_6 : std_logic;
-  signal xflipfloprst, yflipfloprst : std_logic;
+  signal sfsm_n_7, sfsm_n_8, sfsm_n_9, sr11_data_out_0_79, sr11_data_out_1_80 : std_logic;
+  signal sr11_data_out_5_84, sr11_n_0, sr_n_0, sr_n_1, sr_n_2 : std_logic;
+  signal sr_n_3, sr_n_4, sr_n_5, sr_n_6, sr_n_7 : std_logic;
+  signal sr_n_8, sr_n_9, sr_n_10, sr_n_11, tb_n_0 : std_logic;
+  signal tb_n_1, tb_n_2, tb_n_3, tb_n_4, tb_n_5 : std_logic;
+  signal tb_n_6, xflipfloprst, yflipfloprst : std_logic;
 
 begin
 
@@ -325,24 +323,15 @@ begin
   flipflop11_drc_bufs : BUFFD4BWP7T port map(I => flipflop11_Q_9, Z => buttons(0));
   flipflop2_Q_reg : EDFQD0BWP7T port map(CP => clk, D => mouse_x(1), E => xflipfloprst, Q => flipflop2_Q_9);
   flipflop2_drc_bufs : BUFFD4BWP7T port map(I => flipflop2_Q_9, Z => mouseX(1));
-  sr11_data_out_reg_1 : DFQD1BWP7T port map(CP => clk, D => sr11_n_7, Q => sr11_data_out_1_71);
-  sr11_data_out_reg_0 : DFQD1BWP7T port map(CP => clk, D => sr11_n_6, Q => sr11_data_out_0_70);
-  sr11_data_out_reg_5 : DFQD1BWP7T port map(CP => clk, D => sr11_n_8, Q => sr11_data_out_5_75);
-  sr11_data_out_reg_4 : DFQD1BWP7T port map(CP => clk, D => sr11_n_2, Q => data_sr_11bit(4));
-  sr11_data_out_reg_7 : DFQD1BWP7T port map(CP => clk, D => sr11_n_3, Q => data_sr_11bit(7));
-  sr11_data_out_reg_2 : DFQD1BWP7T port map(CP => clk, D => sr11_n_4, Q => data_sr_11bit(2));
-  sr11_data_out_reg_6 : DFQD1BWP7T port map(CP => clk, D => sr11_n_9, Q => data_sr_11bit(6));
-  sr11_data_out_reg_3 : DFQD1BWP7T port map(CP => clk, D => sr11_n_5, Q => data_sr_11bit(3));
-  sr11_g282 : AO22D0BWP7T port map(A1 => sr11_data_out_5_75, A2 => sr11_n_1, B1 => sr11_n_0, B2 => data_sr_11bit(6), Z => sr11_n_9);
-  sr11_g283 : AO22D0BWP7T port map(A1 => data_sr_11bit(4), A2 => sr11_n_1, B1 => sr11_n_0, B2 => sr11_data_out_5_75, Z => sr11_n_8);
-  sr11_g284 : AO22D0BWP7T port map(A1 => sr11_data_out_0_70, A2 => sr11_n_1, B1 => sr11_n_0, B2 => sr11_data_out_1_71, Z => sr11_n_7);
-  sr11_g285 : AO22D0BWP7T port map(A1 => sr11_n_1, A2 => Data_in, B1 => sr11_n_0, B2 => sr11_data_out_0_70, Z => sr11_n_6);
-  sr11_g286 : AO22D0BWP7T port map(A1 => data_sr_11bit(2), A2 => sr11_n_1, B1 => sr11_n_0, B2 => data_sr_11bit(3), Z => sr11_n_5);
-  sr11_g287 : AO22D0BWP7T port map(A1 => sr11_data_out_1_71, A2 => sr11_n_1, B1 => sr11_n_0, B2 => data_sr_11bit(2), Z => sr11_n_4);
-  sr11_g288 : AO22D0BWP7T port map(A1 => data_sr_11bit(6), A2 => sr11_n_1, B1 => sr11_n_0, B2 => data_sr_11bit(7), Z => sr11_n_3);
-  sr11_g289 : AO22D0BWP7T port map(A1 => data_sr_11bit(3), A2 => sr11_n_1, B1 => sr11_n_0, B2 => data_sr_11bit(4), Z => sr11_n_2);
-  sr11_g290 : NR2XD0BWP7T port map(A1 => sr11_n_0, A2 => reset, ZN => sr11_n_1);
-  sr11_g291 : INVD1BWP7T port map(I => output_edgedet, ZN => sr11_n_0);
+  sr11_data_out_reg_1 : EDFKCNQD1BWP7T port map(CP => clk, CN => sr11_n_0, D => sr11_data_out_0_79, E => output_edgedet, Q => sr11_data_out_1_80);
+  sr11_data_out_reg_0 : EDFKCNQD1BWP7T port map(CP => clk, CN => sr11_n_0, D => Data_in, E => output_edgedet, Q => sr11_data_out_0_79);
+  sr11_data_out_reg_3 : EDFKCNQD1BWP7T port map(CP => clk, CN => sr11_n_0, D => data_sr_11bit(2), E => output_edgedet, Q => data_sr_11bit(3));
+  sr11_data_out_reg_4 : EDFKCNQD1BWP7T port map(CP => clk, CN => sr11_n_0, D => data_sr_11bit(3), E => output_edgedet, Q => data_sr_11bit(4));
+  sr11_data_out_reg_5 : EDFKCNQD1BWP7T port map(CP => clk, CN => sr11_n_0, D => data_sr_11bit(4), E => output_edgedet, Q => sr11_data_out_5_84);
+  sr11_data_out_reg_7 : EDFKCNQD1BWP7T port map(CP => clk, CN => sr11_n_0, D => data_sr_11bit(6), E => output_edgedet, Q => data_sr_11bit(7));
+  sr11_data_out_reg_6 : EDFKCNQD1BWP7T port map(CP => clk, CN => sr11_n_0, D => sr11_data_out_5_84, E => output_edgedet, Q => data_sr_11bit(6));
+  sr11_data_out_reg_2 : EDFKCNQD1BWP7T port map(CP => clk, CN => sr11_n_0, D => sr11_data_out_1_80, E => output_edgedet, Q => data_sr_11bit(2));
+  sr11_g35 : INVD1BWP7T port map(I => reset, ZN => sr11_n_0);
   flipflop3_Q_reg : EDFQD0BWP7T port map(CP => clk, D => mouse_x(0), E => xflipfloprst, Q => flipflop3_Q_9);
   flipflop3_drc_bufs : BUFFD4BWP7T port map(I => flipflop3_Q_9, Z => mouseX(0));
   flipflop4_Q_reg : EDFQD0BWP7T port map(CP => clk, D => mouse_y(0), E => yflipfloprst, Q => flipflop4_Q_9);

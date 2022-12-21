@@ -5,9 +5,9 @@ set_db use_scan_seqs_for_non_dft false
 
 include ../tcl/read_hdl.tcl
 
-elaborate mouse_behav_cfg
+elaborate shiftregister_11bit_behav_cfg
 
-include ../in/mouse.sdc
+include ../in/shiftregister_11bit.sdc
 
 synthesize -to_mapped
 #set_db syn_generic_effort medium
@@ -16,9 +16,9 @@ synthesize -to_mapped
 
 ungroup -all -flat
 insert_tiehilo_cells
-write_hdl -mapped > ../out/mouse.v
-write_sdf > ../out/mouse.sdf
-write_sdc > ../out/mouse.sdc
+write_hdl -mapped > ../out/shiftregister_11bit.v
+write_sdf > ../out/shiftregister_11bit.sdf
+write_sdc > ../out/shiftregister_11bit.sdc
 
 report timing
 report gates

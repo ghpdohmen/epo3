@@ -69,7 +69,6 @@ component sendFSM is
         timebaseRst :   out std_logic;  -- 25Mhz counter.
         dataToReg   :   out std_logic_vector (8 downto 0); --data stored in the register;
         regRst      :   out std_logic; --shift register reset
-	cntReset	   :	out std_logic;	--counter reset
         dataMUX     :   out std_logic --multiplexer for the data line. '1' is the register and 0 is the FSM.
     );
 end component;

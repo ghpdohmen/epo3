@@ -1,6 +1,6 @@
 # ####################################################################
 
-#  Created by Genus(TM) Synthesis Solution 17.11-s014_1 on Tue Dec 20 09:41:48 CET 2022
+#  Created by Genus(TM) Synthesis Solution 17.11-s014_1 on Wed Dec 21 13:05:51 CET 2022
 
 # ####################################################################
 
@@ -25,7 +25,6 @@ set_load -pin_load 1.0 [get_ports {dataToReg[3]}]
 set_load -pin_load 1.0 [get_ports {dataToReg[2]}]
 set_load -pin_load 1.0 [get_ports {dataToReg[1]}]
 set_load -pin_load 1.0 [get_ports {dataToReg[0]}]
-set_load -pin_load 1.0 [get_ports cntreset]
 set_load -pin_load 1.0 [get_ports regRst]
 set_load -pin_load 1.0 [get_ports dataMUX]
 set_clock_gating_check -setup 0.0 
@@ -56,7 +55,6 @@ set_output_delay -clock [get_clocks clk] -add_delay 0.5 [get_ports {dataToReg[3]
 set_output_delay -clock [get_clocks clk] -add_delay 0.5 [get_ports {dataToReg[2]}]
 set_output_delay -clock [get_clocks clk] -add_delay 0.5 [get_ports {dataToReg[1]}]
 set_output_delay -clock [get_clocks clk] -add_delay 0.5 [get_ports {dataToReg[0]}]
-set_output_delay -clock [get_clocks clk] -add_delay 0.5 [get_ports cntreset]
 set_output_delay -clock [get_clocks clk] -add_delay 0.5 [get_ports regRst]
 set_output_delay -clock [get_clocks clk] -add_delay 0.5 [get_ports dataMUX]
 set_driving_cell -lib_cell INVD0BWP7T -library tcb018gbwp7twc -pin "ZN" [get_ports actBit]

@@ -1,7 +1,7 @@
 #*********************************************************
-# synthesize script for cell: mouse
+# synthesize script for cell: shiftregister_11bit
 # company: ontwerp_practicum
-# designer: etuinstra
+# designer: ghpdohmen
 #*********************************************************
 set_db lib_search_path /data/designkit/tsmc-180nm/lib/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcb018gbwp7t_270a/
 set_db init_hdl_search_path ../../../VHDL/
@@ -9,41 +9,14 @@ set_db library {tcb018gbwp7twc.lib}
 set_db use_scan_seqs_for_non_dft false
 
 #include backend/syn/tcl/read_hdl.tcl
-read_hdl -vhdl {counter25mhz.vhd}
-read_hdl -vhdl {edge_detector.vhd}
-read_hdl -vhdl {flipflop.vhd}
-read_hdl -vhdl {main_fsm.vhd}
-read_hdl -vhdl {mouse.vhd}
-read_hdl -vhdl {mux.vhd}
-read_hdl -vhdl {sendFSM.vhd}
 read_hdl -vhdl {shfitregister_11bit.vhd}
-read_hdl -vhdl {shiftregister_9bit.vhd}
-read_hdl -vhdl {timebase.vhd}
-read_hdl -vhdl {counter25mhz-behav.vhd}
-read_hdl -vhdl {edge_detector-behav.vhd}
-read_hdl -vhdl {flipflop-behav.vhd}
-read_hdl -vhdl {main_fsm-behav.vhd}
-read_hdl -vhdl {mouse-behav.vhd}
-read_hdl -vhdl {mux-behav.vhd}
-read_hdl -vhdl {sendFSM-behav.vhd}
 read_hdl -vhdl {shiftregister_11bit-behav.vhd}
-read_hdl -vhdl {shiftregister_9bit-behav.vhd}
-read_hdl -vhdl {timebase-behav.vhd}
 read_hdl -vhdl {shiftregister_11bit_behav_cfg.vhd}
-read_hdl -vhdl {flipflop_behav_cfg.vhd}
-read_hdl -vhdl {main_fsm_behav_cfg.vhd}
-read_hdl -vhdl {timebase_behav_cfg.vhd}
-read_hdl -vhdl {mux_behav_cfg.vhd}
-read_hdl -vhdl {sendfsm_behav_cfg.vhd}
-read_hdl -vhdl {shiftregister_9bit_behav_cfg.vhd}
-read_hdl -vhdl {edge_detector_behav_cfg.vhd}
-read_hdl -vhdl {counter25mhz_behav_cfg.vhd}
-read_hdl -vhdl {mouse_behav_cfg.vhd}
 #endincl
 
-elaborate mouse_behav_cfg
+elaborate shiftregister_11bit_behav_cfg
 
-#include backend/syn/in/mouse.sdc
+#include backend/syn/in/shiftregister_11bit.sdc
 # We will use a 25 MHz clock, 
 # but use 33 MHz as constraint to be more sure it works.
 dc::create_clock -name clk -period 30 -waveform {0 15} [dc::get_ports clk]
@@ -60,9 +33,9 @@ synthesize -to_mapped
 
 ungroup -all -flat
 insert_tiehilo_cells
-write_hdl -mapped > ../out/mouse.v
-write_sdf > ../out/mouse.sdf
-write_sdc > ../out/mouse.sdc
+write_hdl -mapped > ../out/shiftregister_11bit.v
+write_sdf > ../out/shiftregister_11bit.sdf
+write_sdc > ../out/shiftregister_11bit.sdc
 
 report timing
 report gates
