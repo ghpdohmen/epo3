@@ -4,7 +4,7 @@ use IEEE.numeric_std.all;
 
 architecture behav of main_fsm is
 
-type mainfsm_state is (reset_state, wachtFA, wachtFA_cnt_rst, wachtAA, wachtAA_cnt_rst, enableF4, enableF4_cnt_rst, wachtFA2, wachtFA2_cnt_rst, data_1, data_1_cnt_rst, data_1_cnt_rst_2, data_2, data_2_cnt_rst, data_2_cnt_rst_2, data_3, data_3_cnt_rst, data_3_cnt_rst_2, handshake_state, handshake_state2);
+type mainfsm_state is (reset_state, sendFF, sendFF_cnt_rst, wachtFA, wachtFA_cnt_rst, wachtAA, wachtAA_cnt_rst, enableF4, enableF4_cnt_rst, wachtFA2, wachtFA2_cnt_rst, data_1, data_1_cnt_rst, data_1_cnt_rst_2, data_2, data_2_cnt_rst, data_2_cnt_rst_2, data_3, data_3_cnt_rst, data_3_cnt_rst_2, handshake_state, handshake_state2);
 signal state, new_state : mainfsm_state;
 
 begin
@@ -35,6 +35,37 @@ begin
                 x_out           <= (others => '0');
                 y_out           <= (others => '0');
                 buttons       <= (others => '0');
+                new_state       <= sendFF;
+					 
+				when sendFF =>
+					 bit11_reg_rst   <= '1';
+                cntReset15k	  <= '0';
+                actBit          <= '0';
+                send_reset      <= '0';
+                handshake_out   <= '0';
+                x_flipflop      <= '0';
+                y_flipflop      <= '0';
+                btn_flipflop    <= '0';
+                x_out           <= (others => '0');
+                y_out           <= (others => '0');
+                buttons         <= (others => '0');
+                if(to_integer(unsigned(count15k_in)) >= 11) then
+                    new_state <= sendFF_cnt_rst;
+		        else
+		            new_state <= state;
+                end if;
+				when sendFF_cnt_rst =>
+					 bit11_reg_rst   <= '1';
+                cntReset15k	    <= '1';
+                actBit          <= '0';
+                send_reset      <= '1';
+                handshake_out   <= '0';
+                x_flipflop      <= '0';
+                y_flipflop      <= '0';
+                btn_flipflop    <= '0';
+                x_out           <= (others => '0');
+                y_out           <= (others => '0');
+                buttons         <= (others => '0');
                 new_state       <= wachtFA;
 		
             when wachtFA =>
@@ -332,7 +363,7 @@ begin
 		y_out(2)      		<= data_in(4);
 		bit11_reg_rst   <= '1';
 
-		new_state <= handshake_state;
+		new_state <= data_1;
 
 		when handshake_state => --maybe we want to add a state to read the data while not reseting the register yet cuz this might give problems. The shit inside processes is sequential tho.
 		

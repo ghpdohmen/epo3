@@ -33,11 +33,11 @@ begin
                 timebaseRst <= '1';
                 regRst <= '1';
                 dataMUX <= '0';
-		dataToReg <= "000000000";
+		          dataToReg <= "000000000";
                 if(reset = '0') then
                     new_state <= clklowstate;
-		else
-		    new_state <= state;
+					 else
+						  new_state <= state;
                 end if;
 
             when clklowstate =>
@@ -68,7 +68,11 @@ begin
                 else
                     dataToReg <= "000000000"; --inverted for the transistor, FF including parity bit.
                 end if;
-		new_state <= waitforclockstate;
+		if(to_integer(unsigned(countIn)) >= 4000) then
+                    new_state <= waitforclockstate;
+		else
+		    new_state <= state;
+                end if;
 
             when waitforclockstate =>
                 clkTrans <= '0';

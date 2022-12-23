@@ -12,6 +12,7 @@ entity mouse is
         Data_in       : in  std_logic;
         Clk15k        : in  std_logic;
         clk           : in  std_logic;
-        reset         : in  std_logic);
+        reset         : in  std_logic;
+		  rst				 : out std_logic);
 end mouse;
 

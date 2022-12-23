@@ -116,7 +116,11 @@ signal btns:	std_logic_vector(4 downto 0);
 
 
 begin
-
+--tijdelijk
+process(clk)
+begin
+rst <= reset;
+end process;
 
 cnt: counter25mhz port map (clk, cntReset25M, count25M);
 
