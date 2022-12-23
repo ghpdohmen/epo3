@@ -20,7 +20,7 @@ begin
    test: vgatest port map (clock, enable, reset, scale_h, scale_v, R, G, B, H, V);
     clock <= '0' after 0 ns,
           '1' after 20 ns when clock /= '1' else '0' after 20 ns;
-   reset <= '1' after 0 ns,
-            '0' after 80 ns;
+   reset <= '0' after 0 ns,
+            '1' after 80 ns, '0' after 180 ns;
 end behaviour;
 

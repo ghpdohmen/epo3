@@ -1,0 +1,2320 @@
+(DELAYFILE
+  (SDFVERSION "3.0")
+  (DESIGN "vgatest")
+  (DATE "Fri Dec 23 13:29:54 2022")
+  (VENDOR "Cadence Design Systems, Inc.")
+  (PROGRAM "Innovus")
+  (VERSION "v17.11-s080_1 ((64bit) 08/04/2017 11:13 (Linux 2.6.18-194.el5))")
+  (DIVIDER /)
+  (VOLTAGE 1.620000::1.620000)
+  (PROCESS "1.000000::1.000000")
+  (TEMPERATURE 125.000000::125.000000)
+  (TIMESCALE 1.0 ns)
+
+  (CELL
+    (CELLTYPE  "vgatest")
+    (INSTANCE)
+      (DELAY
+	(ABSOLUTE
+	(INTERCONNECT FE_PHC5_VGA_n_34/Z VGA_horizontal_counter_reg_0/D  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT VGA_g1075/Z FE_OFC4_V/I  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT VGA_g1074/Z FE_OFC3_H/I  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT tie_0_cell/ZN FE_OFC2_R/I  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT VGA_g1480/ZN FE_OFC0_B/I  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT CTS_ccl_a_BUF_clk_G0_L1_1/Z VGA_horizontal_counter_reg_1/CP  (0.002::0.002) (0.002::0.002))
+	(INTERCONNECT CTS_ccl_a_BUF_clk_G0_L1_1/Z VGA_horizontal_counter_reg_2/CP  (0.002::0.002) (0.002::0.002))
+	(INTERCONNECT CTS_ccl_a_BUF_clk_G0_L1_1/Z VGA_horizontal_counter_reg_3/CP  (0.002::0.002) (0.002::0.002))
+	(INTERCONNECT CTS_ccl_a_BUF_clk_G0_L1_1/Z VGA_horizontal_counter_reg_4/CP  (0.002::0.002) (0.002::0.002))
+	(INTERCONNECT CTS_ccl_a_BUF_clk_G0_L1_1/Z VGA_horizontal_counter_reg_6/CP  (0.003::0.003) (0.003::0.003))
+	(INTERCONNECT CTS_ccl_a_BUF_clk_G0_L1_1/Z VGA_horizontal_counter_reg_7/CP  (0.003::0.003) (0.003::0.003))
+	(INTERCONNECT CTS_ccl_a_BUF_clk_G0_L1_1/Z VGA_horizontal_counter_reg_8/CP  (0.003::0.003) (0.003::0.003))
+	(INTERCONNECT CTS_ccl_a_BUF_clk_G0_L1_1/Z VGA_horizontal_counter_reg_9/CP  (0.003::0.003) (0.003::0.003))
+	(INTERCONNECT CTS_ccl_a_BUF_clk_G0_L1_1/Z VGA_scale_vertical_counter_reg_0/CP  (0.003::0.003) (0.003::0.003))
+	(INTERCONNECT CTS_ccl_a_BUF_clk_G0_L1_1/Z VGA_scale_vertical_counter_reg_1/CP  (0.003::0.003) (0.003::0.003))
+	(INTERCONNECT CTS_ccl_a_BUF_clk_G0_L1_1/Z VGA_scale_vertical_counter_reg_2/CP  (0.002::0.002) (0.002::0.002))
+	(INTERCONNECT CTS_ccl_a_BUF_clk_G0_L1_1/Z VGA_scale_vertical_counter_reg_3/CP  (0.003::0.003) (0.003::0.003))
+	(INTERCONNECT CTS_ccl_a_BUF_clk_G0_L1_1/Z VGA_scale_vertical_counter_reg_4/CP  (0.003::0.003) (0.003::0.003))
+	(INTERCONNECT CTS_ccl_a_BUF_clk_G0_L1_1/Z VGA_vertical_counter_reg_5/CP  (0.003::0.003) (0.003::0.003))
+	(INTERCONNECT CTS_ccl_a_BUF_clk_G0_L1_1/Z VGA_vertical_counter_reg_6/CP  (0.002::0.002) (0.002::0.002))
+	(INTERCONNECT CTS_ccl_a_BUF_clk_G0_L1_1/Z VGA_vertical_counter_reg_7/CP  (0.003::0.003) (0.003::0.003))
+	(INTERCONNECT CTS_ccl_a_BUF_clk_G0_L1_1/Z VGA_vertical_counter_reg_8/CP  (0.003::0.003) (0.003::0.003))
+	(INTERCONNECT CTS_ccl_a_BUF_clk_G0_L1_1/Z VGA_vertical_counter_reg_9/CP  (0.003::0.003) (0.003::0.003))
+	(INTERCONNECT CTS_ccl_a_BUF_clk_G0_L1_1/Z VGA_horizontal_counter_reg_5/CP  (0.003::0.003) (0.003::0.003))
+	(INTERCONNECT CTS_ccl_a_BUF_clk_G0_L1_1/Z VGA_horizontal_counter_reg_0/CP  (0.002::0.002) (0.002::0.002))
+	(INTERCONNECT clock CTS_ccl_a_BUF_clk_G0_L1_1/I  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT reset VGA_vertical_reg_8/EN  (0.004::0.004) (0.004::0.004))
+	(INTERCONNECT reset VGA_vertical_reg_6/EN  (0.004::0.004) (0.004::0.004))
+	(INTERCONNECT reset VGA_horizontal_reg_6/EN  (0.003::0.003) (0.003::0.003))
+	(INTERCONNECT reset VGA_scale_vertical_reg_2/EN  (0.004::0.004) (0.004::0.004))
+	(INTERCONNECT reset VGA_vertical_reg_0/EN  (0.004::0.004) (0.004::0.004))
+	(INTERCONNECT reset VGA_horizontal_reg_5/EN  (0.003::0.003) (0.003::0.003))
+	(INTERCONNECT reset VGA_scale_vertical_reg_3/EN  (0.004::0.004) (0.004::0.004))
+	(INTERCONNECT reset VGA_scale_horizontal_reg_4/EN  (0.002::0.002) (0.002::0.002))
+	(INTERCONNECT reset VGA_scale_horizontal_reg_1/EN  (0.002::0.002) (0.002::0.002))
+	(INTERCONNECT reset VGA_vertical_reg_9/EN  (0.004::0.004) (0.004::0.004))
+	(INTERCONNECT reset VGA_vertical_reg_5/EN  (0.004::0.004) (0.003::0.003))
+	(INTERCONNECT reset VGA_scale_horizontal_reg_2/EN  (0.002::0.002) (0.002::0.002))
+	(INTERCONNECT reset VGA_vertical_reg_7/EN  (0.004::0.004) (0.004::0.004))
+	(INTERCONNECT reset VGA_horizontal_reg_8/EN  (0.004::0.004) (0.003::0.003))
+	(INTERCONNECT reset VGA_horizontal_reg_0/EN  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT reset VGA_horizontal_reg_9/EN  (0.003::0.003) (0.003::0.003))
+	(INTERCONNECT reset VGA_scale_horizontal_reg_3/EN  (0.002::0.002) (0.002::0.002))
+	(INTERCONNECT reset VGA_horizontal_reg_7/EN  (0.004::0.004) (0.003::0.003))
+	(INTERCONNECT reset VGA_scale_vertical_reg_4/EN  (0.004::0.004) (0.004::0.004))
+	(INTERCONNECT reset VGA_scale_vertical_reg_1/EN  (0.004::0.004) (0.004::0.004))
+	(INTERCONNECT reset VGA_g1459/I  (0.003::0.003) (0.003::0.003))
+	(INTERCONNECT VGA_g1078/Z scale_h  (0.010::0.010) (0.010::0.010))
+	(INTERCONNECT VGA_g1076/Z scale_v  (0.019::0.019) (0.019::0.019))
+	(INTERCONNECT FE_OFC2_R/Z R  (0.015::0.015) (0.015::0.015))
+	(INTERCONNECT FE_OFC1_B/Z enable  (0.029::0.029) (0.029::0.029))
+	(INTERCONNECT FE_OFC1_B/Z G  (0.027::0.027) (0.027::0.027))
+	(INTERCONNECT FE_OFC0_B/Z FE_OFC1_B/I  (0.018::0.018) (0.018::0.018))
+	(INTERCONNECT FE_OFC0_B/Z B  (0.020::0.020) (0.020::0.020))
+	(INTERCONNECT FE_OFC3_H/Z H  (0.031::0.031) (0.031::0.031))
+	(INTERCONNECT FE_OFC4_V/Z V  (0.018::0.018) (0.018::0.018))
+	(INTERCONNECT VGA_horizontal_reg_9/QN VGA_g1074/A3  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT VGA_horizontal_reg_9/QN VGA_g1091/B  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT VGA_horizontal_reg_8/Q VGA_g1074/A1  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT VGA_horizontal_reg_8/Q VGA_g1091/A2  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT VGA_horizontal_reg_7/Q VGA_g1091/A1  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT VGA_horizontal_reg_7/Q VGA_g1106/I  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT VGA_horizontal_reg_6/Q VGA_g1077/A1  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT VGA_horizontal_reg_6/Q VGA_g1080/B2  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT VGA_horizontal_reg_5/Q VGA_g1077/A2  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT VGA_horizontal_reg_5/Q VGA_g1080/B1  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT VGA_scale_horizontal_reg_4/Q VGA_g1085/A1  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT VGA_scale_horizontal_reg_4/Q VGA_g1089/A2  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT VGA_scale_horizontal_reg_4/Q VGA_g1095/I  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT VGA_scale_horizontal_reg_3/Q VGA_g1086/A2  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT VGA_scale_horizontal_reg_3/Q VGA_g1094/A1  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT VGA_scale_horizontal_reg_2/Q VGA_g1094/A2  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT VGA_scale_horizontal_reg_1/Q VGA_g1082/A3  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT VGA_scale_horizontal_reg_1/Q VGA_g1085/A2  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT VGA_scale_horizontal_reg_1/Q VGA_g1086/A1  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT VGA_horizontal_reg_0/Q VGA_g1082/A4  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT VGA_horizontal_reg_0/Q VGA_g1085/A3  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT VGA_vertical_reg_9/Q VGA_g1075/A1  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT VGA_vertical_reg_9/Q VGA_g1079/A3  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT VGA_vertical_reg_9/Q VGA_g1480/B2  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT VGA_vertical_reg_8/Q VGA_g1092/A1  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT VGA_vertical_reg_7/Q VGA_g1092/A3  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT VGA_vertical_reg_6/Q VGA_g1092/A4  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT VGA_vertical_reg_5/Q VGA_g1092/A2  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT VGA_scale_vertical_reg_3/Q VGA_g1081/B1  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT VGA_scale_vertical_reg_3/Q VGA_g1088/A2  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT VGA_scale_vertical_reg_1/Q VGA_g1079/A2  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT VGA_scale_vertical_reg_1/Q VGA_g1090/S  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT VGA_vertical_reg_0/Q VGA_g1090/I0  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT VGA_vertical_reg_0/Q VGA_g1093/A2  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT VGA_scale_vertical_reg_4/Q VGA_g1079/A4  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT VGA_scale_vertical_reg_4/Q VGA_g1081/A1  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT VGA_scale_vertical_reg_2/Q VGA_g1090/I1  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT VGA_scale_vertical_reg_2/Q VGA_g1093/A1  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT VGA_vertical_counter_reg_9/Q VGA_vertical_reg_9/D  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT VGA_vertical_counter_reg_9/Q VGA_g1396/A1  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT VGA_vertical_counter_reg_9/Q VGA_g1411/B  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT VGA_vertical_counter_reg_9/Q VGA_g1460/B2  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT VGA_vertical_counter_reg_8/Q VGA_vertical_reg_8/D  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT VGA_vertical_counter_reg_8/Q VGA_g1382/A2  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT VGA_vertical_counter_reg_8/Q VGA_g1382/B2  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT VGA_vertical_counter_reg_8/Q VGA_g1440/B2  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT VGA_vertical_counter_reg_8/Q VGA_g1443/A4  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT VGA_vertical_counter_reg_7/Q VGA_vertical_reg_7/D  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT VGA_vertical_counter_reg_7/Q VGA_g1402/A2  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT VGA_vertical_counter_reg_7/Q VGA_g1402/B2  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT VGA_vertical_counter_reg_7/Q VGA_g1415/B1  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT VGA_vertical_counter_reg_7/Q VGA_g1440/B1  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT VGA_vertical_counter_reg_7/Q VGA_g1461/A2  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT VGA_vertical_counter_reg_6/Q VGA_vertical_reg_6/D  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT VGA_vertical_counter_reg_6/Q VGA_g1380/A2  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT VGA_vertical_counter_reg_6/Q VGA_g1380/B2  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT VGA_vertical_counter_reg_6/Q VGA_g1443/A3  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT VGA_vertical_counter_reg_6/Q VGA_g1444/A3  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT VGA_vertical_counter_reg_5/Q VGA_vertical_reg_5/D  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT VGA_vertical_counter_reg_5/Q VGA_g1399/A2  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT VGA_vertical_counter_reg_5/Q VGA_g1399/B2  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT VGA_vertical_counter_reg_5/Q VGA_g1414/B1  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT VGA_vertical_counter_reg_5/Q VGA_g1444/A2  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT VGA_vertical_counter_reg_5/Q VGA_g1461/A1  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT VGA_scale_vertical_counter_reg_4/Q VGA_scale_vertical_reg_4/D  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT VGA_scale_vertical_counter_reg_4/Q VGA_g1403/A2  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT VGA_scale_vertical_counter_reg_4/Q VGA_g1403/B2  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT VGA_scale_vertical_counter_reg_4/Q VGA_g1446/A1  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT VGA_scale_vertical_counter_reg_4/Q VGA_g1460/A2  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT VGA_scale_vertical_counter_reg_3/Q VGA_scale_vertical_reg_3/D  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT VGA_scale_vertical_counter_reg_3/Q VGA_g1392/A1  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT VGA_scale_vertical_counter_reg_3/Q VGA_g1412/A2  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT VGA_scale_vertical_counter_reg_3/Q VGA_g1448/B1  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT VGA_scale_vertical_counter_reg_3/Q VGA_g1461/B1  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT VGA_scale_vertical_counter_reg_2/Q VGA_scale_vertical_reg_2/D  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT VGA_scale_vertical_counter_reg_2/Q VGA_g1395/A1  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT VGA_scale_vertical_counter_reg_2/Q VGA_g1413/B  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT VGA_scale_vertical_counter_reg_2/Q VGA_g1450/B1  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT VGA_scale_vertical_counter_reg_2/Q VGA_g1460/B1  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT VGA_scale_vertical_counter_reg_1/Q VGA_scale_vertical_reg_1/D  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT VGA_scale_vertical_counter_reg_1/Q VGA_g1400/A2  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT VGA_scale_vertical_counter_reg_1/Q VGA_g1400/B2  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT VGA_scale_vertical_counter_reg_1/Q VGA_g1452/A1  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT VGA_scale_vertical_counter_reg_1/Q VGA_g1460/A1  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT VGA_scale_vertical_counter_reg_0/Q VGA_vertical_reg_0/D  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT VGA_scale_vertical_counter_reg_0/Q VGA_g1418/A2  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT VGA_scale_vertical_counter_reg_0/Q VGA_g1443/A2  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT VGA_scale_vertical_counter_reg_0/Q VGA_g1452/A2  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT VGA_scale_vertical_counter_reg_0/Q VGA_g1462/S  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT VGA_horizontal_counter_reg_9/Q VGA_horizontal_reg_9/D  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT VGA_horizontal_counter_reg_9/Q VGA_g1376/A2  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT VGA_horizontal_counter_reg_9/Q VGA_g1376/B2  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT VGA_horizontal_counter_reg_9/Q VGA_g1432/B1  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT VGA_horizontal_counter_reg_8/Q VGA_horizontal_reg_8/D  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT VGA_horizontal_counter_reg_8/Q VGA_g1383/A2  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT VGA_horizontal_counter_reg_8/Q VGA_g1383/B2  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT VGA_horizontal_counter_reg_8/Q VGA_g1387/B1  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT VGA_horizontal_counter_reg_8/Q VGA_g2/A1  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT VGA_horizontal_counter_reg_7/Q VGA_horizontal_reg_7/D  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT VGA_horizontal_counter_reg_7/Q VGA_g1416/B1  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT VGA_horizontal_counter_reg_7/Q VGA_g2/B2  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT VGA_horizontal_counter_reg_7/Q VGA_g1474/A2  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT VGA_horizontal_counter_reg_6/Q VGA_horizontal_reg_6/D  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT VGA_horizontal_counter_reg_6/Q VGA_g1431/B1  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT VGA_horizontal_counter_reg_6/Q VGA_g1432/A1  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT VGA_horizontal_counter_reg_6/Q VGA_g1473/A2  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT VGA_horizontal_counter_reg_5/Q VGA_horizontal_reg_5/D  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT VGA_horizontal_counter_reg_5/Q VGA_g1434/A2  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT VGA_horizontal_counter_reg_4/Q VGA_scale_horizontal_reg_4/D  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT VGA_horizontal_counter_reg_4/Q VGA_g1438/A1  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT VGA_horizontal_counter_reg_4/Q VGA_g1472/A2  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT VGA_horizontal_counter_reg_3/Q VGA_scale_horizontal_reg_3/D  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT VGA_horizontal_counter_reg_3/Q VGA_g1442/B1  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT VGA_horizontal_counter_reg_3/Q VGA_g1471/A2  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT VGA_horizontal_counter_reg_2/Q VGA_scale_horizontal_reg_2/D  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT VGA_horizontal_counter_reg_2/Q VGA_g1447/B1  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT VGA_horizontal_counter_reg_2/Q VGA_g1470/A2  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT VGA_horizontal_counter_reg_1/Q VGA_scale_horizontal_reg_1/D  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT VGA_horizontal_counter_reg_1/Q VGA_g1453/A1  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT VGA_horizontal_counter_reg_1/Q VGA_g1479/A2  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT VGA_horizontal_counter_reg_0/Q VGA_horizontal_reg_0/D  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT VGA_horizontal_counter_reg_0/Q VGA_g1453/A2  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT VGA_horizontal_counter_reg_0/Q VGA_g1479/A1  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT VGA_g1462/ZN VGA_scale_vertical_counter_reg_0/D  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT VGA_g1461/ZN VGA_g1422/A2  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT VGA_g1461/ZN VGA_g1428/A1  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT VGA_g1461/ZN VGA_g1436/A1  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT VGA_g1461/ZN VGA_g1437/A2  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT VGA_g1460/ZN VGA_g1443/A1  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT VGA_g2/ZN VGA_g1374/A2  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT VGA_g2/ZN VGA_g1377/A2  (0.002::0.002) (0.002::0.002))
+	(INTERCONNECT VGA_g2/ZN VGA_g1411/A1  (0.003::0.003) (0.003::0.003))
+	(INTERCONNECT VGA_g2/ZN VGA_g1413/A1  (0.004::0.004) (0.004::0.004))
+	(INTERCONNECT VGA_g2/ZN VGA_g1418/A1  (0.004::0.004) (0.004::0.004))
+	(INTERCONNECT VGA_g2/ZN VGA_g1419/B1  (0.004::0.004) (0.004::0.004))
+	(INTERCONNECT VGA_g2/ZN VGA_g1420/A1  (0.002::0.002) (0.002::0.002))
+	(INTERCONNECT VGA_g2/ZN VGA_g1421/B1  (0.003::0.003) (0.003::0.003))
+	(INTERCONNECT VGA_g2/ZN VGA_g1422/A1  (0.003::0.003) (0.003::0.003))
+	(INTERCONNECT VGA_g2/ZN VGA_g1427/A1  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT VGA_g2/ZN VGA_g1428/B  (0.003::0.003) (0.003::0.003))
+	(INTERCONNECT VGA_g2/ZN VGA_g1462/I1  (0.004::0.004) (0.004::0.004))
+	(INTERCONNECT VGA_g1459/ZN VGA_horizontal_counter_reg_1/CDN  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT VGA_g1459/ZN VGA_horizontal_counter_reg_2/CDN  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT VGA_g1459/ZN VGA_horizontal_counter_reg_3/CDN  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT VGA_g1459/ZN VGA_horizontal_counter_reg_4/CDN  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT VGA_g1459/ZN VGA_horizontal_counter_reg_6/CDN  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT VGA_g1459/ZN VGA_horizontal_counter_reg_7/CDN  (0.002::0.002) (0.002::0.002))
+	(INTERCONNECT VGA_g1459/ZN VGA_horizontal_counter_reg_8/CDN  (0.004::0.004) (0.004::0.004))
+	(INTERCONNECT VGA_g1459/ZN VGA_horizontal_counter_reg_9/CDN  (0.002::0.002) (0.003::0.003))
+	(INTERCONNECT VGA_g1459/ZN VGA_scale_vertical_counter_reg_0/CDN  (0.005::0.005) (0.005::0.005))
+	(INTERCONNECT VGA_g1459/ZN VGA_scale_vertical_counter_reg_1/CDN  (0.005::0.005) (0.005::0.005))
+	(INTERCONNECT VGA_g1459/ZN VGA_scale_vertical_counter_reg_2/CDN  (0.005::0.005) (0.005::0.005))
+	(INTERCONNECT VGA_g1459/ZN VGA_scale_vertical_counter_reg_3/CDN  (0.005::0.005) (0.005::0.005))
+	(INTERCONNECT VGA_g1459/ZN VGA_scale_vertical_counter_reg_4/CDN  (0.005::0.005) (0.005::0.005))
+	(INTERCONNECT VGA_g1459/ZN VGA_vertical_counter_reg_5/CDN  (0.004::0.004) (0.004::0.004))
+	(INTERCONNECT VGA_g1459/ZN VGA_vertical_counter_reg_6/CDN  (0.003::0.003) (0.003::0.003))
+	(INTERCONNECT VGA_g1459/ZN VGA_vertical_counter_reg_7/CDN  (0.004::0.004) (0.004::0.004))
+	(INTERCONNECT VGA_g1459/ZN VGA_vertical_counter_reg_8/CDN  (0.003::0.003) (0.003::0.003))
+	(INTERCONNECT VGA_g1459/ZN VGA_vertical_counter_reg_9/CDN  (0.004::0.004) (0.004::0.004))
+	(INTERCONNECT VGA_g1459/ZN VGA_horizontal_counter_reg_5/CDN  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT VGA_g1459/ZN VGA_horizontal_counter_reg_0/CDN  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT VGA_horizontal_counter_reg_5/QN VGA_g1432/B2  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT VGA_horizontal_counter_reg_5/QN VGA_g1433/A2  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT VGA_horizontal_counter_reg_5/QN VGA_g1433/B2  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT VGA_g1453/ZN VGA_g1447/A1  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT VGA_g1453/ZN VGA_g1470/A1  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT VGA_g1452/ZN VGA_g1395/A2  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT VGA_g1452/ZN VGA_g1436/A2  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT VGA_g1452/ZN VGA_g1450/A1  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT VGA_g1450/ZN VGA_g1392/A2  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT VGA_g1450/ZN VGA_g1428/A2  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT VGA_g1450/ZN VGA_g1448/A1  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT VGA_g1448/ZN VGA_g1419/A1  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT VGA_g1448/ZN VGA_g1446/B1  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT VGA_g1447/ZN VGA_g1442/A1  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT VGA_g1447/ZN VGA_g1471/A1  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT VGA_g1446/ZN VGA_g1420/A2  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT VGA_g1446/ZN VGA_g1444/A1  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT VGA_g1444/ZN VGA_g1421/A1  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT VGA_g1444/ZN VGA_g1440/A1  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT VGA_g1443/ZN VGA_g1461/B2  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT VGA_g1442/ZN VGA_g1438/B1  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT VGA_g1442/ZN VGA_g1472/A1  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT VGA_g1440/ZN VGA_g1396/A2  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT VGA_g1440/ZN VGA_g1437/A1  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT VGA_g1437/ZN VGA_g1411/A2  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT VGA_g1438/ZN VGA_g1432/B3  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT VGA_g1438/ZN VGA_g1433/A1  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT VGA_g1438/ZN VGA_g1433/B1  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT VGA_g1438/ZN VGA_g1434/A1  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT VGA_g1436/ZN VGA_g1413/A2  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT VGA_g1434/ZN VGA_g1431/A1  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT VGA_g1434/ZN VGA_g1473/A1  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT VGA_g1433/ZN VGA_g1427/A2  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT VGA_g1432/ZN VGA_g2/B1  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT VGA_g1431/ZN VGA_g1416/A1  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT VGA_g1431/ZN VGA_g1474/A1  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT VGA_g1428/ZN VGA_g1412/A1  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT VGA_g1427/ZN VGA_horizontal_counter_reg_5/D  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT VGA_horizontal_counter_reg_0/QN FE_PHC5_VGA_n_34/I  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT VGA_g1422/ZN VGA_g1392/A3  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT VGA_g1422/ZN VGA_g1395/A3  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT VGA_g1422/ZN VGA_g1396/A3  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT VGA_g1422/ZN VGA_g1462/I0  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT VGA_g1421/ZN VGA_g1402/A1  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT VGA_g1421/ZN VGA_g1402/B1  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT VGA_g1421/ZN VGA_g1415/A1  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT VGA_g1420/ZN VGA_g1399/A1  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT VGA_g1420/ZN VGA_g1399/B1  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT VGA_g1420/ZN VGA_g1414/A1  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT VGA_g1419/ZN VGA_g1403/A1  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT VGA_g1419/ZN VGA_g1403/B1  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT VGA_g1418/ZN VGA_g1400/A1  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT VGA_g1418/ZN VGA_g1400/B1  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT VGA_g1413/ZN VGA_g1395/B  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT VGA_g1412/ZN VGA_g1392/B  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT VGA_g1411/ZN VGA_g1396/B  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT VGA_g1416/ZN VGA_g1383/A1  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT VGA_g1416/ZN VGA_g1383/B1  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT VGA_g1416/ZN VGA_g1387/A1  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT VGA_g1415/ZN VGA_g1382/A1  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT VGA_g1415/ZN VGA_g1382/B1  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT VGA_g1414/ZN VGA_g1380/A1  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT VGA_g1414/ZN VGA_g1380/B1  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT VGA_g1403/ZN VGA_scale_vertical_counter_reg_4/D  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT VGA_g1402/ZN VGA_vertical_counter_reg_7/D  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT VGA_g1400/ZN VGA_scale_vertical_counter_reg_1/D  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT VGA_g1399/ZN VGA_vertical_counter_reg_5/D  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT VGA_g1396/ZN VGA_vertical_counter_reg_9/D  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT VGA_g1395/ZN VGA_scale_vertical_counter_reg_2/D  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT VGA_g1392/ZN VGA_scale_vertical_counter_reg_3/D  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT VGA_g1387/ZN VGA_g1376/A1  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT VGA_g1387/ZN VGA_g1376/B1  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT VGA_g1383/ZN VGA_g1377/A1  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT VGA_g1382/ZN VGA_vertical_counter_reg_8/D  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT VGA_g1380/ZN VGA_vertical_counter_reg_6/D  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT VGA_g1377/ZN VGA_horizontal_counter_reg_8/D  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT VGA_g1376/ZN VGA_g1374/A1  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT VGA_g1374/ZN VGA_horizontal_counter_reg_9/D  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT VGA_g1106/ZN VGA_g1074/A2  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT VGA_g1095/ZN VGA_g1078/A2  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT VGA_g1094/Z VGA_g1082/A2  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT VGA_g1094/Z VGA_g1089/A1  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT VGA_g1093/Z VGA_g1081/B2  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT VGA_g1093/Z VGA_g1088/A1  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT VGA_g1090/ZN VGA_g1081/B3  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT VGA_g1092/ZN VGA_g1075/A2  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT VGA_g1092/ZN VGA_g1076/A2  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT VGA_g1092/ZN VGA_g1480/A1  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT VGA_g1091/ZN VGA_g1082/A1  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT VGA_g1091/ZN VGA_g1480/B1  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT VGA_g1088/Z VGA_g1079/A1  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT VGA_g1089/ZN VGA_g1086/B  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT VGA_g1089/ZN VGA_g1087/I  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT VGA_g1087/ZN VGA_g1085/B  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT VGA_g1086/ZN VGA_g1077/A3  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT VGA_g1085/ZN VGA_g1080/A1  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT VGA_g1082/ZN VGA_g1078/A1  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT VGA_g1081/ZN VGA_g1075/A3  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT VGA_g1080/ZN VGA_g1077/B  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT VGA_g1079/ZN VGA_g1076/A1  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT VGA_g1077/ZN VGA_g1074/A4  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT VGA_g1470/ZN VGA_horizontal_counter_reg_2/D  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT VGA_g1471/ZN VGA_horizontal_counter_reg_3/D  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT VGA_g1472/ZN VGA_horizontal_counter_reg_4/D  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT VGA_g1473/ZN VGA_horizontal_counter_reg_6/D  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT VGA_g1474/ZN VGA_horizontal_counter_reg_7/D  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT VGA_g1479/Z VGA_horizontal_counter_reg_1/D  (0.000::0.000) (0.000::0.000))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "DEL01BWP7T")
+    (INSTANCE  FE_PHC5_VGA_n_34)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I Z  (0.128::0.128) (0.122::0.122))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "BUFFD5BWP7T")
+    (INSTANCE  FE_OFC4_V)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I Z  (0.966::0.966) (0.614::0.614))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "BUFFD5BWP7T")
+    (INSTANCE  FE_OFC3_H)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I Z  (0.958::0.958) (0.607::0.607))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "BUFFD5BWP7T")
+    (INSTANCE  FE_OFC2_R)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I Z  (0.939::0.939) (0.586::0.586))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "BUFFD10BWP7T")
+    (INSTANCE  FE_OFC1_B)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I Z  (1.093::1.093) (0.778::0.778))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "BUFFD5BWP7T")
+    (INSTANCE  FE_OFC0_B)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I Z  (1.026::1.026) (0.637::0.637))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKBD6BWP7T")
+    (INSTANCE  CTS_ccl_a_BUF_clk_G0_L1_1)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I Z  (0.236::0.236) (0.206::0.206))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "OR4D1BWP7T")
+    (INSTANCE  VGA_g1074)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH A1 Z  (0.235::0.235) (0.464::0.464))
+	(IOPATH A2 Z  (0.229::0.229) (0.434::0.434))
+	(IOPATH A3 Z  (0.213::0.213) (0.386::0.386))
+	(IOPATH A4 Z  (0.265::0.265) (0.322::0.322))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "OR3XD1BWP7T")
+    (INSTANCE  VGA_g1075)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH A1 Z  (0.190::0.190) (0.374::0.374))
+	(IOPATH A2 Z  (0.226::0.226) (0.437::0.437))
+	(IOPATH A3 Z  (0.179::0.179) (0.336::0.336))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKAN2D8BWP7T")
+    (INSTANCE  VGA_g1076)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH A1 Z  (0.813::0.813) (0.719::0.719))
+	(IOPATH A2 Z  (0.780::0.780) (0.837::0.837))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "OAI31D0BWP7T")
+    (INSTANCE  VGA_g1077)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH A1 ZN  (0.372::0.372) (0.126::0.126))
+	(IOPATH A2 ZN  (0.352::0.352) (0.122::0.122))
+	(IOPATH A3 ZN  (0.303::0.303) (0.131::0.131))
+	(IOPATH B ZN  (0.188::0.188) (0.161::0.161))
+	(COND A1==1'b0&&A2==1'b0&&A3==1'b1 (IOPATH B ZN  (0.188::0.188) (0.161::0.161)))
+	(COND A1==1'b0&&A2==1'b1&&A3==1'b0 (IOPATH B ZN  (0.188::0.188) (0.161::0.161)))
+	(COND A1==1'b0&&A2==1'b1&&A3==1'b1 (IOPATH B ZN  (0.188::0.188) (0.161::0.161)))
+	(COND A1==1'b1&&A2==1'b0&&A3==1'b0 (IOPATH B ZN  (0.188::0.188) (0.161::0.161)))
+	(COND A1==1'b1&&A2==1'b0&&A3==1'b1 (IOPATH B ZN  (0.188::0.188) (0.161::0.161)))
+	(COND A1==1'b1&&A2==1'b1&&A3==1'b0 (IOPATH B ZN  (0.188::0.188) (0.161::0.161)))
+	(COND A1==1'b1&&A2==1'b1&&A3==1'b1 (IOPATH B ZN  (0.188::0.188) (0.161::0.161)))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKAN2D8BWP7T")
+    (INSTANCE  VGA_g1078)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH A1 Z  (0.818::0.818) (0.726::0.726))
+	(IOPATH A2 Z  (0.746::0.746) (0.713::0.713))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "NR4D0BWP7T")
+    (INSTANCE  VGA_g1079)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH A1 ZN  (0.336::0.336) (0.123::0.123))
+	(IOPATH A2 ZN  (0.423::0.423) (0.151::0.151))
+	(IOPATH A3 ZN  (0.476::0.476) (0.172::0.172))
+	(IOPATH A4 ZN  (0.490::0.490) (0.159::0.159))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "IND3D0BWP7T")
+    (INSTANCE  VGA_g1080)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH A1 ZN  (0.222::0.222) (0.286::0.286))
+	(IOPATH B1 ZN  (0.134::0.134) (0.142::0.142))
+	(IOPATH B2 ZN  (0.122::0.122) (0.134::0.134))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "IND4D0BWP7T")
+    (INSTANCE  VGA_g1081)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH A1 ZN  (0.226::0.226) (0.350::0.350))
+	(IOPATH B1 ZN  (0.172::0.172) (0.222::0.222))
+	(IOPATH B2 ZN  (0.159::0.159) (0.216::0.216))
+	(IOPATH B3 ZN  (0.145::0.145) (0.222::0.222))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "NR4D0BWP7T")
+    (INSTANCE  VGA_g1082)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH A1 ZN  (0.350::0.350) (0.191::0.191))
+	(IOPATH A2 ZN  (0.424::0.424) (0.164::0.164))
+	(IOPATH A3 ZN  (0.475::0.475) (0.163::0.163))
+	(IOPATH A4 ZN  (0.491::0.491) (0.157::0.157))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "AOI31D0BWP7T")
+    (INSTANCE  VGA_g1085)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH A1 ZN  (0.221::0.221) (0.156::0.156))
+	(IOPATH A2 ZN  (0.244::0.244) (0.161::0.161))
+	(IOPATH A3 ZN  (0.265::0.265) (0.161::0.161))
+	(IOPATH B ZN  (0.323::0.323) (0.096::0.096))
+	(COND A1==1'b0&&A2==1'b0&&A3==1'b0 (IOPATH B ZN  (0.323::0.323) (0.096::0.096)))
+	(COND A1==1'b0&&A2==1'b0&&A3==1'b1 (IOPATH B ZN  (0.323::0.323) (0.096::0.096)))
+	(COND A1==1'b0&&A2==1'b1&&A3==1'b0 (IOPATH B ZN  (0.323::0.323) (0.096::0.096)))
+	(COND A1==1'b0&&A2==1'b1&&A3==1'b1 (IOPATH B ZN  (0.323::0.323) (0.096::0.096)))
+	(COND A1==1'b1&&A2==1'b0&&A3==1'b0 (IOPATH B ZN  (0.323::0.323) (0.096::0.096)))
+	(COND A1==1'b1&&A2==1'b0&&A3==1'b1 (IOPATH B ZN  (0.323::0.323) (0.096::0.096)))
+	(COND A1==1'b1&&A2==1'b1&&A3==1'b0 (IOPATH B ZN  (0.323::0.323) (0.096::0.096)))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "IAO21D0BWP7T")
+    (INSTANCE  VGA_g1086)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH A1 ZN  (0.240::0.240) (0.310::0.310))
+	(IOPATH A2 ZN  (0.239::0.239) (0.328::0.328))
+	(IOPATH B ZN  (0.171::0.171) (0.079::0.079))
+	(COND A1==1'b0&&A2==1'b1 (IOPATH B ZN  (0.171::0.171) (0.079::0.079)))
+	(COND A1==1'b1&&A2==1'b0 (IOPATH B ZN  (0.171::0.171) (0.079::0.079)))
+	(COND A1==1'b1&&A2==1'b1 (IOPATH B ZN  (0.171::0.171) (0.079::0.079)))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKND1BWP7T")
+    (INSTANCE  VGA_g1087)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I ZN  (0.077::0.077) (0.085::0.085))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "OR2D0BWP7T")
+    (INSTANCE  VGA_g1088)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH A1 Z  (0.154::0.154) (0.225::0.225))
+	(IOPATH A2 Z  (0.161::0.161) (0.251::0.251))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "ND2D0BWP7T")
+    (INSTANCE  VGA_g1089)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH A1 ZN  (0.150::0.150) (0.142::0.142))
+	(IOPATH A2 ZN  (0.166::0.166) (0.134::0.134))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "MUX2ND0BWP7T")
+    (INSTANCE  VGA_g1090)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I0 ZN  (0.223::0.223) (0.095::0.095))
+	(COND I1==1'b0&&S==1'b0 (IOPATH I0 ZN  (0.223::0.223) (0.095::0.095)))
+	(COND I1==1'b1&&S==1'b0 (IOPATH I0 ZN  (0.223::0.223) (0.095::0.095)))
+	(IOPATH I1 ZN  (0.203::0.203) (0.099::0.099))
+	(COND I0==1'b0&&S==1'b1 (IOPATH I1 ZN  (0.203::0.203) (0.099::0.099)))
+	(COND I0==1'b1&&S==1'b1 (IOPATH I1 ZN  (0.203::0.203) (0.099::0.099)))
+	(IOPATH (posedge S) ZN  (0.223::0.223) (0.091::0.091))
+	(IOPATH (negedge S) ZN  (0.173::0.173) (0.191::0.191))
+	(COND I0==1'b0&&I1==1'b1 (IOPATH S ZN  (0.173::0.173) (0.091::0.091)))
+	(COND I0==1'b1&&I1==1'b0 (IOPATH S ZN  (0.223::0.223) (0.191::0.191)))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "IAO21D0BWP7T")
+    (INSTANCE  VGA_g1091)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH A1 ZN  (0.341::0.341) (0.347::0.347))
+	(IOPATH A2 ZN  (0.347::0.347) (0.370::0.370))
+	(IOPATH B ZN  (0.259::0.259) (0.092::0.092))
+	(COND A1==1'b0&&A2==1'b1 (IOPATH B ZN  (0.259::0.259) (0.092::0.092)))
+	(COND A1==1'b1&&A2==1'b0 (IOPATH B ZN  (0.259::0.259) (0.092::0.092)))
+	(COND A1==1'b1&&A2==1'b1 (IOPATH B ZN  (0.259::0.259) (0.092::0.092)))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "ND4D0BWP7T")
+    (INSTANCE  VGA_g1092)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH A1 ZN  (0.300::0.300) (0.427::0.427))
+	(IOPATH A2 ZN  (0.312::0.312) (0.443::0.443))
+	(IOPATH A3 ZN  (0.322::0.322) (0.456::0.456))
+	(IOPATH A4 ZN  (0.333::0.333) (0.463::0.463))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "OR2D0BWP7T")
+    (INSTANCE  VGA_g1093)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH A1 Z  (0.177::0.177) (0.250::0.250))
+	(IOPATH A2 Z  (0.186::0.186) (0.273::0.273))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "OR2D0BWP7T")
+    (INSTANCE  VGA_g1094)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH A1 Z  (0.199::0.199) (0.264::0.264))
+	(IOPATH A2 Z  (0.205::0.205) (0.285::0.285))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "INVD0BWP7T")
+    (INSTANCE  VGA_g1095)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I ZN  (0.188::0.188) (0.119::0.119))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "LNQD1BWP7T")
+    (INSTANCE  VGA_vertical_reg_8)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH D Q  (0.238::0.238) (0.319::0.319))
+	(IOPATH (negedge EN) Q  (0.483::0.483) (0.589::0.589))
+	)
+      )
+      (TIMINGCHECK
+	(WIDTH (negedge EN) (0.856::0.856))
+	(SETUPHOLD (posedge D) (posedge EN) (0.226::0.226) (-0.119::-0.119))
+	(SETUPHOLD (negedge D) (posedge EN) (0.052::0.052) (-0.005::-0.005))
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "LNQD1BWP7T")
+    (INSTANCE  VGA_vertical_reg_6)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH D Q  (0.233::0.233) (0.316::0.316))
+	(IOPATH (negedge EN) Q  (0.482::0.482) (0.587::0.587))
+	)
+      )
+      (TIMINGCHECK
+	(WIDTH (negedge EN) (0.856::0.856))
+	(SETUPHOLD (posedge D) (posedge EN) (0.225::0.225) (-0.116::-0.116))
+	(SETUPHOLD (negedge D) (posedge EN) (0.050::0.050) (-0.003::-0.003))
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "LNQD1BWP7T")
+    (INSTANCE  VGA_horizontal_reg_6)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH D Q  (0.251::0.251) (0.334::0.334))
+	(IOPATH (negedge EN) Q  (0.502::0.502) (0.607::0.607))
+	)
+      )
+      (TIMINGCHECK
+	(WIDTH (negedge EN) (0.856::0.856))
+	(SETUPHOLD (posedge D) (posedge EN) (0.225::0.225) (-0.115::-0.115))
+	(SETUPHOLD (negedge D) (posedge EN) (0.049::0.049) (-0.002::-0.002))
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "LNQD1BWP7T")
+    (INSTANCE  VGA_scale_vertical_reg_2)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH D Q  (0.264::0.264) (0.344::0.344))
+	(IOPATH (negedge EN) Q  (0.508::0.508) (0.613::0.613))
+	)
+      )
+      (TIMINGCHECK
+	(WIDTH (negedge EN) (0.856::0.856))
+	(SETUPHOLD (posedge D) (posedge EN) (0.227::0.227) (-0.120::-0.120))
+	(SETUPHOLD (negedge D) (posedge EN) (0.053::0.053) (-0.006::-0.006))
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "LNQD1BWP7T")
+    (INSTANCE  VGA_vertical_reg_0)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH D Q  (0.266::0.266) (0.344::0.344))
+	(IOPATH (negedge EN) Q  (0.507::0.507) (0.612::0.612))
+	)
+      )
+      (TIMINGCHECK
+	(WIDTH (negedge EN) (0.856::0.856))
+	(SETUPHOLD (posedge D) (posedge EN) (0.228::0.228) (-0.122::-0.122))
+	(SETUPHOLD (negedge D) (posedge EN) (0.054::0.054) (-0.007::-0.007))
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "LNQD1BWP7T")
+    (INSTANCE  VGA_horizontal_reg_5)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH D Q  (0.243::0.243) (0.329::0.329))
+	(IOPATH (negedge EN) Q  (0.503::0.503) (0.608::0.608))
+	)
+      )
+      (TIMINGCHECK
+	(WIDTH (negedge EN) (0.856::0.856))
+	(SETUPHOLD (posedge D) (posedge EN) (0.222::0.222) (-0.106::-0.106))
+	(SETUPHOLD (negedge D) (posedge EN) (0.043::0.043) (0.004::0.004))
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "LNQD1BWP7T")
+    (INSTANCE  VGA_scale_vertical_reg_3)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH D Q  (0.271::0.271) (0.350::0.350))
+	(IOPATH (negedge EN) Q  (0.514::0.514) (0.618::0.618))
+	)
+      )
+      (TIMINGCHECK
+	(WIDTH (negedge EN) (0.856::0.856))
+	(SETUPHOLD (posedge D) (posedge EN) (0.227::0.227) (-0.121::-0.121))
+	(SETUPHOLD (negedge D) (posedge EN) (0.054::0.054) (-0.007::-0.007))
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "LNQD1BWP7T")
+    (INSTANCE  VGA_scale_horizontal_reg_4)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH D Q  (0.278::0.278) (0.361::0.361))
+	(IOPATH (negedge EN) Q  (0.535::0.535) (0.637::0.637))
+	)
+      )
+      (TIMINGCHECK
+	(WIDTH (negedge EN) (0.856::0.856))
+	(SETUPHOLD (posedge D) (posedge EN) (0.223::0.223) (-0.109::-0.109))
+	(SETUPHOLD (negedge D) (posedge EN) (0.046::0.046) (0.002::0.002))
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "LNQD1BWP7T")
+    (INSTANCE  VGA_scale_horizontal_reg_1)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH D Q  (0.271::0.271) (0.352::0.352))
+	(IOPATH (negedge EN) Q  (0.528::0.528) (0.629::0.629))
+	)
+      )
+      (TIMINGCHECK
+	(WIDTH (negedge EN) (0.856::0.856))
+	(SETUPHOLD (posedge D) (posedge EN) (0.223::0.223) (-0.109::-0.109))
+	(SETUPHOLD (negedge D) (posedge EN) (0.046::0.046) (0.002::0.002))
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "LNQD1BWP7T")
+    (INSTANCE  VGA_vertical_reg_9)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH D Q  (0.301::0.301) (0.378::0.378))
+	(IOPATH (negedge EN) Q  (0.553::0.553) (0.651::0.651))
+	)
+      )
+      (TIMINGCHECK
+	(WIDTH (negedge EN) (0.856::0.856))
+	(SETUPHOLD (posedge D) (posedge EN) (0.225::0.225) (-0.114::-0.114))
+	(SETUPHOLD (negedge D) (posedge EN) (0.049::0.049) (-0.002::-0.002))
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "INVD0BWP7T")
+    (INSTANCE  VGA_g1106)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I ZN  (0.116::0.116) (0.075::0.075))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "LNQD1BWP7T")
+    (INSTANCE  VGA_vertical_reg_5)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH D Q  (0.244::0.244) (0.325::0.325))
+	(IOPATH (negedge EN) Q  (0.488::0.488) (0.594::0.594))
+	)
+      )
+      (TIMINGCHECK
+	(WIDTH (negedge EN) (0.856::0.856))
+	(SETUPHOLD (posedge D) (posedge EN) (0.227::0.227) (-0.120::-0.120))
+	(SETUPHOLD (negedge D) (posedge EN) (0.053::0.053) (-0.006::-0.006))
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "LNQD1BWP7T")
+    (INSTANCE  VGA_scale_horizontal_reg_2)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH D Q  (0.231::0.231) (0.316::0.316))
+	(IOPATH (negedge EN) Q  (0.487::0.487) (0.592::0.592))
+	)
+      )
+      (TIMINGCHECK
+	(WIDTH (negedge EN) (0.856::0.856))
+	(SETUPHOLD (posedge D) (posedge EN) (0.223::0.223) (-0.110::-0.110))
+	(SETUPHOLD (negedge D) (posedge EN) (0.046::0.046) (0.001::0.001))
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "LNQD1BWP7T")
+    (INSTANCE  VGA_vertical_reg_7)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH D Q  (0.242::0.242) (0.321::0.321))
+	(IOPATH (negedge EN) Q  (0.482::0.482) (0.587::0.587))
+	)
+      )
+      (TIMINGCHECK
+	(WIDTH (negedge EN) (0.856::0.856))
+	(SETUPHOLD (posedge D) (posedge EN) (0.228::0.228) (-0.123::-0.123))
+	(SETUPHOLD (negedge D) (posedge EN) (0.055::0.055) (-0.008::-0.008))
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "LNQD1BWP7T")
+    (INSTANCE  VGA_horizontal_reg_8)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH D Q  (0.262::0.262) (0.344::0.344))
+	(IOPATH (negedge EN) Q  (0.511::0.511) (0.615::0.615))
+	)
+      )
+      (TIMINGCHECK
+	(WIDTH (negedge EN) (0.856::0.856))
+	(SETUPHOLD (posedge D) (posedge EN) (0.226::0.226) (-0.117::-0.117))
+	(SETUPHOLD (negedge D) (posedge EN) (0.051::0.051) (-0.004::-0.004))
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "LNQD1BWP7T")
+    (INSTANCE  VGA_horizontal_reg_0)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH D Q  (0.252::0.252) (0.336::0.336))
+	(IOPATH (negedge EN) Q  (0.505::0.505) (0.610::0.610))
+	)
+      )
+      (TIMINGCHECK
+	(WIDTH (negedge EN) (0.856::0.856))
+	(SETUPHOLD (posedge D) (posedge EN) (0.224::0.224) (-0.113::-0.113))
+	(SETUPHOLD (negedge D) (posedge EN) (0.048::0.048) (-0.001::-0.001))
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "LND1BWP7T")
+    (INSTANCE  VGA_horizontal_reg_9)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH D QN  (0.426::0.426) (0.316::0.316))
+	(IOPATH D Q  (0.203::0.203) (0.285::0.285))
+	(IOPATH (negedge EN) QN  (0.701::0.701) (0.570::0.570))
+	(IOPATH (negedge EN) Q  (0.455::0.455) (0.559::0.559))
+	)
+      )
+      (TIMINGCHECK
+	(WIDTH (negedge EN) (0.856::0.856))
+	(SETUPHOLD (posedge D) (posedge EN) (0.222::0.222) (-0.111::-0.111))
+	(SETUPHOLD (negedge D) (posedge EN) (0.056::0.056) (0.001::0.001))
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "LNQD1BWP7T")
+    (INSTANCE  VGA_scale_horizontal_reg_3)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH D Q  (0.246::0.246) (0.330::0.330))
+	(IOPATH (negedge EN) Q  (0.501::0.501) (0.605::0.605))
+	)
+      )
+      (TIMINGCHECK
+	(WIDTH (negedge EN) (0.856::0.856))
+	(SETUPHOLD (posedge D) (posedge EN) (0.224::0.224) (-0.111::-0.111))
+	(SETUPHOLD (negedge D) (posedge EN) (0.047::0.047) (0.001::0.001))
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "LNQD1BWP7T")
+    (INSTANCE  VGA_horizontal_reg_7)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH D Q  (0.266::0.266) (0.344::0.344))
+	(IOPATH (negedge EN) Q  (0.515::0.515) (0.616::0.616))
+	)
+      )
+      (TIMINGCHECK
+	(WIDTH (negedge EN) (0.856::0.856))
+	(SETUPHOLD (posedge D) (posedge EN) (0.225::0.225) (-0.116::-0.116))
+	(SETUPHOLD (negedge D) (posedge EN) (0.050::0.050) (-0.003::-0.003))
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "LNQD1BWP7T")
+    (INSTANCE  VGA_scale_vertical_reg_4)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH D Q  (0.264::0.264) (0.346::0.346))
+	(IOPATH (negedge EN) Q  (0.513::0.513) (0.617::0.617))
+	)
+      )
+      (TIMINGCHECK
+	(WIDTH (negedge EN) (0.856::0.856))
+	(SETUPHOLD (posedge D) (posedge EN) (0.226::0.226) (-0.117::-0.117))
+	(SETUPHOLD (negedge D) (posedge EN) (0.051::0.051) (-0.004::-0.004))
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "LNQD1BWP7T")
+    (INSTANCE  VGA_scale_vertical_reg_1)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH D Q  (0.277::0.277) (0.355::0.355))
+	(IOPATH (negedge EN) Q  (0.524::0.524) (0.626::0.626))
+	)
+      )
+      (TIMINGCHECK
+	(WIDTH (negedge EN) (0.856::0.856))
+	(SETUPHOLD (posedge D) (posedge EN) (0.226::0.226) (-0.117::-0.117))
+	(SETUPHOLD (negedge D) (posedge EN) (0.051::0.051) (-0.004::-0.004))
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "DFCNQD1BWP7T")
+    (INSTANCE  VGA_horizontal_counter_reg_1)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH CDN Q  () (0.700::0.700))
+	(COND CP==1'b0&&D==1'b0 (IOPATH CDN Q  () (0.700::0.700)))
+	(COND CP==1'b0&&D==1'b1 (IOPATH CDN Q  () (0.700::0.700)))
+	(COND CP==1'b1&&D==1'b0 (IOPATH CDN Q  () (0.700::0.700)))
+	(COND CP==1'b1&&D==1'b1 (IOPATH CDN Q  () (0.700::0.700)))
+	(IOPATH (posedge CP) Q  (0.534::0.534) (0.459::0.459))
+	)
+      )
+      (TIMINGCHECK
+	(WIDTH (negedge CDN) (1.583::1.583))
+	(SETUPHOLD (posedge D) (posedge CP) (0.063::0.063) (0.023::0.023))
+	(SETUPHOLD (negedge D) (posedge CP) (-0.024::-0.024) (0.120::0.120))
+	(WIDTH (posedge CP) (0.304::0.304))
+	(WIDTH (negedge CP) (0.293::0.293))
+	(RECREM (posedge CDN) (posedge CP) (-0.192::-0.192) (0.682::0.682))
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "DFCNQD1BWP7T")
+    (INSTANCE  VGA_horizontal_counter_reg_2)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH CDN Q  () (0.706::0.706))
+	(COND CP==1'b0&&D==1'b0 (IOPATH CDN Q  () (0.706::0.706)))
+	(COND CP==1'b0&&D==1'b1 (IOPATH CDN Q  () (0.706::0.706)))
+	(COND CP==1'b1&&D==1'b0 (IOPATH CDN Q  () (0.706::0.706)))
+	(COND CP==1'b1&&D==1'b1 (IOPATH CDN Q  () (0.706::0.706)))
+	(IOPATH (posedge CP) Q  (0.541::0.541) (0.463::0.463))
+	)
+      )
+      (TIMINGCHECK
+	(WIDTH (negedge CDN) (1.583::1.583))
+	(SETUPHOLD (posedge D) (posedge CP) (0.062::0.062) (0.025::0.025))
+	(SETUPHOLD (negedge D) (posedge CP) (-0.022::-0.022) (0.120::0.120))
+	(WIDTH (posedge CP) (0.304::0.304))
+	(WIDTH (negedge CP) (0.293::0.293))
+	(RECREM (posedge CDN) (posedge CP) (-0.192::-0.192) (0.682::0.682))
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "DFCNQD1BWP7T")
+    (INSTANCE  VGA_horizontal_counter_reg_3)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH CDN Q  () (0.709::0.709))
+	(COND CP==1'b0&&D==1'b0 (IOPATH CDN Q  () (0.709::0.709)))
+	(COND CP==1'b0&&D==1'b1 (IOPATH CDN Q  () (0.709::0.709)))
+	(COND CP==1'b1&&D==1'b0 (IOPATH CDN Q  () (0.709::0.709)))
+	(COND CP==1'b1&&D==1'b1 (IOPATH CDN Q  () (0.709::0.709)))
+	(IOPATH (posedge CP) Q  (0.543::0.543) (0.465::0.465))
+	)
+      )
+      (TIMINGCHECK
+	(WIDTH (negedge CDN) (1.583::1.583))
+	(SETUPHOLD (posedge D) (posedge CP) (0.062::0.062) (0.025::0.025))
+	(SETUPHOLD (negedge D) (posedge CP) (-0.022::-0.022) (0.120::0.120))
+	(WIDTH (posedge CP) (0.304::0.304))
+	(WIDTH (negedge CP) (0.293::0.293))
+	(RECREM (posedge CDN) (posedge CP) (-0.192::-0.192) (0.682::0.682))
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "DFCNQD1BWP7T")
+    (INSTANCE  VGA_horizontal_counter_reg_4)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH CDN Q  () (0.701::0.701))
+	(COND CP==1'b0&&D==1'b0 (IOPATH CDN Q  () (0.701::0.701)))
+	(COND CP==1'b0&&D==1'b1 (IOPATH CDN Q  () (0.701::0.701)))
+	(COND CP==1'b1&&D==1'b0 (IOPATH CDN Q  () (0.701::0.701)))
+	(COND CP==1'b1&&D==1'b1 (IOPATH CDN Q  () (0.701::0.701)))
+	(IOPATH (posedge CP) Q  (0.535::0.535) (0.460::0.460))
+	)
+      )
+      (TIMINGCHECK
+	(WIDTH (negedge CDN) (1.583::1.583))
+	(SETUPHOLD (posedge D) (posedge CP) (0.062::0.062) (0.025::0.025))
+	(SETUPHOLD (negedge D) (posedge CP) (-0.022::-0.022) (0.120::0.120))
+	(WIDTH (posedge CP) (0.304::0.304))
+	(WIDTH (negedge CP) (0.293::0.293))
+	(RECREM (posedge CDN) (posedge CP) (-0.192::-0.192) (0.682::0.682))
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "DFCNQD1BWP7T")
+    (INSTANCE  VGA_horizontal_counter_reg_6)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH CDN Q  () (0.725::0.725))
+	(COND CP==1'b0&&D==1'b0 (IOPATH CDN Q  () (0.725::0.725)))
+	(COND CP==1'b0&&D==1'b1 (IOPATH CDN Q  () (0.725::0.725)))
+	(COND CP==1'b1&&D==1'b0 (IOPATH CDN Q  () (0.725::0.725)))
+	(COND CP==1'b1&&D==1'b1 (IOPATH CDN Q  () (0.725::0.725)))
+	(IOPATH (posedge CP) Q  (0.562::0.562) (0.476::0.476))
+	)
+      )
+      (TIMINGCHECK
+	(WIDTH (negedge CDN) (1.583::1.583))
+	(SETUPHOLD (posedge D) (posedge CP) (0.062::0.062) (0.025::0.025))
+	(SETUPHOLD (negedge D) (posedge CP) (-0.022::-0.022) (0.120::0.120))
+	(WIDTH (posedge CP) (0.304::0.304))
+	(WIDTH (negedge CP) (0.293::0.293))
+	(RECREM (posedge CDN) (posedge CP) (-0.192::-0.192) (0.682::0.682))
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "DFCNQD1BWP7T")
+    (INSTANCE  VGA_horizontal_counter_reg_7)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH CDN Q  () (0.730::0.730))
+	(COND CP==1'b0&&D==1'b0 (IOPATH CDN Q  () (0.730::0.730)))
+	(COND CP==1'b0&&D==1'b1 (IOPATH CDN Q  () (0.730::0.730)))
+	(COND CP==1'b1&&D==1'b0 (IOPATH CDN Q  () (0.730::0.730)))
+	(COND CP==1'b1&&D==1'b1 (IOPATH CDN Q  () (0.730::0.730)))
+	(IOPATH (posedge CP) Q  (0.568::0.568) (0.479::0.479))
+	)
+      )
+      (TIMINGCHECK
+	(WIDTH (negedge CDN) (1.583::1.583))
+	(SETUPHOLD (posedge D) (posedge CP) (0.063::0.063) (0.023::0.023))
+	(SETUPHOLD (negedge D) (posedge CP) (-0.021::-0.021) (0.119::0.119))
+	(WIDTH (posedge CP) (0.304::0.304))
+	(WIDTH (negedge CP) (0.293::0.293))
+	(RECREM (posedge CDN) (posedge CP) (-0.192::-0.192) (0.682::0.682))
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "DFCNQD1BWP7T")
+    (INSTANCE  VGA_horizontal_counter_reg_8)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH CDN Q  () (0.734::0.734))
+	(COND CP==1'b0&&D==1'b0 (IOPATH CDN Q  () (0.734::0.734)))
+	(COND CP==1'b0&&D==1'b1 (IOPATH CDN Q  () (0.734::0.734)))
+	(COND CP==1'b1&&D==1'b0 (IOPATH CDN Q  () (0.734::0.734)))
+	(COND CP==1'b1&&D==1'b1 (IOPATH CDN Q  () (0.734::0.734)))
+	(IOPATH (posedge CP) Q  (0.572::0.572) (0.481::0.481))
+	)
+      )
+      (TIMINGCHECK
+	(WIDTH (negedge CDN) (1.583::1.583))
+	(SETUPHOLD (posedge D) (posedge CP) (0.086::0.086) (0.014::0.014))
+	(SETUPHOLD (negedge D) (posedge CP) (0.022::0.022) (0.119::0.119))
+	(WIDTH (posedge CP) (0.304::0.304))
+	(WIDTH (negedge CP) (0.293::0.293))
+	(RECREM (posedge CDN) (posedge CP) (-0.192::-0.192) (0.682::0.682))
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "DFCNQD1BWP7T")
+    (INSTANCE  VGA_horizontal_counter_reg_9)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH CDN Q  () (0.715::0.715))
+	(COND CP==1'b0&&D==1'b0 (IOPATH CDN Q  () (0.715::0.715)))
+	(COND CP==1'b0&&D==1'b1 (IOPATH CDN Q  () (0.715::0.715)))
+	(COND CP==1'b1&&D==1'b0 (IOPATH CDN Q  () (0.715::0.715)))
+	(COND CP==1'b1&&D==1'b1 (IOPATH CDN Q  () (0.715::0.715)))
+	(IOPATH (posedge CP) Q  (0.551::0.551) (0.469::0.469))
+	)
+      )
+      (TIMINGCHECK
+	(WIDTH (negedge CDN) (1.583::1.583))
+	(SETUPHOLD (posedge D) (posedge CP) (0.087::0.087) (0.013::0.013))
+	(SETUPHOLD (negedge D) (posedge CP) (0.023::0.023) (0.118::0.118))
+	(WIDTH (posedge CP) (0.304::0.304))
+	(WIDTH (negedge CP) (0.293::0.293))
+	(RECREM (posedge CDN) (posedge CP) (-0.192::-0.192) (0.682::0.682))
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "DFCNQD1BWP7T")
+    (INSTANCE  VGA_scale_vertical_counter_reg_0)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH CDN Q  () (0.753::0.753))
+	(COND CP==1'b0&&D==1'b0 (IOPATH CDN Q  () (0.753::0.753)))
+	(COND CP==1'b0&&D==1'b1 (IOPATH CDN Q  () (0.753::0.753)))
+	(COND CP==1'b1&&D==1'b0 (IOPATH CDN Q  () (0.753::0.753)))
+	(COND CP==1'b1&&D==1'b1 (IOPATH CDN Q  () (0.753::0.753)))
+	(IOPATH (posedge CP) Q  (0.599::0.599) (0.495::0.495))
+	)
+      )
+      (TIMINGCHECK
+	(WIDTH (negedge CDN) (1.583::1.583))
+	(SETUPHOLD (posedge D) (posedge CP) (0.096::0.096) (0.000::0.000))
+	(SETUPHOLD (negedge D) (posedge CP) (0.016::0.016) (0.114::0.114))
+	(WIDTH (posedge CP) (0.304::0.304))
+	(WIDTH (negedge CP) (0.293::0.293))
+	(RECREM (posedge CDN) (posedge CP) (-0.192::-0.192) (0.682::0.682))
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "DFCNQD1BWP7T")
+    (INSTANCE  VGA_scale_vertical_counter_reg_1)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH CDN Q  () (0.737::0.737))
+	(COND CP==1'b0&&D==1'b0 (IOPATH CDN Q  () (0.737::0.737)))
+	(COND CP==1'b0&&D==1'b1 (IOPATH CDN Q  () (0.737::0.737)))
+	(COND CP==1'b1&&D==1'b0 (IOPATH CDN Q  () (0.737::0.737)))
+	(COND CP==1'b1&&D==1'b1 (IOPATH CDN Q  () (0.737::0.737)))
+	(IOPATH (posedge CP) Q  (0.576::0.576) (0.484::0.484))
+	)
+      )
+      (TIMINGCHECK
+	(WIDTH (negedge CDN) (1.583::1.583))
+	(SETUPHOLD (posedge D) (posedge CP) (0.096::0.096) (0.010::0.010))
+	(SETUPHOLD (negedge D) (posedge CP) (-0.011::-0.011) (0.116::0.116))
+	(WIDTH (posedge CP) (0.304::0.304))
+	(WIDTH (negedge CP) (0.293::0.293))
+	(RECREM (posedge CDN) (posedge CP) (-0.192::-0.192) (0.682::0.682))
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "DFCNQD1BWP7T")
+    (INSTANCE  VGA_scale_vertical_counter_reg_2)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH CDN Q  () (0.747::0.747))
+	(COND CP==1'b0&&D==1'b0 (IOPATH CDN Q  () (0.747::0.747)))
+	(COND CP==1'b0&&D==1'b1 (IOPATH CDN Q  () (0.747::0.747)))
+	(COND CP==1'b1&&D==1'b0 (IOPATH CDN Q  () (0.747::0.747)))
+	(COND CP==1'b1&&D==1'b1 (IOPATH CDN Q  () (0.747::0.747)))
+	(IOPATH (posedge CP) Q  (0.588::0.588) (0.491::0.491))
+	)
+      )
+      (TIMINGCHECK
+	(WIDTH (negedge CDN) (1.583::1.583))
+	(SETUPHOLD (posedge D) (posedge CP) (0.106::0.106) (0.008::0.008))
+	(SETUPHOLD (negedge D) (posedge CP) (-0.005::-0.005) (0.116::0.116))
+	(WIDTH (posedge CP) (0.304::0.304))
+	(WIDTH (negedge CP) (0.293::0.293))
+	(RECREM (posedge CDN) (posedge CP) (-0.192::-0.192) (0.682::0.682))
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "DFCNQD1BWP7T")
+    (INSTANCE  VGA_scale_vertical_counter_reg_3)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH CDN Q  () (0.752::0.752))
+	(COND CP==1'b0&&D==1'b0 (IOPATH CDN Q  () (0.752::0.752)))
+	(COND CP==1'b0&&D==1'b1 (IOPATH CDN Q  () (0.752::0.752)))
+	(COND CP==1'b1&&D==1'b0 (IOPATH CDN Q  () (0.752::0.752)))
+	(COND CP==1'b1&&D==1'b1 (IOPATH CDN Q  () (0.752::0.752)))
+	(IOPATH (posedge CP) Q  (0.594::0.594) (0.494::0.494))
+	)
+      )
+      (TIMINGCHECK
+	(WIDTH (negedge CDN) (1.583::1.583))
+	(SETUPHOLD (posedge D) (posedge CP) (0.104::0.104) (0.009::0.009))
+	(SETUPHOLD (negedge D) (posedge CP) (-0.007::-0.007) (0.117::0.117))
+	(WIDTH (posedge CP) (0.304::0.304))
+	(WIDTH (negedge CP) (0.293::0.293))
+	(RECREM (posedge CDN) (posedge CP) (-0.192::-0.192) (0.682::0.682))
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "DFCNQD1BWP7T")
+    (INSTANCE  VGA_scale_vertical_counter_reg_4)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH CDN Q  () (0.734::0.734))
+	(COND CP==1'b0&&D==1'b0 (IOPATH CDN Q  () (0.734::0.734)))
+	(COND CP==1'b0&&D==1'b1 (IOPATH CDN Q  () (0.734::0.734)))
+	(COND CP==1'b1&&D==1'b0 (IOPATH CDN Q  () (0.734::0.734)))
+	(COND CP==1'b1&&D==1'b1 (IOPATH CDN Q  () (0.734::0.734)))
+	(IOPATH (posedge CP) Q  (0.572::0.572) (0.481::0.481))
+	)
+      )
+      (TIMINGCHECK
+	(WIDTH (negedge CDN) (1.583::1.583))
+	(SETUPHOLD (posedge D) (posedge CP) (0.096::0.096) (0.011::0.011))
+	(SETUPHOLD (negedge D) (posedge CP) (-0.012::-0.012) (0.116::0.116))
+	(WIDTH (posedge CP) (0.304::0.304))
+	(WIDTH (negedge CP) (0.293::0.293))
+	(RECREM (posedge CDN) (posedge CP) (-0.192::-0.192) (0.682::0.682))
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "DFCNQD1BWP7T")
+    (INSTANCE  VGA_vertical_counter_reg_5)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH CDN Q  () (0.746::0.746))
+	(COND CP==1'b0&&D==1'b0 (IOPATH CDN Q  () (0.746::0.746)))
+	(COND CP==1'b0&&D==1'b1 (IOPATH CDN Q  () (0.746::0.746)))
+	(COND CP==1'b1&&D==1'b0 (IOPATH CDN Q  () (0.746::0.746)))
+	(COND CP==1'b1&&D==1'b1 (IOPATH CDN Q  () (0.746::0.746)))
+	(IOPATH (posedge CP) Q  (0.587::0.587) (0.491::0.491))
+	)
+      )
+      (TIMINGCHECK
+	(WIDTH (negedge CDN) (1.583::1.583))
+	(SETUPHOLD (posedge D) (posedge CP) (0.095::0.095) (0.012::0.012))
+	(SETUPHOLD (negedge D) (posedge CP) (-0.013::-0.013) (0.117::0.117))
+	(WIDTH (posedge CP) (0.304::0.304))
+	(WIDTH (negedge CP) (0.293::0.293))
+	(RECREM (posedge CDN) (posedge CP) (-0.192::-0.192) (0.682::0.682))
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "DFCNQD1BWP7T")
+    (INSTANCE  VGA_vertical_counter_reg_6)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH CDN Q  () (0.729::0.729))
+	(COND CP==1'b0&&D==1'b0 (IOPATH CDN Q  () (0.729::0.729)))
+	(COND CP==1'b0&&D==1'b1 (IOPATH CDN Q  () (0.729::0.729)))
+	(COND CP==1'b1&&D==1'b0 (IOPATH CDN Q  () (0.729::0.729)))
+	(COND CP==1'b1&&D==1'b1 (IOPATH CDN Q  () (0.729::0.729)))
+	(IOPATH (posedge CP) Q  (0.567::0.567) (0.479::0.479))
+	)
+      )
+      (TIMINGCHECK
+	(WIDTH (negedge CDN) (1.583::1.583))
+	(SETUPHOLD (posedge D) (posedge CP) (0.095::0.095) (0.012::0.012))
+	(SETUPHOLD (negedge D) (posedge CP) (-0.014::-0.014) (0.117::0.117))
+	(WIDTH (posedge CP) (0.304::0.304))
+	(WIDTH (negedge CP) (0.293::0.293))
+	(RECREM (posedge CDN) (posedge CP) (-0.192::-0.192) (0.682::0.682))
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "DFCNQD1BWP7T")
+    (INSTANCE  VGA_vertical_counter_reg_7)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH CDN Q  () (0.760::0.760))
+	(COND CP==1'b0&&D==1'b0 (IOPATH CDN Q  () (0.760::0.760)))
+	(COND CP==1'b0&&D==1'b1 (IOPATH CDN Q  () (0.760::0.760)))
+	(COND CP==1'b1&&D==1'b0 (IOPATH CDN Q  () (0.760::0.760)))
+	(COND CP==1'b1&&D==1'b1 (IOPATH CDN Q  () (0.760::0.760)))
+	(IOPATH (posedge CP) Q  (0.604::0.604) (0.500::0.500))
+	)
+      )
+      (TIMINGCHECK
+	(WIDTH (negedge CDN) (1.583::1.583))
+	(SETUPHOLD (posedge D) (posedge CP) (0.096::0.096) (0.010::0.010))
+	(SETUPHOLD (negedge D) (posedge CP) (-0.010::-0.010) (0.116::0.116))
+	(WIDTH (posedge CP) (0.304::0.304))
+	(WIDTH (negedge CP) (0.293::0.293))
+	(RECREM (posedge CDN) (posedge CP) (-0.192::-0.192) (0.682::0.682))
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "DFCNQD1BWP7T")
+    (INSTANCE  VGA_vertical_counter_reg_8)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH CDN Q  () (0.742::0.742))
+	(COND CP==1'b0&&D==1'b0 (IOPATH CDN Q  () (0.742::0.742)))
+	(COND CP==1'b0&&D==1'b1 (IOPATH CDN Q  () (0.742::0.742)))
+	(COND CP==1'b1&&D==1'b0 (IOPATH CDN Q  () (0.742::0.742)))
+	(COND CP==1'b1&&D==1'b1 (IOPATH CDN Q  () (0.742::0.742)))
+	(IOPATH (posedge CP) Q  (0.581::0.581) (0.487::0.487))
+	)
+      )
+      (TIMINGCHECK
+	(WIDTH (negedge CDN) (1.583::1.583))
+	(SETUPHOLD (posedge D) (posedge CP) (0.097::0.097) (0.008::0.008))
+	(SETUPHOLD (negedge D) (posedge CP) (-0.009::-0.009) (0.115::0.115))
+	(WIDTH (posedge CP) (0.304::0.304))
+	(WIDTH (negedge CP) (0.293::0.293))
+	(RECREM (posedge CDN) (posedge CP) (-0.192::-0.192) (0.682::0.682))
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "DFCNQD1BWP7T")
+    (INSTANCE  VGA_vertical_counter_reg_9)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH CDN Q  () (0.723::0.723))
+	(COND CP==1'b0&&D==1'b0 (IOPATH CDN Q  () (0.723::0.723)))
+	(COND CP==1'b0&&D==1'b1 (IOPATH CDN Q  () (0.723::0.723)))
+	(COND CP==1'b1&&D==1'b0 (IOPATH CDN Q  () (0.723::0.723)))
+	(COND CP==1'b1&&D==1'b1 (IOPATH CDN Q  () (0.723::0.723)))
+	(IOPATH (posedge CP) Q  (0.559::0.559) (0.474::0.474))
+	)
+      )
+      (TIMINGCHECK
+	(WIDTH (negedge CDN) (1.583::1.583))
+	(SETUPHOLD (posedge D) (posedge CP) (0.105::0.105) (0.008::0.008))
+	(SETUPHOLD (negedge D) (posedge CP) (-0.006::-0.006) (0.117::0.117))
+	(WIDTH (posedge CP) (0.304::0.304))
+	(WIDTH (negedge CP) (0.293::0.293))
+	(RECREM (posedge CDN) (posedge CP) (-0.192::-0.192) (0.682::0.682))
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "NR2XD0BWP7T")
+    (INSTANCE  VGA_g1374)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH A1 ZN  (0.135::0.135) (0.123::0.123))
+	(IOPATH A2 ZN  (0.221::0.221) (0.285::0.285))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "MAOI22D0BWP7T")
+    (INSTANCE  VGA_g1376)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH A1 ZN  (0.171::0.171) (0.094::0.094))
+	(COND A2==1'b1&&B1==1'b0&&B2==1'b1 (IOPATH A1 ZN  (0.171::0.171) (0.094::0.094)))
+	(COND A2==1'b1&&B1==1'b1&&B2==1'b0 (IOPATH A1 ZN  (0.171::0.171) (0.094::0.094)))
+	(COND A2==1'b1&&B1==1'b1&&B2==1'b1 (IOPATH A1 ZN  (0.171::0.171) (0.094::0.094)))
+	(IOPATH A2 ZN  (0.199::0.199) (0.108::0.108))
+	(COND A1==1'b1&&B1==1'b0&&B2==1'b1 (IOPATH A2 ZN  (0.199::0.199) (0.108::0.108)))
+	(COND A1==1'b1&&B1==1'b1&&B2==1'b0 (IOPATH A2 ZN  (0.199::0.199) (0.108::0.108)))
+	(COND A1==1'b1&&B1==1'b1&&B2==1'b1 (IOPATH A2 ZN  (0.199::0.199) (0.108::0.108)))
+	(IOPATH B1 ZN  (0.305::0.305) (0.254::0.254))
+	(COND A1==1'b0&&A2==1'b0&&B2==1'b0 (IOPATH B1 ZN  (0.305::0.305) (0.254::0.254)))
+	(COND A1==1'b0&&A2==1'b1&&B2==1'b0 (IOPATH B1 ZN  (0.305::0.305) (0.254::0.254)))
+	(COND A1==1'b1&&A2==1'b0&&B2==1'b0 (IOPATH B1 ZN  (0.305::0.305) (0.254::0.254)))
+	(IOPATH B2 ZN  (0.330::0.330) (0.278::0.278))
+	(COND A1==1'b0&&A2==1'b0&&B1==1'b0 (IOPATH B2 ZN  (0.330::0.330) (0.278::0.278)))
+	(COND A1==1'b0&&A2==1'b1&&B1==1'b0 (IOPATH B2 ZN  (0.330::0.330) (0.278::0.278)))
+	(COND A1==1'b1&&A2==1'b0&&B1==1'b0 (IOPATH B2 ZN  (0.330::0.330) (0.278::0.278)))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "NR2XD0BWP7T")
+    (INSTANCE  VGA_g1377)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH A1 ZN  (0.133::0.133) (0.122::0.122))
+	(IOPATH A2 ZN  (0.218::0.218) (0.281::0.281))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "MOAI22D0BWP7T")
+    (INSTANCE  VGA_g1380)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH A1 ZN  (0.211::0.211) (0.104::0.104))
+	(COND A2==1'b0&&B1==1'b0&&B2==1'b0 (IOPATH A1 ZN  (0.211::0.211) (0.104::0.104)))
+	(COND A2==1'b0&&B1==1'b0&&B2==1'b1 (IOPATH A1 ZN  (0.211::0.211) (0.104::0.104)))
+	(COND A2==1'b0&&B1==1'b1&&B2==1'b0 (IOPATH A1 ZN  (0.211::0.211) (0.104::0.104)))
+	(IOPATH A2 ZN  (0.233::0.233) (0.140::0.140))
+	(COND A1==1'b0&&B1==1'b0&&B2==1'b0 (IOPATH A2 ZN  (0.233::0.233) (0.140::0.140)))
+	(COND A1==1'b0&&B1==1'b0&&B2==1'b1 (IOPATH A2 ZN  (0.233::0.233) (0.140::0.140)))
+	(COND A1==1'b0&&B1==1'b1&&B2==1'b0 (IOPATH A2 ZN  (0.233::0.233) (0.140::0.140)))
+	(IOPATH B1 ZN  (0.237::0.237) (0.229::0.229))
+	(COND A1==1'b0&&A2==1'b1&&B2==1'b1 (IOPATH B1 ZN  (0.237::0.237) (0.229::0.229)))
+	(COND A1==1'b1&&A2==1'b0&&B2==1'b1 (IOPATH B1 ZN  (0.237::0.237) (0.229::0.229)))
+	(COND A1==1'b1&&A2==1'b1&&B2==1'b1 (IOPATH B1 ZN  (0.237::0.237) (0.229::0.229)))
+	(IOPATH B2 ZN  (0.257::0.257) (0.247::0.247))
+	(COND A1==1'b0&&A2==1'b1&&B1==1'b1 (IOPATH B2 ZN  (0.257::0.257) (0.247::0.247)))
+	(COND A1==1'b1&&A2==1'b0&&B1==1'b1 (IOPATH B2 ZN  (0.257::0.257) (0.247::0.247)))
+	(COND A1==1'b1&&A2==1'b1&&B1==1'b1 (IOPATH B2 ZN  (0.257::0.257) (0.247::0.247)))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "MOAI22D0BWP7T")
+    (INSTANCE  VGA_g1382)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH A1 ZN  (0.246::0.246) (0.117::0.117))
+	(COND A2==1'b0&&B1==1'b0&&B2==1'b0 (IOPATH A1 ZN  (0.246::0.246) (0.117::0.117)))
+	(COND A2==1'b0&&B1==1'b0&&B2==1'b1 (IOPATH A1 ZN  (0.246::0.246) (0.117::0.117)))
+	(COND A2==1'b0&&B1==1'b1&&B2==1'b0 (IOPATH A1 ZN  (0.246::0.246) (0.117::0.117)))
+	(IOPATH A2 ZN  (0.268::0.268) (0.160::0.160))
+	(COND A1==1'b0&&B1==1'b0&&B2==1'b0 (IOPATH A2 ZN  (0.268::0.268) (0.160::0.160)))
+	(COND A1==1'b0&&B1==1'b0&&B2==1'b1 (IOPATH A2 ZN  (0.268::0.268) (0.160::0.160)))
+	(COND A1==1'b0&&B1==1'b1&&B2==1'b0 (IOPATH A2 ZN  (0.268::0.268) (0.160::0.160)))
+	(IOPATH B1 ZN  (0.253::0.253) (0.245::0.245))
+	(COND A1==1'b0&&A2==1'b1&&B2==1'b1 (IOPATH B1 ZN  (0.253::0.253) (0.245::0.245)))
+	(COND A1==1'b1&&A2==1'b0&&B2==1'b1 (IOPATH B1 ZN  (0.253::0.253) (0.245::0.245)))
+	(COND A1==1'b1&&A2==1'b1&&B2==1'b1 (IOPATH B1 ZN  (0.253::0.253) (0.245::0.245)))
+	(IOPATH B2 ZN  (0.276::0.276) (0.265::0.265))
+	(COND A1==1'b0&&A2==1'b1&&B1==1'b1 (IOPATH B2 ZN  (0.276::0.276) (0.265::0.265)))
+	(COND A1==1'b1&&A2==1'b0&&B1==1'b1 (IOPATH B2 ZN  (0.276::0.276) (0.265::0.265)))
+	(COND A1==1'b1&&A2==1'b1&&B1==1'b1 (IOPATH B2 ZN  (0.276::0.276) (0.265::0.265)))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "MAOI22D0BWP7T")
+    (INSTANCE  VGA_g1383)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH A1 ZN  (0.179::0.179) (0.104::0.104))
+	(COND A2==1'b1&&B1==1'b0&&B2==1'b1 (IOPATH A1 ZN  (0.179::0.179) (0.104::0.104)))
+	(COND A2==1'b1&&B1==1'b1&&B2==1'b0 (IOPATH A1 ZN  (0.179::0.179) (0.104::0.104)))
+	(COND A2==1'b1&&B1==1'b1&&B2==1'b1 (IOPATH A1 ZN  (0.179::0.179) (0.104::0.104)))
+	(IOPATH A2 ZN  (0.204::0.204) (0.114::0.114))
+	(COND A1==1'b1&&B1==1'b0&&B2==1'b1 (IOPATH A2 ZN  (0.204::0.204) (0.114::0.114)))
+	(COND A1==1'b1&&B1==1'b1&&B2==1'b0 (IOPATH A2 ZN  (0.204::0.204) (0.114::0.114)))
+	(COND A1==1'b1&&B1==1'b1&&B2==1'b1 (IOPATH A2 ZN  (0.204::0.204) (0.114::0.114)))
+	(IOPATH B1 ZN  (0.315::0.315) (0.261::0.261))
+	(COND A1==1'b0&&A2==1'b0&&B2==1'b0 (IOPATH B1 ZN  (0.315::0.315) (0.261::0.261)))
+	(COND A1==1'b0&&A2==1'b1&&B2==1'b0 (IOPATH B1 ZN  (0.315::0.315) (0.261::0.261)))
+	(COND A1==1'b1&&A2==1'b0&&B2==1'b0 (IOPATH B1 ZN  (0.315::0.315) (0.261::0.261)))
+	(IOPATH B2 ZN  (0.338::0.338) (0.282::0.282))
+	(COND A1==1'b0&&A2==1'b0&&B1==1'b0 (IOPATH B2 ZN  (0.338::0.338) (0.282::0.282)))
+	(COND A1==1'b0&&A2==1'b1&&B1==1'b0 (IOPATH B2 ZN  (0.338::0.338) (0.282::0.282)))
+	(COND A1==1'b1&&A2==1'b0&&B1==1'b0 (IOPATH B2 ZN  (0.338::0.338) (0.282::0.282)))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "IND2D1BWP7T")
+    (INSTANCE  VGA_g1387)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH A1 ZN  (0.171::0.171) (0.200::0.200))
+	(IOPATH B1 ZN  (0.096::0.096) (0.102::0.102))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "OAI31D0BWP7T")
+    (INSTANCE  VGA_g1392)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH A1 ZN  (0.407::0.407) (0.169::0.169))
+	(IOPATH A2 ZN  (0.387::0.387) (0.137::0.137))
+	(IOPATH A3 ZN  (0.405::0.405) (0.153::0.153))
+	(IOPATH B ZN  (0.175::0.175) (0.157::0.157))
+	(COND A1==1'b0&&A2==1'b0&&A3==1'b1 (IOPATH B ZN  (0.175::0.175) (0.157::0.157)))
+	(COND A1==1'b0&&A2==1'b1&&A3==1'b0 (IOPATH B ZN  (0.175::0.175) (0.157::0.157)))
+	(COND A1==1'b0&&A2==1'b1&&A3==1'b1 (IOPATH B ZN  (0.175::0.175) (0.157::0.157)))
+	(COND A1==1'b1&&A2==1'b0&&A3==1'b0 (IOPATH B ZN  (0.175::0.175) (0.157::0.157)))
+	(COND A1==1'b1&&A2==1'b0&&A3==1'b1 (IOPATH B ZN  (0.175::0.175) (0.157::0.157)))
+	(COND A1==1'b1&&A2==1'b1&&A3==1'b0 (IOPATH B ZN  (0.175::0.175) (0.157::0.157)))
+	(COND A1==1'b1&&A2==1'b1&&A3==1'b1 (IOPATH B ZN  (0.175::0.175) (0.157::0.157)))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "OAI31D0BWP7T")
+    (INSTANCE  VGA_g1395)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH A1 ZN  (0.431::0.431) (0.173::0.173))
+	(IOPATH A2 ZN  (0.413::0.413) (0.147::0.147))
+	(IOPATH A3 ZN  (0.428::0.428) (0.160::0.160))
+	(IOPATH B ZN  (0.184::0.184) (0.167::0.167))
+	(COND A1==1'b0&&A2==1'b0&&A3==1'b1 (IOPATH B ZN  (0.184::0.184) (0.167::0.167)))
+	(COND A1==1'b0&&A2==1'b1&&A3==1'b0 (IOPATH B ZN  (0.184::0.184) (0.167::0.167)))
+	(COND A1==1'b0&&A2==1'b1&&A3==1'b1 (IOPATH B ZN  (0.184::0.184) (0.167::0.167)))
+	(COND A1==1'b1&&A2==1'b0&&A3==1'b0 (IOPATH B ZN  (0.184::0.184) (0.167::0.167)))
+	(COND A1==1'b1&&A2==1'b0&&A3==1'b1 (IOPATH B ZN  (0.184::0.184) (0.167::0.167)))
+	(COND A1==1'b1&&A2==1'b1&&A3==1'b0 (IOPATH B ZN  (0.184::0.184) (0.167::0.167)))
+	(COND A1==1'b1&&A2==1'b1&&A3==1'b1 (IOPATH B ZN  (0.184::0.184) (0.167::0.167)))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "OAI31D0BWP7T")
+    (INSTANCE  VGA_g1396)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH A1 ZN  (0.419::0.419) (0.159::0.159))
+	(IOPATH A2 ZN  (0.408::0.408) (0.160::0.160))
+	(IOPATH A3 ZN  (0.420::0.420) (0.158::0.158))
+	(IOPATH B ZN  (0.180::0.180) (0.166::0.166))
+	(COND A1==1'b0&&A2==1'b0&&A3==1'b1 (IOPATH B ZN  (0.180::0.180) (0.166::0.166)))
+	(COND A1==1'b0&&A2==1'b1&&A3==1'b0 (IOPATH B ZN  (0.180::0.180) (0.166::0.166)))
+	(COND A1==1'b0&&A2==1'b1&&A3==1'b1 (IOPATH B ZN  (0.180::0.180) (0.166::0.166)))
+	(COND A1==1'b1&&A2==1'b0&&A3==1'b0 (IOPATH B ZN  (0.180::0.180) (0.166::0.166)))
+	(COND A1==1'b1&&A2==1'b0&&A3==1'b1 (IOPATH B ZN  (0.180::0.180) (0.166::0.166)))
+	(COND A1==1'b1&&A2==1'b1&&A3==1'b0 (IOPATH B ZN  (0.180::0.180) (0.166::0.166)))
+	(COND A1==1'b1&&A2==1'b1&&A3==1'b1 (IOPATH B ZN  (0.180::0.180) (0.166::0.166)))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "MOAI22D0BWP7T")
+    (INSTANCE  VGA_g1399)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH A1 ZN  (0.266::0.266) (0.126::0.126))
+	(COND A2==1'b0&&B1==1'b0&&B2==1'b0 (IOPATH A1 ZN  (0.266::0.266) (0.126::0.126)))
+	(COND A2==1'b0&&B1==1'b0&&B2==1'b1 (IOPATH A1 ZN  (0.266::0.266) (0.126::0.126)))
+	(COND A2==1'b0&&B1==1'b1&&B2==1'b0 (IOPATH A1 ZN  (0.266::0.266) (0.126::0.126)))
+	(IOPATH A2 ZN  (0.235::0.235) (0.147::0.147))
+	(COND A1==1'b0&&B1==1'b0&&B2==1'b0 (IOPATH A2 ZN  (0.235::0.235) (0.147::0.147)))
+	(COND A1==1'b0&&B1==1'b0&&B2==1'b1 (IOPATH A2 ZN  (0.235::0.235) (0.147::0.147)))
+	(COND A1==1'b0&&B1==1'b1&&B2==1'b0 (IOPATH A2 ZN  (0.235::0.235) (0.147::0.147)))
+	(IOPATH B1 ZN  (0.257::0.257) (0.287::0.287))
+	(COND A1==1'b0&&A2==1'b1&&B2==1'b1 (IOPATH B1 ZN  (0.257::0.257) (0.287::0.287)))
+	(COND A1==1'b1&&A2==1'b0&&B2==1'b1 (IOPATH B1 ZN  (0.257::0.257) (0.287::0.287)))
+	(COND A1==1'b1&&A2==1'b1&&B2==1'b1 (IOPATH B1 ZN  (0.257::0.257) (0.287::0.287)))
+	(IOPATH B2 ZN  (0.261::0.261) (0.251::0.251))
+	(COND A1==1'b0&&A2==1'b1&&B1==1'b1 (IOPATH B2 ZN  (0.261::0.261) (0.251::0.251)))
+	(COND A1==1'b1&&A2==1'b0&&B1==1'b1 (IOPATH B2 ZN  (0.261::0.261) (0.251::0.251)))
+	(COND A1==1'b1&&A2==1'b1&&B1==1'b1 (IOPATH B2 ZN  (0.261::0.261) (0.251::0.251)))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "MOAI22D0BWP7T")
+    (INSTANCE  VGA_g1400)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH A1 ZN  (0.278::0.278) (0.130::0.130))
+	(COND A2==1'b0&&B1==1'b0&&B2==1'b0 (IOPATH A1 ZN  (0.278::0.278) (0.130::0.130)))
+	(COND A2==1'b0&&B1==1'b0&&B2==1'b1 (IOPATH A1 ZN  (0.278::0.278) (0.130::0.130)))
+	(COND A2==1'b0&&B1==1'b1&&B2==1'b0 (IOPATH A1 ZN  (0.278::0.278) (0.130::0.130)))
+	(IOPATH A2 ZN  (0.253::0.253) (0.152::0.152))
+	(COND A1==1'b0&&B1==1'b0&&B2==1'b0 (IOPATH A2 ZN  (0.253::0.253) (0.152::0.152)))
+	(COND A1==1'b0&&B1==1'b0&&B2==1'b1 (IOPATH A2 ZN  (0.253::0.253) (0.152::0.152)))
+	(COND A1==1'b0&&B1==1'b1&&B2==1'b0 (IOPATH A2 ZN  (0.253::0.253) (0.152::0.152)))
+	(IOPATH B1 ZN  (0.262::0.262) (0.289::0.289))
+	(COND A1==1'b0&&A2==1'b1&&B2==1'b1 (IOPATH B1 ZN  (0.262::0.262) (0.289::0.289)))
+	(COND A1==1'b1&&A2==1'b0&&B2==1'b1 (IOPATH B1 ZN  (0.262::0.262) (0.289::0.289)))
+	(COND A1==1'b1&&A2==1'b1&&B2==1'b1 (IOPATH B1 ZN  (0.262::0.262) (0.289::0.289)))
+	(IOPATH B2 ZN  (0.268::0.268) (0.257::0.257))
+	(COND A1==1'b0&&A2==1'b1&&B1==1'b1 (IOPATH B2 ZN  (0.268::0.268) (0.257::0.257)))
+	(COND A1==1'b1&&A2==1'b0&&B1==1'b1 (IOPATH B2 ZN  (0.268::0.268) (0.257::0.257)))
+	(COND A1==1'b1&&A2==1'b1&&B1==1'b1 (IOPATH B2 ZN  (0.268::0.268) (0.257::0.257)))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "MOAI22D0BWP7T")
+    (INSTANCE  VGA_g1402)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH A1 ZN  (0.287::0.287) (0.136::0.136))
+	(COND A2==1'b0&&B1==1'b0&&B2==1'b0 (IOPATH A1 ZN  (0.287::0.287) (0.136::0.136)))
+	(COND A2==1'b0&&B1==1'b0&&B2==1'b1 (IOPATH A1 ZN  (0.287::0.287) (0.136::0.136)))
+	(COND A2==1'b0&&B1==1'b1&&B2==1'b0 (IOPATH A1 ZN  (0.287::0.287) (0.136::0.136)))
+	(IOPATH A2 ZN  (0.253::0.253) (0.160::0.160))
+	(COND A1==1'b0&&B1==1'b0&&B2==1'b0 (IOPATH A2 ZN  (0.253::0.253) (0.160::0.160)))
+	(COND A1==1'b0&&B1==1'b0&&B2==1'b1 (IOPATH A2 ZN  (0.253::0.253) (0.160::0.160)))
+	(COND A1==1'b0&&B1==1'b1&&B2==1'b0 (IOPATH A2 ZN  (0.253::0.253) (0.160::0.160)))
+	(IOPATH B1 ZN  (0.267::0.267) (0.298::0.298))
+	(COND A1==1'b0&&A2==1'b1&&B2==1'b1 (IOPATH B1 ZN  (0.267::0.267) (0.298::0.298)))
+	(COND A1==1'b1&&A2==1'b0&&B2==1'b1 (IOPATH B1 ZN  (0.267::0.267) (0.298::0.298)))
+	(COND A1==1'b1&&A2==1'b1&&B2==1'b1 (IOPATH B1 ZN  (0.267::0.267) (0.298::0.298)))
+	(IOPATH B2 ZN  (0.272::0.272) (0.262::0.262))
+	(COND A1==1'b0&&A2==1'b1&&B1==1'b1 (IOPATH B2 ZN  (0.272::0.272) (0.262::0.262)))
+	(COND A1==1'b1&&A2==1'b0&&B1==1'b1 (IOPATH B2 ZN  (0.272::0.272) (0.262::0.262)))
+	(COND A1==1'b1&&A2==1'b1&&B1==1'b1 (IOPATH B2 ZN  (0.272::0.272) (0.262::0.262)))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "MOAI22D0BWP7T")
+    (INSTANCE  VGA_g1403)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH A1 ZN  (0.275::0.275) (0.129::0.129))
+	(COND A2==1'b0&&B1==1'b0&&B2==1'b0 (IOPATH A1 ZN  (0.275::0.275) (0.129::0.129)))
+	(COND A2==1'b0&&B1==1'b0&&B2==1'b1 (IOPATH A1 ZN  (0.275::0.275) (0.129::0.129)))
+	(COND A2==1'b0&&B1==1'b1&&B2==1'b0 (IOPATH A1 ZN  (0.275::0.275) (0.129::0.129)))
+	(IOPATH A2 ZN  (0.248::0.248) (0.148::0.148))
+	(COND A1==1'b0&&B1==1'b0&&B2==1'b0 (IOPATH A2 ZN  (0.248::0.248) (0.148::0.148)))
+	(COND A1==1'b0&&B1==1'b0&&B2==1'b1 (IOPATH A2 ZN  (0.248::0.248) (0.148::0.148)))
+	(COND A1==1'b0&&B1==1'b1&&B2==1'b0 (IOPATH A2 ZN  (0.248::0.248) (0.148::0.148)))
+	(IOPATH B1 ZN  (0.261::0.261) (0.289::0.289))
+	(COND A1==1'b0&&A2==1'b1&&B2==1'b1 (IOPATH B1 ZN  (0.261::0.261) (0.289::0.289)))
+	(COND A1==1'b1&&A2==1'b0&&B2==1'b1 (IOPATH B1 ZN  (0.261::0.261) (0.289::0.289)))
+	(COND A1==1'b1&&A2==1'b1&&B2==1'b1 (IOPATH B1 ZN  (0.261::0.261) (0.289::0.289)))
+	(IOPATH B2 ZN  (0.265::0.265) (0.255::0.255))
+	(COND A1==1'b0&&A2==1'b1&&B1==1'b1 (IOPATH B2 ZN  (0.265::0.265) (0.255::0.255)))
+	(COND A1==1'b1&&A2==1'b0&&B1==1'b1 (IOPATH B2 ZN  (0.265::0.265) (0.255::0.255)))
+	(COND A1==1'b1&&A2==1'b1&&B1==1'b1 (IOPATH B2 ZN  (0.265::0.265) (0.255::0.255)))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "IOA21D1BWP7T")
+    (INSTANCE  VGA_g1411)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH A1 ZN  (0.358::0.358) (0.314::0.314))
+	(IOPATH A2 ZN  (0.207::0.207) (0.205::0.205))
+	(IOPATH B ZN  (0.080::0.080) (0.085::0.085))
+	(COND A1==1'b0&&A2==1'b0 (IOPATH B ZN  (0.080::0.080) (0.085::0.085)))
+	(COND A1==1'b0&&A2==1'b1 (IOPATH B ZN  (0.080::0.080) (0.085::0.085)))
+	(COND A1==1'b1&&A2==1'b0 (IOPATH B ZN  (0.080::0.080) (0.085::0.085)))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "ND2D1BWP7T")
+    (INSTANCE  VGA_g1412)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH A1 ZN  (0.114::0.114) (0.079::0.079))
+	(IOPATH A2 ZN  (0.097::0.097) (0.086::0.086))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "IOA21D1BWP7T")
+    (INSTANCE  VGA_g1413)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH A1 ZN  (0.355::0.355) (0.312::0.312))
+	(IOPATH A2 ZN  (0.205::0.205) (0.210::0.210))
+	(IOPATH B ZN  (0.083::0.083) (0.089::0.089))
+	(COND A1==1'b0&&A2==1'b0 (IOPATH B ZN  (0.083::0.083) (0.089::0.089)))
+	(COND A1==1'b0&&A2==1'b1 (IOPATH B ZN  (0.083::0.083) (0.089::0.089)))
+	(COND A1==1'b1&&A2==1'b0 (IOPATH B ZN  (0.083::0.083) (0.089::0.089)))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "IND2D1BWP7T")
+    (INSTANCE  VGA_g1414)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH A1 ZN  (0.183::0.183) (0.259::0.259))
+	(IOPATH B1 ZN  (0.100::0.100) (0.109::0.109))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "IND2D1BWP7T")
+    (INSTANCE  VGA_g1415)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH A1 ZN  (0.184::0.184) (0.261::0.261))
+	(IOPATH B1 ZN  (0.101::0.101) (0.110::0.110))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "IND2D1BWP7T")
+    (INSTANCE  VGA_g1416)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH A1 ZN  (0.193::0.193) (0.221::0.221))
+	(IOPATH B1 ZN  (0.119::0.119) (0.126::0.126))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "ND2D1BWP7T")
+    (INSTANCE  VGA_g1418)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH A1 ZN  (0.195::0.195) (0.190::0.190))
+	(IOPATH A2 ZN  (0.114::0.114) (0.106::0.106))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "IND2D1BWP7T")
+    (INSTANCE  VGA_g1419)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH A1 ZN  (0.172::0.172) (0.206::0.206))
+	(IOPATH B1 ZN  (0.200::0.200) (0.198::0.198))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "ND2D1BWP7T")
+    (INSTANCE  VGA_g1420)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH A1 ZN  (0.218::0.218) (0.223::0.223))
+	(IOPATH A2 ZN  (0.126::0.126) (0.115::0.115))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "IND2D1BWP7T")
+    (INSTANCE  VGA_g1421)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH A1 ZN  (0.209::0.209) (0.254::0.254))
+	(IOPATH B1 ZN  (0.231::0.231) (0.243::0.243))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "ND2D1BWP7T")
+    (INSTANCE  VGA_g1422)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH A1 ZN  (0.282::0.282) (0.312::0.312))
+	(IOPATH A2 ZN  (0.301::0.301) (0.186::0.186))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "NR2XD0BWP7T")
+    (INSTANCE  VGA_g1427)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH A1 ZN  (0.229::0.229) (0.207::0.207))
+	(IOPATH A2 ZN  (0.148::0.148) (0.141::0.141))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "IOA21D1BWP7T")
+    (INSTANCE  VGA_g1428)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH A1 ZN  (0.267::0.267) (0.323::0.323))
+	(IOPATH A2 ZN  (0.211::0.211) (0.220::0.220))
+	(IOPATH B ZN  (0.180::0.180) (0.168::0.168))
+	(COND A1==1'b0&&A2==1'b0 (IOPATH B ZN  (0.180::0.180) (0.168::0.168)))
+	(COND A1==1'b0&&A2==1'b1 (IOPATH B ZN  (0.180::0.180) (0.168::0.168)))
+	(COND A1==1'b1&&A2==1'b0 (IOPATH B ZN  (0.180::0.180) (0.168::0.168)))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "IND2D1BWP7T")
+    (INSTANCE  VGA_g1431)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH A1 ZN  (0.186::0.186) (0.224::0.224))
+	(IOPATH B1 ZN  (0.112::0.112) (0.121::0.121))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "IND4D0BWP7T")
+    (INSTANCE  VGA_g1432)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH A1 ZN  (0.229::0.229) (0.336::0.336))
+	(IOPATH B1 ZN  (0.157::0.157) (0.218::0.218))
+	(IOPATH B2 ZN  (0.144::0.144) (0.213::0.213))
+	(IOPATH B3 ZN  (0.156::0.156) (0.222::0.222))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "MAOI22D0BWP7T")
+    (INSTANCE  VGA_g1433)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH A1 ZN  (0.203::0.203) (0.141::0.141))
+	(COND A2==1'b1&&B1==1'b0&&B2==1'b1 (IOPATH A1 ZN  (0.203::0.203) (0.141::0.141)))
+	(COND A2==1'b1&&B1==1'b1&&B2==1'b0 (IOPATH A1 ZN  (0.203::0.203) (0.141::0.141)))
+	(COND A2==1'b1&&B1==1'b1&&B2==1'b1 (IOPATH A1 ZN  (0.203::0.203) (0.141::0.141)))
+	(IOPATH A2 ZN  (0.209::0.209) (0.118::0.118))
+	(COND A1==1'b1&&B1==1'b0&&B2==1'b1 (IOPATH A2 ZN  (0.209::0.209) (0.118::0.118)))
+	(COND A1==1'b1&&B1==1'b1&&B2==1'b0 (IOPATH A2 ZN  (0.209::0.209) (0.118::0.118)))
+	(COND A1==1'b1&&B1==1'b1&&B2==1'b1 (IOPATH A2 ZN  (0.209::0.209) (0.118::0.118)))
+	(IOPATH B1 ZN  (0.348::0.348) (0.279::0.279))
+	(COND A1==1'b0&&A2==1'b0&&B2==1'b0 (IOPATH B1 ZN  (0.348::0.348) (0.279::0.279)))
+	(COND A1==1'b0&&A2==1'b1&&B2==1'b0 (IOPATH B1 ZN  (0.348::0.348) (0.279::0.279)))
+	(COND A1==1'b1&&A2==1'b0&&B2==1'b0 (IOPATH B1 ZN  (0.348::0.348) (0.279::0.279)))
+	(IOPATH B2 ZN  (0.345::0.345) (0.281::0.281))
+	(COND A1==1'b0&&A2==1'b0&&B1==1'b0 (IOPATH B2 ZN  (0.345::0.345) (0.281::0.281)))
+	(COND A1==1'b0&&A2==1'b1&&B1==1'b0 (IOPATH B2 ZN  (0.345::0.345) (0.281::0.281)))
+	(COND A1==1'b1&&A2==1'b0&&B1==1'b0 (IOPATH B2 ZN  (0.345::0.345) (0.281::0.281)))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "ND2D1BWP7T")
+    (INSTANCE  VGA_g1434)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH A1 ZN  (0.128::0.128) (0.137::0.137))
+	(IOPATH A2 ZN  (0.112::0.112) (0.105::0.105))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "ND2D1BWP7T")
+    (INSTANCE  VGA_g1436)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH A1 ZN  (0.178::0.178) (0.119::0.119))
+	(IOPATH A2 ZN  (0.106::0.106) (0.086::0.086))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "ND2D1BWP7T")
+    (INSTANCE  VGA_g1437)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH A1 ZN  (0.092::0.092) (0.088::0.088))
+	(IOPATH A2 ZN  (0.193::0.193) (0.099::0.099))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "INR2XD0BWP7T")
+    (INSTANCE  VGA_g1438)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH A1 ZN  (0.298::0.298) (0.251::0.251))
+	(IOPATH B1 ZN  (0.218::0.218) (0.139::0.139))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "IND3D1BWP7T")
+    (INSTANCE  VGA_g1440)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH A1 ZN  (0.217::0.217) (0.289::0.289))
+	(IOPATH B1 ZN  (0.194::0.194) (0.160::0.160))
+	(IOPATH B2 ZN  (0.117::0.117) (0.154::0.154))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "IND2D1BWP7T")
+    (INSTANCE  VGA_g1442)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH A1 ZN  (0.188::0.188) (0.215::0.215))
+	(IOPATH B1 ZN  (0.107::0.107) (0.112::0.112))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "NR4D0BWP7T")
+    (INSTANCE  VGA_g1443)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH A1 ZN  (0.208::0.208) (0.105::0.105))
+	(IOPATH A2 ZN  (0.261::0.261) (0.138::0.138))
+	(IOPATH A3 ZN  (0.307::0.307) (0.134::0.134))
+	(IOPATH A4 ZN  (0.328::0.328) (0.142::0.142))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "ND3D0BWP7T")
+    (INSTANCE  VGA_g1444)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH A1 ZN  (0.165::0.165) (0.201::0.201))
+	(IOPATH A2 ZN  (0.176::0.176) (0.208::0.208))
+	(IOPATH A3 ZN  (0.182::0.182) (0.204::0.204))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "INR2XD0BWP7T")
+    (INSTANCE  VGA_g1446)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH A1 ZN  (0.255::0.255) (0.232::0.232))
+	(IOPATH B1 ZN  (0.168::0.168) (0.113::0.113))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "IND2D1BWP7T")
+    (INSTANCE  VGA_g1447)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH A1 ZN  (0.189::0.189) (0.218::0.218))
+	(IOPATH B1 ZN  (0.111::0.111) (0.116::0.116))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "IND2D1BWP7T")
+    (INSTANCE  VGA_g1448)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH A1 ZN  (0.188::0.188) (0.219::0.219))
+	(IOPATH B1 ZN  (0.118::0.118) (0.128::0.128))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "IND2D1BWP7T")
+    (INSTANCE  VGA_g1450)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH A1 ZN  (0.197::0.197) (0.228::0.228))
+	(IOPATH B1 ZN  (0.122::0.122) (0.133::0.133))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "ND2D1BWP7T")
+    (INSTANCE  VGA_g1452)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH A1 ZN  (0.131::0.131) (0.141::0.141))
+	(IOPATH A2 ZN  (0.147::0.147) (0.141::0.141))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "ND2D1BWP7T")
+    (INSTANCE  VGA_g1453)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH A1 ZN  (0.105::0.105) (0.110::0.110))
+	(IOPATH A2 ZN  (0.120::0.120) (0.113::0.113))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKND1BWP7T")
+    (INSTANCE  VGA_g1459)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I ZN  (0.867::0.867) (1.053::1.053))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "INR3D0BWP7T")
+    (INSTANCE  VGA_g2)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH A1 ZN  (1.219::1.219) (0.592::0.592))
+	(IOPATH B1 ZN  (1.145::1.145) (0.433::0.433))
+	(IOPATH B2 ZN  (1.068::1.068) (0.415::0.415))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "IIND4D0BWP7T")
+    (INSTANCE  VGA_g1460)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH A1 ZN  (0.199::0.199) (0.303::0.303))
+	(IOPATH A2 ZN  (0.226::0.226) (0.330::0.330))
+	(IOPATH B1 ZN  (0.151::0.151) (0.214::0.214))
+	(IOPATH B2 ZN  (0.155::0.155) (0.216::0.216))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "IIND4D0BWP7T")
+    (INSTANCE  VGA_g1461)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH A1 ZN  (0.354::0.354) (0.547::0.547))
+	(IOPATH A2 ZN  (0.388::0.388) (0.578::0.578))
+	(IOPATH B1 ZN  (0.306::0.306) (0.457::0.457))
+	(IOPATH B2 ZN  (0.313::0.313) (0.472::0.472))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "MUX2ND0BWP7T")
+    (INSTANCE  VGA_g1462)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH I0 ZN  (0.300::0.300) (0.116::0.116))
+	(COND I1==1'b0&&S==1'b0 (IOPATH I0 ZN  (0.300::0.300) (0.116::0.116)))
+	(COND I1==1'b1&&S==1'b0 (IOPATH I0 ZN  (0.300::0.300) (0.116::0.116)))
+	(IOPATH I1 ZN  (0.287::0.287) (0.137::0.137))
+	(COND I0==1'b0&&S==1'b1 (IOPATH I1 ZN  (0.287::0.287) (0.137::0.137)))
+	(COND I0==1'b1&&S==1'b1 (IOPATH I1 ZN  (0.287::0.287) (0.137::0.137)))
+	(IOPATH (posedge S) ZN  (0.265::0.265) (0.127::0.127))
+	(IOPATH (negedge S) ZN  (0.205::0.205) (0.203::0.203))
+	(COND I0==1'b0&&I1==1'b1 (IOPATH S ZN  (0.205::0.205) (0.127::0.127)))
+	(COND I0==1'b1&&I1==1'b0 (IOPATH S ZN  (0.265::0.265) (0.203::0.203)))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "XNR2D1BWP7T")
+    (INSTANCE  VGA_g1470)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH (posedge A1) ZN  (0.167::0.167) (0.216::0.216))
+	(IOPATH (negedge A1) ZN  (0.296::0.296) (0.270::0.270))
+	(COND A2==1'b0 (IOPATH A1 ZN  (0.296::0.296) (0.216::0.216)))
+	(COND A2==1'b1 (IOPATH A1 ZN  (0.167::0.167) (0.270::0.270)))
+	(IOPATH (posedge A2) ZN  (0.203::0.203) (0.380::0.380))
+	(IOPATH (negedge A2) ZN  (0.280::0.280) (0.232::0.232))
+	(COND A1==1'b0 (IOPATH A2 ZN  (0.280::0.280) (0.380::0.380)))
+	(COND A1==1'b1 (IOPATH A2 ZN  (0.203::0.203) (0.232::0.232)))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "XNR2D1BWP7T")
+    (INSTANCE  VGA_g1471)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH (posedge A1) ZN  (0.169::0.169) (0.218::0.218))
+	(IOPATH (negedge A1) ZN  (0.298::0.298) (0.271::0.271))
+	(COND A2==1'b0 (IOPATH A1 ZN  (0.298::0.298) (0.218::0.218)))
+	(COND A2==1'b1 (IOPATH A1 ZN  (0.169::0.169) (0.271::0.271)))
+	(IOPATH (posedge A2) ZN  (0.203::0.203) (0.380::0.380))
+	(IOPATH (negedge A2) ZN  (0.280::0.280) (0.232::0.232))
+	(COND A1==1'b0 (IOPATH A2 ZN  (0.280::0.280) (0.380::0.380)))
+	(COND A1==1'b1 (IOPATH A2 ZN  (0.203::0.203) (0.232::0.232)))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "XNR2D1BWP7T")
+    (INSTANCE  VGA_g1472)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH (posedge A1) ZN  (0.168::0.168) (0.217::0.217))
+	(IOPATH (negedge A1) ZN  (0.296::0.296) (0.270::0.270))
+	(COND A2==1'b0 (IOPATH A1 ZN  (0.296::0.296) (0.217::0.217)))
+	(COND A2==1'b1 (IOPATH A1 ZN  (0.168::0.168) (0.270::0.270)))
+	(IOPATH (posedge A2) ZN  (0.201::0.201) (0.378::0.378))
+	(IOPATH (negedge A2) ZN  (0.278::0.278) (0.231::0.231))
+	(COND A1==1'b0 (IOPATH A2 ZN  (0.278::0.278) (0.378::0.378)))
+	(COND A1==1'b1 (IOPATH A2 ZN  (0.201::0.201) (0.231::0.231)))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "XNR2D1BWP7T")
+    (INSTANCE  VGA_g1473)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH (posedge A1) ZN  (0.167::0.167) (0.215::0.215))
+	(IOPATH (negedge A1) ZN  (0.304::0.304) (0.276::0.276))
+	(COND A2==1'b0 (IOPATH A1 ZN  (0.304::0.304) (0.215::0.215)))
+	(COND A2==1'b1 (IOPATH A1 ZN  (0.167::0.167) (0.276::0.276)))
+	(IOPATH (posedge A2) ZN  (0.209::0.209) (0.384::0.384))
+	(IOPATH (negedge A2) ZN  (0.285::0.285) (0.237::0.237))
+	(COND A1==1'b0 (IOPATH A2 ZN  (0.285::0.285) (0.384::0.384)))
+	(COND A1==1'b1 (IOPATH A2 ZN  (0.209::0.209) (0.237::0.237)))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "XNR2D1BWP7T")
+    (INSTANCE  VGA_g1474)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH (posedge A1) ZN  (0.175::0.175) (0.223::0.223))
+	(IOPATH (negedge A1) ZN  (0.305::0.305) (0.278::0.278))
+	(COND A2==1'b0 (IOPATH A1 ZN  (0.305::0.305) (0.223::0.223)))
+	(COND A2==1'b1 (IOPATH A1 ZN  (0.175::0.175) (0.278::0.278)))
+	(IOPATH (posedge A2) ZN  (0.217::0.217) (0.391::0.391))
+	(IOPATH (negedge A2) ZN  (0.293::0.293) (0.244::0.244))
+	(COND A1==1'b0 (IOPATH A2 ZN  (0.293::0.293) (0.391::0.391)))
+	(COND A1==1'b1 (IOPATH A2 ZN  (0.217::0.217) (0.244::0.244)))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "DFCND1BWP7T")
+    (INSTANCE  VGA_horizontal_counter_reg_5)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH CDN QN  (0.951::0.951) ())
+	(IOPATH CDN Q  () (0.695::0.695))
+	(COND CP==1'b0&&D==1'b0 (IOPATH CDN QN  (0.951::0.951) ()))
+	(COND CP==1'b0&&D==1'b1 (IOPATH CDN QN  (0.951::0.951) ()))
+	(COND CP==1'b1&&D==1'b0 (IOPATH CDN QN  (0.951::0.951) ()))
+	(COND CP==1'b1&&D==1'b1 (IOPATH CDN QN  (0.951::0.951) ()))
+	(COND CP==1'b0&&D==1'b0 (IOPATH CDN Q  () (0.695::0.695)))
+	(COND CP==1'b0&&D==1'b1 (IOPATH CDN Q  () (0.695::0.695)))
+	(COND CP==1'b1&&D==1'b0 (IOPATH CDN Q  () (0.695::0.695)))
+	(COND CP==1'b1&&D==1'b1 (IOPATH CDN Q  () (0.695::0.695)))
+	(IOPATH (posedge CP) QN  (0.608::0.608) (0.617::0.617))
+	(IOPATH (posedge CP) Q  (0.523::0.523) (0.453::0.453))
+	)
+      )
+      (TIMINGCHECK
+	(WIDTH (negedge CDN) (1.581::1.581))
+	(SETUPHOLD (posedge D) (posedge CP) (0.087::0.087) (0.014::0.014))
+	(SETUPHOLD (negedge D) (posedge CP) (0.018::0.018) (0.117::0.117))
+	(WIDTH (posedge CP) (0.309::0.309))
+	(WIDTH (negedge CP) (0.293::0.293))
+	(RECREM (posedge CDN) (posedge CP) (-0.189::-0.189) (0.682::0.682))
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "DFCND1BWP7T")
+    (INSTANCE  VGA_horizontal_counter_reg_0)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH CDN QN  (0.905::0.905) ())
+	(IOPATH CDN Q  () (0.728::0.728))
+	(COND CP==1'b0&&D==1'b0 (IOPATH CDN QN  (0.905::0.905) ()))
+	(COND CP==1'b0&&D==1'b1 (IOPATH CDN QN  (0.905::0.905) ()))
+	(COND CP==1'b1&&D==1'b0 (IOPATH CDN QN  (0.905::0.905) ()))
+	(COND CP==1'b1&&D==1'b1 (IOPATH CDN QN  (0.905::0.905) ()))
+	(COND CP==1'b0&&D==1'b0 (IOPATH CDN Q  () (0.728::0.728)))
+	(COND CP==1'b0&&D==1'b1 (IOPATH CDN Q  () (0.728::0.728)))
+	(COND CP==1'b1&&D==1'b0 (IOPATH CDN Q  () (0.728::0.728)))
+	(COND CP==1'b1&&D==1'b1 (IOPATH CDN Q  () (0.728::0.728)))
+	(IOPATH (posedge CP) QN  (0.568::0.568) (0.599::0.599))
+	(IOPATH (posedge CP) Q  (0.557::0.557) (0.474::0.474))
+	)
+      )
+      (TIMINGCHECK
+	(WIDTH (negedge CDN) (1.581::1.581))
+	(SETUPHOLD (posedge D) (posedge CP) (0.058::0.058) (0.024::0.024))
+	(SETUPHOLD (negedge D) (posedge CP) (-0.034::-0.034) (0.124::0.124))
+	(WIDTH (posedge CP) (0.309::0.309))
+	(WIDTH (negedge CP) (0.293::0.293))
+	(RECREM (posedge CDN) (posedge CP) (-0.189::-0.189) (0.682::0.682))
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CKXOR2D1BWP7T")
+    (INSTANCE  VGA_g1479)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH (posedge A1) Z  (0.230::0.230) (0.288::0.288))
+	(IOPATH (negedge A1) Z  (0.279::0.279) (0.195::0.195))
+	(COND A2==1'b1 (IOPATH A1 Z  (0.279::0.279) (0.288::0.288)))
+	(COND A2==1'b0 (IOPATH A1 Z  (0.230::0.230) (0.195::0.195)))
+	(IOPATH (posedge A2) Z  (0.282::0.282) (0.373::0.373))
+	(IOPATH (negedge A2) Z  (0.330::0.330) (0.259::0.259))
+	(COND A1==1'b1 (IOPATH A2 Z  (0.330::0.330) (0.373::0.373)))
+	(COND A1==1'b0 (IOPATH A2 Z  (0.282::0.282) (0.259::0.259)))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "INR3D0BWP7T")
+    (INSTANCE  VGA_g1480)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH A1 ZN  (0.429::0.429) (0.456::0.456))
+	(IOPATH B1 ZN  (0.312::0.312) (0.200::0.200))
+	(IOPATH B2 ZN  (0.259::0.259) (0.135::0.135))
+	)
+      )
+  )
+)

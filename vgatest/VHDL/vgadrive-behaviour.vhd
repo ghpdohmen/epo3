@@ -9,7 +9,7 @@ architecture behaviour of vgadrive is
   -- clock period = 39.72 ns; the constants are integer multiples of the
   -- clock frequency and are close but not exact
   -- row counter will go from 0 to 524; column counter from 0 to 799
-  subtype counter is std_logic_vector(9 downto 0);
+
   subtype counter_int is INTEGER RANGE 0 to 800;
   signal vertical, horizontal : counter_int;  -- define counters
   signal scale_vertical, scale_horizontal : counter_int;
@@ -59,6 +59,10 @@ if reset = '1' then
 	scale_horizontal_counter := 0;
 	vertical_counter := 0;
 	scale_vertical_counter := 0;
+	vertical <= vertical_counter;
+  	horizontal <= horizontal_counter;
+  	scale_vertical <= scale_vertical_counter;
+  	scale_horizontal <= scale_horizontal_counter; 
 else
 	vertical <= vertical_counter;
   	horizontal <= horizontal_counter;
@@ -71,7 +75,7 @@ end process;
 -- define H pulse
 hpulse: process(horizontal)
 begin
-      if  horizontal >= (D + E)  and  horizontal < (D + E + B)  then
+      if  horizontal >= (D + E)  and  horizontal < (D + E + B) then
         H <= '0';
       else
         H <= '1';
@@ -91,7 +95,7 @@ end process;
 --define enable output
 enableprc: process(vertical, horizontal)
 begin
-      if vertical < 480 and horizontal < 640 then
+      if vertical < 480 and horizontal < 480 then
         enable <= '1';
         Rout <= red;
         Gout <= green;
@@ -99,7 +103,7 @@ begin
       else
         enable <= '0';
         Rout <= '0';
-        Gout <= '0';
+        Gout <= '1';
         Bout <= '0';
       end if;
 end process;
@@ -107,8 +111,8 @@ end process;
 -- define scaling outputs
 scalepulses: process(horizontal, vertical)
 begin
-	if horizontal < 640 then
-		if (scale_horizontal mod 32) = 0 then 
+	if horizontal < 480 then
+		if ((scale_horizontal mod 32) = 0) and (scale_horizontal /= 0) then 
 			scale_h <= '1';
 		else
 			scale_h <= '0';
@@ -117,7 +121,7 @@ begin
 		scale_h <= '0';
 	end if;
 	if vertical < 480 then
-		if (scale_vertical mod 32) = 0 then 
+		if ((scale_vertical mod 32) = 0) and (scale_horizontal /= 0) then 
 			scale_v <= '1';
 		else
 			scale_v <= '0';
