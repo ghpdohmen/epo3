@@ -1,0 +1,497 @@
+
+Cadence Innovus(TM) Implementation System.
+Copyright 2017 Cadence Design Systems, Inc. All rights reserved worldwide.
+
+Version:	v17.11-s080_1, built Fri Aug 4 11:13:11 PDT 2017
+Options:	-files ../tcl/par2.tcl 
+Date:		Thu Dec 22 14:07:09 2022
+Host:		ce-epo3-cad.ewi.tudelft.nl (x86_64 w/Linux 3.10.0-1160.76.1.el7.x86_64) (1core*8cpus*Intel(R) Xeon(R) CPU E5-2683 v3 @ 2.00GHz 35840KB)
+OS:		Red Hat Enterprise Linux Server release 7.9 (Maipo)
+
+License:
+		invs	Innovus Implementation System	17.1	checkout succeeded
+		8 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.
+Change the soft stacksize limit to 0.2%RAM (31 mbytes). Set global soft_stack_size_limit to change the value.
+
+**INFO:  MMMC transition support version v31-84 
+
+<CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+<CMD> suppressMessage ENCEXT-2799
+<CMD> getDrawView
+<CMD> loadWorkspace -name Physical
+Sourcing file "../tcl/par2.tcl" ...
+<CMD> setPreference CmdLogMode 2
+<CMD> set init_lef_file /data/designkit/tsmc-180nm/lib/TSMCHOME/digital/Back_End/lef/tcb018gbwp7t_270a/lef/tcb018gbwp7t_6lm.lef
+<CMD> set init_mmmc_file ../in/mmmc.view
+<CMD> set init_verilog ../in/top.v
+<CMD> set init_top_cell mux
+<CMD> set init_gnd_net dgnd
+<CMD> set init_pwr_net dvdd
+<CMD> suppressMessage TECHLIB IMPLF IMPVL IMPFP IMPCTE IMPRM IMPSP IMPCTE NRDB IMPEXT
+<CMD> encMessage info 0
+rc_bc rc_wc
+**WARN: (EMS-42):	Message (IMPLF-1) has been suppressed from output.
+**WARN: (EMS-42):	Message (IMPLF-99) has been suppressed from output.
+**WARN: (EMS-42):	Message (IMPLF-200) has been suppressed from output.
+Loading view definition file from ../in/mmmc.view
+*** End library_loading (cpu=0.04min, real=0.05min, mem=31.0M, fe_cpu=0.21min, fe_real=0.22min, fe_mem=521.4M) ***
+**WARN: (EMS-42):	Message (IMPVL-159) has been suppressed from output.
+**WARN: (EMS-42):	Message (IMPVL-148) has been suppressed from output.
+**WARN: (EMS-42):	Message (IMPVL-101) has been suppressed from output.
+**WARN: (EMS-42):	Message (IMPVL-106) has been suppressed from output.
+*** Netlist is unique.
+**WARN: (EMS-42):	Message (IMPFP-3961) has been suppressed from output.
+**WARN: (EMS-42):	Message (IMPRM-144) has been suppressed from output.
+mux
+**WARN: (EMS-42):	Message (IMPCTE-290) has been suppressed from output.
+**WARN: (EMS-42):	Message (IMPEXT-2658) has been suppressed from output.
+**WARN: (EMS-42):	Message (IMPEXT-2706) has been suppressed from output.
+**WARN: (EMS-42):	Message (IMPEXT-2663) has been suppressed from output.
+**WARN: (EMS-42):	Message (IMPEXT-2664) has been suppressed from output.
+**WARN: (EMS-42):	Message (IMPEXT-2606) has been suppressed from output.
+**WARN: (EMS-42):	Message (IMPEXT-2666) has been suppressed from output.
+**WARN: (EMS-42):	Message (IMPEXT-2667) has been suppressed from output.
+**WARN: (EMS-42):	Message (IMPEXT-2668) has been suppressed from output.
+**WARN: (EMS-42):	Message (IMPEXT-2669) has been suppressed from output.
+**WARN: (EMS-42):	Message (IMPEXT-2670) has been suppressed from output.
+**WARN: (EMS-42):	Message (IMPEXT-2671) has been suppressed from output.
+**WARN: (EMS-42):	Message (IMPEXT-2672) has been suppressed from output.
+**WARN: (EMS-42):	Message (IMPEXT-2673) has been suppressed from output.
+**WARN: (EMS-42):	Message (IMPEXT-2674) has been suppressed from output.
+**WARN: (EMS-42):	Message (IMPEXT-6162) has been suppressed from output.
+**WARN: (EMS-42):	Message (IMPEXT-3307) has been suppressed from output.
+**WARN: (EMS-42):	Message (IMPEXT-1001) has been suppressed from output.
+**WARN: (EMS-42):	Message (IMPEXT-6161) has been suppressed from output.
+**WARN: (EMS-42):	Message (IMPEXT-2675) has been suppressed from output.
+**WARN: (EMS-42):	Message (IMPEXT-1010) has been suppressed from output.
+**WARN: (EMS-42):	Message (IMPEXT-6163) has been suppressed from output.
+**WARN: (EMS-42):	Message (IMPEXT-3345) has been suppressed from output.
+**WARN: (EMS-42):	Message (IMPEXT-2828) has been suppressed from output.
+**WARN: (EMS-42):	Message (IMPEXT-2832) has been suppressed from output.
+**WARN: (EMS-42):	Message (IMPRM-148) has been suppressed from output.
+**WARN: (EMS-42):	Message (IMPRM-143) has been suppressed from output.
+**WARN: (EMS-42):	Message (IMPFP-325) has been suppressed from output.
+**WARN: (EMS-42):	Message (IMPSP-5134) has been suppressed from output.
+mux
+<CMD> encMessage warning 1
+Un-suppress "**WARN ..." messages.
+<CMD> sroute
+#% Begin sroute (date=12/22 14:07:23, mem=687.1M)
+*** Begin SPECIAL ROUTE on Thu Dec 22 14:07:23 2022 ***
+SPECIAL ROUTE ran on directory: /home/ghpdohmen/epo3/epo3/gwtf/backend/par/run
+SPECIAL ROUTE ran on machine: ce-epo3-cad.ewi.tudelft.nl (Linux 3.10.0-1160.76.1.el7.x86_64 Xeon 2.00Ghz)
+
+Begin option processing ...
+srouteConnectPowerBump set to false
+routeSpecial set to true
+srouteConnectConverterPin set to false
+srouteFollowCorePinEnd set to 3
+srouteJogControl set to "preferWithChanges differentLayer"
+sroutePadPinAllPorts set to true
+sroutePreserveExistingRoutes set to true
+srouteRoutePowerBarPortOnBothDir set to true
+End option processing: cpu: 0:00:00, real: 0:00:00, peak: 1519.00 megs.
+
+Reading DB technology information...
+Finished reading DB technology information.
+Reading floorplan and netlist information...
+Finished reading floorplan and netlist information.
+Read in 13 layers, 6 routing layers, 1 overlap layer
+Read in 1128 macros, 4 used
+Read in 987 components
+  987 core components: 3 unplaced, 0 placed, 984 fixed
+Read in 24 physical pins
+  24 physical pins: 0 unplaced, 0 placed, 24 fixed
+Read in 4 nets
+Read in 2 special nets, 2 routed
+Read in 24 terminals
+Begin power routing ...
+**WARN: (IMPSR-1253):	Cannot find any standard cell pin connected to net dvdd.
+Run globalNetConnect command or change CPF file to make sure that the netlist reflects the correct power ground connections. The standard cell pins must be defined as 'USE POWER' or 'USE GROUND'.
+**WARN: (IMPSR-1254):	Cannot find any block pin of net dvdd. Check netlist, or change option to include the pin.
+**WARN: (IMPSR-1256):	Cannot find any CORE class pad pin of net dvdd. Change routing area or layer to include the expected pin, or check netlist, or change port class in the technology file.
+Type 'man IMPSR-1256' for more detail.
+Cannot find any AREAIO class pad pin of net dvdd. Check net list, or change port class in the technology file, or change option to include pin in given range.
+**WARN: (IMPSR-1253):	Cannot find any standard cell pin connected to net dgnd.
+Run globalNetConnect command or change CPF file to make sure that the netlist reflects the correct power ground connections. The standard cell pins must be defined as 'USE POWER' or 'USE GROUND'.
+**WARN: (IMPSR-1254):	Cannot find any block pin of net dgnd. Check netlist, or change option to include the pin.
+**WARN: (IMPSR-1256):	Cannot find any CORE class pad pin of net dgnd. Change routing area or layer to include the expected pin, or check netlist, or change port class in the technology file.
+Type 'man IMPSR-1256' for more detail.
+Cannot find any AREAIO class pad pin of net dgnd. Check net list, or change port class in the technology file, or change option to include pin in given range.
+**WARN: (IMPSR-468):	Cannot find any standard cell pin connected to net dvdd.
+Use setSrouteMode -corePinReferenceMacro <standard cell> to specify a reference macro for followpin connection, or run globalNetConnect command or change CPF file to make sure that the netlist reflects the correct power ground connections. The standard cell pins must be defined as "USE POWER" or "USE GROUND".
+**WARN: (IMPSR-468):	Cannot find any standard cell pin connected to net dvdd.
+Use setSrouteMode -corePinReferenceMacro <standard cell> to specify a reference macro for followpin connection, or run globalNetConnect command or change CPF file to make sure that the netlist reflects the correct power ground connections. The standard cell pins must be defined as "USE POWER" or "USE GROUND".
+CPU time for FollowPin 0 seconds
+**WARN: (IMPSR-468):	Cannot find any standard cell pin connected to net dgnd.
+Use setSrouteMode -corePinReferenceMacro <standard cell> to specify a reference macro for followpin connection, or run globalNetConnect command or change CPF file to make sure that the netlist reflects the correct power ground connections. The standard cell pins must be defined as "USE POWER" or "USE GROUND".
+**WARN: (IMPSR-468):	Cannot find any standard cell pin connected to net dgnd.
+Use setSrouteMode -corePinReferenceMacro <standard cell> to specify a reference macro for followpin connection, or run globalNetConnect command or change CPF file to make sure that the netlist reflects the correct power ground connections. The standard cell pins must be defined as "USE POWER" or "USE GROUND".
+CPU time for FollowPin 0 seconds
+  Number of IO ports routed: 0
+  Number of Block ports routed: 0
+  Number of Stripe ports routed: 0
+  Number of Core ports routed: 0
+  Number of Pad ports routed: 0
+  Number of Power Bump ports routed: 0
+  Number of Followpin connections: 83
+End power routing: cpu: 0:00:00, real: 0:00:00, peak: 1536.00 megs.
+
+
+
+ Begin updating DB with routing results ...
+ Updating DB with 24 io pins ...
+ Updating DB with 0 via definition ...Extracting standard cell pins and blockage ...... 
+Pin and blockage extraction finished
+
+sroute created 83 wires.
+ViaGen created 1245 vias, deleted 0 via to avoid violation.
++--------+----------------+----------------+
+|  Layer |     Created    |     Deleted    |
++--------+----------------+----------------+
+| METAL1 |       83       |       NA       |
+|  VIA12 |       415      |        0       |
+|  VIA23 |       415      |        0       |
+|  VIA34 |       415      |        0       |
++--------+----------------+----------------+
+#% End sroute (date=12/22 14:07:23, total cpu=0:00:00.2, real=0:00:00.0, peak res=707.8M, current mem=707.8M)
+<CMD> placeDesign -prePlaceOpt
+*** Starting placeDesign default flow ***
+*** Start deleteBufferTree ***
+Info: Detect buffers to remove automatically.
+Analyzing netlist ...
+Updating netlist
+
+*summary: 0 instances (buffers/inverters) removed
+*** Finish deleteBufferTree (0:00:00.0) ***
+**INFO: Enable pre-place timing setting for timing analysis
+Set Using Default Delay Limit as 101.
+**WARN: (IMPDC-1629):	The default delay limit was set to 101. This is less than the default of 1000 and may result in inaccurate delay calculation for nets with a fanout higher than the setting.  If needed, the default delay limit may be adjusted by running the command 'set delaycal_use_default_delay_limit'.
+Set Default Net Delay as 0 ps.
+Set Default Net Load as 0 pF. 
+**INFO: Analyzing IO path groups for slack adjustment
+**INFO: Disable pre-place timing setting for timing analysis
+Set Using Default Delay Limit as 1000.
+Set Default Net Delay as 1000 ps.
+Set Default Net Load as 0.5 pF. 
+**INFO: Pre-place timing setting for timing analysis already disabled
+Deleted 0 physical inst  (cell - / prefix -).
+Did not delete 984 physical insts as they were marked preplaced.
+*** Starting "NanoPlace(TM) placement v#10 (mem=755.1M)" ...
+total jobs 12088
+multi thread init TemplateIndex for each ta. thread num 1
+Wait...
+*** Build Buffered Sizing Timing Model (Used Compact Buffer Set) ...(cpu=0:00:01.2 mem=807.5M) ***
+*** Build Virtual Sizing Timing Model
+(cpu=0:00:01.6 mem=830.5M) ***
+No user setting net weight.
+Options: timingDriven clkGateAware ignoreScan pinGuide congEffort=auto gpeffort=medium 
+**WARN: (EMS-42):	Message (IMPSP-9043) has been suppressed from output.
+#std cell=987 (984 fixed + 3 movable) #block=0 (0 floating + 0 preplaced)
+#ioInst=0 #net=6 #term=13 #term/net=2.17, #fixedIo=0, #floatIo=0, #fixedPin=4, #floatPin=0
+stdCell: 987 single + 0 double + 0 multi
+Total standard cell length = 1.1138 (mm), area = 0.0044 (mm^2)
+Average module density = 0.000.
+Density for the design = 0.000.
+       = stdcell_area 21 sites (46 um^2) / alloc_area 45592 sites (100084 um^2).
+Pin Density = 0.0002733.
+            = total # of pins 13 / total area 47560.
+=== lastAutoLevel = 8 
+**WARN: (EMS-42):	Message (IMPCTE-241) has been suppressed from output.
+Clock gating cells determined by native netlist tracing.
+Iteration  1: Total net bbox = 1.295e+03 (5.95e+02 6.99e+02)
+              Est.  stn bbox = 1.295e+03 (5.95e+02 6.99e+02)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 862.4M
+Iteration  2: Total net bbox = 1.295e+03 (5.95e+02 6.99e+02)
+              Est.  stn bbox = 1.295e+03 (5.95e+02 6.99e+02)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 862.4M
+Iteration  3: Total net bbox = 3.519e+01 (1.39e+01 2.13e+01)
+              Est.  stn bbox = 3.519e+01 (1.39e+01 2.13e+01)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 862.4M
+Active setup views:
+    setup_wc
+Iteration  4: Total net bbox = 3.521e+01 (1.39e+01 2.13e+01)
+              Est.  stn bbox = 3.521e+01 (1.39e+01 2.13e+01)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 862.4M
+Iteration  5: Total net bbox = 3.518e+01 (1.39e+01 2.13e+01)
+              Est.  stn bbox = 3.518e+01 (1.39e+01 2.13e+01)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 862.4M
+Iteration  6: Total net bbox = 3.506e+01 (1.38e+01 2.13e+01)
+              Est.  stn bbox = 3.506e+01 (1.38e+01 2.13e+01)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 862.4M
+Iteration  7: Total net bbox = 3.831e+01 (1.31e+01 2.52e+01)
+              Est.  stn bbox = 3.831e+01 (1.31e+01 2.52e+01)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 862.4M
+Iteration  8: Total net bbox = 3.831e+01 (1.31e+01 2.52e+01)
+              Est.  stn bbox = 3.831e+01 (1.31e+01 2.52e+01)
+              cpu = 0:00:00.1 real = 0:00:00.0 mem = 862.4M
+Iteration  9: Total net bbox = 3.818e+01 (1.30e+01 2.52e+01)
+              Est.  stn bbox = 3.818e+01 (1.30e+01 2.52e+01)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 862.4M
+Iteration 10: Total net bbox = 3.818e+01 (1.30e+01 2.52e+01)
+              Est.  stn bbox = 3.818e+01 (1.30e+01 2.52e+01)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 862.4M
+Iteration 11: Total net bbox = 4.741e+01 (1.82e+01 2.92e+01)
+              Est.  stn bbox = 4.741e+01 (1.82e+01 2.92e+01)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 862.4M
+Iteration 12: Total net bbox = 4.741e+01 (1.82e+01 2.92e+01)
+              Est.  stn bbox = 4.741e+01 (1.82e+01 2.92e+01)
+              cpu = 0:00:00.1 real = 0:00:00.0 mem = 862.4M
+Iteration 13: Total net bbox = 6.539e+01 (2.50e+01 4.04e+01)
+              Est.  stn bbox = 6.539e+01 (2.50e+01 4.04e+01)
+              cpu = 0:00:00.1 real = 0:00:00.0 mem = 862.4M
+Iteration 14: Total net bbox = 6.539e+01 (2.50e+01 4.04e+01)
+              Est.  stn bbox = 6.539e+01 (2.50e+01 4.04e+01)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 862.4M
+*** cost = 6.539e+01 (2.50e+01 4.04e+01) (cpu for global=0:00:00.3) real=0:00:01.0***
+Info: 0 clock gating cells identified, 0 (on average) moved
+Solver runtime cpu: 0:00:00.0 real: 0:00:00.0
+Core Placement runtime cpu: 0:00:00.1 real: 0:00:01.0
+**WARN: (EMS-42):	Message (IMPSP-9025) has been suppressed from output.
+**WARN: (EMS-42):	Message (IMPSP-2905) has been suppressed from output.
+Total net bbox length = 6.539e+01 (2.502e+01 4.037e+01) (ext = 3.808e+01)
+Density distribution unevenness ratio = 0.000%
+Move report: Detail placement moves 3 insts, mean move: 3.54 um, max move: 3.81 um
+	Max move on inst (g23): (16.40, 317.25) --> (16.24, 313.60)
+	Runtime: CPU: 0:00:00.0 REAL: 0:00:00.0 MEM: 862.4MB
+Summary Report:
+Instances move: 3 (out of 3 movable)
+Instances flipped: 0
+Mean displacement: 3.54 um
+Max displacement: 3.81 um (Instance: g23) (16.4025, 317.252) -> (16.24, 313.6)
+	Length: 5 sites, height: 1 rows, site name: core7T, cell type: IND2D0BWP7T
+Total net bbox length = 7.392e+01 (2.352e+01 5.040e+01) (ext = 4.760e+01)
+Runtime: CPU: 0:00:00.0 REAL: 0:00:00.0 MEM: 862.4MB
+*** End of Placement (cpu=0:00:02.0, real=0:00:03.0, mem=862.4M) ***
+default core: bins with density >  0.75 =    0 % ( 0 / 81 )
+Density distribution unevenness ratio = 13.143%
+*** Free Virtual Timing Model ...(mem=862.4M)
+Starting congestion repair ...
+[NR-eGR] honorMsvRouteConstraint: false
+[NR-eGR] honorClockSpecNDR      : 0
+[NR-eGR] minRouteLayer          : 1
+[NR-eGR] maxRouteLayer          : 4
+[NR-eGR] numTracksPerClockWire  : 0
+[NR-eGR] Layer1 has single uniform track structure
+[NR-eGR] Layer2 has single uniform track structure
+[NR-eGR] Layer3 has single uniform track structure
+[NR-eGR] Layer4 has single uniform track structure
+[NR-eGR] numRoutingBlks=0 numInstBlks=1985 numPGBlocks=2583 numBumpBlks=0 numBoundaryFakeBlks=0
+[NR-eGR] numPreroutedNet = 0  numPreroutedWires = 0
+[NR-eGR] Read numTotalNets=6  numIgnoredNets=0
+[NR-eGR] ============ Routing rule table ============
+[NR-eGR] Rule id 0. Nets 6 
+[NR-eGR] id=0  ndrTrackId=0  ndrViaId=-1  extraSpace=0  numShields=0  maxHorDemand=1  maxVerDemand=1
+[NR-eGR] Pitch:  L1=1120  L2=1120  L3=1120  L4=1120
+[NR-eGR] ========================================
+[NR-eGR] 
+[NR-eGR] Layer group 1: route 6 net(s) in layer range [1, 4]
+[NR-eGR] earlyGlobalRoute overflow of layer group 1: 0.00% H + 0.00% V. EstWL: 7.056000e+01um
+[NR-eGR] 
+[NR-eGR] Congestion Analysis Layer By layer: (blocked Gcells are excluded) 
+[NR-eGR]                OverCon            
+[NR-eGR]                 #Gcell     %Gcell
+[NR-eGR] Layer              (1)    OverCon 
+[NR-eGR] ------------------------------------
+[NR-eGR] Layer1       0( 0.00%)   ( 0.00%) 
+[NR-eGR] Layer2       0( 0.00%)   ( 0.00%) 
+[NR-eGR] Layer3       0( 0.00%)   ( 0.00%) 
+[NR-eGR] Layer4       0( 0.00%)   ( 0.00%) 
+[NR-eGR] ------------------------------------
+[NR-eGR] Total        0( 0.00%)   ( 0.00%) 
+[NR-eGR] 
+[NR-eGR] Overflow after earlyGlobalRoute (GR compatible) 0.00% H + 0.00% V
+[NR-eGR] Overflow after earlyGlobalRoute 0.00% H + 0.00% V
+Local HotSpot Analysis: normalized max congestion hotspot area = 0.00, normalized total congestion hotspot area = 0.00 (area is in unit of 4 std-cell row bins)
+Skipped repairing congestion.
+[NR-eGR] --------------------------------------------------------------------------
+[NR-eGR] Layer1(METAL1)(H) length: 3.920000e+00um, number of vias: 9
+[NR-eGR] Layer2(METAL2)(V) length: 5.040000e+01um, number of vias: 10
+[NR-eGR] Layer3(METAL3)(H) length: 1.960000e+01um, number of vias: 0
+[NR-eGR] Layer4(METAL4)(V) length: 0.000000e+00um, number of vias: 0
+[NR-eGR] Total length: 7.392000e+01um, number of vias: 19
+[NR-eGR] --------------------------------------------------------------------------
+[NR-eGR] Total clock nets wire length: 0.000000e+00um 
+[NR-eGR] --------------------------------------------------------------------------
+End of congRepair (cpu=0:00:00.0, real=0:00:00.0)
+*** Finishing placeDesign default flow ***
+**placeDesign ... cpu = 0: 0: 2, real = 0: 0: 4, mem = 819.1M **
+
+*** Summary of all messages that are not suppressed in this session:
+Severity  ID               Count  Summary                                  
+WARNING   IMPDC-1629           1  The default delay limit was set to %d. T...
+*** Message Summary: 1 warning(s), 0 error(s)
+
+<CMD> refinePlace -checkRoute 0 -preserveRouting 0 -rmAffectedRouting 0 -swapEEQ 0 -checkPinLayerForAccess 1
+**WARN: (IMPTCM-125):	Option "-checkPinLayerForAccess" for command refinePlace is obsolete and will be ignored. It no longer has any effect and should be removed from your script.
+Density distribution unevenness ratio = 17.600%
+Move report: Detail placement moves 0 insts, mean move: 0.00 um, max move: 0.00 um
+	Runtime: CPU: 0:00:00.0 REAL: 0:00:00.0 MEM: 819.1MB
+Summary Report:
+Instances move: 0 (out of 3 movable)
+Instances flipped: 0
+Mean displacement: 0.00 um
+Max displacement: 0.00 um 
+Runtime: CPU: 0:00:00.0 REAL: 0:00:00.0 MEM: 819.1MB
+Density distribution unevenness ratio = 13.143%
+<CMD> timeDesign -preCTS
+Setting timing_disable_library_data_to_data_checks to 'true'.
+Setting timing_disable_user_data_to_data_checks to 'true'.
+Start to check current routing status for nets...
+All nets will be re-routed.
+End to check current routing status for nets (mem=819.1M)
+**WARN: (EMS-42):	Message (IMPEXT-7040) has been suppressed from output.
+[NR-eGR] honorMsvRouteConstraint: false
+[NR-eGR] honorClockSpecNDR      : 0
+[NR-eGR] minRouteLayer          : 1
+[NR-eGR] maxRouteLayer          : 4
+[NR-eGR] numTracksPerClockWire  : 0
+[NR-eGR] Layer1 has single uniform track structure
+[NR-eGR] Layer2 has single uniform track structure
+[NR-eGR] Layer3 has single uniform track structure
+[NR-eGR] Layer4 has single uniform track structure
+[NR-eGR] numRoutingBlks=0 numInstBlks=1985 numPGBlocks=2583 numBumpBlks=0 numBoundaryFakeBlks=0
+[NR-eGR] numPreroutedNet = 0  numPreroutedWires = 0
+[NR-eGR] Read numTotalNets=6  numIgnoredNets=0
+[NR-eGR] ============ Routing rule table ============
+[NR-eGR] Rule id 0. Nets 6 
+[NR-eGR] id=0  ndrTrackId=0  ndrViaId=-1  extraSpace=0  numShields=0  maxHorDemand=1  maxVerDemand=1
+[NR-eGR] Pitch:  L1=1120  L2=1120  L3=1120  L4=1120
+[NR-eGR] ========================================
+[NR-eGR] 
+[NR-eGR] Layer group 1: route 6 net(s) in layer range [1, 4]
+[NR-eGR] earlyGlobalRoute overflow of layer group 1: 0.00% H + 0.00% V. EstWL: 7.056000e+01um
+[NR-eGR] 
+[NR-eGR] Congestion Analysis Layer By layer: (blocked Gcells are excluded) 
+[NR-eGR]                OverCon            
+[NR-eGR]                 #Gcell     %Gcell
+[NR-eGR] Layer              (1)    OverCon 
+[NR-eGR] ------------------------------------
+[NR-eGR] Layer1       0( 0.00%)   ( 0.00%) 
+[NR-eGR] Layer2       0( 0.00%)   ( 0.00%) 
+[NR-eGR] Layer3       0( 0.00%)   ( 0.00%) 
+[NR-eGR] Layer4       0( 0.00%)   ( 0.00%) 
+[NR-eGR] ------------------------------------
+[NR-eGR] Total        0( 0.00%)   ( 0.00%) 
+[NR-eGR] 
+[NR-eGR] Overflow after earlyGlobalRoute (GR compatible) 0.00% H + 0.00% V
+[NR-eGR] Overflow after earlyGlobalRoute 0.00% H + 0.00% V
+[NR-eGR] --------------------------------------------------------------------------
+[NR-eGR] Layer1(METAL1)(H) length: 3.920000e+00um, number of vias: 9
+[NR-eGR] Layer2(METAL2)(V) length: 5.040000e+01um, number of vias: 10
+[NR-eGR] Layer3(METAL3)(H) length: 1.960000e+01um, number of vias: 0
+[NR-eGR] Layer4(METAL4)(V) length: 0.000000e+00um, number of vias: 0
+[NR-eGR] Total length: 7.392000e+01um, number of vias: 19
+[NR-eGR] --------------------------------------------------------------------------
+[NR-eGR] Total clock nets wire length: 0.000000e+00um 
+[NR-eGR] --------------------------------------------------------------------------
+[NR-eGR] End Peak syMemory usage = 819.1 MB
+[NR-eGR] Early Global Router Kernel+IO runtime : 0.01 seconds
+**WARN: (EMS-42):	Message (IMPEXT-1083) has been suppressed from output.
+**WARN: (EMS-42):	Message (IMPEXT-3530) has been suppressed from output.
+**WARN: (EMS-42):	Message (IMPEXT-2845) has been suppressed from output.
+**WARN: (EMS-42):	Message (IMPEXT-2846) has been suppressed from output.
+**WARN: (EMS-42):	Message (IMPEXT-2805) has been suppressed from output.
+**WARN: (EMS-42):	Message (IMPEXT-2856) has been suppressed from output.
+**WARN: (EMS-42):	Message (IMPEXT-2857) has been suppressed from output.
+**WARN: (EMS-42):	Message (IMPEXT-2858) has been suppressed from output.
+**WARN: (EMS-42):	Message (IMPEXT-2859) has been suppressed from output.
+**WARN: (EMS-42):	Message (IMPEXT-2862) has been suppressed from output.
+**WARN: (EMS-42):	Message (IMPEXT-2861) has been suppressed from output.
+**WARN: (EMS-42):	Message (IMPEXT-6167) has been suppressed from output.
+**WARN: (EMS-42):	Message (IMPEXT-2868) has been suppressed from output.
+**WARN: (EMS-42):	Message (IMPEXT-2869) has been suppressed from output.
+**WARN: (EMS-42):	Message (IMPEXT-7015) has been suppressed from output.
+**WARN: (EMS-42):	Message (IMPEXT-2848) has been suppressed from output.
+#################################################################################
+# Design Stage: PreRoute
+# Design Name: mux
+# Design Mode: 90nm
+# Analysis Mode: MMMC Non-OCV 
+# Parasitics Mode: No SPEF/RCDB
+# Signoff Settings: SI Off 
+#################################################################################
+Start delay calculation (fullDC) (1 T). (MEM=819.148)
+AAE DB initialization (MEM=863.898 CPU=0:00:00.1 REAL=0:00:00.0) 
+Total number of fetched objects 6
+End delay calculation. (MEM=1110.35 CPU=0:00:00.0 REAL=0:00:00.0)
+End delay calculation (fullDC). (MEM=1012.98 CPU=0:00:00.4 REAL=0:00:00.0)
+*** Done Building Timing Graph (cpu=0:00:00.5 real=0:00:00.0 totSessionCpu=0:00:16.9 mem=1013.0M)
+
+------------------------------------------------------------
+          timeDesign Summary                             
+------------------------------------------------------------
+
+Setup views included:
+ setup_wc 
+
++--------------------+---------+---------+
+|     Setup mode     |   all   | default |
++--------------------+---------+---------+
+|           WNS (ns):|  0.000  |  0.000  |
+|           TNS (ns):|  0.000  |  0.000  |
+|    Violating Paths:|    0    |    0    |
+|          All Paths:|    0    |    0    |
++--------------------+---------+---------+
+
++----------------+-------------------------------+------------------+
+|                |              Real             |       Total      |
+|    DRVs        +------------------+------------+------------------|
+|                |  Nr nets(terms)  | Worst Vio  |  Nr nets(terms)  |
++----------------+------------------+------------+------------------+
+|   max_cap      |      0 (0)       |   0.000    |      0 (0)       |
+|   max_tran     |      0 (0)       |   0.000    |      0 (0)       |
+|   max_fanout   |      0 (0)       |     0      |      0 (0)       |
+|   max_length   |      0 (0)       |     0      |      0 (0)       |
++----------------+------------------+------------+------------------+
+
+Density: 0.046%
+Routing Overflow: 0.00% H and 0.00% V
+------------------------------------------------------------
+Reported timing to dir ./timingReports
+Total CPU time: 0.55 sec
+Total Real time: 0.0 sec
+Total Memory Usage: 946.199219 Mbytes
+<CMD> timeDesign -preCTS -hold
+Start to check current routing status for nets...
+All nets are already routed correctly.
+End to check current routing status for nets (mem=932.1M)
+#################################################################################
+# Design Stage: PreRoute
+# Design Name: mux
+# Design Mode: 90nm
+# Analysis Mode: MMMC Non-OCV 
+# Parasitics Mode: No SPEF/RCDB
+# Signoff Settings: SI Off 
+#################################################################################
+AAE_INFO: 1 threads acquired from CTE.
+Start delay calculation (fullDC) (1 T). (MEM=932.074)
+*** Calculating scaling factor for bc libraries using the default operating condition of each library.
+Total number of fetched objects 6
+End delay calculation. (MEM=1012.98 CPU=0:00:00.0 REAL=0:00:00.0)
+End delay calculation (fullDC). (MEM=1012.98 CPU=0:00:00.1 REAL=0:00:00.0)
+*** Done Building Timing Graph (cpu=0:00:00.1 real=0:00:00.0 totSessionCpu=0:00:17.1 mem=1013.0M)
+
+------------------------------------------------------------
+          timeDesign Summary                             
+------------------------------------------------------------
+
+Hold  views included:
+ hold_bc 
+
++--------------------+---------+---------+
+|     Hold mode      |   all   | default |
++--------------------+---------+---------+
+|           WNS (ns):|  0.000  |  0.000  |
+|           TNS (ns):|  0.000  |  0.000  |
+|    Violating Paths:|    0    |    0    |
+|          All Paths:|    0    |    0    |
++--------------------+---------+---------+
+
+Density: 0.046%
+Routing Overflow: 0.00% H and 0.00% V
+------------------------------------------------------------
+Reported timing to dir ./timingReports
+Total CPU time: 0.18 sec
+Total Real time: 1.0 sec
+Total Memory Usage: 932.066406 Mbytes

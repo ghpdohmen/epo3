@@ -11,17 +11,26 @@
 # //  is prohibited from disclosure under the Trade Secrets Act,
 # //  18 U.S.C. Section 1905.
 # //
-# vsim mouse_tb_behav_cfg2 -lib work -L TSMCLib -sdfmax /test=VHDL/mouse_SYN.sdf -sdfnoerror "+sdf_verbose" -sdfreport=sdfrep -do "/data/public/common/software/opprog/do_files/init_simulator.do" 
-# Start time: 12:54:39 on Dec 21,2022
+# vsim mouse_tb_behav_cfg_routed -lib work -L TSMCLib -sdfmax /test=VHDL/mouse_PAR.sdf -sdfnoerror "+sdf_verbose" -sdfreport=sdfrep -do "/data/public/common/software/opprog/do_files/init_simulator.do" 
+# Start time: 14:11:55 on Dec 22,2022
 # ** Note: (vsim-3812) Design is being optimized...
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
 # Loading verilog.vl_types(body)
-# Loading work.mouse_tb_behav_cfg2#1
+# Loading work.mouse_tb_behav_cfg_routed#1
 # Loading work.mouse_tb(behav)#1
-# Loading work.mouse_synthesised_cfg#1
-# Loading work.mouse(synthesised)#1
+# Loading work.mouse_routed_cfg#1
+# Loading work.mouse(routed)#1
+# Loading TSMCLib.BUFFD1P5BWP7T(fast)
+# Loading TSMCLib.DEL01BWP7T(fast)
+# Loading TSMCLib.CKBD0BWP7T(fast)
+# Loading TSMCLib.BUFFD3BWP7T(fast)
+# Loading TSMCLib.DEL0BWP7T(fast)
+# Loading TSMCLib.DEL02BWP7T(fast)
+# Loading TSMCLib.BUFFD0BWP7T(fast)
+# Loading TSMCLib.BUFFD5BWP7T(fast)
+# Loading TSMCLib.CKBD10BWP7T(fast)
 # Loading TSMCLib.INVD1BWP7T(fast)
 # Loading TSMCLib.NR2XD0BWP7T(fast)
 # Loading TSMCLib.DFQD1BWP7T(fast)
@@ -30,7 +39,7 @@
 # Loading TSMCLib.OAI211D1BWP7T(fast)
 # Loading TSMCLib.INR2D0BWP7T(fast)
 # Loading TSMCLib.OA21D0BWP7T(fast)
-# Loading TSMCLib.AN2D4BWP7T(fast)
+# Loading TSMCLib.CKAN2D8BWP7T(fast)
 # Loading TSMCLib.ND2D1BWP7T(fast)
 # Loading TSMCLib.ND3D0BWP7T(fast)
 # Loading TSMCLib.INR2XD0BWP7T(fast)
@@ -53,11 +62,10 @@
 # Loading TSMCLib.OR2D1BWP7T(fast)
 # Loading TSMCLib.IND3D1BWP7T(fast)
 # Loading TSMCLib.EDFQD0BWP7T(fast)
-# Loading TSMCLib.BUFFD4BWP7T(fast)
 # Loading TSMCLib.EDFKCNQD1BWP7T(fast)
 # Loading TSMCLib.DFKCNQD1BWP7T(fast)
 # Loading TSMCLib.CKXOR2D0BWP7T(fast)
-# Loading TSMCLib.CKXOR2D1BWP7T(fast)
+# Loading TSMCLib.CKXOR2D2BWP7T(fast)
 # Loading TSMCLib.LHQD1BWP7T(fast)
 # Loading TSMCLib.OA31D0BWP7T(fast)
 # Loading TSMCLib.AN4D1BWP7T(fast)
@@ -67,37 +75,53 @@
 # Loading TSMCLib.DFKCND1BWP7T(fast)
 # Loading TSMCLib.AO21D0BWP7T(fast)
 # Loading TSMCLib.AO22D0BWP7T(fast)
-# Loading TSMCLib.ND2D4BWP7T(fast)
-# Loading instances from VHDL/mouse_SYN.sdf
+# Loading TSMCLib.ND2D5BWP7T(fast)
+# Loading instances from VHDL/mouse_PAR.sdf
 #
 # ******************************* SDF Annotator ********************************
 #
-# Reading maximum timing from compiled SDF file "VHDL/mouse_SYN.sdf".
+# Reading maximum timing from compiled SDF file "VHDL/mouse_PAR.sdf".
+# ** Warning: (vsim-SDF-3240) VHDL/mouse_PAR.sdf(129): Instance '/mouse_tb/test' does not have a generic named 'tipd_mousex'. [mouse(routed):VHDL/mouse_PAR.vhd(7)]
+# ** Warning: (vsim-SDF-3240) VHDL/mouse_PAR.sdf(130): Instance '/mouse_tb/test' does not have a generic named 'tipd_mousex'. [mouse(routed):VHDL/mouse_PAR.vhd(7)]
+# ** Warning: (vsim-SDF-3240) VHDL/mouse_PAR.sdf(131): Instance '/mouse_tb/test' does not have a generic named 'tipd_mousex'. [mouse(routed):VHDL/mouse_PAR.vhd(7)]
+# ** Warning: (vsim-SDF-3240) VHDL/mouse_PAR.sdf(132): Instance '/mouse_tb/test' does not have a generic named 'tipd_mousey'. [mouse(routed):VHDL/mouse_PAR.vhd(7)]
+# ** Warning: (vsim-SDF-3240) VHDL/mouse_PAR.sdf(133): Instance '/mouse_tb/test' does not have a generic named 'tipd_mousey'. [mouse(routed):VHDL/mouse_PAR.vhd(7)]
+# ** Warning: (vsim-SDF-3240) VHDL/mouse_PAR.sdf(134): Instance '/mouse_tb/test' does not have a generic named 'tipd_mousey'. [mouse(routed):VHDL/mouse_PAR.vhd(7)]
+# ** Warning: (vsim-SDF-3240) VHDL/mouse_PAR.sdf(135): Instance '/mouse_tb/test' does not have a generic named 'tipd_buttons'. [mouse(routed):VHDL/mouse_PAR.vhd(7)]
+# ** Warning: (vsim-SDF-3240) VHDL/mouse_PAR.sdf(136): Instance '/mouse_tb/test' does not have a generic named 'tipd_buttons'. [mouse(routed):VHDL/mouse_PAR.vhd(7)]
+# ** Warning: (vsim-SDF-3240) VHDL/mouse_PAR.sdf(137): Instance '/mouse_tb/test' does not have a generic named 'tipd_buttons'. [mouse(routed):VHDL/mouse_PAR.vhd(7)]
+# ** Warning: (vsim-SDF-3240) VHDL/mouse_PAR.sdf(138): Instance '/mouse_tb/test' does not have a generic named 'tipd_buttons'. [mouse(routed):VHDL/mouse_PAR.vhd(7)]
+# ** Warning: (vsim-SDF-3240) VHDL/mouse_PAR.sdf(139): Instance '/mouse_tb/test' does not have a generic named 'tipd_buttons'. [mouse(routed):VHDL/mouse_PAR.vhd(7)]
+# ** Warning: (vsim-SDF-3240) VHDL/mouse_PAR.sdf(140): Instance '/mouse_tb/test' does not have a generic named 'tipd_handshake_out'. [mouse(routed):VHDL/mouse_PAR.vhd(7)]
+# ** Warning: (vsim-SDF-3240) VHDL/mouse_PAR.sdf(141): Instance '/mouse_tb/test' does not have a generic named 'tipd_dataswitch'. [mouse(routed):VHDL/mouse_PAR.vhd(7)]
+# ** Warning: (vsim-SDF-3240) VHDL/mouse_PAR.sdf(143): Instance '/mouse_tb/test' does not have a generic named 'tipd_clkswitch'. [mouse(routed):VHDL/mouse_PAR.vhd(7)]
 #
 # Summary of constructs read: 
 #
-#           IOPATH =        996
-#             PORT =        512
+#           IOPATH =       1034
+#     INTERCONNECT =        560
 #        SETUPHOLD =        208
+#            WIDTH =        109
 #
 # ******************************************************************************
 #
 # ******************************* SDF Annotator ********************************
 #
-# Applying SDF file "VHDL/mouse_SYN.sdf" to instance "mouse_tb.test".
+# Applying SDF file "VHDL/mouse_PAR.sdf" to instance "mouse_tb.test".
 #
-# Mapped 0 SDF constructs to 0 VITAL generic names.
+# Mapped 14 SDF constructs to 0 VITAL generic names.
 #
 # ******************************************************************************
 #
 # ******************************* SDF Annotator ********************************
 #
-# Applying SDF file "VHDL/mouse_SYN.sdf" to instance "mouse_tb.test".
+# Applying SDF file "VHDL/mouse_PAR.sdf" to instance "mouse_tb.test".
 #
 # Summary of Verilog design objects annotated: 
 #
-#     Module path delays =       1573
-#     Timing checks      =        416
+#     Module path delays =       1619
+#     Timing checks      =        525
+#     Scalar MIPDs       =        183
 #
 # ******************************************************************************
 #

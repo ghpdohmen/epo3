@@ -5,9 +5,9 @@ set_db use_scan_seqs_for_non_dft false
 
 include ../tcl/read_hdl.tcl
 
-elaborate shiftregister_11bit_behav_cfg
+elaborate sendfsm_behav_cfg
 
-include ../in/shiftregister_11bit.sdc
+include ../in/sendfsm.sdc
 
 synthesize -to_mapped
 #set_db syn_generic_effort medium
@@ -16,9 +16,9 @@ synthesize -to_mapped
 
 ungroup -all -flat
 insert_tiehilo_cells
-write_hdl -mapped > ../out/shiftregister_11bit.v
-write_sdf > ../out/shiftregister_11bit.sdf
-write_sdc > ../out/shiftregister_11bit.sdc
+write_hdl -mapped > ../out/sendfsm.v
+write_sdf > ../out/sendfsm.sdf
+write_sdc > ../out/sendfsm.sdc
 
 report timing
 report gates
