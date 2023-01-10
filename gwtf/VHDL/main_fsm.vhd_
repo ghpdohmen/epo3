@@ -14,14 +14,10 @@ entity main_fsm is
 	x_out:          out std_logic_vector(2 downto 0);
 	y_out:          out std_logic_vector(2 downto 0);
 	buttons:        out std_logic_vector(4 downto 0); --also contains sign bits
-
---buttons(0,1) = sign x, sign y
---buttons(2,3,4) = left, middle, right button
         x_flipflop:     out std_logic;
         y_flipflop:     out std_logic;
         btn_flipflop:   out std_logic;    
-	handshake_out:  out std_logic;
-rst: out std_logic
+	handshake_out:  out std_logic
         );
 end main_fsm;
 

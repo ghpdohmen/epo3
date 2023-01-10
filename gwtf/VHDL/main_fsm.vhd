@@ -20,8 +20,7 @@ entity main_fsm is
         x_flipflop:     out std_logic;
         y_flipflop:     out std_logic;
         btn_flipflop:   out std_logic;    
-	handshake_out:  out std_logic;
-	rst: out std_logic
+	handshake_out:  out std_logic
         );
 end main_fsm;
 
