@@ -1,0 +1,418 @@
+|top_de1
+dataSwitch <= mouse:inst.DataSwitch
+Data_in => mouse:inst.Data_in
+Clock_15K => mouse:inst.Clk15k
+clock_50mhz => gen25mhz:inst1.clk50mhz
+reset => mouse:inst.reset
+clkSwitch <= mouse:inst.ClkSwitch
+clkSwitch2 <= mouse:inst.ClkSwitch
+rst <= mouse:inst.rst_led
+buttons[0] <= mouse:inst.buttons[0]
+buttons[1] <= mouse:inst.buttons[1]
+buttons[2] <= mouse:inst.buttons[2]
+buttons[3] <= mouse:inst.buttons[3]
+buttons[4] <= mouse:inst.buttons[4]
+
+
+|top_de1|mouse:inst
+mouseX[0] <= flipflop:flipflop3.Q
+mouseX[1] <= flipflop:flipflop2.Q
+mouseX[2] <= flipflop:flipflop1.Q
+buttons[0] <= flipflop:flipflop11.Q
+buttons[1] <= flipflop:flipflop10.Q
+buttons[2] <= flipflop:flipflop9.Q
+buttons[3] <= flipflop:flipflop8.Q
+buttons[4] <= flipflop:flipflop7.Q
+mouseY[0] <= flipflop:flipflop4.Q
+mouseY[1] <= flipflop:flipflop5.Q
+mouseY[2] <= flipflop:flipflop6.Q
+Handshake_out <= main_fsm:mfsm.handshake_out
+DataSwitch <= mux:mx.dataSwitch
+ClkSwitch <= sendFSM:sfsm.clkTrans
+Handshake_in => main_fsm:mfsm.handshake_in
+Data_in => shiftregister_11bit:sr11.data_in
+Clk15k => edge_detector:ed.input
+clk => counter25mhz:cnt.clk
+clk => edge_detector:ed.clk
+clk => shiftregister_9bit:sr.clk
+clk => sendFSM:sfsm.clk
+clk => timebase:tb.clk
+clk => main_fsm:mfsm.clk
+clk => flipflop:flipflop1.clk
+clk => flipflop:flipflop2.clk
+clk => flipflop:flipflop3.clk
+clk => flipflop:flipflop4.clk
+clk => flipflop:flipflop5.clk
+clk => flipflop:flipflop6.clk
+clk => flipflop:flipflop7.clk
+clk => flipflop:flipflop8.clk
+clk => flipflop:flipflop9.clk
+clk => flipflop:flipflop10.clk
+clk => flipflop:flipflop11.clk
+clk => shiftregister_11bit:sr11.clk
+reset => main_fsm:mfsm.reset
+reset => shiftregister_11bit:sr11.reset
+rst_led <= main_fsm:mfsm.rst
+
+
+|top_de1|mouse:inst|counter25mhz:cnt
+clk => count[0].CLK
+clk => count[1].CLK
+clk => count[2].CLK
+clk => count[3].CLK
+clk => count[4].CLK
+clk => count[5].CLK
+clk => count[6].CLK
+clk => count[7].CLK
+clk => count[8].CLK
+clk => count[9].CLK
+clk => count[10].CLK
+clk => count[11].CLK
+reset => count.OUTPUTSELECT
+reset => count.OUTPUTSELECT
+reset => count.OUTPUTSELECT
+reset => count.OUTPUTSELECT
+reset => count.OUTPUTSELECT
+reset => count.OUTPUTSELECT
+reset => count.OUTPUTSELECT
+reset => count.OUTPUTSELECT
+reset => count.OUTPUTSELECT
+reset => count.OUTPUTSELECT
+reset => count.OUTPUTSELECT
+reset => count.OUTPUTSELECT
+count_out[0] <= count[0].DB_MAX_OUTPUT_PORT_TYPE
+count_out[1] <= count[1].DB_MAX_OUTPUT_PORT_TYPE
+count_out[2] <= count[2].DB_MAX_OUTPUT_PORT_TYPE
+count_out[3] <= count[3].DB_MAX_OUTPUT_PORT_TYPE
+count_out[4] <= count[4].DB_MAX_OUTPUT_PORT_TYPE
+count_out[5] <= count[5].DB_MAX_OUTPUT_PORT_TYPE
+count_out[6] <= count[6].DB_MAX_OUTPUT_PORT_TYPE
+count_out[7] <= count[7].DB_MAX_OUTPUT_PORT_TYPE
+count_out[8] <= count[8].DB_MAX_OUTPUT_PORT_TYPE
+count_out[9] <= count[9].DB_MAX_OUTPUT_PORT_TYPE
+count_out[10] <= count[10].DB_MAX_OUTPUT_PORT_TYPE
+count_out[11] <= count[11].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|top_de1|mouse:inst|edge_detector:ed
+clk => reg2.CLK
+clk => reg1.CLK
+input => reg1.DATAIN
+edges <= edges.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|top_de1|mouse:inst|shiftregister_9bit:sr
+clk => new_new_data[0].CLK
+clk => new_new_data[1].CLK
+clk => new_new_data[2].CLK
+clk => new_new_data[3].CLK
+clk => new_new_data[4].CLK
+clk => new_new_data[5].CLK
+clk => new_new_data[6].CLK
+clk => new_new_data[7].CLK
+clk => new_new_data[8].CLK
+edge15k => new_new_data.OUTPUTSELECT
+edge15k => new_new_data.OUTPUTSELECT
+edge15k => new_new_data.OUTPUTSELECT
+edge15k => new_new_data.OUTPUTSELECT
+edge15k => new_new_data.OUTPUTSELECT
+edge15k => new_new_data.OUTPUTSELECT
+edge15k => new_new_data.OUTPUTSELECT
+edge15k => new_new_data.OUTPUTSELECT
+edge15k => new_new_data.OUTPUTSELECT
+data_in[0] => new_new_data.DATAB
+data_in[1] => new_new_data.DATAB
+data_in[2] => new_new_data.DATAB
+data_in[3] => new_new_data.DATAB
+data_in[4] => new_new_data.DATAB
+data_in[5] => new_new_data.DATAB
+data_in[6] => new_new_data.DATAB
+data_in[7] => new_new_data.DATAB
+data_in[8] => new_new_data.DATAB
+reset => new_new_data.OUTPUTSELECT
+reset => new_new_data.OUTPUTSELECT
+reset => new_new_data.OUTPUTSELECT
+reset => new_new_data.OUTPUTSELECT
+reset => new_new_data.OUTPUTSELECT
+reset => new_new_data.OUTPUTSELECT
+reset => new_new_data.OUTPUTSELECT
+reset => new_new_data.OUTPUTSELECT
+reset => new_new_data.OUTPUTSELECT
+data_out <= new_new_data[8].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|top_de1|mouse:inst|sendFSM:sfsm
+actBit => Selector7.IN2
+reset => state.OUTPUTSELECT
+reset => state.OUTPUTSELECT
+reset => state.OUTPUTSELECT
+reset => state.OUTPUTSELECT
+reset => Selector4.IN1
+reset => Selector5.IN2
+countIn[0] => LessThan0.IN24
+countIn[0] => LessThan1.IN24
+countIn[1] => LessThan0.IN23
+countIn[1] => LessThan1.IN23
+countIn[2] => LessThan0.IN22
+countIn[2] => LessThan1.IN22
+countIn[3] => LessThan0.IN21
+countIn[3] => LessThan1.IN21
+countIn[4] => LessThan0.IN20
+countIn[4] => LessThan1.IN20
+countIn[5] => LessThan0.IN19
+countIn[5] => LessThan1.IN19
+countIn[6] => LessThan0.IN18
+countIn[6] => LessThan1.IN18
+countIn[7] => LessThan0.IN17
+countIn[7] => LessThan1.IN17
+countIn[8] => LessThan0.IN16
+countIn[8] => LessThan1.IN16
+countIn[9] => LessThan0.IN15
+countIn[9] => LessThan1.IN15
+countIn[10] => LessThan0.IN14
+countIn[10] => LessThan1.IN14
+countIn[11] => LessThan0.IN13
+countIn[11] => LessThan1.IN13
+clk => state~1.DATAIN
+clkTrans <= clkTrans.DB_MAX_OUTPUT_PORT_TYPE
+dataTrans <= dataTrans.DB_MAX_OUTPUT_PORT_TYPE
+timebaseRst <= timebaseRst.DB_MAX_OUTPUT_PORT_TYPE
+dataToReg[0] <= dataToReg[0]$latch.DB_MAX_OUTPUT_PORT_TYPE
+dataToReg[1] <= dataToReg[1]$latch.DB_MAX_OUTPUT_PORT_TYPE
+dataToReg[2] <= dataToReg[2]$latch.DB_MAX_OUTPUT_PORT_TYPE
+dataToReg[3] <= <GND>
+dataToReg[4] <= dataToReg[4]$latch.DB_MAX_OUTPUT_PORT_TYPE
+dataToReg[5] <= <GND>
+dataToReg[6] <= <GND>
+dataToReg[7] <= <GND>
+dataToReg[8] <= <GND>
+regRst <= regRst.DB_MAX_OUTPUT_PORT_TYPE
+dataMUX <= dataMUX.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|top_de1|mouse:inst|mux:mx
+mux_select => dataSwitch.OUTPUTSELECT
+muxFSM => dataSwitch.DATAB
+muxReg => dataSwitch.DATAA
+dataSwitch <= dataSwitch.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|top_de1|mouse:inst|timebase:tb
+clk => count[0].CLK
+clk => count[1].CLK
+clk => count[2].CLK
+clk => count[3].CLK
+edge15k => count.OUTPUTSELECT
+edge15k => count.OUTPUTSELECT
+edge15k => count.OUTPUTSELECT
+edge15k => count.OUTPUTSELECT
+reset => count.OUTPUTSELECT
+reset => count.OUTPUTSELECT
+reset => count.OUTPUTSELECT
+reset => count.OUTPUTSELECT
+count_out[0] <= count[0].DB_MAX_OUTPUT_PORT_TYPE
+count_out[1] <= count[1].DB_MAX_OUTPUT_PORT_TYPE
+count_out[2] <= count[2].DB_MAX_OUTPUT_PORT_TYPE
+count_out[3] <= count[3].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|top_de1|mouse:inst|main_fsm:mfsm
+clk => state~1.DATAIN
+reset => state.OUTPUTSELECT
+reset => state.OUTPUTSELECT
+reset => state.OUTPUTSELECT
+reset => state.OUTPUTSELECT
+reset => state.OUTPUTSELECT
+reset => state.OUTPUTSELECT
+reset => state.OUTPUTSELECT
+reset => state.OUTPUTSELECT
+reset => state.OUTPUTSELECT
+reset => state.OUTPUTSELECT
+reset => state.OUTPUTSELECT
+reset => state.OUTPUTSELECT
+reset => state.OUTPUTSELECT
+reset => state.OUTPUTSELECT
+reset => state.OUTPUTSELECT
+reset => state.OUTPUTSELECT
+reset => state.OUTPUTSELECT
+reset => state.OUTPUTSELECT
+reset => state.OUTPUTSELECT
+reset => state.OUTPUTSELECT
+reset => state.OUTPUTSELECT
+reset => state.OUTPUTSELECT
+data_in[0] => ~NO_FANOUT~
+data_in[1] => ~NO_FANOUT~
+data_in[2] => x_out.DATAB
+data_in[2] => y_out.DATAB
+data_in[2] => buttons.DATAB
+data_in[3] => x_out.DATAB
+data_in[3] => y_out.DATAB
+data_in[3] => buttons.DATAB
+data_in[4] => x_out.DATAB
+data_in[4] => y_out.DATAB
+data_in[4] => buttons.DATAB
+data_in[5] => ~NO_FANOUT~
+data_in[6] => buttons.DATAB
+data_in[7] => buttons.DATAB
+data_in[8] => ~NO_FANOUT~
+data_in[9] => ~NO_FANOUT~
+data_in[10] => ~NO_FANOUT~
+count15k_in[0] => LessThan0.IN8
+count15k_in[1] => LessThan0.IN7
+count15k_in[2] => LessThan0.IN6
+count15k_in[3] => LessThan0.IN5
+handshake_in => new_state.handshake_state2.DATAB
+handshake_in => Selector5.IN3
+handshake_in => new_state.handshake_state.DATAB
+bit11_reg_rst <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+cntReset15k <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+actBit <= actBit.DB_MAX_OUTPUT_PORT_TYPE
+send_reset <= send_reset.DB_MAX_OUTPUT_PORT_TYPE
+x_out[0] <= x_out.DB_MAX_OUTPUT_PORT_TYPE
+x_out[1] <= x_out.DB_MAX_OUTPUT_PORT_TYPE
+x_out[2] <= x_out.DB_MAX_OUTPUT_PORT_TYPE
+y_out[0] <= y_out.DB_MAX_OUTPUT_PORT_TYPE
+y_out[1] <= y_out.DB_MAX_OUTPUT_PORT_TYPE
+y_out[2] <= y_out.DB_MAX_OUTPUT_PORT_TYPE
+buttons[0] <= buttons.DB_MAX_OUTPUT_PORT_TYPE
+buttons[1] <= buttons.DB_MAX_OUTPUT_PORT_TYPE
+buttons[2] <= buttons.DB_MAX_OUTPUT_PORT_TYPE
+buttons[3] <= buttons.DB_MAX_OUTPUT_PORT_TYPE
+buttons[4] <= buttons.DB_MAX_OUTPUT_PORT_TYPE
+x_flipflop <= x_flipflop.DB_MAX_OUTPUT_PORT_TYPE
+y_flipflop <= y_out.DB_MAX_OUTPUT_PORT_TYPE
+btn_flipflop <= buttons.DB_MAX_OUTPUT_PORT_TYPE
+handshake_out <= handshake_out.DB_MAX_OUTPUT_PORT_TYPE
+rst <= rst$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|top_de1|mouse:inst|flipflop:flipflop1
+clk => Q~reg0.CLK
+activate => Q~reg0.ENA
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|top_de1|mouse:inst|flipflop:flipflop2
+clk => Q~reg0.CLK
+activate => Q~reg0.ENA
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|top_de1|mouse:inst|flipflop:flipflop3
+clk => Q~reg0.CLK
+activate => Q~reg0.ENA
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|top_de1|mouse:inst|flipflop:flipflop4
+clk => Q~reg0.CLK
+activate => Q~reg0.ENA
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|top_de1|mouse:inst|flipflop:flipflop5
+clk => Q~reg0.CLK
+activate => Q~reg0.ENA
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|top_de1|mouse:inst|flipflop:flipflop6
+clk => Q~reg0.CLK
+activate => Q~reg0.ENA
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|top_de1|mouse:inst|flipflop:flipflop7
+clk => Q~reg0.CLK
+activate => Q~reg0.ENA
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|top_de1|mouse:inst|flipflop:flipflop8
+clk => Q~reg0.CLK
+activate => Q~reg0.ENA
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|top_de1|mouse:inst|flipflop:flipflop9
+clk => Q~reg0.CLK
+activate => Q~reg0.ENA
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|top_de1|mouse:inst|flipflop:flipflop10
+clk => Q~reg0.CLK
+activate => Q~reg0.ENA
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|top_de1|mouse:inst|flipflop:flipflop11
+clk => Q~reg0.CLK
+activate => Q~reg0.ENA
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|top_de1|mouse:inst|shiftregister_11bit:sr11
+clk => data_out[0]~reg0.CLK
+clk => data_out[1]~reg0.CLK
+clk => data_out[2]~reg0.CLK
+clk => data_out[3]~reg0.CLK
+clk => data_out[4]~reg0.CLK
+clk => data_out[5]~reg0.CLK
+clk => data_out[6]~reg0.CLK
+clk => data_out[7]~reg0.CLK
+clk => data_out[8]~reg0.CLK
+clk => data_out[9]~reg0.CLK
+clk => data_out[10]~reg0.CLK
+edge15k => data_out.OUTPUTSELECT
+edge15k => data_out.OUTPUTSELECT
+edge15k => data_out.OUTPUTSELECT
+edge15k => data_out.OUTPUTSELECT
+edge15k => data_out.OUTPUTSELECT
+edge15k => data_out.OUTPUTSELECT
+edge15k => data_out.OUTPUTSELECT
+edge15k => data_out.OUTPUTSELECT
+edge15k => data_out.OUTPUTSELECT
+edge15k => data_out.OUTPUTSELECT
+edge15k => data_out.OUTPUTSELECT
+data_in => data_out.DATAB
+reset => data_out.OUTPUTSELECT
+reset => data_out.OUTPUTSELECT
+reset => data_out.OUTPUTSELECT
+reset => data_out.OUTPUTSELECT
+reset => data_out.OUTPUTSELECT
+reset => data_out.OUTPUTSELECT
+reset => data_out.OUTPUTSELECT
+reset => data_out.OUTPUTSELECT
+reset => data_out.OUTPUTSELECT
+reset => data_out.OUTPUTSELECT
+reset => data_out.OUTPUTSELECT
+data_out[0] <= data_out[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+data_out[1] <= data_out[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+data_out[2] <= data_out[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+data_out[3] <= data_out[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+data_out[4] <= data_out[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+data_out[5] <= data_out[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+data_out[6] <= data_out[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+data_out[7] <= data_out[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+data_out[8] <= data_out[8]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+data_out[9] <= data_out[9]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+data_out[10] <= data_out[10]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|top_de1|gen25mhz:inst1
+clk50mhz => count[0].CLK
+clk25mhz <= count[0].DB_MAX_OUTPUT_PORT_TYPE
+
+

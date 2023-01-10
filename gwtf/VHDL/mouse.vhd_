@@ -1,7 +1,7 @@
 library IEEE;
 use IEEE.std_logic_1164.ALL;
 
-entity input is
+entity mouse is
    port(mouseX        : out std_logic_vector(2 downto 0);
         buttons       : out std_logic_vector(4 downto 0);
         mouseY        : out std_logic_vector(2 downto 0);
@@ -12,6 +12,7 @@ entity input is
         Data_in       : in  std_logic;
         Clk15k        : in  std_logic;
         clk           : in  std_logic;
-        reset         : in  std_logic);
-end input;
+        reset         : in  std_logic;
+		  rst				 : out std_logic);
+end mouse;
 

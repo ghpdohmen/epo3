@@ -13,6 +13,6 @@ entity mouse is
         Clk15k        : in  std_logic;
         clk           : in  std_logic;
         reset         : in  std_logic;
-		  rst				 : out std_logic);
+		  rst_led				 : out std_logic);
 end mouse;
 

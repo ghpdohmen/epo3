@@ -93,7 +93,8 @@ component main_fsm is
         x_flipflop:     out std_logic;
         y_flipflop:     out std_logic;
         btn_flipflop:   out std_logic;    
-	handshake_out:  out std_logic
+	handshake_out:  out std_logic;
+	rst:		out std_logic
         );
 end component;
 
@@ -116,11 +117,7 @@ signal btns:	std_logic_vector(4 downto 0);
 
 
 begin
---tijdelijk
-process(clk)
-begin
-rst <= reset;
-end process;
+
 
 cnt: counter25mhz port map (clk, cntReset25M, count25M);
 
@@ -134,7 +131,7 @@ mx: mux port map (mux_select, muxFSM, muxReg, dataSwitch);
 
 tb: timebase port map (clk, output_edgedet, cntReset15K, count15k);
 
-mfsm: main_fsm port map (clk, reset, data_sr_11bit, count15k, Handshake_in, bit11_reg_rst, cntReset15K, actBit, reset_send, mouse_x, mouse_y, btns, xflipfloprst, yflipfloprst, btnflipfloprst, handshake_out);
+mfsm: main_fsm port map (clk, reset, data_sr_11bit, count15k, Handshake_in, bit11_reg_rst, cntReset15K, actBit, reset_send, mouse_x, mouse_y, btns, xflipfloprst, yflipfloprst, btnflipfloprst, handshake_out, rst_led);
 
 flipflop1: flipflop port map(clk, xflipfloprst, mouse_x(2),mouseX(2));
 flipflop2: flipflop port map(clk, xflipfloprst, mouse_x(1),mouseX(1));

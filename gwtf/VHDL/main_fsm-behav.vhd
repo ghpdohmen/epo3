@@ -49,6 +49,7 @@ begin
                 x_out           <= (others => '0');
                 y_out           <= (others => '0');
                 buttons         <= (others => '0');
+		rst <= '1';
                 if(to_integer(unsigned(count15k_in)) >= 11) then
                     new_state <= sendFF_cnt_rst;
 		        else
@@ -67,7 +68,7 @@ begin
                 y_out           <= (others => '0');
                 buttons         <= (others => '0');
                 new_state       <= wachtFA;
-		
+		rst <= '0';
             when wachtFA =>
                 bit11_reg_rst   <= '1';
                 cntReset15k	    <= '0';
@@ -85,7 +86,7 @@ begin
 		        else
 		            new_state <= state;
                 end if;
-
+		rst <= '0';
 	     when wachtFA_cnt_rst =>
                 bit11_reg_rst   <= '1';
                 cntReset15k	    <= '1';
@@ -99,7 +100,7 @@ begin
                 y_out           <= (others => '0');
                 buttons         <= (others => '0');
                 new_state       <= wachtAA;
-
+		rst <= '0';
             when wachtAA =>
                 bit11_reg_rst   <= '1';
                 cntReset15k	    <= '0';
@@ -117,7 +118,7 @@ begin
 		        else
 		            new_state <= state;
                 end if;
-
+		rst <= '0';
             when wachtAA_cnt_rst =>
                 bit11_reg_rst   <= '1';
                 cntReset15k	    <= '1';
@@ -131,7 +132,7 @@ begin
                 y_out           <= (others => '0');
                 buttons         <= (others => '0');
                 new_state       <= enableF4;
-
+		rst <= '0';
             when enableF4 =>
                 bit11_reg_rst   <= '1';
                 cntReset15k	    <= '0';
@@ -150,6 +151,7 @@ begin
 		        else
 		            new_state <= state;
                 end if;
+		rst <= '0';
             when enableF4_cnt_rst =>
                 bit11_reg_rst   <= '1';
                 cntReset15k	    <= '1';
@@ -163,6 +165,7 @@ begin
                 y_out           <= (others => '0');
                 buttons         <= (others => '0');
                 new_state       <= wachtFA2;
+		rst <= '0';
             when wachtFA2 =>
                 bit11_reg_rst   <= '1';
                 cntReset15k	    <= '0';
@@ -180,6 +183,7 @@ begin
                 else
                     new_state <= state;
                 end if;
+		rst <= '0';
             when wachtFA2_cnt_rst =>
                 bit11_reg_rst   <= '1';
                 cntReset15k	    <= '1';
@@ -193,6 +197,7 @@ begin
                 y_out           <= (others => '0');
                 buttons         <= (others => '0');
                 new_state       <= data_1;
+		rst <= '0';
 	    when data_1 =>
 		bit11_reg_rst   <= '0';
                 cntReset15k	    <= '0';
@@ -210,6 +215,7 @@ begin
                 else
                     new_state <= state;
                 end if;
+		rst <= '0';
 	    when data_1_cnt_rst => 
 		
                 cntReset15k	    <= '1';
@@ -231,7 +237,7 @@ begin
                 x_out		         <= (others => '0');
 		bit11_reg_rst   <= '0';
 		new_state <= data_1_cnt_rst_2;
-
+		rst <= '0';
 	    when data_1_cnt_rst_2 =>
 		cntReset15k	    <= '0';
                 actBit          <= '0';
@@ -250,7 +256,7 @@ begin
                 x_out		         <= (others => '0');
 		bit11_reg_rst   <= '1';
 		new_state <= data_2;
-                
+		rst <= '0';                
 	    when data_2 =>
 		bit11_reg_rst   <= '0';
                 cntReset15k	    <= '0';
@@ -268,7 +274,7 @@ begin
                 else
                     new_state <= state;
                 end if;
-
+		rst <= '0';
 	   when data_2_cnt_rst => --maybe we want to add a state to read the data while not reseting the register yet cuz this might give problems. The shit inside processes is sequential tho.
 		
                 cntReset15k	    <= '1';
@@ -288,6 +294,7 @@ begin
 		x_out(2)      		<= data_in(4);
 		bit11_reg_rst   <= '0';
 		new_state		<= data_2_cnt_rst_2;
+		rst <= '0';
 	    when data_2_cnt_rst_2 =>
 		cntReset15k     <= '0';
                 actBit          <= '0';
@@ -304,7 +311,7 @@ begin
 		x_out(2)      		<= data_in(4);
 		bit11_reg_rst   <= '1';
 		new_state		<= data_3;
-
+		rst <= '0';
 	    when data_3 =>
 		bit11_reg_rst   <= '0';
                 cntReset15k	    <= '0';
@@ -322,7 +329,7 @@ begin
                 else
                     new_state <= state;
                 end if;
-
+		rst <= '0';
 		when data_3_cnt_rst => --maybe we want to add a state to read the data while not reseting the register yet cuz this might give problems. The shit inside processes is sequential tho.
 		
                 cntReset15k	    <= '1';
@@ -343,7 +350,7 @@ begin
 		bit11_reg_rst   <= '0';
 
 		new_state <= data_3_cnt_rst_2;
-
+		rst <= '0';
 		when data_3_cnt_rst_2 => --maybe we want to add a state to read the data while not reseting the register yet cuz this might give problems. The shit inside processes is sequential tho.
 		
                 cntReset15k	    <= '1';
@@ -364,7 +371,7 @@ begin
 		bit11_reg_rst   <= '1';
 
 		new_state <= data_1;
-
+		rst <= '0';
 		when handshake_state => --maybe we want to add a state to read the data while not reseting the register yet cuz this might give problems. The shit inside processes is sequential tho.
 		
                 cntReset15k	    <= '1';
@@ -387,7 +394,7 @@ begin
 		else
 			new_state <= state;
 		end if;
-
+		rst <= '0';
 		when handshake_state2 => --maybe we want to add a state to read the data while not reseting the register yet cuz this might give problems. The shit inside processes is sequential tho.
 		
                 cntReset15k	    <= '1';
@@ -410,7 +417,7 @@ begin
 		else
 			new_state <= state;
 		end if;
-		
+		rst <= '0';		
 
         end case;
     end process;

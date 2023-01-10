@@ -40,7 +40,7 @@ applicable agreement for further details.
 	(input)
 	(rect 232 184 400 200)
 	(text "INPUT" (rect 125 0 154 9)(font "Arial" (font_size 6)))
-	(text "Clock_15K" (rect 5 0 59 10)(font "Arial" ))
+	(text "Clock_15K" (rect 5 0 58 10)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -75,7 +75,7 @@ applicable agreement for further details.
 	(input)
 	(rect 232 160 400 176)
 	(text "INPUT" (rect 125 0 154 9)(font "Arial" (font_size 6)))
-	(text "Data_in" (rect 5 0 43 10)(font "Arial" ))
+	(text "Data_in" (rect 5 0 42 10)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -171,6 +171,7 @@ applicable agreement for further details.
 		(line (pt 82 8)(pt 78 12))
 		(line (pt 78 12)(pt 82 8))
 	)
+	(annotation_block (location)(rect 1064 312 1128 328))
 )
 (symbol
 	(rect 512 -48 688 32)
@@ -278,8 +279,8 @@ applicable agreement for further details.
 	(port
 		(pt 224 128)
 		(output)
-		(text "rst" (rect 0 0 12 10)(font "Arial" ))
-		(text "rst" (rect 193 123 205 133)(font "Arial" ))
+		(text "rst_led" (rect 0 0 33 10)(font "Arial" ))
+		(text "rst_led" (rect 168 128 201 138)(font "Arial" ))
 		(line (pt 224 128)(pt 208 128))
 	)
 	(drawing
@@ -365,14 +366,6 @@ applicable agreement for further details.
 	(pt 600 200)
 )
 (connector
-	(pt 824 264)
-	(pt 824 304)
-)
-(connector
-	(pt 824 304)
-	(pt 888 304)
-)
-(connector
 	(pt 864 248)
 	(pt 864 264)
 )
@@ -387,6 +380,22 @@ applicable agreement for further details.
 (connector
 	(pt 864 248)
 	(pt 880 248)
+)
+(connector
+	(pt 824 264)
+	(pt 824 320)
+)
+(connector
+	(pt 880 304)
+	(pt 880 320)
+)
+(connector
+	(pt 888 304)
+	(pt 880 304)
+)
+(connector
+	(pt 880 320)
+	(pt 824 320)
 )
 (junction (pt 880 248))
 (junction (pt 880 232))
