@@ -93,7 +93,8 @@ component main_fsm is
         x_flipflop:     out std_logic;
         y_flipflop:     out std_logic;
         btn_flipflop:   out std_logic;    
-	handshake_out:  out std_logic
+	handshake_out:  out std_logic;
+	test:		out std_logic_vector(4 downto 0)
         );
 end component;
 
@@ -112,7 +113,7 @@ signal count15k		:std_logic_vector(3 downto 0);
 signal data_sr_9bit:		std_logic_vector(8 downto 0);
 signal data_sr_11bit: std_logic_vector(10 downto 0);
 signal mouse_x,mouse_y: std_logic_vector (2 downto 0);
-signal btns:	std_logic_vector(4 downto 0);
+signal btns, leds_mainfsm:	std_logic_vector(4 downto 0);
 
 
 begin
@@ -120,6 +121,15 @@ begin
 process(clk)
 begin
 rst <= reset;
+led0 <= count15k(0);
+led1 <= count15k(1);
+led2 <= count15k(2);
+led3 <= count15k(3);
+led5 <= leds_mainfsm(0);
+led6 <= leds_mainfsm(1);
+led7 <= leds_mainfsm(2);
+led8 <= leds_mainfsm(3);
+led9 <= leds_mainfsm(4);
 end process;
 
 cnt: counter25mhz port map (clk, cntReset25M, count25M);
@@ -134,7 +144,7 @@ mx: mux port map (mux_select, muxFSM, muxReg, dataSwitch);
 
 tb: timebase port map (clk, output_edgedet, cntReset15K, count15k);
 
-mfsm: main_fsm port map (clk, reset, data_sr_11bit, count15k, Handshake_in, bit11_reg_rst, cntReset15K, actBit, reset_send, mouse_x, mouse_y, btns, xflipfloprst, yflipfloprst, btnflipfloprst, handshake_out);
+mfsm: main_fsm port map (clk, reset, data_sr_11bit, count15k, Handshake_in, bit11_reg_rst, cntReset15K, actBit, reset_send, mouse_x, mouse_y, btns, xflipfloprst, yflipfloprst, btnflipfloprst, handshake_out, leds_mainfsm);
 
 flipflop1: flipflop port map(clk, xflipfloprst, mouse_x(2),mouseX(2));
 flipflop2: flipflop port map(clk, xflipfloprst, mouse_x(1),mouseX(1));

@@ -51,7 +51,7 @@ begin
                 else
                     dataToReg <= "000000000"; --inverted for the transistor, FF including parity bit.
                 end if;
-                if(to_integer(unsigned(countIn)) >= 2750) then
+                if(to_integer(unsigned(countIn)) >= 3250) then
                     new_state <= bothlowstate;
 		else
 		    new_state <= state;
@@ -68,7 +68,11 @@ begin
                 else
                     dataToReg <= "000000000"; --inverted for the transistor, FF including parity bit.
                 end if;
-		new_state <= waitforclockstate;
+		if(to_integer(unsigned(countIn)) >= 3500) then
+                    new_state <= waitforclockstate;
+		else
+		    new_state <= state;
+                end if;
 
             when waitforclockstate =>
                 clkTrans <= '0';
