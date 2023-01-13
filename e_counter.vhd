@@ -14,32 +14,31 @@ logic_e_out: out std_logic_vector (9 downto 0)
 );
 end;
 architecture behav of e_counter is
-    signal count, new_count: unsigned (9 downto 0);
+    signal count_e, new_count_e: unsigned (9 downto 0);
 begin
     process(clk)
         begin
             if (rising_edge(clk)) then
                 if (reset = '1') then
-                    count <= (others => '0');
+                    count_e <= (others => '0');
                 else
-                    count <= new_count;
+                    count_e <= new_count_e;
                 end if;
             end if;
     end process;
  
-    process(clk, count)
+    process(clk, count_e)
     begin
 	if((logic_v_out = muis_y) and (logic_h_out = muis_x)) then
 
 		if (clk ='1') then
-        		new_count <= count + 1;
+        		new_count_e <= count_e + 1;
 		else 
-			new_count <= new_count;
+			new_count_e <= new_count_e;
 		end if;
 	else 
-		new_count <= count;
+		new_count_e <= count_e;
 	end if;
     end process;
-logic_e_out <= std_logic_vector(count);
+logic_e_out <= std_logic_vector(count_e);
 end architecture behav;
-
