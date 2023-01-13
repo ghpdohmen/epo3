@@ -10,32 +10,42 @@ logic_v_out: out std_logic_vector (3 downto 0)
 );
 end;
 architecture behav of v_counter is
-    signal count, new_count: unsigned (3 downto 0);
+component edge_detector is 
+port(
+	clk     : in  std_logic;
+        input  : in  std_logic;
+        edges : out std_logic
+);
+end component;
+    signal sig_edges: std_logic;
+    signal count_v, new_count_v: unsigned (3 downto 0);
 begin
+l_edge: edge_detector port map (clk => clk, input => logic_v_32, edges=>sig_edges);
     process(clk, reset)
         begin
             if (rising_edge(clk)) then
-                if (reset = '1' or count="1110") then
-                    count <= (others => '0');	
+                if (reset = '1' or count_v="1110") then
+                    count_v <= (others => '0');	
 		--new_count <= (others => '0');
                 else
-                    count <= new_count;
+                    count_v <= new_count_v;
                 end if;
             end if;
     end process;
  
-    process(logic_v_32, count)
+    process(sig_edges, count_v)
     begin
-	if (logic_v_32 ='1') then
-		if (count="1110") then
-        		new_count <= (others => '0');
+	if (sig_edges ='1') then
+		if (count_v="1110") then
+        		new_count_v <= (others => '0');
 	  	else
-        		new_count <= count + 1;
+        		new_count_v <= count_v + 1;
 	  	end if;
 	else 
-	new_count <= count;
+	new_count_v <= count_v;
 	end if;
     end process;
-    logic_v_out <= std_logic_vector(count);
+    logic_v_out <= std_logic_vector(count_v);
 end architecture behav;
+
 
