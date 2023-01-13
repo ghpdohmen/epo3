@@ -81,6 +81,7 @@ begin
   			horizontal <= horizontal_counter;
   			scale_vertical <= scale_vertical_counter;
   			scale_horizontal <= scale_horizontal_counter; 
+		end if;
 
 		elsif(clock='1' and clock'event) then
   			-- increment counters
