@@ -41,13 +41,13 @@ begin
                 end if;
 
             when clklowstate =>
-                clkTrans <= '0';
-                dataTrans <= '1';
+                clkTrans <= '1';
+                dataTrans <= '0';
                 timebaseRst <= '0';
                 regRst <= '1';
                 dataMUX <= '0';
 		if(actBit = '1') then
-                    dataToReg <= "000010111"; --inverted for the transistor, F4 including parity bit
+                    dataToReg <= "101100001"; --inverted for the transistor, F4 including parity bit
                 else
                     dataToReg <= "000000000"; --inverted for the transistor, FF including parity bit.
                 end if;
@@ -58,8 +58,8 @@ begin
                 end if;
 
             when bothlowstate =>
-                clkTrans <= '1';
-                dataTrans <= '0';
+                clkTrans <= '0';
+                dataTrans <= '1';
                 regRst <= '1';
                 dataMUX <= '0';
 		timebaseRst <= '0';
@@ -68,7 +68,7 @@ begin
                 else
                     dataToReg <= "000000000"; --inverted for the transistor, FF including parity bit.
                 end if;
-		if(to_integer(unsigned(countIn)) >= 3500) then
+		if(to_integer(unsigned(countIn)) >= 3255) then
                     new_state <= waitforclockstate;
 		else
 		    new_state <= state;
@@ -79,7 +79,7 @@ begin
                 regRst <= '0';
                 dataMUX <= '1';
 		dataTrans <= '0';
-		timebaseRst <= '0';
+		timebaseRst <= '1';
 		
         end case;
     end process;

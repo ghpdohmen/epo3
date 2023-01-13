@@ -68,7 +68,7 @@ begin
                 else
                     dataToReg <= "000000000"; --inverted for the transistor, FF including parity bit.
                 end if;
-		if(to_integer(unsigned(countIn)) >= 3500) then
+		if(to_integer(unsigned(countIn)) >= 3255) then
                     new_state <= waitforclockstate;
 		else
 		    new_state <= state;
@@ -79,7 +79,7 @@ begin
                 regRst <= '0';
                 dataMUX <= '1';
 		dataTrans <= '0';
-		timebaseRst <= '0';
+		timebaseRst <= '1';
 		
         end case;
     end process;

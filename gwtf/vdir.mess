@@ -1,5 +1,14 @@
 Library vendor : Model Technology
 Maximum unnamed designs : 3
+OPTIMIZED DESIGN _opt
+    Compile time: Tue Jan 10 18:37:21 2023
+    Version string: Q4]O=ALVfMB]zgOH1RdBg3
+    Top-level model: work mouse_tb_behav_cfg 1
+    Compile options: -quiet -auto_acc_if_foreign -work work -L TSMCLib
+    Compile defaults: CvgOpt=0
+    Short name: @_opt
+    Opcode format: 10.5b; VCOM/VLOG SE-64 Object version 63
+    Source directory: /home/etuinstra/epo3/gwtf
 OPTIMIZED DESIGN _opt1
     Compile time: Thu Dec 22 14:11:56 2022
     Version string: E66;T7J1J@5LIXVUA18=C1
@@ -380,23 +389,56 @@ VHDL CONFIGURATION main_fsm_synthesised_cfg
     Compile options: -quiet -nologo -2008 -just C -lower -explicit -work work
     Compile defaults: Explicit=1 CvgOpt=0
 ENTITY mouse
-    Source modified time: Tue Jan 10 12:20:29 2023
+    Source modified time: Tue Jan 10 18:36:01 2023
     Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
     Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
-    Source directory: /home/etuinstra/epo3/gwtf
+    Source directory: /home/ghpdohmen/epo3/epo3/gwtf
     HDL source file: VHDL/mouse.vhd
     Source file: VHDL/mouse.vhd
     Start location: VHDL/mouse.vhd:4
     Version string: ]FC;6UYl=?ACS>aWGdc_[2
     Opcode format: 10.5b; VCOM SE-64 Object version 63
     VHDL language standard: 3 (VHDL-2008)
-    Compile time: Tue Jan 10 12:20:29 2023
+    Compile time: Tue Jan 10 18:37:30 2023
     Debug Symbol file exists
     Compiled in vopt flow
     Compile options: -quiet -nologo -2008 -lower -explicit -work work
     Compile defaults: Explicit=1 CvgOpt=0
+  ARCHITECTURE BODY routed
+    Depends on: E work mouse ]FC;6UYl=?ACS>aWGdc_[2
+    Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
+    Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
+    HDL source file: VHDL/mouse_PAR.vhd
+    Source file: VHDL/mouse_PAR.vhd
+    Start location: VHDL/mouse_PAR.vhd:7
+    Version string: m>DmOBTM_a=aH]FCAgPAP2
+    Opcode format: 10.5b; VCOM SE-64 Object version 63
+    VHDL language standard: 3 (VHDL-2008)
+    Compile time: Tue Jan 10 18:37:30 2023
+    Debug Symbol file exists
+    Compiled in vopt flow
+    Compile options: -quiet -nologo -2008 -lower -explicit -work work
+    Compile defaults: Explicit=1 CvgOpt=0
+    Source directory: /home/ghpdohmen/epo3/epo3/gwtf
+    Source modified time: Tue Jan 10 18:36:01 2023
+  ARCHITECTURE BODY synthesised
+    Depends on: E work mouse ]FC;6UYl=?ACS>aWGdc_[2
+    Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
+    Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
+    HDL source file: VHDL/mouse_SYN.vhd
+    Source file: VHDL/mouse_SYN.vhd
+    Start location: VHDL/mouse_SYN.vhd:7
+    Version string: ;BmFYF0[d=4`bl=ER086N1
+    Opcode format: 10.5b; VCOM SE-64 Object version 63
+    VHDL language standard: 3 (VHDL-2008)
+    Compile time: Tue Jan 10 18:37:30 2023
+    Debug Symbol file exists
+    Compiled in vopt flow
+    Compile options: -quiet -nologo -2008 -lower -explicit -work work
+    Compile defaults: Explicit=1 CvgOpt=0
+    Source directory: /home/ghpdohmen/epo3/epo3/gwtf
+    Source modified time: Tue Jan 10 18:36:01 2023
   ARCHITECTURE BODY behav
-    Source modified time: Tue Jan 10 12:22:26 2023
     Depends on: E work mouse ]FC;6UYl=?ACS>aWGdc_[2
     Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
     Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
@@ -406,46 +448,13 @@ ENTITY mouse
     Version string: nfVcY>bdSHLbUnNon:Zm62
     Opcode format: 10.5b; VCOM SE-64 Object version 63
     VHDL language standard: 3 (VHDL-2008)
-    Compile time: Tue Jan 10 12:22:27 2023
+    Compile time: Tue Jan 10 18:37:30 2023
     Debug Symbol file exists
     Compiled in vopt flow
     Compile options: -quiet -nologo -2008 -lower -explicit -work work
     Compile defaults: Explicit=1 CvgOpt=0
-    Source directory: /home/etuinstra/epo3/gwtf
-  ARCHITECTURE BODY synthesised
-    Depends on: E work mouse W<oH7^0jT1IAE0ELQ=8gO3
-    Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
-    Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
-    HDL source file: VHDL/mouse_SYN.vhd
-    Source file: VHDL/mouse_SYN.vhd
-    Start location: VHDL/mouse_SYN.vhd:7
-    Version string: ;BmFYF0[d=4`bl=ER086N1
-    Opcode format: 10.5b; VCOM SE-64 Object version 63
-    VHDL language standard: 3 (VHDL-2008)
-    Compile time: Tue Jan 10 12:18:14 2023
-    Debug Symbol file exists
-    Compiled in vopt flow
-    Compile options: -quiet -nologo -2008 -lower -explicit -work work
-    Compile defaults: Explicit=1 CvgOpt=0
-    Source modified time: Tue Jan 10 11:11:08 2023
-    Source directory: /home/etuinstra/epo3/gwtf
-  ARCHITECTURE BODY routed
-    Depends on: E work mouse W<oH7^0jT1IAE0ELQ=8gO3
-    Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
-    Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
-    HDL source file: VHDL/mouse_PAR.vhd
-    Source file: VHDL/mouse_PAR.vhd
-    Start location: VHDL/mouse_PAR.vhd:7
-    Version string: m>DmOBTM_a=aH]FCAgPAP2
-    Opcode format: 10.5b; VCOM SE-64 Object version 63
-    VHDL language standard: 3 (VHDL-2008)
-    Compile time: Tue Jan 10 12:18:14 2023
-    Debug Symbol file exists
-    Compiled in vopt flow
-    Compile options: -quiet -nologo -2008 -lower -explicit -work work
-    Compile defaults: Explicit=1 CvgOpt=0
-    Source modified time: Tue Jan 10 11:11:08 2023
-    Source directory: /home/etuinstra/epo3/gwtf
+    Source directory: /home/ghpdohmen/epo3/epo3/gwtf
+    Source modified time: Tue Jan 10 18:36:01 2023
 VHDL CONFIGURATION mouse_behav_cfg
     Configuration applies to entity: mouse
     Block configuration applies to architecture: behav
@@ -472,15 +481,15 @@ VHDL CONFIGURATION mouse_behav_cfg
     Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
     Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
     Depends on: E work mouse ]FC;6UYl=?ACS>aWGdc_[2
-    Source modified time: Tue Jan 10 10:14:44 2023
-    Source directory: /home/etuinstra/epo3/gwtf
+    Source modified time: Tue Jan 10 18:36:01 2023
+    Source directory: /home/ghpdohmen/epo3/epo3/gwtf
     HDL source file: VHDL/mouse_behav_cfg.vhd
     Source file: VHDL/mouse_behav_cfg.vhd
     Start location: VHDL/mouse_behav_cfg.vhd:1
     Version string: j9H6UBz>3^SYa9zC?NDl[1
     Opcode format: 10.5b; VCOM SE-64 Object version 63
     VHDL language standard: 3 (VHDL-2008)
-    Compile time: Tue Jan 10 12:23:41 2023
+    Compile time: Tue Jan 10 18:37:33 2023
     Compiled in vopt flow
     Compile options: -quiet -nologo -2008 -lower -explicit -work work
     Compile defaults: Explicit=1 CvgOpt=0
@@ -490,16 +499,16 @@ VHDL CONFIGURATION mouse_routed_cfg
     Depends on: A work mouse routed m>DmOBTM_a=aH]FCAgPAP2
     Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
     Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
-    Depends on: E work mouse W<oH7^0jT1IAE0ELQ=8gO3
-    Source modified time: Fri Dec 23 17:01:07 2022
-    Source directory: /home/etuinstra/epo3/gwtf
+    Depends on: E work mouse ]FC;6UYl=?ACS>aWGdc_[2
+    Source modified time: Tue Jan 10 18:36:01 2023
+    Source directory: /home/ghpdohmen/epo3/epo3/gwtf
     HDL source file: VHDL/mouse_routed_cfg.vhd
     Source file: VHDL/mouse_routed_cfg.vhd
     Start location: VHDL/mouse_routed_cfg.vhd:1
     Version string: UPigO6A^mX7V9QFSGD1EP1
     Opcode format: 10.5b; VCOM SE-64 Object version 63
     VHDL language standard: 3 (VHDL-2008)
-    Compile time: Tue Jan 10 12:18:14 2023
+    Compile time: Tue Jan 10 18:37:31 2023
     Compiled in vopt flow
     Compile options: -quiet -nologo -2008 -lower -explicit -work work
     Compile defaults: Explicit=1 CvgOpt=0
@@ -509,16 +518,16 @@ VHDL CONFIGURATION mouse_synthesised_cfg
     Depends on: A work mouse synthesised ;BmFYF0[d=4`bl=ER086N1
     Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
     Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
-    Depends on: E work mouse W<oH7^0jT1IAE0ELQ=8gO3
-    Source modified time: Fri Dec 23 17:01:07 2022
-    Source directory: /home/etuinstra/epo3/gwtf
+    Depends on: E work mouse ]FC;6UYl=?ACS>aWGdc_[2
+    Source modified time: Tue Jan 10 18:36:01 2023
+    Source directory: /home/ghpdohmen/epo3/epo3/gwtf
     HDL source file: VHDL/mouse_synthesised_cfg.vhd
     Source file: VHDL/mouse_synthesised_cfg.vhd
     Start location: VHDL/mouse_synthesised_cfg.vhd:1
     Version string: E;ZG29Yi[D3C<X<WCaFOX3
     Opcode format: 10.5b; VCOM SE-64 Object version 63
     VHDL language standard: 3 (VHDL-2008)
-    Compile time: Tue Jan 10 12:18:14 2023
+    Compile time: Tue Jan 10 18:37:30 2023
     Compiled in vopt flow
     Compile options: -quiet -nologo -2008 -lower -explicit -work work
     Compile defaults: Explicit=1 CvgOpt=0
@@ -539,22 +548,22 @@ ENTITY mouse_tb
     Compile options: -quiet -nologo -2008 -lower -explicit -work work
     Compile defaults: Explicit=1 CvgOpt=0
   ARCHITECTURE BODY behav
+    Source modified time: Tue Jan 10 18:36:01 2023
     Depends on: E work mouse_tb E4`kD]em2McX0NOjDc:6?3
     Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
     Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
+    Source directory: /home/ghpdohmen/epo3/epo3/gwtf
     HDL source file: VHDL/mouse_tb-behav.vhd
     Source file: VHDL/mouse_tb-behav.vhd
     Start location: VHDL/mouse_tb-behav.vhd:4
     Version string: cU^clRg;QjgEXgbC79UFm2
     Opcode format: 10.5b; VCOM SE-64 Object version 63
     VHDL language standard: 3 (VHDL-2008)
-    Compile time: Tue Jan 10 12:18:13 2023
+    Compile time: Tue Jan 10 18:37:30 2023
     Debug Symbol file exists
     Compiled in vopt flow
     Compile options: -quiet -nologo -2008 -lower -explicit -work work
     Compile defaults: Explicit=1 CvgOpt=0
-    Source directory: /home/etuinstra/epo3/gwtf
-    Source modified time: Fri Dec 23 17:01:07 2022
 VHDL CONFIGURATION mouse_tb_behav_cfg
     Configuration applies to entity: mouse_tb
     Block configuration applies to architecture: behav
@@ -564,15 +573,15 @@ VHDL CONFIGURATION mouse_tb_behav_cfg
     Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
     Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
     Depends on: E work mouse_tb E4`kD]em2McX0NOjDc:6?3
-    Source modified time: Tue Jan 10 10:15:00 2023
-    Source directory: /home/etuinstra/epo3/gwtf
+    Source modified time: Tue Jan 10 18:36:01 2023
+    Source directory: /home/ghpdohmen/epo3/epo3/gwtf
     HDL source file: VHDL/mouse_tb_behav_cfg.vhd
     Source file: VHDL/mouse_tb_behav_cfg.vhd
     Start location: VHDL/mouse_tb_behav_cfg.vhd:1
     Version string: geB1<_dBc_4DC8A<4B[>21
     Opcode format: 10.5b; VCOM SE-64 Object version 63
     VHDL language standard: 3 (VHDL-2008)
-    Compile time: Tue Jan 10 12:23:42 2023
+    Compile time: Tue Jan 10 18:37:33 2023
     Compiled in vopt flow
     Compile options: -quiet -nologo -2008 -lower -explicit -work work
     Compile defaults: Explicit=1 CvgOpt=0
@@ -682,23 +691,23 @@ ENTITY sendfsm
     Compile options: -quiet -nologo -2008 -lower -explicit -work work
     Compile defaults: Explicit=1 CvgOpt=0
   ARCHITECTURE BODY behav
-    Source modified time: Tue Jan 10 12:23:38 2023
+    Source modified time: Wed Jan 11 19:37:28 2023
     Depends on: E work sendfsm `?fVhWfE>aTWlKM_4?]6F2
     Depends on: P ieee numeric_std :ASDNFgHXf_ih3J@9F3Ze1
     Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
     Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
+    Source directory: /home/ghpdohmen/epo3/epo3/gwtf
     HDL source file: VHDL/sendFSM-behav.vhd
     Source file: VHDL/sendFSM-behav.vhd
     Start location: VHDL/sendFSM-behav.vhd:5
-    Version string: hI_AM`e;=P0U[eRb;4AnT3
+    Version string: >fQ5z4n]:ccRz9>FjgZfd2
     Opcode format: 10.5b; VCOM SE-64 Object version 63
     VHDL language standard: 3 (VHDL-2008)
-    Compile time: Tue Jan 10 12:23:38 2023
+    Compile time: Wed Jan 11 19:37:28 2023
     Debug Symbol file exists
     Compiled in vopt flow
     Compile options: -quiet -nologo -2008 -lower -explicit -work work
     Compile defaults: Explicit=1 CvgOpt=0
-    Source directory: /home/etuinstra/epo3/gwtf
   ARCHITECTURE BODY synthesised
     Depends on: P ieee numeric_std :ASDNFgHXf_ih3J@9F3Ze1
     Depends on: E work sendfsm `?fVhWfE>aTWlKM_4?]6F2

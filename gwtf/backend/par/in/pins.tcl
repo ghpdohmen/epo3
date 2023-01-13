@@ -17,3 +17,13 @@ editPin -pin {buttons[0]} -layer 2 -fixedPin -assign {35.42 0} -side TOP
 editPin -pin Handshake_out -layer 2 -fixedPin -assign {35.98 0} -side TOP
 editPin -pin DataSwitch -layer 2 -fixedPin -assign {36.54 0} -side TOP
 editPin -pin ClkSwitch -layer 2 -fixedPin -assign {37.10 0} -side TOP
+editPin -pin rst -layer 2 -fixedPin -assign {37.66 0} -side TOP
+editPin -pin led0 -layer 2 -fixedPin -assign {38.22 0} -side TOP
+editPin -pin led1 -layer 2 -fixedPin -assign {47.74 0} -side TOP
+editPin -pin led2 -layer 2 -fixedPin -assign {48.30 0} -side TOP
+editPin -pin led3 -layer 2 -fixedPin -assign {48.86 0} -side TOP
+editPin -pin led5 -layer 2 -fixedPin -assign {49.42 0} -side TOP
+editPin -pin led6 -layer 2 -fixedPin -assign {49.98 0} -side TOP
+editPin -pin led7 -layer 2 -fixedPin -assign {50.54 0} -side TOP
+editPin -pin led8 -layer 2 -fixedPin -assign {51.10 0} -side TOP
+editPin -pin led9 -layer 2 -fixedPin -assign {51.66 0} -side TOP

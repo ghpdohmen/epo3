@@ -17,3 +17,13 @@ buttons[0] out 10
 Handshake_out out 11
 DataSwitch out 12
 ClkSwitch out 13
+rst out 14
+led0 out 15
+led1 out 16
+led2 out 17
+led3 out 18
+led5 out 19
+led6 out 20
+led7 out 21
+led8 out 22
+led9 out 23

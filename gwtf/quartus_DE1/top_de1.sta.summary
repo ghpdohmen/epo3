@@ -3,12 +3,12 @@ TimeQuest Timing Analyzer Summary
 ------------------------------------------------------------
 
 Type  : Slow Model Setup 'mouse:inst|sendFSM:sfsm|state.waitforclockstate'
-Slack : -2.657
-TNS   : -11.063
+Slack : -2.319
+TNS   : -12.191
 
 Type  : Slow Model Setup 'gen25mhz:inst1|count[0]'
-Slack : -2.186
-TNS   : -84.861
+Slack : -2.221
+TNS   : -87.333
 
 Type  : Slow Model Setup 'clock_50mhz'
 Slack : 2.116
@@ -19,11 +19,11 @@ Slack : -1.864
 TNS   : -1.864
 
 Type  : Slow Model Hold 'gen25mhz:inst1|count[0]'
-Slack : -1.125
-TNS   : -9.053
+Slack : -1.655
+TNS   : -16.323
 
 Type  : Slow Model Hold 'mouse:inst|sendFSM:sfsm|state.waitforclockstate'
-Slack : 0.429
+Slack : 0.460
 TNS   : 0.000
 
 Type  : Slow Model Minimum Pulse Width 'clock_50mhz'
@@ -38,28 +38,28 @@ Type  : Slow Model Minimum Pulse Width 'mouse:inst|sendFSM:sfsm|state.waitforclo
 Slack : 0.500
 TNS   : 0.000
 
-Type  : Fast Model Setup 'mouse:inst|sendFSM:sfsm|state.waitforclockstate'
-Slack : -0.394
-TNS   : -1.234
-
 Type  : Fast Model Setup 'gen25mhz:inst1|count[0]'
-Slack : -0.316
-TNS   : -2.385
+Slack : -0.297
+TNS   : -2.695
+
+Type  : Fast Model Setup 'mouse:inst|sendFSM:sfsm|state.waitforclockstate'
+Slack : -0.282
+TNS   : -0.746
 
 Type  : Fast Model Setup 'clock_50mhz'
 Slack : 1.343
 TNS   : 0.000
 
 Type  : Fast Model Hold 'gen25mhz:inst1|count[0]'
-Slack : -1.079
-TNS   : -9.146
+Slack : -1.262
+TNS   : -18.950
 
 Type  : Fast Model Hold 'clock_50mhz'
 Slack : -0.963
 TNS   : -0.963
 
 Type  : Fast Model Hold 'mouse:inst|sendFSM:sfsm|state.waitforclockstate'
-Slack : 0.262
+Slack : 0.251
 TNS   : 0.000
 
 Type  : Fast Model Minimum Pulse Width 'clock_50mhz'

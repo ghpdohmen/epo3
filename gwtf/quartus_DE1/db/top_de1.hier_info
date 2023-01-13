@@ -161,6 +161,8 @@ data_out <= new_new_data[8].DB_MAX_OUTPUT_PORT_TYPE
 
 |top_de1|mouse:inst|sendFSM:sfsm
 actBit => Selector7.IN2
+actBit => Selector9.IN1
+actBit => Selector11.IN1
 reset => state.OUTPUTSELECT
 reset => state.OUTPUTSELECT
 reset => state.OUTPUTSELECT
@@ -200,10 +202,10 @@ dataToReg[1] <= dataToReg[1]$latch.DB_MAX_OUTPUT_PORT_TYPE
 dataToReg[2] <= dataToReg[2]$latch.DB_MAX_OUTPUT_PORT_TYPE
 dataToReg[3] <= <GND>
 dataToReg[4] <= dataToReg[4]$latch.DB_MAX_OUTPUT_PORT_TYPE
-dataToReg[5] <= <GND>
-dataToReg[6] <= <GND>
+dataToReg[5] <= dataToReg[5]$latch.DB_MAX_OUTPUT_PORT_TYPE
+dataToReg[6] <= dataToReg[6]$latch.DB_MAX_OUTPUT_PORT_TYPE
 dataToReg[7] <= <GND>
-dataToReg[8] <= <GND>
+dataToReg[8] <= dataToReg[8]$latch.DB_MAX_OUTPUT_PORT_TYPE
 regRst <= regRst.DB_MAX_OUTPUT_PORT_TYPE
 dataMUX <= dataMUX.DB_MAX_OUTPUT_PORT_TYPE
 

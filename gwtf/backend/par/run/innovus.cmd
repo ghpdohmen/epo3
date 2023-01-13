@@ -1,7 +1,7 @@
 #######################################################
 #                                                     
 #  Innovus Command Logging File                     
-#  Created on Fri Dec 23 11:59:27 2022                
+#  Created on Thu Jan 12 12:07:53 2023                
 #                                                     
 #######################################################
 
@@ -51,6 +51,16 @@ editPin -pin {buttons[0]} -layer 2 -fixedPin -assign {35.42 0} -side TOP
 editPin -pin Handshake_out -layer 2 -fixedPin -assign {35.98 0} -side TOP
 editPin -pin DataSwitch -layer 2 -fixedPin -assign {36.54 0} -side TOP
 editPin -pin ClkSwitch -layer 2 -fixedPin -assign {37.10 0} -side TOP
+editPin -pin rst -layer 2 -fixedPin -assign {37.66 0} -side TOP
+editPin -pin led0 -layer 2 -fixedPin -assign {38.22 0} -side TOP
+editPin -pin led1 -layer 2 -fixedPin -assign {47.74 0} -side TOP
+editPin -pin led2 -layer 2 -fixedPin -assign {48.30 0} -side TOP
+editPin -pin led3 -layer 2 -fixedPin -assign {48.86 0} -side TOP
+editPin -pin led5 -layer 2 -fixedPin -assign {49.42 0} -side TOP
+editPin -pin led6 -layer 2 -fixedPin -assign {49.98 0} -side TOP
+editPin -pin led7 -layer 2 -fixedPin -assign {50.54 0} -side TOP
+editPin -pin led8 -layer 2 -fixedPin -assign {51.10 0} -side TOP
+editPin -pin led9 -layer 2 -fixedPin -assign {51.66 0} -side TOP
 set_analysis_view -setup {setup_wc} -hold {hold_bc}
 setNanoRouteMode -routeTopRoutingLayer 4
 setNanoRouteMode -routeBottomRoutingLayer 1
@@ -101,81 +111,101 @@ panPage 0 1
 panPage 0 1
 panPage 0 1
 panPage 0 1
+panPage 0 1
 panPage 0 -1
 panPage 0 -1
 panPage 0 -1
 panPage 0 -1
+panPage 0 -1
+panPage 0 -1
+panPage 0 1
+panPage 0 -1
+panPage 0 -1
+panPage -1 0
+zoomOut
 zoomOut
 zoomIn
-panPage 0 -1
+zoomIn
+panPage 0 1
+panPage 0 1
+panPage 0 1
+zoomIn
+zoomIn
 panPage 0 1
 panPage 0 1
 panPage -1 0
+panPage 0 1
 panPage 1 0
-panPage -1 0
-zoomOut
-panPage 0 -1
-panPage 0 -1
-zoomOut
-zoomSelected
-zoomIn
-zoomIn
-panPage 0 1
-panPage 0 1
-panPage 0 1
-panPage 0 1
-panPage 0 1
-zoomIn
-panPage 0 1
-panPage 0 1
-panPage 0 1
-panPage 0 1
-panPage 0 1
-zoomIn
-zoomIn
-zoomOut
-panPage -1 0
-panPage -1 0
+panPage 1 0
 panPage 1 0
 panPage -1 0
 panPage 1 0
+panPage 1 0
+panPage 1 0
+panPage 1 0
+panPage 1 0
+panPage 1 0
 panPage -1 0
 panPage 1 0
-panPage 0 -1
 panPage 1 0
 panPage 1 0
-zoomOut
-zoomOut
-zoomOut
-panPage 0 -1
-zoomOut
-zoomIn
-zoomIn
-zoomIn
-panPage 0 1
-panPage 0 1
-panPage 0 1
-panPage 0 1
 panPage 1 0
-panPage 0 -1
-panPage 0 1
-panPage 1 0
-panPage 0 1
-panPage 0 1
-panPage 0 1
-panPage 0 1
-panPage 0 -1
-panPage 0 -1
-panPage 0 -1
-panPage 0 -1
-panPage 0 -1
-panPage 0 -1
-panPage 0 -1
-panPage 0 -1
 panPage 0 -1
 panPage -1 0
 panPage -1 0
+panPage 0 1
 panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage 0 -1
+panPage 0 -1
+panPage 0 -1
+panPage 1 0
+panPage 1 0
+panPage 1 0
+panPage 0 1
+panPage 0 1
+panPage 0 1
+panPage 1 0
+panPage 0 -1
+panPage 0 -1
+panPage 0 -1
+panPage 0 -1
+panPage 0 -1
+panPage 0 -1
+panPage 0 -1
+panPage 0 -1
+panPage 0 -1
+panPage 0 -1
+panPage 0 -1
+panPage 0 -1
+panPage 0 -1
+panPage 0 -1
+panPage 0 -1
+panPage 0 -1
+panPage 0 -1
+panPage 0 -1
+panPage 0 -1
+panPage 0 -1
+panPage 0 1
+panPage 0 1
+panPage 0 1
+panPage 0 1
+panPage 0 1
+panPage 0 1
+panPage 0 1
+panPage 0 1
+panPage 0 1
+panPage 0 1
 panPage 0 1
 panPage 0 1
 panPage 0 1
@@ -188,13 +218,6 @@ panPage 0 1
 panPage 0 1
 panPage 0 -1
 panPage 0 -1
-panPage 0 1
-panPage 0 -1
-panPage 0 -1
-panPage 0 -1
-panPage 0 1
-panPage 0 1
-panPage 0 1
 panPage 0 -1
 panPage 0 -1
 panPage 0 -1
@@ -202,25 +225,12 @@ panPage 0 1
 panPage 0 1
 panPage 0 1
 panPage 0 1
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
 panPage 0 -1
 panPage 0 1
-zoomOut
-zoomSelected
-zoomIn
-zoomIn
-zoomIn
-panPage 0 1
-panPage 0 1
-panPage 1 0
-panPage 0 -1
-panPage 1 0
-panPage 1 0
-panPage 1 0
-panPage 1 0
-panPage 1 0
-panPage 0 1
-panPage 1 0
-panPage 0 -1
 panPage 1 0
 panPage 1 0
 panPage 1 0
@@ -231,36 +241,3 @@ panPage 1 0
 panPage 1 0
 panPage 1 0
 panPage 1 0
-panPage 1 0
-panPage 1 0
-panPage 1 0
-panPage 1 0
-panPage 1 0
-panPage 1 0
-panPage 1 0
-panPage 1 0
-panPage 1 0
-panPage 1 0
-panPage 1 0
-panPage 1 0
-panPage 1 0
-panPage 1 0
-panPage 1 0
-panPage 1 0
-panPage 1 0
-panPage 0 -1
-panPage 0 -1
-panPage 0 -1
-panPage 0 -1
-zoomIn
-zoomOut
-zoomOut
-zoomOut
-panPage 0 -1
-panPage 0 -1
-panPage 0 -1
-zoomOut
-panPage 0 -1
-panPage 0 -1
-panPage 0 -1
-panPage 0 -1

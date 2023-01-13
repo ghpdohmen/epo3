@@ -5,9 +5,9 @@ set_db use_scan_seqs_for_non_dft false
 
 include ../tcl/read_hdl.tcl
 
-elaborate sendfsm_behav_cfg
+elaborate mouse_behav_cfg
 
-include ../in/sendfsm.sdc
+include ../in/mouse.sdc
 
 synthesize -to_mapped
 #set_db syn_generic_effort medium
@@ -16,9 +16,9 @@ synthesize -to_mapped
 
 ungroup -all -flat
 insert_tiehilo_cells
-write_hdl -mapped > ../out/sendfsm.v
-write_sdf > ../out/sendfsm.sdf
-write_sdc > ../out/sendfsm.sdc
+write_hdl -mapped > ../out/mouse.v
+write_sdf > ../out/mouse.sdf
+write_sdc > ../out/mouse.sdc
 
 report timing
 report gates
