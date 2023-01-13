@@ -16,11 +16,6 @@ port(
     	countdown_aan: in std_logic;
     	middelste_knop:in std_logic;
     	countdown_klaar: out std_logic;
-	-- rom							deze staan nu als component dus geen extern singaal meer
-	--rom_color	: in std_logic_vector(1 downto 0);
-	-- ram
-	--ram_color : in std_logic_vector(2 downto 0);
-
 	-- outputs to storage
 	logic_x_asked	: out std_logic_vector(3 downto 0);
 	logic_y_asked	: out std_logic_vector (3 downto 0);
@@ -142,9 +137,9 @@ gr_lg: graph_logic port map (
 	logic_vga_colour(0) => sig_red,
 	logic_vga_colour(1) => sig_green,
 	logic_vga_colour(2) => sig_blue,
-	logic_x_asked => logic_x_asked,
-	logic_y_asked => logic_y_asked,
-	logic_e_asked => logic_e_asked
+	logic_x_asked => sig_x,
+	logic_y_asked => sig_y,
+	logic_e_asked => sig_e
 );
 
 
