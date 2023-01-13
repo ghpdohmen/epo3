@@ -20,6 +20,7 @@ component counter25mhz is
         count_out : out  std_logic_vector(11 downto 0));
 end component;
 
+
 --SR 9 bit
 component shiftregister_9bit is
   port (
@@ -50,9 +51,17 @@ component mux is
 	dataSwitch	: out 	std_logic);
 end component;
 
-component edge_detector is
+component edge_debounce is
    port(clk     : in  std_logic;
+
         input  : in  std_logic;
+
+               reset      : in std_logic; -- reset is necessary now because we have an FSM for debouncing.
+
+               count    : in std_logic_vector(20 downto 0);
+
+               counter_reset : out std_logic;
+
         edges : out std_logic);
 end component;
 
@@ -107,13 +116,14 @@ component flipflop is
     );
 end component;
 
-signal cntReset25M, bit9_reg_rst, reset_send, mux_select, muxReg, muxFSM, actBit, output_edgedet, cntReset15K, bit11_reg_rst, xflipfloprst, yflipfloprst, btnflipfloprst				:std_logic;
+signal cntReset25M, bit9_reg_rst, reset_send, mux_select, muxReg, muxFSM, actBit, output_edgedet, cntReset15K, bit11_reg_rst, xflipfloprst, yflipfloprst, btnflipfloprst, count_debounce_reset			:std_logic;
 signal count25M		:std_logic_vector(11 downto 0);
 signal count15k		:std_logic_vector(3 downto 0);
 signal data_sr_9bit:		std_logic_vector(8 downto 0);
 signal data_sr_11bit: std_logic_vector(10 downto 0);
 signal mouse_x,mouse_y: std_logic_vector (2 downto 0);
 signal btns, leds_mainfsm:	std_logic_vector(4 downto 0);
+signal count_debounce : std_logic_vector(11 downto 0);
 
 
 begin
@@ -125,11 +135,18 @@ led0 <= count15k(0);
 led1 <= count15k(1);
 led2 <= count15k(2);
 led3 <= count15k(3);
+led5 <= leds_mainfsm(0);
+led6 <= leds_mainfsm(1);
+led7 <= leds_mainfsm(2);
+led8 <= leds_mainfsm(3);
+led9 <= leds_mainfsm(4);
 end process;
 
 cnt: counter25mhz port map (clk, cntReset25M, count25M);
 
-ed: edge_detector port map (clk, clk15k, output_edgedet);
+cntD: counter25mhz port map (clk, count_debounce_reset, count_debounce);
+
+ed: edge_debounce port map (clk, clk15k, reset, count_debounce, count_debounce_reset, output_edgedet);
 
 sr: shiftregister_9bit port map (clk, output_edgedet, data_sr_9bit, bit9_reg_rst, muxReg);
 

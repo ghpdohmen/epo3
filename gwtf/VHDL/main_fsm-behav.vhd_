@@ -6,7 +6,7 @@ architecture behav of main_fsm is
 
 type mainfsm_state is (reset_state, sendFF, sendFF_cnt_rst, wachtFA, wachtFA_cnt_rst, wachtAA, wachtAA_cnt_rst, wachtID, wachtID_cnt_rst, enableF4, enableF4_cnt_rst, wachtFA2, wachtFA2_cnt_rst, data_1, data_1_cnt_rst, data_1_cnt_rst_2, data_2, data_2_cnt_rst, data_2_cnt_rst_2, data_3, data_3_cnt_rst, data_3_cnt_rst_2, handshake_state, handshake_state2);
 signal state, new_state : mainfsm_state;
-signal test : std_logic_vector(4 downto 0);
+
 
 begin
 

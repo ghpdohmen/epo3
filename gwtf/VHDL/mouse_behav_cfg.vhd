@@ -2,7 +2,7 @@ configuration mouse_behav_cfg of mouse is
    for behav
       for all: counter25mhz use configuration work.counter25mhz_behav_cfg;
       end for;
-      for all: edge_detector use configuration work.edge_detector_behav_cfg;
+      for all: edge_debounce use configuration work.edge_debounce_behav_cfg;
       end for;
       for all: shiftregister_9bit use configuration work.shiftregister_9bit_behav_cfg;
       end for;
