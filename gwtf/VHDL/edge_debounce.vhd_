@@ -13,7 +13,7 @@ entity edge_debounce is
 
                reset      : in std_logic; -- reset is necessary now because we have an FSM for debouncing.
 
-               count    : in std_logic_vector(20 downto 0);
+               count    : in std_logic_vector(11 downto 0);
 
                counter_reset : out std_logic;
 

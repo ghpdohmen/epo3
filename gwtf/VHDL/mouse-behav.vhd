@@ -17,7 +17,7 @@ end component;
 component counter25mhz is
    port(clk       : in  std_logic;
         reset     : in  std_logic;
-        count_out : out  std_logic_vector(11 downto 0));
+        count_out : out  std_logic_vector(12 downto 0));
 end component;
 
 
@@ -58,7 +58,7 @@ component edge_debounce is
 
                reset      : in std_logic; -- reset is necessary now because we have an FSM for debouncing.
 
-               count    : in std_logic_vector(11 downto 0);
+               count    : in std_logic_vector(12 downto 0);
 
                counter_reset : out std_logic;
 
@@ -71,8 +71,9 @@ component sendFSM is
     port (
         actBit      :   in std_logic; --gives 1 for enable pulse and 0 for reset pulse
         reset       :   in std_logic;
-        countIn     :   in std_logic_vector (11 downto 0);
+        countIn     :   in std_logic_vector (12 downto 0);
 	clk	    :	in std_logic;
+	clk15k	    :   in std_logic;
         clkTrans    :   out std_logic; --mouse clock transistor
         dataTrans   :   out std_logic; --mouse data transistor	
         timebaseRst :   out std_logic;  -- 25Mhz counter.
@@ -117,13 +118,13 @@ component flipflop is
 end component;
 
 signal cntReset25M, bit9_reg_rst, reset_send, mux_select, muxReg, muxFSM, actBit, output_edgedet, cntReset15K, bit11_reg_rst, xflipfloprst, yflipfloprst, btnflipfloprst, count_debounce_reset			:std_logic;
-signal count25M		:std_logic_vector(11 downto 0);
+signal count25M		:std_logic_vector(12 downto 0);
 signal count15k		:std_logic_vector(3 downto 0);
 signal data_sr_9bit:		std_logic_vector(8 downto 0);
 signal data_sr_11bit: std_logic_vector(10 downto 0);
 signal mouse_x,mouse_y: std_logic_vector (2 downto 0);
 signal btns, leds_mainfsm:	std_logic_vector(4 downto 0);
-signal count_debounce : std_logic_vector(11 downto 0);
+signal count_debounce : std_logic_vector(12 downto 0);
 
 
 begin
@@ -150,7 +151,7 @@ ed: edge_debounce port map (clk, clk15k, reset, count_debounce, count_debounce_r
 
 sr: shiftregister_9bit port map (clk, output_edgedet, data_sr_9bit, bit9_reg_rst, muxReg);
 
-sfsm: sendFSM port map (actBit, reset_send, count25M, clk, ClkSwitch, muxFSM, cntReset25M, data_sr_9bit, bit9_reg_rst, mux_select);
+sfsm: sendFSM port map (actBit, reset_send, count25M, clk, Clk15k, ClkSwitch, muxFSM, cntReset25M, data_sr_9bit, bit9_reg_rst, mux_select);
 
 mx: mux port map (mux_select, muxFSM, muxReg, dataSwitch);
 

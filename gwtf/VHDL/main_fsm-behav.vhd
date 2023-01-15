@@ -50,7 +50,7 @@ begin
                 x_out           <= (others => '0');
                 y_out           <= (others => '0');
                 buttons         <= (others => '0');
-                if(to_integer(unsigned(count15k_in)) >= 11) then
+                if(to_integer(unsigned(count15k_in)) >= 12) then --12 want bij send pullen we aan het begin clock nog low dus is er een extra pulse.
                     new_state <= sendFF_cnt_rst;
 		        else
 		            new_state <= state;
@@ -179,7 +179,7 @@ begin
                 y_out           <= (others => '0');
                 buttons         <= (others => '0');
                 new_state       <= wachtFA;
-                if(to_integer(unsigned(count15k_in)) >= 11) then
+                if(to_integer(unsigned(count15k_in)) >= 12) then
                     new_state <= enableF4_cnt_rst;
 		        else
 		            new_state <= state;

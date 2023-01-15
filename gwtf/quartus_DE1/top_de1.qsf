@@ -51,6 +51,34 @@ set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 
+set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
+set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
+set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "3.3-V LVTTL"
+set_location_assignment PIN_R22 -to reset
+set_location_assignment PIN_U22 -to buttons[0]
+set_location_assignment PIN_U21 -to buttons[1]
+set_location_assignment PIN_V22 -to buttons[2]
+set_location_assignment PIN_V21 -to buttons[3]
+set_location_assignment PIN_W21 -to buttons[4]
+set_location_assignment PIN_A13 -to clkSwitch
+set_location_assignment PIN_B13 -to Clock_15K
+set_location_assignment PIN_A14 -to dataSwitch
+set_location_assignment PIN_B14 -to Data_in
+set_location_assignment PIN_T21 -to "data-switch"
+set_location_assignment PIN_T22 -to "clk-switch"
+set_location_assignment PIN_Y21 -to clkSwitch2
+set_location_assignment PIN_Y22 -to rst
+set_location_assignment PIN_R20 -to led0
+set_location_assignment PIN_R19 -to led1
+set_location_assignment PIN_U19 -to led2
+set_location_assignment PIN_Y19 -to led3
+set_location_assignment PIN_V19 -to led5
+set_location_assignment PIN_Y18 -to led6
+set_location_assignment PIN_U18 -to led7
+set_location_assignment PIN_R18 -to led8
+set_location_assignment PIN_R17 -to led9
+set_global_assignment -name VHDL_FILE "../VHDL/edge_debounce-behav.vhd"
+set_global_assignment -name VHDL_FILE ../VHDL/edge_debounce.vhd
 set_global_assignment -name VHDL_FILE "../VHDL/timebase-behav.vhd"
 set_global_assignment -name VHDL_FILE ../VHDL/timebase.vhd
 set_global_assignment -name VHDL_FILE "../VHDL/shiftregister_9bit-behav.vhd"
@@ -73,31 +101,5 @@ set_global_assignment -name VHDL_FILE ../VHDL/counter25mhz.vhd
 set_global_assignment -name VHDL_FILE "../VHDL/counter25mhz-behav.vhd"
 set_global_assignment -name BDF_FILE top_de1.bdf
 set_global_assignment -name VHDL_FILE gen25mhz.vhd
-set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
-set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
-set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "3.3-V LVTTL"
-set_location_assignment PIN_R22 -to reset
-set_location_assignment PIN_U22 -to buttons[0]
-set_location_assignment PIN_U21 -to buttons[1]
-set_location_assignment PIN_V22 -to buttons[2]
-set_location_assignment PIN_V21 -to buttons[3]
-set_location_assignment PIN_W21 -to buttons[4]
-set_location_assignment PIN_A13 -to clkSwitch
-set_location_assignment PIN_B13 -to Clock_15K
-set_location_assignment PIN_A14 -to dataSwitch
-set_location_assignment PIN_B14 -to Data_in
-set_location_assignment PIN_T21 -to "data-switch"
-set_location_assignment PIN_T22 -to "clk-switch"
-set_location_assignment PIN_Y21 -to clkSwitch2
-set_location_assignment PIN_Y22 -to rst
 set_global_assignment -name BSF_FILE mouse.bsf
-set_location_assignment PIN_R20 -to led0
-set_location_assignment PIN_R19 -to led1
-set_location_assignment PIN_U19 -to led2
-set_location_assignment PIN_Y19 -to led3
-set_location_assignment PIN_V19 -to led5
-set_location_assignment PIN_Y18 -to led6
-set_location_assignment PIN_U18 -to led7
-set_location_assignment PIN_R18 -to led8
-set_location_assignment PIN_R17 -to led9
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

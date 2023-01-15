@@ -6,7 +6,7 @@ architecture behav of edge_debounce is
 
  
 
-   type debounce_state is (reset_state, edge, debounce, count_reset);
+   type debounce_state is (reset_state, pause, edge, debounce);
 
    signal state, new_state : debounce_state;
 
@@ -42,6 +42,14 @@ begin
 
     end process;
 
+
+	process(clk) begin
+			if(rising_edge(clk)) then     
+                              reg1  <= input;
+                              reg2  <= reg1;
+			end if;
+	end process;
+
  
 
  
@@ -52,18 +60,31 @@ begin
 
             when reset_state =>
 
-                        if(rising_edge(clk)) then     
-                              reg1  <= input;
-                              reg2  <= reg1;
-			end if;
 
-                              counter_reset <= '0';
+                              counter_reset <= '1';
 
                               edges <= '0';
 
  
 
-                              if(reg1 = '1' and reg2 = '0') then
+                              if(reg1 = '0' and reg2 = '1') then --falling edge
+--(reg1 = '1' and reg2 = '0') for rising edge
+
+                                             new_state <= pause;
+
+                              else
+
+                                             new_state <= state;
+
+                              end if;
+
+		   when pause =>
+
+				edges <= '0';
+
+				counter_reset <= '0';
+
+                              if(to_integer(unsigned(count)) >= 150) then
 
                                              new_state <= edge;
 
@@ -73,17 +94,15 @@ begin
 
                               end if;
 
+
+
  
 
                    when edge =>
 
-                              reg1 <= '0';
-
-                              reg2 <= '0';
-
                               edges <= '1';
 
-                              counter_reset <= '0';
+                              counter_reset <= '1';
 
                               new_state <= debounce;
 
@@ -91,15 +110,14 @@ begin
 
                    when debounce =>
 
-                              reg1 <= '0';
-
-                              reg2 <= '0';
 
                               edges <= '0';
 
+				counter_reset <= '0';
+
                               if(to_integer(unsigned(count)) >= 250) then--10us
 
-                                             new_state <= count_reset;
+                                             new_state <= reset_state;
 
                               else
 
@@ -109,17 +127,7 @@ begin
 
  
 
-                   when count_reset =>
-
-                              reg1 <= '0';
-
-                              reg2 <= '0';
-
-                              edges <= '0';
-
-                              counter_reset <= '1';
-
-                              new_state <= reset_state;
+               
 
                end case;
 

@@ -27,8 +27,20 @@ state.handshake_state 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1
 state.handshake_state2 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
 
 State Machine - |top_de1|mouse:inst|sendFSM:sfsm|state
-Name state.waitforclockstate state.bothlowstate state.clklowstate state.reset_state 
+Name state.mouseclk state.datalowextra state.waitforclockstate state.datalowstate state.bothlowstate state.clklowstate state.waitcountreset state.waitstate state.reset_state 
+state.reset_state 0 0 0 0 0 0 0 0 0 
+state.waitstate 0 0 0 0 0 0 0 1 1 
+state.waitcountreset 0 0 0 0 0 0 1 0 1 
+state.clklowstate 0 0 0 0 0 1 0 0 1 
+state.bothlowstate 0 0 0 0 1 0 0 0 1 
+state.datalowstate 0 0 0 1 0 0 0 0 1 
+state.waitforclockstate 0 0 1 0 0 0 0 0 1 
+state.datalowextra 0 1 0 0 0 0 0 0 1 
+state.mouseclk 1 0 0 0 0 0 0 0 1 
+
+State Machine - |top_de1|mouse:inst|edge_debounce:ed|state
+Name state.debounce state.edge state.pause state.reset_state 
 state.reset_state 0 0 0 0 
-state.clklowstate 0 0 1 1 
-state.bothlowstate 0 1 0 1 
-state.waitforclockstate 1 0 0 1 
+state.pause 0 0 1 1 
+state.edge 0 1 0 1 
+state.debounce 1 0 0 1 

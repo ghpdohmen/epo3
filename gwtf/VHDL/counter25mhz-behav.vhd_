@@ -2,6 +2,8 @@ library IEEE;
 use IEEE.std_logic_1164.ALL;
 use IEEE.numeric_std.all;
 
+--Counter voor 25MHz clock van muis
+
 architecture behav of counter25mhz is
 	signal count, new_count: unsigned (11 downto 0);
 begin

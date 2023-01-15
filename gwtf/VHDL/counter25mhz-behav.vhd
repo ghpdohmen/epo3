@@ -5,7 +5,7 @@ use IEEE.numeric_std.all;
 --Counter voor 25MHz clock van muis
 
 architecture behav of counter25mhz is
-	signal count, new_count: unsigned (11 downto 0);
+	signal count, new_count: unsigned (12 downto 0);
 begin
 	process(clk)
 		begin
