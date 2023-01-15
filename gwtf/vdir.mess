@@ -27,6 +27,58 @@ OPTIMIZED DESIGN _opt2
     Short name: @_opt2
     Opcode format: 10.5b; VCOM/VLOG SE-64 Object version 63
     Source directory: /home/etuinstra/epo3/gwtf
+ENTITY color
+    Source modified time: Sun Jan 15 21:50:47 2023
+    Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
+    Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
+    Source directory: /home/etuinstra/epo3/gwtf
+    HDL source file: VHDL/color.vhd
+    Source file: VHDL/color.vhd
+    Start location: VHDL/color.vhd:4
+    Version string: Q@az3JEKJFUSnZh7MJdUc2
+    Opcode format: 10.5b; VCOM SE-64 Object version 63
+    VHDL language standard: 3 (VHDL-2008)
+    Compile time: Sun Jan 15 21:50:47 2023
+    Debug Symbol file exists
+    Compiled in vopt flow
+    Compile options: -quiet -nologo -2008 -lower -explicit -work work
+    Compile defaults: Explicit=1 CvgOpt=0
+  ARCHITECTURE BODY behaviour_color
+    Source modified time: Sun Jan 15 21:51:42 2023
+    Depends on: E work color Q@az3JEKJFUSnZh7MJdUc2
+    Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
+    Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
+    HDL source file: VHDL/color-behaviour_color.vhd
+    Source file: VHDL/color-behaviour_color.vhd
+    Start location: VHDL/color-behaviour_color.vhd:4
+    Version string: O@IRC15=g<K<nz@0ajJgK1
+    Opcode format: 10.5b; VCOM SE-64 Object version 63
+    VHDL language standard: 3 (VHDL-2008)
+    Compile time: Sun Jan 15 21:51:42 2023
+    Debug Symbol file exists
+    Compiled in vopt flow
+    Compile options: -quiet -nologo -2008 -lower -explicit -work work
+    Compile defaults: Explicit=1 CvgOpt=0
+    Source directory: /home/etuinstra/epo3/gwtf
+VHDL CONFIGURATION color_behaviour_color_cfg
+    Configuration applies to entity: color
+    Block configuration applies to architecture: behaviour_color
+    Depends on: A work color behaviour_color O@IRC15=g<K<nz@0ajJgK1
+    Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
+    Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
+    Depends on: E work color Q@az3JEKJFUSnZh7MJdUc2
+    Source modified time: Sun Jan 15 21:51:48 2023
+    Source directory: /home/etuinstra/epo3/gwtf
+    HDL source file: VHDL/color_behaviour_color_cfg.vhd
+    Source file: VHDL/color_behaviour_color_cfg.vhd
+    Start location: VHDL/color_behaviour_color_cfg.vhd:1
+    Version string: @SgB;n5_Zm]FT6E0fnM7j2
+    Opcode format: 10.5b; VCOM SE-64 Object version 63
+    VHDL language standard: 3 (VHDL-2008)
+    Compile time: Sun Jan 15 21:51:48 2023
+    Compiled in vopt flow
+    Compile options: -quiet -nologo -2008 -lower -explicit -work work
+    Compile defaults: Explicit=1 CvgOpt=0
 ENTITY counter25mhz
     Source modified time: Sun Jan 15 16:32:47 2023
     Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
@@ -353,6 +405,64 @@ VHDL CONFIGURATION flipflop_synthesised_cfg
     Compile time: Fri Dec 23 15:26:11 2022
     Compiled in vopt flow
     Compile options: -quiet -nologo -2008 -just C -lower -explicit -work work
+    Compile defaults: Explicit=1 CvgOpt=0
+ENTITY logic_top
+    Source modified time: Sun Jan 15 21:55:39 2023
+    Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
+    Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
+    Source directory: /home/etuinstra/epo3/gwtf
+    HDL source file: VHDL/logic_top.vhd
+    Source file: VHDL/logic_top.vhd
+    Start location: VHDL/logic_top.vhd:4
+    Version string: HZEh@a8CAc@V62W7QSAGh1
+    Opcode format: 10.5b; VCOM SE-64 Object version 63
+    VHDL language standard: 3 (VHDL-2008)
+    Compile time: Sun Jan 15 21:55:39 2023
+    Debug Symbol file exists
+    Compiled in vopt flow
+    Compile options: -quiet -nologo -2008 -lower -explicit -work work
+    Compile defaults: Explicit=1 CvgOpt=0
+  ARCHITECTURE BODY behaviour_logic_top
+    Source modified time: Sun Jan 15 21:57:03 2023
+    Depends on: E work logic_top HZEh@a8CAc@V62W7QSAGh1
+    Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
+    Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
+    HDL source file: VHDL/logic_top-behaviour_logic_top.vhd
+    Source file: VHDL/logic_top-behaviour_logic_top.vhd
+    Start location: VHDL/logic_top-behaviour_logic_top.vhd:4
+    Version string: 9HS?i[Z:6]ddOBVl]WHb:2
+    Opcode format: 10.5b; VCOM SE-64 Object version 63
+    VHDL language standard: 3 (VHDL-2008)
+    Compile time: Sun Jan 15 21:57:03 2023
+    Debug Symbol file exists
+    Compiled in vopt flow
+    Compile options: -quiet -nologo -2008 -lower -explicit -work work
+    Compile defaults: Explicit=1 CvgOpt=0
+    Source directory: /home/etuinstra/epo3/gwtf
+VHDL CONFIGURATION logic_top_behaviour_logic_top_cfg
+    Configuration applies to entity: logic_top
+    Block configuration applies to architecture: behaviour_logic_top
+    Depends on: E work color Q@az3JEKJFUSnZh7MJdUc2
+    Depends on: E work y ]e]CIZ=feTkA:Bi_7R;bm2
+    Depends on: E work x UkWa1<AaWU_[UTa[1?]fP1
+    Depends on: C work color_behaviour_color_cfg @SgB;n5_Zm]FT6E0fnM7j2
+    Depends on: C work y_behaviour_y_cfg z5@ANz`88dOAVo0BIbUHh3
+    Depends on: C work x_behaviour_x_cfg 6cKZU6D=klg05BULERBLY0
+    Depends on: A work logic_top behaviour_logic_top 9HS?i[Z:6]ddOBVl]WHb:2
+    Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
+    Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
+    Depends on: E work logic_top HZEh@a8CAc@V62W7QSAGh1
+    Source modified time: Sun Jan 15 21:57:11 2023
+    Source directory: /home/etuinstra/epo3/gwtf
+    HDL source file: VHDL/logic_top_behaviour_logic_top_cfg.vhd
+    Source file: VHDL/logic_top_behaviour_logic_top_cfg.vhd
+    Start location: VHDL/logic_top_behaviour_logic_top_cfg.vhd:1
+    Version string: 5Jk3nA]=4e;]aICLjWGGf2
+    Opcode format: 10.5b; VCOM SE-64 Object version 63
+    VHDL language standard: 3 (VHDL-2008)
+    Compile time: Sun Jan 15 21:57:11 2023
+    Compiled in vopt flow
+    Compile options: -quiet -nologo -2008 -lower -explicit -work work
     Compile defaults: Explicit=1 CvgOpt=0
 ENTITY main_fsm
     Source modified time: Tue Jan 10 12:16:08 2023
@@ -1098,6 +1208,170 @@ VHDL CONFIGURATION timebase_synthesised_cfg
     Opcode format: 10.5b; VCOM SE-64 Object version 63
     VHDL language standard: 3 (VHDL-2008)
     Compile time: Fri Dec 23 15:36:53 2022
+    Compiled in vopt flow
+    Compile options: -quiet -nologo -2008 -lower -explicit -work work
+    Compile defaults: Explicit=1 CvgOpt=0
+ENTITY top
+    Source modified time: Sun Jan 15 22:04:26 2023
+    Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
+    Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
+    Source directory: /home/etuinstra/epo3/gwtf
+    HDL source file: VHDL/top.vhd
+    Source file: VHDL/top.vhd
+    Start location: VHDL/top.vhd:4
+    Version string: aX3CMZW`RE?1f4D93NLL71
+    Opcode format: 10.5b; VCOM SE-64 Object version 63
+    VHDL language standard: 3 (VHDL-2008)
+    Compile time: Sun Jan 15 22:04:26 2023
+    Debug Symbol file exists
+    Compiled in vopt flow
+    Compile options: -quiet -nologo -2008 -lower -explicit -work work
+    Compile defaults: Explicit=1 CvgOpt=0
+  ARCHITECTURE BODY behav
+    Source modified time: Sun Jan 15 22:39:32 2023
+    Depends on: E work top aX3CMZW`RE?1f4D93NLL71
+    Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
+    Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
+    HDL source file: VHDL/top-behav.vhd
+    Source file: VHDL/top-behav.vhd
+    Start location: VHDL/top-behav.vhd:4
+    Version string: Vf2BO41R5K<gE7l4oXKc10
+    Opcode format: 10.5b; VCOM SE-64 Object version 63
+    VHDL language standard: 3 (VHDL-2008)
+    Compile time: Sun Jan 15 22:39:32 2023
+    Debug Symbol file exists
+    Compiled in vopt flow
+    Compile options: -quiet -nologo -2008 -lower -explicit -work work
+    Compile defaults: Explicit=1 CvgOpt=0
+    Source directory: /home/etuinstra/epo3/gwtf
+VHDL CONFIGURATION top_behav_cfg
+    Configuration applies to entity: top
+    Block configuration applies to architecture: behav
+    Depends on: E work logic_top HZEh@a8CAc@V62W7QSAGh1
+    Depends on: E work mouse ]FC;6UYl=?ACS>aWGdc_[2
+    Depends on: C work logic_top_behaviour_logic_top_cfg 5Jk3nA]=4e;]aICLjWGGf2
+    Depends on: C work mouse_behav_cfg j^CUnZ16h9LYOjBm:d?z43
+    Depends on: A work top behav Vf2BO41R5K<gE7l4oXKc10
+    Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
+    Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
+    Depends on: E work top aX3CMZW`RE?1f4D93NLL71
+    Source modified time: Sun Jan 15 22:47:54 2023
+    Source directory: /home/etuinstra/epo3/gwtf
+    HDL source file: VHDL/top_behav_cfg.vhd
+    Source file: VHDL/top_behav_cfg.vhd
+    Start location: VHDL/top_behav_cfg.vhd:1
+    Version string: ^c4aVJlR``iLNk]DJ;6`?0
+    Opcode format: 10.5b; VCOM SE-64 Object version 63
+    VHDL language standard: 3 (VHDL-2008)
+    Compile time: Sun Jan 15 22:47:54 2023
+    Compiled in vopt flow
+    Compile options: -quiet -nologo -2008 -lower -explicit -work work
+    Compile defaults: Explicit=1 CvgOpt=0
+ENTITY x
+    Source modified time: Sun Jan 15 21:52:15 2023
+    Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
+    Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
+    Source directory: /home/etuinstra/epo3/gwtf
+    HDL source file: VHDL/x.vhd
+    Source file: VHDL/x.vhd
+    Start location: VHDL/x.vhd:4
+    Version string: UkWa1<AaWU_[UTa[1?]fP1
+    Opcode format: 10.5b; VCOM SE-64 Object version 63
+    VHDL language standard: 3 (VHDL-2008)
+    Compile time: Sun Jan 15 21:52:15 2023
+    Debug Symbol file exists
+    Compiled in vopt flow
+    Compile options: -quiet -nologo -2008 -lower -explicit -work work
+    Compile defaults: Explicit=1 CvgOpt=0
+  ARCHITECTURE BODY behaviour_x
+    Source modified time: Sun Jan 15 21:52:50 2023
+    Depends on: E work x UkWa1<AaWU_[UTa[1?]fP1
+    Depends on: P ieee numeric_std :ASDNFgHXf_ih3J@9F3Ze1
+    Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
+    Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
+    HDL source file: VHDL/x-behaviour_x.vhd
+    Source file: VHDL/x-behaviour_x.vhd
+    Start location: VHDL/x-behaviour_x.vhd:5
+    Version string: [N8@iIJ`X`F9:2XUSc@kN3
+    Opcode format: 10.5b; VCOM SE-64 Object version 63
+    VHDL language standard: 3 (VHDL-2008)
+    Compile time: Sun Jan 15 21:52:50 2023
+    Debug Symbol file exists
+    Compiled in vopt flow
+    Compile options: -quiet -nologo -2008 -lower -explicit -work work
+    Compile defaults: Explicit=1 CvgOpt=0
+    Source directory: /home/etuinstra/epo3/gwtf
+VHDL CONFIGURATION x_behaviour_x_cfg
+    Configuration applies to entity: x
+    Block configuration applies to architecture: behaviour_x
+    Depends on: P ieee numeric_std :ASDNFgHXf_ih3J@9F3Ze1
+    Depends on: A work x behaviour_x [N8@iIJ`X`F9:2XUSc@kN3
+    Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
+    Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
+    Depends on: E work x UkWa1<AaWU_[UTa[1?]fP1
+    Source modified time: Sun Jan 15 21:52:55 2023
+    Source directory: /home/etuinstra/epo3/gwtf
+    HDL source file: VHDL/x_behaviour_x_cfg.vhd
+    Source file: VHDL/x_behaviour_x_cfg.vhd
+    Start location: VHDL/x_behaviour_x_cfg.vhd:1
+    Version string: 6cKZU6D=klg05BULERBLY0
+    Opcode format: 10.5b; VCOM SE-64 Object version 63
+    VHDL language standard: 3 (VHDL-2008)
+    Compile time: Sun Jan 15 21:52:55 2023
+    Compiled in vopt flow
+    Compile options: -quiet -nologo -2008 -lower -explicit -work work
+    Compile defaults: Explicit=1 CvgOpt=0
+ENTITY y
+    Source modified time: Sun Jan 15 21:53:16 2023
+    Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
+    Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
+    Source directory: /home/etuinstra/epo3/gwtf
+    HDL source file: VHDL/y.vhd
+    Source file: VHDL/y.vhd
+    Start location: VHDL/y.vhd:4
+    Version string: ]e]CIZ=feTkA:Bi_7R;bm2
+    Opcode format: 10.5b; VCOM SE-64 Object version 63
+    VHDL language standard: 3 (VHDL-2008)
+    Compile time: Sun Jan 15 21:53:16 2023
+    Debug Symbol file exists
+    Compiled in vopt flow
+    Compile options: -quiet -nologo -2008 -lower -explicit -work work
+    Compile defaults: Explicit=1 CvgOpt=0
+  ARCHITECTURE BODY behaviour_y
+    Source modified time: Sun Jan 15 21:53:46 2023
+    Depends on: E work y ]e]CIZ=feTkA:Bi_7R;bm2
+    Depends on: P ieee numeric_std :ASDNFgHXf_ih3J@9F3Ze1
+    Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
+    Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
+    HDL source file: VHDL/y-behaviour_y.vhd
+    Source file: VHDL/y-behaviour_y.vhd
+    Start location: VHDL/y-behaviour_y.vhd:5
+    Version string: Lo[9TmV3lL]imTLLN0MUV2
+    Opcode format: 10.5b; VCOM SE-64 Object version 63
+    VHDL language standard: 3 (VHDL-2008)
+    Compile time: Sun Jan 15 21:53:46 2023
+    Debug Symbol file exists
+    Compiled in vopt flow
+    Compile options: -quiet -nologo -2008 -lower -explicit -work work
+    Compile defaults: Explicit=1 CvgOpt=0
+    Source directory: /home/etuinstra/epo3/gwtf
+VHDL CONFIGURATION y_behaviour_y_cfg
+    Configuration applies to entity: y
+    Block configuration applies to architecture: behaviour_y
+    Depends on: P ieee numeric_std :ASDNFgHXf_ih3J@9F3Ze1
+    Depends on: A work y behaviour_y Lo[9TmV3lL]imTLLN0MUV2
+    Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
+    Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
+    Depends on: E work y ]e]CIZ=feTkA:Bi_7R;bm2
+    Source modified time: Sun Jan 15 21:53:53 2023
+    Source directory: /home/etuinstra/epo3/gwtf
+    HDL source file: VHDL/y_behaviour_y_cfg.vhd
+    Source file: VHDL/y_behaviour_y_cfg.vhd
+    Start location: VHDL/y_behaviour_y_cfg.vhd:1
+    Version string: z5@ANz`88dOAVo0BIbUHh3
+    Opcode format: 10.5b; VCOM SE-64 Object version 63
+    VHDL language standard: 3 (VHDL-2008)
+    Compile time: Sun Jan 15 21:53:54 2023
     Compiled in vopt flow
     Compile options: -quiet -nologo -2008 -lower -explicit -work work
     Compile defaults: Explicit=1 CvgOpt=0
