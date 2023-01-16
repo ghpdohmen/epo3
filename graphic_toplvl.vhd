@@ -12,7 +12,7 @@ port(
 	loaded_color: in std_logic_vector(2 downto 0);
 	draw	: in std_logic;
 	-- input/muis
-	mouse_count: in std_logic;
+	--mouse_count: in std_logic;
     	countdown_aan: in std_logic;
     	middelste_knop:in std_logic;
     	countdown_klaar: out std_logic;
@@ -35,7 +35,7 @@ port (
     reset: in std_logic;
     -- INPUTS
     -- countdown
-    mouse_count: in std_logic;
+    enable: in std_logic;
     countdown_aan: in std_logic;
     middelste_knop:in std_logic;
     
@@ -122,13 +122,12 @@ vgd: vgadrive port map (
 gr_lg: graph_logic port map (
 	clk => clk,
 	reset => reset,
-	mouse_count => mouse_count,
+	enable => sig_enable,
 	countdown_aan => countdown_aan,
 	middelste_knop => middelste_knop,
 	countdown_klaar => countdown_klaar,
 	logic_h_32_minis => sig_scale_h,
 	logic_v_32_minis => sig_scale_v,
-	--minis_enable => clk,
 	logic_x => logic_x,
 	logic_y => logic_y,
 	loaded_colour => loaded_color,
