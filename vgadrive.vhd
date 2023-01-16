@@ -10,19 +10,7 @@ port( clock            : in std_logic;  -- 25.175 Mhz clock
 	enable : out std_logic;
 	scale_h : out std_logic;
 	scale_v : out std_logic;
-        Rout, Gout, Bout, H, V : out std_logic); -- VGA drive signals
-  -- The signals Rout, Gout, Bout, H and V are output to the monitor.
-  -- The row and column outputs are used to know when to assert red,
-  -- green and blue to color the current pixel.  For VGA, the column
-  -- values that are valid are from 0 to 639, all other values should
-  -- be ignored.  The row values that are valid are from 0 to 479 and
-  -- again, all other values are ignored.  To turn on a pixel on the
-  -- VGA monitor, some combination of red, green and blue should be
-  -- asserted before the rising edge of the clock.  Objects which are
-  -- displayed on the monitor, assert their combination of red, green and
-  -- blue when they detect the row and column values are within their
-  -- range.  For multiple objects sharing a screen, they must be combined
-  -- using logic to create single red, green, and blue signals.
+        Rout, Gout, Bout, H, V : out std_logic);
 end vgadrive;
 
 
@@ -71,7 +59,7 @@ process(clock,reset)
 variable scale_horizontal_counter, scale_vertical_counter : INTEGER RANGE 0 TO 800;
 variable horizontal_counter, vertical_counter : INTEGER RANGE 0 TO 800;
 begin
-            if (rising_edge(clock)) then
+       if (rising_edge(clock)) then
                 if (reset = '1') then
                     	horizontal_counter := 0;
 			scale_horizontal_counter := 0;
@@ -80,32 +68,29 @@ begin
 			vertical <= vertical_counter;
   			horizontal <= horizontal_counter;
   			scale_vertical <= scale_vertical_counter;
-  			scale_horizontal <= scale_horizontal_counter; 
-		end if;
-
-		elsif(clock='1' and clock'event) then
-  			-- increment counters
-			if ( horizontal_counter = A - 1 ) then
-        			horizontal_counter := 0;
-				scale_horizontal_counter := 0;
-					if  (vertical_counter = O - 1)  then -- less than oh
-          					vertical_counter := 0;       -- is set to zero
-	  					scale_vertical_counter := 0;
-       					else
-          					vertical_counter := vertical_counter + 1;
-	  					scale_vertical_counter := scale_vertical_counter + 1;
-        				end if;
-     			else
-        
-				horizontal_counter := horizontal_counter + 1;
-				scale_horizontal_counter := scale_horizontal_counter + 1;
-      			end if;
+  			scale_horizontal <= scale_horizontal_counter;
 		else
-                    	vertical <= vertical_counter;
+			vertical <= vertical_counter;
   			horizontal <= horizontal_counter;
   			scale_vertical <= scale_vertical_counter;
   			scale_horizontal <= scale_horizontal_counter; 
+		end if;
+  		-- increment counters
+		if ( horizontal_counter = A - 1 ) then
+        		horizontal_counter := 0;
+			scale_horizontal_counter := 0;
+			if  (vertical_counter = O - 1)  then -- less than oh
+          			vertical_counter := 0;       -- is set to zero
+	  			scale_vertical_counter := 0;
+       			else
+          			vertical_counter := vertical_counter + 1;
+	  			scale_vertical_counter := scale_vertical_counter + 1;
+        		end if;
+     		else
+			horizontal_counter := horizontal_counter + 1;
+			scale_horizontal_counter := scale_horizontal_counter + 1;
       		end if;
+      	end if;
 end process;
 
 --if reset = '1' then
