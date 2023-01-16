@@ -7,7 +7,7 @@ port (
     reset: in std_logic;
     -- INPUTS
     --countdown
-    mouse_count: in std_logic;
+    enable: in std_logic;
     countdown_aan: in std_logic;
     middelste_knop:in std_logic;
     --countdown_in: in std_logic_vector (4 downto 0);
@@ -67,19 +67,19 @@ component e_counter is
 end component;
 component countdown_bar is      
    port(
-  	 mouse_count: in std_logic;
+  	 enable: in std_logic;
 	 countdown_aan: in std_logic;
   	 middelste_knop: in std_logic;
 	 clk: in std_logic;
 	 reset: in std_logic;
 	 countdown_klaar: out std_logic;
-	 countdown_out: out std_logic_vector(4 downto 0)
+	 countdown_out: out std_logic_vector(18 downto 0)
     );
 end component;
 
 signal local_y, local_x: std_logic_vector (3 downto 0);
 signal colour_output: std_logic_vector (2 downto 0);
-signal sig_countdown: std_logic_vector (4 downto 0);
+signal sig_countdown: std_logic_vector (18 downto 0);
 signal countdown_int: integer range 0 to 99;
 begin
 lv: v_counter port map (logic_v_32 => logic_v_32_minis, logic_v_out => local_y, clk => clk, reset => reset);
@@ -87,14 +87,14 @@ lh: h_counter port map (logic_h_32 => logic_h_32_minis, logic_h_out => local_x, 
 le: e_counter port map (logic_v_out => local_y, logic_h_out => local_x, 
 --logic_h => minis_enable, 
 muis_x => logic_x, muis_y => logic_y, logic_e_out => logic_e_asked, clk => clk, reset => reset);
-lcountdown: countdown_bar port map (mouse_count => mouse_count, countdown_aan => countdown_aan, middelste_knop => middelste_knop, 
+lcountdown: countdown_bar port map (enable => enable, countdown_aan => countdown_aan, middelste_knop => middelste_knop, 
 countdown_out => sig_countdown, 
 countdown_klaar => countdown_klaar, clk => clk, reset => reset ); 
 logic_y_asked <= local_y;
 logic_x_asked <= local_x;
 countdown_int <= 14-(to_integer(unsigned(sig_countdown)) / 2);
 
-process(local_y, local_x, logic_y, logic_x, logic_rom_colour, countdown_int, logic_rom_colour)
+process(local_y, local_x, logic_y, logic_x, logic_ram_colour, countdown_int, logic_rom_colour)
     begin
     if (local_y=logic_y and local_x=logic_x) then -- is the cursor on the cell              
         if (logic_rom_colour = "01" ) then -- behind the cursor
