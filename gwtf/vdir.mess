@@ -659,6 +659,62 @@ VHDL CONFIGURATION mouse_behav_cfg
     Compiled in vopt flow
     Compile options: -quiet -nologo -2008 -lower -explicit -work work
     Compile defaults: Explicit=1 CvgOpt=0
+ENTITY mouse_logic
+    Source modified time: Tue Jan 17 09:43:21 2023
+    Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
+    Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
+    Source directory: /home/ghpdohmen/epo3/epo3/gwtf
+    HDL source file: VHDL/mouse_logic.vhd
+    Source file: VHDL/mouse_logic.vhd
+    Start location: VHDL/mouse_logic.vhd:4
+    Version string: CDba]a[HAnO2M4AFN7d]@0
+    Opcode format: 10.5b; VCOM SE-64 Object version 63
+    VHDL language standard: 3 (VHDL-2008)
+    Compile time: Tue Jan 17 09:43:47 2023
+    Debug Symbol file exists
+    Compiled in vopt flow
+    Compile options: -quiet -nologo -2008 -lower -explicit -work work
+    Compile defaults: Explicit=1 CvgOpt=0
+  ARCHITECTURE BODY behav
+    Source modified time: Tue Jan 17 09:43:31 2023
+    Depends on: E work mouse_logic CDba]a[HAnO2M4AFN7d]@0
+    Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
+    Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
+    HDL source file: VHDL/mouse_logic-behav.vhd
+    Source file: VHDL/mouse_logic-behav.vhd
+    Start location: VHDL/mouse_logic-behav.vhd:4
+    Version string: Og_j`W>1]HVhkPo:8KgH`0
+    Opcode format: 10.5b; VCOM SE-64 Object version 63
+    VHDL language standard: 3 (VHDL-2008)
+    Compile time: Tue Jan 17 09:43:32 2023
+    Debug Symbol file exists
+    Compiled in vopt flow
+    Compile options: -quiet -nologo -2008 -lower -explicit -work work
+    Compile defaults: Explicit=1 CvgOpt=0
+    Source directory: /home/ghpdohmen/epo3/epo3/gwtf
+VHDL CONFIGURATION mouse_logic_behav_cfg
+    Configuration applies to entity: mouse_logic
+    Block configuration applies to architecture: behav
+    Depends on: E work logic_top HZEh@a8CAc@V62W7QSAGh1
+    Depends on: E work mouse ]FC;6UYl=?ACS>aWGdc_[2
+    Depends on: C work logic_top_behaviour_logic_top_cfg 5Jk3nA]=4e;]aICLjWGGf2
+    Depends on: C work mouse_behav_cfg j^CUnZ16h9LYOjBm:d?z43
+    Depends on: A work mouse_logic behav Og_j`W>1]HVhkPo:8KgH`0
+    Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
+    Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
+    Depends on: E work mouse_logic CDba]a[HAnO2M4AFN7d]@0
+    Source modified time: Tue Jan 17 09:45:52 2023
+    Source directory: /home/ghpdohmen/epo3/epo3/gwtf
+    HDL source file: VHDL/mouse_logic_behav_cfg.vhd
+    Source file: VHDL/mouse_logic_behav_cfg.vhd
+    Start location: VHDL/mouse_logic_behav_cfg.vhd:1
+    Version string: Qa73fPCS:Q8QU4fIHI4?a2
+    Opcode format: 10.5b; VCOM SE-64 Object version 63
+    VHDL language standard: 3 (VHDL-2008)
+    Compile time: Tue Jan 17 09:45:52 2023
+    Compiled in vopt flow
+    Compile options: -quiet -nologo -2008 -lower -explicit -work work
+    Compile defaults: Explicit=1 CvgOpt=0
 VHDL CONFIGURATION mouse_routed_cfg
     Configuration applies to entity: mouse
     Block configuration applies to architecture: routed
@@ -1212,61 +1268,38 @@ VHDL CONFIGURATION timebase_synthesised_cfg
     Compile options: -quiet -nologo -2008 -lower -explicit -work work
     Compile defaults: Explicit=1 CvgOpt=0
 ENTITY top
-    Source modified time: Sun Jan 15 22:04:26 2023
+    Source modified time: Tue Jan 17 09:21:34 2023
     Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
     Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
-    Source directory: /home/etuinstra/epo3/gwtf
-    HDL source file: VHDL/top.vhd
-    Source file: VHDL/top.vhd
-    Start location: VHDL/top.vhd:4
+    Source directory: /home/ghpdohmen/epo3/epo3/gwtf
+    HDL source file: VHDL/mouse_logic.vhd
+    Source file: VHDL/mouse_logic.vhd
+    Start location: VHDL/mouse_logic.vhd:4
     Version string: aX3CMZW`RE?1f4D93NLL71
     Opcode format: 10.5b; VCOM SE-64 Object version 63
     VHDL language standard: 3 (VHDL-2008)
-    Compile time: Sun Jan 15 22:04:26 2023
+    Compile time: Tue Jan 17 09:38:18 2023
     Debug Symbol file exists
     Compiled in vopt flow
     Compile options: -quiet -nologo -2008 -lower -explicit -work work
     Compile defaults: Explicit=1 CvgOpt=0
   ARCHITECTURE BODY behav
-    Source modified time: Sun Jan 15 22:39:32 2023
     Depends on: E work top aX3CMZW`RE?1f4D93NLL71
     Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
     Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
-    HDL source file: VHDL/top-behav.vhd
-    Source file: VHDL/top-behav.vhd
-    Start location: VHDL/top-behav.vhd:4
+    HDL source file: VHDL/mouse_logic-behav.vhd
+    Source file: VHDL/mouse_logic-behav.vhd
+    Start location: VHDL/mouse_logic-behav.vhd:4
     Version string: Vf2BO41R5K<gE7l4oXKc10
     Opcode format: 10.5b; VCOM SE-64 Object version 63
     VHDL language standard: 3 (VHDL-2008)
-    Compile time: Sun Jan 15 22:39:32 2023
+    Compile time: Tue Jan 17 09:38:28 2023
     Debug Symbol file exists
     Compiled in vopt flow
     Compile options: -quiet -nologo -2008 -lower -explicit -work work
     Compile defaults: Explicit=1 CvgOpt=0
-    Source directory: /home/etuinstra/epo3/gwtf
-VHDL CONFIGURATION top_behav_cfg
-    Configuration applies to entity: top
-    Block configuration applies to architecture: behav
-    Depends on: E work logic_top HZEh@a8CAc@V62W7QSAGh1
-    Depends on: E work mouse ]FC;6UYl=?ACS>aWGdc_[2
-    Depends on: C work logic_top_behaviour_logic_top_cfg 5Jk3nA]=4e;]aICLjWGGf2
-    Depends on: C work mouse_behav_cfg j^CUnZ16h9LYOjBm:d?z43
-    Depends on: A work top behav Vf2BO41R5K<gE7l4oXKc10
-    Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
-    Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
-    Depends on: E work top aX3CMZW`RE?1f4D93NLL71
-    Source modified time: Sun Jan 15 22:47:54 2023
-    Source directory: /home/etuinstra/epo3/gwtf
-    HDL source file: VHDL/top_behav_cfg.vhd
-    Source file: VHDL/top_behav_cfg.vhd
-    Start location: VHDL/top_behav_cfg.vhd:1
-    Version string: ^c4aVJlR``iLNk]DJ;6`?0
-    Opcode format: 10.5b; VCOM SE-64 Object version 63
-    VHDL language standard: 3 (VHDL-2008)
-    Compile time: Sun Jan 15 22:47:54 2023
-    Compiled in vopt flow
-    Compile options: -quiet -nologo -2008 -lower -explicit -work work
-    Compile defaults: Explicit=1 CvgOpt=0
+    Source directory: /home/ghpdohmen/epo3/epo3/gwtf
+    Source modified time: Tue Jan 17 09:21:34 2023
 ENTITY x
     Source modified time: Sun Jan 15 21:52:15 2023
     Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3

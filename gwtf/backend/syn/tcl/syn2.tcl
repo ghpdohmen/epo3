@@ -1,5 +1,5 @@
 #*********************************************************
-# synthesize script for cell: mouse
+# synthesize script for cell: top
 # company: ontwerp_practicum
 # designer: ghpdohmen
 #*********************************************************
@@ -9,9 +9,11 @@ set_db library {tcb018gbwp7twc.lib}
 set_db use_scan_seqs_for_non_dft false
 
 #include backend/syn/tcl/read_hdl.tcl
+read_hdl -vhdl {color.vhd}
 read_hdl -vhdl {counter25mhz.vhd}
-read_hdl -vhdl {edge_detector.vhd}
+read_hdl -vhdl {edge_debounce.vhd}
 read_hdl -vhdl {flipflop.vhd}
+read_hdl -vhdl {logic_top.vhd}
 read_hdl -vhdl {main_fsm.vhd}
 read_hdl -vhdl {mouse.vhd}
 read_hdl -vhdl {mux.vhd}
@@ -19,9 +21,14 @@ read_hdl -vhdl {sendFSM.vhd}
 read_hdl -vhdl {shfitregister_11bit.vhd}
 read_hdl -vhdl {shiftregister_9bit.vhd}
 read_hdl -vhdl {timebase.vhd}
+read_hdl -vhdl {top.vhd}
+read_hdl -vhdl {x.vhd}
+read_hdl -vhdl {y.vhd}
+read_hdl -vhdl {color-behaviour_color.vhd}
 read_hdl -vhdl {counter25mhz-behav.vhd}
-read_hdl -vhdl {edge_detector-behav.vhd}
+read_hdl -vhdl {edge_debounce-behav.vhd}
 read_hdl -vhdl {flipflop-behav.vhd}
+read_hdl -vhdl {logic_top-behaviour_logic_top.vhd}
 read_hdl -vhdl {main_fsm-behav.vhd}
 read_hdl -vhdl {mouse-behav.vhd}
 read_hdl -vhdl {mux-behav.vhd}
@@ -29,6 +36,12 @@ read_hdl -vhdl {sendFSM-behav.vhd}
 read_hdl -vhdl {shiftregister_11bit-behav.vhd}
 read_hdl -vhdl {shiftregister_9bit-behav.vhd}
 read_hdl -vhdl {timebase-behav.vhd}
+read_hdl -vhdl {top-behav.vhd}
+read_hdl -vhdl {x-behaviour_x.vhd}
+read_hdl -vhdl {y-behaviour_y.vhd}
+read_hdl -vhdl {color_behaviour_color_cfg.vhd}
+read_hdl -vhdl {y_behaviour_y_cfg.vhd}
+read_hdl -vhdl {x_behaviour_x_cfg.vhd}
 read_hdl -vhdl {shiftregister_11bit_behav_cfg.vhd}
 read_hdl -vhdl {flipflop_behav_cfg.vhd}
 read_hdl -vhdl {main_fsm_behav_cfg.vhd}
@@ -36,14 +49,16 @@ read_hdl -vhdl {timebase_behav_cfg.vhd}
 read_hdl -vhdl {mux_behav_cfg.vhd}
 read_hdl -vhdl {sendfsm_behav_cfg.vhd}
 read_hdl -vhdl {shiftregister_9bit_behav_cfg.vhd}
-read_hdl -vhdl {edge_detector_behav_cfg.vhd}
+read_hdl -vhdl {edge_debounce_behav_cfg.vhd}
 read_hdl -vhdl {counter25mhz_behav_cfg.vhd}
+read_hdl -vhdl {logic_top_behaviour_logic_top_cfg.vhd}
 read_hdl -vhdl {mouse_behav_cfg.vhd}
+read_hdl -vhdl {top_behav_cfg.vhd}
 #endincl
 
-elaborate mouse_behav_cfg
+elaborate top_behav_cfg
 
-#include backend/syn/in/mouse.sdc
+#include backend/syn/in/top.sdc
 # We will use a 25 MHz clock, 
 # but use 33 MHz as constraint to be more sure it works.
 dc::create_clock -name clk -period 30 -waveform {0 15} [dc::get_ports clk]
@@ -60,9 +75,9 @@ synthesize -to_mapped
 
 ungroup -all -flat
 insert_tiehilo_cells
-write_hdl -mapped > ../out/mouse.v
-write_sdf > ../out/mouse.sdf
-write_sdc > ../out/mouse.sdc
+write_hdl -mapped > ../out/top.v
+write_sdf > ../out/top.sdf
+write_sdc > ../out/top.sdc
 
 report timing
 report gates

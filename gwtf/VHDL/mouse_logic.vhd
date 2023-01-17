@@ -1,7 +1,7 @@
 library IEEE;
 use IEEE.std_logic_1164.ALL;
 
-entity top is
+entity mouse_logic is
     port(
         Data_in       : in  std_logic;
         Clk15k        : in  std_logic;
@@ -16,5 +16,5 @@ entity top is
 	tempy: out std_logic_vector(3 downto 0);
 	draw: out std_logic);
 
-end top;
+end mouse_logic;
 
