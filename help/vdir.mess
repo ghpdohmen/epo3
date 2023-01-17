@@ -1,7 +1,5 @@
-Library vendor : Model Technology
-Maximum unnamed designs : 3
 ENTITY color
-    Source modified time: Tue Jan 17 12:16:34 2023
+    Source modified time: Tue Jan 17 18:51:28 2023
     Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
     Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
     Source directory: /home/ghpdohmen/epo3/epo3/help
@@ -11,7 +9,7 @@ ENTITY color
     Version string: j_H9[^@H5IBEgfjzmolNe3
     Opcode format: 10.5b; VCOM SE-64 Object version 63
     VHDL language standard: 3 (VHDL-2008)
-    Compile time: Tue Jan 17 12:28:34 2023
+    Compile time: Tue Jan 17 19:09:55 2023
     Debug Symbol file exists
     Compiled in vopt flow
     Compile options: -quiet -nologo -2008 -just E -lower -explicit -work work
@@ -26,13 +24,13 @@ ENTITY color
     Version string: DiLaTzH`270WYmVF;EGhi1
     Opcode format: 10.5b; VCOM SE-64 Object version 63
     VHDL language standard: 3 (VHDL-2008)
-    Compile time: Tue Jan 17 12:28:36 2023
+    Compile time: Tue Jan 17 19:09:59 2023
     Debug Symbol file exists
     Compiled in vopt flow
     Compile options: -quiet -nologo -2008 -just A -lower -explicit -work work
     Compile defaults: Explicit=1 CvgOpt=0
     Source directory: /home/ghpdohmen/epo3/epo3/help
-    Source modified time: Tue Jan 17 12:16:34 2023
+    Source modified time: Tue Jan 17 18:51:28 2023
 VHDL CONFIGURATION color_behaviour_color_cfg
     Configuration applies to entity: color
     Block configuration applies to architecture: behaviour_color
@@ -40,20 +38,20 @@ VHDL CONFIGURATION color_behaviour_color_cfg
     Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
     Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
     Depends on: E work color j_H9[^@H5IBEgfjzmolNe3
-    Source modified time: Tue Jan 17 13:15:42 2023
+    Source modified time: Tue Jan 17 19:02:21 2023
     Source directory: /home/ghpdohmen/epo3/epo3/help
     HDL source file: VHDL/color_behaviour_color_cfg.vhd
     Source file: VHDL/color_behaviour_color_cfg.vhd
     Start location: VHDL/color_behaviour_color_cfg.vhd:1
-    Version string: @SgB;n5_Zm]FT6E0fnM7j2
+    Version string: T;U2jk>nUQoM@QJSm::o<2
     Opcode format: 10.5b; VCOM SE-64 Object version 63
     VHDL language standard: 3 (VHDL-2008)
-    Compile time: Tue Jan 17 13:15:42 2023
+    Compile time: Tue Jan 17 19:10:03 2023
     Compiled in vopt flow
-    Compile options: -quiet -nologo -2008 -lower -explicit -work work
+    Compile options: -quiet -nologo -2008 -just C -lower -explicit -work work
     Compile defaults: Explicit=1 CvgOpt=0
 ENTITY colour_storage
-    Source modified time: Tue Jan 17 11:56:59 2023
+    Source modified time: Tue Jan 17 18:51:28 2023
     Depends on: P ieee numeric_std :ASDNFgHXf_ih3J@9F3Ze1
     Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
     Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
@@ -61,54 +59,54 @@ ENTITY colour_storage
     HDL source file: VHDL/RAMbestand.vhd
     Source file: VHDL/RAMbestand.vhd
     Start location: VHDL/RAMbestand.vhd:8
-    Version string: OM4]ha8k`>6GkNA5RiOV13
+    Version string: n_XbJIn`7z]TMHbLib_G72
     Opcode format: 10.5b; VCOM SE-64 Object version 63
     VHDL language standard: 3 (VHDL-2008)
-    Compile time: Tue Jan 17 12:59:45 2023
+    Compile time: Tue Jan 17 19:09:55 2023
     Debug Symbol file exists
     Compiled in vopt flow
-    Compile options: -quiet -nologo -2008 -lower -explicit -work work
+    Compile options: -quiet -nologo -2008 -just E -lower -explicit -work work
     Compile defaults: Explicit=1 CvgOpt=0
   ARCHITECTURE BODY behavioral
     Depends on: P ieee numeric_std :ASDNFgHXf_ih3J@9F3Ze1
     Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
     Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
-    Depends on: E work colour_storage OM4]ha8k`>6GkNA5RiOV13
+    Depends on: E work colour_storage n_XbJIn`7z]TMHbLib_G72
     Start location: VHDL/RAMbestand.vhd:25
-    Version string: ijM]:9IzQdP]a:zaRD=DS1
+    Version string: cI_a`zVGRQo76Q4=S>G2T3
     Opcode format: 10.5b; VCOM SE-64 Object version 63
     VHDL language standard: 3 (VHDL-2008)
-    Compile time: Tue Jan 17 12:59:45 2023
+    Compile time: Tue Jan 17 19:09:59 2023
     Debug Symbol file exists
     Compiled in vopt flow
-    Compile options: -quiet -nologo -2008 -lower -explicit -work work
+    Compile options: -quiet -nologo -2008 -just A -lower -explicit -work work
     Compile defaults: Explicit=1 CvgOpt=0
     Source directory: /home/ghpdohmen/epo3/epo3/help
     Source file: VHDL/RAMbestand.vhd
-    Source modified time: Tue Jan 17 11:56:59 2023
+    Source modified time: Tue Jan 17 18:51:28 2023
     HDL source file: VHDL/RAMbestand.vhd
 VHDL CONFIGURATION colour_storage_behavioral_cfg
     Configuration applies to entity: colour_storage
     Block configuration applies to architecture: behavioral
-    Depends on: A work colour_storage behavioral ijM]:9IzQdP]a:zaRD=DS1
+    Depends on: A work colour_storage behavioral cI_a`zVGRQo76Q4=S>G2T3
     Depends on: P ieee numeric_std :ASDNFgHXf_ih3J@9F3Ze1
     Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
     Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
-    Depends on: E work colour_storage OM4]ha8k`>6GkNA5RiOV13
-    Source modified time: Tue Jan 17 13:15:41 2023
+    Depends on: E work colour_storage n_XbJIn`7z]TMHbLib_G72
+    Source modified time: Tue Jan 17 19:02:21 2023
     Source directory: /home/ghpdohmen/epo3/epo3/help
     HDL source file: VHDL/colour_storage_behavioral_cfg.vhd
     Source file: VHDL/colour_storage_behavioral_cfg.vhd
     Start location: VHDL/colour_storage_behavioral_cfg.vhd:1
-    Version string: 6FS??@b>Vj;`Ef]D6DAGW0
+    Version string: ]gf5U7Enc3lgk=<`5M1_F2
     Opcode format: 10.5b; VCOM SE-64 Object version 63
     VHDL language standard: 3 (VHDL-2008)
-    Compile time: Tue Jan 17 13:15:41 2023
+    Compile time: Tue Jan 17 19:10:04 2023
     Compiled in vopt flow
-    Compile options: -quiet -nologo -2008 -lower -explicit -work work
+    Compile options: -quiet -nologo -2008 -just C -lower -explicit -work work
     Compile defaults: Explicit=1 CvgOpt=0
 ENTITY countdown_bar
-    Source modified time: Tue Jan 17 11:56:59 2023
+    Source modified time: Tue Jan 17 18:51:28 2023
     Depends on: P ieee numeric_std :ASDNFgHXf_ih3J@9F3Ze1
     Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
     Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
@@ -119,7 +117,7 @@ ENTITY countdown_bar
     Version string: b]bB2X7@aHEzgC14G:SDH3
     Opcode format: 10.5b; VCOM SE-64 Object version 63
     VHDL language standard: 3 (VHDL-2008)
-    Compile time: Tue Jan 17 12:27:30 2023
+    Compile time: Tue Jan 17 19:09:55 2023
     Debug Symbol file exists
     Compiled in vopt flow
     Compile options: -quiet -nologo -2008 -just E -lower -explicit -work work
@@ -133,14 +131,14 @@ ENTITY countdown_bar
     Version string: Q5jA8?VYg<MF=hfW0nAEf2
     Opcode format: 10.5b; VCOM SE-64 Object version 63
     VHDL language standard: 3 (VHDL-2008)
-    Compile time: Tue Jan 17 12:27:32 2023
+    Compile time: Tue Jan 17 19:09:59 2023
     Debug Symbol file exists
     Compiled in vopt flow
     Compile options: -quiet -nologo -2008 -just A -lower -explicit -work work
     Compile defaults: Explicit=1 CvgOpt=0
     Source directory: /home/ghpdohmen/epo3/epo3/help
     Source file: VHDL/countdown.vhd
-    Source modified time: Tue Jan 17 11:56:59 2023
+    Source modified time: Tue Jan 17 18:51:28 2023
     HDL source file: VHDL/countdown.vhd
 VHDL CONFIGURATION countdown_bar_behav_cfg
     Configuration applies to entity: countdown_bar
@@ -152,20 +150,20 @@ VHDL CONFIGURATION countdown_bar_behav_cfg
     Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
     Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
     Depends on: E work countdown_bar b]bB2X7@aHEzgC14G:SDH3
-    Source modified time: Tue Jan 17 13:15:39 2023
+    Source modified time: Tue Jan 17 19:02:21 2023
     Source directory: /home/ghpdohmen/epo3/epo3/help
     HDL source file: VHDL/countdown_bar_behav_cfg.vhd
     Source file: VHDL/countdown_bar_behav_cfg.vhd
     Start location: VHDL/countdown_bar_behav_cfg.vhd:1
-    Version string: MGcd6::KialLa1_>3od6g2
+    Version string: ac@_TIBVX8EkbHEL4f;Hn2
     Opcode format: 10.5b; VCOM SE-64 Object version 63
     VHDL language standard: 3 (VHDL-2008)
-    Compile time: Tue Jan 17 13:15:39 2023
+    Compile time: Tue Jan 17 19:10:06 2023
     Compiled in vopt flow
-    Compile options: -quiet -nologo -2008 -lower -explicit -work work
+    Compile options: -quiet -nologo -2008 -just C -lower -explicit -work work
     Compile defaults: Explicit=1 CvgOpt=0
 ENTITY counter25mhz
-    Source modified time: Tue Jan 17 11:00:13 2023
+    Source modified time: Tue Jan 17 18:51:28 2023
     Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
     Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
     Source directory: /home/ghpdohmen/epo3/epo3/help
@@ -175,7 +173,7 @@ ENTITY counter25mhz
     Version string: f^IoBGLFM4hZQmQBK>h:g3
     Opcode format: 10.5b; VCOM SE-64 Object version 63
     VHDL language standard: 3 (VHDL-2008)
-    Compile time: Tue Jan 17 12:28:34 2023
+    Compile time: Tue Jan 17 19:09:56 2023
     Debug Symbol file exists
     Compiled in vopt flow
     Compile options: -quiet -nologo -2008 -just E -lower -explicit -work work
@@ -191,13 +189,13 @@ ENTITY counter25mhz
     Version string: MPM[8K1<40b7_:Y3NMJXl1
     Opcode format: 10.5b; VCOM SE-64 Object version 63
     VHDL language standard: 3 (VHDL-2008)
-    Compile time: Tue Jan 17 12:28:36 2023
+    Compile time: Tue Jan 17 19:09:59 2023
     Debug Symbol file exists
     Compiled in vopt flow
     Compile options: -quiet -nologo -2008 -just A -lower -explicit -work work
     Compile defaults: Explicit=1 CvgOpt=0
     Source directory: /home/ghpdohmen/epo3/epo3/help
-    Source modified time: Tue Jan 17 11:00:13 2023
+    Source modified time: Tue Jan 17 18:51:28 2023
 VHDL CONFIGURATION counter25mhz_behav_cfg
     Configuration applies to entity: counter25mhz
     Block configuration applies to architecture: behav
@@ -206,20 +204,20 @@ VHDL CONFIGURATION counter25mhz_behav_cfg
     Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
     Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
     Depends on: E work counter25mhz f^IoBGLFM4hZQmQBK>h:g3
-    Source modified time: Tue Jan 17 13:15:35 2023
+    Source modified time: Tue Jan 17 19:02:21 2023
     Source directory: /home/ghpdohmen/epo3/epo3/help
     HDL source file: VHDL/counter25mhz_behav_cfg.vhd
     Source file: VHDL/counter25mhz_behav_cfg.vhd
     Start location: VHDL/counter25mhz_behav_cfg.vhd:1
-    Version string: Vk1?mUX2RQCSSmPF@od`92
+    Version string: Yz4QBH@LE`9BzWN24GGY?3
     Opcode format: 10.5b; VCOM SE-64 Object version 63
     VHDL language standard: 3 (VHDL-2008)
-    Compile time: Tue Jan 17 13:15:35 2023
+    Compile time: Tue Jan 17 19:10:04 2023
     Compiled in vopt flow
-    Compile options: -quiet -nologo -2008 -lower -explicit -work work
+    Compile options: -quiet -nologo -2008 -just C -lower -explicit -work work
     Compile defaults: Explicit=1 CvgOpt=0
 ENTITY e_counter
-    Source modified time: Tue Jan 17 11:56:59 2023
+    Source modified time: Tue Jan 17 18:51:28 2023
     Depends on: P ieee numeric_std :ASDNFgHXf_ih3J@9F3Ze1
     Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
     Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
@@ -230,7 +228,7 @@ ENTITY e_counter
     Version string: F02]J9G;bfL?@D2joXkk?3
     Opcode format: 10.5b; VCOM SE-64 Object version 63
     VHDL language standard: 3 (VHDL-2008)
-    Compile time: Tue Jan 17 12:27:30 2023
+    Compile time: Tue Jan 17 19:09:56 2023
     Debug Symbol file exists
     Compiled in vopt flow
     Compile options: -quiet -nologo -2008 -just E -lower -explicit -work work
@@ -244,14 +242,14 @@ ENTITY e_counter
     Version string: b?j8L6UlfRBBhjljIj:_80
     Opcode format: 10.5b; VCOM SE-64 Object version 63
     VHDL language standard: 3 (VHDL-2008)
-    Compile time: Tue Jan 17 12:27:32 2023
+    Compile time: Tue Jan 17 19:09:59 2023
     Debug Symbol file exists
     Compiled in vopt flow
     Compile options: -quiet -nologo -2008 -just A -lower -explicit -work work
     Compile defaults: Explicit=1 CvgOpt=0
     Source directory: /home/ghpdohmen/epo3/epo3/help
     Source file: VHDL/e_counter.vhd
-    Source modified time: Tue Jan 17 11:56:59 2023
+    Source modified time: Tue Jan 17 18:51:28 2023
     HDL source file: VHDL/e_counter.vhd
 VHDL CONFIGURATION e_counter_behav_cfg
     Configuration applies to entity: e_counter
@@ -261,20 +259,20 @@ VHDL CONFIGURATION e_counter_behav_cfg
     Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
     Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
     Depends on: E work e_counter F02]J9G;bfL?@D2joXkk?3
-    Source modified time: Tue Jan 17 13:15:33 2023
+    Source modified time: Tue Jan 17 19:02:21 2023
     Source directory: /home/ghpdohmen/epo3/epo3/help
     HDL source file: VHDL/e_counter_behav_cfg.vhd
     Source file: VHDL/e_counter_behav_cfg.vhd
     Start location: VHDL/e_counter_behav_cfg.vhd:1
-    Version string: 4g`7[YB7D7YQ@ZJI4=4J63
+    Version string: 2S]I5^IKHjB0fZ0@i4J2F1
     Opcode format: 10.5b; VCOM SE-64 Object version 63
     VHDL language standard: 3 (VHDL-2008)
-    Compile time: Tue Jan 17 13:15:33 2023
+    Compile time: Tue Jan 17 19:10:04 2023
     Compiled in vopt flow
-    Compile options: -quiet -nologo -2008 -lower -explicit -work work
+    Compile options: -quiet -nologo -2008 -just C -lower -explicit -work work
     Compile defaults: Explicit=1 CvgOpt=0
 ENTITY edge_debounce
-    Source modified time: Tue Jan 17 11:00:14 2023
+    Source modified time: Tue Jan 17 18:51:28 2023
     Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
     Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
     Source directory: /home/ghpdohmen/epo3/epo3/help
@@ -284,13 +282,13 @@ ENTITY edge_debounce
     Version string: UMeX]7G`KH]ZaUQ[^Ko572
     Opcode format: 10.5b; VCOM SE-64 Object version 63
     VHDL language standard: 3 (VHDL-2008)
-    Compile time: Tue Jan 17 12:28:34 2023
+    Compile time: Tue Jan 17 19:09:56 2023
     Debug Symbol file exists
     Compiled in vopt flow
     Compile options: -quiet -nologo -2008 -just E -lower -explicit -work work
     Compile defaults: Explicit=1 CvgOpt=0
   ARCHITECTURE BODY behav
-    Source modified time: Tue Jan 17 12:41:32 2023
+    Source modified time: Tue Jan 17 19:02:24 2023
     Depends on: E work edge_debounce UMeX]7G`KH]ZaUQ[^Ko572
     Depends on: P ieee numeric_std :ASDNFgHXf_ih3J@9F3Ze1
     Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
@@ -298,37 +296,37 @@ ENTITY edge_debounce
     HDL source file: VHDL/edge_debounce-behav.vhd
     Source file: VHDL/edge_debounce-behav.vhd
     Start location: VHDL/edge_debounce-behav.vhd:5
-    Version string: iY_X?ZCkOEFJ4f=i3@4lG3
+    Version string: P7Vj]LMHIK^`7[YhYbKDE2
     Opcode format: 10.5b; VCOM SE-64 Object version 63
     VHDL language standard: 3 (VHDL-2008)
-    Compile time: Tue Jan 17 12:41:32 2023
+    Compile time: Tue Jan 17 19:09:59 2023
     Debug Symbol file exists
     Compiled in vopt flow
-    Compile options: -quiet -nologo -2008 -lower -explicit -work work
+    Compile options: -quiet -nologo -2008 -just A -lower -explicit -work work
     Compile defaults: Explicit=1 CvgOpt=0
     Source directory: /home/ghpdohmen/epo3/epo3/help
 VHDL CONFIGURATION edge_debounce_behav_cfg
     Configuration applies to entity: edge_debounce
     Block configuration applies to architecture: behav
     Depends on: P ieee numeric_std :ASDNFgHXf_ih3J@9F3Ze1
-    Depends on: A work edge_debounce behav iY_X?ZCkOEFJ4f=i3@4lG3
+    Depends on: A work edge_debounce behav P7Vj]LMHIK^`7[YhYbKDE2
     Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
     Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
     Depends on: E work edge_debounce UMeX]7G`KH]ZaUQ[^Ko572
-    Source modified time: Tue Jan 17 13:15:28 2023
+    Source modified time: Tue Jan 17 19:02:21 2023
     Source directory: /home/ghpdohmen/epo3/epo3/help
     HDL source file: VHDL/edge_debounce_behav_cfg.vhd
     Source file: VHDL/edge_debounce_behav_cfg.vhd
     Start location: VHDL/edge_debounce_behav_cfg.vhd:1
-    Version string: 1UX?H^nJ[UjLUX9l[9zkB3
+    Version string: RM;gjC=S_=k[;R0FeZo_T1
     Opcode format: 10.5b; VCOM SE-64 Object version 63
     VHDL language standard: 3 (VHDL-2008)
-    Compile time: Tue Jan 17 13:15:28 2023
+    Compile time: Tue Jan 17 19:10:04 2023
     Compiled in vopt flow
-    Compile options: -quiet -nologo -2008 -lower -explicit -work work
+    Compile options: -quiet -nologo -2008 -just C -lower -explicit -work work
     Compile defaults: Explicit=1 CvgOpt=0
 ENTITY edge_det_fall
-    Source modified time: Tue Jan 17 11:56:59 2023
+    Source modified time: Tue Jan 17 18:51:28 2023
     Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
     Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
     Source directory: /home/ghpdohmen/epo3/epo3/help
@@ -338,7 +336,7 @@ ENTITY edge_det_fall
     Version string: 6<VPgH?d9eI6PJ`jkP48V3
     Opcode format: 10.5b; VCOM SE-64 Object version 63
     VHDL language standard: 3 (VHDL-2008)
-    Compile time: Tue Jan 17 12:27:30 2023
+    Compile time: Tue Jan 17 19:09:56 2023
     Debug Symbol file exists
     Compiled in vopt flow
     Compile options: -quiet -nologo -2008 -just E -lower -explicit -work work
@@ -351,14 +349,14 @@ ENTITY edge_det_fall
     Version string: h@5jgF1dGEiim6`?;LFAb1
     Opcode format: 10.5b; VCOM SE-64 Object version 63
     VHDL language standard: 3 (VHDL-2008)
-    Compile time: Tue Jan 17 12:27:32 2023
+    Compile time: Tue Jan 17 19:10:00 2023
     Debug Symbol file exists
     Compiled in vopt flow
     Compile options: -quiet -nologo -2008 -just A -lower -explicit -work work
     Compile defaults: Explicit=1 CvgOpt=0
     Source directory: /home/ghpdohmen/epo3/epo3/help
     Source file: VHDL/edge_fall.vhd
-    Source modified time: Tue Jan 17 11:56:59 2023
+    Source modified time: Tue Jan 17 18:51:28 2023
     HDL source file: VHDL/edge_fall.vhd
 VHDL CONFIGURATION edge_det_fall_behav_cfg
     Configuration applies to entity: edge_det_fall
@@ -367,7 +365,7 @@ VHDL CONFIGURATION edge_det_fall_behav_cfg
     Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
     Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
     Depends on: E work edge_det_fall 6<VPgH?d9eI6PJ`jkP48V3
-    Source modified time: Tue Jan 17 11:56:59 2023
+    Source modified time: Tue Jan 17 19:02:21 2023
     Source directory: /home/ghpdohmen/epo3/epo3/help
     HDL source file: VHDL/edge_det_fall_behav_cfg.vhd
     Source file: VHDL/edge_det_fall_behav_cfg.vhd
@@ -375,64 +373,64 @@ VHDL CONFIGURATION edge_det_fall_behav_cfg
     Version string: E;dTiPEoWfIVfhjebnccI0
     Opcode format: 10.5b; VCOM SE-64 Object version 63
     VHDL language standard: 3 (VHDL-2008)
-    Compile time: Tue Jan 17 12:31:02 2023
+    Compile time: Tue Jan 17 19:10:04 2023
     Compiled in vopt flow
     Compile options: -quiet -nologo -2008 -just C -lower -explicit -work work
     Compile defaults: Explicit=1 CvgOpt=0
 ENTITY edge_detector
-    Source modified time: Tue Jan 17 10:57:41 2023
+    Source modified time: Tue Jan 17 18:51:28 2023
     Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
     Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
     Source directory: /home/ghpdohmen/epo3/epo3/help
-    HDL source file: VHDL/edge_det.vhd
-    Source file: VHDL/edge_det.vhd
-    Start location: VHDL/edge_det.vhd:4
+    HDL source file: VHDL/edge_detector.vhd
+    Source file: VHDL/edge_detector.vhd
+    Start location: VHDL/edge_detector.vhd:4
     Version string: OJgICF7D[1LKb;bzg9YB02
     Opcode format: 10.5b; VCOM SE-64 Object version 63
     VHDL language standard: 3 (VHDL-2008)
-    Compile time: Tue Jan 17 12:27:30 2023
+    Compile time: Tue Jan 17 19:09:56 2023
     Debug Symbol file exists
     Compiled in vopt flow
     Compile options: -quiet -nologo -2008 -just E -lower -explicit -work work
     Compile defaults: Explicit=1 CvgOpt=0
   ARCHITECTURE BODY behav
+    Depends on: E work edge_detector OJgICF7D[1LKb;bzg9YB02
     Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
     Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
-    Depends on: E work edge_detector OJgICF7D[1LKb;bzg9YB02
-    Start location: VHDL/edge_det.vhd:9
-    Version string: D@T85eo2zQP1Y:BJB1g=U2
+    HDL source file: VHDL/edge_detector-behav.vhd
+    Source file: VHDL/edge_detector-behav.vhd
+    Start location: VHDL/edge_detector-behav.vhd:4
+    Version string: ;KZLCC<OzN9Qb3H3VFdok0
     Opcode format: 10.5b; VCOM SE-64 Object version 63
     VHDL language standard: 3 (VHDL-2008)
-    Compile time: Tue Jan 17 12:27:31 2023
+    Compile time: Tue Jan 17 19:10:00 2023
     Debug Symbol file exists
     Compiled in vopt flow
     Compile options: -quiet -nologo -2008 -just A -lower -explicit -work work
     Compile defaults: Explicit=1 CvgOpt=0
     Source directory: /home/ghpdohmen/epo3/epo3/help
-    Source file: VHDL/edge_det.vhd
-    Source modified time: Tue Jan 17 10:57:41 2023
-    HDL source file: VHDL/edge_det.vhd
+    Source modified time: Tue Jan 17 18:51:28 2023
 VHDL CONFIGURATION edge_detector_behav_cfg
     Configuration applies to entity: edge_detector
     Block configuration applies to architecture: behav
-    Depends on: A work edge_detector behav D@T85eo2zQP1Y:BJB1g=U2
+    Depends on: A work edge_detector behav ;KZLCC<OzN9Qb3H3VFdok0
     Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
     Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
     Depends on: E work edge_detector OJgICF7D[1LKb;bzg9YB02
-    Source modified time: Tue Jan 17 13:15:25 2023
+    Source modified time: Tue Jan 17 19:02:21 2023
     Source directory: /home/ghpdohmen/epo3/epo3/help
     HDL source file: VHDL/edge_detector_behav_cfg.vhd
     Source file: VHDL/edge_detector_behav_cfg.vhd
     Start location: VHDL/edge_detector_behav_cfg.vhd:1
-    Version string: OO0zEcD4M4K4=ei`2:7R23
+    Version string: RX99RPmJVONVGGj:]QRB33
     Opcode format: 10.5b; VCOM SE-64 Object version 63
     VHDL language standard: 3 (VHDL-2008)
-    Compile time: Tue Jan 17 13:15:25 2023
+    Compile time: Tue Jan 17 19:10:04 2023
     Compiled in vopt flow
-    Compile options: -quiet -nologo -2008 -lower -explicit -work work
+    Compile options: -quiet -nologo -2008 -just C -lower -explicit -work work
     Compile defaults: Explicit=1 CvgOpt=0
 ENTITY flipflop
-    Source modified time: Tue Jan 17 11:00:14 2023
+    Source modified time: Tue Jan 17 18:51:28 2023
     Depends on: P ieee numeric_std :ASDNFgHXf_ih3J@9F3Ze1
     Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
     Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
@@ -443,7 +441,7 @@ ENTITY flipflop
     Version string: ?7kFd`L@j68cKVzZ>o9FQ3
     Opcode format: 10.5b; VCOM SE-64 Object version 63
     VHDL language standard: 3 (VHDL-2008)
-    Compile time: Tue Jan 17 12:28:34 2023
+    Compile time: Tue Jan 17 19:09:56 2023
     Debug Symbol file exists
     Compiled in vopt flow
     Compile options: -quiet -nologo -2008 -just E -lower -explicit -work work
@@ -459,13 +457,13 @@ ENTITY flipflop
     Version string: ZWfMi=T`F@f2K55^FdmEH0
     Opcode format: 10.5b; VCOM SE-64 Object version 63
     VHDL language standard: 3 (VHDL-2008)
-    Compile time: Tue Jan 17 12:28:37 2023
+    Compile time: Tue Jan 17 19:10:00 2023
     Debug Symbol file exists
     Compiled in vopt flow
     Compile options: -quiet -nologo -2008 -just A -lower -explicit -work work
     Compile defaults: Explicit=1 CvgOpt=0
     Source directory: /home/ghpdohmen/epo3/epo3/help
-    Source modified time: Tue Jan 17 11:00:14 2023
+    Source modified time: Tue Jan 17 18:51:28 2023
 VHDL CONFIGURATION flipflop_behav_cfg
     Configuration applies to entity: flipflop
     Block configuration applies to architecture: behav
@@ -474,20 +472,20 @@ VHDL CONFIGURATION flipflop_behav_cfg
     Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
     Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
     Depends on: E work flipflop ?7kFd`L@j68cKVzZ>o9FQ3
-    Source modified time: Tue Jan 17 13:15:20 2023
+    Source modified time: Tue Jan 17 19:02:21 2023
     Source directory: /home/ghpdohmen/epo3/epo3/help
     HDL source file: VHDL/flipflop_behav_cfg.vhd
     Source file: VHDL/flipflop_behav_cfg.vhd
     Start location: VHDL/flipflop_behav_cfg.vhd:1
-    Version string: EMPW]LCA2zcKZR7YBe==:2
+    Version string: L=Oc2Y2E5S6KQOAiTJmaH1
     Opcode format: 10.5b; VCOM SE-64 Object version 63
     VHDL language standard: 3 (VHDL-2008)
-    Compile time: Tue Jan 17 13:15:20 2023
+    Compile time: Tue Jan 17 19:10:04 2023
     Compiled in vopt flow
-    Compile options: -quiet -nologo -2008 -lower -explicit -work work
+    Compile options: -quiet -nologo -2008 -just C -lower -explicit -work work
     Compile defaults: Explicit=1 CvgOpt=0
 ENTITY graph_logic
-    Source modified time: Tue Jan 17 11:56:59 2023
+    Source modified time: Tue Jan 17 18:51:28 2023
     Depends on: P ieee numeric_std :ASDNFgHXf_ih3J@9F3Ze1
     Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
     Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
@@ -498,7 +496,7 @@ ENTITY graph_logic
     Version string: 4TUNXhS_]O]:`0J7`LzK73
     Opcode format: 10.5b; VCOM SE-64 Object version 63
     VHDL language standard: 3 (VHDL-2008)
-    Compile time: Tue Jan 17 12:27:31 2023
+    Compile time: Tue Jan 17 19:09:56 2023
     Debug Symbol file exists
     Compiled in vopt flow
     Compile options: -quiet -nologo -2008 -just E -lower -explicit -work work
@@ -509,46 +507,46 @@ ENTITY graph_logic
     Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
     Depends on: E work graph_logic 4TUNXhS_]O]:`0J7`LzK73
     Start location: VHDL/graph_logic.vhd:39
-    Version string: ;d_2]=:22G;MkHS8KETS30
+    Version string: zKTJ:`RiKlAm644kG0jEM2
     Opcode format: 10.5b; VCOM SE-64 Object version 63
     VHDL language standard: 3 (VHDL-2008)
-    Compile time: Tue Jan 17 12:27:32 2023
+    Compile time: Tue Jan 17 19:10:00 2023
     Debug Symbol file exists
     Compiled in vopt flow
     Compile options: -quiet -nologo -2008 -just A -lower -explicit -work work
     Compile defaults: Explicit=1 CvgOpt=0
     Source directory: /home/ghpdohmen/epo3/epo3/help
     Source file: VHDL/graph_logic.vhd
-    Source modified time: Tue Jan 17 11:56:59 2023
+    Source modified time: Tue Jan 17 18:51:28 2023
     HDL source file: VHDL/graph_logic.vhd
 VHDL CONFIGURATION graph_logic_behav_cfg
     Configuration applies to entity: graph_logic
     Block configuration applies to architecture: behav
     Depends on: E work e_counter F02]J9G;bfL?@D2joXkk?3
-    Depends on: E work h_counter T5kM?dzRINNL]2Y>Ce4LP3
+    Depends on: E work h_counter Pn:c6076XGckdLXN4K[2V2
     Depends on: E work v_counter P_[Kaa`SY]cFA5lgTjVm03
-    Depends on: C work e_counter_behav_cfg 4g`7[YB7D7YQ@ZJI4=4J63
-    Depends on: C work h_counter_behav_cfg Y?W1;;ZIb?2?16DjRH]l91
-    Depends on: C work v_counter_behav_cfg n85gl0506<g=N0d;>f@Lz1
-    Depends on: A work graph_logic behav ;d_2]=:22G;MkHS8KETS30
+    Depends on: C work e_counter_behav_cfg 2S]I5^IKHjB0fZ0@i4J2F1
+    Depends on: C work h_counter_behav_cfg zBVgEPJBNZBHfAXfW3;V30
+    Depends on: C work v_counter_behav_cfg Lzh6K;KM4PelR7QhhS3iP2
+    Depends on: A work graph_logic behav zKTJ:`RiKlAm644kG0jEM2
     Depends on: P ieee numeric_std :ASDNFgHXf_ih3J@9F3Ze1
     Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
     Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
     Depends on: E work graph_logic 4TUNXhS_]O]:`0J7`LzK73
-    Source modified time: Tue Jan 17 13:20:06 2023
+    Source modified time: Tue Jan 17 19:02:21 2023
     Source directory: /home/ghpdohmen/epo3/epo3/help
     HDL source file: VHDL/graph_logic_behav_cfg.vhd
     Source file: VHDL/graph_logic_behav_cfg.vhd
     Start location: VHDL/graph_logic_behav_cfg.vhd:1
-    Version string: iDjP;QaQZ>B=LMhDXYAJ^2
+    Version string: 6ZTHa5W30S3:=gI[@h;;]2
     Opcode format: 10.5b; VCOM SE-64 Object version 63
     VHDL language standard: 3 (VHDL-2008)
-    Compile time: Tue Jan 17 13:20:06 2023
+    Compile time: Tue Jan 17 19:10:07 2023
     Compiled in vopt flow
-    Compile options: -quiet -nologo -2008 -lower -explicit -work work
+    Compile options: -quiet -nologo -2008 -just C -lower -explicit -work work
     Compile defaults: Explicit=1 CvgOpt=0
 ENTITY graphic_toplvl
-    Source modified time: Tue Jan 17 13:01:23 2023
+    Source modified time: Tue Jan 17 18:51:28 2023
     Depends on: P ieee numeric_std :ASDNFgHXf_ih3J@9F3Ze1
     Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
     Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
@@ -556,64 +554,64 @@ ENTITY graphic_toplvl
     HDL source file: VHDL/graphic_toplvl.vhd
     Source file: VHDL/graphic_toplvl.vhd
     Start location: VHDL/graphic_toplvl.vhd:4
-    Version string: 7:PQaF45i@bMgF=mR[I@31
+    Version string: hlzBDl[@e>U^FeeF=HPfH3
     Opcode format: 10.5b; VCOM SE-64 Object version 63
     VHDL language standard: 3 (VHDL-2008)
-    Compile time: Tue Jan 17 13:02:10 2023
+    Compile time: Tue Jan 17 19:09:57 2023
     Debug Symbol file exists
     Compiled in vopt flow
-    Compile options: -quiet -nologo -2008 -lower -explicit -work work
+    Compile options: -quiet -nologo -2008 -just E -lower -explicit -work work
     Compile defaults: Explicit=1 CvgOpt=0
   ARCHITECTURE BODY behaviour
-    Source modified time: Tue Jan 17 13:05:01 2023
     Depends on: P ieee numeric_std :ASDNFgHXf_ih3J@9F3Ze1
     Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
     Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
-    Depends on: E work graphic_toplvl 7:PQaF45i@bMgF=mR[I@31
+    Depends on: E work graphic_toplvl hlzBDl[@e>U^FeeF=HPfH3
     HDL source file: VHDL/graphic_toplvl-behaviour.vhd
     Source file: VHDL/graphic_toplvl-behaviour.vhd
     Start location: VHDL/graphic_toplvl-behaviour.vhd:1
-    Version string: 6MPgkcL_S8<YjYz>R=<1J2
+    Version string: ?m0cRT0ol697Ak_IX@0nP3
     Opcode format: 10.5b; VCOM SE-64 Object version 63
     VHDL language standard: 3 (VHDL-2008)
-    Compile time: Tue Jan 17 13:05:01 2023
+    Compile time: Tue Jan 17 19:10:00 2023
     Debug Symbol file exists
     Compiled in vopt flow
-    Compile options: -quiet -nologo -2008 -lower -explicit -work work
+    Compile options: -quiet -nologo -2008 -just A -lower -explicit -work work
     Compile defaults: Explicit=1 CvgOpt=0
     Source directory: /home/ghpdohmen/epo3/epo3/help
+    Source modified time: Tue Jan 17 18:51:28 2023
 VHDL CONFIGURATION graphic_toplvl_behaviour_cfg
     Configuration applies to entity: graphic_toplvl
     Block configuration applies to architecture: behaviour
     Depends on: E work graph_logic 4TUNXhS_]O]:`0J7`LzK73
-    Depends on: E work vgadrive Rzom[W_glU8_lVXb^:iCE3
+    Depends on: E work vgadrive PXY^]SEW`SF>VG9b9OS>C1
     Depends on: E work rom_cursor <THNUe3Z3M78e7Wb3FOjD1
-    Depends on: E work colour_storage OM4]ha8k`>6GkNA5RiOV13
-    Depends on: C work graph_logic_behav_cfg iDjP;QaQZ>B=LMhDXYAJ^2
+    Depends on: E work colour_storage n_XbJIn`7z]TMHbLib_G72
+    Depends on: C work graph_logic_behav_cfg 6ZTHa5W30S3:=gI[@h;;]2
     Depends on: P ieee std_logic_arith [G314=:2zXJ`VORJe1J@Z1
     Depends on: P ieee std_logic_unsigned ;eZjO2D4ZDz<]0>8AL<ne1
-    Depends on: C work vgadrive_behaviour_cfg e4mFIOeFMCDkNQDKF=<=Z3
-    Depends on: C work rom_cursor_behavioral_cfg CAXh7TF^lhIB@28P5eKSA3
-    Depends on: C work colour_storage_behavioral_cfg 6FS??@b>Vj;`Ef]D6DAGW0
-    Depends on: A work graphic_toplvl behaviour 6MPgkcL_S8<YjYz>R=<1J2
+    Depends on: C work vgadrive_behaviour_cfg bl2<Dn9_2?mCe^`<elG283
+    Depends on: C work rom_cursor_behavioral_cfg NUbVNMGdIa]53WYfZkek72
+    Depends on: C work colour_storage_behavioral_cfg ]gf5U7Enc3lgk=<`5M1_F2
+    Depends on: A work graphic_toplvl behaviour ?m0cRT0ol697Ak_IX@0nP3
     Depends on: P ieee numeric_std :ASDNFgHXf_ih3J@9F3Ze1
     Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
     Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
-    Depends on: E work graphic_toplvl 7:PQaF45i@bMgF=mR[I@31
-    Source modified time: Tue Jan 17 13:20:11 2023
+    Depends on: E work graphic_toplvl hlzBDl[@e>U^FeeF=HPfH3
+    Source modified time: Tue Jan 17 19:02:21 2023
     Source directory: /home/ghpdohmen/epo3/epo3/help
     HDL source file: VHDL/graphic_toplvl_behaviour_cfg.vhd
     Source file: VHDL/graphic_toplvl_behaviour_cfg.vhd
     Start location: VHDL/graphic_toplvl_behaviour_cfg.vhd:1
-    Version string: QI2aFLLgEE`Z7cIJiLXH02
+    Version string: LAiKbWojSlER1^Gbf4zW20
     Opcode format: 10.5b; VCOM SE-64 Object version 63
     VHDL language standard: 3 (VHDL-2008)
-    Compile time: Tue Jan 17 13:20:11 2023
+    Compile time: Tue Jan 17 19:10:07 2023
     Compiled in vopt flow
-    Compile options: -quiet -nologo -2008 -lower -explicit -work work
+    Compile options: -quiet -nologo -2008 -just C -lower -explicit -work work
     Compile defaults: Explicit=1 CvgOpt=0
 ENTITY graphic_toplvl_tb
-    Source modified time: Tue Jan 17 11:56:59 2023
+    Source modified time: Tue Jan 17 18:51:28 2023
     Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
     Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
     Source directory: /home/ghpdohmen/epo3/epo3/help
@@ -623,7 +621,7 @@ ENTITY graphic_toplvl_tb
     Version string: D^zEhXE8no_3Ij=DHoL2i2
     Opcode format: 10.5b; VCOM SE-64 Object version 63
     VHDL language standard: 3 (VHDL-2008)
-    Compile time: Tue Jan 17 12:27:31 2023
+    Compile time: Tue Jan 17 19:09:57 2023
     Debug Symbol file exists
     Compiled in vopt flow
     Compile options: -quiet -nologo -2008 -just E -lower -explicit -work work
@@ -636,39 +634,39 @@ ENTITY graphic_toplvl_tb
     Version string: CDUd;]o3EeKe]jNlco^Ic2
     Opcode format: 10.5b; VCOM SE-64 Object version 63
     VHDL language standard: 3 (VHDL-2008)
-    Compile time: Tue Jan 17 12:27:32 2023
+    Compile time: Tue Jan 17 19:10:00 2023
     Debug Symbol file exists
     Compiled in vopt flow
     Compile options: -quiet -nologo -2008 -just A -lower -explicit -work work
     Compile defaults: Explicit=1 CvgOpt=0
     Source directory: /home/ghpdohmen/epo3/epo3/help
     Source file: VHDL/graphic_toplvl_tb.vhd
-    Source modified time: Tue Jan 17 11:56:59 2023
+    Source modified time: Tue Jan 17 18:51:28 2023
     HDL source file: VHDL/graphic_toplvl_tb.vhd
 VHDL CONFIGURATION graphic_toplvl_tb_behaviour_cfg
     Configuration applies to entity: graphic_toplvl_tb
     Block configuration applies to architecture: behaviour
-    Depends on: E work graphic_toplvl 7:PQaF45i@bMgF=mR[I@31
+    Depends on: E work graphic_toplvl hlzBDl[@e>U^FeeF=HPfH3
     Depends on: P ieee numeric_std :ASDNFgHXf_ih3J@9F3Ze1
-    Depends on: C work graphic_toplvl_behaviour_cfg QI2aFLLgEE`Z7cIJiLXH02
+    Depends on: C work graphic_toplvl_behaviour_cfg LAiKbWojSlER1^Gbf4zW20
     Depends on: A work graphic_toplvl_tb behaviour CDUd;]o3EeKe]jNlco^Ic2
     Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
     Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
     Depends on: E work graphic_toplvl_tb D^zEhXE8no_3Ij=DHoL2i2
-    Source modified time: Tue Jan 17 13:20:13 2023
+    Source modified time: Tue Jan 17 19:02:21 2023
     Source directory: /home/ghpdohmen/epo3/epo3/help
     HDL source file: VHDL/graphic_toplvl_tb_behaviour_cfg.vhd
     Source file: VHDL/graphic_toplvl_tb_behaviour_cfg.vhd
     Start location: VHDL/graphic_toplvl_tb_behaviour_cfg.vhd:1
-    Version string: de`k0XYZ]2e9N@mXGQ]Oa3
+    Version string: Boi7bH]X<zI]1NcgE9QLk1
     Opcode format: 10.5b; VCOM SE-64 Object version 63
     VHDL language standard: 3 (VHDL-2008)
-    Compile time: Tue Jan 17 13:20:13 2023
+    Compile time: Tue Jan 17 19:10:08 2023
     Compiled in vopt flow
-    Compile options: -quiet -nologo -2008 -lower -explicit -work work
+    Compile options: -quiet -nologo -2008 -just C -lower -explicit -work work
     Compile defaults: Explicit=1 CvgOpt=0
 ENTITY h_counter
-    Source modified time: Tue Jan 17 11:56:59 2023
+    Source modified time: Tue Jan 17 18:51:28 2023
     Depends on: P ieee numeric_std :ASDNFgHXf_ih3J@9F3Ze1
     Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
     Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
@@ -676,114 +674,114 @@ ENTITY h_counter
     HDL source file: VHDL/H_counter.vhd
     Source file: VHDL/H_counter.vhd
     Start location: VHDL/H_counter.vhd:4
-    Version string: T5kM?dzRINNL]2Y>Ce4LP3
+    Version string: Pn:c6076XGckdLXN4K[2V2
     Opcode format: 10.5b; VCOM SE-64 Object version 63
     VHDL language standard: 3 (VHDL-2008)
-    Compile time: Tue Jan 17 12:27:30 2023
+    Compile time: Tue Jan 17 19:09:50 2023
     Debug Symbol file exists
     Compiled in vopt flow
-    Compile options: -quiet -nologo -2008 -just E -lower -explicit -work work
+    Compile options: -quiet -nologo -2008 -lower -explicit -work work
     Compile defaults: Explicit=1 CvgOpt=0
   ARCHITECTURE BODY behav
     Depends on: P ieee numeric_std :ASDNFgHXf_ih3J@9F3Ze1
     Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
     Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
-    Depends on: E work h_counter T5kM?dzRINNL]2Y>Ce4LP3
+    Depends on: E work h_counter Pn:c6076XGckdLXN4K[2V2
     Start location: VHDL/H_counter.vhd:12
-    Version string: L=^0SP0[D@]W>LO3WzHB82
+    Version string: ^J<YXF8SbhkZR4L_>ceg]3
     Opcode format: 10.5b; VCOM SE-64 Object version 63
     VHDL language standard: 3 (VHDL-2008)
-    Compile time: Tue Jan 17 12:27:31 2023
+    Compile time: Tue Jan 17 19:09:50 2023
     Debug Symbol file exists
     Compiled in vopt flow
-    Compile options: -quiet -nologo -2008 -just A -lower -explicit -work work
+    Compile options: -quiet -nologo -2008 -lower -explicit -work work
     Compile defaults: Explicit=1 CvgOpt=0
     Source directory: /home/ghpdohmen/epo3/epo3/help
     Source file: VHDL/H_counter.vhd
-    Source modified time: Tue Jan 17 11:56:59 2023
+    Source modified time: Tue Jan 17 18:51:28 2023
     HDL source file: VHDL/H_counter.vhd
 VHDL CONFIGURATION h_counter_behav_cfg
     Configuration applies to entity: h_counter
     Block configuration applies to architecture: behav
     Depends on: E work edge_detector OJgICF7D[1LKb;bzg9YB02
-    Depends on: C work edge_detector_behav_cfg OO0zEcD4M4K4=ei`2:7R23
-    Depends on: A work h_counter behav L=^0SP0[D@]W>LO3WzHB82
+    Depends on: C work edge_detector_behav_cfg RX99RPmJVONVGGj:]QRB33
+    Depends on: A work h_counter behav ^J<YXF8SbhkZR4L_>ceg]3
     Depends on: P ieee numeric_std :ASDNFgHXf_ih3J@9F3Ze1
     Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
     Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
-    Depends on: E work h_counter T5kM?dzRINNL]2Y>Ce4LP3
-    Source modified time: Tue Jan 17 13:20:02 2023
+    Depends on: E work h_counter Pn:c6076XGckdLXN4K[2V2
+    Source modified time: Tue Jan 17 19:02:21 2023
     Source directory: /home/ghpdohmen/epo3/epo3/help
     HDL source file: VHDL/h_counter_behav_cfg.vhd
     Source file: VHDL/h_counter_behav_cfg.vhd
     Start location: VHDL/h_counter_behav_cfg.vhd:1
-    Version string: Y?W1;;ZIb?2?16DjRH]l91
+    Version string: zBVgEPJBNZBHfAXfW3;V30
     Opcode format: 10.5b; VCOM SE-64 Object version 63
     VHDL language standard: 3 (VHDL-2008)
-    Compile time: Tue Jan 17 13:20:02 2023
+    Compile time: Tue Jan 17 19:10:06 2023
     Compiled in vopt flow
-    Compile options: -quiet -nologo -2008 -lower -explicit -work work
+    Compile options: -quiet -nologo -2008 -just C -lower -explicit -work work
     Compile defaults: Explicit=1 CvgOpt=0
 ENTITY logic_top
-    Source modified time: Tue Jan 17 12:43:38 2023
+    Source modified time: Tue Jan 17 18:51:28 2023
     Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
     Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
     Source directory: /home/ghpdohmen/epo3/epo3/help
     HDL source file: VHDL/logic_top.vhd
     Source file: VHDL/logic_top.vhd
     Start location: VHDL/logic_top.vhd:4
-    Version string: z[RbG^U;gkI@]M]KgE9Y?3
+    Version string: `8JA3CF>NaYRS5iMknjGN2
     Opcode format: 10.5b; VCOM SE-64 Object version 63
     VHDL language standard: 3 (VHDL-2008)
-    Compile time: Tue Jan 17 12:43:38 2023
+    Compile time: Tue Jan 17 19:09:57 2023
     Debug Symbol file exists
     Compiled in vopt flow
-    Compile options: -quiet -nologo -2008 -lower -explicit -work work
+    Compile options: -quiet -nologo -2008 -just E -lower -explicit -work work
     Compile defaults: Explicit=1 CvgOpt=0
   ARCHITECTURE BODY behaviour_logic_top
-    Source modified time: Tue Jan 17 12:44:53 2023
-    Depends on: E work logic_top z[RbG^U;gkI@]M]KgE9Y?3
+    Depends on: E work logic_top `8JA3CF>NaYRS5iMknjGN2
     Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
     Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
     HDL source file: VHDL/logic_top-behaviour_logic_top.vhd
     Source file: VHDL/logic_top-behaviour_logic_top.vhd
     Start location: VHDL/logic_top-behaviour_logic_top.vhd:4
-    Version string: TzZ?dX]Hg`zzM=MjXKRNB2
+    Version string: FC63]Dj]C>0V;MFFi@j;_2
     Opcode format: 10.5b; VCOM SE-64 Object version 63
     VHDL language standard: 3 (VHDL-2008)
-    Compile time: Tue Jan 17 12:44:58 2023
+    Compile time: Tue Jan 17 19:10:00 2023
     Debug Symbol file exists
     Compiled in vopt flow
-    Compile options: -quiet -nologo -2008 -lower -explicit -work work
+    Compile options: -quiet -nologo -2008 -just A -lower -explicit -work work
     Compile defaults: Explicit=1 CvgOpt=0
     Source directory: /home/ghpdohmen/epo3/epo3/help
+    Source modified time: Tue Jan 17 18:51:28 2023
 VHDL CONFIGURATION logic_top_behaviour_logic_top_cfg
     Configuration applies to entity: logic_top
     Block configuration applies to architecture: behaviour_logic_top
     Depends on: E work color j_H9[^@H5IBEgfjzmolNe3
-    Depends on: E work y ]e]CIZ=feTkA:Bi_7R;bm2
-    Depends on: E work x UkWa1<AaWU_[UTa[1?]fP1
-    Depends on: C work color_behaviour_color_cfg @SgB;n5_Zm]FT6E0fnM7j2
-    Depends on: C work y_behaviour_y_cfg z5@ANz`88dOAVo0BIbUHh3
-    Depends on: C work x_behaviour_x_cfg 6cKZU6D=klg05BULERBLY0
-    Depends on: A work logic_top behaviour_logic_top TzZ?dX]Hg`zzM=MjXKRNB2
+    Depends on: E work y XPG<zb5<23>WzF[99@O];3
+    Depends on: E work x <J]Y<mCBbmAh6a@1LB_9j1
+    Depends on: C work color_behaviour_color_cfg T;U2jk>nUQoM@QJSm::o<2
+    Depends on: C work y_behaviour_y_cfg IjlDkJd^]EJLiEbP2ZTGm2
+    Depends on: C work x_behaviour_x_cfg Hi7P04C`_od^fBLD:XOBc3
+    Depends on: A work logic_top behaviour_logic_top FC63]Dj]C>0V;MFFi@j;_2
     Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
     Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
-    Depends on: E work logic_top z[RbG^U;gkI@]M]KgE9Y?3
-    Source modified time: Tue Jan 17 13:15:56 2023
+    Depends on: E work logic_top `8JA3CF>NaYRS5iMknjGN2
+    Source modified time: Tue Jan 17 19:02:21 2023
     Source directory: /home/ghpdohmen/epo3/epo3/help
     HDL source file: VHDL/logic_top_behaviour_logic_top_cfg.vhd
     Source file: VHDL/logic_top_behaviour_logic_top_cfg.vhd
     Start location: VHDL/logic_top_behaviour_logic_top_cfg.vhd:1
-    Version string: 5Jk3nA]=4e;]aICLjWGGf2
+    Version string: UTJJWY6Cadf7hhc<9E_B>0
     Opcode format: 10.5b; VCOM SE-64 Object version 63
     VHDL language standard: 3 (VHDL-2008)
-    Compile time: Tue Jan 17 13:15:56 2023
+    Compile time: Tue Jan 17 19:10:07 2023
     Compiled in vopt flow
-    Compile options: -quiet -nologo -2008 -lower -explicit -work work
+    Compile options: -quiet -nologo -2008 -just C -lower -explicit -work work
     Compile defaults: Explicit=1 CvgOpt=0
 ENTITY main_fsm
-    Source modified time: Tue Jan 17 12:07:21 2023
+    Source modified time: Tue Jan 17 18:51:28 2023
     Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
     Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
     Source directory: /home/ghpdohmen/epo3/epo3/help
@@ -793,51 +791,51 @@ ENTITY main_fsm
     Version string: HoJN<D>RLW=l@HjkOJYK50
     Opcode format: 10.5b; VCOM SE-64 Object version 63
     VHDL language standard: 3 (VHDL-2008)
-    Compile time: Tue Jan 17 12:28:35 2023
+    Compile time: Tue Jan 17 19:09:57 2023
     Debug Symbol file exists
     Compiled in vopt flow
     Compile options: -quiet -nologo -2008 -just E -lower -explicit -work work
     Compile defaults: Explicit=1 CvgOpt=0
   ARCHITECTURE BODY behav
-    Source modified time: Tue Jan 17 13:55:51 2023
+    Source modified time: Tue Jan 17 19:02:24 2023
     Depends on: E work main_fsm HoJN<D>RLW=l@HjkOJYK50
     Depends on: P ieee numeric_std :ASDNFgHXf_ih3J@9F3Ze1
     Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
     Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
-    Source directory: /home/etuinstra/epo3/help
     HDL source file: VHDL/main_fsm-behav.vhd
     Source file: VHDL/main_fsm-behav.vhd
     Start location: VHDL/main_fsm-behav.vhd:5
-    Version string: aoMVfa1>L9jG[kZH3fziD1
+    Version string: <`bd5lQlV2ZoT[;7j@=133
     Opcode format: 10.5b; VCOM SE-64 Object version 63
     VHDL language standard: 3 (VHDL-2008)
-    Compile time: Tue Jan 17 13:55:51 2023
+    Compile time: Tue Jan 17 19:10:01 2023
     Debug Symbol file exists
     Compiled in vopt flow
-    Compile options: -quiet -nologo -2008 -lower -explicit -work work
+    Compile options: -quiet -nologo -2008 -just A -lower -explicit -work work
     Compile defaults: Explicit=1 CvgOpt=0
+    Source directory: /home/ghpdohmen/epo3/epo3/help
 VHDL CONFIGURATION main_fsm_behav_cfg
     Configuration applies to entity: main_fsm
     Block configuration applies to architecture: behav
     Depends on: P ieee numeric_std :ASDNFgHXf_ih3J@9F3Ze1
-    Depends on: A work main_fsm behav aoMVfa1>L9jG[kZH3fziD1
+    Depends on: A work main_fsm behav <`bd5lQlV2ZoT[;7j@=133
     Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
     Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
     Depends on: E work main_fsm HoJN<D>RLW=l@HjkOJYK50
-    Source modified time: Tue Jan 17 13:53:06 2023
-    Source directory: /home/etuinstra/epo3/help
+    Source modified time: Tue Jan 17 19:02:21 2023
+    Source directory: /home/ghpdohmen/epo3/epo3/help
     HDL source file: VHDL/main_fsm_behav_cfg.vhd
     Source file: VHDL/main_fsm_behav_cfg.vhd
     Start location: VHDL/main_fsm_behav_cfg.vhd:1
-    Version string: Fdj9_kTjf4iHaSFzI[4OM2
+    Version string: 44cZV5iNdQ3M7a`E6W_?W1
     Opcode format: 10.5b; VCOM SE-64 Object version 63
     VHDL language standard: 3 (VHDL-2008)
-    Compile time: Tue Jan 17 13:55:56 2023
+    Compile time: Tue Jan 17 19:10:04 2023
     Compiled in vopt flow
-    Compile options: -quiet -nologo -2008 -lower -explicit -work work
+    Compile options: -quiet -nologo -2008 -just C -lower -explicit -work work
     Compile defaults: Explicit=1 CvgOpt=0
 ENTITY mouse
-    Source modified time: Tue Jan 17 11:00:14 2023
+    Source modified time: Tue Jan 17 18:51:28 2023
     Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
     Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
     Source directory: /home/ghpdohmen/epo3/epo3/help
@@ -847,13 +845,12 @@ ENTITY mouse
     Version string: :ckk52heeQB;<4h37Q`@51
     Opcode format: 10.5b; VCOM SE-64 Object version 63
     VHDL language standard: 3 (VHDL-2008)
-    Compile time: Tue Jan 17 12:28:35 2023
+    Compile time: Tue Jan 17 19:09:57 2023
     Debug Symbol file exists
     Compiled in vopt flow
     Compile options: -quiet -nologo -2008 -just E -lower -explicit -work work
     Compile defaults: Explicit=1 CvgOpt=0
   ARCHITECTURE BODY behav
-    Source modified time: Tue Jan 17 12:07:21 2023
     Depends on: E work mouse :ckk52heeQB;<4h37Q`@51
     Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
     Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
@@ -863,12 +860,13 @@ ENTITY mouse
     Version string: elePkGYdn];[QaSZeYXGS0
     Opcode format: 10.5b; VCOM SE-64 Object version 63
     VHDL language standard: 3 (VHDL-2008)
-    Compile time: Tue Jan 17 12:29:11 2023
+    Compile time: Tue Jan 17 19:10:01 2023
     Debug Symbol file exists
     Compiled in vopt flow
     Compile options: -quiet -nologo -2008 -just A -lower -explicit -work work
     Compile defaults: Explicit=1 CvgOpt=0
     Source directory: /home/ghpdohmen/epo3/epo3/help
+    Source modified time: Tue Jan 17 18:51:28 2023
 VHDL CONFIGURATION mouse_behav_cfg
     Configuration applies to entity: mouse
     Block configuration applies to architecture: behav
@@ -881,90 +879,90 @@ VHDL CONFIGURATION mouse_behav_cfg
     Depends on: E work shiftregister_9bit HP@8dGbNC6j;FWB^m4>8i1
     Depends on: E work edge_debounce UMeX]7G`KH]ZaUQ[^Ko572
     Depends on: E work counter25mhz f^IoBGLFM4hZQmQBK>h:g3
-    Depends on: C work shiftregister_11bit_behav_cfg K6]QSnXY3la]b9`NhLo[G1
-    Depends on: C work flipflop_behav_cfg EMPW]LCA2zcKZR7YBe==:2
-    Depends on: C work main_fsm_behav_cfg Fdj9_kTjf4iHaSFzI[4OM2
-    Depends on: C work timebase_behav_cfg i00_W[djK2:_9EmOm`_aZ2
-    Depends on: C work mux_behav_cfg Q?E5S_b7ISEbj;jD?ZQn>1
-    Depends on: C work sendfsm_behav_cfg CkWRPAm:5^Eb0U=3C8bbY3
+    Depends on: C work shiftregister_11bit_behav_cfg ]M7X^HW<X8?GelOC?;H;?2
+    Depends on: C work flipflop_behav_cfg L=Oc2Y2E5S6KQOAiTJmaH1
+    Depends on: C work main_fsm_behav_cfg 44cZV5iNdQ3M7a`E6W_?W1
+    Depends on: C work timebase_behav_cfg Rz`UY1n@OBffjO>;omzLe1
+    Depends on: C work mux_behav_cfg RAgMdFdRHiKZz8XQlNgNa2
+    Depends on: C work sendfsm_behav_cfg ]ONPUoAmaf=B_44oo7;6E2
     Depends on: P ieee numeric_std :ASDNFgHXf_ih3J@9F3Ze1
-    Depends on: C work shiftregister_9bit_behav_cfg d:NlaoYQVcTe;K7f>VVfI0
-    Depends on: C work edge_debounce_behav_cfg 1UX?H^nJ[UjLUX9l[9zkB3
-    Depends on: C work counter25mhz_behav_cfg Vk1?mUX2RQCSSmPF@od`92
+    Depends on: C work shiftregister_9bit_behav_cfg jFVKc6zK4YRWYR6H_I@L30
+    Depends on: C work edge_debounce_behav_cfg RM;gjC=S_=k[;R0FeZo_T1
+    Depends on: C work counter25mhz_behav_cfg Yz4QBH@LE`9BzWN24GGY?3
     Depends on: A work mouse behav elePkGYdn];[QaSZeYXGS0
     Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
     Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
     Depends on: E work mouse :ckk52heeQB;<4h37Q`@51
-    Source modified time: Tue Jan 17 13:53:06 2023
-    Source directory: /home/etuinstra/epo3/help
+    Source modified time: Tue Jan 17 19:02:21 2023
+    Source directory: /home/ghpdohmen/epo3/epo3/help
     HDL source file: VHDL/mouse_behav_cfg.vhd
     Source file: VHDL/mouse_behav_cfg.vhd
     Start location: VHDL/mouse_behav_cfg.vhd:1
-    Version string: j^CUnZ16h9LYOjBm:d?z43
+    Version string: fROJ5L;CDS3FL1gPBihaQ1
     Opcode format: 10.5b; VCOM SE-64 Object version 63
     VHDL language standard: 3 (VHDL-2008)
-    Compile time: Tue Jan 17 13:55:56 2023
+    Compile time: Tue Jan 17 19:10:07 2023
     Compiled in vopt flow
-    Compile options: -quiet -nologo -2008 -lower -explicit -work work
+    Compile options: -quiet -nologo -2008 -just C -lower -explicit -work work
     Compile defaults: Explicit=1 CvgOpt=0
 ENTITY mouse_logic
-    Source modified time: Tue Jan 17 13:07:08 2023
+    Source modified time: Tue Jan 17 18:51:28 2023
     Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
     Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
     Source directory: /home/ghpdohmen/epo3/epo3/help
     HDL source file: VHDL/mouse_logic.vhd
     Source file: VHDL/mouse_logic.vhd
     Start location: VHDL/mouse_logic.vhd:4
-    Version string: :c0l;jMQbm@zIC8MGkO0H3
+    Version string: FR1D3?4GZVd<lXD6HCU]f2
     Opcode format: 10.5b; VCOM SE-64 Object version 63
     VHDL language standard: 3 (VHDL-2008)
-    Compile time: Tue Jan 17 13:07:08 2023
+    Compile time: Tue Jan 17 19:09:57 2023
     Debug Symbol file exists
     Compiled in vopt flow
-    Compile options: -quiet -nologo -2008 -lower -explicit -work work
+    Compile options: -quiet -nologo -2008 -just E -lower -explicit -work work
     Compile defaults: Explicit=1 CvgOpt=0
   ARCHITECTURE BODY behav
-    Depends on: E work mouse_logic :c0l;jMQbm@zIC8MGkO0H3
+    Depends on: E work mouse_logic FR1D3?4GZVd<lXD6HCU]f2
     Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
     Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
     HDL source file: VHDL/mouse_logic-behav.vhd
     Source file: VHDL/mouse_logic-behav.vhd
     Start location: VHDL/mouse_logic-behav.vhd:4
-    Version string: Wm4JE=a:39ISYjfH;m5F:2
+    Version string: 6o_3<aK92d`Qf0MSI95hP0
     Opcode format: 10.5b; VCOM SE-64 Object version 63
     VHDL language standard: 3 (VHDL-2008)
-    Compile time: Tue Jan 17 13:07:14 2023
+    Compile time: Tue Jan 17 19:10:01 2023
     Debug Symbol file exists
     Compiled in vopt flow
-    Compile options: -quiet -nologo -2008 -lower -explicit -work work
+    Compile options: -quiet -nologo -2008 -just A -lower -explicit -work work
     Compile defaults: Explicit=1 CvgOpt=0
     Source directory: /home/ghpdohmen/epo3/epo3/help
-    Source modified time: Tue Jan 17 13:07:08 2023
+    Source modified time: Tue Jan 17 18:51:28 2023
 VHDL CONFIGURATION mouse_logic_behav_cfg
     Configuration applies to entity: mouse_logic
     Block configuration applies to architecture: behav
-    Depends on: E work logic_top z[RbG^U;gkI@]M]KgE9Y?3
+    Depends on: E work logic_top `8JA3CF>NaYRS5iMknjGN2
     Depends on: E work mouse :ckk52heeQB;<4h37Q`@51
-    Depends on: C work logic_top_behaviour_logic_top_cfg 5Jk3nA]=4e;]aICLjWGGf2
-    Depends on: C work mouse_behav_cfg j^CUnZ16h9LYOjBm:d?z43
-    Depends on: A work mouse_logic behav Wm4JE=a:39ISYjfH;m5F:2
+    Depends on: C work logic_top_behaviour_logic_top_cfg UTJJWY6Cadf7hhc<9E_B>0
+    Depends on: C work mouse_behav_cfg fROJ5L;CDS3FL1gPBihaQ1
+    Depends on: A work mouse_logic behav 6o_3<aK92d`Qf0MSI95hP0
     Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
     Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
-    Depends on: E work mouse_logic :c0l;jMQbm@zIC8MGkO0H3
-    Source modified time: Tue Jan 17 13:53:06 2023
-    Source directory: /home/etuinstra/epo3/help
+    Depends on: E work mouse_logic FR1D3?4GZVd<lXD6HCU]f2
+    Source modified time: Tue Jan 17 19:02:21 2023
+    Source directory: /home/ghpdohmen/epo3/epo3/help
     HDL source file: VHDL/mouse_logic_behav_cfg.vhd
     Source file: VHDL/mouse_logic_behav_cfg.vhd
     Start location: VHDL/mouse_logic_behav_cfg.vhd:1
-    Version string: Qa73fPCS:Q8QU4fIHI4?a2
+    Version string: Jah4[dFbF@^@E:CCg250c3
     Opcode format: 10.5b; VCOM SE-64 Object version 63
     VHDL language standard: 3 (VHDL-2008)
-    Compile time: Tue Jan 17 13:55:56 2023
+    Compile time: Tue Jan 17 19:10:07 2023
     Compiled in vopt flow
-    Compile options: -quiet -nologo -2008 -lower -explicit -work work
+    Compile options: -quiet -nologo -2008 -just C -lower -explicit -work work
     Compile defaults: Explicit=1 CvgOpt=0
 ENTITY mouse_tb
-    Source modified time: Tue Jan 17 11:00:14 2023
+    Source modified time: Tue Jan 17 18:51:28 2023
     Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
     Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
     Source directory: /home/ghpdohmen/epo3/epo3/help
@@ -974,7 +972,7 @@ ENTITY mouse_tb
     Version string: nU8EdZ=EGjbJ4lFNZ<CQ`2
     Opcode format: 10.5b; VCOM SE-64 Object version 63
     VHDL language standard: 3 (VHDL-2008)
-    Compile time: Tue Jan 17 12:28:35 2023
+    Compile time: Tue Jan 17 19:09:57 2023
     Debug Symbol file exists
     Compiled in vopt flow
     Compile options: -quiet -nologo -2008 -just E -lower -explicit -work work
@@ -989,36 +987,36 @@ ENTITY mouse_tb
     Version string: PPd0o3NUO6M=o@jVY0d>k1
     Opcode format: 10.5b; VCOM SE-64 Object version 63
     VHDL language standard: 3 (VHDL-2008)
-    Compile time: Tue Jan 17 12:29:32 2023
+    Compile time: Tue Jan 17 19:10:01 2023
     Debug Symbol file exists
     Compiled in vopt flow
     Compile options: -quiet -nologo -2008 -just A -lower -explicit -work work
     Compile defaults: Explicit=1 CvgOpt=0
     Source directory: /home/ghpdohmen/epo3/epo3/help
-    Source modified time: Tue Jan 17 11:00:14 2023
+    Source modified time: Tue Jan 17 18:51:28 2023
 VHDL CONFIGURATION mouse_tb_behav_cfg
     Configuration applies to entity: mouse_tb
     Block configuration applies to architecture: behav
     Depends on: E work mouse :ckk52heeQB;<4h37Q`@51
-    Depends on: C work mouse_behav_cfg j^CUnZ16h9LYOjBm:d?z43
+    Depends on: C work mouse_behav_cfg fROJ5L;CDS3FL1gPBihaQ1
     Depends on: A work mouse_tb behav PPd0o3NUO6M=o@jVY0d>k1
     Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
     Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
     Depends on: E work mouse_tb nU8EdZ=EGjbJ4lFNZ<CQ`2
-    Source modified time: Tue Jan 17 13:53:06 2023
-    Source directory: /home/etuinstra/epo3/help
+    Source modified time: Tue Jan 17 19:02:21 2023
+    Source directory: /home/ghpdohmen/epo3/epo3/help
     HDL source file: VHDL/mouse_tb_behav_cfg.vhd
     Source file: VHDL/mouse_tb_behav_cfg.vhd
     Start location: VHDL/mouse_tb_behav_cfg.vhd:1
-    Version string: geB1<_dBc_4DC8A<4B[>21
+    Version string: 3Te^1Y5`ZLH=zh[GzaC>L2
     Opcode format: 10.5b; VCOM SE-64 Object version 63
     VHDL language standard: 3 (VHDL-2008)
-    Compile time: Tue Jan 17 13:55:56 2023
+    Compile time: Tue Jan 17 19:10:07 2023
     Compiled in vopt flow
-    Compile options: -quiet -nologo -2008 -lower -explicit -work work
+    Compile options: -quiet -nologo -2008 -just C -lower -explicit -work work
     Compile defaults: Explicit=1 CvgOpt=0
 ENTITY mux
-    Source modified time: Tue Jan 17 11:00:14 2023
+    Source modified time: Tue Jan 17 18:51:28 2023
     Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
     Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
     Source directory: /home/ghpdohmen/epo3/epo3/help
@@ -1028,13 +1026,12 @@ ENTITY mux
     Version string: WU@gocFk`@M4L]UU8XCY;0
     Opcode format: 10.5b; VCOM SE-64 Object version 63
     VHDL language standard: 3 (VHDL-2008)
-    Compile time: Tue Jan 17 12:28:35 2023
+    Compile time: Tue Jan 17 19:09:57 2023
     Debug Symbol file exists
     Compiled in vopt flow
     Compile options: -quiet -nologo -2008 -just E -lower -explicit -work work
     Compile defaults: Explicit=1 CvgOpt=0
   ARCHITECTURE BODY behav
-    Source modified time: Tue Jan 17 12:07:21 2023
     Depends on: E work mux WU@gocFk`@M4L]UU8XCY;0
     Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
     Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
@@ -1044,12 +1041,13 @@ ENTITY mux
     Version string: 2Y1Z3CMaA4_Jf_<VeCYOn2
     Opcode format: 10.5b; VCOM SE-64 Object version 63
     VHDL language standard: 3 (VHDL-2008)
-    Compile time: Tue Jan 17 12:29:11 2023
+    Compile time: Tue Jan 17 19:10:01 2023
     Debug Symbol file exists
     Compiled in vopt flow
     Compile options: -quiet -nologo -2008 -just A -lower -explicit -work work
     Compile defaults: Explicit=1 CvgOpt=0
     Source directory: /home/ghpdohmen/epo3/epo3/help
+    Source modified time: Tue Jan 17 18:51:28 2023
 VHDL CONFIGURATION mux_behav_cfg
     Configuration applies to entity: mux
     Block configuration applies to architecture: behav
@@ -1057,20 +1055,20 @@ VHDL CONFIGURATION mux_behav_cfg
     Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
     Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
     Depends on: E work mux WU@gocFk`@M4L]UU8XCY;0
-    Source modified time: Tue Jan 17 13:15:02 2023
+    Source modified time: Tue Jan 17 19:02:21 2023
     Source directory: /home/ghpdohmen/epo3/epo3/help
     HDL source file: VHDL/mux_behav_cfg.vhd
     Source file: VHDL/mux_behav_cfg.vhd
     Start location: VHDL/mux_behav_cfg.vhd:1
-    Version string: Q?E5S_b7ISEbj;jD?ZQn>1
+    Version string: RAgMdFdRHiKZz8XQlNgNa2
     Opcode format: 10.5b; VCOM SE-64 Object version 63
     VHDL language standard: 3 (VHDL-2008)
-    Compile time: Tue Jan 17 13:15:03 2023
+    Compile time: Tue Jan 17 19:10:05 2023
     Compiled in vopt flow
-    Compile options: -quiet -nologo -2008 -lower -explicit -work work
+    Compile options: -quiet -nologo -2008 -just C -lower -explicit -work work
     Compile defaults: Explicit=1 CvgOpt=0
 ENTITY pixel
-    Source modified time: Tue Jan 17 11:56:59 2023
+    Source modified time: Tue Jan 17 18:51:28 2023
     Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
     Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
     Source directory: /home/ghpdohmen/epo3/epo3/help
@@ -1080,28 +1078,45 @@ ENTITY pixel
     Version string: InmaJ6JT=D20PQ3iHgL>`0
     Opcode format: 10.5b; VCOM SE-64 Object version 63
     VHDL language standard: 3 (VHDL-2008)
-    Compile time: Tue Jan 17 12:28:36 2023
+    Compile time: Tue Jan 17 19:09:57 2023
     Debug Symbol file exists
     Compiled in vopt flow
     Compile options: -quiet -nologo -2008 -just E -lower -explicit -work work
     Compile defaults: Explicit=1 CvgOpt=0
   ARCHITECTURE BODY synthesised
-    Source modified time: Tue Jan 17 13:22:20 2023
     Depends on: E work pixel InmaJ6JT=D20PQ3iHgL>`0
     Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
     Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
     HDL source file: VHDL/pixel_SYN.vhd
     Source file: VHDL/pixel_SYN.vhd
     Start location: VHDL/pixel_SYN.vhd:7
-    Version string: `f7HEL_g?0^T_Zl3M2nke2
+    Version string: H:;]]D>kP7Vo]B<n@cNnR2
     Opcode format: 10.5b; VCOM SE-64 Object version 63
     VHDL language standard: 3 (VHDL-2008)
-    Compile time: Tue Jan 17 13:29:09 2023
+    Compile time: Tue Jan 17 19:10:02 2023
     Debug Symbol file exists
     Compiled in vopt flow
-    Compile options: -quiet -nologo -2008 -lower -explicit -work work
+    Compile options: -quiet -nologo -2008 -just A -lower -explicit -work work
     Compile defaults: Explicit=1 CvgOpt=0
     Source directory: /home/ghpdohmen/epo3/epo3/help
+    Source modified time: Tue Jan 17 18:51:28 2023
+  ARCHITECTURE BODY routed
+    Depends on: E work pixel InmaJ6JT=D20PQ3iHgL>`0
+    Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
+    Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
+    HDL source file: VHDL/pixel_PAR.vhd
+    Source file: VHDL/pixel_PAR.vhd
+    Start location: VHDL/pixel_PAR.vhd:7
+    Version string: fOm6DO=^GzS>^Y:nzE?D=0
+    Opcode format: 10.5b; VCOM SE-64 Object version 63
+    VHDL language standard: 3 (VHDL-2008)
+    Compile time: Tue Jan 17 19:10:02 2023
+    Debug Symbol file exists
+    Compiled in vopt flow
+    Compile options: -quiet -nologo -2008 -just A -lower -explicit -work work
+    Compile defaults: Explicit=1 CvgOpt=0
+    Source directory: /home/ghpdohmen/epo3/epo3/help
+    Source modified time: Tue Jan 17 18:51:28 2023
   ARCHITECTURE BODY behav
     Depends on: E work pixel InmaJ6JT=D20PQ3iHgL>`0
     Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
@@ -1112,58 +1127,58 @@ ENTITY pixel
     Version string: zFP=?:UXVKB8nn^PBQB=22
     Opcode format: 10.5b; VCOM SE-64 Object version 63
     VHDL language standard: 3 (VHDL-2008)
-    Compile time: Tue Jan 17 12:29:33 2023
+    Compile time: Tue Jan 17 19:10:01 2023
     Debug Symbol file exists
     Compiled in vopt flow
     Compile options: -quiet -nologo -2008 -just A -lower -explicit -work work
     Compile defaults: Explicit=1 CvgOpt=0
     Source directory: /home/ghpdohmen/epo3/epo3/help
-    Source modified time: Tue Jan 17 11:56:59 2023
+    Source modified time: Tue Jan 17 18:51:28 2023
 VHDL CONFIGURATION pixel_behav_cfg
     Configuration applies to entity: pixel
     Block configuration applies to architecture: behav
-    Depends on: E work graphic_toplvl 7:PQaF45i@bMgF=mR[I@31
-    Depends on: E work mouse_logic :c0l;jMQbm@zIC8MGkO0H3
+    Depends on: E work graphic_toplvl hlzBDl[@e>U^FeeF=HPfH3
+    Depends on: E work mouse_logic FR1D3?4GZVd<lXD6HCU]f2
     Depends on: P ieee numeric_std :ASDNFgHXf_ih3J@9F3Ze1
-    Depends on: C work graphic_toplvl_behaviour_cfg QI2aFLLgEE`Z7cIJiLXH02
-    Depends on: C work mouse_logic_behav_cfg Qa73fPCS:Q8QU4fIHI4?a2
+    Depends on: C work graphic_toplvl_behaviour_cfg LAiKbWojSlER1^Gbf4zW20
+    Depends on: C work mouse_logic_behav_cfg Jah4[dFbF@^@E:CCg250c3
     Depends on: A work pixel behav zFP=?:UXVKB8nn^PBQB=22
     Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
     Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
     Depends on: E work pixel InmaJ6JT=D20PQ3iHgL>`0
-    Source modified time: Tue Jan 17 13:53:06 2023
-    Source directory: /home/etuinstra/epo3/help
+    Source modified time: Tue Jan 17 19:02:21 2023
+    Source directory: /home/ghpdohmen/epo3/epo3/help
     HDL source file: VHDL/pixel_behav_cfg.vhd
     Source file: VHDL/pixel_behav_cfg.vhd
     Start location: VHDL/pixel_behav_cfg.vhd:1
-    Version string: kVSG3=JY9S_XB5Wh3_k6T1
+    Version string: V8EMTk9A3LbR@WJ[ESPLb0
     Opcode format: 10.5b; VCOM SE-64 Object version 63
     VHDL language standard: 3 (VHDL-2008)
-    Compile time: Tue Jan 17 13:55:56 2023
+    Compile time: Tue Jan 17 19:10:08 2023
     Compiled in vopt flow
-    Compile options: -quiet -nologo -2008 -lower -explicit -work work
+    Compile options: -quiet -nologo -2008 -just C -lower -explicit -work work
     Compile defaults: Explicit=1 CvgOpt=0
 VHDL CONFIGURATION pixel_synthesised_cfg
     Configuration applies to entity: pixel
     Block configuration applies to architecture: synthesised
-    Depends on: A work pixel synthesised `f7HEL_g?0^T_Zl3M2nke2
+    Depends on: A work pixel synthesised H:;]]D>kP7Vo]B<n@cNnR2
     Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
     Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
     Depends on: E work pixel InmaJ6JT=D20PQ3iHgL>`0
-    Source modified time: Tue Jan 17 13:29:22 2023
+    Source modified time: Tue Jan 17 19:02:21 2023
     Source directory: /home/ghpdohmen/epo3/epo3/help
     HDL source file: VHDL/pixel_synthesised_cfg.vhd
     Source file: VHDL/pixel_synthesised_cfg.vhd
     Start location: VHDL/pixel_synthesised_cfg.vhd:1
-    Version string: DYf334QEm@Vcn?i;dKF<D1
+    Version string: N@n5inJ>5;0E3i]G2L1X@0
     Opcode format: 10.5b; VCOM SE-64 Object version 63
     VHDL language standard: 3 (VHDL-2008)
-    Compile time: Tue Jan 17 13:29:22 2023
+    Compile time: Tue Jan 17 19:10:05 2023
     Compiled in vopt flow
-    Compile options: -quiet -nologo -2008 -lower -explicit -work work
+    Compile options: -quiet -nologo -2008 -just C -lower -explicit -work work
     Compile defaults: Explicit=1 CvgOpt=0
 ENTITY rom_cursor
-    Source modified time: Tue Jan 17 11:56:59 2023
+    Source modified time: Tue Jan 17 18:51:28 2023
     Depends on: P ieee numeric_std :ASDNFgHXf_ih3J@9F3Ze1
     Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
     Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
@@ -1174,7 +1189,7 @@ ENTITY rom_cursor
     Version string: <THNUe3Z3M78e7Wb3FOjD1
     Opcode format: 10.5b; VCOM SE-64 Object version 63
     VHDL language standard: 3 (VHDL-2008)
-    Compile time: Tue Jan 17 12:27:30 2023
+    Compile time: Tue Jan 17 19:09:55 2023
     Debug Symbol file exists
     Compiled in vopt flow
     Compile options: -quiet -nologo -2008 -just E -lower -explicit -work work
@@ -1188,14 +1203,14 @@ ENTITY rom_cursor
     Version string: QlbRo=EX6BiM`>bDT90gV3
     Opcode format: 10.5b; VCOM SE-64 Object version 63
     VHDL language standard: 3 (VHDL-2008)
-    Compile time: Tue Jan 17 12:27:31 2023
+    Compile time: Tue Jan 17 19:09:59 2023
     Debug Symbol file exists
     Compiled in vopt flow
     Compile options: -quiet -nologo -2008 -just A -lower -explicit -work work
     Compile defaults: Explicit=1 CvgOpt=0
     Source directory: /home/ghpdohmen/epo3/epo3/help
     Source file: VHDL/ROM.vhd
-    Source modified time: Tue Jan 17 11:56:59 2023
+    Source modified time: Tue Jan 17 18:51:28 2023
     HDL source file: VHDL/ROM.vhd
 VHDL CONFIGURATION rom_cursor_behavioral_cfg
     Configuration applies to entity: rom_cursor
@@ -1205,20 +1220,20 @@ VHDL CONFIGURATION rom_cursor_behavioral_cfg
     Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
     Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
     Depends on: E work rom_cursor <THNUe3Z3M78e7Wb3FOjD1
-    Source modified time: Tue Jan 17 13:14:59 2023
+    Source modified time: Tue Jan 17 19:02:21 2023
     Source directory: /home/ghpdohmen/epo3/epo3/help
     HDL source file: VHDL/rom_cursor_behavioral_cfg.vhd
     Source file: VHDL/rom_cursor_behavioral_cfg.vhd
     Start location: VHDL/rom_cursor_behavioral_cfg.vhd:1
-    Version string: CAXh7TF^lhIB@28P5eKSA3
+    Version string: NUbVNMGdIa]53WYfZkek72
     Opcode format: 10.5b; VCOM SE-64 Object version 63
     VHDL language standard: 3 (VHDL-2008)
-    Compile time: Tue Jan 17 13:14:59 2023
+    Compile time: Tue Jan 17 19:10:05 2023
     Compiled in vopt flow
-    Compile options: -quiet -nologo -2008 -lower -explicit -work work
+    Compile options: -quiet -nologo -2008 -just C -lower -explicit -work work
     Compile defaults: Explicit=1 CvgOpt=0
 ENTITY sendfsm
-    Source modified time: Tue Jan 17 11:00:14 2023
+    Source modified time: Tue Jan 17 18:51:28 2023
     Depends on: P ieee numeric_std :ASDNFgHXf_ih3J@9F3Ze1
     Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
     Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
@@ -1229,7 +1244,7 @@ ENTITY sendfsm
     Version string: Ao8o[mO88H=U=i@f>G`JZ1
     Opcode format: 10.5b; VCOM SE-64 Object version 63
     VHDL language standard: 3 (VHDL-2008)
-    Compile time: Tue Jan 17 12:28:35 2023
+    Compile time: Tue Jan 17 19:09:58 2023
     Debug Symbol file exists
     Compiled in vopt flow
     Compile options: -quiet -nologo -2008 -just E -lower -explicit -work work
@@ -1245,13 +1260,13 @@ ENTITY sendfsm
     Version string: 9XLGV8f89gR]^h_jUYHBD2
     Opcode format: 10.5b; VCOM SE-64 Object version 63
     VHDL language standard: 3 (VHDL-2008)
-    Compile time: Tue Jan 17 12:29:32 2023
+    Compile time: Tue Jan 17 19:10:02 2023
     Debug Symbol file exists
     Compiled in vopt flow
     Compile options: -quiet -nologo -2008 -just A -lower -explicit -work work
     Compile defaults: Explicit=1 CvgOpt=0
     Source directory: /home/ghpdohmen/epo3/epo3/help
-    Source modified time: Tue Jan 17 11:00:14 2023
+    Source modified time: Tue Jan 17 18:51:28 2023
 VHDL CONFIGURATION sendfsm_behav_cfg
     Configuration applies to entity: sendfsm
     Block configuration applies to architecture: behav
@@ -1260,20 +1275,20 @@ VHDL CONFIGURATION sendfsm_behav_cfg
     Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
     Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
     Depends on: E work sendfsm Ao8o[mO88H=U=i@f>G`JZ1
-    Source modified time: Tue Jan 17 13:14:54 2023
+    Source modified time: Tue Jan 17 19:02:21 2023
     Source directory: /home/ghpdohmen/epo3/epo3/help
     HDL source file: VHDL/sendfsm_behav_cfg.vhd
     Source file: VHDL/sendfsm_behav_cfg.vhd
     Start location: VHDL/sendfsm_behav_cfg.vhd:1
-    Version string: CkWRPAm:5^Eb0U=3C8bbY3
+    Version string: ]ONPUoAmaf=B_44oo7;6E2
     Opcode format: 10.5b; VCOM SE-64 Object version 63
     VHDL language standard: 3 (VHDL-2008)
-    Compile time: Tue Jan 17 13:14:55 2023
+    Compile time: Tue Jan 17 19:10:05 2023
     Compiled in vopt flow
-    Compile options: -quiet -nologo -2008 -lower -explicit -work work
+    Compile options: -quiet -nologo -2008 -just C -lower -explicit -work work
     Compile defaults: Explicit=1 CvgOpt=0
 ENTITY shiftregister_11bit
-    Source modified time: Tue Jan 17 11:00:14 2023
+    Source modified time: Tue Jan 17 18:51:28 2023
     Depends on: P ieee numeric_std :ASDNFgHXf_ih3J@9F3Ze1
     Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
     Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
@@ -1284,7 +1299,7 @@ ENTITY shiftregister_11bit
     Version string: iEDdbNZ<RReG9df[b]TdB3
     Opcode format: 10.5b; VCOM SE-64 Object version 63
     VHDL language standard: 3 (VHDL-2008)
-    Compile time: Tue Jan 17 12:28:35 2023
+    Compile time: Tue Jan 17 19:09:58 2023
     Debug Symbol file exists
     Compiled in vopt flow
     Compile options: -quiet -nologo -2008 -just E -lower -explicit -work work
@@ -1300,13 +1315,13 @@ ENTITY shiftregister_11bit
     Version string: Z1F9CWnOFi<PQfV<DzI3M0
     Opcode format: 10.5b; VCOM SE-64 Object version 63
     VHDL language standard: 3 (VHDL-2008)
-    Compile time: Tue Jan 17 12:29:32 2023
+    Compile time: Tue Jan 17 19:10:02 2023
     Debug Symbol file exists
     Compiled in vopt flow
     Compile options: -quiet -nologo -2008 -just A -lower -explicit -work work
     Compile defaults: Explicit=1 CvgOpt=0
     Source directory: /home/ghpdohmen/epo3/epo3/help
-    Source modified time: Tue Jan 17 11:00:14 2023
+    Source modified time: Tue Jan 17 18:51:28 2023
 VHDL CONFIGURATION shiftregister_11bit_behav_cfg
     Configuration applies to entity: shiftregister_11bit
     Block configuration applies to architecture: behav
@@ -1315,20 +1330,20 @@ VHDL CONFIGURATION shiftregister_11bit_behav_cfg
     Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
     Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
     Depends on: E work shiftregister_11bit iEDdbNZ<RReG9df[b]TdB3
-    Source modified time: Tue Jan 17 13:14:45 2023
+    Source modified time: Tue Jan 17 19:02:21 2023
     Source directory: /home/ghpdohmen/epo3/epo3/help
     HDL source file: VHDL/shiftregister_11bit_behav_cfg.vhd
     Source file: VHDL/shiftregister_11bit_behav_cfg.vhd
     Start location: VHDL/shiftregister_11bit_behav_cfg.vhd:1
-    Version string: K6]QSnXY3la]b9`NhLo[G1
+    Version string: ]M7X^HW<X8?GelOC?;H;?2
     Opcode format: 10.5b; VCOM SE-64 Object version 63
     VHDL language standard: 3 (VHDL-2008)
-    Compile time: Tue Jan 17 13:14:45 2023
+    Compile time: Tue Jan 17 19:10:05 2023
     Compiled in vopt flow
-    Compile options: -quiet -nologo -2008 -lower -explicit -work work
+    Compile options: -quiet -nologo -2008 -just C -lower -explicit -work work
     Compile defaults: Explicit=1 CvgOpt=0
 ENTITY shiftregister_11bit_tb
-    Source modified time: Tue Jan 17 12:07:22 2023
+    Source modified time: Tue Jan 17 18:51:28 2023
     Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
     Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
     Source directory: /home/ghpdohmen/epo3/epo3/help
@@ -1338,7 +1353,7 @@ ENTITY shiftregister_11bit_tb
     Version string: JmT^V@B>4<TBUWVzY6VJY0
     Opcode format: 10.5b; VCOM SE-64 Object version 63
     VHDL language standard: 3 (VHDL-2008)
-    Compile time: Tue Jan 17 12:28:36 2023
+    Compile time: Tue Jan 17 19:09:58 2023
     Debug Symbol file exists
     Compiled in vopt flow
     Compile options: -quiet -nologo -2008 -just E -lower -explicit -work work
@@ -1353,37 +1368,37 @@ ENTITY shiftregister_11bit_tb
     Version string: eH[T9c>T^2GFUGkJIZSoR3
     Opcode format: 10.5b; VCOM SE-64 Object version 63
     VHDL language standard: 3 (VHDL-2008)
-    Compile time: Tue Jan 17 12:29:33 2023
+    Compile time: Tue Jan 17 19:10:03 2023
     Debug Symbol file exists
     Compiled in vopt flow
     Compile options: -quiet -nologo -2008 -just A -lower -explicit -work work
     Compile defaults: Explicit=1 CvgOpt=0
     Source directory: /home/ghpdohmen/epo3/epo3/help
-    Source modified time: Tue Jan 17 12:07:22 2023
+    Source modified time: Tue Jan 17 18:51:28 2023
 VHDL CONFIGURATION shiftregister_11bit_tb_behaviour_cfg
     Configuration applies to entity: shiftregister_11bit_tb
     Block configuration applies to architecture: behaviour
     Depends on: E work shiftregister_11bit iEDdbNZ<RReG9df[b]TdB3
     Depends on: P ieee numeric_std :ASDNFgHXf_ih3J@9F3Ze1
-    Depends on: C work shiftregister_11bit_behav_cfg K6]QSnXY3la]b9`NhLo[G1
+    Depends on: C work shiftregister_11bit_behav_cfg ]M7X^HW<X8?GelOC?;H;?2
     Depends on: A work shiftregister_11bit_tb behaviour eH[T9c>T^2GFUGkJIZSoR3
     Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
     Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
     Depends on: E work shiftregister_11bit_tb JmT^V@B>4<TBUWVzY6VJY0
-    Source modified time: Tue Jan 17 13:14:52 2023
+    Source modified time: Tue Jan 17 19:02:21 2023
     Source directory: /home/ghpdohmen/epo3/epo3/help
     HDL source file: VHDL/shiftregister_11bit_tb_behaviour_cfg.vhd
     Source file: VHDL/shiftregister_11bit_tb_behaviour_cfg.vhd
     Start location: VHDL/shiftregister_11bit_tb_behaviour_cfg.vhd:1
-    Version string: CfoQ4D0ae[YHCD4T3aX@;2
+    Version string: GdcalV5DB`Am>KZECJWBl2
     Opcode format: 10.5b; VCOM SE-64 Object version 63
     VHDL language standard: 3 (VHDL-2008)
-    Compile time: Tue Jan 17 13:14:52 2023
+    Compile time: Tue Jan 17 19:10:07 2023
     Compiled in vopt flow
-    Compile options: -quiet -nologo -2008 -lower -explicit -work work
+    Compile options: -quiet -nologo -2008 -just C -lower -explicit -work work
     Compile defaults: Explicit=1 CvgOpt=0
 ENTITY shiftregister_9bit
-    Source modified time: Tue Jan 17 11:00:14 2023
+    Source modified time: Tue Jan 17 18:51:28 2023
     Depends on: P ieee numeric_std :ASDNFgHXf_ih3J@9F3Ze1
     Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
     Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
@@ -1394,7 +1409,7 @@ ENTITY shiftregister_9bit
     Version string: HP@8dGbNC6j;FWB^m4>8i1
     Opcode format: 10.5b; VCOM SE-64 Object version 63
     VHDL language standard: 3 (VHDL-2008)
-    Compile time: Tue Jan 17 12:28:35 2023
+    Compile time: Tue Jan 17 19:09:58 2023
     Debug Symbol file exists
     Compiled in vopt flow
     Compile options: -quiet -nologo -2008 -just E -lower -explicit -work work
@@ -1410,13 +1425,13 @@ ENTITY shiftregister_9bit
     Version string: ;Wnk8Sb;=c?aljTo0Xkng3
     Opcode format: 10.5b; VCOM SE-64 Object version 63
     VHDL language standard: 3 (VHDL-2008)
-    Compile time: Tue Jan 17 12:29:33 2023
+    Compile time: Tue Jan 17 19:10:03 2023
     Debug Symbol file exists
     Compiled in vopt flow
     Compile options: -quiet -nologo -2008 -just A -lower -explicit -work work
     Compile defaults: Explicit=1 CvgOpt=0
     Source directory: /home/ghpdohmen/epo3/epo3/help
-    Source modified time: Tue Jan 17 11:00:14 2023
+    Source modified time: Tue Jan 17 18:51:28 2023
 VHDL CONFIGURATION shiftregister_9bit_behav_cfg
     Configuration applies to entity: shiftregister_9bit
     Block configuration applies to architecture: behav
@@ -1425,20 +1440,20 @@ VHDL CONFIGURATION shiftregister_9bit_behav_cfg
     Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
     Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
     Depends on: E work shiftregister_9bit HP@8dGbNC6j;FWB^m4>8i1
-    Source modified time: Tue Jan 17 13:14:39 2023
+    Source modified time: Tue Jan 17 19:02:21 2023
     Source directory: /home/ghpdohmen/epo3/epo3/help
     HDL source file: VHDL/shiftregister_9bit_behav_cfg.vhd
     Source file: VHDL/shiftregister_9bit_behav_cfg.vhd
     Start location: VHDL/shiftregister_9bit_behav_cfg.vhd:1
-    Version string: d:NlaoYQVcTe;K7f>VVfI0
+    Version string: jFVKc6zK4YRWYR6H_I@L30
     Opcode format: 10.5b; VCOM SE-64 Object version 63
     VHDL language standard: 3 (VHDL-2008)
-    Compile time: Tue Jan 17 13:14:39 2023
+    Compile time: Tue Jan 17 19:10:06 2023
     Compiled in vopt flow
-    Compile options: -quiet -nologo -2008 -lower -explicit -work work
+    Compile options: -quiet -nologo -2008 -just C -lower -explicit -work work
     Compile defaults: Explicit=1 CvgOpt=0
 ENTITY timebase
-    Source modified time: Tue Jan 17 11:00:14 2023
+    Source modified time: Tue Jan 17 18:51:28 2023
     Depends on: P ieee numeric_std :ASDNFgHXf_ih3J@9F3Ze1
     Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
     Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
@@ -1449,7 +1464,7 @@ ENTITY timebase
     Version string: U8[DmM6e2]TTg^l`:SdMX0
     Opcode format: 10.5b; VCOM SE-64 Object version 63
     VHDL language standard: 3 (VHDL-2008)
-    Compile time: Tue Jan 17 12:28:36 2023
+    Compile time: Tue Jan 17 19:09:58 2023
     Debug Symbol file exists
     Compiled in vopt flow
     Compile options: -quiet -nologo -2008 -just E -lower -explicit -work work
@@ -1465,13 +1480,13 @@ ENTITY timebase
     Version string: ^lX]QPBA82;b<PXMJ_Z=U1
     Opcode format: 10.5b; VCOM SE-64 Object version 63
     VHDL language standard: 3 (VHDL-2008)
-    Compile time: Tue Jan 17 12:29:33 2023
+    Compile time: Tue Jan 17 19:10:03 2023
     Debug Symbol file exists
     Compiled in vopt flow
     Compile options: -quiet -nologo -2008 -just A -lower -explicit -work work
     Compile defaults: Explicit=1 CvgOpt=0
     Source directory: /home/ghpdohmen/epo3/epo3/help
-    Source modified time: Tue Jan 17 11:00:14 2023
+    Source modified time: Tue Jan 17 18:51:28 2023
 VHDL CONFIGURATION timebase_behav_cfg
     Configuration applies to entity: timebase
     Block configuration applies to architecture: behav
@@ -1480,20 +1495,20 @@ VHDL CONFIGURATION timebase_behav_cfg
     Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
     Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
     Depends on: E work timebase U8[DmM6e2]TTg^l`:SdMX0
-    Source modified time: Tue Jan 17 13:14:36 2023
+    Source modified time: Tue Jan 17 19:02:21 2023
     Source directory: /home/ghpdohmen/epo3/epo3/help
     HDL source file: VHDL/timebase_behav_cfg.vhd
     Source file: VHDL/timebase_behav_cfg.vhd
     Start location: VHDL/timebase_behav_cfg.vhd:1
-    Version string: i00_W[djK2:_9EmOm`_aZ2
+    Version string: Rz`UY1n@OBffjO>;omzLe1
     Opcode format: 10.5b; VCOM SE-64 Object version 63
     VHDL language standard: 3 (VHDL-2008)
-    Compile time: Tue Jan 17 13:14:36 2023
+    Compile time: Tue Jan 17 19:10:06 2023
     Compiled in vopt flow
-    Compile options: -quiet -nologo -2008 -lower -explicit -work work
+    Compile options: -quiet -nologo -2008 -just C -lower -explicit -work work
     Compile defaults: Explicit=1 CvgOpt=0
 ENTITY v_counter
-    Source modified time: Tue Jan 17 11:56:59 2023
+    Source modified time: Tue Jan 17 19:03:53 2023
     Depends on: P ieee numeric_std :ASDNFgHXf_ih3J@9F3Ze1
     Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
     Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
@@ -1504,53 +1519,53 @@ ENTITY v_counter
     Version string: P_[Kaa`SY]cFA5lgTjVm03
     Opcode format: 10.5b; VCOM SE-64 Object version 63
     VHDL language standard: 3 (VHDL-2008)
-    Compile time: Tue Jan 17 12:27:30 2023
+    Compile time: Tue Jan 17 19:09:55 2023
     Debug Symbol file exists
     Compiled in vopt flow
     Compile options: -quiet -nologo -2008 -just E -lower -explicit -work work
     Compile defaults: Explicit=1 CvgOpt=0
   ARCHITECTURE BODY behav
+    Source modified time: Tue Jan 17 19:04:06 2023
+    Depends on: E work v_counter P_[Kaa`SY]cFA5lgTjVm03
     Depends on: P ieee numeric_std :ASDNFgHXf_ih3J@9F3Ze1
     Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
     Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
-    Depends on: E work v_counter P_[Kaa`SY]cFA5lgTjVm03
-    Start location: VHDL/V_counter.vhd:12
-    Version string: 85XGS80OF<ho]:`jUXQ4Y0
+    HDL source file: VHDL/V_counter_behav.vhd
+    Source file: VHDL/V_counter_behav.vhd
+    Start location: VHDL/V_counter_behav.vhd:4
+    Version string: >DW[<ZSMaZ7<mhfmLf1mn3
     Opcode format: 10.5b; VCOM SE-64 Object version 63
     VHDL language standard: 3 (VHDL-2008)
-    Compile time: Tue Jan 17 12:27:31 2023
+    Compile time: Tue Jan 17 19:10:03 2023
     Debug Symbol file exists
     Compiled in vopt flow
     Compile options: -quiet -nologo -2008 -just A -lower -explicit -work work
     Compile defaults: Explicit=1 CvgOpt=0
     Source directory: /home/ghpdohmen/epo3/epo3/help
-    Source file: VHDL/V_counter.vhd
-    Source modified time: Tue Jan 17 11:56:59 2023
-    HDL source file: VHDL/V_counter.vhd
 VHDL CONFIGURATION v_counter_behav_cfg
     Configuration applies to entity: v_counter
     Block configuration applies to architecture: behav
     Depends on: E work edge_detector OJgICF7D[1LKb;bzg9YB02
-    Depends on: C work edge_detector_behav_cfg OO0zEcD4M4K4=ei`2:7R23
-    Depends on: A work v_counter behav 85XGS80OF<ho]:`jUXQ4Y0
+    Depends on: C work edge_detector_behav_cfg RX99RPmJVONVGGj:]QRB33
+    Depends on: A work v_counter behav >DW[<ZSMaZ7<mhfmLf1mn3
     Depends on: P ieee numeric_std :ASDNFgHXf_ih3J@9F3Ze1
     Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
     Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
     Depends on: E work v_counter P_[Kaa`SY]cFA5lgTjVm03
-    Source modified time: Tue Jan 17 13:19:53 2023
+    Source modified time: Tue Jan 17 19:06:45 2023
     Source directory: /home/ghpdohmen/epo3/epo3/help
     HDL source file: VHDL/v_counter_behav_cfg.vhd
     Source file: VHDL/v_counter_behav_cfg.vhd
     Start location: VHDL/v_counter_behav_cfg.vhd:1
-    Version string: n85gl0506<g=N0d;>f@Lz1
+    Version string: Lzh6K;KM4PelR7QhhS3iP2
     Opcode format: 10.5b; VCOM SE-64 Object version 63
     VHDL language standard: 3 (VHDL-2008)
-    Compile time: Tue Jan 17 13:19:53 2023
+    Compile time: Tue Jan 17 19:10:07 2023
     Compiled in vopt flow
-    Compile options: -quiet -nologo -2008 -lower -explicit -work work
+    Compile options: -quiet -nologo -2008 -just C -lower -explicit -work work
     Compile defaults: Explicit=1 CvgOpt=0
 ENTITY vgadrive
-    Source modified time: Tue Jan 17 11:57:01 2023
+    Source modified time: Tue Jan 17 19:04:41 2023
     Depends on: P ieee std_logic_arith [G314=:2zXJ`VORJe1J@Z1
     Depends on: P ieee std_logic_unsigned ;eZjO2D4ZDz<]0>8AL<ne1
     Depends on: P ieee numeric_std :ASDNFgHXf_ih3J@9F3Ze1
@@ -1560,161 +1575,161 @@ ENTITY vgadrive
     HDL source file: VHDL/vgadrive.vhd
     Source file: VHDL/vgadrive.vhd
     Start location: VHDL/vgadrive.vhd:6
-    Version string: Rzom[W_glU8_lVXb^:iCE3
+    Version string: PXY^]SEW`SF>VG9b9OS>C1
     Opcode format: 10.5b; VCOM SE-64 Object version 63
     VHDL language standard: 3 (VHDL-2008)
-    Compile time: Tue Jan 17 12:27:24 2023
+    Compile time: Tue Jan 17 19:09:58 2023
     Debug Symbol file exists
     Compiled in vopt flow
-    Compile options: -quiet -nologo -2008 -lower -explicit -work work
+    Compile options: -quiet -nologo -2008 -just E -lower -explicit -work work
     Compile defaults: Explicit=1 CvgOpt=0
   ARCHITECTURE BODY behaviour
+    Source modified time: Tue Jan 17 19:05:15 2023
+    Depends on: E work vgadrive PXY^]SEW`SF>VG9b9OS>C1
     Depends on: P ieee std_logic_arith [G314=:2zXJ`VORJe1J@Z1
     Depends on: P ieee std_logic_unsigned ;eZjO2D4ZDz<]0>8AL<ne1
     Depends on: P ieee numeric_std :ASDNFgHXf_ih3J@9F3Ze1
     Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
     Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
-    Depends on: E work vgadrive Rzom[W_glU8_lVXb^:iCE3
-    Start location: VHDL/vgadrive.vhd:17
-    Version string: 5kfaAaNVj353B?S8j83`a3
+    HDL source file: VHDL/vgadrive_behaviour.vhd
+    Source file: VHDL/vgadrive_behaviour.vhd
+    Start location: VHDL/vgadrive_behaviour.vhd:6
+    Version string: ?WlkUe^BfmJhHi3CW<5MG3
     Opcode format: 10.5b; VCOM SE-64 Object version 63
     VHDL language standard: 3 (VHDL-2008)
-    Compile time: Tue Jan 17 12:27:24 2023
+    Compile time: Tue Jan 17 19:10:03 2023
     Debug Symbol file exists
     Compiled in vopt flow
-    Compile options: -quiet -nologo -2008 -lower -explicit -work work
+    Compile options: -quiet -nologo -2008 -just A -lower -explicit -work work
     Compile defaults: Explicit=1 CvgOpt=0
     Source directory: /home/ghpdohmen/epo3/epo3/help
-    Source file: VHDL/vgadrive.vhd
-    Source modified time: Tue Jan 17 11:57:01 2023
-    HDL source file: VHDL/vgadrive.vhd
 VHDL CONFIGURATION vgadrive_behaviour_cfg
     Configuration applies to entity: vgadrive
     Block configuration applies to architecture: behaviour
-    Depends on: A work vgadrive behaviour 5kfaAaNVj353B?S8j83`a3
+    Depends on: A work vgadrive behaviour ?WlkUe^BfmJhHi3CW<5MG3
     Depends on: P ieee std_logic_arith [G314=:2zXJ`VORJe1J@Z1
     Depends on: P ieee std_logic_unsigned ;eZjO2D4ZDz<]0>8AL<ne1
     Depends on: P ieee numeric_std :ASDNFgHXf_ih3J@9F3Ze1
     Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
     Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
-    Depends on: E work vgadrive Rzom[W_glU8_lVXb^:iCE3
-    Source modified time: Tue Jan 17 13:14:33 2023
+    Depends on: E work vgadrive PXY^]SEW`SF>VG9b9OS>C1
+    Source modified time: Tue Jan 17 19:02:21 2023
     Source directory: /home/ghpdohmen/epo3/epo3/help
     HDL source file: VHDL/vgadrive_behaviour_cfg.vhd
     Source file: VHDL/vgadrive_behaviour_cfg.vhd
     Start location: VHDL/vgadrive_behaviour_cfg.vhd:1
-    Version string: e4mFIOeFMCDkNQDKF=<=Z3
+    Version string: bl2<Dn9_2?mCe^`<elG283
     Opcode format: 10.5b; VCOM SE-64 Object version 63
     VHDL language standard: 3 (VHDL-2008)
-    Compile time: Tue Jan 17 13:14:34 2023
+    Compile time: Tue Jan 17 19:10:06 2023
     Compiled in vopt flow
-    Compile options: -quiet -nologo -2008 -lower -explicit -work work
+    Compile options: -quiet -nologo -2008 -just C -lower -explicit -work work
     Compile defaults: Explicit=1 CvgOpt=0
 ENTITY x
-    Source modified time: Tue Jan 17 11:00:14 2023
+    Source modified time: Tue Jan 17 18:51:28 2023
     Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
     Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
     Source directory: /home/ghpdohmen/epo3/epo3/help
     HDL source file: VHDL/x.vhd
     Source file: VHDL/x.vhd
     Start location: VHDL/x.vhd:4
-    Version string: UkWa1<AaWU_[UTa[1?]fP1
+    Version string: <J]Y<mCBbmAh6a@1LB_9j1
     Opcode format: 10.5b; VCOM SE-64 Object version 63
     VHDL language standard: 3 (VHDL-2008)
-    Compile time: Tue Jan 17 13:08:19 2023
+    Compile time: Tue Jan 17 19:09:58 2023
     Debug Symbol file exists
     Compiled in vopt flow
-    Compile options: -quiet -nologo -2008 -lower -explicit -work work
+    Compile options: -quiet -nologo -2008 -just E -lower -explicit -work work
     Compile defaults: Explicit=1 CvgOpt=0
   ARCHITECTURE BODY behaviour_x
-    Depends on: E work x UkWa1<AaWU_[UTa[1?]fP1
+    Depends on: E work x <J]Y<mCBbmAh6a@1LB_9j1
     Depends on: P ieee numeric_std :ASDNFgHXf_ih3J@9F3Ze1
     Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
     Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
     HDL source file: VHDL/x-behaviour_x.vhd
     Source file: VHDL/x-behaviour_x.vhd
     Start location: VHDL/x-behaviour_x.vhd:5
-    Version string: [N8@iIJ`X`F9:2XUSc@kN3
+    Version string: <UlJWnWlcaK47jlCQmRiQ1
     Opcode format: 10.5b; VCOM SE-64 Object version 63
     VHDL language standard: 3 (VHDL-2008)
-    Compile time: Tue Jan 17 13:08:19 2023
+    Compile time: Tue Jan 17 19:10:03 2023
     Debug Symbol file exists
     Compiled in vopt flow
-    Compile options: -quiet -nologo -2008 -lower -explicit -work work
+    Compile options: -quiet -nologo -2008 -just A -lower -explicit -work work
     Compile defaults: Explicit=1 CvgOpt=0
     Source directory: /home/ghpdohmen/epo3/epo3/help
-    Source modified time: Tue Jan 17 11:00:14 2023
+    Source modified time: Tue Jan 17 18:51:28 2023
 VHDL CONFIGURATION x_behaviour_x_cfg
     Configuration applies to entity: x
     Block configuration applies to architecture: behaviour_x
     Depends on: P ieee numeric_std :ASDNFgHXf_ih3J@9F3Ze1
-    Depends on: A work x behaviour_x [N8@iIJ`X`F9:2XUSc@kN3
+    Depends on: A work x behaviour_x <UlJWnWlcaK47jlCQmRiQ1
     Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
     Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
-    Depends on: E work x UkWa1<AaWU_[UTa[1?]fP1
-    Source modified time: Tue Jan 17 13:14:30 2023
+    Depends on: E work x <J]Y<mCBbmAh6a@1LB_9j1
+    Source modified time: Tue Jan 17 19:02:21 2023
     Source directory: /home/ghpdohmen/epo3/epo3/help
     HDL source file: VHDL/x_behaviour_x_cfg.vhd
     Source file: VHDL/x_behaviour_x_cfg.vhd
     Start location: VHDL/x_behaviour_x_cfg.vhd:1
-    Version string: 6cKZU6D=klg05BULERBLY0
+    Version string: Hi7P04C`_od^fBLD:XOBc3
     Opcode format: 10.5b; VCOM SE-64 Object version 63
     VHDL language standard: 3 (VHDL-2008)
-    Compile time: Tue Jan 17 13:14:30 2023
+    Compile time: Tue Jan 17 19:10:06 2023
     Compiled in vopt flow
-    Compile options: -quiet -nologo -2008 -lower -explicit -work work
+    Compile options: -quiet -nologo -2008 -just C -lower -explicit -work work
     Compile defaults: Explicit=1 CvgOpt=0
 ENTITY y
-    Source modified time: Tue Jan 17 11:00:14 2023
+    Source modified time: Tue Jan 17 18:51:29 2023
     Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
     Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
     Source directory: /home/ghpdohmen/epo3/epo3/help
     HDL source file: VHDL/y.vhd
     Source file: VHDL/y.vhd
     Start location: VHDL/y.vhd:4
-    Version string: ]e]CIZ=feTkA:Bi_7R;bm2
+    Version string: XPG<zb5<23>WzF[99@O];3
     Opcode format: 10.5b; VCOM SE-64 Object version 63
     VHDL language standard: 3 (VHDL-2008)
-    Compile time: Tue Jan 17 13:08:44 2023
+    Compile time: Tue Jan 17 19:09:58 2023
     Debug Symbol file exists
     Compiled in vopt flow
-    Compile options: -quiet -nologo -2008 -lower -explicit -work work
+    Compile options: -quiet -nologo -2008 -just E -lower -explicit -work work
     Compile defaults: Explicit=1 CvgOpt=0
   ARCHITECTURE BODY behaviour_y
-    Depends on: E work y ]e]CIZ=feTkA:Bi_7R;bm2
+    Depends on: E work y XPG<zb5<23>WzF[99@O];3
     Depends on: P ieee numeric_std :ASDNFgHXf_ih3J@9F3Ze1
     Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
     Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
     HDL source file: VHDL/y-behaviour_y.vhd
     Source file: VHDL/y-behaviour_y.vhd
     Start location: VHDL/y-behaviour_y.vhd:5
-    Version string: Lo[9TmV3lL]imTLLN0MUV2
+    Version string: 4Oe<DZIM2ldJN]AYZkVYe0
     Opcode format: 10.5b; VCOM SE-64 Object version 63
     VHDL language standard: 3 (VHDL-2008)
-    Compile time: Tue Jan 17 13:08:44 2023
+    Compile time: Tue Jan 17 19:10:03 2023
     Debug Symbol file exists
     Compiled in vopt flow
-    Compile options: -quiet -nologo -2008 -lower -explicit -work work
+    Compile options: -quiet -nologo -2008 -just A -lower -explicit -work work
     Compile defaults: Explicit=1 CvgOpt=0
     Source directory: /home/ghpdohmen/epo3/epo3/help
-    Source modified time: Tue Jan 17 11:00:14 2023
+    Source modified time: Tue Jan 17 18:51:29 2023
 VHDL CONFIGURATION y_behaviour_y_cfg
     Configuration applies to entity: y
     Block configuration applies to architecture: behaviour_y
     Depends on: P ieee numeric_std :ASDNFgHXf_ih3J@9F3Ze1
-    Depends on: A work y behaviour_y Lo[9TmV3lL]imTLLN0MUV2
+    Depends on: A work y behaviour_y 4Oe<DZIM2ldJN]AYZkVYe0
     Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
     Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
-    Depends on: E work y ]e]CIZ=feTkA:Bi_7R;bm2
-    Source modified time: Tue Jan 17 13:14:31 2023
+    Depends on: E work y XPG<zb5<23>WzF[99@O];3
+    Source modified time: Tue Jan 17 19:02:21 2023
     Source directory: /home/ghpdohmen/epo3/epo3/help
     HDL source file: VHDL/y_behaviour_y_cfg.vhd
     Source file: VHDL/y_behaviour_y_cfg.vhd
     Start location: VHDL/y_behaviour_y_cfg.vhd:1
-    Version string: z5@ANz`88dOAVo0BIbUHh3
+    Version string: IjlDkJd^]EJLiEbP2ZTGm2
     Opcode format: 10.5b; VCOM SE-64 Object version 63
     VHDL language standard: 3 (VHDL-2008)
-    Compile time: Tue Jan 17 13:14:31 2023
+    Compile time: Tue Jan 17 19:10:06 2023
     Compiled in vopt flow
-    Compile options: -quiet -nologo -2008 -lower -explicit -work work
+    Compile options: -quiet -nologo -2008 -just C -lower -explicit -work work
     Compile defaults: Explicit=1 CvgOpt=0

@@ -298,7 +298,7 @@ begin
                 else
                     new_state <= state;
                 end if;
-		test <= "11111";	
+		test <= "01101";	
 
 	    when data_1_cnt_rst => 
 		
@@ -314,12 +314,11 @@ begin
 	
 		--assuming that least significant bit is data_in(9)
 		--data bits are contained in data_in(2 t/m 9)
-            
-		buttons(0)      <= data_in(5); --x sign bit 
-		buttons(1)      <= data_in(4); --y sign bit 
-		buttons(2)      <= data_in(9); --left button
-		buttons(3)      <= data_in(7); --middle button 
-		buttons(4)      <= data_in(8); --right button
+                buttons(1)      <= data_in(7); --y sign bit 
+		buttons(0)      <= data_in(6); --x sign bit 
+		buttons(2)      <= data_in(2); --left button
+		buttons(3)      <= data_in(4); --middle button 
+		buttons(4)      <= data_in(3); --right button
                 y_out           <= (others => '0');
                 x_out		         <= (others => '0');
 		bit11_reg_rst   <= '0';
@@ -336,11 +335,11 @@ begin
                 y_flipflop      <= '0';
                 btn_flipflop    <= '1';
 	
-                buttons(0)      <= data_in(5); --x sign bit 
-		buttons(1)      <= data_in(4); --y sign bit 
-		buttons(2)      <= data_in(9); --left button
-		buttons(3)      <= data_in(7); --middle button 
-		buttons(4)      <= data_in(8); --right button
+                buttons(1)      <= data_in(7); --y sign bit 
+		buttons(0)      <= data_in(6); --x sign bit 
+		buttons(2)      <= data_in(2); --left button
+		buttons(3)      <= data_in(4); --middle button 
+		buttons(4)      <= data_in(3); --right button
 		y_out           <= (others => '0');
                 x_out		         <= (others => '0');
 		bit11_reg_rst   <= '1';

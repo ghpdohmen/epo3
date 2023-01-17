@@ -1,5 +1,28 @@
 
-State Machine - |top_de1|mouse:inst|main_fsm:mfsm|state
+State Machine - |top_de1|pixel:inst2|mouse_logic:ml|logic_top:il|color:color1|state
+Name state.paars state.rood state.cyaan state.wit state.groen state.geel state.blauw state.zwart 
+state.zwart 0 0 0 0 0 0 0 0 
+state.blauw 0 0 0 0 0 0 1 1 
+state.geel 0 0 0 0 0 1 0 1 
+state.groen 0 0 0 0 1 0 0 1 
+state.wit 0 0 0 1 0 0 0 1 
+state.cyaan 0 0 1 0 0 0 0 1 
+state.rood 0 1 0 0 0 0 0 1 
+state.paars 1 0 0 0 0 0 0 1 
+
+State Machine - |top_de1|pixel:inst2|mouse_logic:ml|logic_top:il|y:y1|state
+Name state.ready state.increment state.idle 
+state.idle 0 0 0 
+state.increment 0 1 1 
+state.ready 1 0 1 
+
+State Machine - |top_de1|pixel:inst2|mouse_logic:ml|logic_top:il|x:x1|state
+Name state.ready state.increment state.idle 
+state.idle 0 0 0 
+state.increment 0 1 1 
+state.ready 1 0 1 
+
+State Machine - |top_de1|pixel:inst2|mouse_logic:ml|mouse:ms|main_fsm:mfsm|state
 Name state.handshake_state2 state.handshake_state state.data_3_cnt_rst_2 state.data_3_cnt_rst state.delay_3 state.data_3 state.data_2_cnt_rst_2 state.data_2_cnt_rst state.delay_2 state.data_2 state.data_1_cnt_rst_2 state.data_1_cnt_rst state.delay_1 state.data_1 state.wachtFA2_cnt_rst state.wachtFA2 state.enableF4_cnt_rst state.enableF4 state.wachtID_cnt_rst state.wachtID state.wachtAA_cnt_rst state.wachtAA state.wachtFA_cnt_rst state.wachtFA state.sendFF_cnt_rst state.sendFF state.reset_state 
 state.reset_state 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 state.sendFF 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 
@@ -29,7 +52,7 @@ state.data_3_cnt_rst_2 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1
 state.handshake_state 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
 state.handshake_state2 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
 
-State Machine - |top_de1|mouse:inst|sendFSM:sfsm|state
+State Machine - |top_de1|pixel:inst2|mouse_logic:ml|mouse:ms|sendFSM:sfsm|state
 Name state.mouseclk state.datalowextra state.waitforclockstate state.datalowstate state.bothlowstate state.clklowstate state.waitcountreset state.waitstate state.reset_state 
 state.reset_state 0 0 0 0 0 0 0 0 0 
 state.waitstate 0 0 0 0 0 0 0 1 1 
@@ -41,7 +64,7 @@ state.waitforclockstate 0 0 1 0 0 0 0 0 1
 state.datalowextra 0 1 0 0 0 0 0 0 1 
 state.mouseclk 1 0 0 0 0 0 0 0 1 
 
-State Machine - |top_de1|mouse:inst|edge_debounce:ed|state
+State Machine - |top_de1|pixel:inst2|mouse_logic:ml|mouse:ms|edge_debounce:ed|state
 Name state.debounce state.edge state.pause state.reset_state 
 state.reset_state 0 0 0 0 
 state.pause 0 0 1 1 

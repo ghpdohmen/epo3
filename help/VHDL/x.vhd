@@ -6,6 +6,6 @@ entity x is
         reset       : in  std_logic;
         dx          : in  std_logic_vector(3 downto 0);
         handshakemi : in  std_logic;
-        tempx       : out std_logic_vector(3 downto 0);
+        tempx       : buffer std_logic_vector(3 downto 0);
         handshakeim : out std_logic);
 end x;

@@ -5,9 +5,9 @@ set_db use_scan_seqs_for_non_dft false
 
 include ../tcl/read_hdl.tcl
 
-elaborate pixel_behav_cfg
+elaborate colour_storage_behavioral_cfg
 
-include ../in/pixel.sdc
+include ../in/colour_storage.sdc
 
 synthesize -to_mapped
 #set_db syn_generic_effort medium
@@ -16,9 +16,9 @@ synthesize -to_mapped
 
 ungroup -all -flat
 insert_tiehilo_cells
-write_hdl -mapped > ../out/pixel.v
-write_sdf > ../out/pixel.sdf
-write_sdc > ../out/pixel.sdc
+write_hdl -mapped > ../out/colour_storage.v
+write_sdf > ../out/colour_storage.sdf
+write_sdc > ../out/colour_storage.sdc
 
 report timing
 report gates

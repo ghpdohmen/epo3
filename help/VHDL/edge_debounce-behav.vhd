@@ -84,7 +84,7 @@ begin
 
 				counter_reset <= '0';
 
-                              if(to_integer(unsigned(count)) >= 150) then
+                              if(to_integer(unsigned(count)) >= 200) then
 
                                              new_state <= edge;
 
@@ -115,7 +115,7 @@ begin
 
 				counter_reset <= '0';
 
-                              if(to_integer(unsigned(count)) >= 250) then--10us
+                              if(to_integer(unsigned(count)) >= 200) then--10us
 
                                              new_state <= reset_state;
 

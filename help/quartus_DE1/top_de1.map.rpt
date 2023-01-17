@@ -1,6 +1,6 @@
 Analysis & Synthesis report for top_de1
-Tue Jan 17 15:28:12 2023
-Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
+Tue Jan 17 19:33:57 2023
+Quartus II 32-bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
 
 
 ---------------------
@@ -10,19 +10,7 @@ Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Ver
   2. Analysis & Synthesis Summary
   3. Analysis & Synthesis Settings
   4. Parallel Compilation
-  5. Analysis & Synthesis Source Files Read
-  6. Analysis & Synthesis Resource Usage Summary
-  7. Analysis & Synthesis Resource Utilization by Entity
-  8. State Machine - |top_de1|mouse:inst|main_fsm:mfsm|state
-  9. State Machine - |top_de1|mouse:inst|sendFSM:sfsm|state
- 10. State Machine - |top_de1|mouse:inst|edge_debounce:ed|state
- 11. Registers Removed During Synthesis
- 12. Removed Registers Triggering Further Register Optimizations
- 13. General Register Statistics
- 14. Multiplexer Restructuring Statistics (Restructuring Performed)
- 15. Port Connectivity Checks: "mouse:inst|main_fsm:mfsm"
- 16. Elapsed Time Per Partition
- 17. Analysis & Synthesis Messages
+  5. Analysis & Synthesis Messages
 
 
 
@@ -48,20 +36,20 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                          ;
 +------------------------------------+--------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Tue Jan 17 15:28:12 2023            ;
-; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Full Version ;
+; Analysis & Synthesis Status        ; Failed - Tue Jan 17 19:33:57 2023                ;
+; Quartus II 32-bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Full Version ;
 ; Revision Name                      ; top_de1                                          ;
 ; Top-level Entity Name              ; top_de1                                          ;
 ; Family                             ; Cyclone II                                       ;
-; Total logic elements               ; 159                                              ;
-;     Total combinational functions  ; 152                                              ;
-;     Dedicated logic registers      ; 94                                               ;
-; Total registers                    ; 94                                               ;
-; Total pins                         ; 21                                               ;
-; Total virtual pins                 ; 0                                                ;
-; Total memory bits                  ; 0                                                ;
-; Embedded Multiplier 9-bit elements ; 0                                                ;
-; Total PLLs                         ; 0                                                ;
+; Total logic elements               ; N/A until Partition Merge                        ;
+;     Total combinational functions  ; N/A until Partition Merge                        ;
+;     Dedicated logic registers      ; N/A until Partition Merge                        ;
+; Total registers                    ; N/A until Partition Merge                        ;
+; Total pins                         ; N/A until Partition Merge                        ;
+; Total virtual pins                 ; N/A until Partition Merge                        ;
+; Total memory bits                  ; N/A until Partition Merge                        ;
+; Embedded Multiplier 9-bit elements ; N/A until Partition Merge                        ;
+; Total PLLs                         ; N/A until Partition Merge                        ;
 +------------------------------------+--------------------------------------------------+
 
 
@@ -155,296 +143,150 @@ applicable agreement for further details.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 6           ;
-; Maximum allowed            ; 6           ;
+; Number detected on machine ; 16          ;
+; Maximum allowed            ; 16          ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
 ; Maximum used               ; 1           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-6         ;   0.0%      ;
+;     Processors 2-16        ;   0.0%      ;
 +----------------------------+-------------+
-
-
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                ;
-+---------------------------------------+-----------------+------------------------------------+--------------------------------------------------------------+---------+
-; File Name with User-Entered Path      ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                 ; Library ;
-+---------------------------------------+-----------------+------------------------------------+--------------------------------------------------------------+---------+
-; ../VHDL/counter25mhz-behav.vhd        ; yes             ; User VHDL File                     ; /home/etuinstra/epo3/help/VHDL/counter25mhz-behav.vhd        ;         ;
-; ../VHDL/counter25mhz.vhd              ; yes             ; User VHDL File                     ; /home/etuinstra/epo3/help/VHDL/counter25mhz.vhd              ;         ;
-; ../VHDL/timebase.vhd                  ; yes             ; User VHDL File                     ; /home/etuinstra/epo3/help/VHDL/timebase.vhd                  ;         ;
-; ../VHDL/timebase-behav.vhd            ; yes             ; User VHDL File                     ; /home/etuinstra/epo3/help/VHDL/timebase-behav.vhd            ;         ;
-; ../VHDL/shiftregister_11bit-behav.vhd ; yes             ; User VHDL File                     ; /home/etuinstra/epo3/help/VHDL/shiftregister_11bit-behav.vhd ;         ;
-; ../VHDL/shiftregister_9bit.vhd        ; yes             ; User VHDL File                     ; /home/etuinstra/epo3/help/VHDL/shiftregister_9bit.vhd        ;         ;
-; ../VHDL/shiftregister_9bit-behav.vhd  ; yes             ; User VHDL File                     ; /home/etuinstra/epo3/help/VHDL/shiftregister_9bit-behav.vhd  ;         ;
-; ../VHDL/sendFSM-behav.vhd             ; yes             ; User VHDL File                     ; /home/etuinstra/epo3/help/VHDL/sendFSM-behav.vhd             ;         ;
-; ../VHDL/sendFSM.vhd                   ; yes             ; User VHDL File                     ; /home/etuinstra/epo3/help/VHDL/sendFSM.vhd                   ;         ;
-; ../VHDL/shfitregister_11bit.vhd       ; yes             ; User VHDL File                     ; /home/etuinstra/epo3/help/VHDL/shfitregister_11bit.vhd       ;         ;
-; ../VHDL/mux.vhd                       ; yes             ; User VHDL File                     ; /home/etuinstra/epo3/help/VHDL/mux.vhd                       ;         ;
-; ../VHDL/mux-behav.vhd                 ; yes             ; User VHDL File                     ; /home/etuinstra/epo3/help/VHDL/mux-behav.vhd                 ;         ;
-; ../VHDL/mouse-behav.vhd               ; yes             ; User VHDL File                     ; /home/etuinstra/epo3/help/VHDL/mouse-behav.vhd               ;         ;
-; ../VHDL/mouse.vhd                     ; yes             ; User VHDL File                     ; /home/etuinstra/epo3/help/VHDL/mouse.vhd                     ;         ;
-; ../VHDL/main_fsm-behav.vhd            ; yes             ; User VHDL File                     ; /home/etuinstra/epo3/help/VHDL/main_fsm-behav.vhd            ;         ;
-; ../VHDL/main_fsm.vhd                  ; yes             ; User VHDL File                     ; /home/etuinstra/epo3/help/VHDL/main_fsm.vhd                  ;         ;
-; ../VHDL/flipflop.vhd                  ; yes             ; User VHDL File                     ; /home/etuinstra/epo3/help/VHDL/flipflop.vhd                  ;         ;
-; ../VHDL/flipflop-behav.vhd            ; yes             ; User VHDL File                     ; /home/etuinstra/epo3/help/VHDL/flipflop-behav.vhd            ;         ;
-; ../VHDL/edge_debounce-behav.vhd       ; yes             ; User VHDL File                     ; /home/etuinstra/epo3/help/VHDL/edge_debounce-behav.vhd       ;         ;
-; ../VHDL/edge_debounce.vhd             ; yes             ; User VHDL File                     ; /home/etuinstra/epo3/help/VHDL/edge_debounce.vhd             ;         ;
-; top_de1.bdf                           ; yes             ; User Block Diagram/Schematic File  ; /home/etuinstra/epo3/help/quartus_DE1/top_de1.bdf            ;         ;
-; gen25mhz.vhd                          ; yes             ; User VHDL File                     ; /home/etuinstra/epo3/help/quartus_DE1/gen25mhz.vhd           ;         ;
-+---------------------------------------+-----------------+------------------------------------+--------------------------------------------------------------+---------+
-
-
-+-----------------------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary                           ;
-+---------------------------------------------+-------------------------+
-; Resource                                    ; Usage                   ;
-+---------------------------------------------+-------------------------+
-; Estimated Total logic elements              ; 159                     ;
-;                                             ;                         ;
-; Total combinational functions               ; 152                     ;
-; Logic element usage by number of LUT inputs ;                         ;
-;     -- 4 input functions                    ; 63                      ;
-;     -- 3 input functions                    ; 29                      ;
-;     -- <=2 input functions                  ; 60                      ;
-;                                             ;                         ;
-; Logic elements by mode                      ;                         ;
-;     -- normal mode                          ; 128                     ;
-;     -- arithmetic mode                      ; 24                      ;
-;                                             ;                         ;
-; Total registers                             ; 94                      ;
-;     -- Dedicated logic registers            ; 94                      ;
-;     -- I/O registers                        ; 0                       ;
-;                                             ;                         ;
-; I/O pins                                    ; 21                      ;
-; Embedded Multiplier 9-bit elements          ; 0                       ;
-; Maximum fan-out node                        ; gen25mhz:inst1|count[0] ;
-; Maximum fan-out                             ; 94                      ;
-; Total fan-out                               ; 727                     ;
-; Average fan-out                             ; 2.72                    ;
-+---------------------------------------------+-------------------------+
-
-
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                        ;
-+----------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------+--------------+
-; Compilation Hierarchy Node       ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                          ; Library Name ;
-+----------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------+--------------+
-; |top_de1                         ; 152 (0)           ; 94 (0)       ; 0           ; 0            ; 0       ; 0         ; 21   ; 0            ; |top_de1                                     ; work         ;
-;    |gen25mhz:inst1|              ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|gen25mhz:inst1                      ; work         ;
-;    |mouse:inst|                  ; 151 (0)           ; 93 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|mouse:inst                          ; work         ;
-;       |counter25mhz:cntD|        ; 13 (13)           ; 13 (13)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|mouse:inst|counter25mhz:cntD        ; work         ;
-;       |counter25mhz:cnt|         ; 13 (13)           ; 13 (13)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|mouse:inst|counter25mhz:cnt         ; work         ;
-;       |edge_debounce:ed|         ; 16 (16)           ; 6 (6)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|mouse:inst|edge_debounce:ed         ; work         ;
-;       |flipflop:flipflop10|      ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|mouse:inst|flipflop:flipflop10      ; work         ;
-;       |flipflop:flipflop11|      ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|mouse:inst|flipflop:flipflop11      ; work         ;
-;       |flipflop:flipflop7|       ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|mouse:inst|flipflop:flipflop7       ; work         ;
-;       |flipflop:flipflop8|       ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|mouse:inst|flipflop:flipflop8       ; work         ;
-;       |flipflop:flipflop9|       ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|mouse:inst|flipflop:flipflop9       ; work         ;
-;       |main_fsm:mfsm|            ; 48 (48)           ; 24 (24)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|mouse:inst|main_fsm:mfsm            ; work         ;
-;       |mux:mx2|                  ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|mouse:inst|mux:mx2                  ; work         ;
-;       |mux:mx|                   ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|mouse:inst|mux:mx                   ; work         ;
-;       |sendFSM:sfsm|             ; 29 (29)           ; 9 (9)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|mouse:inst|sendFSM:sfsm             ; work         ;
-;       |shiftregister_11bit:sr11| ; 11 (11)           ; 10 (10)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|mouse:inst|shiftregister_11bit:sr11 ; work         ;
-;       |shiftregister_9bit:sr|    ; 11 (11)           ; 9 (9)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|mouse:inst|shiftregister_9bit:sr    ; work         ;
-;       |timebase:tb|              ; 6 (6)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|mouse:inst|timebase:tb              ; work         ;
-+----------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------+--------------+
-Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
-
-
-Encoding Type:  One-Hot
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; State Machine - |top_de1|mouse:inst|main_fsm:mfsm|state                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    ;
-+------------------------+------------------------+-----------------------+------------------------+----------------------+---------------+--------------+------------------------+----------------------+---------------+--------------+------------------------+----------------------+---------------+--------------+------------------------+----------------+------------------------+----------------+-----------------------+---------------+-----------------------+---------------+-----------------------+---------------+----------------------+--------------+-------------------+
-; Name                   ; state.handshake_state2 ; state.handshake_state ; state.data_3_cnt_rst_2 ; state.data_3_cnt_rst ; state.delay_3 ; state.data_3 ; state.data_2_cnt_rst_2 ; state.data_2_cnt_rst ; state.delay_2 ; state.data_2 ; state.data_1_cnt_rst_2 ; state.data_1_cnt_rst ; state.delay_1 ; state.data_1 ; state.wachtFA2_cnt_rst ; state.wachtFA2 ; state.enableF4_cnt_rst ; state.enableF4 ; state.wachtID_cnt_rst ; state.wachtID ; state.wachtAA_cnt_rst ; state.wachtAA ; state.wachtFA_cnt_rst ; state.wachtFA ; state.sendFF_cnt_rst ; state.sendFF ; state.reset_state ;
-+------------------------+------------------------+-----------------------+------------------------+----------------------+---------------+--------------+------------------------+----------------------+---------------+--------------+------------------------+----------------------+---------------+--------------+------------------------+----------------+------------------------+----------------+-----------------------+---------------+-----------------------+---------------+-----------------------+---------------+----------------------+--------------+-------------------+
-; state.reset_state      ; 0                      ; 0                     ; 0                      ; 0                    ; 0             ; 0            ; 0                      ; 0                    ; 0             ; 0            ; 0                      ; 0                    ; 0             ; 0            ; 0                      ; 0              ; 0                      ; 0              ; 0                     ; 0             ; 0                     ; 0             ; 0                     ; 0             ; 0                    ; 0            ; 0                 ;
-; state.sendFF           ; 0                      ; 0                     ; 0                      ; 0                    ; 0             ; 0            ; 0                      ; 0                    ; 0             ; 0            ; 0                      ; 0                    ; 0             ; 0            ; 0                      ; 0              ; 0                      ; 0              ; 0                     ; 0             ; 0                     ; 0             ; 0                     ; 0             ; 0                    ; 1            ; 1                 ;
-; state.sendFF_cnt_rst   ; 0                      ; 0                     ; 0                      ; 0                    ; 0             ; 0            ; 0                      ; 0                    ; 0             ; 0            ; 0                      ; 0                    ; 0             ; 0            ; 0                      ; 0              ; 0                      ; 0              ; 0                     ; 0             ; 0                     ; 0             ; 0                     ; 0             ; 1                    ; 0            ; 1                 ;
-; state.wachtFA          ; 0                      ; 0                     ; 0                      ; 0                    ; 0             ; 0            ; 0                      ; 0                    ; 0             ; 0            ; 0                      ; 0                    ; 0             ; 0            ; 0                      ; 0              ; 0                      ; 0              ; 0                     ; 0             ; 0                     ; 0             ; 0                     ; 1             ; 0                    ; 0            ; 1                 ;
-; state.wachtFA_cnt_rst  ; 0                      ; 0                     ; 0                      ; 0                    ; 0             ; 0            ; 0                      ; 0                    ; 0             ; 0            ; 0                      ; 0                    ; 0             ; 0            ; 0                      ; 0              ; 0                      ; 0              ; 0                     ; 0             ; 0                     ; 0             ; 1                     ; 0             ; 0                    ; 0            ; 1                 ;
-; state.wachtAA          ; 0                      ; 0                     ; 0                      ; 0                    ; 0             ; 0            ; 0                      ; 0                    ; 0             ; 0            ; 0                      ; 0                    ; 0             ; 0            ; 0                      ; 0              ; 0                      ; 0              ; 0                     ; 0             ; 0                     ; 1             ; 0                     ; 0             ; 0                    ; 0            ; 1                 ;
-; state.wachtAA_cnt_rst  ; 0                      ; 0                     ; 0                      ; 0                    ; 0             ; 0            ; 0                      ; 0                    ; 0             ; 0            ; 0                      ; 0                    ; 0             ; 0            ; 0                      ; 0              ; 0                      ; 0              ; 0                     ; 0             ; 1                     ; 0             ; 0                     ; 0             ; 0                    ; 0            ; 1                 ;
-; state.wachtID          ; 0                      ; 0                     ; 0                      ; 0                    ; 0             ; 0            ; 0                      ; 0                    ; 0             ; 0            ; 0                      ; 0                    ; 0             ; 0            ; 0                      ; 0              ; 0                      ; 0              ; 0                     ; 1             ; 0                     ; 0             ; 0                     ; 0             ; 0                    ; 0            ; 1                 ;
-; state.wachtID_cnt_rst  ; 0                      ; 0                     ; 0                      ; 0                    ; 0             ; 0            ; 0                      ; 0                    ; 0             ; 0            ; 0                      ; 0                    ; 0             ; 0            ; 0                      ; 0              ; 0                      ; 0              ; 1                     ; 0             ; 0                     ; 0             ; 0                     ; 0             ; 0                    ; 0            ; 1                 ;
-; state.enableF4         ; 0                      ; 0                     ; 0                      ; 0                    ; 0             ; 0            ; 0                      ; 0                    ; 0             ; 0            ; 0                      ; 0                    ; 0             ; 0            ; 0                      ; 0              ; 0                      ; 1              ; 0                     ; 0             ; 0                     ; 0             ; 0                     ; 0             ; 0                    ; 0            ; 1                 ;
-; state.enableF4_cnt_rst ; 0                      ; 0                     ; 0                      ; 0                    ; 0             ; 0            ; 0                      ; 0                    ; 0             ; 0            ; 0                      ; 0                    ; 0             ; 0            ; 0                      ; 0              ; 1                      ; 0              ; 0                     ; 0             ; 0                     ; 0             ; 0                     ; 0             ; 0                    ; 0            ; 1                 ;
-; state.wachtFA2         ; 0                      ; 0                     ; 0                      ; 0                    ; 0             ; 0            ; 0                      ; 0                    ; 0             ; 0            ; 0                      ; 0                    ; 0             ; 0            ; 0                      ; 1              ; 0                      ; 0              ; 0                     ; 0             ; 0                     ; 0             ; 0                     ; 0             ; 0                    ; 0            ; 1                 ;
-; state.wachtFA2_cnt_rst ; 0                      ; 0                     ; 0                      ; 0                    ; 0             ; 0            ; 0                      ; 0                    ; 0             ; 0            ; 0                      ; 0                    ; 0             ; 0            ; 1                      ; 0              ; 0                      ; 0              ; 0                     ; 0             ; 0                     ; 0             ; 0                     ; 0             ; 0                    ; 0            ; 1                 ;
-; state.data_1           ; 0                      ; 0                     ; 0                      ; 0                    ; 0             ; 0            ; 0                      ; 0                    ; 0             ; 0            ; 0                      ; 0                    ; 0             ; 1            ; 0                      ; 0              ; 0                      ; 0              ; 0                     ; 0             ; 0                     ; 0             ; 0                     ; 0             ; 0                    ; 0            ; 1                 ;
-; state.delay_1          ; 0                      ; 0                     ; 0                      ; 0                    ; 0             ; 0            ; 0                      ; 0                    ; 0             ; 0            ; 0                      ; 0                    ; 1             ; 0            ; 0                      ; 0              ; 0                      ; 0              ; 0                     ; 0             ; 0                     ; 0             ; 0                     ; 0             ; 0                    ; 0            ; 1                 ;
-; state.data_1_cnt_rst   ; 0                      ; 0                     ; 0                      ; 0                    ; 0             ; 0            ; 0                      ; 0                    ; 0             ; 0            ; 0                      ; 1                    ; 0             ; 0            ; 0                      ; 0              ; 0                      ; 0              ; 0                     ; 0             ; 0                     ; 0             ; 0                     ; 0             ; 0                    ; 0            ; 1                 ;
-; state.data_1_cnt_rst_2 ; 0                      ; 0                     ; 0                      ; 0                    ; 0             ; 0            ; 0                      ; 0                    ; 0             ; 0            ; 1                      ; 0                    ; 0             ; 0            ; 0                      ; 0              ; 0                      ; 0              ; 0                     ; 0             ; 0                     ; 0             ; 0                     ; 0             ; 0                    ; 0            ; 1                 ;
-; state.data_2           ; 0                      ; 0                     ; 0                      ; 0                    ; 0             ; 0            ; 0                      ; 0                    ; 0             ; 1            ; 0                      ; 0                    ; 0             ; 0            ; 0                      ; 0              ; 0                      ; 0              ; 0                     ; 0             ; 0                     ; 0             ; 0                     ; 0             ; 0                    ; 0            ; 1                 ;
-; state.delay_2          ; 0                      ; 0                     ; 0                      ; 0                    ; 0             ; 0            ; 0                      ; 0                    ; 1             ; 0            ; 0                      ; 0                    ; 0             ; 0            ; 0                      ; 0              ; 0                      ; 0              ; 0                     ; 0             ; 0                     ; 0             ; 0                     ; 0             ; 0                    ; 0            ; 1                 ;
-; state.data_2_cnt_rst   ; 0                      ; 0                     ; 0                      ; 0                    ; 0             ; 0            ; 0                      ; 1                    ; 0             ; 0            ; 0                      ; 0                    ; 0             ; 0            ; 0                      ; 0              ; 0                      ; 0              ; 0                     ; 0             ; 0                     ; 0             ; 0                     ; 0             ; 0                    ; 0            ; 1                 ;
-; state.data_2_cnt_rst_2 ; 0                      ; 0                     ; 0                      ; 0                    ; 0             ; 0            ; 1                      ; 0                    ; 0             ; 0            ; 0                      ; 0                    ; 0             ; 0            ; 0                      ; 0              ; 0                      ; 0              ; 0                     ; 0             ; 0                     ; 0             ; 0                     ; 0             ; 0                    ; 0            ; 1                 ;
-; state.data_3           ; 0                      ; 0                     ; 0                      ; 0                    ; 0             ; 1            ; 0                      ; 0                    ; 0             ; 0            ; 0                      ; 0                    ; 0             ; 0            ; 0                      ; 0              ; 0                      ; 0              ; 0                     ; 0             ; 0                     ; 0             ; 0                     ; 0             ; 0                    ; 0            ; 1                 ;
-; state.delay_3          ; 0                      ; 0                     ; 0                      ; 0                    ; 1             ; 0            ; 0                      ; 0                    ; 0             ; 0            ; 0                      ; 0                    ; 0             ; 0            ; 0                      ; 0              ; 0                      ; 0              ; 0                     ; 0             ; 0                     ; 0             ; 0                     ; 0             ; 0                    ; 0            ; 1                 ;
-; state.data_3_cnt_rst   ; 0                      ; 0                     ; 0                      ; 1                    ; 0             ; 0            ; 0                      ; 0                    ; 0             ; 0            ; 0                      ; 0                    ; 0             ; 0            ; 0                      ; 0              ; 0                      ; 0              ; 0                     ; 0             ; 0                     ; 0             ; 0                     ; 0             ; 0                    ; 0            ; 1                 ;
-; state.data_3_cnt_rst_2 ; 0                      ; 0                     ; 1                      ; 0                    ; 0             ; 0            ; 0                      ; 0                    ; 0             ; 0            ; 0                      ; 0                    ; 0             ; 0            ; 0                      ; 0              ; 0                      ; 0              ; 0                     ; 0             ; 0                     ; 0             ; 0                     ; 0             ; 0                    ; 0            ; 1                 ;
-; state.handshake_state  ; 0                      ; 1                     ; 0                      ; 0                    ; 0             ; 0            ; 0                      ; 0                    ; 0             ; 0            ; 0                      ; 0                    ; 0             ; 0            ; 0                      ; 0              ; 0                      ; 0              ; 0                     ; 0             ; 0                     ; 0             ; 0                     ; 0             ; 0                    ; 0            ; 1                 ;
-; state.handshake_state2 ; 1                      ; 0                     ; 0                      ; 0                    ; 0             ; 0            ; 0                      ; 0                    ; 0             ; 0            ; 0                      ; 0                    ; 0             ; 0            ; 0                      ; 0              ; 0                      ; 0              ; 0                     ; 0             ; 0                     ; 0             ; 0                     ; 0             ; 0                    ; 0            ; 1                 ;
-+------------------------+------------------------+-----------------------+------------------------+----------------------+---------------+--------------+------------------------+----------------------+---------------+--------------+------------------------+----------------------+---------------+--------------+------------------------+----------------+------------------------+----------------+-----------------------+---------------+-----------------------+---------------+-----------------------+---------------+----------------------+--------------+-------------------+
-
-
-Encoding Type:  One-Hot
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; State Machine - |top_de1|mouse:inst|sendFSM:sfsm|state                                                                                                                                                             ;
-+-------------------------+----------------+--------------------+-------------------------+--------------------+--------------------+-------------------+----------------------+-----------------+-------------------+
-; Name                    ; state.mouseclk ; state.datalowextra ; state.waitforclockstate ; state.datalowstate ; state.bothlowstate ; state.clklowstate ; state.waitcountreset ; state.waitstate ; state.reset_state ;
-+-------------------------+----------------+--------------------+-------------------------+--------------------+--------------------+-------------------+----------------------+-----------------+-------------------+
-; state.reset_state       ; 0              ; 0                  ; 0                       ; 0                  ; 0                  ; 0                 ; 0                    ; 0               ; 0                 ;
-; state.waitstate         ; 0              ; 0                  ; 0                       ; 0                  ; 0                  ; 0                 ; 0                    ; 1               ; 1                 ;
-; state.waitcountreset    ; 0              ; 0                  ; 0                       ; 0                  ; 0                  ; 0                 ; 1                    ; 0               ; 1                 ;
-; state.clklowstate       ; 0              ; 0                  ; 0                       ; 0                  ; 0                  ; 1                 ; 0                    ; 0               ; 1                 ;
-; state.bothlowstate      ; 0              ; 0                  ; 0                       ; 0                  ; 1                  ; 0                 ; 0                    ; 0               ; 1                 ;
-; state.datalowstate      ; 0              ; 0                  ; 0                       ; 1                  ; 0                  ; 0                 ; 0                    ; 0               ; 1                 ;
-; state.waitforclockstate ; 0              ; 0                  ; 1                       ; 0                  ; 0                  ; 0                 ; 0                    ; 0               ; 1                 ;
-; state.datalowextra      ; 0              ; 1                  ; 0                       ; 0                  ; 0                  ; 0                 ; 0                    ; 0               ; 1                 ;
-; state.mouseclk          ; 1              ; 0                  ; 0                       ; 0                  ; 0                  ; 0                 ; 0                    ; 0               ; 1                 ;
-+-------------------------+----------------+--------------------+-------------------------+--------------------+--------------------+-------------------+----------------------+-----------------+-------------------+
-
-
-Encoding Type:  One-Hot
-+-----------------------------------------------------------------------------------+
-; State Machine - |top_de1|mouse:inst|edge_debounce:ed|state                        ;
-+-------------------+----------------+------------+-------------+-------------------+
-; Name              ; state.debounce ; state.edge ; state.pause ; state.reset_state ;
-+-------------------+----------------+------------+-------------+-------------------+
-; state.reset_state ; 0              ; 0          ; 0           ; 0                 ;
-; state.pause       ; 0              ; 0          ; 1           ; 1                 ;
-; state.edge        ; 0              ; 1          ; 0           ; 1                 ;
-; state.debounce    ; 1              ; 0          ; 0           ; 1                 ;
-+-------------------+----------------+------------+-------------+-------------------+
-
-
-+------------------------------------------------------------------------------------------+
-; Registers Removed During Synthesis                                                       ;
-+-------------------------------------------------+----------------------------------------+
-; Register name                                   ; Reason for Removal                     ;
-+-------------------------------------------------+----------------------------------------+
-; mouse:inst|main_fsm:mfsm|state.handshake_state  ; Stuck at GND due to stuck port data_in ;
-; mouse:inst|main_fsm:mfsm|state.handshake_state2 ; Stuck at GND due to stuck port data_in ;
-; mouse:inst|main_fsm:mfsm|state.delay_1          ; Stuck at GND due to stuck port data_in ;
-; Total Number of Removed Registers = 3           ;                                        ;
-+-------------------------------------------------+----------------------------------------+
-
-
-+------------------------------------------------------------------------------------------------------------------------------+
-; Removed Registers Triggering Further Register Optimizations                                                                  ;
-+------------------------------------------------+---------------------------+-------------------------------------------------+
-; Register name                                  ; Reason for Removal        ; Registers Removed due to This Register          ;
-+------------------------------------------------+---------------------------+-------------------------------------------------+
-; mouse:inst|main_fsm:mfsm|state.handshake_state ; Stuck at GND              ; mouse:inst|main_fsm:mfsm|state.handshake_state2 ;
-;                                                ; due to stuck port data_in ;                                                 ;
-+------------------------------------------------+---------------------------+-------------------------------------------------+
-
-
-+------------------------------------------------------+
-; General Register Statistics                          ;
-+----------------------------------------------+-------+
-; Statistic                                    ; Value ;
-+----------------------------------------------+-------+
-; Total registers                              ; 94    ;
-; Number of registers using Synchronous Clear  ; 40    ;
-; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 0     ;
-; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 27    ;
-; Number of registers using Preset             ; 0     ;
-+----------------------------------------------+-------+
-
-
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                          ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------+
-; 3:1                ; 10 bits   ; 20 LEs        ; 10 LEs               ; 10 LEs                 ; Yes        ; |top_de1|mouse:inst|shiftregister_11bit:sr11|data_out[4]  ;
-; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |top_de1|mouse:inst|timebase:tb|count[2]                  ;
-; 3:1                ; 5 bits    ; 10 LEs        ; 5 LEs                ; 5 LEs                  ; Yes        ; |top_de1|mouse:inst|shiftregister_9bit:sr|new_new_data[3] ;
-; 3:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; Yes        ; |top_de1|mouse:inst|shiftregister_9bit:sr|new_new_data[7] ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------+
-
-
-+-------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "mouse:inst|main_fsm:mfsm"                                                                    ;
-+---------------+--------+----------+-------------------------------------------------------------------------------------+
-; Port          ; Type   ; Severity ; Details                                                                             ;
-+---------------+--------+----------+-------------------------------------------------------------------------------------+
-; bit11_reg_rst ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+---------------+--------+----------+-------------------------------------------------------------------------------------+
-
-
-+-------------------------------+
-; Elapsed Time Per Partition    ;
-+----------------+--------------+
-; Partition Name ; Elapsed Time ;
-+----------------+--------------+
-; Top            ; 00:00:00     ;
-+----------------+--------------+
 
 
 +-------------------------------+
 ; Analysis & Synthesis Messages ;
 +-------------------------------+
 Info: *******************************************************************
-Info: Running Quartus II 64-Bit Analysis & Synthesis
+Info: Running Quartus II 32-bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
-    Info: Processing started: Tue Jan 17 15:28:07 2023
+    Info: Processing started: Tue Jan 17 19:33:52 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off de1 -c top_de1
-Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
-Info (12021): Found 1 design units, including 0 entities, in source file /home/etuinstra/epo3/help/VHDL/counter25mhz-behav.vhd
-    Info (12022): Found design unit 1: counter25mhz-behav
-Info (12021): Found 1 design units, including 1 entities, in source file /home/etuinstra/epo3/help/VHDL/counter25mhz.vhd
-    Info (12023): Found entity 1: counter25mhz
-Info (12021): Found 1 design units, including 1 entities, in source file /home/etuinstra/epo3/help/VHDL/timebase.vhd
-    Info (12023): Found entity 1: timebase
-Info (12021): Found 1 design units, including 0 entities, in source file /home/etuinstra/epo3/help/VHDL/timebase-behav.vhd
+Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file /home/ghpdohmen/epo3/epo3/help/VHDL/y.vhd
+    Info (12023): Found entity 1: y
+Info (12021): Found 1 design units, including 0 entities, in source file /home/ghpdohmen/epo3/epo3/help/VHDL/y-behaviour_y.vhd
+    Info (12022): Found design unit 1: y-behaviour_y
+Info (12021): Found 1 design units, including 1 entities, in source file /home/ghpdohmen/epo3/epo3/help/VHDL/x.vhd
+    Info (12023): Found entity 1: x
+Info (12021): Found 1 design units, including 0 entities, in source file /home/ghpdohmen/epo3/epo3/help/VHDL/x-behaviour_x.vhd
+    Info (12022): Found design unit 1: x-behaviour_x
+Info (12021): Found 1 design units, including 0 entities, in source file /home/ghpdohmen/epo3/epo3/help/VHDL/vgadrive_behaviour.vhd
+    Info (12022): Found design unit 1: vgadrive-behaviour
+Info (12021): Found 1 design units, including 1 entities, in source file /home/ghpdohmen/epo3/epo3/help/VHDL/vgadrive.vhd
+    Info (12023): Found entity 1: vgadrive
+Info (12021): Found 1 design units, including 0 entities, in source file /home/ghpdohmen/epo3/epo3/help/VHDL/V_counter_behav.vhd
+    Info (12022): Found design unit 1: v_counter-behav
+Info (12021): Found 1 design units, including 1 entities, in source file /home/ghpdohmen/epo3/epo3/help/VHDL/V_counter.vhd
+    Info (12023): Found entity 1: v_counter
+Info (12021): Found 1 design units, including 0 entities, in source file /home/ghpdohmen/epo3/epo3/help/VHDL/timebase-behav.vhd
     Info (12022): Found design unit 1: timebase-behav
-Info (12021): Found 1 design units, including 0 entities, in source file /home/etuinstra/epo3/help/VHDL/shiftregister_11bit-behav.vhd
+Info (12021): Found 1 design units, including 1 entities, in source file /home/ghpdohmen/epo3/epo3/help/VHDL/timebase.vhd
+    Info (12023): Found entity 1: timebase
+Info (12021): Found 1 design units, including 0 entities, in source file /home/ghpdohmen/epo3/epo3/help/VHDL/shiftregister_11bit-behav.vhd
     Info (12022): Found design unit 1: shiftregister_11bit-behav
-Info (12021): Found 1 design units, including 1 entities, in source file /home/etuinstra/epo3/help/VHDL/shiftregister_9bit.vhd
+Info (12021): Found 1 design units, including 1 entities, in source file /home/ghpdohmen/epo3/epo3/help/VHDL/shiftregister_9bit.vhd
     Info (12023): Found entity 1: shiftregister_9bit
-Info (12021): Found 1 design units, including 0 entities, in source file /home/etuinstra/epo3/help/VHDL/shiftregister_9bit-behav.vhd
+Info (12021): Found 1 design units, including 0 entities, in source file /home/ghpdohmen/epo3/epo3/help/VHDL/shiftregister_9bit-behav.vhd
     Info (12022): Found design unit 1: shiftregister_9bit-behav
-Info (12021): Found 1 design units, including 0 entities, in source file /home/etuinstra/epo3/help/VHDL/sendFSM-behav.vhd
-    Info (12022): Found design unit 1: sendFSM-behav
-Info (12021): Found 1 design units, including 1 entities, in source file /home/etuinstra/epo3/help/VHDL/sendFSM.vhd
-    Info (12023): Found entity 1: sendFSM
-Info (12021): Found 1 design units, including 1 entities, in source file /home/etuinstra/epo3/help/VHDL/shfitregister_11bit.vhd
+Info (12021): Found 1 design units, including 1 entities, in source file /home/ghpdohmen/epo3/epo3/help/VHDL/shfitregister_11bit.vhd
     Info (12023): Found entity 1: shiftregister_11bit
+Info (12021): Found 1 design units, including 1 entities, in source file /home/ghpdohmen/epo3/epo3/help/VHDL/sendFSM.vhd
+    Info (12023): Found entity 1: sendFSM
+Info (12021): Found 1 design units, including 0 entities, in source file /home/ghpdohmen/epo3/epo3/help/VHDL/sendFSM-behav.vhd
+    Info (12022): Found design unit 1: sendFSM-behav
+Info (12021): Found 2 design units, including 1 entities, in source file /home/ghpdohmen/epo3/epo3/help/VHDL/ROM.vhd
+    Info (12022): Found design unit 1: rom_cursor-Behavioral
+    Info (12023): Found entity 1: rom_cursor
+Info (12021): Found 1 design units, including 1 entities, in source file /home/ghpdohmen/epo3/epo3/help/VHDL/pixel.vhd
+    Info (12023): Found entity 1: pixel
+Info (12021): Found 1 design units, including 0 entities, in source file /home/ghpdohmen/epo3/epo3/help/VHDL/pixel-behav.vhd
+    Info (12022): Found design unit 1: pixel-behav
 Warning (12090): Entity "mux" obtained from "../VHDL/mux.vhd" instead of from Quartus II megafunction library
-Info (12021): Found 1 design units, including 1 entities, in source file /home/etuinstra/epo3/help/VHDL/mux.vhd
+Info (12021): Found 1 design units, including 1 entities, in source file /home/ghpdohmen/epo3/epo3/help/VHDL/mux.vhd
     Info (12023): Found entity 1: mux
-Info (12021): Found 1 design units, including 0 entities, in source file /home/etuinstra/epo3/help/VHDL/mux-behav.vhd
+Info (12021): Found 1 design units, including 0 entities, in source file /home/ghpdohmen/epo3/epo3/help/VHDL/mux-behav.vhd
     Info (12022): Found design unit 1: mux-behav
-Info (12021): Found 1 design units, including 0 entities, in source file /home/etuinstra/epo3/help/VHDL/mouse-behav.vhd
-    Info (12022): Found design unit 1: mouse-behav
-Info (12021): Found 1 design units, including 1 entities, in source file /home/etuinstra/epo3/help/VHDL/mouse.vhd
+Info (12021): Found 1 design units, including 1 entities, in source file /home/ghpdohmen/epo3/epo3/help/VHDL/mouse_logic.vhd
+    Info (12023): Found entity 1: mouse_logic
+Info (12021): Found 1 design units, including 0 entities, in source file /home/ghpdohmen/epo3/epo3/help/VHDL/mouse_logic-behav.vhd
+    Info (12022): Found design unit 1: mouse_logic-behav
+Info (12021): Found 1 design units, including 1 entities, in source file /home/ghpdohmen/epo3/epo3/help/VHDL/mouse.vhd
     Info (12023): Found entity 1: mouse
-Info (12021): Found 1 design units, including 0 entities, in source file /home/etuinstra/epo3/help/VHDL/main_fsm-behav.vhd
-    Info (12022): Found design unit 1: main_fsm-behav
-Info (12021): Found 1 design units, including 1 entities, in source file /home/etuinstra/epo3/help/VHDL/main_fsm.vhd
+Info (12021): Found 1 design units, including 0 entities, in source file /home/ghpdohmen/epo3/epo3/help/VHDL/mouse-behav.vhd
+    Info (12022): Found design unit 1: mouse-behav
+Info (12021): Found 1 design units, including 1 entities, in source file /home/ghpdohmen/epo3/epo3/help/VHDL/main_fsm.vhd
     Info (12023): Found entity 1: main_fsm
-Info (12021): Found 1 design units, including 1 entities, in source file /home/etuinstra/epo3/help/VHDL/flipflop.vhd
+Info (12021): Found 1 design units, including 0 entities, in source file /home/ghpdohmen/epo3/epo3/help/VHDL/main_fsm-behav.vhd
+    Info (12022): Found design unit 1: main_fsm-behav
+Info (12021): Found 1 design units, including 0 entities, in source file /home/ghpdohmen/epo3/epo3/help/VHDL/logic_top-behaviour_logic_top.vhd
+    Info (12022): Found design unit 1: logic_top-behaviour_logic_top
+Info (12021): Found 1 design units, including 1 entities, in source file /home/ghpdohmen/epo3/epo3/help/VHDL/logic_top.vhd
+    Info (12023): Found entity 1: logic_top
+Info (12021): Found 2 design units, including 1 entities, in source file /home/ghpdohmen/epo3/epo3/help/VHDL/H_counter.vhd
+    Info (12022): Found design unit 1: h_counter-behav
+    Info (12023): Found entity 1: h_counter
+Info (12021): Found 1 design units, including 0 entities, in source file /home/ghpdohmen/epo3/epo3/help/VHDL/graphic_toplvl-behaviour.vhd
+    Info (12022): Found design unit 1: graphic_toplvl-behaviour
+Info (12021): Found 1 design units, including 1 entities, in source file /home/ghpdohmen/epo3/epo3/help/VHDL/graphic_toplvl.vhd
+    Info (12023): Found entity 1: graphic_toplvl
+Info (12021): Found 2 design units, including 1 entities, in source file /home/ghpdohmen/epo3/epo3/help/VHDL/graph_logic.vhd
+    Info (12022): Found design unit 1: graph_logic-behav
+    Info (12023): Found entity 1: graph_logic
+Info (12021): Found 1 design units, including 1 entities, in source file /home/ghpdohmen/epo3/epo3/help/VHDL/flipflop.vhd
     Info (12023): Found entity 1: flipflop
-Info (12021): Found 1 design units, including 0 entities, in source file /home/etuinstra/epo3/help/VHDL/flipflop-behav.vhd
+Info (12021): Found 1 design units, including 0 entities, in source file /home/ghpdohmen/epo3/epo3/help/VHDL/flipflop-behav.vhd
     Info (12022): Found design unit 1: flipflop-behav
-Info (12021): Found 1 design units, including 0 entities, in source file /home/etuinstra/epo3/help/VHDL/edge_debounce-behav.vhd
-    Info (12022): Found design unit 1: edge_debounce-behav
-Info (12021): Found 1 design units, including 1 entities, in source file /home/etuinstra/epo3/help/VHDL/edge_debounce.vhd
+Info (12021): Found 2 design units, including 1 entities, in source file /home/ghpdohmen/epo3/epo3/help/VHDL/edge_fall.vhd
+    Info (12022): Found design unit 1: edge_det_fall-behav
+    Info (12023): Found entity 1: edge_det_fall
+Info (12021): Found 1 design units, including 1 entities, in source file /home/ghpdohmen/epo3/epo3/help/VHDL/edge_detector.vhd
+    Info (12023): Found entity 1: edge_detector
+Info (12021): Found 1 design units, including 0 entities, in source file /home/ghpdohmen/epo3/epo3/help/VHDL/edge_detector-behav.vhd
+    Info (12022): Found design unit 1: edge_detector-behav
+Warning (12019): Can't analyze file -- file ../VHDL/edge_det.vhd is missing
+Info (12021): Found 1 design units, including 1 entities, in source file /home/ghpdohmen/epo3/epo3/help/VHDL/edge_debounce.vhd
     Info (12023): Found entity 1: edge_debounce
+Info (12021): Found 1 design units, including 0 entities, in source file /home/ghpdohmen/epo3/epo3/help/VHDL/edge_debounce-behav.vhd
+    Info (12022): Found design unit 1: edge_debounce-behav
+Info (12021): Found 2 design units, including 1 entities, in source file /home/ghpdohmen/epo3/epo3/help/VHDL/e_counter.vhd
+    Info (12022): Found design unit 1: e_counter-behav
+    Info (12023): Found entity 1: e_counter
+Info (12021): Found 1 design units, including 0 entities, in source file /home/ghpdohmen/epo3/epo3/help/VHDL/counter25mhz-behav.vhd
+    Info (12022): Found design unit 1: counter25mhz-behav
+Info (12021): Found 1 design units, including 1 entities, in source file /home/ghpdohmen/epo3/epo3/help/VHDL/counter25mhz.vhd
+    Info (12023): Found entity 1: counter25mhz
+Info (12021): Found 2 design units, including 1 entities, in source file /home/ghpdohmen/epo3/epo3/help/VHDL/countdown.vhd
+    Info (12022): Found design unit 1: countdown_bar-behav
+    Info (12023): Found entity 1: countdown_bar
+Info (12021): Found 1 design units, including 1 entities, in source file /home/ghpdohmen/epo3/epo3/help/VHDL/color.vhd
+    Info (12023): Found entity 1: color
+Info (12021): Found 1 design units, including 0 entities, in source file /home/ghpdohmen/epo3/epo3/help/VHDL/color-behaviour_color.vhd
+    Info (12022): Found design unit 1: color-behaviour_color
 Info (12021): Found 1 design units, including 1 entities, in source file top_de1.bdf
     Info (12023): Found entity 1: top_de1
+Info (12021): Found 2 design units, including 1 entities, in source file pre_vga_dac_4.vhd
+    Info (12022): Found design unit 1: pre_vga_dac_4-signal_flow
+    Info (12023): Found entity 1: pre_vga_dac_4
 Info (12021): Found 2 design units, including 1 entities, in source file gen25mhz.vhd
     Info (12022): Found design unit 1: gen25mhz-behaviour
     Info (12023): Found entity 1: gen25mhz
 Info (12127): Elaborating entity "top_de1" for the top level hierarchy
-Info (12128): Elaborating entity "mouse" for hierarchy "mouse:inst"
+Info (12128): Elaborating entity "pixel" for hierarchy "pixel:inst2"
+Info (12128): Elaborating entity "mouse_logic" for hierarchy "pixel:inst2|mouse_logic:ml"
+Warning (10541): VHDL Signal Declaration warning at mouse_logic.vhd(18): used implicit default value for signal "middelsteknop" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
+Warning (10036): Verilog HDL or VHDL warning at mouse_logic-behav.vhd(47): object "rst" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at mouse_logic-behav.vhd(47): object "led0" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at mouse_logic-behav.vhd(47): object "led1" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at mouse_logic-behav.vhd(47): object "led2" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at mouse_logic-behav.vhd(47): object "led3" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at mouse_logic-behav.vhd(47): object "led5" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at mouse_logic-behav.vhd(47): object "led6" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at mouse_logic-behav.vhd(47): object "led7" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at mouse_logic-behav.vhd(47): object "led8" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at mouse_logic-behav.vhd(47): object "led9" assigned a value but never read
+Info (12128): Elaborating entity "mouse" for hierarchy "pixel:inst2|mouse_logic:ml|mouse:ms"
 Warning (10036): Verilog HDL or VHDL warning at mouse-behav.vhd(123): object "bit11_reg_rst" assigned a value but never read
 Warning (10492): VHDL Process Statement warning at mouse-behav.vhd(140): signal "reset" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
 Warning (10492): VHDL Process Statement warning at mouse-behav.vhd(141): signal "count15k" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
@@ -456,15 +298,15 @@ Warning (10492): VHDL Process Statement warning at mouse-behav.vhd(146): signal 
 Warning (10492): VHDL Process Statement warning at mouse-behav.vhd(147): signal "leds_mainfsm" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
 Warning (10492): VHDL Process Statement warning at mouse-behav.vhd(148): signal "leds_mainfsm" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
 Warning (10492): VHDL Process Statement warning at mouse-behav.vhd(149): signal "leds_mainfsm" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Info (12128): Elaborating entity "counter25mhz" for hierarchy "mouse:inst|counter25mhz:cnt"
-Info (12128): Elaborating entity "edge_debounce" for hierarchy "mouse:inst|edge_debounce:ed"
+Info (12128): Elaborating entity "counter25mhz" for hierarchy "pixel:inst2|mouse_logic:ml|mouse:ms|counter25mhz:cnt"
+Info (12128): Elaborating entity "edge_debounce" for hierarchy "pixel:inst2|mouse_logic:ml|mouse:ms|edge_debounce:ed"
 Warning (10492): VHDL Process Statement warning at edge_debounce-behav.vhd(70): signal "reg1" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
 Warning (10492): VHDL Process Statement warning at edge_debounce-behav.vhd(70): signal "reg2" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
 Warning (10492): VHDL Process Statement warning at edge_debounce-behav.vhd(87): signal "count" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
 Warning (10492): VHDL Process Statement warning at edge_debounce-behav.vhd(118): signal "count" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Info (12128): Elaborating entity "shiftregister_9bit" for hierarchy "mouse:inst|shiftregister_9bit:sr"
+Info (12128): Elaborating entity "shiftregister_9bit" for hierarchy "pixel:inst2|mouse_logic:ml|mouse:ms|shiftregister_9bit:sr"
 Warning (10492): VHDL Process Statement warning at shiftregister_9bit-behav.vhd(17): signal "new_new_data" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Info (12128): Elaborating entity "sendFSM" for hierarchy "mouse:inst|sendFSM:sfsm"
+Info (12128): Elaborating entity "sendFSM" for hierarchy "pixel:inst2|mouse_logic:ml|mouse:ms|sendFSM:sfsm"
 Warning (10492): VHDL Process Statement warning at sendFSM-behav.vhd(72): signal "actBit" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
 Warning (10492): VHDL Process Statement warning at sendFSM-behav.vhd(89): signal "actBit" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
 Warning (10492): VHDL Process Statement warning at sendFSM-behav.vhd(106): signal "actBit" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
@@ -472,9 +314,9 @@ Warning (10492): VHDL Process Statement warning at sendFSM-behav.vhd(123): signa
 Warning (10492): VHDL Process Statement warning at sendFSM-behav.vhd(128): signal "clk15k" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
 Warning (10492): VHDL Process Statement warning at sendFSM-behav.vhd(140): signal "actBit" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
 Warning (10492): VHDL Process Statement warning at sendFSM-behav.vhd(163): signal "actBit" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Info (12128): Elaborating entity "mux" for hierarchy "mouse:inst|mux:mx"
-Info (12128): Elaborating entity "timebase" for hierarchy "mouse:inst|timebase:tb"
-Info (12128): Elaborating entity "main_fsm" for hierarchy "mouse:inst|main_fsm:mfsm"
+Info (12128): Elaborating entity "mux" for hierarchy "pixel:inst2|mouse_logic:ml|mouse:ms|mux:mx"
+Info (12128): Elaborating entity "timebase" for hierarchy "pixel:inst2|mouse_logic:ml|mouse:ms|timebase:tb"
+Info (12128): Elaborating entity "main_fsm" for hierarchy "pixel:inst2|mouse_logic:ml|mouse:ms|main_fsm:mfsm"
 Warning (10492): VHDL Process Statement warning at main_fsm-behav.vhd(57): signal "count15k_in" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
 Warning (10492): VHDL Process Statement warning at main_fsm-behav.vhd(93): signal "count15k_in" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
 Warning (10492): VHDL Process Statement warning at main_fsm-behav.vhd(129): signal "count15k_in" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
@@ -483,47 +325,100 @@ Warning (10492): VHDL Process Statement warning at main_fsm-behav.vhd(202): sign
 Warning (10492): VHDL Process Statement warning at main_fsm-behav.vhd(238): signal "count15k_in" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
 Warning (10492): VHDL Process Statement warning at main_fsm-behav.vhd(274): signal "count15k_in" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
 Warning (10492): VHDL Process Statement warning at main_fsm-behav.vhd(296): signal "count25M" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at main_fsm-behav.vhd(317): signal "data_in" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
 Warning (10492): VHDL Process Statement warning at main_fsm-behav.vhd(318): signal "data_in" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
 Warning (10492): VHDL Process Statement warning at main_fsm-behav.vhd(319): signal "data_in" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
 Warning (10492): VHDL Process Statement warning at main_fsm-behav.vhd(320): signal "data_in" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
 Warning (10492): VHDL Process Statement warning at main_fsm-behav.vhd(321): signal "data_in" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at main_fsm-behav.vhd(322): signal "data_in" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at main_fsm-behav.vhd(338): signal "data_in" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
 Warning (10492): VHDL Process Statement warning at main_fsm-behav.vhd(339): signal "data_in" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
 Warning (10492): VHDL Process Statement warning at main_fsm-behav.vhd(340): signal "data_in" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
 Warning (10492): VHDL Process Statement warning at main_fsm-behav.vhd(341): signal "data_in" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
 Warning (10492): VHDL Process Statement warning at main_fsm-behav.vhd(342): signal "data_in" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at main_fsm-behav.vhd(343): signal "data_in" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at main_fsm-behav.vhd(363): signal "count15k_in" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at main_fsm-behav.vhd(385): signal "count25M" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at main_fsm-behav.vhd(362): signal "count15k_in" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at main_fsm-behav.vhd(384): signal "count25M" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at main_fsm-behav.vhd(408): signal "data_in" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
 Warning (10492): VHDL Process Statement warning at main_fsm-behav.vhd(409): signal "data_in" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
 Warning (10492): VHDL Process Statement warning at main_fsm-behav.vhd(410): signal "data_in" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at main_fsm-behav.vhd(411): signal "data_in" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at main_fsm-behav.vhd(427): signal "data_in" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
 Warning (10492): VHDL Process Statement warning at main_fsm-behav.vhd(428): signal "data_in" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
 Warning (10492): VHDL Process Statement warning at main_fsm-behav.vhd(429): signal "data_in" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at main_fsm-behav.vhd(430): signal "data_in" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at main_fsm-behav.vhd(448): signal "count15k_in" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at main_fsm-behav.vhd(470): signal "count25M" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at main_fsm-behav.vhd(447): signal "count15k_in" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at main_fsm-behav.vhd(469): signal "count25M" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at main_fsm-behav.vhd(493): signal "data_in" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
 Warning (10492): VHDL Process Statement warning at main_fsm-behav.vhd(494): signal "data_in" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
 Warning (10492): VHDL Process Statement warning at main_fsm-behav.vhd(495): signal "data_in" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at main_fsm-behav.vhd(496): signal "data_in" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at main_fsm-behav.vhd(516): signal "data_in" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
 Warning (10492): VHDL Process Statement warning at main_fsm-behav.vhd(517): signal "data_in" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
 Warning (10492): VHDL Process Statement warning at main_fsm-behav.vhd(518): signal "data_in" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at main_fsm-behav.vhd(519): signal "data_in" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at main_fsm-behav.vhd(543): signal "handshake_in" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at main_fsm-behav.vhd(568): signal "handshake_in" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Info (12128): Elaborating entity "flipflop" for hierarchy "mouse:inst|flipflop:flipflop1"
-Info (12128): Elaborating entity "shiftregister_11bit" for hierarchy "mouse:inst|shiftregister_11bit:sr11"
+Warning (10492): VHDL Process Statement warning at main_fsm-behav.vhd(542): signal "handshake_in" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at main_fsm-behav.vhd(567): signal "handshake_in" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Info (12128): Elaborating entity "flipflop" for hierarchy "pixel:inst2|mouse_logic:ml|mouse:ms|flipflop:flipflop1"
+Info (12128): Elaborating entity "shiftregister_11bit" for hierarchy "pixel:inst2|mouse_logic:ml|mouse:ms|shiftregister_11bit:sr11"
+Info (12128): Elaborating entity "logic_top" for hierarchy "pixel:inst2|mouse_logic:ml|logic_top:il"
+Info (12128): Elaborating entity "x" for hierarchy "pixel:inst2|mouse_logic:ml|logic_top:il|x:x1"
+Warning (10036): Verilog HDL or VHDL warning at x-behaviour_x.vhd(10): object "output_signed" assigned a value but never read
+Warning (10492): VHDL Process Statement warning at x-behaviour_x.vhd(83): signal "input_register" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at x-behaviour_x.vhd(86): signal "input_register" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Info (12128): Elaborating entity "y" for hierarchy "pixel:inst2|mouse_logic:ml|logic_top:il|y:y1"
+Warning (10036): Verilog HDL or VHDL warning at y-behaviour_y.vhd(10): object "output_signed" assigned a value but never read
+Warning (10492): VHDL Process Statement warning at y-behaviour_y.vhd(83): signal "input_register" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at y-behaviour_y.vhd(86): signal "input_register" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Info (12128): Elaborating entity "color" for hierarchy "pixel:inst2|mouse_logic:ml|logic_top:il|color:color1"
+Warning (10631): VHDL Process Statement warning at color-behaviour_color.vhd(23): inferring latch(es) for signal or variable "output_color", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at color-behaviour_color.vhd(23): inferring latch(es) for signal or variable "next_state", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at color-behaviour_color.vhd(23): inferring latch(es) for signal or variable "handshakeim", which holds its previous value in one or more paths through the process
+Info (10041): Inferred latch for "handshakeim" at color-behaviour_color.vhd(23)
+Info (10041): Inferred latch for "next_state.paars" at color-behaviour_color.vhd(23)
+Info (10041): Inferred latch for "next_state.rood" at color-behaviour_color.vhd(23)
+Info (10041): Inferred latch for "next_state.cyaan" at color-behaviour_color.vhd(23)
+Info (10041): Inferred latch for "next_state.wit" at color-behaviour_color.vhd(23)
+Info (10041): Inferred latch for "next_state.groen" at color-behaviour_color.vhd(23)
+Info (10041): Inferred latch for "next_state.geel" at color-behaviour_color.vhd(23)
+Info (10041): Inferred latch for "next_state.blauw" at color-behaviour_color.vhd(23)
+Info (10041): Inferred latch for "next_state.zwart" at color-behaviour_color.vhd(23)
+Info (10041): Inferred latch for "output_color[0]" at color-behaviour_color.vhd(23)
+Info (10041): Inferred latch for "output_color[1]" at color-behaviour_color.vhd(23)
+Info (10041): Inferred latch for "output_color[2]" at color-behaviour_color.vhd(23)
+Info (12128): Elaborating entity "graphic_toplvl" for hierarchy "pixel:inst2|graphic_toplvl:gl"
+Info (12128): Elaborating entity "rom_cursor" for hierarchy "pixel:inst2|graphic_toplvl:gl|rom_cursor:rom"
+Info (12128): Elaborating entity "vgadrive" for hierarchy "pixel:inst2|graphic_toplvl:gl|vgadrive:vgd"
+Warning (10492): VHDL Process Statement warning at vgadrive_behaviour.vhd(127): signal "red" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at vgadrive_behaviour.vhd(128): signal "green" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at vgadrive_behaviour.vhd(129): signal "blue" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at vgadrive_behaviour.vhd(142): signal "scale_horizontal" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at vgadrive_behaviour.vhd(156): signal "scale_vertical" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Info (12128): Elaborating entity "graph_logic" for hierarchy "pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg"
+Warning (10541): VHDL Signal Declaration warning at graph_logic.vhd(14): used implicit default value for signal "countdown_klaar" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
+Warning (10541): VHDL Signal Declaration warning at graph_logic.vhd(82): used implicit default value for signal "sig_countdown" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
+Warning (10492): VHDL Process Statement warning at graph_logic.vhd(115): signal "loaded_colour" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Info (12128): Elaborating entity "v_counter" for hierarchy "pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|v_counter:lv"
+Info (12128): Elaborating entity "edge_detector" for hierarchy "pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|v_counter:lv|edge_detector:l_edge"
+Info (12128): Elaborating entity "h_counter" for hierarchy "pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|h_counter:lh"
+Info (12128): Elaborating entity "e_counter" for hierarchy "pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|e_counter:le"
+Warning (10492): VHDL Process Statement warning at e_counter.vhd(32): signal "logic_v_out" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at e_counter.vhd(32): signal "muis_y" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at e_counter.vhd(32): signal "logic_h_out" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at e_counter.vhd(32): signal "muis_x" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at e_counter.vhd(37): signal "new_count_e" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10631): VHDL Process Statement warning at e_counter.vhd(30): inferring latch(es) for signal or variable "new_count_e", which holds its previous value in one or more paths through the process
+Info (10041): Inferred latch for "new_count_e[0]" at e_counter.vhd(30)
+Info (10041): Inferred latch for "new_count_e[1]" at e_counter.vhd(30)
+Info (10041): Inferred latch for "new_count_e[2]" at e_counter.vhd(30)
+Info (10041): Inferred latch for "new_count_e[3]" at e_counter.vhd(30)
+Info (10041): Inferred latch for "new_count_e[4]" at e_counter.vhd(30)
+Info (10041): Inferred latch for "new_count_e[5]" at e_counter.vhd(30)
+Info (10041): Inferred latch for "new_count_e[6]" at e_counter.vhd(30)
+Info (10041): Inferred latch for "new_count_e[7]" at e_counter.vhd(30)
+Info (10041): Inferred latch for "new_count_e[8]" at e_counter.vhd(30)
+Info (10041): Inferred latch for "new_count_e[9]" at e_counter.vhd(30)
 Info (12128): Elaborating entity "gen25mhz" for hierarchy "gen25mhz:inst1"
-Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
-    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 182 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 4 input pins
-    Info (21059): Implemented 17 output pins
-    Info (21061): Implemented 161 logic cells
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 60 warnings
-    Info: Peak virtual memory: 644 megabytes
-    Info: Processing ended: Tue Jan 17 15:28:12 2023
-    Info: Elapsed time: 00:00:05
-    Info: Total CPU time (on all processors): 00:00:02
+Info (12128): Elaborating entity "pre_vga_dac_4" for hierarchy "pre_vga_dac_4:inst"
+Error (12006): Node instance "ram" instantiates undefined entity "colour_storage" File: /home/ghpdohmen/epo3/epo3/help/VHDL/graphic_toplvl-behaviour.vhd Line: 78
+Error: Quartus II 32-bit Analysis & Synthesis was unsuccessful. 1 error, 95 warnings
+    Error: Peak virtual memory: 363 megabytes
+    Error: Processing ended: Tue Jan 17 19:33:57 2023
+    Error: Elapsed time: 00:00:05
+    Error: Total CPU time (on all processors): 00:00:02
 
 
