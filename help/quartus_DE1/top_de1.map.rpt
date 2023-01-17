@@ -1,5 +1,5 @@
 Analysis & Synthesis report for top_de1
-Tue Jan 17 19:33:57 2023
+Tue Jan 17 20:16:04 2023
 Quartus II 32-bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
 
 
@@ -10,7 +10,14 @@ Quartus II 32-bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Ver
   2. Analysis & Synthesis Summary
   3. Analysis & Synthesis Settings
   4. Parallel Compilation
-  5. Analysis & Synthesis Messages
+  5. Parameter Settings for User Entity Instance: pixel:inst2|graphic_toplvl:gl|colour_storage:ram
+  6. Parameter Settings for User Entity Instance: pixel:inst2|graphic_toplvl:gl|rom_cursor:rom
+  7. Port Connectivity Checks: "pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg"
+  8. Port Connectivity Checks: "pixel:inst2|graphic_toplvl:gl|vgadrive:vgd"
+  9. Port Connectivity Checks: "pixel:inst2|mouse_logic:ml|logic_top:il"
+ 10. Port Connectivity Checks: "pixel:inst2|mouse_logic:ml|mouse:ms|main_fsm:mfsm"
+ 11. Port Connectivity Checks: "pixel:inst2|mouse_logic:ml|mouse:ms"
+ 12. Analysis & Synthesis Messages
 
 
 
@@ -36,7 +43,7 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                          ;
 +------------------------------------+--------------------------------------------------+
-; Analysis & Synthesis Status        ; Failed - Tue Jan 17 19:33:57 2023                ;
+; Analysis & Synthesis Status        ; Failed - Tue Jan 17 20:16:04 2023                ;
 ; Quartus II 32-bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Full Version ;
 ; Revision Name                      ; top_de1                                          ;
 ; Top-level Entity Name              ; top_de1                                          ;
@@ -155,15 +162,95 @@ applicable agreement for further details.
 +----------------------------+-------------+
 
 
++-----------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: pixel:inst2|graphic_toplvl:gl|colour_storage:ram ;
++----------------+-------+----------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                 ;
++----------------+-------+----------------------------------------------------------------------+
+; N              ; 10    ; Signed Integer                                                       ;
+; M              ; 99    ; Signed Integer                                                       ;
++----------------+-------+----------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: pixel:inst2|graphic_toplvl:gl|rom_cursor:rom ;
++----------------+-------+------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                             ;
++----------------+-------+------------------------------------------------------------------+
+; M              ; 1023  ; Signed Integer                                                   ;
++----------------+-------+------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg"                                                                                                               ;
++---------------+---------+------------------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; Port          ; Type    ; Severity         ; Details                                                                                                                                      ;
++---------------+---------+------------------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; v_count       ; Unknown ; Critical Warning ; Named port was not declared by the instantiated entity                                                                                       ;
+; enable        ; Input   ; Warning          ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
+; countdown_aan ; Input   ; Warning          ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
++---------------+---------+------------------+----------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "pixel:inst2|graphic_toplvl:gl|vgadrive:vgd"                                           ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+; Port   ; Type   ; Severity ; Details                                                                             ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+; enable ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "pixel:inst2|mouse_logic:ml|logic_top:il"                                                   ;
++-------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port        ; Type   ; Severity ; Details                                                                             ;
++-------------+--------+----------+-------------------------------------------------------------------------------------+
+; handshakeim ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "pixel:inst2|mouse_logic:ml|mouse:ms|main_fsm:mfsm"                                           ;
++---------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port          ; Type   ; Severity ; Details                                                                             ;
++---------------+--------+----------+-------------------------------------------------------------------------------------+
+; bit11_reg_rst ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++---------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "pixel:inst2|mouse_logic:ml|mouse:ms"                                                ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; rst  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; led0 ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; led1 ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; led2 ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; led3 ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; led5 ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; led6 ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; led7 ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; led8 ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; led9 ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
 +-------------------------------+
 ; Analysis & Synthesis Messages ;
 +-------------------------------+
 Info: *******************************************************************
 Info: Running Quartus II 32-bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
-    Info: Processing started: Tue Jan 17 19:33:52 2023
+    Info: Processing started: Tue Jan 17 20:15:59 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off de1 -c top_de1
 Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
+Info (12021): Found 2 design units, including 1 entities, in source file /home/ghpdohmen/epo3/epo3/help/VHDL/RAMbestand.vhd
+    Info (12022): Found design unit 1: colour_storage-Behavioral
+    Info (12023): Found entity 1: colour_storage
 Info (12021): Found 1 design units, including 1 entities, in source file /home/ghpdohmen/epo3/epo3/help/VHDL/y.vhd
     Info (12023): Found entity 1: y
 Info (12021): Found 1 design units, including 0 entities, in source file /home/ghpdohmen/epo3/epo3/help/VHDL/y-behaviour_y.vhd
@@ -381,6 +468,16 @@ Info (10041): Inferred latch for "output_color[0]" at color-behaviour_color.vhd(
 Info (10041): Inferred latch for "output_color[1]" at color-behaviour_color.vhd(23)
 Info (10041): Inferred latch for "output_color[2]" at color-behaviour_color.vhd(23)
 Info (12128): Elaborating entity "graphic_toplvl" for hierarchy "pixel:inst2|graphic_toplvl:gl"
+Warning (10036): Verilog HDL or VHDL warning at graphic_toplvl-behaviour.vhd(61): object "sig_enable" assigned a value but never read
+Info (12128): Elaborating entity "colour_storage" for hierarchy "pixel:inst2|graphic_toplvl:gl|colour_storage:ram"
+Warning (10492): VHDL Process Statement warning at RAMbestand.vhd(41): signal "ram_y" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at RAMbestand.vhd(42): signal "ram_x" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at RAMbestand.vhd(43): signal "x_test" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at RAMbestand.vhd(43): signal "y_test" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at RAMbestand.vhd(44): signal "x_test" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at RAMbestand.vhd(45): signal "y_test" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at RAMbestand.vhd(46): signal "y_grid" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at RAMbestand.vhd(46): signal "x_grid" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
 Info (12128): Elaborating entity "rom_cursor" for hierarchy "pixel:inst2|graphic_toplvl:gl|rom_cursor:rom"
 Info (12128): Elaborating entity "vgadrive" for hierarchy "pixel:inst2|graphic_toplvl:gl|vgadrive:vgd"
 Warning (10492): VHDL Process Statement warning at vgadrive_behaviour.vhd(127): signal "red" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
@@ -414,11 +511,12 @@ Info (10041): Inferred latch for "new_count_e[8]" at e_counter.vhd(30)
 Info (10041): Inferred latch for "new_count_e[9]" at e_counter.vhd(30)
 Info (12128): Elaborating entity "gen25mhz" for hierarchy "gen25mhz:inst1"
 Info (12128): Elaborating entity "pre_vga_dac_4" for hierarchy "pre_vga_dac_4:inst"
-Error (12006): Node instance "ram" instantiates undefined entity "colour_storage" File: /home/ghpdohmen/epo3/epo3/help/VHDL/graphic_toplvl-behaviour.vhd Line: 78
-Error: Quartus II 32-bit Analysis & Synthesis was unsuccessful. 1 error, 95 warnings
-    Error: Peak virtual memory: 363 megabytes
-    Error: Processing ended: Tue Jan 17 19:33:57 2023
-    Error: Elapsed time: 00:00:05
-    Error: Total CPU time (on all processors): 00:00:02
+Error (12002): Port "v_count" does not exist in macrofunction "gr_lg" File: /home/ghpdohmen/epo3/epo3/help/VHDL/graphic_toplvl-behaviour.vhd Line: 90
+Warning (12241): 1 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Error: Quartus II 32-bit Analysis & Synthesis was unsuccessful. 1 error, 105 warnings
+    Error: Peak virtual memory: 371 megabytes
+    Error: Processing ended: Tue Jan 17 20:16:05 2023
+    Error: Elapsed time: 00:00:06
+    Error: Total CPU time (on all processors): 00:00:03
 
 

@@ -71,6 +71,7 @@ set_location_assignment PIN_B13 -to Data_Switch
 set_location_assignment PIN_A13 -to Clk15k_Switch
 set_location_assignment PIN_B14 -to data_in
 set_location_assignment PIN_A14 -to clk15k_in
+set_global_assignment -name VHDL_FILE ../VHDL/RAMbestand.vhd
 set_global_assignment -name VHDL_FILE ../VHDL/y.vhd
 set_global_assignment -name VHDL_FILE "../VHDL/y-behaviour_y.vhd"
 set_global_assignment -name VHDL_FILE ../VHDL/x.vhd
