@@ -40,6 +40,7 @@ component logic_top is
 	tempx: out std_logic_vector(3 downto 0);
 	tempy: out std_logic_vector(3 downto 0);
 	draw: out std_logic;
+	middelstemuisknop: out std_logic;
 	handshakeim: out std_logic);
 end component;
 
@@ -75,7 +76,7 @@ dy(3) <= buttons_mouse(1);
 
 ms: mouse port map(mouseX, buttons_mouse, mouseY, handshake_mouse_out, DataSwitch, ClkSwitch, handshake_mouse_in, Data_in, Clk15k, clk, reset, rst, led0, led1, led2, led3, led5, led6, led7, led8, led9);
 
-il: logic_top port map(clk, reset, buttons, dx, dy, handshake_mouse_out, countlow, rescount, output_color, tempx, tempy, draw, handshake_mouse_in);
+il: logic_top port map(clk, reset, buttons, dx, dy, handshake_mouse_out, countlow, rescount, output_color, tempx, tempy, draw, middelstemuisknop, handshake_mouse_in);
 
 
 
