@@ -121,6 +121,7 @@ begin
 		end if;
 	else
 	end if;
+middelstemuisknop<=buttons(1);
 end process;
 
 end behaviour_color;
