@@ -298,7 +298,7 @@ begin
                 else
                     new_state <= state;
                 end if;
-		test <= "11111";	
+		test <= "01101";	
 
 	    when data_1_cnt_rst => 
 		
