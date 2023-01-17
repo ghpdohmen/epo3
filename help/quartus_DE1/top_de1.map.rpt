@@ -1,5 +1,5 @@
 Analysis & Synthesis report for top_de1
-Tue Jan 17 20:16:04 2023
+Tue Jan 17 20:19:19 2023
 Quartus II 32-bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
 
 
@@ -12,7 +12,7 @@ Quartus II 32-bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Ver
   4. Parallel Compilation
   5. Parameter Settings for User Entity Instance: pixel:inst2|graphic_toplvl:gl|colour_storage:ram
   6. Parameter Settings for User Entity Instance: pixel:inst2|graphic_toplvl:gl|rom_cursor:rom
-  7. Port Connectivity Checks: "pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg"
+  7. Port Connectivity Checks: "pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|countdown_bar:lcountdown"
   8. Port Connectivity Checks: "pixel:inst2|graphic_toplvl:gl|vgadrive:vgd"
   9. Port Connectivity Checks: "pixel:inst2|mouse_logic:ml|logic_top:il"
  10. Port Connectivity Checks: "pixel:inst2|mouse_logic:ml|mouse:ms|main_fsm:mfsm"
@@ -43,7 +43,7 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                          ;
 +------------------------------------+--------------------------------------------------+
-; Analysis & Synthesis Status        ; Failed - Tue Jan 17 20:16:04 2023                ;
+; Analysis & Synthesis Status        ; Failed - Tue Jan 17 20:19:19 2023                ;
 ; Quartus II 32-bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Full Version ;
 ; Revision Name                      ; top_de1                                          ;
 ; Top-level Entity Name              ; top_de1                                          ;
@@ -184,13 +184,13 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg"                                                                                                               ;
+; Port Connectivity Checks: "pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|countdown_bar:lcountdown"                                                                                      ;
 +---------------+---------+------------------+----------------------------------------------------------------------------------------------------------------------------------------------+
 ; Port          ; Type    ; Severity         ; Details                                                                                                                                      ;
 +---------------+---------+------------------+----------------------------------------------------------------------------------------------------------------------------------------------+
 ; v_count       ; Unknown ; Critical Warning ; Named port was not declared by the instantiated entity                                                                                       ;
+; countdown_out ; Output  ; Critical Warning ; Can't connect array with 11 elements in array dimension 1 to port with 19 elements in the same dimension                                     ;
 ; enable        ; Input   ; Warning          ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
-; countdown_aan ; Input   ; Warning          ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
 +---------------+---------+------------------+----------------------------------------------------------------------------------------------------------------------------------------------+
 
 
@@ -245,7 +245,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 32-bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
-    Info: Processing started: Tue Jan 17 20:15:59 2023
+    Info: Processing started: Tue Jan 17 20:19:14 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off de1 -c top_de1
 Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
 Info (12021): Found 2 design units, including 1 entities, in source file /home/ghpdohmen/epo3/epo3/help/VHDL/RAMbestand.vhd
@@ -486,9 +486,19 @@ Warning (10492): VHDL Process Statement warning at vgadrive_behaviour.vhd(129): 
 Warning (10492): VHDL Process Statement warning at vgadrive_behaviour.vhd(142): signal "scale_horizontal" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
 Warning (10492): VHDL Process Statement warning at vgadrive_behaviour.vhd(156): signal "scale_vertical" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
 Info (12128): Elaborating entity "graph_logic" for hierarchy "pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg"
-Warning (10541): VHDL Signal Declaration warning at graph_logic.vhd(14): used implicit default value for signal "countdown_klaar" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
-Warning (10541): VHDL Signal Declaration warning at graph_logic.vhd(82): used implicit default value for signal "sig_countdown" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
-Warning (10492): VHDL Process Statement warning at graph_logic.vhd(115): signal "loaded_colour" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at graph_logic.vhd(99): signal "countdown_int" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at graph_logic.vhd(112): signal "loaded_colour" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at graph_logic.vhd(121): signal "countdown_int" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10631): VHDL Process Statement warning at graph_logic.vhd(90): inferring latch(es) for signal or variable "x_grid_asked", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at graph_logic.vhd(90): inferring latch(es) for signal or variable "y_grid_asked", which holds its previous value in one or more paths through the process
+Info (10041): Inferred latch for "y_grid_asked[0]" at graph_logic.vhd(90)
+Info (10041): Inferred latch for "y_grid_asked[1]" at graph_logic.vhd(90)
+Info (10041): Inferred latch for "y_grid_asked[2]" at graph_logic.vhd(90)
+Info (10041): Inferred latch for "y_grid_asked[3]" at graph_logic.vhd(90)
+Info (10041): Inferred latch for "x_grid_asked[0]" at graph_logic.vhd(90)
+Info (10041): Inferred latch for "x_grid_asked[1]" at graph_logic.vhd(90)
+Info (10041): Inferred latch for "x_grid_asked[2]" at graph_logic.vhd(90)
+Info (10041): Inferred latch for "x_grid_asked[3]" at graph_logic.vhd(90)
 Info (12128): Elaborating entity "v_counter" for hierarchy "pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|v_counter:lv"
 Info (12128): Elaborating entity "edge_detector" for hierarchy "pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|v_counter:lv|edge_detector:l_edge"
 Info (12128): Elaborating entity "h_counter" for hierarchy "pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|h_counter:lh"
@@ -509,14 +519,17 @@ Info (10041): Inferred latch for "new_count_e[6]" at e_counter.vhd(30)
 Info (10041): Inferred latch for "new_count_e[7]" at e_counter.vhd(30)
 Info (10041): Inferred latch for "new_count_e[8]" at e_counter.vhd(30)
 Info (10041): Inferred latch for "new_count_e[9]" at e_counter.vhd(30)
+Info (12128): Elaborating entity "countdown_bar" for hierarchy "pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|countdown_bar:lcountdown"
+Info (12128): Elaborating entity "edge_det_fall" for hierarchy "pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|countdown_bar:lcountdown|edge_det_fall:l_edge"
 Info (12128): Elaborating entity "gen25mhz" for hierarchy "gen25mhz:inst1"
 Info (12128): Elaborating entity "pre_vga_dac_4" for hierarchy "pre_vga_dac_4:inst"
-Error (12002): Port "v_count" does not exist in macrofunction "gr_lg" File: /home/ghpdohmen/epo3/epo3/help/VHDL/graphic_toplvl-behaviour.vhd Line: 90
+Error (12005): Actual width (11) of port "countdown_out" on instance "pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|countdown_bar:lcountdown" is not compatible with the formal port width (19) declared by the instantiated entity File: /home/ghpdohmen/epo3/epo3/help/VHDL/graph_logic.vhd Line: 83
+Error (12002): Port "v_count" does not exist in macrofunction "lcountdown" File: /home/ghpdohmen/epo3/epo3/help/VHDL/graph_logic.vhd Line: 83
 Warning (12241): 1 hierarchies have connectivity warnings - see the Connectivity Checks report folder
-Error: Quartus II 32-bit Analysis & Synthesis was unsuccessful. 1 error, 105 warnings
-    Error: Peak virtual memory: 371 megabytes
-    Error: Processing ended: Tue Jan 17 20:16:05 2023
-    Error: Elapsed time: 00:00:06
+Error: Quartus II 32-bit Analysis & Synthesis was unsuccessful. 2 errors, 107 warnings
+    Error: Peak virtual memory: 363 megabytes
+    Error: Processing ended: Tue Jan 17 20:19:19 2023
+    Error: Elapsed time: 00:00:05
     Error: Total CPU time (on all processors): 00:00:03
 
 
