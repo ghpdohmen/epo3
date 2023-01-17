@@ -13,13 +13,13 @@ port(
 	draw	: in std_logic;
 	-- input/muis
 	--mouse_count: in std_logic;
-    	countdown_aan: in std_logic;
-    	middelste_knop:in std_logic;
-    	countdown_klaar: out std_logic;
+    	--countdown_aan: in std_logic;
+    	--middelste_knop:in std_logic;
+    	--countdown_klaar: out std_logic;
 	-- outputs to storage
-	logic_x_asked	: out std_logic_vector(3 downto 0);
-	logic_y_asked	: out std_logic_vector (3 downto 0);
-    	logic_e_asked	: out std_logic_vector (9 downto 0);
+	--logic_x_asked	: out std_logic_vector(3 downto 0);
+	--logic_y_asked	: out std_logic_vector (3 downto 0);
+    	--logic_e_asked	: out std_logic_vector (9 downto 0);
 
 	-- outputs from vga
 	R, G, B, H, V : out std_logic
@@ -35,11 +35,11 @@ port (
     reset: in std_logic;
     -- INPUTS
     -- countdown
-    enable: in std_logic;
-    countdown_aan: in std_logic;
-    middelste_knop:in std_logic;
+    --enable: in std_logic;
+    --countdown_aan: in std_logic;
+    --middelste_knop:in std_logic;
     
-    countdown_klaar: out std_logic;
+    --countdown_klaar: out std_logic;
     --vga
     logic_h_32_minis: in std_logic;
     logic_v_32_minis: in std_logic;
@@ -75,7 +75,7 @@ component colour_storage is port(
  	ram_x: in std_logic_vector(3 downto 0);
  	ram_colour_in: in std_logic_vector(2 downto 0); -- Data to write into RAM
  	draw: in std_logic; -- Write enable 
- 	counter_aan: in std_logic;
+ 	--counter_aan: in std_logic;
  	clk: in std_logic; -- clock input for RAM
 	ram_y_asked: in std_logic_vector(3 downto 0); 
  	ram_x_asked: in std_logic_vector(3 downto 0);
@@ -97,18 +97,18 @@ end component;
 	signal sig_x, sig_y : std_logic_vector(3 downto 0);
 	signal sig_rom: std_logic_vector(1 downto 0);
 	signal sig_ram: std_logic_vector(2 downto 0);
-	signal sig_countdown: std_logic_vector (4 downto 0);
+	--signal sig_countdown: std_logic_vector (4 downto 0);
 	
 	
 	
 begin
-logic_e_asked <= sig_e;
-logic_x_asked <= sig_x;
-logic_y_asked <= sig_y;
-ram: colour_storage port map(
+--logic_e_asked <= sig_e;
+--logic_x_asked <= sig_x;
+--logic_y_asked <= sig_y;
+ram: colour_storage port map(  	--counter_aan => countdown_aan,
 	clk => clk,
 	ram_x => logic_x, ram_y => logic_y, ram_colour_in => loaded_color,
-	draw => draw, counter_aan => countdown_aan,
+	draw => draw, 
 	ram_y_asked => sig_y, ram_x_asked => sig_x,
 	ram_colour_out => sig_ram
 );
@@ -122,10 +122,10 @@ vgd: vgadrive port map (
 gr_lg: graph_logic port map (
 	clk => clk,
 	reset => reset,
-	enable => sig_enable,
-	countdown_aan => countdown_aan,
-	middelste_knop => middelste_knop,
-	countdown_klaar => countdown_klaar,
+	--enable => sig_enable,
+	--countdown_aan => countdown_aan,
+	--middelste_knop => middelste_knop,
+	--countdown_klaar => countdown_klaar,
 	logic_h_32_minis => sig_scale_h,
 	logic_v_32_minis => sig_scale_v,
 	logic_x => logic_x,
