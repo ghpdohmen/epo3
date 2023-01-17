@@ -12,7 +12,7 @@ port(
 	countdown_out: out std_logic_vector(18 downto 0)
 );
 end;
-architecture behav of countdown_bar is -- +-30 seconden lang het enable signaal op de falling edge tellen, 20 bits
+architecture behav of countdown_bar is -- +-30 seconden lang het enable signaal op de falling edge tellen, 19 bits
 component edge_det_fall is 
 port(
 	clk     : in  std_logic;
