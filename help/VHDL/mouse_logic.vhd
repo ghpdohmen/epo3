@@ -15,7 +15,7 @@ entity mouse_logic is
 	tempx: out std_logic_vector(3 downto 0);
 	tempy: out std_logic_vector(3 downto 0);
 	draw: out std_logic;
-	middelstemuisknop: out std_logic);
+	middelsteknop: out std_logic);
 
 end mouse_logic;
 

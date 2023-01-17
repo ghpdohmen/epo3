@@ -5,9 +5,9 @@ set_db use_scan_seqs_for_non_dft false
 
 include ../tcl/read_hdl.tcl
 
-elaborate
+elaborate pixel_behav_cfg
 
-include ../in/top.sdc
+include ../in/pixel.sdc
 
 synthesize -to_mapped
 #set_db syn_generic_effort medium
@@ -16,9 +16,9 @@ synthesize -to_mapped
 
 ungroup -all -flat
 insert_tiehilo_cells
-write_hdl -mapped > ../out/top.v
-write_sdf > ../out/top.sdf
-write_sdc > ../out/top.sdc
+write_hdl -mapped > ../out/pixel.v
+write_sdf > ../out/pixel.sdf
+write_sdc > ../out/pixel.sdc
 
 report timing
 report gates
