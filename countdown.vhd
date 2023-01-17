@@ -3,13 +3,13 @@ use IEEE.std_logic_1164.all;
 use IEEE.numeric_std.all;
 entity countdown_bar is 
 port(
-	enable: in std_logic;
+	v_count: in std_logic;
 	--countdown_aan: in std_logic;
     	middelste_knop: in std_logic;
 	clk: in std_logic;
 	reset: in std_logic;
 	countdown_klaar: out std_logic;
-	countdown_out: out std_logic_vector(18 downto 0)
+	countdown_out: out std_logic_vector(10 downto 0)
 );
 end;
 architecture behav of countdown_bar is -- +-30 seconden lang het enable signaal op de falling edge tellen, 19 bits
@@ -21,9 +21,9 @@ port(
 );
 end component;
 signal sig_edge_fall: std_logic;
-signal count_c, new_count_c, new_count2_c: unsigned (18 downto 0);
+signal count_c, new_count_c: unsigned (10 downto 0);
 begin
-l_edge: edge_det_fall port map (clk => clk, input => enable, edges=>sig_edge_fall);
+l_edge: edge_det_fall port map (clk => clk, input => v_count, edges=>sig_edge_fall);
 
 process(clk, reset, new_count_c, middelste_knop) -- global reset
         begin
@@ -52,7 +52,7 @@ end process;
 
 process(count_c) -- when the countdown is at 30? seconds countdown_klaar= 1
 	begin
-		if (count_c = "1111111111111111111") then
+		if (count_c = "11111111111") then
 			countdown_klaar <= '1';
 		else
 			countdown_klaar <= '0';
