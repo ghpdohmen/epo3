@@ -73,6 +73,7 @@ component sendFSM is
         reset       :   in std_logic;
         countIn     :   in std_logic_vector (12 downto 0);
 	clk	    :	in std_logic;
+	clk15k	    :   in std_logic;
         clkTrans    :   out std_logic; --mouse clock transistor
         dataTrans   :   out std_logic; --mouse data transistor	
         timebaseRst :   out std_logic;  -- 25Mhz counter.
@@ -84,13 +85,16 @@ end component;
 
 --main fsm
 component main_fsm is
-	port(clk:            in  std_logic;
+   port(clk:            in  std_logic;
 	reset:		in  std_logic;
         data_in:        in std_logic_vector(10 downto 0);
         count15k_in:    in std_logic_vector(3 downto 0);
+	count25M:		in std_logic_vector(12 downto 0);
 	handshake_in:   in std_logic;
         bit11_reg_rst:  out std_logic;
         cntReset15k:    out std_logic;
+	cntReset25M:		out std_logic;
+	mux_select_main: out std_logic;
         actBit:         out std_logic;
         send_reset:     out std_logic;
 	x_out:          out std_logic_vector(2 downto 0);
@@ -116,7 +120,7 @@ component flipflop is
     );
 end component;
 
-signal cntReset25M, bit9_reg_rst, reset_send, mux_select, muxReg, muxFSM, actBit, output_edgedet, cntReset15K, bit11_reg_rst, xflipfloprst, yflipfloprst, btnflipfloprst, count_debounce_reset			:std_logic;
+signal cntReset25M, cntReset25M_main, cntReset25M_send, bit9_reg_rst, reset_send, mux_select, muxReg, muxFSM, actBit, output_edgedet, cntReset15K, bit11_reg_rst, xflipfloprst, yflipfloprst, btnflipfloprst, count_debounce_reset			:std_logic;
 signal count25M		:std_logic_vector(12 downto 0);
 signal count15k		:std_logic_vector(3 downto 0);
 signal data_sr_9bit:		std_logic_vector(8 downto 0);
@@ -127,6 +131,9 @@ signal count_debounce : std_logic_vector(12 downto 0);
 
 
 begin
+
+
+
 --tijdelijk
 process(clk)
 begin
@@ -150,13 +157,14 @@ ed: edge_debounce port map (clk, clk15k, reset, count_debounce, count_debounce_r
 
 sr: shiftregister_9bit port map (clk, output_edgedet, data_sr_9bit, bit9_reg_rst, muxReg);
 
-sfsm: sendFSM port map (actBit, reset_send, count25M, clk, ClkSwitch, muxFSM, cntReset25M, data_sr_9bit, bit9_reg_rst, mux_select);
+sfsm: sendFSM port map (actBit, reset_send, count25M, clk, Clk15k, ClkSwitch, muxFSM, cntReset25M_send, data_sr_9bit, bit9_reg_rst, mux_select);
 
 mx: mux port map (mux_select, muxFSM, muxReg, dataSwitch);
+mx2: mux port map(mux_select_main, cntReset25M_main, cntReset25M_send, cntReset25M);
 
 tb: timebase port map (clk, output_edgedet, cntReset15K, count15k);
 
-mfsm: main_fsm port map (clk, reset, data_sr_11bit, count15k, Handshake_in, bit11_reg_rst, cntReset15K, actBit, reset_send, mouse_x, mouse_y, btns, xflipfloprst, yflipfloprst, btnflipfloprst, handshake_out, leds_mainfsm);
+mfsm: main_fsm port map (clk, reset, data_sr_11bit, count15k, count25M, Handshake_in, bit11_reg_rst, cntReset15K, cntReset25M_main, actBit, reset_send, mouse_x, mouse_y, btns, xflipfloprst, yflipfloprst, btnflipfloprst, handshake_out, leds_mainfsm);
 
 flipflop1: flipflop port map(clk, xflipfloprst, mouse_x(2),mouseX(2));
 flipflop2: flipflop port map(clk, xflipfloprst, mouse_x(1),mouseX(1));
