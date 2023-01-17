@@ -4,7 +4,7 @@ use IEEE.numeric_std.all;
 entity countdown_bar is 
 port(
 	enable: in std_logic;
-	countdown_aan: in std_logic;
+	--countdown_aan: in std_logic;
     	middelste_knop: in std_logic;
 	clk: in std_logic;
 	reset: in std_logic;
@@ -25,31 +25,21 @@ signal count_c, new_count_c, new_count2_c: unsigned (18 downto 0);
 begin
 l_edge: edge_det_fall port map (clk => clk, input => enable, edges=>sig_edge_fall);
 
-process(clk, reset, new_count_c, new_count2_c) -- global reset
+process(clk, reset, new_count_c, middelste_knop) -- global reset
         begin
             if (rising_edge(clk)) then
                 if (reset = '1') then
-                    count_c <= (others => '0');  -- in if else dus goed
+                    count_c <= (others => '0');  
                 else
-                    if (new_count2_c= "0000000000000000000") then
-                    	count_c <= new_count2_c; -- goed
+                    if(middelste_knop='1') then
+                        count_c <= (others => '0');
                     else
-                    	count_c <= new_count_c; -- goed		
-		    end if;	
+                        count_c <= new_count_c;
+                    end if;	
                 end if;
             end if;
 end process;
 
-process(clk, middelste_knop, new_count_c) -- local reset
-        begin
-            if (rising_edge(clk)) then
-                if (middelste_knop = '1') then
-		    new_count2_c <= (others => '0');	 -- goed
-                else
-                    new_count2_c <= new_count_c;  -- goed
-                end if;
-            end if;
-end process;
 
 process(sig_edge_fall, count_c)  -- counting process, automatic overflow
     begin
