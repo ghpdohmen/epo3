@@ -41,28 +41,29 @@ begin
 y_test <= to_integer(unsigned(ram_y));
 x_test <= to_integer(unsigned(ram_x));
 if ((x_test >= 1) and (y_test>=6)) then
-	x_grid <= x_test- 1; 
+	x_grid <= x_test - 1; 
 	y_grid <= y_test - 5;
 	ram_position <= N*y_grid+ x_grid;
-
- 	if(rising_edge(clk)) then
-		if (reset='1') then		--global reset
-			ram <= (OTHERS => (OTHERS => '1'));
-        	else 
-			if (middelste_knop='1') then		-- local reset
-				ram <= (OTHERS => (OTHERS => '1'));
-			elsif(draw='1' and counter_aan='1' ) then -- Only writes when draw = 1 and the countdown started (counter_aan= 1)
- 				ram(ram_position) <= ram_colour_in;
-			else 
-			ram(ram_position) <= ram(ram_position);
-			end if;
-        	end if;
-	end if;
 else
 	x_grid <= 0; 
 	y_grid <= 0;
 	ram_position <= 0;
 end if;
+
+if(rising_edge(clk)) then
+	if (reset='1') then		--global reset
+		ram <= (OTHERS => (OTHERS => '1'));
+        else 
+		if (middelste_knop='1') then		-- local reset
+			ram <= (OTHERS => (OTHERS => '1'));
+		elsif(draw='1' and counter_aan='1' ) then -- Only writes when draw = 1 and the countdown started (counter_aan= 1)
+ 			ram(ram_position) <= ram_colour_in;
+		else 
+		ram(ram_position) <= ram(ram_position);
+		end if;
+        end if;
+end if;
+
 end process;
 x_grid_asked <= to_integer(unsigned(ram_x_asked));
 y_grid_asked <= to_integer(unsigned(ram_y_asked));
