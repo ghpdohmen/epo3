@@ -3,7 +3,7 @@ use IEEE.std_logic_1164.ALL;
 
 architecture behav of mux is
 begin
-	process (mux_select, muxFSM, muxReg)
+	process (mux_select, muxFSM, muxReg) --misschien clk
 	begin	
 		if(mux_select = '0') then
 			dataSwitch <= muxFSM;

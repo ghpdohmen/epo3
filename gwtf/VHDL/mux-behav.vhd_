@@ -7,7 +7,7 @@ begin
 	begin	
 		if(mux_select = '0') then
 			dataSwitch <= muxFSM;
-		else then
+		else
 			dataSwitch <= muxReg;
 		end if;
 	end process;

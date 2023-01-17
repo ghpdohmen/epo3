@@ -346,6 +346,13 @@ muxReg => dataSwitch.DATAA
 dataSwitch <= dataSwitch.DB_MAX_OUTPUT_PORT_TYPE
 
 
+|top_de1|mouse:inst|mux:mx2
+mux_select => dataSwitch.OUTPUTSELECT
+muxFSM => dataSwitch.DATAB
+muxReg => dataSwitch.DATAA
+dataSwitch <= dataSwitch.DB_MAX_OUTPUT_PORT_TYPE
+
+
 |top_de1|mouse:inst|timebase:tb
 clk => count[0].CLK
 clk => count[1].CLK
@@ -367,6 +374,9 @@ count_out[3] <= count[3].DB_MAX_OUTPUT_PORT_TYPE
 
 |top_de1|mouse:inst|main_fsm:mfsm
 clk => state~1.DATAIN
+reset => state.OUTPUTSELECT
+reset => state.OUTPUTSELECT
+reset => state.OUTPUTSELECT
 reset => state.OUTPUTSELECT
 reset => state.OUTPUTSELECT
 reset => state.OUTPUTSELECT
@@ -416,9 +426,24 @@ count15k_in[2] => LessThan0.IN6
 count15k_in[2] => LessThan1.IN6
 count15k_in[3] => LessThan0.IN5
 count15k_in[3] => LessThan1.IN5
+count25M[0] => LessThan2.IN26
+count25M[1] => LessThan2.IN25
+count25M[2] => LessThan2.IN24
+count25M[3] => LessThan2.IN23
+count25M[4] => LessThan2.IN22
+count25M[5] => LessThan2.IN21
+count25M[6] => LessThan2.IN20
+count25M[7] => LessThan2.IN19
+count25M[8] => LessThan2.IN18
+count25M[9] => LessThan2.IN17
+count25M[10] => LessThan2.IN16
+count25M[11] => LessThan2.IN15
+count25M[12] => LessThan2.IN14
 handshake_in => ~NO_FANOUT~
 bit11_reg_rst <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
 cntReset15k <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+cntReset25M <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+mux_select_main <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
 actBit <= actBit.DB_MAX_OUTPUT_PORT_TYPE
 send_reset <= send_reset.DB_MAX_OUTPUT_PORT_TYPE
 x_out[0] <= x_out.DB_MAX_OUTPUT_PORT_TYPE
@@ -436,11 +461,11 @@ x_flipflop <= x_flipflop.DB_MAX_OUTPUT_PORT_TYPE
 y_flipflop <= y_out.DB_MAX_OUTPUT_PORT_TYPE
 btn_flipflop <= buttons.DB_MAX_OUTPUT_PORT_TYPE
 handshake_out <= handshake_out.DB_MAX_OUTPUT_PORT_TYPE
-test[0] <= WideOr16.DB_MAX_OUTPUT_PORT_TYPE
-test[1] <= WideOr15.DB_MAX_OUTPUT_PORT_TYPE
-test[2] <= WideOr14.DB_MAX_OUTPUT_PORT_TYPE
-test[3] <= WideOr13.DB_MAX_OUTPUT_PORT_TYPE
-test[4] <= WideOr12.DB_MAX_OUTPUT_PORT_TYPE
+test[0] <= WideOr21.DB_MAX_OUTPUT_PORT_TYPE
+test[1] <= WideOr20.DB_MAX_OUTPUT_PORT_TYPE
+test[2] <= WideOr19.DB_MAX_OUTPUT_PORT_TYPE
+test[3] <= WideOr18.DB_MAX_OUTPUT_PORT_TYPE
+test[4] <= WideOr17.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |top_de1|mouse:inst|flipflop:flipflop1

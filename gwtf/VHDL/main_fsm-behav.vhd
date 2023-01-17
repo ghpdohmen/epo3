@@ -4,7 +4,7 @@ use IEEE.numeric_std.all;
 
 architecture behav of main_fsm is
 
-type mainfsm_state is (reset_state, sendFF, sendFF_cnt_rst, wachtFA, wachtFA_cnt_rst, wachtAA, wachtAA_cnt_rst, wachtID, wachtID_cnt_rst, enableF4, enableF4_cnt_rst, wachtFA2, wachtFA2_cnt_rst, data_1, data_1_cnt_rst, data_1_cnt_rst_2, data_2, data_2_cnt_rst, data_2_cnt_rst_2, data_3, data_3_cnt_rst, data_3_cnt_rst_2, handshake_state, handshake_state2);
+type mainfsm_state is (reset_state, sendFF, sendFF_cnt_rst, wachtFA, wachtFA_cnt_rst, wachtAA, wachtAA_cnt_rst, wachtID, wachtID_cnt_rst, enableF4, enableF4_cnt_rst, wachtFA2, wachtFA2_cnt_rst, data_1, delay_1, data_1_cnt_rst, data_1_cnt_rst_2, data_2, delay_2, data_2_cnt_rst, data_2_cnt_rst_2, data_3, delay_3, data_3_cnt_rst, data_3_cnt_rst_2, handshake_state, handshake_state2);
 signal state, new_state : mainfsm_state;
 
 
@@ -27,6 +27,8 @@ begin
             when reset_state =>
                 bit11_reg_rst   <= '1';
                 cntReset15k	    <= '1';
+		cntReset25M		<= '1';
+		mux_select_main <= '1';
 		        actBit          <= '0';
 		        send_reset      <= '1';
 		        handshake_out   <= '0';
@@ -41,6 +43,8 @@ begin
 				when sendFF =>
 					 bit11_reg_rst   <= '1';
                 cntReset15k	  <= '0';
+		cntReset25M		<= '1';
+		mux_select_main <= '1';
                 actBit          <= '0';
                 send_reset      <= '0';
                 handshake_out   <= '0';
@@ -59,6 +63,8 @@ begin
 				when sendFF_cnt_rst =>
 					 bit11_reg_rst   <= '1';
                 cntReset15k	    <= '1';
+		cntReset25M		<= '1';
+		mux_select_main <= '1';
                 actBit          <= '0';
                 send_reset      <= '1';
                 handshake_out   <= '0';
@@ -73,6 +79,8 @@ begin
             when wachtFA =>
                 bit11_reg_rst   <= '1';
                 cntReset15k	    <= '0';
+		cntReset25M 		<= '0';
+		mux_select_main <= '1';
                 actBit          <= '0';
                 send_reset      <= '1';
                 handshake_out   <= '0';
@@ -91,6 +99,8 @@ begin
 	     when wachtFA_cnt_rst =>
                 bit11_reg_rst   <= '1';
                 cntReset15k	    <= '1';
+		cntReset25M		<= '1';
+		mux_select_main <= '1';
                 actBit          <= '0';
                 send_reset      <= '1';
                 handshake_out   <= '0';
@@ -105,6 +115,8 @@ begin
             when wachtAA =>
                 bit11_reg_rst   <= '1';
                 cntReset15k	    <= '0';
+		cntReset25M		<= '1';
+		mux_select_main <= '1';
                 actBit          <= '0';
                 send_reset      <= '1';
                 handshake_out   <= '0';
@@ -123,6 +135,8 @@ begin
             when wachtAA_cnt_rst =>
                 bit11_reg_rst   <= '1';
                 cntReset15k	    <= '1';
+		cntReset25M		<= '1';
+		mux_select_main <= '1';
                 actBit          <= '0';
                 send_reset      <= '1';
                 handshake_out   <= '0';
@@ -137,6 +151,8 @@ begin
 	    when wachtID =>
                 bit11_reg_rst   <= '1';
                 cntReset15k	    <= '0';
+		cntReset25M		<= '1';
+		mux_select_main <= '1';
                 actBit          <= '0';
                 send_reset      <= '1';
                 handshake_out   <= '0';
@@ -155,6 +171,8 @@ begin
             when wachtID_cnt_rst =>
                 bit11_reg_rst   <= '1';
                 cntReset15k	    <= '1';
+		cntReset25M		<= '1';
+		mux_select_main <= '1';
                 actBit          <= '0';
                 send_reset      <= '1';
                 handshake_out   <= '0';
@@ -169,6 +187,8 @@ begin
             when enableF4 =>
                 bit11_reg_rst   <= '1';
                 cntReset15k	    <= '0';
+		cntReset25M		<= '1';
+		mux_select_main <= '1';
                 actBit          <= '1';
                 send_reset      <= '0';
                 handshake_out   <= '0';
@@ -188,6 +208,8 @@ begin
             when enableF4_cnt_rst =>
                 bit11_reg_rst   <= '1';
                 cntReset15k	    <= '1';
+		cntReset25M		<= '1';
+		mux_select_main <= '1';
                 actBit          <= '0';
                 send_reset      <= '1';
                 handshake_out   <= '0';
@@ -202,6 +224,8 @@ begin
             when wachtFA2 =>
                 bit11_reg_rst   <= '1';
                 cntReset15k	    <= '0';
+		cntReset25M		<= '1';
+		mux_select_main <= '1';
                 actBit          <= '0';
                 send_reset      <= '1';
                 handshake_out   <= '0';
@@ -220,6 +244,8 @@ begin
             when wachtFA2_cnt_rst =>
                 bit11_reg_rst   <= '1';
                 cntReset15k	    <= '1';
+		cntReset25M		<= '1';
+		mux_select_main <= '1';
                 actBit          <= '0';
                 send_reset      <= '1';
                 handshake_out   <= '0';
@@ -234,6 +260,8 @@ begin
 	    when data_1 =>
 		bit11_reg_rst   <= '0';
                 cntReset15k	    <= '0';
+		cntReset25M		<= '1';
+		mux_select_main <= '0';
                 actBit          <= '0';
                 send_reset      <= '1';
                 handshake_out   <= '0';
@@ -249,9 +277,34 @@ begin
                     new_state <= state;
                 end if;
 		test <= "01101";	
+
+	    when delay_1 =>
+		bit11_reg_rst   <= '0';
+                cntReset15k	    <= '0';
+		cntReset25M 		<= '0';
+		cntReset25M		<= '0';
+		mux_select_main <= '0';
+                actBit          <= '0';
+                send_reset      <= '1';
+                handshake_out   <= '0';
+                x_flipflop      <= '0';
+                y_flipflop      <= '0';
+                btn_flipflop    <= '0';
+                x_out           <= (others => '0');
+                y_out           <= (others => '0');
+                buttons         <= (others => '0');
+		if(to_integer(unsigned(count25M)) >= 2500) then
+                    new_state <= data_1_cnt_rst;
+                else
+                    new_state <= state;
+                end if;
+		test <= "01101";	
+
 	    when data_1_cnt_rst => 
 		
                 cntReset15k	    <= '1';
+		cntReset25M		<= '1';
+		mux_select_main <= '0';
                 actBit          <= '0';
                 send_reset      <= '1';
                 handshake_out   <= '0';
@@ -273,6 +326,8 @@ begin
 		test <= "01110";	
 	    when data_1_cnt_rst_2 =>
 		cntReset15k	    <= '0';
+		cntReset25M 		<= '1';
+		mux_select_main <= '0';
                 actBit          <= '0';
                 send_reset      <= '1';
                 handshake_out   <= '0';
@@ -293,6 +348,8 @@ begin
 	    when data_2 =>
 		bit11_reg_rst   <= '0';
                 cntReset15k	    <= '0';
+		cntReset25M		<= '1';
+		mux_select_main <= '0';
                 actBit          <= '0';
                 send_reset      <= '1';
                 handshake_out   <= '0';
@@ -303,14 +360,40 @@ begin
                 y_out           <= (others => '0');
                 buttons         <= (others => '0');
 		if(to_integer(unsigned(count15k_in)) >= 11) then
+                    new_state <= delay_2;
+                else
+                    new_state <= state;
+                end if;
+		test <= "10000";	
+
+	    when delay_2 =>
+		bit11_reg_rst   <= '0';
+                cntReset15k	    <= '0';
+		cntReset25M 		<= '0';
+		cntReset25M		<= '0';
+		mux_select_main <= '0';
+                actBit          <= '0';
+                send_reset      <= '1';
+                handshake_out   <= '0';
+                x_flipflop      <= '0';
+                y_flipflop      <= '0';
+                btn_flipflop    <= '0';
+                x_out           <= (others => '0');
+                y_out           <= (others => '0');
+                buttons         <= (others => '0');
+		if(to_integer(unsigned(count25M)) >= 2500) then
                     new_state <= data_2_cnt_rst;
                 else
                     new_state <= state;
                 end if;
 		test <= "10000";	
-	   when data_2_cnt_rst => --maybe we want to add a state to read the data while not reseting the register yet cuz this might give problems. The shit inside processes is sequential tho.
+
+
+	    when data_2_cnt_rst => --maybe we want to add a state to read the data while not reseting the register yet cuz this might give problems. The shit inside processes is sequential tho.
 		
                 cntReset15k	    <= '1';
+		cntReset25M		<= '1';
+		mux_select_main <= '0';
                 actBit          <= '0';
                 send_reset      <= '1';
                 handshake_out   <= '0';
@@ -330,6 +413,8 @@ begin
 		test <= "10001";	
 	    when data_2_cnt_rst_2 =>
 		cntReset15k     <= '0';
+		cntReset25M		<= '1';
+		mux_select_main <= '0';
                 actBit          <= '0';
                 send_reset      <= '1';
                 handshake_out   <= '0';
@@ -348,6 +433,8 @@ begin
 	    when data_3 =>
 		bit11_reg_rst   <= '0';
                 cntReset15k	    <= '0';
+		cntReset25M 		<= '1';
+		mux_select_main <= '0';
                 actBit          <= '0';
                 send_reset      <= '1';
                 handshake_out   <= '0';
@@ -358,14 +445,40 @@ begin
                 y_out           <= (others => '0');
                 buttons         <= (others => '0');
 		if(to_integer(unsigned(count15k_in)) >= 11) then
+                    new_state <= delay_3;
+                else
+                    new_state <= state;
+                end if;
+		test <= "10011";	
+
+
+	    when delay_3 =>
+		bit11_reg_rst   <= '0';
+                cntReset15k	    <= '0';
+		cntReset25M 		<= '0';
+		mux_select_main <= '0';
+                actBit          <= '0';
+                send_reset      <= '1';
+                handshake_out   <= '0';
+                x_flipflop      <= '0';
+                y_flipflop      <= '0';
+                btn_flipflop    <= '0';
+                x_out           <= (others => '0');
+                y_out           <= (others => '0');
+                buttons         <= (others => '0');
+		if(to_integer(unsigned(count25M)) >= 2500) then
                     new_state <= data_3_cnt_rst;
                 else
                     new_state <= state;
                 end if;
 		test <= "10011";	
+
+
 		when data_3_cnt_rst => --maybe we want to add a state to read the data while not reseting the register yet cuz this might give problems. The shit inside processes is sequential tho.
 		
                 cntReset15k	    <= '1';
+		cntReset25M		<= '1';
+		mux_select_main <= '0';
                 actBit          <= '0';
                 send_reset      <= '1';
                 handshake_out   <= '0';
@@ -387,6 +500,8 @@ begin
 		when data_3_cnt_rst_2 => --maybe we want to add a state to read the data while not reseting the register yet cuz this might give problems. The shit inside processes is sequential tho.
 		
                 cntReset15k	    <= '1';
+		cntReset25M		<= '1';
+		mux_select_main <= '0';
                 actBit          <= '0';
                 send_reset      <= '1';
                 handshake_out   <= '0';
@@ -408,6 +523,8 @@ begin
 		when handshake_state => --maybe we want to add a state to read the data while not reseting the register yet cuz this might give problems. The shit inside processes is sequential tho.
 		
                 cntReset15k	    <= '1';
+		cntReset25M		<= '1';
+		mux_select_main <= '0';
                 actBit          <= '0';
                 send_reset      <= '1';
                 handshake_out   <= '1';
@@ -431,6 +548,8 @@ begin
 		when handshake_state2 => --maybe we want to add a state to read the data while not reseting the register yet cuz this might give problems. The shit inside processes is sequential tho.
 		
                 cntReset15k	    <= '1';
+		cntReset25M		<= '1';
+		mux_select_main <= '0';
                 actBit          <= '0';
                 send_reset      <= '1';
                 handshake_out   <= '0';
