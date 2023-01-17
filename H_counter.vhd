@@ -47,4 +47,3 @@ l_edge: edge_detector port map (clk => clk, input => logic_h_32, edges=>sig_edge
     end process;
 logic_h_out <= std_logic_vector(count_h);
 end architecture behav;
-

@@ -55,8 +55,8 @@ signal ram: ram_array :=(
    );
 signal ram_position: integer range 0 to 99;
 signal ram_asked : integer range 0 to 99;
-signal x_grid : integer range 0 to 99;
-signal y_grid : integer range 0 to 99;
+signal x_grid,x_grid_asked  : integer range 0 to 99;
+signal y_grid,y_grid_asked : integer range 0 to 99;
 signal x_test: integer range 0 to 99;
 signal y_test: integer range 0 to 99;
 begin
@@ -70,17 +70,21 @@ if ((x_test >= 1) and (y_test>=6)) then
 	ram_position <= N*y_grid+ x_grid;
 
  	if(clk='1') then
-        	if (draw='1' and counter_aan='1') then -- alleen veranderen als draw 1 is en als de countdown aan is, signaal komt van een fsm uit inpout logic
+        	if (draw='1' and counter_aan='1' ) then -- alleen veranderen als draw 1 is en als de countdown aan is, signaal komt van een fsm uit inpout logic ---and counter_aan='1'
  		ram(ram_position) <= ram_colour_in;
 		else 
 		ram(ram_position) <= ram(ram_position);
         	end if;
 	end if;
 else
-	x_test<=to_integer(unsigned(ram_x));
+	x_grid <= 0; --1 kan nog veranderen
+	y_grid <= 0;
+	ram_position <= 0;
 end if;
 end process;
-ram_asked <= N*to_integer(unsigned(ram_y_asked))+to_integer(unsigned(ram_x_asked)); -- x en y naar een integer van 0 tot M(99)
+x_grid_asked <= to_integer(unsigned(ram_x_asked));
+y_grid_asked <= to_integer(unsigned(ram_y_asked));
+ram_asked <= N*y_grid_asked+x_grid_asked; -- x en y naar een integer van 0 tot M(99)
  -- Data to be read out 
 ram_colour_out <= ram(ram_asked);
 end Behavioral;
