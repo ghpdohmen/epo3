@@ -26,7 +26,6 @@ l_edge: edge_detector port map (clk => clk, input => logic_v_32, edges=>sig_edge
             if (rising_edge(clk)) then
                 if (reset = '1' or count_v="1110") then
                     count_v <= (others => '0');	
-		--new_count <= (others => '0');
                 else
                     count_v <= new_count_v;
                 end if;
@@ -47,5 +46,3 @@ l_edge: edge_detector port map (clk => clk, input => logic_v_32, edges=>sig_edge
     end process;
     logic_v_out <= std_logic_vector(count_v);
 end architecture behav;
-
-
