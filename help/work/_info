@@ -1366,9 +1366,9 @@ V`f7HEL_g?0^T_Zl3M2nke2
 !s100 dP3oRZ2bYj0j2kTRI40T`0
 R4
 33
-!s110 1673958241
+!s110 1673958549
 !i10b 1
-!s108 1673958240.000000
+!s108 1673958549.000000
 !s90 -2008|-lower|-explicit|-work|work|VHDL/pixel_SYN.vhd|-quiet|-nologo|
 !s107 VHDL/pixel_SYN.vhd|
 !i113 0
@@ -1395,7 +1395,7 @@ Z98 !s108 1673954973.000000
 R12
 R8
 Cpixel_behav_cfg
-epixel
+Z99 epixel
 R32
 R59
 R91
@@ -1424,14 +1424,39 @@ R4
 !i113 0
 R13
 R8
+Cpixel_synthesised_cfg
+R99
+asynthesised
+DAx4 work 5 pixel 11 synthesised 22 `f7HEL_g?0^T_Zl3M2nke2
+R2
+R3
+R96
+w1673958562
+R0
+8VHDL/pixel_synthesised_cfg.vhd
+FVHDL/pixel_synthesised_cfg.vhd
+l0
+L1
+VDYf334QEm@Vcn?i;dKF<D1
+!s100 K08PJ^5B`ePIGHb_Ll=X90
+R4
+33
+!s110 1673958562
+!i10b 0
+!s108 1673958562.000000
+!s90 -2008|-lower|-explicit|-work|work|VHDL/pixel_synthesised_cfg.vhd|-quiet|-nologo|
+!s107 VHDL/pixel_synthesised_cfg.vhd|
+!i113 0
+R13
+R8
 Erom_cursor
 R14
 R15
 R2
 R3
 R0
-Z99 8VHDL/ROM.vhd
-Z100 FVHDL/ROM.vhd
+Z100 8VHDL/ROM.vhd
+Z101 FVHDL/ROM.vhd
 l0
 L4
 V<THNUe3Z3M78e7Wb3FOjD1
@@ -1442,7 +1467,7 @@ R26
 !i10b 1
 R27
 !s90 -2008|-just|E|-lower|-explicit|-work|work|VHDL/ROM.vhd|-quiet|-nologo|
-Z101 !s107 VHDL/ROM.vhd|
+Z102 !s107 VHDL/ROM.vhd|
 !i113 0
 R7
 R8
@@ -1461,7 +1486,7 @@ R51
 !i10b 1
 R31
 !s90 -2008|-just|A|-lower|-explicit|-work|work|VHDL/ROM.vhd|-quiet|-nologo|
-R101
+R102
 !i113 0
 R12
 R8
@@ -1630,7 +1655,7 @@ R4
 R13
 R8
 Eshiftregister_11bit_tb
-Z102 w1673953642
+Z103 w1673953642
 R2
 R3
 R0
@@ -1651,7 +1676,7 @@ R11
 R7
 R8
 Abehaviour
-Z103 DEx4 work 22 shiftregister_11bit_tb 0 22 JmT^V@B>4<TBUWVzY6VJY0
+Z104 DEx4 work 22 shiftregister_11bit_tb 0 22 JmT^V@B>4<TBUWVzY6VJY0
 R2
 R3
 8VHDL/shiftregister_11bit_tb-behaviour.vhd
@@ -1679,7 +1704,7 @@ R89
 DAx4 work 22 shiftregister_11bit_tb 9 behaviour 22 eH[T9c>T^2GFUGkJIZSoR3
 R2
 R3
-R103
+R104
 w1673957692
 R0
 8VHDL/shiftregister_11bit_tb_behaviour_cfg.vhd
@@ -1842,8 +1867,8 @@ R15
 R2
 R3
 R0
-Z104 8VHDL/V_counter.vhd
-Z105 FVHDL/V_counter.vhd
+Z105 8VHDL/V_counter.vhd
+Z106 FVHDL/V_counter.vhd
 l0
 L4
 VP_[Kaa`SY]cFA5lgTjVm03
@@ -1854,7 +1879,7 @@ R26
 !i10b 1
 R27
 !s90 -2008|-just|E|-lower|-explicit|-work|work|VHDL/V_counter.vhd|-quiet|-nologo|
-Z106 !s107 VHDL/V_counter.vhd|
+Z107 !s107 VHDL/V_counter.vhd|
 !i113 0
 R7
 R8
@@ -1873,7 +1898,7 @@ R51
 !i10b 1
 R31
 !s90 -2008|-just|A|-lower|-explicit|-work|work|VHDL/V_counter.vhd|-quiet|-nologo|
-R106
+R107
 !i113 0
 R12
 R8
@@ -1906,26 +1931,26 @@ R4
 R13
 R8
 Evgadrive
-Z107 w1673953021
+Z108 w1673953021
 R63
 R64
 R15
 R2
 R3
 R0
-Z108 8VHDL/vgadrive.vhd
-Z109 FVHDL/vgadrive.vhd
+Z109 8VHDL/vgadrive.vhd
+Z110 FVHDL/vgadrive.vhd
 l0
 L6
 VRzom[W_glU8_lVXb^:iCE3
 !s100 o4Gd3>L2]DclX_dEV;^BK3
 R4
 33
-Z110 !s110 1673954844
+Z111 !s110 1673954844
 !i10b 1
-Z111 !s108 1673954844.000000
-Z112 !s90 -2008|-lower|-explicit|-work|work|VHDL/vgadrive.vhd|-quiet|-nologo|
-Z113 !s107 VHDL/vgadrive.vhd|
+Z112 !s108 1673954844.000000
+Z113 !s90 -2008|-lower|-explicit|-work|work|VHDL/vgadrive.vhd|-quiet|-nologo|
+Z114 !s107 VHDL/vgadrive.vhd|
 !i113 0
 R13
 R8
@@ -1942,11 +1967,11 @@ V5kfaAaNVj353B?S8j83`a3
 !s100 3W_JjU]dYVQf@04]6^NLR3
 R4
 33
-R110
-!i10b 1
 R111
+!i10b 1
 R112
 R113
+R114
 !i113 0
 R13
 R8
@@ -1991,9 +2016,9 @@ VUkWa1<AaWU_[UTa[1?]fP1
 !s100 c]E`fOM@LNbRd?o8]IE=n3
 R4
 33
-Z114 !s110 1673957299
+Z115 !s110 1673957299
 !i10b 1
-Z115 !s108 1673957299.000000
+Z116 !s108 1673957299.000000
 !s90 -2008|-lower|-explicit|-work|work|VHDL/x.vhd|-quiet|-nologo|
 !s107 VHDL/x.vhd|
 !i113 0
@@ -2012,9 +2037,9 @@ V[N8@iIJ`X`F9:2XUSc@kN3
 !s100 QeY1`HQnnzn?6n:c>d>hI2
 R4
 33
-R114
-!i10b 1
 R115
+!i10b 1
+R116
 !s90 -2008|-lower|-explicit|-work|work|VHDL/x-behaviour_x.vhd|-quiet|-nologo|
 !s107 VHDL/x-behaviour_x.vhd|
 !i113 0
@@ -2059,9 +2084,9 @@ V]e]CIZ=feTkA:Bi_7R;bm2
 !s100 V6<l9UnTH[`R;nK:C6?1J1
 R4
 33
-Z116 !s110 1673957324
+Z117 !s110 1673957324
 !i10b 1
-Z117 !s108 1673957324.000000
+Z118 !s108 1673957324.000000
 !s90 -2008|-lower|-explicit|-work|work|VHDL/y.vhd|-quiet|-nologo|
 !s107 VHDL/y.vhd|
 !i113 0
@@ -2080,9 +2105,9 @@ VLo[9TmV3lL]imTLLN0MUV2
 !s100 L[]8i3R7h_LHQQj]c5f8[3
 R4
 33
-R116
-!i10b 1
 R117
+!i10b 1
+R118
 !s90 -2008|-lower|-explicit|-work|work|VHDL/y-behaviour_y.vhd|-quiet|-nologo|
 !s107 VHDL/y-behaviour_y.vhd|
 !i113 0

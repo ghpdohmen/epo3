@@ -1096,7 +1096,7 @@ ENTITY pixel
     Version string: `f7HEL_g?0^T_Zl3M2nke2
     Opcode format: 10.5b; VCOM SE-64 Object version 63
     VHDL language standard: 3 (VHDL-2008)
-    Compile time: Tue Jan 17 13:24:01 2023
+    Compile time: Tue Jan 17 13:29:09 2023
     Debug Symbol file exists
     Compiled in vopt flow
     Compile options: -quiet -nologo -2008 -lower -explicit -work work
@@ -1140,6 +1140,25 @@ VHDL CONFIGURATION pixel_behav_cfg
     Opcode format: 10.5b; VCOM SE-64 Object version 63
     VHDL language standard: 3 (VHDL-2008)
     Compile time: Tue Jan 17 13:20:18 2023
+    Compiled in vopt flow
+    Compile options: -quiet -nologo -2008 -lower -explicit -work work
+    Compile defaults: Explicit=1 CvgOpt=0
+VHDL CONFIGURATION pixel_synthesised_cfg
+    Configuration applies to entity: pixel
+    Block configuration applies to architecture: synthesised
+    Depends on: A work pixel synthesised `f7HEL_g?0^T_Zl3M2nke2
+    Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
+    Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
+    Depends on: E work pixel InmaJ6JT=D20PQ3iHgL>`0
+    Source modified time: Tue Jan 17 13:29:22 2023
+    Source directory: /home/ghpdohmen/epo3/epo3/help
+    HDL source file: VHDL/pixel_synthesised_cfg.vhd
+    Source file: VHDL/pixel_synthesised_cfg.vhd
+    Start location: VHDL/pixel_synthesised_cfg.vhd:1
+    Version string: DYf334QEm@Vcn?i;dKF<D1
+    Opcode format: 10.5b; VCOM SE-64 Object version 63
+    VHDL language standard: 3 (VHDL-2008)
+    Compile time: Tue Jan 17 13:29:22 2023
     Compiled in vopt flow
     Compile options: -quiet -nologo -2008 -lower -explicit -work work
     Compile defaults: Explicit=1 CvgOpt=0

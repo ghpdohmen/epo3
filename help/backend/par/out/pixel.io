@@ -1,0 +1,11 @@
+clk in 0
+reset in 1
+data_in in 2
+clk15k_in in 3
+data_switch out 0
+clk15k_switch out 1
+R out 2
+G out 3
+B out 4
+V out 5
+H out 6

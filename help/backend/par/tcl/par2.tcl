@@ -71,3 +71,5 @@ encMessage info 1
 #
 reportGateCount
 win
+
+puts "#ENDTAG be sure to keep this as last line"

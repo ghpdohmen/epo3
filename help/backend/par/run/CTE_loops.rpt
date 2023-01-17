@@ -1,0 +1,208 @@
+     +----------------------------------+ 
+     |       Pin        |     Cell      | 
+     |------------------+---------------| 
+     | ml_il_x1_g531/ZN | OAI222D0BWP7T | 
+     | ml_il_x1_g532/B2 | MAOI22D0BWP7T | 
+     | ml_il_x1_g532/ZN | MAOI22D0BWP7T | 
+     | ml_il_x1_g531/C2 | OAI222D0BWP7T | 
+     | ml_il_x1_g531/ZN | OAI222D0BWP7T | 
+     +----------------------------------+ 
+     +----------------------------------+ 
+     |       Pin        |     Cell      | 
+     |------------------+---------------| 
+     | ml_il_x1_g531/ZN | OAI222D0BWP7T | 
+     | ml_il_x1_g534/B2 | MAOI22D0BWP7T | 
+     | ml_il_x1_g534/ZN | MAOI22D0BWP7T | 
+     | ml_il_x1_g531/A1 | OAI222D0BWP7T | 
+     | ml_il_x1_g531/ZN | OAI222D0BWP7T | 
+     +----------------------------------+ 
+     +---------------------------------+ 
+     |       Pin        |     Cell     | 
+     |------------------+--------------| 
+     |    ml_il_y1_g2/Z | AO222D0BWP7T | 
+     |  ml_il_y1_g551/I |   CKND1BWP7T | 
+     | ml_il_y1_g551/ZN |   CKND1BWP7T | 
+     | ml_il_y1_g550/A1 |   ND2D1BWP7T | 
+     | ml_il_y1_g550/ZN |   ND2D1BWP7T | 
+     |  ml_il_y1_g543/B | OAI21D0BWP7T | 
+     | ml_il_y1_g543/ZN | OAI21D0BWP7T | 
+     |   ml_il_y1_g2/B2 | AO222D0BWP7T | 
+     |    ml_il_y1_g2/Z | AO222D0BWP7T | 
+     +---------------------------------+ 
+     +---------------------------------+ 
+     |       Pin        |     Cell     | 
+     |------------------+--------------| 
+     |    ml_il_y1_g2/Z | AO222D0BWP7T | 
+     |  ml_il_y1_g551/I |   CKND1BWP7T | 
+     | ml_il_y1_g551/ZN |   CKND1BWP7T | 
+     | ml_il_y1_g550/A1 |   ND2D1BWP7T | 
+     | ml_il_y1_g550/ZN |   ND2D1BWP7T | 
+     |  ml_il_y1_g543/B | OAI21D0BWP7T | 
+     | ml_il_y1_g543/ZN | OAI21D0BWP7T | 
+     |   ml_il_y1_g2/A2 | AO222D0BWP7T | 
+     |    ml_il_y1_g2/Z | AO222D0BWP7T | 
+     +---------------------------------+ 
+     +---------------------------------+ 
+     |       Pin        |     Cell     | 
+     |------------------+--------------| 
+     |    ml_il_x1_g2/Z | AO222D0BWP7T | 
+     |  ml_il_x1_g551/I |   CKND1BWP7T | 
+     | ml_il_x1_g551/ZN |   CKND1BWP7T | 
+     | ml_il_x1_g550/A1 |   ND2D1BWP7T | 
+     | ml_il_x1_g550/ZN |   ND2D1BWP7T | 
+     |  ml_il_x1_g543/B | OAI21D0BWP7T | 
+     | ml_il_x1_g543/ZN | OAI21D0BWP7T | 
+     |   ml_il_x1_g2/B2 | AO222D0BWP7T | 
+     |    ml_il_x1_g2/Z | AO222D0BWP7T | 
+     +---------------------------------+ 
+     +---------------------------------+ 
+     |       Pin        |     Cell     | 
+     |------------------+--------------| 
+     |    ml_il_x1_g2/Z | AO222D0BWP7T | 
+     |  ml_il_x1_g551/I |   CKND1BWP7T | 
+     | ml_il_x1_g551/ZN |   CKND1BWP7T | 
+     | ml_il_x1_g550/A1 |   ND2D1BWP7T | 
+     | ml_il_x1_g550/ZN |   ND2D1BWP7T | 
+     |  ml_il_x1_g543/B | OAI21D0BWP7T | 
+     | ml_il_x1_g543/ZN | OAI21D0BWP7T | 
+     |   ml_il_x1_g2/A2 | AO222D0BWP7T | 
+     |    ml_il_x1_g2/Z | AO222D0BWP7T | 
+     +---------------------------------+ 
+     +----------------------------------+ 
+     |       Pin        |     Cell      | 
+     |------------------+---------------| 
+     | ml_il_y1_g531/ZN | OAI222D0BWP7T | 
+     | ml_il_y1_g532/B2 | MAOI22D0BWP7T | 
+     | ml_il_y1_g532/ZN | MAOI22D0BWP7T | 
+     | ml_il_y1_g531/C2 | OAI222D0BWP7T | 
+     | ml_il_y1_g531/ZN | OAI222D0BWP7T | 
+     +----------------------------------+ 
+     +----------------------------------+ 
+     |       Pin        |     Cell      | 
+     |------------------+---------------| 
+     | ml_il_y1_g531/ZN | OAI222D0BWP7T | 
+     | ml_il_y1_g534/B2 | MAOI22D0BWP7T | 
+     | ml_il_y1_g534/ZN | MAOI22D0BWP7T | 
+     | ml_il_y1_g531/A1 | OAI222D0BWP7T | 
+     | ml_il_y1_g531/ZN | OAI222D0BWP7T | 
+     +----------------------------------+ 
+     +----------------------------------+ 
+     |       Pin        |     Cell      | 
+     |------------------+---------------| 
+     |  ml_il_y1_g570/Z |  AO222D0BWP7T | 
+     |  ml_il_y1_g553/I |    INVD1BWP7T | 
+     | ml_il_y1_g553/ZN |    INVD1BWP7T | 
+     | ml_il_y1_g545/A1 |    ND2D1BWP7T | 
+     | ml_il_y1_g545/ZN |    ND2D1BWP7T | 
+     | ml_il_y1_g544/B1 |   IND2D0BWP7T | 
+     | ml_il_y1_g544/ZN |   IND2D0BWP7T | 
+     | ml_il_y1_g539/B1 | MOAI22D0BWP7T | 
+     | ml_il_y1_g539/ZN | MOAI22D0BWP7T | 
+     | ml_il_y1_g570/B2 |  AO222D0BWP7T | 
+     |  ml_il_y1_g570/Z |  AO222D0BWP7T | 
+     +----------------------------------+ 
+     +----------------------------------+ 
+     |       Pin        |     Cell      | 
+     |------------------+---------------| 
+     |  ml_il_y1_g570/Z |  AO222D0BWP7T | 
+     |  ml_il_y1_g553/I |    INVD1BWP7T | 
+     | ml_il_y1_g553/ZN |    INVD1BWP7T | 
+     | ml_il_y1_g545/A1 |    ND2D1BWP7T | 
+     | ml_il_y1_g545/ZN |    ND2D1BWP7T | 
+     | ml_il_y1_g544/B1 |   IND2D0BWP7T | 
+     | ml_il_y1_g544/ZN |   IND2D0BWP7T | 
+     | ml_il_y1_g540/B1 | MOAI22D0BWP7T | 
+     | ml_il_y1_g540/ZN | MOAI22D0BWP7T | 
+     | ml_il_y1_g570/A2 |  AO222D0BWP7T | 
+     |  ml_il_y1_g570/Z |  AO222D0BWP7T | 
+     +----------------------------------+ 
+     +----------------------------------+ 
+     |       Pin        |     Cell      | 
+     |------------------+---------------| 
+     |  ml_il_x1_g570/Z |  AO222D0BWP7T | 
+     |  ml_il_x1_g553/I |    INVD1BWP7T | 
+     | ml_il_x1_g553/ZN |    INVD1BWP7T | 
+     | ml_il_x1_g545/A1 |    ND2D1BWP7T | 
+     | ml_il_x1_g545/ZN |    ND2D1BWP7T | 
+     | ml_il_x1_g544/B1 |   IND2D0BWP7T | 
+     | ml_il_x1_g544/ZN |   IND2D0BWP7T | 
+     | ml_il_x1_g539/B1 | MOAI22D0BWP7T | 
+     | ml_il_x1_g539/ZN | MOAI22D0BWP7T | 
+     | ml_il_x1_g570/B2 |  AO222D0BWP7T | 
+     |  ml_il_x1_g570/Z |  AO222D0BWP7T | 
+     +----------------------------------+ 
+     +----------------------------------+ 
+     |       Pin        |     Cell      | 
+     |------------------+---------------| 
+     |  ml_il_x1_g570/Z |  AO222D0BWP7T | 
+     |  ml_il_x1_g553/I |    INVD1BWP7T | 
+     | ml_il_x1_g553/ZN |    INVD1BWP7T | 
+     | ml_il_x1_g545/A1 |    ND2D1BWP7T | 
+     | ml_il_x1_g545/ZN |    ND2D1BWP7T | 
+     | ml_il_x1_g544/B1 |   IND2D0BWP7T | 
+     | ml_il_x1_g544/ZN |   IND2D0BWP7T | 
+     | ml_il_x1_g540/B1 | MOAI22D0BWP7T | 
+     | ml_il_x1_g540/ZN | MOAI22D0BWP7T | 
+     | ml_il_x1_g570/A2 |  AO222D0BWP7T | 
+     |  ml_il_x1_g570/Z |  AO222D0BWP7T | 
+     +----------------------------------+ 
+     +----------------------------------+ 
+     |       Pin        |     Cell      | 
+     |------------------+---------------| 
+     |  ml_il_y1_g571/Z |  AO222D0BWP7T | 
+     |  ml_il_y1_g554/I |    CKND1BWP7T | 
+     | ml_il_y1_g554/ZN |    CKND1BWP7T | 
+     | ml_il_y1_g549/A1 |    ND2D1BWP7T | 
+     | ml_il_y1_g549/ZN |    ND2D1BWP7T | 
+     | ml_il_y1_g542/B1 |   IND2D0BWP7T | 
+     | ml_il_y1_g542/ZN |   IND2D0BWP7T | 
+     | ml_il_y1_g535/B2 | MOAI22D0BWP7T | 
+     | ml_il_y1_g535/ZN | MOAI22D0BWP7T | 
+     | ml_il_y1_g571/B2 |  AO222D0BWP7T | 
+     |  ml_il_y1_g571/Z |  AO222D0BWP7T | 
+     +----------------------------------+ 
+     +----------------------------------+ 
+     |       Pin        |     Cell      | 
+     |------------------+---------------| 
+     |  ml_il_y1_g571/Z |  AO222D0BWP7T | 
+     |  ml_il_y1_g554/I |    CKND1BWP7T | 
+     | ml_il_y1_g554/ZN |    CKND1BWP7T | 
+     | ml_il_y1_g549/A1 |    ND2D1BWP7T | 
+     | ml_il_y1_g549/ZN |    ND2D1BWP7T | 
+     | ml_il_y1_g542/B1 |   IND2D0BWP7T | 
+     | ml_il_y1_g542/ZN |   IND2D0BWP7T | 
+     | ml_il_y1_g538/A2 | CKXOR2D0BWP7T | 
+     |  ml_il_y1_g538/Z | CKXOR2D0BWP7T | 
+     | ml_il_y1_g571/A2 |  AO222D0BWP7T | 
+     |  ml_il_y1_g571/Z |  AO222D0BWP7T | 
+     +----------------------------------+ 
+     +----------------------------------+ 
+     |       Pin        |     Cell      | 
+     |------------------+---------------| 
+     |  ml_il_x1_g571/Z |  AO222D0BWP7T | 
+     |  ml_il_x1_g554/I |    CKND1BWP7T | 
+     | ml_il_x1_g554/ZN |    CKND1BWP7T | 
+     | ml_il_x1_g549/A1 |    ND2D1BWP7T | 
+     | ml_il_x1_g549/ZN |    ND2D1BWP7T | 
+     | ml_il_x1_g542/B1 |   IND2D0BWP7T | 
+     | ml_il_x1_g542/ZN |   IND2D0BWP7T | 
+     | ml_il_x1_g535/B2 | MOAI22D0BWP7T | 
+     | ml_il_x1_g535/ZN | MOAI22D0BWP7T | 
+     | ml_il_x1_g571/B2 |  AO222D0BWP7T | 
+     |  ml_il_x1_g571/Z |  AO222D0BWP7T | 
+     +----------------------------------+ 
+     +----------------------------------+ 
+     |       Pin        |     Cell      | 
+     |------------------+---------------| 
+     |  ml_il_x1_g571/Z |  AO222D0BWP7T | 
+     |  ml_il_x1_g554/I |    CKND1BWP7T | 
+     | ml_il_x1_g554/ZN |    CKND1BWP7T | 
+     | ml_il_x1_g549/A1 |    ND2D1BWP7T | 
+     | ml_il_x1_g549/ZN |    ND2D1BWP7T | 
+     | ml_il_x1_g542/B1 |   IND2D0BWP7T | 
+     | ml_il_x1_g542/ZN |   IND2D0BWP7T | 
+     | ml_il_x1_g538/A2 | CKXOR2D0BWP7T | 
+     |  ml_il_x1_g538/Z | CKXOR2D0BWP7T | 
+     | ml_il_x1_g571/A2 |  AO222D0BWP7T | 
+     |  ml_il_x1_g571/Z |  AO222D0BWP7T | 
+     +----------------------------------+ 
