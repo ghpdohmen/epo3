@@ -39,13 +39,14 @@ architecture behaviour of vgadrive is
   constant C : natural := 45;  -- front guard: 1.89 us
   constant D : natural := 640; -- horizontal columns: 25.17 us
   constant E : natural := 22;  -- rear guard: 0.94 us
-  
+
 
   constant A : natural := B + C + D + E;  -- one horizontal sync cycle: 31.77 us
-  constant P : natural := 2;   -- vertical blank: 64 us
-  constant Q : natural := 32;  -- front guard: 1.02 ms
-  constant R : natural := 480; -- vertical rows: 15.25 ms
-  constant S : natural := 11;  -- rear guard: 0.35 ms
+
+  constant P : natural := 2;   -- vertical blank: 64 us -- laag
+  constant Q : natural := 32;  -- front guard: 1.02 ms -- hoog
+  constant R : natural := 480; -- vertical rows: 15.25 ms -- hoog
+  constant S : natural := 11;  -- rear guard: 0.35 ms -- hoog
   
   constant O : natural := P + Q + R + S;  -- one vertical sync cycle: 16.6 ms
    
