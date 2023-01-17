@@ -1,1 +1,0 @@
-ssh -XY ghpdohmen@ce-epo3-cad.ewi.tudelft.nl cd /home/ghpdohmen/epo3/epo3/gwtf/backend/par/run\; innovus -files ../tcl/view2.tcl
