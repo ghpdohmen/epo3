@@ -1,7 +1,7 @@
 #######################################################
 #                                                     
 #  Innovus Command Logging File                     
-#  Created on Thu Jan 12 12:07:53 2023                
+#  Created on Tue Jan 17 09:23:47 2023                
 #                                                     
 #######################################################
 
@@ -21,7 +21,7 @@ setPreference CmdLogMode 2
 set init_lef_file /data/designkit/tsmc-180nm/lib/TSMCHOME/digital/Back_End/lef/tcb018gbwp7t_270a/lef/tcb018gbwp7t_6lm.lef
 set init_mmmc_file ../in/mmmc.view
 set init_verilog ../in/top.v
-set init_top_cell mouse
+set init_top_cell top
 set init_gnd_net dgnd
 set init_pwr_net dvdd
 suppressMessage TECHLIB IMPLF IMPVL IMPFP IMPCTE IMPRM IMPSP IMPCTE NRDB IMPEXT
@@ -32,35 +32,26 @@ generateVias
 floorPlan -site core7T -s 325 325 0 0 0 0
 addStripe -nets {dgnd dvdd} -layer METAL4 -width 2 -number_of_sets 5 -spacing 0.5
 addWellTap -cell TAPCELLBWP7T -cellInterval 30 -prefix WELLTAP
-editPin -pin Handshake_in -layer 2 -fixedPin -assign {20.86 0} -side TOP
-editPin -pin Data_in -layer 2 -fixedPin -assign {21.42 0} -side TOP
-editPin -pin Clk15k -layer 2 -fixedPin -assign {21.98 0} -side TOP
-editPin -pin clk -layer 2 -fixedPin -assign {22.54 0} -side TOP
-editPin -pin reset -layer 2 -fixedPin -assign {23.10 0} -side TOP
-editPin -pin {mouseX[2]} -layer 2 -fixedPin -assign {29.82 0} -side TOP
-editPin -pin {mouseX[1]} -layer 2 -fixedPin -assign {30.38 0} -side TOP
-editPin -pin {mouseX[0]} -layer 2 -fixedPin -assign {30.94 0} -side TOP
-editPin -pin {mouseY[2]} -layer 2 -fixedPin -assign {31.50 0} -side TOP
-editPin -pin {mouseY[1]} -layer 2 -fixedPin -assign {32.06 0} -side TOP
-editPin -pin {mouseY[0]} -layer 2 -fixedPin -assign {32.62 0} -side TOP
-editPin -pin {buttons[4]} -layer 2 -fixedPin -assign {33.18 0} -side TOP
-editPin -pin {buttons[3]} -layer 2 -fixedPin -assign {33.74 0} -side TOP
-editPin -pin {buttons[2]} -layer 2 -fixedPin -assign {34.30 0} -side TOP
-editPin -pin {buttons[1]} -layer 2 -fixedPin -assign {34.86 0} -side TOP
-editPin -pin {buttons[0]} -layer 2 -fixedPin -assign {35.42 0} -side TOP
-editPin -pin Handshake_out -layer 2 -fixedPin -assign {35.98 0} -side TOP
-editPin -pin DataSwitch -layer 2 -fixedPin -assign {36.54 0} -side TOP
-editPin -pin ClkSwitch -layer 2 -fixedPin -assign {37.10 0} -side TOP
-editPin -pin rst -layer 2 -fixedPin -assign {37.66 0} -side TOP
-editPin -pin led0 -layer 2 -fixedPin -assign {38.22 0} -side TOP
-editPin -pin led1 -layer 2 -fixedPin -assign {47.74 0} -side TOP
-editPin -pin led2 -layer 2 -fixedPin -assign {48.30 0} -side TOP
-editPin -pin led3 -layer 2 -fixedPin -assign {48.86 0} -side TOP
-editPin -pin led5 -layer 2 -fixedPin -assign {49.42 0} -side TOP
-editPin -pin led6 -layer 2 -fixedPin -assign {49.98 0} -side TOP
-editPin -pin led7 -layer 2 -fixedPin -assign {50.54 0} -side TOP
-editPin -pin led8 -layer 2 -fixedPin -assign {51.10 0} -side TOP
-editPin -pin led9 -layer 2 -fixedPin -assign {51.66 0} -side TOP
+editPin -pin Data_in -layer 2 -fixedPin -assign {20.86 0} -side TOP
+editPin -pin Clk15k -layer 2 -fixedPin -assign {21.42 0} -side TOP
+editPin -pin clk -layer 2 -fixedPin -assign {21.98 0} -side TOP
+editPin -pin reset -layer 2 -fixedPin -assign {22.54 0} -side TOP
+editPin -pin countlow -layer 2 -fixedPin -assign {23.10 0} -side TOP
+editPin -pin DataSwitch -layer 2 -fixedPin -assign {29.82 0} -side TOP
+editPin -pin ClkSwitch -layer 2 -fixedPin -assign {30.38 0} -side TOP
+editPin -pin rescount -layer 2 -fixedPin -assign {30.94 0} -side TOP
+editPin -pin draw -layer 2 -fixedPin -assign {31.50 0} -side TOP
+editPin -pin {output_color[2]} -layer 2 -fixedPin -assign {32.06 0} -side TOP
+editPin -pin {output_color[1]} -layer 2 -fixedPin -assign {32.62 0} -side TOP
+editPin -pin {output_color[0]} -layer 2 -fixedPin -assign {33.18 0} -side TOP
+editPin -pin {tempx[3]} -layer 2 -fixedPin -assign {33.74 0} -side TOP
+editPin -pin {tempx[2]} -layer 2 -fixedPin -assign {34.30 0} -side TOP
+editPin -pin {tempx[1]} -layer 2 -fixedPin -assign {34.86 0} -side TOP
+editPin -pin {tempx[0]} -layer 2 -fixedPin -assign {35.42 0} -side TOP
+editPin -pin {tempy[3]} -layer 2 -fixedPin -assign {35.98 0} -side TOP
+editPin -pin {tempy[2]} -layer 2 -fixedPin -assign {36.54 0} -side TOP
+editPin -pin {tempy[1]} -layer 2 -fixedPin -assign {37.10 0} -side TOP
+editPin -pin {tempy[0]} -layer 2 -fixedPin -assign {37.66 0} -side TOP
 set_analysis_view -setup {setup_wc} -hold {hold_bc}
 setNanoRouteMode -routeTopRoutingLayer 4
 setNanoRouteMode -routeBottomRoutingLayer 1
@@ -94,150 +85,11 @@ verifyGeometry
 verifyConnectivity
 encMessage info 0
 write_sdf ../out/$init_top_cell.sdf
-saveDesign ../out/mouse.enc
-streamOut ../out/mouse.gds -mapFile ./streamOut.map -libName TOP_DIG -units 2000 -mode ALL
-saveNetlist ../out/mouse.v -excludeLeafCell
+saveDesign ../out/top.enc
+streamOut ../out/top.gds -mapFile ./streamOut.map -libName TOP_DIG -units 2000 -mode ALL
+saveNetlist ../out/top.v -excludeLeafCell
 encMessage info 1
 reportGateCount
 win
-panPage 0 1
-panPage 0 1
-panPage 0 1
-panPage 0 1
-panPage 0 1
-panPage 0 1
-panPage 0 1
-panPage 0 1
-panPage 0 1
-panPage 0 1
-panPage 0 1
-panPage 0 1
-panPage 0 -1
-panPage 0 -1
-panPage 0 -1
-panPage 0 -1
-panPage 0 -1
-panPage 0 -1
-panPage 0 1
-panPage 0 -1
-panPage 0 -1
-panPage -1 0
 zoomOut
-zoomOut
-zoomIn
-zoomIn
 panPage 0 1
-panPage 0 1
-panPage 0 1
-zoomIn
-zoomIn
-panPage 0 1
-panPage 0 1
-panPage -1 0
-panPage 0 1
-panPage 1 0
-panPage 1 0
-panPage 1 0
-panPage -1 0
-panPage 1 0
-panPage 1 0
-panPage 1 0
-panPage 1 0
-panPage 1 0
-panPage 1 0
-panPage -1 0
-panPage 1 0
-panPage 1 0
-panPage 1 0
-panPage 1 0
-panPage 0 -1
-panPage -1 0
-panPage -1 0
-panPage 0 1
-panPage -1 0
-panPage -1 0
-panPage -1 0
-panPage -1 0
-panPage -1 0
-panPage -1 0
-panPage -1 0
-panPage -1 0
-panPage -1 0
-panPage -1 0
-panPage -1 0
-panPage -1 0
-panPage 0 -1
-panPage 0 -1
-panPage 0 -1
-panPage 1 0
-panPage 1 0
-panPage 1 0
-panPage 0 1
-panPage 0 1
-panPage 0 1
-panPage 1 0
-panPage 0 -1
-panPage 0 -1
-panPage 0 -1
-panPage 0 -1
-panPage 0 -1
-panPage 0 -1
-panPage 0 -1
-panPage 0 -1
-panPage 0 -1
-panPage 0 -1
-panPage 0 -1
-panPage 0 -1
-panPage 0 -1
-panPage 0 -1
-panPage 0 -1
-panPage 0 -1
-panPage 0 -1
-panPage 0 -1
-panPage 0 -1
-panPage 0 -1
-panPage 0 1
-panPage 0 1
-panPage 0 1
-panPage 0 1
-panPage 0 1
-panPage 0 1
-panPage 0 1
-panPage 0 1
-panPage 0 1
-panPage 0 1
-panPage 0 1
-panPage 0 1
-panPage 0 1
-panPage 0 1
-panPage 0 1
-panPage 0 1
-panPage 0 1
-panPage 0 1
-panPage 0 1
-panPage 0 1
-panPage 0 -1
-panPage 0 -1
-panPage 0 -1
-panPage 0 -1
-panPage 0 -1
-panPage 0 1
-panPage 0 1
-panPage 0 1
-panPage 0 1
-panPage -1 0
-panPage -1 0
-panPage -1 0
-panPage -1 0
-panPage 0 -1
-panPage 0 1
-panPage 1 0
-panPage 1 0
-panPage 1 0
-panPage 1 0
-panPage 1 0
-panPage 1 0
-panPage 1 0
-panPage 1 0
-panPage 1 0
-panPage 1 0

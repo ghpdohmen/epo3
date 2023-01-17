@@ -5,14 +5,14 @@ of Cadence Design Systems, Inc. in the United States and other countries.
 
 Version: 17.11-s014_1, built Mon Oct 09 2017
 Options: -files ../tcl/syn2.tcl 
-Date:    Thu Jan 12 12:02:17 2023
+Date:    Tue Jan 17 09:22:21 2023
 Host:    ce-epo3-cad.ewi.tudelft.nl (x86_64 w/Linux 3.10.0-1160.76.1.el7.x86_64) (1core*8cpus*15physical cpus*Intel(R) Xeon(R) CPU E5-2683 v3 @ 2.00GHz 35840KB) (16247564KB)
 OS:      Red Hat Enterprise Linux Server release 7.9 (Maipo)
 
 Checking out license: Genus_Synthesis
 
 Loading tool scripts...
-Finished loading tool scripts (8 seconds elapsed).
+Finished loading tool scripts (9 seconds elapsed).
 
 #@ Processing -files option
 @genus 1> source ../tcl/syn2.tcl
@@ -77,52 +77,75 @@ Warning : Library cell has no output pins defined. [LBR-9]
   Setting attribute of root '/': 'library' = tcb018gbwp7twc.lib
 @file(syn2.tcl) 9: set_db use_scan_seqs_for_non_dft false
   Setting attribute of root '/': 'use_scan_seqs_for_non_dft' = false
-@file(syn2.tcl) 12: read_hdl -vhdl {counter25mhz.vhd}
-@file(syn2.tcl) 13: read_hdl -vhdl {edge_detector.vhd}
-@file(syn2.tcl) 14: read_hdl -vhdl {flipflop.vhd}
-@file(syn2.tcl) 15: read_hdl -vhdl {main_fsm.vhd}
-@file(syn2.tcl) 16: read_hdl -vhdl {mouse.vhd}
-@file(syn2.tcl) 17: read_hdl -vhdl {mux.vhd}
-@file(syn2.tcl) 18: read_hdl -vhdl {sendFSM.vhd}
-@file(syn2.tcl) 19: read_hdl -vhdl {shfitregister_11bit.vhd}
-@file(syn2.tcl) 20: read_hdl -vhdl {shiftregister_9bit.vhd}
-@file(syn2.tcl) 21: read_hdl -vhdl {timebase.vhd}
-@file(syn2.tcl) 22: read_hdl -vhdl {counter25mhz-behav.vhd}
-@file(syn2.tcl) 23: read_hdl -vhdl {edge_detector-behav.vhd}
-@file(syn2.tcl) 24: read_hdl -vhdl {flipflop-behav.vhd}
-@file(syn2.tcl) 25: read_hdl -vhdl {main_fsm-behav.vhd}
-@file(syn2.tcl) 26: read_hdl -vhdl {mouse-behav.vhd}
-@file(syn2.tcl) 27: read_hdl -vhdl {mux-behav.vhd}
-@file(syn2.tcl) 28: read_hdl -vhdl {sendFSM-behav.vhd}
-@file(syn2.tcl) 29: read_hdl -vhdl {shiftregister_11bit-behav.vhd}
-@file(syn2.tcl) 30: read_hdl -vhdl {shiftregister_9bit-behav.vhd}
-@file(syn2.tcl) 31: read_hdl -vhdl {timebase-behav.vhd}
-@file(syn2.tcl) 32: read_hdl -vhdl {shiftregister_11bit_behav_cfg.vhd}
-@file(syn2.tcl) 33: read_hdl -vhdl {flipflop_behav_cfg.vhd}
-@file(syn2.tcl) 34: read_hdl -vhdl {main_fsm_behav_cfg.vhd}
-@file(syn2.tcl) 35: read_hdl -vhdl {timebase_behav_cfg.vhd}
-@file(syn2.tcl) 36: read_hdl -vhdl {mux_behav_cfg.vhd}
-@file(syn2.tcl) 37: read_hdl -vhdl {sendfsm_behav_cfg.vhd}
-@file(syn2.tcl) 38: read_hdl -vhdl {shiftregister_9bit_behav_cfg.vhd}
-@file(syn2.tcl) 39: read_hdl -vhdl {edge_detector_behav_cfg.vhd}
-@file(syn2.tcl) 40: read_hdl -vhdl {counter25mhz_behav_cfg.vhd}
-@file(syn2.tcl) 41: read_hdl -vhdl {mouse_behav_cfg.vhd}
-@file(syn2.tcl) 44: elaborate mouse_behav_cfg
+@file(syn2.tcl) 12: read_hdl -vhdl {color.vhd}
+@file(syn2.tcl) 13: read_hdl -vhdl {counter25mhz.vhd}
+@file(syn2.tcl) 14: read_hdl -vhdl {edge_debounce.vhd}
+@file(syn2.tcl) 15: read_hdl -vhdl {flipflop.vhd}
+@file(syn2.tcl) 16: read_hdl -vhdl {logic_top.vhd}
+@file(syn2.tcl) 17: read_hdl -vhdl {main_fsm.vhd}
+@file(syn2.tcl) 18: read_hdl -vhdl {mouse.vhd}
+@file(syn2.tcl) 19: read_hdl -vhdl {mux.vhd}
+@file(syn2.tcl) 20: read_hdl -vhdl {sendFSM.vhd}
+@file(syn2.tcl) 21: read_hdl -vhdl {shfitregister_11bit.vhd}
+@file(syn2.tcl) 22: read_hdl -vhdl {shiftregister_9bit.vhd}
+@file(syn2.tcl) 23: read_hdl -vhdl {timebase.vhd}
+@file(syn2.tcl) 24: read_hdl -vhdl {top.vhd}
+@file(syn2.tcl) 25: read_hdl -vhdl {x.vhd}
+@file(syn2.tcl) 26: read_hdl -vhdl {y.vhd}
+@file(syn2.tcl) 27: read_hdl -vhdl {color-behaviour_color.vhd}
+@file(syn2.tcl) 28: read_hdl -vhdl {counter25mhz-behav.vhd}
+@file(syn2.tcl) 29: read_hdl -vhdl {edge_debounce-behav.vhd}
+@file(syn2.tcl) 30: read_hdl -vhdl {flipflop-behav.vhd}
+@file(syn2.tcl) 31: read_hdl -vhdl {logic_top-behaviour_logic_top.vhd}
+@file(syn2.tcl) 32: read_hdl -vhdl {main_fsm-behav.vhd}
+@file(syn2.tcl) 33: read_hdl -vhdl {mouse-behav.vhd}
+@file(syn2.tcl) 34: read_hdl -vhdl {mux-behav.vhd}
+@file(syn2.tcl) 35: read_hdl -vhdl {sendFSM-behav.vhd}
+@file(syn2.tcl) 36: read_hdl -vhdl {shiftregister_11bit-behav.vhd}
+@file(syn2.tcl) 37: read_hdl -vhdl {shiftregister_9bit-behav.vhd}
+@file(syn2.tcl) 38: read_hdl -vhdl {timebase-behav.vhd}
+@file(syn2.tcl) 39: read_hdl -vhdl {top-behav.vhd}
+@file(syn2.tcl) 40: read_hdl -vhdl {x-behaviour_x.vhd}
+@file(syn2.tcl) 41: read_hdl -vhdl {y-behaviour_y.vhd}
+@file(syn2.tcl) 42: read_hdl -vhdl {color_behaviour_color_cfg.vhd}
+@file(syn2.tcl) 43: read_hdl -vhdl {y_behaviour_y_cfg.vhd}
+@file(syn2.tcl) 44: read_hdl -vhdl {x_behaviour_x_cfg.vhd}
+@file(syn2.tcl) 45: read_hdl -vhdl {shiftregister_11bit_behav_cfg.vhd}
+@file(syn2.tcl) 46: read_hdl -vhdl {flipflop_behav_cfg.vhd}
+@file(syn2.tcl) 47: read_hdl -vhdl {main_fsm_behav_cfg.vhd}
+@file(syn2.tcl) 48: read_hdl -vhdl {timebase_behav_cfg.vhd}
+@file(syn2.tcl) 49: read_hdl -vhdl {mux_behav_cfg.vhd}
+@file(syn2.tcl) 50: read_hdl -vhdl {sendfsm_behav_cfg.vhd}
+@file(syn2.tcl) 51: read_hdl -vhdl {shiftregister_9bit_behav_cfg.vhd}
+@file(syn2.tcl) 52: read_hdl -vhdl {edge_debounce_behav_cfg.vhd}
+@file(syn2.tcl) 53: read_hdl -vhdl {counter25mhz_behav_cfg.vhd}
+@file(syn2.tcl) 54: read_hdl -vhdl {logic_top_behaviour_logic_top_cfg.vhd}
+@file(syn2.tcl) 55: read_hdl -vhdl {mouse_behav_cfg.vhd}
+@file(syn2.tcl) 56: read_hdl -vhdl {top_behav_cfg.vhd}
+@file(syn2.tcl) 59: elaborate top_behav_cfg
   Library has 344 usable logic and 147 usable sequential lib-cells.
 Info    : Elaborating Design. [ELAB-1]
-        : Elaborating top-level block 'mouse' from file '../../../VHDL/mouse.vhd'.
+        : Elaborating top-level block 'top' from file '../../../VHDL/top.vhd'.
+Info    : Binding to architecture. [ELAB-5]
+        : Elaborating architecture 'behav' for entity 'top'.
 Info    : Binding to architecture. [ELAB-5]
         : Elaborating architecture 'behav' for entity 'mouse'.
 Warning : Referenced signal not in sensitivity list.  This may cause simulation mismatches between the original and synthesized designs. [CDFG-360]
-        : Signal 'reset' in module 'mouse' in file '../../../VHDL/mouse-behav.vhd' on line 121.
+        : Signal 'reset' in module 'mouse' in file '../../../VHDL/mouse-behav.vhd' on line 132.
 Warning : Referenced signal not in sensitivity list.  This may cause simulation mismatches between the original and synthesized designs. [CDFG-360]
-        : Signal 'count15k' in module 'mouse' in file '../../../VHDL/mouse-behav.vhd' on line 121.
+        : Signal 'count15k' in module 'mouse' in file '../../../VHDL/mouse-behav.vhd' on line 132.
 Warning : Referenced signal not in sensitivity list.  This may cause simulation mismatches between the original and synthesized designs. [CDFG-360]
-        : Signal 'leds_mainfsm' in module 'mouse' in file '../../../VHDL/mouse-behav.vhd' on line 121.
+        : Signal 'leds_mainfsm' in module 'mouse' in file '../../../VHDL/mouse-behav.vhd' on line 132.
 Info    : Binding to architecture. [ELAB-5]
         : Elaborating architecture 'behav' for entity 'counter25mhz'.
 Info    : Binding to architecture. [ELAB-5]
-        : Elaborating architecture 'behav' for entity 'edge_detector'.
+        : Elaborating architecture 'behav' for entity 'edge_debounce'.
+Warning : Referenced signal not in sensitivity list.  This may cause simulation mismatches between the original and synthesized designs. [CDFG-360]
+        : Signal 'reg1' in module 'edge_debounce' in file '../../../VHDL/edge_debounce-behav.vhd' on line 57.
+Warning : Referenced signal not in sensitivity list.  This may cause simulation mismatches between the original and synthesized designs. [CDFG-360]
+        : Signal 'reg2' in module 'edge_debounce' in file '../../../VHDL/edge_debounce-behav.vhd' on line 57.
+Warning : Referenced signal not in sensitivity list.  This may cause simulation mismatches between the original and synthesized designs. [CDFG-360]
+        : Signal 'count' in module 'edge_debounce' in file '../../../VHDL/edge_debounce-behav.vhd' on line 57.
 Info    : Binding to architecture. [ELAB-5]
         : Elaborating architecture 'behav' for entity 'shiftregister_9bit'.
 Warning : Referenced signal not in sensitivity list.  This may cause simulation mismatches between the original and synthesized designs. [CDFG-360]
@@ -131,6 +154,8 @@ Info    : Binding to architecture. [ELAB-5]
         : Elaborating architecture 'behav' for entity 'sendFSM'.
 Warning : Referenced signal not in sensitivity list.  This may cause simulation mismatches between the original and synthesized designs. [CDFG-360]
         : Signal 'actBit' in module 'sendFSM' in file '../../../VHDL/sendFSM-behav.vhd' on line 28.
+Warning : Referenced signal not in sensitivity list.  This may cause simulation mismatches between the original and synthesized designs. [CDFG-360]
+        : Signal 'clk15k' in module 'sendFSM' in file '../../../VHDL/sendFSM-behav.vhd' on line 28.
 Info    : Binding to architecture. [ELAB-5]
         : Elaborating architecture 'behav' for entity 'mux'.
 Info    : Binding to architecture. [ELAB-5]
@@ -147,40 +172,497 @@ Info    : Binding to architecture. [ELAB-5]
         : Elaborating architecture 'behav' for entity 'flipflop'.
 Info    : Binding to architecture. [ELAB-5]
         : Elaborating architecture 'behav' for entity 'shiftregister_11bit'.
+Info    : Binding to architecture. [ELAB-5]
+        : Elaborating architecture 'behaviour_logic_top' for entity 'logic_top'.
+Info    : Binding to architecture. [ELAB-5]
+        : Elaborating architecture 'behaviour_x' for entity 'x'.
+Warning : Referenced signal not in sensitivity list.  This may cause simulation mismatches between the original and synthesized designs. [CDFG-360]
+        : Signal 'input_register' in module 'x' in file '../../../VHDL/x-behaviour_x.vhd' on line 80.
+Info    : Binding to architecture. [ELAB-5]
+        : Elaborating architecture 'behaviour_y' for entity 'y'.
+Warning : Referenced signal not in sensitivity list.  This may cause simulation mismatches between the original and synthesized designs. [CDFG-360]
+        : Signal 'input_register' in module 'y' in file '../../../VHDL/y-behaviour_y.vhd' on line 80.
+Info    : Binding to architecture. [ELAB-5]
+        : Elaborating architecture 'behaviour_color' for entity 'color'.
+Warning : Signal or variable has multiple drivers. [CDFG2G-622]
+        : 'handshakeim' in module 'logic_top' in file '../../../VHDL/logic_top.vhd' on line 17, column 2.
+        : This may cause simulation mismatches between the original and synthesized designs.
 Info    : Done Elaborating Design. [ELAB-3]
-        : Done elaborating 'mouse'.
+        : Done elaborating 'top'.
 Checking for analog nets.... 
 Check completed for analog nets.
 Info: Checking for source rtl...
 Info: Check completed for source rtl...
+Info    : To insure proper verification, preserved netlist point(s) because they are involved in combinational loop(s). To disable this, set the 'cb_preserve_ports_nets' root attribute to 'false'. [ELABUTL-133]
+        : Preserved 8 user net(s)  Set the 'print_ports_nets_preserved_for_cb' root attribute to 'true' to print out the affected nets and hierarchical instances.
+
 UM:  flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
 UM:            11             12                                      elaborate
-@file(syn2.tcl) 49: dc::create_clock -name clk -period 30 -waveform {0 15} [dc::get_ports clk]
-@file(syn2.tcl) 50: dc::set_driving_cell -cell INVD0BWP7T [dc::all_inputs]
-@file(syn2.tcl) 51: dc::set_input_delay  .2 -clock clk [dc::all_inputs]
-@file(syn2.tcl) 52: dc::set_output_delay .5 -clock clk [dc::all_outputs]
-@file(syn2.tcl) 53: dc::set_load 1 [dc::all_outputs]
-@file(syn2.tcl) 56: synthesize -to_mapped
+@file(syn2.tcl) 64: dc::create_clock -name clk -period 30 -waveform {0 15} [dc::get_ports clk]
+@file(syn2.tcl) 65: dc::set_driving_cell -cell INVD0BWP7T [dc::all_inputs]
+@file(syn2.tcl) 66: dc::set_input_delay  .2 -clock clk [dc::all_inputs]
+@file(syn2.tcl) 67: dc::set_output_delay .5 -clock clk [dc::all_outputs]
+@file(syn2.tcl) 68: dc::set_load 1 [dc::all_outputs]
+@file(syn2.tcl) 71: synthesize -to_mapped
 Warning : This command will be obsolete in a next major release. [TUI-37]
         : command: 'synthesize'
         : The synthesize command is obsolete. Use the syn_gen, syn_map or syn_opt commands instead.
+Warning : A combinational loop has been found. [TIM-20]
+        : The design 'top' contains the following combinational loop:
+          il/x1/sub_83_45/Z[3]
+          il/x1/mux_locx_signed_82_14/in_1[3]
+          il/x1/mux_locx_signed_82_14/in_1[3]
+          il/x1/mux_locx_signed_82_14/g1/data1
+          il/x1/mux_locx_signed_82_14/g1/z
+          il/x1/mux_locx_signed_82_14/z[3]
+          il/x1/mux_locx_signed_82_14/z[3]
+          il/x1/mux_input_register_58_12/in_1[3]
+          il/x1/mux_input_register_58_12/in_1[3]
+          il/x1/mux_input_register_58_12/g1/data1
+          il/x1/mux_input_register_58_12/g1/z
+          il/x1/mux_input_register_58_12/z[3]
+          il/x1/mux_input_register_58_12/z[3]
+          il/x1/sub_83_45/A[3]
+          il/x1/sub_83_45/A[3]
+          il/x1/sub_83_45/g5/in_0
+          il/x1/sub_83_45/g5/z
+          il/x1/sub_83_45/g15/in_0
+          il/x1/sub_83_45/g15/z
+          il/x1/sub_83_45/g33/in_0
+          il/x1/sub_83_45/g33/z
+          il/x1/sub_83_45/g34/in_0
+          il/x1/sub_83_45/g34/z
+          il/x1/sub_83_45/g35/in_1
+          il/x1/sub_83_45/g35/z
+          il/x1/sub_83_45/Z[3]
+          il/x1/sub_83_45/Z[3]
+The combinational loop has been disabled.
+        : You can set case constants or disable cell arcs to break a combinational loop.  For detailed information see the 'Timing Analysis Guide'.
+Warning : A combinational loop has been found. [TIM-20]
+        : The design 'top' contains the following combinational loop:
+          il/x1/sub_83_45/A[2]
+          il/x1/sub_83_45/g14/in_0
+          il/x1/sub_83_45/g14/z
+          il/x1/sub_83_45/g31/in_1
+          il/x1/sub_83_45/g31/z
+          il/x1/sub_83_45/g32/in_1
+          il/x1/sub_83_45/g32/z
+          il/x1/sub_83_45/Z[2]
+          il/x1/sub_83_45/Z[2]
+          il/x1/mux_locx_signed_82_14/in_1[2]
+          il/x1/mux_locx_signed_82_14/in_1[2]
+          il/x1/mux_locx_signed_82_14/g2/data1
+          il/x1/mux_locx_signed_82_14/g2/z
+          il/x1/mux_locx_signed_82_14/z[2]
+          il/x1/mux_locx_signed_82_14/z[2]
+          il/x1/mux_input_register_58_12/in_1[2]
+          il/x1/mux_input_register_58_12/in_1[2]
+          il/x1/mux_input_register_58_12/g2/data1
+          il/x1/mux_input_register_58_12/g2/z
+          il/x1/mux_input_register_58_12/z[2]
+          il/x1/mux_input_register_58_12/z[2]
+          il/x1/sub_83_45/A[2]
+          il/x1/sub_83_45/A[2]
+The combinational loop has been disabled.
+Warning : A combinational loop has been found. [TIM-20]
+        : The design 'top' contains the following combinational loop:
+          il/x1/mux_input_register_58_12/z[2]
+          il/x1/add_86_43/A[2]
+          il/x1/add_86_43/A[2]
+          il/x1/add_86_43/g12/in_0
+          il/x1/add_86_43/g12/z
+          il/x1/add_86_43/g29/in_1
+          il/x1/add_86_43/g29/z
+          il/x1/add_86_43/g30/in_1
+          il/x1/add_86_43/g30/z
+          il/x1/add_86_43/Z[2]
+          il/x1/add_86_43/Z[2]
+          il/x1/mux_locx_signed_82_14/in_0[2]
+          il/x1/mux_locx_signed_82_14/in_0[2]
+          il/x1/mux_locx_signed_82_14/g2/data0
+          il/x1/mux_locx_signed_82_14/g2/z
+          il/x1/mux_locx_signed_82_14/z[2]
+          il/x1/mux_locx_signed_82_14/z[2]
+          il/x1/mux_input_register_58_12/in_1[2]
+          il/x1/mux_input_register_58_12/in_1[2]
+          il/x1/mux_input_register_58_12/g2/data1
+          il/x1/mux_input_register_58_12/g2/z
+          il/x1/mux_input_register_58_12/z[2]
+          il/x1/mux_input_register_58_12/z[2]
+The combinational loop has been disabled.
+Warning : A combinational loop has been found. [TIM-20]
+        : The design 'top' contains the following combinational loop:
+          il/x1/sub_83_45/A[1]
+          il/x1/sub_83_45/g12/in_0
+          il/x1/sub_83_45/g12/z
+          il/x1/sub_83_45/g29/in_1
+          il/x1/sub_83_45/g29/z
+          il/x1/sub_83_45/g30/in_1
+          il/x1/sub_83_45/g30/z
+          il/x1/sub_83_45/Z[1]
+          il/x1/sub_83_45/Z[1]
+          il/x1/mux_locx_signed_82_14/in_1[1]
+          il/x1/mux_locx_signed_82_14/in_1[1]
+          il/x1/mux_locx_signed_82_14/g3/data1
+          il/x1/mux_locx_signed_82_14/g3/z
+          il/x1/mux_locx_signed_82_14/z[1]
+          il/x1/mux_locx_signed_82_14/z[1]
+          il/x1/mux_input_register_58_12/in_1[1]
+          il/x1/mux_input_register_58_12/in_1[1]
+          il/x1/mux_input_register_58_12/g3/data1
+          il/x1/mux_input_register_58_12/g3/z
+          il/x1/mux_input_register_58_12/z[1]
+          il/x1/mux_input_register_58_12/z[1]
+          il/x1/sub_83_45/A[1]
+          il/x1/sub_83_45/A[1]
+The combinational loop has been disabled.
+Warning : A combinational loop has been found. [TIM-20]
+        : The design 'top' contains the following combinational loop:
+          il/x1/mux_input_register_58_12/z[1]
+          il/x1/add_86_43/A[1]
+          il/x1/add_86_43/A[1]
+          il/x1/add_86_43/g10/in_0
+          il/x1/add_86_43/g10/z
+          il/x1/add_86_43/g27/in_1
+          il/x1/add_86_43/g27/z
+          il/x1/add_86_43/g28/in_1
+          il/x1/add_86_43/g28/z
+          il/x1/add_86_43/Z[1]
+          il/x1/add_86_43/Z[1]
+          il/x1/mux_locx_signed_82_14/in_0[1]
+          il/x1/mux_locx_signed_82_14/in_0[1]
+          il/x1/mux_locx_signed_82_14/g3/data0
+          il/x1/mux_locx_signed_82_14/g3/z
+          il/x1/mux_locx_signed_82_14/z[1]
+          il/x1/mux_locx_signed_82_14/z[1]
+          il/x1/mux_input_register_58_12/in_1[1]
+          il/x1/mux_input_register_58_12/in_1[1]
+          il/x1/mux_input_register_58_12/g3/data1
+          il/x1/mux_input_register_58_12/g3/z
+          il/x1/mux_input_register_58_12/z[1]
+          il/x1/mux_input_register_58_12/z[1]
+The combinational loop has been disabled.
+Warning : A combinational loop has been found. [TIM-20]
+        : The design 'top' contains the following combinational loop:
+          il/x1/sub_83_45/A[0]
+          il/x1/sub_83_45/g7/in_0
+          il/x1/sub_83_45/g7/z
+          il/x1/sub_83_45/g38/in_0
+          il/x1/sub_83_45/g38/z
+          il/x1/sub_83_45/Z[0]
+          il/x1/sub_83_45/Z[0]
+          il/x1/mux_locx_signed_82_14/in_1[0]
+          il/x1/mux_locx_signed_82_14/in_1[0]
+          il/x1/mux_locx_signed_82_14/g4/data1
+          il/x1/mux_locx_signed_82_14/g4/z
+          il/x1/mux_locx_signed_82_14/z[0]
+          il/x1/mux_locx_signed_82_14/z[0]
+          il/x1/mux_input_register_58_12/in_1[0]
+          il/x1/mux_input_register_58_12/in_1[0]
+          il/x1/mux_input_register_58_12/g4/data1
+          il/x1/mux_input_register_58_12/g4/z
+          il/x1/mux_input_register_58_12/z[0]
+          il/x1/mux_input_register_58_12/z[0]
+          il/x1/sub_83_45/A[0]
+          il/x1/sub_83_45/A[0]
+The combinational loop has been disabled.
+Warning : A combinational loop has been found. [TIM-20]
+        : The design 'top' contains the following combinational loop:
+          il/x1/mux_input_register_58_12/z[0]
+          il/x1/add_86_43/A[0]
+          il/x1/add_86_43/A[0]
+          il/x1/add_86_43/g4/in_0
+          il/x1/add_86_43/g4/z
+          il/x1/add_86_43/Z[0]
+          il/x1/add_86_43/Z[0]
+          il/x1/mux_locx_signed_82_14/in_0[0]
+          il/x1/mux_locx_signed_82_14/in_0[0]
+          il/x1/mux_locx_signed_82_14/g4/data0
+          il/x1/mux_locx_signed_82_14/g4/z
+          il/x1/mux_locx_signed_82_14/z[0]
+          il/x1/mux_locx_signed_82_14/z[0]
+          il/x1/mux_input_register_58_12/in_1[0]
+          il/x1/mux_input_register_58_12/in_1[0]
+          il/x1/mux_input_register_58_12/g4/data1
+          il/x1/mux_input_register_58_12/g4/z
+          il/x1/mux_input_register_58_12/z[0]
+          il/x1/mux_input_register_58_12/z[0]
+The combinational loop has been disabled.
+Warning : A combinational loop has been found. [TIM-20]
+        : The design 'top' contains the following combinational loop:
+          il/x1/add_86_43/Z[3]
+          il/x1/mux_locx_signed_82_14/in_0[3]
+          il/x1/mux_locx_signed_82_14/in_0[3]
+          il/x1/mux_locx_signed_82_14/g1/data0
+          il/x1/mux_locx_signed_82_14/g1/z
+          il/x1/mux_locx_signed_82_14/z[3]
+          il/x1/mux_locx_signed_82_14/z[3]
+          il/x1/mux_input_register_58_12/in_1[3]
+          il/x1/mux_input_register_58_12/in_1[3]
+          il/x1/mux_input_register_58_12/g1/data1
+          il/x1/mux_input_register_58_12/g1/z
+          il/x1/mux_input_register_58_12/z[3]
+          il/x1/mux_input_register_58_12/z[3]
+          il/x1/add_86_43/A[3]
+          il/x1/add_86_43/A[3]
+          il/x1/add_86_43/g1/in_0
+          il/x1/add_86_43/g1/z
+          il/x1/add_86_43/g14/in_0
+          il/x1/add_86_43/g14/z
+          il/x1/add_86_43/g32/in_1
+          il/x1/add_86_43/g32/z
+          il/x1/add_86_43/g33/in_1
+          il/x1/add_86_43/g33/z
+          il/x1/add_86_43/Z[3]
+          il/x1/add_86_43/Z[3]
+The combinational loop has been disabled.
+Warning : A combinational loop has been found. [TIM-20]
+        : The design 'top' contains the following combinational loop:
+          il/y1/sub_83_45/Z[3]
+          il/y1/mux_locy_signed_82_14/in_1[3]
+          il/y1/mux_locy_signed_82_14/in_1[3]
+          il/y1/mux_locy_signed_82_14/g1/data1
+          il/y1/mux_locy_signed_82_14/g1/z
+          il/y1/mux_locy_signed_82_14/z[3]
+          il/y1/mux_locy_signed_82_14/z[3]
+          il/y1/mux_input_register_58_12/in_1[3]
+          il/y1/mux_input_register_58_12/in_1[3]
+          il/y1/mux_input_register_58_12/g1/data1
+          il/y1/mux_input_register_58_12/g1/z
+          il/y1/mux_input_register_58_12/z[3]
+          il/y1/mux_input_register_58_12/z[3]
+          il/y1/sub_83_45/A[3]
+          il/y1/sub_83_45/A[3]
+          il/y1/sub_83_45/g5/in_0
+          il/y1/sub_83_45/g5/z
+          il/y1/sub_83_45/g15/in_0
+          il/y1/sub_83_45/g15/z
+          il/y1/sub_83_45/g33/in_0
+          il/y1/sub_83_45/g33/z
+          il/y1/sub_83_45/g34/in_0
+          il/y1/sub_83_45/g34/z
+          il/y1/sub_83_45/g35/in_1
+          il/y1/sub_83_45/g35/z
+          il/y1/sub_83_45/Z[3]
+          il/y1/sub_83_45/Z[3]
+The combinational loop has been disabled.
+Warning : A combinational loop has been found. [TIM-20]
+        : The design 'top' contains the following combinational loop:
+          il/y1/sub_83_45/A[2]
+          il/y1/sub_83_45/g14/in_0
+          il/y1/sub_83_45/g14/z
+          il/y1/sub_83_45/g31/in_1
+          il/y1/sub_83_45/g31/z
+          il/y1/sub_83_45/g32/in_1
+          il/y1/sub_83_45/g32/z
+          il/y1/sub_83_45/Z[2]
+          il/y1/sub_83_45/Z[2]
+          il/y1/mux_locy_signed_82_14/in_1[2]
+          il/y1/mux_locy_signed_82_14/in_1[2]
+          il/y1/mux_locy_signed_82_14/g2/data1
+          il/y1/mux_locy_signed_82_14/g2/z
+          il/y1/mux_locy_signed_82_14/z[2]
+          il/y1/mux_locy_signed_82_14/z[2]
+          il/y1/mux_input_register_58_12/in_1[2]
+          il/y1/mux_input_register_58_12/in_1[2]
+          il/y1/mux_input_register_58_12/g2/data1
+          il/y1/mux_input_register_58_12/g2/z
+          il/y1/mux_input_register_58_12/z[2]
+          il/y1/mux_input_register_58_12/z[2]
+          il/y1/sub_83_45/A[2]
+          il/y1/sub_83_45/A[2]
+The combinational loop has been disabled.
+Warning : A combinational loop has been found. [TIM-20]
+        : The design 'top' contains the following combinational loop:
+          il/y1/mux_input_register_58_12/z[2]
+          il/y1/add_86_43/A[2]
+          il/y1/add_86_43/A[2]
+          il/y1/add_86_43/g12/in_0
+          il/y1/add_86_43/g12/z
+          il/y1/add_86_43/g29/in_1
+          il/y1/add_86_43/g29/z
+          il/y1/add_86_43/g30/in_1
+          il/y1/add_86_43/g30/z
+          il/y1/add_86_43/Z[2]
+          il/y1/add_86_43/Z[2]
+          il/y1/mux_locy_signed_82_14/in_0[2]
+          il/y1/mux_locy_signed_82_14/in_0[2]
+          il/y1/mux_locy_signed_82_14/g2/data0
+          il/y1/mux_locy_signed_82_14/g2/z
+          il/y1/mux_locy_signed_82_14/z[2]
+          il/y1/mux_locy_signed_82_14/z[2]
+          il/y1/mux_input_register_58_12/in_1[2]
+          il/y1/mux_input_register_58_12/in_1[2]
+          il/y1/mux_input_register_58_12/g2/data1
+          il/y1/mux_input_register_58_12/g2/z
+          il/y1/mux_input_register_58_12/z[2]
+          il/y1/mux_input_register_58_12/z[2]
+The combinational loop has been disabled.
+Warning : A combinational loop has been found. [TIM-20]
+        : The design 'top' contains the following combinational loop:
+          il/y1/sub_83_45/A[1]
+          il/y1/sub_83_45/g12/in_0
+          il/y1/sub_83_45/g12/z
+          il/y1/sub_83_45/g29/in_1
+          il/y1/sub_83_45/g29/z
+          il/y1/sub_83_45/g30/in_1
+          il/y1/sub_83_45/g30/z
+          il/y1/sub_83_45/Z[1]
+          il/y1/sub_83_45/Z[1]
+          il/y1/mux_locy_signed_82_14/in_1[1]
+          il/y1/mux_locy_signed_82_14/in_1[1]
+          il/y1/mux_locy_signed_82_14/g3/data1
+          il/y1/mux_locy_signed_82_14/g3/z
+          il/y1/mux_locy_signed_82_14/z[1]
+          il/y1/mux_locy_signed_82_14/z[1]
+          il/y1/mux_input_register_58_12/in_1[1]
+          il/y1/mux_input_register_58_12/in_1[1]
+          il/y1/mux_input_register_58_12/g3/data1
+          il/y1/mux_input_register_58_12/g3/z
+          il/y1/mux_input_register_58_12/z[1]
+          il/y1/mux_input_register_58_12/z[1]
+          il/y1/sub_83_45/A[1]
+          il/y1/sub_83_45/A[1]
+The combinational loop has been disabled.
+Warning : A combinational loop has been found. [TIM-20]
+        : The design 'top' contains the following combinational loop:
+          il/y1/mux_input_register_58_12/z[1]
+          il/y1/add_86_43/A[1]
+          il/y1/add_86_43/A[1]
+          il/y1/add_86_43/g10/in_0
+          il/y1/add_86_43/g10/z
+          il/y1/add_86_43/g27/in_1
+          il/y1/add_86_43/g27/z
+          il/y1/add_86_43/g28/in_1
+          il/y1/add_86_43/g28/z
+          il/y1/add_86_43/Z[1]
+          il/y1/add_86_43/Z[1]
+          il/y1/mux_locy_signed_82_14/in_0[1]
+          il/y1/mux_locy_signed_82_14/in_0[1]
+          il/y1/mux_locy_signed_82_14/g3/data0
+          il/y1/mux_locy_signed_82_14/g3/z
+          il/y1/mux_locy_signed_82_14/z[1]
+          il/y1/mux_locy_signed_82_14/z[1]
+          il/y1/mux_input_register_58_12/in_1[1]
+          il/y1/mux_input_register_58_12/in_1[1]
+          il/y1/mux_input_register_58_12/g3/data1
+          il/y1/mux_input_register_58_12/g3/z
+          il/y1/mux_input_register_58_12/z[1]
+          il/y1/mux_input_register_58_12/z[1]
+The combinational loop has been disabled.
+Warning : A combinational loop has been found. [TIM-20]
+        : The design 'top' contains the following combinational loop:
+          il/y1/sub_83_45/A[0]
+          il/y1/sub_83_45/g7/in_0
+          il/y1/sub_83_45/g7/z
+          il/y1/sub_83_45/g38/in_0
+          il/y1/sub_83_45/g38/z
+          il/y1/sub_83_45/Z[0]
+          il/y1/sub_83_45/Z[0]
+          il/y1/mux_locy_signed_82_14/in_1[0]
+          il/y1/mux_locy_signed_82_14/in_1[0]
+          il/y1/mux_locy_signed_82_14/g4/data1
+          il/y1/mux_locy_signed_82_14/g4/z
+          il/y1/mux_locy_signed_82_14/z[0]
+          il/y1/mux_locy_signed_82_14/z[0]
+          il/y1/mux_input_register_58_12/in_1[0]
+          il/y1/mux_input_register_58_12/in_1[0]
+          il/y1/mux_input_register_58_12/g4/data1
+          il/y1/mux_input_register_58_12/g4/z
+          il/y1/mux_input_register_58_12/z[0]
+          il/y1/mux_input_register_58_12/z[0]
+          il/y1/sub_83_45/A[0]
+          il/y1/sub_83_45/A[0]
+The combinational loop has been disabled.
+Warning : A combinational loop has been found. [TIM-20]
+        : The design 'top' contains the following combinational loop:
+          il/y1/mux_input_register_58_12/z[0]
+          il/y1/add_86_43/A[0]
+          il/y1/add_86_43/A[0]
+          il/y1/add_86_43/g4/in_0
+          il/y1/add_86_43/g4/z
+          il/y1/add_86_43/Z[0]
+          il/y1/add_86_43/Z[0]
+          il/y1/mux_locy_signed_82_14/in_0[0]
+          il/y1/mux_locy_signed_82_14/in_0[0]
+          il/y1/mux_locy_signed_82_14/g4/data0
+          il/y1/mux_locy_signed_82_14/g4/z
+          il/y1/mux_locy_signed_82_14/z[0]
+          il/y1/mux_locy_signed_82_14/z[0]
+          il/y1/mux_input_register_58_12/in_1[0]
+          il/y1/mux_input_register_58_12/in_1[0]
+          il/y1/mux_input_register_58_12/g4/data1
+          il/y1/mux_input_register_58_12/g4/z
+          il/y1/mux_input_register_58_12/z[0]
+          il/y1/mux_input_register_58_12/z[0]
+The combinational loop has been disabled.
+Warning : A combinational loop has been found. [TIM-20]
+        : The design 'top' contains the following combinational loop:
+          il/y1/add_86_43/Z[3]
+          il/y1/mux_locy_signed_82_14/in_0[3]
+          il/y1/mux_locy_signed_82_14/in_0[3]
+          il/y1/mux_locy_signed_82_14/g1/data0
+          il/y1/mux_locy_signed_82_14/g1/z
+          il/y1/mux_locy_signed_82_14/z[3]
+          il/y1/mux_locy_signed_82_14/z[3]
+          il/y1/mux_input_register_58_12/in_1[3]
+          il/y1/mux_input_register_58_12/in_1[3]
+          il/y1/mux_input_register_58_12/g1/data1
+          il/y1/mux_input_register_58_12/g1/z
+          il/y1/mux_input_register_58_12/z[3]
+          il/y1/mux_input_register_58_12/z[3]
+          il/y1/add_86_43/A[3]
+          il/y1/add_86_43/A[3]
+          il/y1/add_86_43/g1/in_0
+          il/y1/add_86_43/g1/z
+          il/y1/add_86_43/g14/in_0
+          il/y1/add_86_43/g14/z
+          il/y1/add_86_43/g32/in_1
+          il/y1/add_86_43/g32/z
+          il/y1/add_86_43/g33/in_1
+          il/y1/add_86_43/g33/z
+          il/y1/add_86_43/Z[3]
+          il/y1/add_86_43/Z[3]
+The combinational loop has been disabled.
 Info    : Synthesizing. [SYNTH-1]
-        : Synthesizing 'mouse' to generic gates using 'medium' effort.
+        : Synthesizing 'top' to generic gates using 'medium' effort.
 Info    : Deleting instances not driving any primary outputs. [GLO-34]
-        : Deleting 3 sequential instances.
+        : Deleting 4 sequential instances.
         : Optimizations such as constant propagation or redundancy removal could change the connections so a hierarchical instance does not drive any primary outputs anymore. To see the list of deleted hierarchical instances, set the 'information_level' attribute to 2 or above. If the message is truncated set the message attribute 'truncate' to false to see the complete list. To prevent this optimization, set the 'delete_unloaded_insts' root/subdesign attribute to 'false' or 'preserve' instance attribute to 'true'.
 Info    : Deleting instances not driving any primary outputs. [GLO-34]
-        : Deleting 5 hierarchical instances.
-Info    : Deleting instances not driving any primary outputs. [GLO-34]
-        : Deleting 1 sequential instance.
+        : Deleting 29 hierarchical instances.
 Info    : Pre-processed datapath logic. [DPOPT-6]
-        : No pre-processing optimizations applied to datapath logic in 'mouse'.
+        : No pre-processing optimizations applied to datapath logic in 'top'.
 Info    : Optimizing datapath logic. [DPOPT-1]
-        : Optimizing datapath logic in 'mouse'.
+        : Optimizing datapath logic in 'top'.
 Info    : Implementing datapath configurations. [DPOPT-3]
-        : Implementing datapath configurations for 'CDN_DP_region_114'
+        : Implementing datapath configurations for 'CDN_DP_region_247'
 Info    : Done implementing datapath configurations. [DPOPT-4]
-        : Selected 'very_fast' configuration 4 for module 'CDN_DP_region_114'.
+        : Selected 'very_fast' configuration 4 for module 'CDN_DP_region_247'.
+          Optimizations applied to 'very_fast' configuration:
+            rewriting(0), factoring(0), sharing(0), cmultcse(0), downsizing(0), speculation(0)
+Info    : Implementing datapath configurations. [DPOPT-3]
+        : Implementing datapath configurations for 'CDN_DP_region_248'
+Info    : Done implementing datapath configurations. [DPOPT-4]
+        : Selected 'very_fast' configuration 4 for module 'CDN_DP_region_248'.
+          Optimizations applied to 'very_fast' configuration:
+            rewriting(0), factoring(0), sharing(0), cmultcse(0), downsizing(0), speculation(0)
+Info    : Implementing datapath configurations. [DPOPT-3]
+        : Implementing datapath configurations for 'CDN_DP_region_251'
+Info    : Done implementing datapath configurations. [DPOPT-4]
+        : Selected 'very_fast' configuration 4 for module 'CDN_DP_region_251'.
+          Optimizations applied to 'very_fast' configuration:
+            rewriting(0), factoring(0), sharing(0), cmultcse(0), downsizing(0), speculation(0)
+Info    : Implementing datapath configurations. [DPOPT-3]
+        : Implementing datapath configurations for 'CDN_DP_region_250'
+Info    : Done implementing datapath configurations. [DPOPT-4]
+        : Selected 'very_fast' configuration 4 for module 'CDN_DP_region_250'.
+          Optimizations applied to 'very_fast' configuration:
+            rewriting(0), factoring(0), sharing(0), cmultcse(0), downsizing(0), speculation(0)
+Info    : Implementing datapath configurations. [DPOPT-3]
+        : Implementing datapath configurations for 'CDN_DP_region_245'
+Info    : Done implementing datapath configurations. [DPOPT-4]
+        : Selected 'very_fast' configuration 4 for module 'CDN_DP_region_245'.
           Optimizations applied to 'very_fast' configuration:
             rewriting(0), factoring(0), sharing(0), cmultcse(0), downsizing(0), speculation(0)
 Info    : Implementing datapath configurations. [DPOPT-3]
@@ -190,37 +672,32 @@ Info    : Done implementing datapath configurations. [DPOPT-4]
           Optimizations applied to 'very_fast' configuration:
             rewriting(0), factoring(0), sharing(0), cmultcse(0), downsizing(0), speculation(0)
 Info    : Implementing datapath configurations. [DPOPT-3]
-        : Implementing datapath configurations for 'CDN_DP_region_115'
+        : Implementing datapath configurations for 'CDN_DP_region_246'
 Info    : Done implementing datapath configurations. [DPOPT-4]
-        : Selected 'very_fast' configuration 4 for module 'CDN_DP_region_115'.
+        : Selected 'very_fast' configuration 4 for module 'CDN_DP_region_246'.
           Optimizations applied to 'very_fast' configuration:
             rewriting(0), factoring(0), sharing(0), cmultcse(0), downsizing(0), speculation(0)
 Info    : Implementing datapath configurations. [DPOPT-3]
-        : Implementing datapath configurations for 'CDN_DP_region_116'
+        : Implementing datapath configurations for 'CDN_DP_region_249'
 Info    : Done implementing datapath configurations. [DPOPT-4]
-        : Selected 'very_fast' configuration 4 for module 'CDN_DP_region_116'.
+        : Selected 'very_fast' configuration 4 for module 'CDN_DP_region_249'.
           Optimizations applied to 'very_fast' configuration:
             rewriting(0), factoring(0), sharing(0), cmultcse(0), downsizing(0), speculation(0)
 Info    : Done optimizing datapath logic. [DPOPT-2]
-        : Done optimizing datapath logic in 'mouse'.
-Info    : Replacing a latch with a logic constant 0. [GLO-14]
-        : The instance is 'sfsm/dataToReg_reg[3]'.
-        : This optimization was enabled by the root attribute 'optimize_constant_latches'.
+        : Done optimizing datapath logic in 'top'.
 Info    : Done synthesizing. [SYNTH-2]
-        : Done synthesizing 'mouse' to generic gates.
+        : Done synthesizing 'top' to generic gates.
 Info    : Mapping. [SYNTH-4]
-        : Mapping 'mouse' using 'medium' effort.
+        : Mapping 'top' using 'medium' effort.
 Mapper: Libraries have:
 	domain _default_: 344 combo usable cells and 147 sequential usable cells
 Multi-threaded constant propagation [1|0] ...
-Info    : Deleting instances not driving any primary outputs. [GLO-34]
-        : Deleting 4 sequential instances.
 Multi-threaded Virtual Mapping    (8 threads per ST process, 8 of 8 CPUs usable)
  
 Global mapping target info
 ==========================
-Cost Group 'clk' target slack:   869 ps
-Target path end-point (Port: mouse/DataSwitch)
+Cost Group 'clk' target slack:   892 ps
+Target path end-point (Pin: il/y1/tempy_reg[3]/d)
 
 Multi-threaded Technology Mapping (8 threads per ST process, 8 of 8 CPUs usable)
  
@@ -231,17 +708,17 @@ Global mapping status
                            Total  Weighted 
 Operation                   Area   Slacks  
 -------------------------------------------------------------------------------
- global_map                 5157        0 
+ global_map                 9314        0 
 
     Cost Group            Target    Slack    Diff.    Clock
 -----------------------------------------------------------
-           clk               869    27003             30000 
+           clk               892    26916             30000 
 
  
 Global incremental target info
 ==============================
-Cost Group 'clk' target slack:   547 ps
-Target path end-point (Port: mouse/mouseY[0])
+Cost Group 'clk' target slack:   596 ps
+Target path end-point (Pin: ms/cnt/count_reg[12]/D (DFKCNQD1BWP7T/D))
 
  
 Global incremental optimization status
@@ -251,16 +728,16 @@ Global incremental optimization status
                            Total  Weighted 
 Operation                   Area   Slacks  
 -------------------------------------------------------------------------------
- global_incr                4946        0 
+ global_incr                8394        0 
 
     Cost Group            Target    Slack    Diff.    Clock
 -----------------------------------------------------------
-           clk               547    27340             30000 
+           clk               596    26896             30000 
 
 Info    : Done mapping. [SYNTH-5]
-        : Done mapping 'mouse'.
+        : Done mapping 'top'.
 Info    : Incrementally optimizing. [SYNTH-7]
-        : Incrementally optimizing 'mouse' using 'medium' effort.
+        : Incrementally optimizing 'top' using 'medium' effort.
  
 Incremental optimization status
 ===============================
@@ -269,8 +746,9 @@ Incremental optimization status
                            Total  Weighted      Neg      Max       Max 
 Operation                   Area   Slacks      Slack    Trans      Cap 
 -------------------------------------------------------------------------------
- init_iopt                  4946        0         0         0        0
- const_prop                 4946        0         0         0        0
+ init_iopt                  8394        0         0         0        0
+ const_prop                 8394        0         0         0        0
+ simp_cc_inputs             8392        0         0         0        0
  
 Incremental optimization status
 ===============================
@@ -279,7 +757,7 @@ Incremental optimization status
                            Total  Weighted      Neg      Max       Max 
 Operation                   Area   Slacks      Slack    Trans      Cap 
 -------------------------------------------------------------------------------
- init_delay                 4946        0         0         0        0
+ init_delay                 8392        0         0         0        0
 
            Trick     Calls     Accepts   Attempts    Time(secs) 
 -----------------------------------------------------------
@@ -302,7 +780,7 @@ Operation                   Area   Slacks      Slack    Trans      Cap
        gcomp_tim         0  (        0 /        0 )  0.00
   inv_pair_2_buf         0  (        0 /        0 )  0.00
 
- init_drc                   4946        0         0         0        0
+ init_drc                   8392        0         0         0        0
 
            Trick     Calls     Accepts   Attempts    Time(secs) 
 -----------------------------------------------------------
@@ -343,7 +821,7 @@ Operation                   Area   Slacks      Slack    Trans      Cap
        crit_dnsz         0  (        0 /        0 )  0.00
        crit_upsz         0  (        0 /        0 )  0.00
 
- init_tns                   4946        0         0         0        0
+ init_tns                   8392        0         0         0        0
 
            Trick     Calls     Accepts   Attempts    Time(secs) 
 -----------------------------------------------------------
@@ -358,29 +836,31 @@ Operation                   Area   Slacks      Slack    Trans      Cap
         setup_dn         0  (        0 /        0 )  0.00
          buf2inv         0  (        0 /        0 )  0.00
 
- init_area                  4946        0         0         0        0
- rem_inv_qb                 4917        0         0         0        0
- glob_area                  4913        0         0         0        0
- area_down                  4816        0         0         0        0
+ init_area                  8392        0         0         0        0
+ merge_bi                   8379        0         0         0        0
+ rem_inv_qb                 8322        0         0         0        0
+ gate_comp                  8322        0         0         0        0
+ glob_area                  8296        0         0         0        0
+ area_down                  8261        0         0         0        0
 
            Trick     Calls     Accepts   Attempts    Time(secs) 
 -----------------------------------------------------------
            undup         0  (        0 /        0 )  0.00
-         rem_buf        21  (        0 /        0 )  0.02
+         rem_buf         8  (        0 /        0 )  0.01
          rem_inv         0  (        0 /        0 )  0.00
-        merge_bi         0  (        0 /        0 )  0.00
-      rem_inv_qb         7  (        4 /        4 )  0.01
+        merge_bi         2  (        2 /        2 )  0.00
+      rem_inv_qb        19  (        7 /        7 )  0.03
         io_phase         0  (        0 /        0 )  0.00
-       gate_comp         5  (        0 /        0 )  0.02
-       gcomp_mog         0  (        0 /        0 )  0.00
-       glob_area        12  (        1 /       12 )  0.01
-       area_down        18  (        3 /        3 )  0.02
+       gate_comp        16  (        6 /        6 )  0.04
+       gcomp_mog         2  (        0 /        0 )  0.01
+       glob_area        14  (        4 /       14 )  0.01
+       area_down         6  (        2 /        2 )  0.01
       size_n_buf         0  (        0 /        0 )  0.00
   gate_deco_area         0  (        0 /        0 )  0.00
-         rem_buf        21  (        0 /        0 )  0.02
+         rem_buf         8  (        0 /        0 )  0.01
          rem_inv         0  (        0 /        0 )  0.00
         merge_bi         0  (        0 /        0 )  0.00
-      rem_inv_qb         0  (        0 /        0 )  0.00
+      rem_inv_qb         5  (        0 /        0 )  0.00
 
  
 Incremental optimization status
@@ -390,7 +870,7 @@ Incremental optimization status
                            Total  Weighted      Neg      Max       Max 
 Operation                   Area   Slacks      Slack    Trans      Cap 
 -------------------------------------------------------------------------------
- init_delay                 4816        0         0         0        0
+ init_delay                 8261        0         0         0        0
 
            Trick     Calls     Accepts   Attempts    Time(secs) 
 -----------------------------------------------------------
@@ -413,7 +893,7 @@ Operation                   Area   Slacks      Slack    Trans      Cap
        gcomp_tim         0  (        0 /        0 )  0.00
   inv_pair_2_buf         0  (        0 /        0 )  0.00
 
- init_drc                   4816        0         0         0        0
+ init_drc                   8261        0         0         0        0
 
            Trick     Calls     Accepts   Attempts    Time(secs) 
 -----------------------------------------------------------
@@ -452,58 +932,92 @@ Operation                   Area   Slacks      Slack    Trans      Cap
        crit_dnsz         0  (        0 /        0 )  0.00
        crit_upsz         0  (        0 /        0 )  0.00
 
- init_area                  4816        0         0         0        0
+ init_area                  8261        0         0         0        0
+ area_down                  8254        0         0         0        0
 
            Trick     Calls     Accepts   Attempts    Time(secs) 
 -----------------------------------------------------------
            undup         0  (        0 /        0 )  0.00
-         rem_buf        21  (        0 /        0 )  0.02
+         rem_buf         8  (        0 /        0 )  0.01
          rem_inv         0  (        0 /        0 )  0.00
         merge_bi         0  (        0 /        0 )  0.00
-      rem_inv_qb         0  (        0 /        0 )  0.00
+      rem_inv_qb         5  (        0 /        0 )  0.00
         io_phase         0  (        0 /        0 )  0.00
-       gate_comp         5  (        0 /        0 )  0.02
-       gcomp_mog         0  (        0 /        0 )  0.00
-       glob_area        12  (        0 /       12 )  0.01
-       area_down        18  (        0 /        0 )  0.02
+       gate_comp        10  (        0 /        0 )  0.03
+       gcomp_mog         2  (        0 /        0 )  0.01
+       glob_area        14  (        0 /       14 )  0.00
+       area_down         6  (        1 /        1 )  0.01
       size_n_buf         0  (        0 /        0 )  0.00
   gate_deco_area         0  (        0 /        0 )  0.00
 
 Info    : Done incrementally optimizing. [SYNTH-8]
-        : Done incrementally optimizing 'mouse'.
+        : Done incrementally optimizing 'top'.
      flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
-UM:             3              3            0.0 ps        27052.0 ps  synthesize
-@file(syn2.tcl) 61: ungroup -all -flat
-@file(syn2.tcl) 62: insert_tiehilo_cells
-  Setting attribute of design 'mouse': 'pias_in_map' = false
-@file(syn2.tcl) 63: write_hdl -mapped > ../out/mouse.v
-@file(syn2.tcl) 64: write_sdf > ../out/mouse.sdf
+UM:             6              5            0.0 ps        26852.7 ps  synthesize
+@file(syn2.tcl) 76: ungroup -all -flat
+@file(syn2.tcl) 77: insert_tiehilo_cells
+  Setting attribute of design 'top': 'pias_in_map' = false
+@file(syn2.tcl) 78: write_hdl -mapped > ../out/top.v
+@file(syn2.tcl) 79: write_sdf > ../out/top.sdf
 Warning : Default value for an option has changed in this release. [WSDF-104]
         : Default value for -setuphold has changed from split to merge_always. Specify '-setuphold split' to preserve the behavior of the previous release.
         : Specify the option explicitly.
 Warning : Default value for an option has changed in this release. [WSDF-104]
         : Default value for -recrem has changed from split to merge_always. Specify '-recrem split' to preserve the behavior of the previous release.
-@file(syn2.tcl) 65: write_sdc > ../out/mouse.sdc
+Warning : No delay description exists for cell. [WSDF-201]
+        : Cell il_x1_cdn_loop_breaker.
+        : Cell could be a loop breaker or its inputs could be driven by constants.
+Warning : No delay description exists for cell. [WSDF-201]
+        : Cell il_x1_cdn_loop_breaker13.
+Warning : No delay description exists for cell. [WSDF-201]
+        : Cell il_x1_cdn_loop_breaker14.
+Warning : No delay description exists for cell. [WSDF-201]
+        : Cell il_x1_cdn_loop_breaker15.
+Warning : No delay description exists for cell. [WSDF-201]
+        : Cell il_x1_cdn_loop_breaker16.
+Warning : No delay description exists for cell. [WSDF-201]
+        : Cell il_x1_cdn_loop_breaker17.
+Warning : No delay description exists for cell. [WSDF-201]
+        : Cell il_x1_cdn_loop_breaker18.
+Warning : No delay description exists for cell. [WSDF-201]
+        : Cell il_x1_cdn_loop_breaker19.
+Warning : No delay description exists for cell. [WSDF-201]
+        : Cell il_y1_cdn_loop_breaker.
+Warning : No delay description exists for cell. [WSDF-201]
+        : Cell il_y1_cdn_loop_breaker13.
+Warning : No delay description exists for cell. [WSDF-201]
+        : Cell il_y1_cdn_loop_breaker14.
+Warning : No delay description exists for cell. [WSDF-201]
+        : Cell il_y1_cdn_loop_breaker15.
+Warning : No delay description exists for cell. [WSDF-201]
+        : Cell il_y1_cdn_loop_breaker16.
+Warning : No delay description exists for cell. [WSDF-201]
+        : Cell il_y1_cdn_loop_breaker17.
+Warning : No delay description exists for cell. [WSDF-201]
+        : Cell il_y1_cdn_loop_breaker18.
+Warning : No delay description exists for cell. [WSDF-201]
+        : Cell il_y1_cdn_loop_breaker19.
+@file(syn2.tcl) 80: write_sdc > ../out/top.sdc
 Finished SDC export (command execution time mm:ss (real) = 00:00).
-@file(syn2.tcl) 67: report timing
+@file(syn2.tcl) 82: report timing
 Warning : Possible timing problems have been detected in this design. [TIM-11]
-        : The design is 'mouse'.
+        : The design is 'top'.
         : Use 'report timing -lint' for more information.
 ============================================================
   Generated by:           Genus(TM) Synthesis Solution 17.11-s014_1
-  Generated on:           Jan 12 2023  12:02:31 pm
-  Module:                 mouse
+  Generated on:           Jan 17 2023  09:22:39 am
+  Module:                 top
   Operating conditions:   WCCOM (balanced_tree)
   Wireload mode:          segmented
   Area mode:              timing library
 ============================================================
 
 
-Path 1: MET (27052 ps) Late External Delay Assertion at pin Handshake_out
+Path 1: MET (26853 ps) Setup Check with Pin il_y1_tempy_reg[3]/CP->D
           Group: clk
-     Startpoint: (R) mfsm_state_reg[4]/CP
+     Startpoint: (R) il_y1_state_reg[0]/CP
           Clock: (R) clk
-       Endpoint: (R) Handshake_out
+       Endpoint: (R) il_y1_tempy_reg[3]/D
           Clock: (R) clk
 
                      Capture       Launch     
@@ -512,29 +1026,35 @@ Path 1: MET (27052 ps) Late External Delay Assertion at pin Handshake_out
        Net Latency:+       0 (I)        0 (I) 
            Arrival:=   30000            0     
                                               
-      Output Delay:-     500                  
-     Required Time:=   29500                  
+             Setup:-     192                  
+     Required Time:=   29808                  
       Launch Clock:-       0                  
-         Data Path:-    2448                  
-             Slack:=   27052                  
+         Data Path:-    2955                  
+             Slack:=   26853                  
 
-#-----------------------------------------------------------------------------------------
-#    Timing Point      Flags    Arc   Edge    Cell      Fanout  Load  Trans Delay Arrival 
-#                                                               (fF)   (ps)  (ps)   (ps)  
-#-----------------------------------------------------------------------------------------
-  mfsm_state_reg[4]/CP -       -      R     (arrival)       53      -     0     -       0 
-  mfsm_state_reg[4]/Q  -       CP->Q  R     DFQD0BWP7T      15   64.9  1080   874     874 
-  mfsm_g1642/ZN        -       A2->ZN F     ND2D1BWP7T       3    9.1   218   155    1029 
-  mfsm_g1637/ZN        -       A1->ZN R     NR2XD0BWP7T      1    8.6   211   174    1203 
-  mfsm_g1636/Z         -       A1->Z  R     AN2D4BWP7T       1 1000.0  1988  1245    2448 
-  Handshake_out        <<<     -      R     (port)           -      -     -     0    2448 
-#-----------------------------------------------------------------------------------------
+#------------------------------------------------------------------------------------------
+#     Timing Point      Flags    Arc   Edge     Cell       Fanout Load Trans Delay Arrival 
+#                                                                 (fF)  (ps)  (ps)   (ps)  
+#------------------------------------------------------------------------------------------
+  il_y1_state_reg[0]/CP -       -      R     (arrival)         88    -     0     -       0 
+  il_y1_state_reg[0]/Q  -       CP->Q  R     DFQD1BWP7T         2  6.4    90   332     332 
+  il_y1_g565/ZN         -       A1->ZN R     INR2D1BWP7T        4 14.9   319   289     621 
+  il_y1_g564/ZN         -       I->ZN  F     INVD1BWP7T         4 11.6   111   101     722 
+  il_y1_g570/Z          -       C1->Z  F     AO222D0BWP7T       2  8.9   196   676    1399 
+  il_y1_g553/ZN         -       I->ZN  R     INVD1BWP7T         3 15.8   165   149    1547 
+  il_y1_g548/ZN         -       A1->ZN F     NR2D0BWP7T         2  5.2    83    83    1630 
+  il_y1_g537/Z          -       B->Z   F     AO21D0BWP7T        3  7.6   127   338    1969 
+  il_y1_g533/Z          -       A1->Z  F     AO21D0BWP7T        2  4.9   106   244    2212 
+  il_y1_g532/ZN         -       B1->ZN F     MAOI22D0BWP7T      1  2.5   115   245    2457 
+  il_y1_g531/ZN         -       C2->ZN R     OAI222D0BWP7T      3 10.1   801   498    2955 
+  il_y1_tempy_reg[3]/D  -       -      R     DFKCND1BWP7T       3    -     -     0    2955 
+#------------------------------------------------------------------------------------------
 
-@file(syn2.tcl) 68: report gates
+@file(syn2.tcl) 83: report gates
 ============================================================
   Generated by:           Genus(TM) Synthesis Solution 17.11-s014_1
-  Generated on:           Jan 12 2023  12:02:31 pm
-  Module:                 mouse
+  Generated on:           Jan 17 2023  09:22:39 am
+  Module:                 top
   Operating conditions:   WCCOM (balanced_tree)
   Wireload mode:          segmented
   Area mode:              timing library
@@ -543,73 +1063,90 @@ Path 1: MET (27052 ps) Late External Delay Assertion at pin Handshake_out
                                     
      Gate       Instances    Area        Library      
 ------------------------------------------------------
-AN2D0BWP7T              8    87.808    tcb018gbwp7twc 
-AN2D1BWP7T              9    98.784    tcb018gbwp7twc 
-AN2D4BWP7T              2    52.685    tcb018gbwp7twc 
-AN3D1BWP7T              1    13.171    tcb018gbwp7twc 
-AO21D0BWP7T             2    26.342    tcb018gbwp7twc 
-AO221D0BWP7T            6   118.541    tcb018gbwp7twc 
-AO22D0BWP7T             3    52.685    tcb018gbwp7twc 
-AOI21D0BWP7T            4    43.904    tcb018gbwp7twc 
-AOI221D0BWP7T           1    17.562    tcb018gbwp7twc 
-AOI222D0BWP7T           2    39.514    tcb018gbwp7twc 
+AN2D0BWP7T             10   109.760    tcb018gbwp7twc 
+AN2D1BWP7T              2    21.952    tcb018gbwp7twc 
+AN3D0BWP7T              2    26.342    tcb018gbwp7twc 
+AN4D0BWP7T              2    30.733    tcb018gbwp7twc 
+AO211D0BWP7T            1    15.366    tcb018gbwp7twc 
+AO21D0BWP7T             6    79.027    tcb018gbwp7twc 
+AO221D0BWP7T            1    19.757    tcb018gbwp7twc 
+AO222D0BWP7T            6   144.883    tcb018gbwp7twc 
+AO22D0BWP7T             7   122.931    tcb018gbwp7twc 
+AOI211XD0BWP7T          1    13.171    tcb018gbwp7twc 
+AOI21D0BWP7T            6    65.856    tcb018gbwp7twc 
 AOI22D0BWP7T            3    39.514    tcb018gbwp7twc 
 AOI32D1BWP7T            1    17.562    tcb018gbwp7twc 
-AOI33D1BWP7T            1    19.757    tcb018gbwp7twc 
-BUFFD4BWP7T            21   414.893    tcb018gbwp7twc 
-CKND1BWP7T              1     6.586    tcb018gbwp7twc 
-CKND2D1BWP7T            1     8.781    tcb018gbwp7twc 
-CKXOR2D0BWP7T           1    19.757    tcb018gbwp7twc 
-DFD1BWP7T               4   175.616    tcb018gbwp7twc 
-DFKCND1BWP7T            3   144.883    tcb018gbwp7twc 
-DFKCNQD1BWP7T          12   526.848    tcb018gbwp7twc 
-DFQD0BWP7T              2    83.418    tcb018gbwp7twc 
-DFQD1BWP7T             13   542.214    tcb018gbwp7twc 
-EDFKCNQD1BWP7T          8   474.163    tcb018gbwp7twc 
-EDFQD0BWP7T            11   603.680    tcb018gbwp7twc 
+BUFFD1BWP7T            16   140.493    tcb018gbwp7twc 
+BUFFD4BWP7T             8   158.054    tcb018gbwp7twc 
+CKAN2D1BWP7T            3    32.928    tcb018gbwp7twc 
+CKND1BWP7T              4    26.342    tcb018gbwp7twc 
+CKND2D1BWP7T            2    17.562    tcb018gbwp7twc 
+CKXOR2D0BWP7T           3    59.270    tcb018gbwp7twc 
+CKXOR2D1BWP7T           1    19.757    tcb018gbwp7twc 
+DFD1BWP7T              11   482.944    tcb018gbwp7twc 
+DFKCND1BWP7T            6   289.766    tcb018gbwp7twc 
+DFKCNQD1BWP7T          34  1492.736    tcb018gbwp7twc 
+DFQD1BWP7T             14   583.923    tcb018gbwp7twc 
+DFXQD1BWP7T            11   603.680    tcb018gbwp7twc 
+EDFKCND1BWP7T           1    61.466    tcb018gbwp7twc 
+EDFKCNQD1BWP7T         11   651.974    tcb018gbwp7twc 
 IAO21D0BWP7T            2    26.342    tcb018gbwp7twc 
-IND2D1BWP7T            16   175.616    tcb018gbwp7twc 
-IND3D1BWP7T             1    13.171    tcb018gbwp7twc 
-INR2D0BWP7T             4    43.904    tcb018gbwp7twc 
-INR2D1BWP7T             2    21.952    tcb018gbwp7twc 
-INR2XD0BWP7T            1    10.976    tcb018gbwp7twc 
-INR3D0BWP7T             1    15.366    tcb018gbwp7twc 
-INVD0BWP7T              3    19.757    tcb018gbwp7twc 
-INVD1BWP7T              7    46.099    tcb018gbwp7twc 
+IND2D0BWP7T             7    76.832    tcb018gbwp7twc 
+IND2D1BWP7T            30   329.280    tcb018gbwp7twc 
+IND3D0BWP7T             1    13.171    tcb018gbwp7twc 
+IND3D1BWP7T             8   105.370    tcb018gbwp7twc 
+IND4D0BWP7T             1    15.366    tcb018gbwp7twc 
+INR2D1BWP7T             9    98.784    tcb018gbwp7twc 
+INR3D0BWP7T             3    46.099    tcb018gbwp7twc 
+INR4D0BWP7T             2    35.123    tcb018gbwp7twc 
+INVD0BWP7T             13    85.613    tcb018gbwp7twc 
+INVD1BWP7T             14    92.198    tcb018gbwp7twc 
+INVD4BWP7T              5    76.832    tcb018gbwp7twc 
 IOA21D0BWP7T            1    13.171    tcb018gbwp7twc 
-IOA21D1BWP7T            1    13.171    tcb018gbwp7twc 
-LHQD1BWP7T              5   153.664    tcb018gbwp7twc 
-MAOI22D0BWP7T           1    15.366    tcb018gbwp7twc 
-MOAI22D0BWP7T          16   245.862    tcb018gbwp7twc 
-ND2D0BWP7T              2    17.562    tcb018gbwp7twc 
-ND2D1BWP7T              8    70.246    tcb018gbwp7twc 
-ND2D4BWP7T              1    26.342    tcb018gbwp7twc 
-ND3D0BWP7T              1    10.976    tcb018gbwp7twc 
+IOA21D1BWP7T            2    26.342    tcb018gbwp7twc 
+LHD1BWP7T               3    98.784    tcb018gbwp7twc 
+LHQD1BWP7T              3    92.198    tcb018gbwp7twc 
+MAOI222D1BWP7T          4    70.246    tcb018gbwp7twc 
+MAOI22D0BWP7T           5    76.832    tcb018gbwp7twc 
+MOAI22D0BWP7T          35   537.824    tcb018gbwp7twc 
+ND2D0BWP7T              3    26.342    tcb018gbwp7twc 
+ND2D1BWP7T             20   175.616    tcb018gbwp7twc 
+ND2D4BWP7T              2    52.685    tcb018gbwp7twc 
+ND3D0BWP7T              5    54.880    tcb018gbwp7twc 
 ND4D0BWP7T              1    13.171    tcb018gbwp7twc 
-NR2D0BWP7T              1     8.781    tcb018gbwp7twc 
-NR2D1BWP7T              4    35.123    tcb018gbwp7twc 
+NR2D0BWP7T              6    52.685    tcb018gbwp7twc 
+NR2D1BWP7T              2    17.562    tcb018gbwp7twc 
 NR2XD0BWP7T             7    61.466    tcb018gbwp7twc 
-OAI211D1BWP7T           2    26.342    tcb018gbwp7twc 
-OAI21D0BWP7T            4    43.904    tcb018gbwp7twc 
-OAI221D0BWP7T           2    35.123    tcb018gbwp7twc 
+NR3D0BWP7T              4    43.904    tcb018gbwp7twc 
+NR4D0BWP7T              1    13.171    tcb018gbwp7twc 
+OA21D0BWP7T             2    26.342    tcb018gbwp7twc 
+OA22D0BWP7T             1    17.562    tcb018gbwp7twc 
+OA31D1BWP7T             3    52.685    tcb018gbwp7twc 
+OAI211D0BWP7T           1    13.171    tcb018gbwp7twc 
+OAI211D1BWP7T           7    92.198    tcb018gbwp7twc 
+OAI21D0BWP7T           10   109.760    tcb018gbwp7twc 
+OAI221D0BWP7T           1    17.562    tcb018gbwp7twc 
+OAI222D0BWP7T           3    59.270    tcb018gbwp7twc 
+OAI22D0BWP7T            2    26.342    tcb018gbwp7twc 
 OAI31D0BWP7T            1    13.171    tcb018gbwp7twc 
-OR2D1BWP7T              1    10.976    tcb018gbwp7twc 
+OR2D1BWP7T              5    54.880    tcb018gbwp7twc 
+OR3D0BWP7T              1    15.366    tcb018gbwp7twc 
 ------------------------------------------------------
-total                 216  4816.269                   
+total                 409  8253.952                   
 
 
                                          
      Type      Instances   Area   Area % 
 -----------------------------------------
-sequential            58 2704.486   56.2 
-inverter              11   72.442    1.5 
-buffer                21  414.893    8.6 
-logic                126 1624.448   33.7 
+sequential            94 4357.472   52.8 
+inverter              36  280.986    3.4 
+buffer                24  298.547    3.6 
+logic                255 3316.947   40.2 
 physical_cells         0    0.000    0.0 
 -----------------------------------------
-total                216 4816.269  100.0 
+total                409 8253.952  100.0 
 
-@file(syn2.tcl) 70: gui_show
+@file(syn2.tcl) 85: gui_show
 #@ End verbose source tcl/syn2.tcl
-WARNING: This version of the tool is 1921 days old.
+WARNING: This version of the tool is 1926 days old.
 Normal exit.

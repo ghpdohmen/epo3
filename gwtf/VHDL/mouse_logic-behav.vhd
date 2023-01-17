@@ -1,7 +1,7 @@
 library IEEE;
 use IEEE.std_logic_1164.ALL;
 
-architecture behav of top is
+architecture behav of mouse_logic is
 
 component mouse is
    port(mouseX        : out std_logic_vector(2 downto 0);
@@ -47,16 +47,35 @@ signal rst, led0, led1, led2, led3, led5, led6, led7, led8, led9 : std_logic;
 
 signal handshake_mouse_out, handshake_mouse_in 								: std_logic;
 signal mouseX, mouseY			: std_logic_vector(2 downto 0);
-signal buttons		: std_logic_vector(4 downto 0);
+signal buttons_mouse		: std_logic_vector(4 downto 0);
+signal dx, dy			: std_logic_vector(3 downto 0);
+signal buttons			: std_logic_vector(2 downto 0);
 
 
 
 begin
 
 
-ms: mouse port map(mouseX, buttons, mouseY, handshake_mouse_out, DataSwitch, ClkSwitch, handshake_mouse_in, Data_in, Clk15k, clk, reset, rst, led0, led1, led2, led3, led5, led6, led7, led8, led9);
+buttons(0) <= buttons_mouse(2);
+buttons(1) <= buttons_mouse(3);
+buttons(2) <= buttons_mouse(4);
 
-il: logic_top port map(clk, reset, buttons, mouseX, mouseY, handshake_mouse_out, countlow, rescount, output_color, tempx, tempy, draw, handshake_mouse_in);
+dx(0) <= mouseX(0);
+dx(1) <= mouseX(1);
+dx(2) <= mouseX(2);
+dx(3) <= buttons_mouse(0);
+
+dy(0) <= mouseY(0);
+dy(1) <= mouseY(1);
+dy(2) <= mouseY(2);
+dy(3) <= buttons_mouse(1);
+
+
+
+
+ms: mouse port map(mouseX, buttons_mouse, mouseY, handshake_mouse_out, DataSwitch, ClkSwitch, handshake_mouse_in, Data_in, Clk15k, clk, reset, rst, led0, led1, led2, led3, led5, led6, led7, led8, led9);
+
+il: logic_top port map(clk, reset, buttons, dx, dy, handshake_mouse_out, countlow, rescount, output_color, tempx, tempy, draw, handshake_mouse_in);
 
 
 
