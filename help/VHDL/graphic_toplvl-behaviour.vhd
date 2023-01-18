@@ -34,6 +34,20 @@ component rom_cursor is port (
         rom_colour_out : out std_logic_vector(1 downto 0)
 );
 end component;
+component vga_buffer is
+port(clk   : in  std_logic;
+        reset : in  std_logic;
+        R     : in  std_logic;
+        G     : in  std_logic;
+        B     : in  std_logic;
+        V     : in  std_logic;
+        H     : in  std_logic;
+        Rout     : out std_logic;
+        Gout     : out std_logic;
+        Bout     : out std_logic;
+        Vout     : out std_logic;
+        Hout     : out std_logic);
+end component;
 component colour_storage is port(
  	ram_y: in std_logic_vector(3 downto 0);
  	ram_x: in std_logic_vector(3 downto 0);
@@ -65,7 +79,7 @@ end component;
 	signal sig_ram: std_logic_vector(2 downto 0);
 	--signal sig_countdown: std_logic_vector (10 downto 0);
 	signal sig_v: std_logic;
-	
+	signal Rint,Gint,Bint,Vint,Hint : std_logic;
 	
 	
 begin
@@ -86,7 +100,9 @@ vgd: vgadrive port map (
 	clock => clk, red => sig_red, green => sig_green, blue => sig_blue,
 	reset => reset,
         enable => sig_enable, scale_h => sig_scale_h, scale_v => sig_scale_v,
-        Rout => R, Gout => G, Bout => B, H => H, V => sig_v);
+        Rout => Rint, Gout => Gint, Bout => Bint, H => Hint, V => sig_v);
+vga_buf: vga_buffer port map (
+	clk, reset,Rint, Gint, Bint, sig_v, Hint, R, G, B, V, H);
 gr_lg: graph_logic port map (
 	clk => clk,
 	reset => reset,

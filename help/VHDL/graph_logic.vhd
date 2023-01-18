@@ -8,7 +8,7 @@ port (
     -- INPUTS
     --countdown
     v_count: in std_logic; -- V from the vga
-    middelste_knop:in std_logic;
+    middelste_knop: in std_logic;
     --countdown_in: in std_logic_vector (4 downto 0);
     countdown_klaar: out std_logic;
     --vga

@@ -1,5 +1,5 @@
 Analysis & Synthesis report for top_de1
-Wed Jan 18 09:28:21 2023
+Wed Jan 18 16:21:12 2023
 Quartus II 32-bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
 
 
@@ -36,7 +36,7 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                          ;
 +------------------------------------+--------------------------------------------------+
-; Analysis & Synthesis Status        ; Failed - Wed Jan 18 09:28:21 2023                ;
+; Analysis & Synthesis Status        ; Failed - Wed Jan 18 16:21:12 2023                ;
 ; Quartus II 32-bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Full Version ;
 ; Revision Name                      ; top_de1                                          ;
 ; Top-level Entity Name              ; top_de1                                          ;
@@ -161,9 +161,13 @@ applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II 32-bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
-    Info: Processing started: Wed Jan 18 09:28:17 2023
+    Info: Processing started: Wed Jan 18 16:21:08 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off de1 -c top_de1
 Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
+Info (12021): Found 1 design units, including 0 entities, in source file /home/ghpdohmen/epo3/epo3/help/VHDL/vga_buffer-behav.vhd
+    Info (12022): Found design unit 1: vga_buffer-behav
+Info (12021): Found 1 design units, including 1 entities, in source file /home/ghpdohmen/epo3/epo3/help/VHDL/vga_buffer.vhd
+    Info (12023): Found entity 1: vga_buffer
 Info (12021): Found 2 design units, including 1 entities, in source file /home/ghpdohmen/epo3/epo3/help/VHDL/RAMbestand.vhd
     Info (12022): Found design unit 1: colour_storage-Behavioral
     Info (12023): Found entity 1: colour_storage
@@ -275,11 +279,10 @@ Info (12021): Found 2 design units, including 1 entities, in source file pre_vga
 Info (12021): Found 2 design units, including 1 entities, in source file gen25mhz.vhd
     Info (12022): Found design unit 1: gen25mhz-behaviour
     Info (12023): Found entity 1: gen25mhz
-Error (10482): VHDL error at logic_top-behaviour_logic_top.vhd(38): object "handshakeimx" is used but not declared File: /home/ghpdohmen/epo3/epo3/help/VHDL/logic_top-behaviour_logic_top.vhd Line: 38
-Error (10558): VHDL error at logic_top-behaviour_logic_top.vhd(38): cannot associate formal port "handshakeim" of mode "out" with an expression File: /home/ghpdohmen/epo3/epo3/help/VHDL/logic_top-behaviour_logic_top.vhd Line: 38
-Error: Quartus II 32-bit Analysis & Synthesis was unsuccessful. 2 errors, 2 warnings
+Error (10327): VHDL error at y-behaviour_y.vhd(90): can't determine definition of operator ""-"" -- found 0 possible definitions File: /home/ghpdohmen/epo3/epo3/help/VHDL/y-behaviour_y.vhd Line: 90
+Error: Quartus II 32-bit Analysis & Synthesis was unsuccessful. 1 error, 2 warnings
     Error: Peak virtual memory: 363 megabytes
-    Error: Processing ended: Wed Jan 18 09:28:21 2023
+    Error: Processing ended: Wed Jan 18 16:21:12 2023
     Error: Elapsed time: 00:00:04
     Error: Total CPU time (on all processors): 00:00:02
 

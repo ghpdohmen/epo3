@@ -6,6 +6,8 @@ configuration graphic_toplvl_behaviour_cfg of graphic_toplvl is
       end for;
       for all: vgadrive use configuration work.vgadrive_behaviour_cfg;
       end for;
+      for all: vga_buffer use configuration work.vga_buffer_behav_cfg;
+      end for;
       for all: graph_logic use configuration work.graph_logic_behav_cfg;
       end for;
    end for;

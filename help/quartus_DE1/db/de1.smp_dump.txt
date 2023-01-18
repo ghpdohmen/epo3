@@ -10,6 +10,12 @@ state.cyaan 0 0 1 0 0 0 0 1
 state.rood 0 1 0 0 0 0 0 1 
 state.paars 1 0 0 0 0 0 0 1 
 
+State Machine - |top_de1|pixel:inst2|mouse_logic:ml|logic_top:il|color:color1|state_hs
+Name state_hs.ready state_hs.increment state_hs.idle 
+state_hs.idle 0 0 0 
+state_hs.increment 0 1 1 
+state_hs.ready 1 0 1 
+
 State Machine - |top_de1|pixel:inst2|mouse_logic:ml|logic_top:il|y:y1|state
 Name state.ready state.increment state.idle 
 state.idle 0 0 0 
