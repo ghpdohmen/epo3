@@ -86,7 +86,7 @@ begin
 --logic_e_asked <= sig_e;
 --logic_x_asked <= sig_x;
 --logic_y_asked <= sig_y;
-V <= sig_v;
+V <= Vint;
 ram: colour_storage port map( counter_aan => countdown_aan,
 	clk => clk, reset=>reset, middelste_knop=> middelste_knop,
 	ram_x => logic_x, ram_y => logic_y, ram_colour_in => loaded_color,
@@ -102,7 +102,7 @@ vgd: vgadrive port map (
         enable => sig_enable, scale_h => sig_scale_h, scale_v => sig_scale_v,
         Rout => Rint, Gout => Gint, Bout => Bint, H => Hint, V => sig_v);
 vga_buf: vga_buffer port map (
-	clk, reset,Rint, Gint, Bint, sig_v, Hint, R, G, B, V, H);
+	clk, reset, Rint, Gint, Bint, sig_v, Hint, R, G, B, Vint, H);
 gr_lg: graph_logic port map (
 	clk => clk,
 	reset => reset,

@@ -87,11 +87,7 @@ begin
 	if((to_integer(unsigned(input_register)) - to_integer(unsigned(dy(2 downto 0)))) < minimal) then
 		locy_unsigned <= (others=>'0');
 	else
-<<<<<<< Updated upstream
 		locy_unsigned <= unsigned(input_register) - ('0' & input_unsigned(2 downto 0));
-=======
-		locy_unsigned <= (unsigned(input_register) - ('0' & input_register(2 downto 0)));
->>>>>>> Stashed changes
 	end if;
     else
     	--bound_low<= unsigned(input_register) + ('0' & input_unsigned(2 downto 0));

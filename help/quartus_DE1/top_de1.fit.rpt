@@ -1,5 +1,5 @@
 Fitter report for top_de1
-Wed Jan 18 09:53:42 2023
+Wed Jan 18 17:29:05 2023
 Quartus II 32-bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
 
 
@@ -63,17 +63,17 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------------+
 ; Fitter Summary                                                                        ;
 +------------------------------------+--------------------------------------------------+
-; Fitter Status                      ; Successful - Wed Jan 18 09:53:42 2023            ;
+; Fitter Status                      ; Successful - Wed Jan 18 17:29:05 2023            ;
 ; Quartus II 32-bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Full Version ;
 ; Revision Name                      ; top_de1                                          ;
 ; Top-level Entity Name              ; top_de1                                          ;
 ; Family                             ; Cyclone II                                       ;
 ; Device                             ; EP2C20F484C7                                     ;
 ; Timing Models                      ; Final                                            ;
-; Total logic elements               ; 263 / 18,752 ( 1 % )                             ;
-;     Total combinational functions  ; 259 / 18,752 ( 1 % )                             ;
-;     Dedicated logic registers      ; 141 / 18,752 ( < 1 % )                           ;
-; Total registers                    ; 141                                              ;
+; Total logic elements               ; 266 / 18,752 ( 1 % )                             ;
+;     Total combinational functions  ; 258 / 18,752 ( 1 % )                             ;
+;     Dedicated logic registers      ; 149 / 18,752 ( < 1 % )                           ;
+; Total registers                    ; 149                                              ;
 ; Total pins                         ; 20 / 315 ( 6 % )                                 ;
 ; Total virtual pins                 ; 0                                                ;
 ; Total memory bits                  ; 2,048 / 239,616 ( < 1 % )                        ;
@@ -141,13 +141,13 @@ applicable agreement for further details.
 ; Number detected on machine ; 16          ;
 ; Maximum allowed            ; 16          ;
 ;                            ;             ;
-; Average used               ; 5.00        ;
+; Average used               ; 4.14        ;
 ; Maximum used               ; 16          ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-8         ;  30.8%      ;
-;     Processors 9-16        ;  23.1%      ;
+;     Processors 2-8         ;  28.6%      ;
+;     Processors 9-16        ;  14.3%      ;
 +----------------------------+-------------+
 
 
@@ -157,8 +157,8 @@ applicable agreement for further details.
 ; Type                ; Value                  ;
 +---------------------+------------------------+
 ; Placement (by node) ;                        ;
-;     -- Requested    ; 0 / 428 ( 0.00 % )     ;
-;     -- Achieved     ; 0 / 428 ( 0.00 % )     ;
+;     -- Requested    ; 0 / 435 ( 0.00 % )     ;
+;     -- Achieved     ; 0 / 435 ( 0.00 % )     ;
 ;                     ;                        ;
 ; Routing (by net)    ;                        ;
 ;     -- Requested    ; 0 / 0 ( 0.00 % )       ;
@@ -181,7 +181,7 @@ applicable agreement for further details.
 +--------------------------------+---------+-------------------+-------------------------+-------------------+
 ; Partition Name                 ; # Nodes ; # Preserved Nodes ; Preservation Level Used ; Netlist Type Used ;
 +--------------------------------+---------+-------------------+-------------------------+-------------------+
-; Top                            ; 425     ; 0                 ; N/A                     ; Source File       ;
+; Top                            ; 432     ; 0                 ; N/A                     ; Source File       ;
 ; hard_block:auto_generated_inst ; 3       ; 0                 ; N/A                     ; Source File       ;
 +--------------------------------+---------+-------------------+-------------------------+-------------------+
 
@@ -197,26 +197,26 @@ The pin-out file can be found in /home/ghpdohmen/epo3/epo3/help/quartus_DE1/top_
 +---------------------------------------------+---------------------------+
 ; Resource                                    ; Usage                     ;
 +---------------------------------------------+---------------------------+
-; Total logic elements                        ; 263 / 18,752 ( 1 % )      ;
-;     -- Combinational with no register       ; 122                       ;
-;     -- Register only                        ; 4                         ;
-;     -- Combinational with a register        ; 137                       ;
+; Total logic elements                        ; 266 / 18,752 ( 1 % )      ;
+;     -- Combinational with no register       ; 117                       ;
+;     -- Register only                        ; 8                         ;
+;     -- Combinational with a register        ; 141                       ;
 ;                                             ;                           ;
 ; Logic element usage by number of LUT inputs ;                           ;
-;     -- 4 input functions                    ; 99                        ;
-;     -- 3 input functions                    ; 62                        ;
+;     -- 4 input functions                    ; 103                       ;
+;     -- 3 input functions                    ; 57                        ;
 ;     -- <=2 input functions                  ; 98                        ;
-;     -- Register only                        ; 4                         ;
+;     -- Register only                        ; 8                         ;
 ;                                             ;                           ;
 ; Logic elements by mode                      ;                           ;
-;     -- normal mode                          ; 208                       ;
+;     -- normal mode                          ; 207                       ;
 ;     -- arithmetic mode                      ; 51                        ;
 ;                                             ;                           ;
-; Total registers*                            ; 141 / 19,649 ( < 1 % )    ;
-;     -- Dedicated logic registers            ; 141 / 18,752 ( < 1 % )    ;
+; Total registers*                            ; 149 / 19,649 ( < 1 % )    ;
+;     -- Dedicated logic registers            ; 149 / 18,752 ( < 1 % )    ;
 ;     -- I/O registers                        ; 0 / 897 ( 0 % )           ;
 ;                                             ;                           ;
-; Total LABs:  partially or completely used   ; 22 / 1,172 ( 2 % )        ;
+; Total LABs:  partially or completely used   ; 19 / 1,172 ( 2 % )        ;
 ; Virtual pins                                ; 0                         ;
 ; I/O pins                                    ; 20 / 315 ( 6 % )          ;
 ;     -- Clock pins                           ; 1 / 8 ( 13 % )            ;
@@ -233,9 +233,9 @@ The pin-out file can be found in /home/ghpdohmen/epo3/epo3/help/quartus_DE1/top_
 ; CRC blocks                                  ; 0 / 1 ( 0 % )             ;
 ; Average interconnect usage (total/H/V)      ; 0% / 0% / 0%              ;
 ; Peak interconnect usage (total/H/V)         ; 0% / 0% / 0%              ;
-; Maximum fan-out                             ; 133                       ;
-; Highest non-global fan-out                  ; 88                        ;
-; Total fan-out                               ; 1141                      ;
+; Maximum fan-out                             ; 141                       ;
+; Highest non-global fan-out                  ; 96                        ;
+; Total fan-out                               ; 1170                      ;
 ; Average fan-out                             ; 2.67                      ;
 +---------------------------------------------+---------------------------+
 *  Register count does not include registers inside RAM blocks or DSP blocks.
@@ -249,25 +249,25 @@ The pin-out file can be found in /home/ghpdohmen/epo3/epo3/help/quartus_DE1/top_
 +---------------------------------------------+-----------------------+--------------------------------+
 ; Difficulty Clustering Region                ; Low                   ; Low                            ;
 ;                                             ;                       ;                                ;
-; Total logic elements                        ; 263 / 18752 ( 1 % )   ; 0 / 18752 ( 0 % )              ;
-;     -- Combinational with no register       ; 122                   ; 0                              ;
-;     -- Register only                        ; 4                     ; 0                              ;
-;     -- Combinational with a register        ; 137                   ; 0                              ;
+; Total logic elements                        ; 266 / 18752 ( 1 % )   ; 0 / 18752 ( 0 % )              ;
+;     -- Combinational with no register       ; 117                   ; 0                              ;
+;     -- Register only                        ; 8                     ; 0                              ;
+;     -- Combinational with a register        ; 141                   ; 0                              ;
 ;                                             ;                       ;                                ;
 ; Logic element usage by number of LUT inputs ;                       ;                                ;
-;     -- 4 input functions                    ; 99                    ; 0                              ;
-;     -- 3 input functions                    ; 62                    ; 0                              ;
+;     -- 4 input functions                    ; 103                   ; 0                              ;
+;     -- 3 input functions                    ; 57                    ; 0                              ;
 ;     -- <=2 input functions                  ; 98                    ; 0                              ;
-;     -- Register only                        ; 4                     ; 0                              ;
+;     -- Register only                        ; 8                     ; 0                              ;
 ;                                             ;                       ;                                ;
 ; Logic elements by mode                      ;                       ;                                ;
-;     -- normal mode                          ; 208                   ; 0                              ;
+;     -- normal mode                          ; 207                   ; 0                              ;
 ;     -- arithmetic mode                      ; 51                    ; 0                              ;
 ;                                             ;                       ;                                ;
-; Total registers                             ; 141                   ; 0                              ;
-;     -- Dedicated logic registers            ; 141 / 18752 ( < 1 % ) ; 0 / 18752 ( 0 % )              ;
+; Total registers                             ; 149                   ; 0                              ;
+;     -- Dedicated logic registers            ; 149 / 18752 ( < 1 % ) ; 0 / 18752 ( 0 % )              ;
 ;                                             ;                       ;                                ;
-; Total LABs:  partially or completely used   ; 22 / 1172 ( 2 % )     ; 0 / 1172 ( 0 % )               ;
+; Total LABs:  partially or completely used   ; 19 / 1172 ( 2 % )     ; 0 / 1172 ( 0 % )               ;
 ;                                             ;                       ;                                ;
 ; Virtual pins                                ; 0                     ; 0                              ;
 ; I/O pins                                    ; 20                    ; 0                              ;
@@ -284,8 +284,8 @@ The pin-out file can be found in /home/ghpdohmen/epo3/epo3/help/quartus_DE1/top_
 ;     -- Registered Output Connections        ; 0                     ; 0                              ;
 ;                                             ;                       ;                                ;
 ; Internal Connections                        ;                       ;                                ;
-;     -- Total Connections                    ; 1141                  ; 0                              ;
-;     -- Registered Connections               ; 430                   ; 0                              ;
+;     -- Total Connections                    ; 1170                  ; 0                              ;
+;     -- Registered Connections               ; 449                   ; 0                              ;
 ;                                             ;                       ;                                ;
 ; External Connections                        ;                       ;                                ;
 ;     -- Top                                  ; 0                     ; 0                              ;
@@ -320,7 +320,7 @@ The pin-out file can be found in /home/ghpdohmen/epo3/epo3/help/quartus_DE1/top_
 ; clk15k_in   ; A14   ; 4        ; 29           ; 27           ; 1           ; 3                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
 ; clock_50mhz ; L1    ; 2        ; 0            ; 13           ; 0           ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
 ; data_in     ; B14   ; 4        ; 29           ; 27           ; 0           ; 0                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
-; reset       ; R22   ; 6        ; 50           ; 10           ; 1           ; 88                    ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
+; reset       ; R22   ; 6        ; 50           ; 10           ; 1           ; 96                    ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
 +-------------+-------+----------+--------------+--------------+-------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+-------------+----------------------+
 
 
@@ -899,29 +899,38 @@ Note: User assignments will override these defaults. The user specified values a
 +-------------------------------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+-----------------------------------------------------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node                      ; Logic Cells ; Dedicated Logic Registers ; I/O Registers ; Memory Bits ; M4Ks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Full Hierarchy Name                                                                                       ; Library Name ;
 +-------------------------------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+-----------------------------------------------------------------------------------------------------------+--------------+
-; |top_de1                                        ; 263 (0)     ; 141 (0)                   ; 0 (0)         ; 2048        ; 1    ; 0            ; 0       ; 0         ; 20   ; 0            ; 122 (0)      ; 4 (0)             ; 137 (0)          ; |top_de1                                                                                                  ; work         ;
+; |top_de1                                        ; 266 (0)     ; 149 (0)                   ; 0 (0)         ; 2048        ; 1    ; 0            ; 0       ; 0         ; 20   ; 0            ; 117 (0)      ; 8 (0)             ; 141 (0)          ; |top_de1                                                                                                  ; work         ;
 ;    |gen25mhz:inst1|                             ; 1 (1)       ; 1 (1)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; |top_de1|gen25mhz:inst1                                                                                   ; work         ;
-;    |pixel:inst2|                                ; 262 (0)     ; 140 (0)                   ; 0 (0)         ; 2048        ; 1    ; 0            ; 0       ; 0         ; 0    ; 0            ; 122 (0)      ; 4 (0)             ; 136 (0)          ; |top_de1|pixel:inst2                                                                                      ; work         ;
-;       |graphic_toplvl:gl|                       ; 137 (0)     ; 62 (0)                    ; 0 (0)         ; 2048        ; 1    ; 0            ; 0       ; 0         ; 0    ; 0            ; 75 (0)       ; 2 (0)             ; 60 (0)           ; |top_de1|pixel:inst2|graphic_toplvl:gl                                                                    ; work         ;
-;          |graph_logic:gr_lg|                    ; 56 (8)      ; 22 (0)                    ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 34 (7)       ; 0 (0)             ; 22 (1)           ; |top_de1|pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg                                                  ; work         ;
+;    |pixel:inst2|                                ; 265 (0)     ; 148 (0)                   ; 0 (0)         ; 2048        ; 1    ; 0            ; 0       ; 0         ; 0    ; 0            ; 117 (0)      ; 8 (0)             ; 140 (0)          ; |top_de1|pixel:inst2                                                                                      ; work         ;
+;       |graphic_toplvl:gl|                       ; 141 (0)     ; 70 (0)                    ; 0 (0)         ; 2048        ; 1    ; 0            ; 0       ; 0         ; 0    ; 0            ; 71 (0)       ; 6 (0)             ; 64 (0)           ; |top_de1|pixel:inst2|graphic_toplvl:gl                                                                    ; work         ;
+;          |graph_logic:gr_lg|                    ; 56 (8)      ; 22 (0)                    ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 34 (8)       ; 0 (0)             ; 22 (0)           ; |top_de1|pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg                                                  ; work         ;
 ;             |e_counter:le|                      ; 31 (31)     ; 10 (10)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 21 (21)      ; 0 (0)             ; 10 (10)          ; |top_de1|pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|e_counter:le                                     ; work         ;
-;             |h_counter:lh|                      ; 8 (6)       ; 6 (4)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 6 (4)            ; |top_de1|pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|h_counter:lh                                     ; work         ;
+;             |h_counter:lh|                      ; 7 (5)       ; 6 (4)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 6 (5)            ; |top_de1|pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|h_counter:lh                                     ; work         ;
 ;                |edge_detector:l_edge|           ; 2 (2)       ; 2 (2)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 2 (2)            ; |top_de1|pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|h_counter:lh|edge_detector:l_edge                ; work         ;
 ;             |v_counter:lv|                      ; 10 (8)      ; 6 (4)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 4 (4)        ; 0 (0)             ; 6 (4)            ; |top_de1|pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|v_counter:lv                                     ; work         ;
 ;                |edge_detector:l_edge|           ; 2 (2)       ; 2 (2)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 2 (2)            ; |top_de1|pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|v_counter:lv|edge_detector:l_edge                ; work         ;
 ;          |rom_cursor:rom|                       ; 0 (0)       ; 0 (0)                     ; 0 (0)         ; 2048        ; 1    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; |top_de1|pixel:inst2|graphic_toplvl:gl|rom_cursor:rom                                                     ; work         ;
 ;             |altsyncram:rom_rtl_0|              ; 0 (0)       ; 0 (0)                     ; 0 (0)         ; 2048        ; 1    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; |top_de1|pixel:inst2|graphic_toplvl:gl|rom_cursor:rom|altsyncram:rom_rtl_0                                ; work         ;
 ;                |altsyncram_rn61:auto_generated| ; 0 (0)       ; 0 (0)                     ; 0 (0)         ; 2048        ; 1    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; |top_de1|pixel:inst2|graphic_toplvl:gl|rom_cursor:rom|altsyncram:rom_rtl_0|altsyncram_rn61:auto_generated ; work         ;
-;          |vgadrive:vgd|                         ; 83 (83)     ; 40 (40)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 41 (41)      ; 2 (2)             ; 40 (40)          ; |top_de1|pixel:inst2|graphic_toplvl:gl|vgadrive:vgd                                                       ; work         ;
-;       |mouse_logic:ml|                          ; 125 (0)     ; 78 (0)                    ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 47 (0)       ; 2 (0)             ; 76 (0)           ; |top_de1|pixel:inst2|mouse_logic:ml                                                                       ; work         ;
-;          |mouse:ms|                             ; 125 (0)     ; 78 (0)                    ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 47 (0)       ; 2 (0)             ; 76 (0)           ; |top_de1|pixel:inst2|mouse_logic:ml|mouse:ms                                                              ; work         ;
+;          |vga_buffer:vga_buf|                   ; 8 (0)       ; 8 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 3 (0)             ; 5 (0)            ; |top_de1|pixel:inst2|graphic_toplvl:gl|vga_buffer:vga_buf                                                 ; work         ;
+;             |flipflop:B1|                       ; 1 (1)       ; 1 (1)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; |top_de1|pixel:inst2|graphic_toplvl:gl|vga_buffer:vga_buf|flipflop:B1                                     ; work         ;
+;             |flipflop:B2|                       ; 1 (1)       ; 1 (1)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 1 (1)             ; 0 (0)            ; |top_de1|pixel:inst2|graphic_toplvl:gl|vga_buffer:vga_buf|flipflop:B2                                     ; work         ;
+;             |flipflop:G1|                       ; 1 (1)       ; 1 (1)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; |top_de1|pixel:inst2|graphic_toplvl:gl|vga_buffer:vga_buf|flipflop:G1                                     ; work         ;
+;             |flipflop:G2|                       ; 1 (1)       ; 1 (1)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 1 (1)             ; 0 (0)            ; |top_de1|pixel:inst2|graphic_toplvl:gl|vga_buffer:vga_buf|flipflop:G2                                     ; work         ;
+;             |flipflop:H1|                       ; 1 (1)       ; 1 (1)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; |top_de1|pixel:inst2|graphic_toplvl:gl|vga_buffer:vga_buf|flipflop:H1                                     ; work         ;
+;             |flipflop:H2|                       ; 1 (1)       ; 1 (1)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; |top_de1|pixel:inst2|graphic_toplvl:gl|vga_buffer:vga_buf|flipflop:H2                                     ; work         ;
+;             |flipflop:V1|                       ; 1 (1)       ; 1 (1)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; |top_de1|pixel:inst2|graphic_toplvl:gl|vga_buffer:vga_buf|flipflop:V1                                     ; work         ;
+;             |flipflop:V2|                       ; 1 (1)       ; 1 (1)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 1 (1)             ; 0 (0)            ; |top_de1|pixel:inst2|graphic_toplvl:gl|vga_buffer:vga_buf|flipflop:V2                                     ; work         ;
+;          |vgadrive:vgd|                         ; 84 (84)     ; 40 (40)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 37 (37)      ; 3 (3)             ; 44 (44)          ; |top_de1|pixel:inst2|graphic_toplvl:gl|vgadrive:vgd                                                       ; work         ;
+;       |mouse_logic:ml|                          ; 124 (0)     ; 78 (0)                    ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 46 (0)       ; 2 (0)             ; 76 (0)           ; |top_de1|pixel:inst2|mouse_logic:ml                                                                       ; work         ;
+;          |mouse:ms|                             ; 124 (0)     ; 78 (0)                    ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 46 (0)       ; 2 (0)             ; 76 (0)           ; |top_de1|pixel:inst2|mouse_logic:ml|mouse:ms                                                              ; work         ;
 ;             |counter25mhz:cntD|                 ; 13 (13)     ; 13 (13)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 13 (13)          ; |top_de1|pixel:inst2|mouse_logic:ml|mouse:ms|counter25mhz:cntD                                            ; work         ;
 ;             |counter25mhz:cnt|                  ; 13 (13)     ; 13 (13)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 13 (13)          ; |top_de1|pixel:inst2|mouse_logic:ml|mouse:ms|counter25mhz:cnt                                             ; work         ;
 ;             |edge_debounce:ed|                  ; 12 (12)     ; 6 (6)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 6 (6)        ; 2 (2)             ; 4 (4)            ; |top_de1|pixel:inst2|mouse_logic:ml|mouse:ms|edge_debounce:ed                                             ; work         ;
 ;             |main_fsm:mfsm|                     ; 37 (37)     ; 24 (24)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 13 (13)      ; 0 (0)             ; 24 (24)          ; |top_de1|pixel:inst2|mouse_logic:ml|mouse:ms|main_fsm:mfsm                                                ; work         ;
 ;             |mux:mx2|                           ; 2 (2)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; |top_de1|pixel:inst2|mouse_logic:ml|mouse:ms|mux:mx2                                                      ; work         ;
 ;             |mux:mx|                            ; 2 (2)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; |top_de1|pixel:inst2|mouse_logic:ml|mouse:ms|mux:mx                                                       ; work         ;
-;             |sendFSM:sfsm|                      ; 30 (30)     ; 9 (9)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 21 (21)      ; 0 (0)             ; 9 (9)            ; |top_de1|pixel:inst2|mouse_logic:ml|mouse:ms|sendFSM:sfsm                                                 ; work         ;
+;             |sendFSM:sfsm|                      ; 29 (29)     ; 9 (9)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 20 (20)      ; 0 (0)             ; 9 (9)            ; |top_de1|pixel:inst2|mouse_logic:ml|mouse:ms|sendFSM:sfsm                                                 ; work         ;
 ;             |shiftregister_9bit:sr|             ; 11 (11)     ; 9 (9)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 9 (9)            ; |top_de1|pixel:inst2|mouse_logic:ml|mouse:ms|shiftregister_9bit:sr                                        ; work         ;
 ;             |timebase:tb|                       ; 5 (5)       ; 4 (4)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 4 (4)            ; |top_de1|pixel:inst2|mouse_logic:ml|mouse:ms|timebase:tb                                                  ; work         ;
 +-------------------------------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+-----------------------------------------------------------------------------------------------------------+--------------+
@@ -963,6 +972,11 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------------------------------------------+-------------------+---------+
 ; data_in                                                                          ;                   ;         ;
 ; reset                                                                            ;                   ;         ;
+;      - pixel:inst2|graphic_toplvl:gl|vga_buffer:vga_buf|flipflop:G2|Q            ; 1                 ; 6       ;
+;      - pixel:inst2|graphic_toplvl:gl|vga_buffer:vga_buf|flipflop:B2|Q            ; 1                 ; 6       ;
+;      - pixel:inst2|graphic_toplvl:gl|vga_buffer:vga_buf|flipflop:V2|Q            ; 1                 ; 6       ;
+;      - pixel:inst2|graphic_toplvl:gl|vga_buffer:vga_buf|flipflop:H1|Q            ; 1                 ; 6       ;
+;      - pixel:inst2|graphic_toplvl:gl|vga_buffer:vga_buf|flipflop:H2|Q            ; 1                 ; 6       ;
 ;      - pixel:inst2|mouse_logic:ml|mouse:ms|main_fsm:mfsm|state.sendFF            ; 1                 ; 6       ;
 ;      - pixel:inst2|mouse_logic:ml|mouse:ms|main_fsm:mfsm|state.enableF4          ; 1                 ; 6       ;
 ;      - pixel:inst2|mouse_logic:ml|mouse:ms|main_fsm:mfsm|state.delay_2           ; 1                 ; 6       ;
@@ -977,16 +991,16 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;      - pixel:inst2|mouse_logic:ml|mouse:ms|main_fsm:mfsm|state.data_1_cnt_rst    ; 1                 ; 6       ;
 ;      - pixel:inst2|mouse_logic:ml|mouse:ms|main_fsm:mfsm|state.data_1            ; 1                 ; 6       ;
 ;      - pixel:inst2|mouse_logic:ml|mouse:ms|edge_debounce:ed|state.debounce       ; 1                 ; 6       ;
-;      - pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|Add2~14                        ; 1                 ; 6       ;
 ;      - pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|Add2~16                        ; 1                 ; 6       ;
 ;      - pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|Add2~18                        ; 1                 ; 6       ;
+;      - pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|Add2~12                        ; 1                 ; 6       ;
+;      - pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|Add2~6                         ; 1                 ; 6       ;
 ;      - pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|Add2~8                         ; 1                 ; 6       ;
 ;      - pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|Add2~10                        ; 1                 ; 6       ;
-;      - pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|Add2~12                        ; 1                 ; 6       ;
-;      - pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|Add2~4                         ; 1                 ; 6       ;
-;      - pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|Add2~6                         ; 1                 ; 6       ;
 ;      - pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|Add2~2                         ; 1                 ; 6       ;
+;      - pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|Add2~4                         ; 1                 ; 6       ;
 ;      - pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|Add2~0                         ; 1                 ; 6       ;
+;      - pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|Add2~14                        ; 1                 ; 6       ;
 ;      - pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|Add1~18                        ; 1                 ; 6       ;
 ;      - pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|Add1~16                        ; 1                 ; 6       ;
 ;      - pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|Add1~14                        ; 1                 ; 6       ;
@@ -997,6 +1011,10 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;      - pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|Add1~4                         ; 1                 ; 6       ;
 ;      - pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|Add1~2                         ; 1                 ; 6       ;
 ;      - pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|Add1~0                         ; 1                 ; 6       ;
+;      - pixel:inst2|graphic_toplvl:gl|vga_buffer:vga_buf|flipflop:V1|Q            ; 1                 ; 6       ;
+;      - pixel:inst2|graphic_toplvl:gl|vga_buffer:vga_buf|flipflop:B1|Q            ; 1                 ; 6       ;
+;      - pixel:inst2|graphic_toplvl:gl|vga_buffer:vga_buf|flipflop:G1|Q            ; 1                 ; 6       ;
+;      - pixel:inst2|mouse_logic:ml|mouse:ms|edge_debounce:ed|state~6              ; 1                 ; 6       ;
 ;      - pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|horizontal~0                   ; 1                 ; 6       ;
 ;      - pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|horizontal~1                   ; 1                 ; 6       ;
 ;      - pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|horizontal~2                   ; 1                 ; 6       ;
@@ -1017,17 +1035,26 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;      - pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|scale_vertical~7               ; 1                 ; 6       ;
 ;      - pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|scale_vertical~8               ; 1                 ; 6       ;
 ;      - pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|scale_vertical~9               ; 1                 ; 6       ;
+;      - pixel:inst2|mouse_logic:ml|mouse:ms|main_fsm:mfsm|state~29                ; 1                 ; 6       ;
+;      - pixel:inst2|mouse_logic:ml|mouse:ms|main_fsm:mfsm|state~30                ; 1                 ; 6       ;
+;      - pixel:inst2|mouse_logic:ml|mouse:ms|main_fsm:mfsm|state~31                ; 1                 ; 6       ;
+;      - pixel:inst2|mouse_logic:ml|mouse:ms|main_fsm:mfsm|state~32                ; 1                 ; 6       ;
+;      - pixel:inst2|mouse_logic:ml|mouse:ms|main_fsm:mfsm|state~33                ; 1                 ; 6       ;
+;      - pixel:inst2|mouse_logic:ml|mouse:ms|main_fsm:mfsm|state~34                ; 1                 ; 6       ;
 ;      - pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|v_counter:lv|count_v[3]~0 ; 1                 ; 6       ;
 ;      - pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|v_counter:lv|count_v[0]~2 ; 1                 ; 6       ;
 ;      - pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|h_counter:lh|count_h~2    ; 1                 ; 6       ;
-;      - pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|h_counter:lh|count_h[3]~3 ; 1                 ; 6       ;
+;      - pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|h_counter:lh|count_h[1]~3 ; 1                 ; 6       ;
 ;      - pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|h_counter:lh|count_h~4    ; 1                 ; 6       ;
 ;      - pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|h_counter:lh|count_h~5    ; 1                 ; 6       ;
 ;      - pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|Equal0~2                       ; 1                 ; 6       ;
-;      - pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|scale_vertical_counter[2]~0    ; 1                 ; 6       ;
-;      - pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|scale_vertical_counter[2]~1    ; 1                 ; 6       ;
-;      - pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|scale_vertical_counter[2]~3    ; 1                 ; 6       ;
-;      - pixel:inst2|mouse_logic:ml|mouse:ms|edge_debounce:ed|state~6              ; 1                 ; 6       ;
+;      - pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|scale_vertical_counter[3]~0    ; 1                 ; 6       ;
+;      - pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|scale_vertical_counter[3]~1    ; 1                 ; 6       ;
+;      - pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|scale_vertical_counter[3]~3    ; 1                 ; 6       ;
+;      - pixel:inst2|mouse_logic:ml|mouse:ms|main_fsm:mfsm|state~35                ; 1                 ; 6       ;
+;      - pixel:inst2|mouse_logic:ml|mouse:ms|main_fsm:mfsm|state~36                ; 1                 ; 6       ;
+;      - pixel:inst2|mouse_logic:ml|mouse:ms|main_fsm:mfsm|state~37                ; 1                 ; 6       ;
+;      - pixel:inst2|mouse_logic:ml|mouse:ms|edge_debounce:ed|state~7              ; 1                 ; 6       ;
 ;      - pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|e_counter:le|count_e~0    ; 1                 ; 6       ;
 ;      - pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|e_counter:le|count_e~1    ; 1                 ; 6       ;
 ;      - pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|e_counter:le|count_e~2    ; 1                 ; 6       ;
@@ -1038,43 +1065,33 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;      - pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|e_counter:le|count_e~7    ; 1                 ; 6       ;
 ;      - pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|e_counter:le|count_e~8    ; 1                 ; 6       ;
 ;      - pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|e_counter:le|count_e~9    ; 1                 ; 6       ;
-;      - pixel:inst2|mouse_logic:ml|mouse:ms|main_fsm:mfsm|state~29                ; 1                 ; 6       ;
-;      - pixel:inst2|mouse_logic:ml|mouse:ms|main_fsm:mfsm|state~30                ; 1                 ; 6       ;
-;      - pixel:inst2|mouse_logic:ml|mouse:ms|main_fsm:mfsm|state~31                ; 1                 ; 6       ;
-;      - pixel:inst2|mouse_logic:ml|mouse:ms|main_fsm:mfsm|state~32                ; 1                 ; 6       ;
-;      - pixel:inst2|mouse_logic:ml|mouse:ms|main_fsm:mfsm|state~33                ; 1                 ; 6       ;
-;      - pixel:inst2|mouse_logic:ml|mouse:ms|main_fsm:mfsm|state~34                ; 1                 ; 6       ;
-;      - pixel:inst2|mouse_logic:ml|mouse:ms|main_fsm:mfsm|state~35                ; 1                 ; 6       ;
-;      - pixel:inst2|mouse_logic:ml|mouse:ms|main_fsm:mfsm|state~36                ; 1                 ; 6       ;
-;      - pixel:inst2|mouse_logic:ml|mouse:ms|main_fsm:mfsm|state~37                ; 1                 ; 6       ;
-;      - pixel:inst2|mouse_logic:ml|mouse:ms|edge_debounce:ed|state~7              ; 1                 ; 6       ;
 ;      - pixel:inst2|mouse_logic:ml|mouse:ms|main_fsm:mfsm|state~38                ; 1                 ; 6       ;
 ;      - pixel:inst2|mouse_logic:ml|mouse:ms|main_fsm:mfsm|state~39                ; 1                 ; 6       ;
 ;      - pixel:inst2|mouse_logic:ml|mouse:ms|main_fsm:mfsm|state.reset_state~0     ; 1                 ; 6       ;
 ; clk15k_in                                                                        ;                   ;         ;
-;      - pixel:inst2|mouse_logic:ml|mouse:ms|sendFSM:sfsm|state~18                 ; 1                 ; 6       ;
-;      - pixel:inst2|mouse_logic:ml|mouse:ms|sendFSM:sfsm|state~20                 ; 1                 ; 6       ;
+;      - pixel:inst2|mouse_logic:ml|mouse:ms|sendFSM:sfsm|state~19                 ; 1                 ; 6       ;
+;      - pixel:inst2|mouse_logic:ml|mouse:ms|sendFSM:sfsm|state~21                 ; 1                 ; 6       ;
 ;      - pixel:inst2|mouse_logic:ml|mouse:ms|edge_debounce:ed|reg1                 ; 1                 ; 6       ;
 ; clock_50mhz                                                                      ;                   ;         ;
 +----------------------------------------------------------------------------------+-------------------+---------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Control Signals                                                                                                                                                                                            ;
-+-------------------------------------------------------------------------------+--------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
-; Name                                                                          ; Location           ; Fan-Out ; Usage        ; Global ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
-+-------------------------------------------------------------------------------+--------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
-; clock_50mhz                                                                   ; PIN_L1             ; 1       ; Clock        ; no     ; --                   ; --               ; --                        ;
-; gen25mhz:inst1|count[0]                                                       ; LCFF_X15_Y14_N31   ; 11      ; Clock        ; no     ; --                   ; --               ; --                        ;
-; gen25mhz:inst1|count[0]                                                       ; LCFF_X15_Y14_N31   ; 133     ; Clock        ; yes    ; Global Clock         ; GCLK0            ; --                        ;
-; pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|e_counter:le|new_count_e[1]~0 ; LCCOMB_X16_Y14_N28 ; 10      ; Latch enable ; yes    ; Global Clock         ; GCLK1            ; --                        ;
-; pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|h_counter:lh|count_h[3]~3     ; LCCOMB_X15_Y14_N6  ; 4       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; pixel:inst2|mouse_logic:ml|mouse:ms|edge_debounce:ed|counter_reset            ; LCCOMB_X30_Y21_N8  ; 13      ; Sync. clear  ; no     ; --                   ; --               ; --                        ;
-; pixel:inst2|mouse_logic:ml|mouse:ms|mux:mx2|dataSwitch~1                      ; LCCOMB_X31_Y22_N2  ; 13      ; Sync. clear  ; no     ; --                   ; --               ; --                        ;
-; pixel:inst2|mouse_logic:ml|mouse:ms|shiftregister_9bit:sr|new_new_data[7]~2   ; LCCOMB_X29_Y22_N20 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; pixel:inst2|mouse_logic:ml|mouse:ms|timebase:tb|count[0]~2                    ; LCCOMB_X32_Y21_N26 ; 4       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; reset                                                                         ; PIN_R22            ; 88      ; Sync. clear  ; no     ; --                   ; --               ; --                        ;
-+-------------------------------------------------------------------------------+--------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Control Signals                                                                                                                                                                                                         ;
++-------------------------------------------------------------------------------+--------------------+---------+---------------------------+--------+----------------------+------------------+---------------------------+
+; Name                                                                          ; Location           ; Fan-Out ; Usage                     ; Global ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
++-------------------------------------------------------------------------------+--------------------+---------+---------------------------+--------+----------------------+------------------+---------------------------+
+; clock_50mhz                                                                   ; PIN_L1             ; 1       ; Clock                     ; no     ; --                   ; --               ; --                        ;
+; gen25mhz:inst1|count[0]                                                       ; LCFF_X18_Y14_N13   ; 11      ; Clock                     ; no     ; --                   ; --               ; --                        ;
+; gen25mhz:inst1|count[0]                                                       ; LCFF_X18_Y14_N13   ; 141     ; Clock                     ; yes    ; Global Clock         ; GCLK0            ; --                        ;
+; pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|e_counter:le|new_count_e[1]~0 ; LCCOMB_X18_Y14_N20 ; 10      ; Latch enable              ; yes    ; Global Clock         ; GCLK2            ; --                        ;
+; pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|h_counter:lh|count_h[1]~3     ; LCCOMB_X20_Y14_N30 ; 4       ; Clock enable              ; no     ; --                   ; --               ; --                        ;
+; pixel:inst2|mouse_logic:ml|mouse:ms|edge_debounce:ed|counter_reset            ; LCCOMB_X34_Y15_N30 ; 13      ; Sync. clear               ; no     ; --                   ; --               ; --                        ;
+; pixel:inst2|mouse_logic:ml|mouse:ms|mux:mx2|dataSwitch~1                      ; LCCOMB_X36_Y14_N30 ; 13      ; Sync. clear               ; no     ; --                   ; --               ; --                        ;
+; pixel:inst2|mouse_logic:ml|mouse:ms|shiftregister_9bit:sr|new_new_data[5]~2   ; LCCOMB_X32_Y15_N10 ; 8       ; Clock enable              ; no     ; --                   ; --               ; --                        ;
+; pixel:inst2|mouse_logic:ml|mouse:ms|timebase:tb|count[1]~2                    ; LCCOMB_X37_Y14_N22 ; 4       ; Clock enable              ; no     ; --                   ; --               ; --                        ;
+; reset                                                                         ; PIN_R22            ; 96      ; Clock enable, Sync. clear ; no     ; --                   ; --               ; --                        ;
++-------------------------------------------------------------------------------+--------------------+---------+---------------------------+--------+----------------------+------------------+---------------------------+
 
 
 +------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -1082,8 +1099,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-------------------------------------------------------------------------------+--------------------+---------+----------------------+------------------+---------------------------+
 ; Name                                                                          ; Location           ; Fan-Out ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
 +-------------------------------------------------------------------------------+--------------------+---------+----------------------+------------------+---------------------------+
-; gen25mhz:inst1|count[0]                                                       ; LCFF_X15_Y14_N31   ; 133     ; Global Clock         ; GCLK0            ; --                        ;
-; pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|e_counter:le|new_count_e[1]~0 ; LCCOMB_X16_Y14_N28 ; 10      ; Global Clock         ; GCLK1            ; --                        ;
+; gen25mhz:inst1|count[0]                                                       ; LCFF_X18_Y14_N13   ; 141     ; Global Clock         ; GCLK0            ; --                        ;
+; pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|e_counter:le|new_count_e[1]~0 ; LCCOMB_X18_Y14_N20 ; 10      ; Global Clock         ; GCLK2            ; --                        ;
 +-------------------------------------------------------------------------------+--------------------+---------+----------------------+------------------+---------------------------+
 
 
@@ -1092,66 +1109,63 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +---------------------------------------------------------------------------------------------------------------+---------+
 ; Name                                                                                                          ; Fan-Out ;
 +---------------------------------------------------------------------------------------------------------------+---------+
-; reset                                                                                                         ; 88      ;
-; pixel:inst2|mouse_logic:ml|mouse:ms|main_fsm:mfsm|LessThan1~0                                                 ; 14      ;
+; reset                                                                                                         ; 96      ;
 ; pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|Equal0~3                                                           ; 14      ;
-; pixel:inst2|mouse_logic:ml|mouse:ms|main_fsm:mfsm|state.enableF4                                              ; 14      ;
+; pixel:inst2|mouse_logic:ml|mouse:ms|main_fsm:mfsm|LessThan1~0                                                 ; 14      ;
 ; pixel:inst2|mouse_logic:ml|mouse:ms|edge_debounce:ed|counter_reset                                            ; 13      ;
 ; pixel:inst2|mouse_logic:ml|mouse:ms|mux:mx2|dataSwitch~1                                                      ; 13      ;
 ; pixel:inst2|mouse_logic:ml|mouse:ms|sendFSM:sfsm|state.mouseclk                                               ; 13      ;
+; pixel:inst2|mouse_logic:ml|mouse:ms|main_fsm:mfsm|state.enableF4                                              ; 13      ;
 ; pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|scale_vertical_counter~4                                           ; 10      ;
 ; gen25mhz:inst1|count[0]                                                                                       ; 10      ;
-; pixel:inst2|mouse_logic:ml|mouse:ms|main_fsm:mfsm|state.sendFF                                                ; 10      ;
-; pixel:inst2|mouse_logic:ml|mouse:ms|shiftregister_9bit:sr|new_new_data[7]~2                                   ; 8       ;
-; pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|Bout~3                                                             ; 8       ;
+; pixel:inst2|mouse_logic:ml|mouse:ms|main_fsm:mfsm|state.sendFF                                                ; 9       ;
 ; pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|h_counter:lh|count_h[0]                                       ; 8       ;
+; pixel:inst2|mouse_logic:ml|mouse:ms|main_fsm:mfsm|WideOr3~0                                                   ; 8       ;
+; pixel:inst2|mouse_logic:ml|mouse:ms|shiftregister_9bit:sr|new_new_data[5]~2                                   ; 8       ;
+; pixel:inst2|graphic_toplvl:gl|vga_buffer:vga_buf|flipflop:B2|Q                                                ; 8       ;
 ; pixel:inst2|mouse_logic:ml|mouse:ms|counter25mhz:cnt|count[12]                                                ; 8       ;
-; pixel:inst2|mouse_logic:ml|mouse:ms|timebase:tb|count[2]                                                      ; 7       ;
 ; pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|v_counter:lv|count_v[2]                                       ; 7       ;
 ; pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|v_counter:lv|count_v[3]                                       ; 7       ;
 ; pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|h_counter:lh|count_h[1]                                       ; 7       ;
+; pixel:inst2|mouse_logic:ml|mouse:ms|timebase:tb|count[2]                                                      ; 7       ;
 ; pixel:inst2|mouse_logic:ml|mouse:ms|counter25mhz:cnt|count[9]                                                 ; 7       ;
 ; pixel:inst2|mouse_logic:ml|mouse:ms|counter25mhz:cnt|count[8]                                                 ; 7       ;
-; pixel:inst2|mouse_logic:ml|mouse:ms|timebase:tb|count[3]                                                      ; 6       ;
 ; pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|v_counter:lv|count_v[0]                                       ; 6       ;
+; pixel:inst2|mouse_logic:ml|mouse:ms|timebase:tb|count[3]                                                      ; 6       ;
 ; pixel:inst2|mouse_logic:ml|mouse:ms|counter25mhz:cnt|count[10]                                                ; 6       ;
 ; pixel:inst2|mouse_logic:ml|mouse:ms|counter25mhz:cnt|count[11]                                                ; 6       ;
 ; pixel:inst2|mouse_logic:ml|mouse:ms|timebase:tb|count[0]                                                      ; 5       ;
-; pixel:inst2|mouse_logic:ml|mouse:ms|main_fsm:mfsm|WideOr3~0                                                   ; 5       ;
-; pixel:inst2|mouse_logic:ml|mouse:ms|edge_debounce:ed|state.edge                                               ; 5       ;
 ; pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|h_counter:lh|count_h[2]                                       ; 5       ;
 ; pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|v_counter:lv|count_v[1]                                       ; 5       ;
+; pixel:inst2|mouse_logic:ml|mouse:ms|edge_debounce:ed|state.edge                                               ; 5       ;
 ; pixel:inst2|mouse_logic:ml|mouse:ms|counter25mhz:cnt|count[7]                                                 ; 5       ;
 ; pixel:inst2|mouse_logic:ml|mouse:ms|counter25mhz:cnt|count[6]                                                 ; 5       ;
 ; pixel:inst2|mouse_logic:ml|mouse:ms|counter25mhz:cnt|count[5]                                                 ; 5       ;
 ; pixel:inst2|mouse_logic:ml|mouse:ms|counter25mhz:cnt|count[4]                                                 ; 5       ;
 ; pixel:inst2|mouse_logic:ml|mouse:ms|counter25mhz:cnt|count[3]                                                 ; 5       ;
-; pixel:inst2|mouse_logic:ml|mouse:ms|main_fsm:mfsm|LessThan2~2                                                 ; 4       ;
-; pixel:inst2|mouse_logic:ml|mouse:ms|timebase:tb|count[0]~2                                                    ; 4       ;
-; pixel:inst2|mouse_logic:ml|mouse:ms|timebase:tb|count[1]                                                      ; 4       ;
-; pixel:inst2|mouse_logic:ml|mouse:ms|main_fsm:mfsm|WideOr1~1                                                   ; 4       ;
-; pixel:inst2|mouse_logic:ml|mouse:ms|main_fsm:mfsm|WideOr1~0                                                   ; 4       ;
-; pixel:inst2|mouse_logic:ml|mouse:ms|edge_debounce:ed|LessThan0~2                                              ; 4       ;
-; pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|h_counter:lh|count_h[3]~3                                     ; 4       ;
+; pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|h_counter:lh|count_h[1]~3                                     ; 4       ;
 ; pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|v_counter:lv|edge_detector:l_edge|edges                       ; 4       ;
-; pixel:inst2|mouse_logic:ml|mouse:ms|shiftregister_9bit:sr|new_new_data~0                                      ; 4       ;
-; pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|Gout~2                                                             ; 4       ;
+; pixel:inst2|mouse_logic:ml|mouse:ms|main_fsm:mfsm|LessThan2~2                                                 ; 4       ;
+; pixel:inst2|mouse_logic:ml|mouse:ms|timebase:tb|count[1]~2                                                    ; 4       ;
+; pixel:inst2|mouse_logic:ml|mouse:ms|timebase:tb|count[1]                                                      ; 4       ;
 ; pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|Gout~0                                                             ; 4       ;
 ; pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|LessThan0~0                                                   ; 4       ;
 ; pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|h_counter:lh|count_h[3]                                       ; 4       ;
 ; pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|process_0~0                                                   ; 4       ;
+; pixel:inst2|mouse_logic:ml|mouse:ms|main_fsm:mfsm|WideOr1~1                                                   ; 4       ;
+; pixel:inst2|mouse_logic:ml|mouse:ms|main_fsm:mfsm|WideOr1~0                                                   ; 4       ;
+; pixel:inst2|mouse_logic:ml|mouse:ms|edge_debounce:ed|LessThan0~2                                              ; 4       ;
+; pixel:inst2|mouse_logic:ml|mouse:ms|shiftregister_9bit:sr|new_new_data~0                                      ; 4       ;
+; pixel:inst2|graphic_toplvl:gl|vga_buffer:vga_buf|flipflop:G2|Q                                                ; 4       ;
 ; pixel:inst2|mouse_logic:ml|mouse:ms|sendFSM:sfsm|state.waitforclockstate                                      ; 4       ;
+; pixel:inst2|mouse_logic:ml|mouse:ms|sendFSM:sfsm|state.bothlowstate                                           ; 4       ;
 ; pixel:inst2|mouse_logic:ml|mouse:ms|counter25mhz:cnt|count[2]                                                 ; 4       ;
 ; clk15k_in                                                                                                     ; 3       ;
+; pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|v_counter:lv|count_v[3]~0                                     ; 3       ;
 ; pixel:inst2|mouse_logic:ml|mouse:ms|edge_debounce:ed|reg1                                                     ; 3       ;
 ; pixel:inst2|mouse_logic:ml|mouse:ms|edge_debounce:ed|state.reset_state                                        ; 3       ;
 ; pixel:inst2|mouse_logic:ml|mouse:ms|main_fsm:mfsm|WideOr1                                                     ; 3       ;
 ; pixel:inst2|mouse_logic:ml|mouse:ms|main_fsm:mfsm|WideOr1~2                                                   ; 3       ;
-; pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|v_counter:lv|count_v[3]~0                                     ; 3       ;
-; pixel:inst2|mouse_logic:ml|mouse:ms|sendFSM:sfsm|LessThan4~1                                                  ; 3       ;
-; pixel:inst2|mouse_logic:ml|mouse:ms|sendFSM:sfsm|state.waitcountreset                                         ; 3       ;
-; pixel:inst2|mouse_logic:ml|mouse:ms|sendFSM:sfsm|state.waitstate                                              ; 3       ;
-; pixel:inst2|mouse_logic:ml|mouse:ms|sendFSM:sfsm|state.reset_state                                            ; 3       ;
 ; pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|scale_vertical_counter[3]                                          ; 3       ;
 ; pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|scale_vertical_counter[5]                                          ; 3       ;
 ; pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|scale_vertical_counter[6]                                          ; 3       ;
@@ -1162,23 +1176,28 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|scale_vertical_counter[1]                                          ; 3       ;
 ; pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|scale_vertical_counter[2]                                          ; 3       ;
 ; pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|scale_vertical_counter[9]                                          ; 3       ;
+; pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|horizontal_counter[2]                                              ; 3       ;
 ; pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|horizontal_counter[0]                                              ; 3       ;
 ; pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|horizontal_counter[1]                                              ; 3       ;
-; pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|horizontal_counter[2]                                              ; 3       ;
 ; pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|horizontal_counter[4]                                              ; 3       ;
 ; pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|horizontal_counter[3]                                              ; 3       ;
-; pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|horizontal_counter[6]                                              ; 3       ;
-; pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|horizontal_counter[9]                                              ; 3       ;
-; pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|horizontal_counter[7]                                              ; 3       ;
-; pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|horizontal_counter[8]                                              ; 3       ;
 ; pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|horizontal_counter[5]                                              ; 3       ;
-; pixel:inst2|mouse_logic:ml|mouse:ms|sendFSM:sfsm|state.clklowstate                                            ; 3       ;
-; pixel:inst2|mouse_logic:ml|mouse:ms|sendFSM:sfsm|state.datalowextra                                           ; 3       ;
-; pixel:inst2|mouse_logic:ml|mouse:ms|sendFSM:sfsm|state.bothlowstate                                           ; 3       ;
+; pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|horizontal_counter[9]                                              ; 3       ;
+; pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|horizontal_counter[8]                                              ; 3       ;
+; pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|horizontal_counter[7]                                              ; 3       ;
+; pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|horizontal_counter[6]                                              ; 3       ;
 ; pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|vpulse~1                                                           ; 3       ;
 ; pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|scale_vertical[9]                                                  ; 3       ;
-; pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|horizontal[6]                                                      ; 3       ;
+; pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|horizontal[5]                                                      ; 3       ;
 ; pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|horizontal[9]                                                      ; 3       ;
+; pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|horizontal[6]                                                      ; 3       ;
+; pixel:inst2|mouse_logic:ml|mouse:ms|sendFSM:sfsm|LessThan4~1                                                  ; 3       ;
+; pixel:inst2|mouse_logic:ml|mouse:ms|sendFSM:sfsm|state.waitcountreset                                         ; 3       ;
+; pixel:inst2|mouse_logic:ml|mouse:ms|sendFSM:sfsm|state.waitstate                                              ; 3       ;
+; pixel:inst2|mouse_logic:ml|mouse:ms|sendFSM:sfsm|state.reset_state                                            ; 3       ;
+; pixel:inst2|mouse_logic:ml|mouse:ms|sendFSM:sfsm|state.clklowstate                                            ; 3       ;
+; pixel:inst2|mouse_logic:ml|mouse:ms|sendFSM:sfsm|state.datalowextra                                           ; 3       ;
+; pixel:inst2|mouse_logic:ml|mouse:ms|sendFSM:sfsm|state.datalowstate                                           ; 3       ;
 ; pixel:inst2|mouse_logic:ml|mouse:ms|main_fsm:mfsm|state.delay_3                                               ; 3       ;
 ; pixel:inst2|mouse_logic:ml|mouse:ms|main_fsm:mfsm|state.delay_2                                               ; 3       ;
 ; pixel:inst2|mouse_logic:ml|mouse:ms|main_fsm:mfsm|state.wachtFA2                                              ; 3       ;
@@ -1196,18 +1215,6 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|e_counter:le|new_count_e[1]                                   ; 2       ;
 ; pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|e_counter:le|new_count_e[0]                                   ; 2       ;
 ; pixel:inst2|mouse_logic:ml|mouse:ms|shiftregister_9bit:sr|new_new_data~9                                      ; 2       ;
-; pixel:inst2|mouse_logic:ml|mouse:ms|edge_debounce:ed|reg2                                                     ; 2       ;
-; pixel:inst2|mouse_logic:ml|mouse:ms|main_fsm:mfsm|state.data_3_cnt_rst_2                                      ; 2       ;
-; pixel:inst2|mouse_logic:ml|mouse:ms|main_fsm:mfsm|state.data_3_cnt_rst                                        ; 2       ;
-; pixel:inst2|mouse_logic:ml|mouse:ms|main_fsm:mfsm|state.data_2_cnt_rst                                        ; 2       ;
-; pixel:inst2|mouse_logic:ml|mouse:ms|main_fsm:mfsm|state.wachtFA2_cnt_rst                                      ; 2       ;
-; pixel:inst2|mouse_logic:ml|mouse:ms|main_fsm:mfsm|state.enableF4_cnt_rst                                      ; 2       ;
-; pixel:inst2|mouse_logic:ml|mouse:ms|main_fsm:mfsm|state.wachtAA_cnt_rst                                       ; 2       ;
-; pixel:inst2|mouse_logic:ml|mouse:ms|main_fsm:mfsm|state.wachtFA_cnt_rst                                       ; 2       ;
-; pixel:inst2|mouse_logic:ml|mouse:ms|main_fsm:mfsm|state.sendFF_cnt_rst                                        ; 2       ;
-; pixel:inst2|mouse_logic:ml|mouse:ms|main_fsm:mfsm|state.reset_state                                           ; 2       ;
-; pixel:inst2|mouse_logic:ml|mouse:ms|sendFSM:sfsm|LessThan0~1                                                  ; 2       ;
-; pixel:inst2|mouse_logic:ml|mouse:ms|main_fsm:mfsm|state.wachtID_cnt_rst                                       ; 2       ;
 ; pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|h_counter:lh|edge_detector:l_edge|reg1                        ; 2       ;
 ; pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|h_counter:lh|count_h~2                                        ; 2       ;
 ; pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|v_counter:lv|edge_detector:l_edge|reg1                        ; 2       ;
@@ -1222,14 +1229,10 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|e_counter:le|count_e[2]                                       ; 2       ;
 ; pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|e_counter:le|count_e[1]                                       ; 2       ;
 ; pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|e_counter:le|count_e[0]                                       ; 2       ;
-; pixel:inst2|mouse_logic:ml|mouse:ms|sendFSM:sfsm|LessThan4~4                                                  ; 2       ;
-; pixel:inst2|mouse_logic:ml|mouse:ms|sendFSM:sfsm|LessThan4~3                                                  ; 2       ;
-; pixel:inst2|mouse_logic:ml|mouse:ms|sendFSM:sfsm|LessThan3~2                                                  ; 2       ;
-; pixel:inst2|mouse_logic:ml|mouse:ms|sendFSM:sfsm|state~16                                                     ; 2       ;
-; pixel:inst2|mouse_logic:ml|mouse:ms|sendFSM:sfsm|LessThan1~2                                                  ; 2       ;
-; pixel:inst2|mouse_logic:ml|mouse:ms|sendFSM:sfsm|state~13                                                     ; 2       ;
-; pixel:inst2|mouse_logic:ml|mouse:ms|sendFSM:sfsm|LessThan2~2                                                  ; 2       ;
-; pixel:inst2|mouse_logic:ml|mouse:ms|sendFSM:sfsm|LessThan2~1                                                  ; 2       ;
+; pixel:inst2|mouse_logic:ml|mouse:ms|edge_debounce:ed|reg2                                                     ; 2       ;
+; pixel:inst2|mouse_logic:ml|mouse:ms|main_fsm:mfsm|state.data_3_cnt_rst_2                                      ; 2       ;
+; pixel:inst2|mouse_logic:ml|mouse:ms|main_fsm:mfsm|state.data_3_cnt_rst                                        ; 2       ;
+; pixel:inst2|mouse_logic:ml|mouse:ms|main_fsm:mfsm|state.data_2_cnt_rst                                        ; 2       ;
 ; pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|scale_vertical~9                                                   ; 2       ;
 ; pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|scale_vertical~8                                                   ; 2       ;
 ; pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|scale_vertical~7                                                   ; 2       ;
@@ -1247,25 +1250,38 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|logic_vga_colour[1]~1                                         ; 2       ;
 ; pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|Bout~0                                                             ; 2       ;
 ; pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|LessThan5~0                                                        ; 2       ;
-; pixel:inst2|mouse_logic:ml|mouse:ms|sendFSM:sfsm|state.datalowstate                                           ; 2       ;
+; pixel:inst2|mouse_logic:ml|mouse:ms|main_fsm:mfsm|state.wachtFA2_cnt_rst                                      ; 2       ;
+; pixel:inst2|mouse_logic:ml|mouse:ms|main_fsm:mfsm|state.enableF4_cnt_rst                                      ; 2       ;
+; pixel:inst2|mouse_logic:ml|mouse:ms|main_fsm:mfsm|state.wachtAA_cnt_rst                                       ; 2       ;
+; pixel:inst2|mouse_logic:ml|mouse:ms|main_fsm:mfsm|state.wachtFA_cnt_rst                                       ; 2       ;
+; pixel:inst2|mouse_logic:ml|mouse:ms|main_fsm:mfsm|state.sendFF_cnt_rst                                        ; 2       ;
+; pixel:inst2|mouse_logic:ml|mouse:ms|main_fsm:mfsm|state.reset_state                                           ; 2       ;
+; pixel:inst2|mouse_logic:ml|mouse:ms|sendFSM:sfsm|LessThan0~1                                                  ; 2       ;
+; pixel:inst2|mouse_logic:ml|mouse:ms|main_fsm:mfsm|state.wachtID_cnt_rst                                       ; 2       ;
 ; pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|scale_vertical[3]                                                  ; 2       ;
 ; pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|scale_vertical[4]                                                  ; 2       ;
 ; pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|scale_vertical[0]                                                  ; 2       ;
 ; pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|scale_vertical[1]                                                  ; 2       ;
 ; pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|scale_vertical[2]                                                  ; 2       ;
+; pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|horizontal[2]                                                      ; 2       ;
 ; pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|horizontal[0]                                                      ; 2       ;
 ; pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|horizontal[1]                                                      ; 2       ;
-; pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|horizontal[2]                                                      ; 2       ;
 ; pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|horizontal[4]                                                      ; 2       ;
 ; pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|horizontal[3]                                                      ; 2       ;
-; pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|horizontal[7]                                                      ; 2       ;
 ; pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|horizontal[8]                                                      ; 2       ;
-; pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|horizontal[5]                                                      ; 2       ;
+; pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|horizontal[7]                                                      ; 2       ;
+; pixel:inst2|mouse_logic:ml|mouse:ms|sendFSM:sfsm|LessThan4~4                                                  ; 2       ;
+; pixel:inst2|mouse_logic:ml|mouse:ms|sendFSM:sfsm|LessThan4~3                                                  ; 2       ;
+; pixel:inst2|mouse_logic:ml|mouse:ms|sendFSM:sfsm|LessThan3~2                                                  ; 2       ;
+; pixel:inst2|mouse_logic:ml|mouse:ms|sendFSM:sfsm|LessThan1~2                                                  ; 2       ;
+; pixel:inst2|mouse_logic:ml|mouse:ms|sendFSM:sfsm|LessThan2~2                                                  ; 2       ;
+; pixel:inst2|mouse_logic:ml|mouse:ms|sendFSM:sfsm|LessThan2~1                                                  ; 2       ;
 ; pixel:inst2|mouse_logic:ml|mouse:ms|edge_debounce:ed|state.debounce                                           ; 2       ;
 ; pixel:inst2|mouse_logic:ml|mouse:ms|main_fsm:mfsm|state.data_1                                                ; 2       ;
 ; pixel:inst2|mouse_logic:ml|mouse:ms|main_fsm:mfsm|state.data_3                                                ; 2       ;
 ; pixel:inst2|mouse_logic:ml|mouse:ms|main_fsm:mfsm|state.data_2                                                ; 2       ;
 ; pixel:inst2|mouse_logic:ml|mouse:ms|main_fsm:mfsm|state.data_1_cnt_rst                                        ; 2       ;
+; pixel:inst2|graphic_toplvl:gl|rom_cursor:rom|altsyncram:rom_rtl_0|altsyncram_rn61:auto_generated|ram_block1a0 ; 2       ;
 ; pixel:inst2|mouse_logic:ml|mouse:ms|edge_debounce:ed|state.pause                                              ; 2       ;
 ; pixel:inst2|mouse_logic:ml|mouse:ms|counter25mhz:cntD|count[5]                                                ; 2       ;
 ; pixel:inst2|mouse_logic:ml|mouse:ms|counter25mhz:cntD|count[4]                                                ; 2       ;
@@ -1277,13 +1293,14 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; pixel:inst2|mouse_logic:ml|mouse:ms|counter25mhz:cntD|count[9]                                                ; 2       ;
 ; pixel:inst2|mouse_logic:ml|mouse:ms|counter25mhz:cntD|count[8]                                                ; 2       ;
 ; pixel:inst2|mouse_logic:ml|mouse:ms|counter25mhz:cntD|count[12]                                               ; 2       ;
-; pixel:inst2|graphic_toplvl:gl|rom_cursor:rom|altsyncram:rom_rtl_0|altsyncram_rn61:auto_generated|ram_block1a0 ; 2       ;
 ; clock_50mhz                                                                                                   ; 1       ;
 ; pixel:inst2|mouse_logic:ml|mouse:ms|main_fsm:mfsm|state.reset_state~0                                         ; 1       ;
 ; gen25mhz:inst1|count[0]~0                                                                                     ; 1       ;
-; pixel:inst2|mouse_logic:ml|mouse:ms|timebase:tb|count~6                                                       ; 1       ;
-; pixel:inst2|mouse_logic:ml|mouse:ms|sendFSM:sfsm|state~25                                                     ; 1       ;
 ; pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|h_counter:lh|count_h~7                                        ; 1       ;
+; pixel:inst2|mouse_logic:ml|mouse:ms|timebase:tb|count~6                                                       ; 1       ;
+; pixel:inst2|mouse_logic:ml|mouse:ms|sendFSM:sfsm|state~28                                                     ; 1       ;
+; pixel:inst2|mouse_logic:ml|mouse:ms|sendFSM:sfsm|state~27                                                     ; 1       ;
+; pixel:inst2|mouse_logic:ml|mouse:ms|sendFSM:sfsm|state~26                                                     ; 1       ;
 ; pixel:inst2|mouse_logic:ml|mouse:ms|shiftregister_9bit:sr|new_new_data~10                                     ; 1       ;
 ; pixel:inst2|mouse_logic:ml|mouse:ms|shiftregister_9bit:sr|new_new_data[0]                                     ; 1       ;
 ; pixel:inst2|mouse_logic:ml|mouse:ms|shiftregister_9bit:sr|new_new_data~8                                      ; 1       ;
@@ -1296,6 +1313,20 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; pixel:inst2|mouse_logic:ml|mouse:ms|shiftregister_9bit:sr|new_new_data~6                                      ; 1       ;
 ; pixel:inst2|mouse_logic:ml|mouse:ms|shiftregister_9bit:sr|new_new_data[3]                                     ; 1       ;
 ; pixel:inst2|mouse_logic:ml|mouse:ms|main_fsm:mfsm|Selector6~0                                                 ; 1       ;
+; pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|scale_h~1                                                          ; 1       ;
+; pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|scale_h~0                                                          ; 1       ;
+; pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|scale_v~1                                                          ; 1       ;
+; pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|scale_v~0                                                          ; 1       ;
+; pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|e_counter:le|count_e~9                                        ; 1       ;
+; pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|e_counter:le|count_e~8                                        ; 1       ;
+; pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|e_counter:le|count_e~7                                        ; 1       ;
+; pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|e_counter:le|count_e~6                                        ; 1       ;
+; pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|e_counter:le|count_e~5                                        ; 1       ;
+; pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|e_counter:le|count_e~4                                        ; 1       ;
+; pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|e_counter:le|count_e~3                                        ; 1       ;
+; pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|e_counter:le|count_e~2                                        ; 1       ;
+; pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|e_counter:le|count_e~1                                        ; 1       ;
+; pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|e_counter:le|count_e~0                                        ; 1       ;
 ; pixel:inst2|mouse_logic:ml|mouse:ms|main_fsm:mfsm|Selector10~0                                                ; 1       ;
 ; pixel:inst2|mouse_logic:ml|mouse:ms|main_fsm:mfsm|state.data_2_cnt_rst_2                                      ; 1       ;
 ; pixel:inst2|mouse_logic:ml|mouse:ms|main_fsm:mfsm|Selector8~0                                                 ; 1       ;
@@ -1310,6 +1341,37 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; pixel:inst2|mouse_logic:ml|mouse:ms|main_fsm:mfsm|state~35                                                    ; 1       ;
 ; pixel:inst2|mouse_logic:ml|mouse:ms|timebase:tb|count~5                                                       ; 1       ;
 ; pixel:inst2|mouse_logic:ml|mouse:ms|timebase:tb|count~4                                                       ; 1       ;
+; pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|scale_vertical_counter~14                                          ; 1       ;
+; pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|scale_vertical_counter~13                                          ; 1       ;
+; pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|scale_vertical_counter~12                                          ; 1       ;
+; pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|scale_vertical_counter~11                                          ; 1       ;
+; pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|scale_vertical_counter~10                                          ; 1       ;
+; pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|scale_vertical_counter~9                                           ; 1       ;
+; pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|scale_vertical_counter~8                                           ; 1       ;
+; pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|scale_vertical_counter~7                                           ; 1       ;
+; pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|scale_vertical_counter~6                                           ; 1       ;
+; pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|scale_vertical_counter~5                                           ; 1       ;
+; pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|scale_vertical_counter[3]~3                                        ; 1       ;
+; pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|scale_vertical_counter[3]~2                                        ; 1       ;
+; pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|scale_vertical_counter[3]~1                                        ; 1       ;
+; pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|scale_vertical_counter[3]~0                                        ; 1       ;
+; pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|horizontal_counter~2                                               ; 1       ;
+; pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|horizontal_counter~1                                               ; 1       ;
+; pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|horizontal_counter~0                                               ; 1       ;
+; pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|Equal0~2                                                           ; 1       ;
+; pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|Equal0~1                                                           ; 1       ;
+; pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|Equal0~0                                                           ; 1       ;
+; pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|v_counter:lv|count_v[2]~4                                     ; 1       ;
+; pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|v_counter:lv|count_v[3]~3                                     ; 1       ;
+; pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|v_counter:lv|Add0~1                                           ; 1       ;
+; pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|h_counter:lh|count_h~6                                        ; 1       ;
+; pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|h_counter:lh|count_h~5                                        ; 1       ;
+; pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|h_counter:lh|count_h~4                                        ; 1       ;
+; pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|h_counter:lh|edge_detector:l_edge|reg2                        ; 1       ;
+; pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|LessThan1~0                                                   ; 1       ;
+; pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|v_counter:lv|count_v[0]~2                                     ; 1       ;
+; pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|v_counter:lv|count_v[1]~1                                     ; 1       ;
+; pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|v_counter:lv|edge_detector:l_edge|reg2                        ; 1       ;
 ; pixel:inst2|mouse_logic:ml|mouse:ms|main_fsm:mfsm|Selector11~0                                                ; 1       ;
 ; pixel:inst2|mouse_logic:ml|mouse:ms|main_fsm:mfsm|Selector9~0                                                 ; 1       ;
 ; pixel:inst2|mouse_logic:ml|mouse:ms|main_fsm:mfsm|LessThan2~1                                                 ; 1       ;
@@ -1330,82 +1392,6 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; pixel:inst2|mouse_logic:ml|mouse:ms|timebase:tb|count~3                                                       ; 1       ;
 ; pixel:inst2|mouse_logic:ml|mouse:ms|main_fsm:mfsm|LessThan1~1                                                 ; 1       ;
 ; pixel:inst2|mouse_logic:ml|mouse:ms|main_fsm:mfsm|state~29                                                    ; 1       ;
-; pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|scale_h~1                                                          ; 1       ;
-; pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|scale_h~0                                                          ; 1       ;
-; pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|scale_v~1                                                          ; 1       ;
-; pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|scale_v~0                                                          ; 1       ;
-; pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|e_counter:le|count_e~9                                        ; 1       ;
-; pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|e_counter:le|count_e~8                                        ; 1       ;
-; pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|e_counter:le|count_e~7                                        ; 1       ;
-; pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|e_counter:le|count_e~6                                        ; 1       ;
-; pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|e_counter:le|count_e~5                                        ; 1       ;
-; pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|e_counter:le|count_e~4                                        ; 1       ;
-; pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|e_counter:le|count_e~3                                        ; 1       ;
-; pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|e_counter:le|count_e~2                                        ; 1       ;
-; pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|e_counter:le|count_e~1                                        ; 1       ;
-; pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|e_counter:le|count_e~0                                        ; 1       ;
-; pixel:inst2|mouse_logic:ml|mouse:ms|main_fsm:mfsm|Selector0~0                                                 ; 1       ;
-; pixel:inst2|mouse_logic:ml|mouse:ms|main_fsm:mfsm|WideOr3~3                                                   ; 1       ;
-; pixel:inst2|mouse_logic:ml|mouse:ms|main_fsm:mfsm|WideOr3~2                                                   ; 1       ;
-; pixel:inst2|mouse_logic:ml|mouse:ms|main_fsm:mfsm|WideOr3~1                                                   ; 1       ;
-; pixel:inst2|mouse_logic:ml|mouse:ms|mux:mx2|dataSwitch~0                                                      ; 1       ;
-; pixel:inst2|mouse_logic:ml|mouse:ms|edge_debounce:ed|state~6                                                  ; 1       ;
-; pixel:inst2|mouse_logic:ml|mouse:ms|edge_debounce:ed|LessThan0~1                                              ; 1       ;
-; pixel:inst2|mouse_logic:ml|mouse:ms|edge_debounce:ed|LessThan0~0                                              ; 1       ;
-; pixel:inst2|mouse_logic:ml|mouse:ms|shiftregister_9bit:sr|new_new_data~3                                      ; 1       ;
-; pixel:inst2|mouse_logic:ml|mouse:ms|shiftregister_9bit:sr|new_new_data[6]                                     ; 1       ;
-; pixel:inst2|mouse_logic:ml|mouse:ms|sendFSM:sfsm|state~24                                                     ; 1       ;
-; pixel:inst2|mouse_logic:ml|mouse:ms|sendFSM:sfsm|LessThan0~0                                                  ; 1       ;
-; pixel:inst2|mouse_logic:ml|mouse:ms|main_fsm:mfsm|Selector4~0                                                 ; 1       ;
-; pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|scale_vertical_counter~14                                          ; 1       ;
-; pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|scale_vertical_counter~13                                          ; 1       ;
-; pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|scale_vertical_counter~12                                          ; 1       ;
-; pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|scale_vertical_counter~11                                          ; 1       ;
-; pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|scale_vertical_counter~10                                          ; 1       ;
-; pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|scale_vertical_counter~9                                           ; 1       ;
-; pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|scale_vertical_counter~8                                           ; 1       ;
-; pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|scale_vertical_counter~7                                           ; 1       ;
-; pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|scale_vertical_counter~6                                           ; 1       ;
-; pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|scale_vertical_counter~5                                           ; 1       ;
-; pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|scale_vertical_counter[2]~3                                        ; 1       ;
-; pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|scale_vertical_counter[2]~2                                        ; 1       ;
-; pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|scale_vertical_counter[2]~1                                        ; 1       ;
-; pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|scale_vertical_counter[2]~0                                        ; 1       ;
-; pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|horizontal_counter~2                                               ; 1       ;
-; pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|horizontal_counter~1                                               ; 1       ;
-; pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|horizontal_counter~0                                               ; 1       ;
-; pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|Equal0~2                                                           ; 1       ;
-; pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|Equal0~1                                                           ; 1       ;
-; pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|Equal0~0                                                           ; 1       ;
-; pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|v_counter:lv|count_v[2]~4                                     ; 1       ;
-; pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|v_counter:lv|count_v[3]~3                                     ; 1       ;
-; pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|v_counter:lv|Add0~1                                           ; 1       ;
-; pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|h_counter:lh|count_h~6                                        ; 1       ;
-; pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|h_counter:lh|count_h~5                                        ; 1       ;
-; pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|h_counter:lh|count_h~4                                        ; 1       ;
-; pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|h_counter:lh|edge_detector:l_edge|reg2                        ; 1       ;
-; pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|LessThan1~0                                                   ; 1       ;
-; pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|v_counter:lv|count_v[0]~2                                     ; 1       ;
-; pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|v_counter:lv|count_v[1]~1                                     ; 1       ;
-; pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|v_counter:lv|edge_detector:l_edge|reg2                        ; 1       ;
-; pixel:inst2|mouse_logic:ml|mouse:ms|sendFSM:sfsm|state~23                                                     ; 1       ;
-; pixel:inst2|mouse_logic:ml|mouse:ms|sendFSM:sfsm|state~22                                                     ; 1       ;
-; pixel:inst2|mouse_logic:ml|mouse:ms|sendFSM:sfsm|state~21                                                     ; 1       ;
-; pixel:inst2|mouse_logic:ml|mouse:ms|sendFSM:sfsm|LessThan4~2                                                  ; 1       ;
-; pixel:inst2|mouse_logic:ml|mouse:ms|sendFSM:sfsm|state~20                                                     ; 1       ;
-; pixel:inst2|mouse_logic:ml|mouse:ms|sendFSM:sfsm|state~19                                                     ; 1       ;
-; pixel:inst2|mouse_logic:ml|mouse:ms|sendFSM:sfsm|state~18                                                     ; 1       ;
-; pixel:inst2|mouse_logic:ml|mouse:ms|sendFSM:sfsm|state~17                                                     ; 1       ;
-; pixel:inst2|mouse_logic:ml|mouse:ms|sendFSM:sfsm|LessThan3~1                                                  ; 1       ;
-; pixel:inst2|mouse_logic:ml|mouse:ms|sendFSM:sfsm|LessThan3~0                                                  ; 1       ;
-; pixel:inst2|mouse_logic:ml|mouse:ms|sendFSM:sfsm|state~15                                                     ; 1       ;
-; pixel:inst2|mouse_logic:ml|mouse:ms|sendFSM:sfsm|LessThan1~1                                                  ; 1       ;
-; pixel:inst2|mouse_logic:ml|mouse:ms|sendFSM:sfsm|LessThan1~0                                                  ; 1       ;
-; pixel:inst2|mouse_logic:ml|mouse:ms|sendFSM:sfsm|state~14                                                     ; 1       ;
-; pixel:inst2|mouse_logic:ml|mouse:ms|sendFSM:sfsm|LessThan2~0                                                  ; 1       ;
-; pixel:inst2|mouse_logic:ml|mouse:ms|sendFSM:sfsm|LessThan4~0                                                  ; 1       ;
-; pixel:inst2|mouse_logic:ml|mouse:ms|shiftregister_9bit:sr|new_new_data~1                                      ; 1       ;
-; pixel:inst2|mouse_logic:ml|mouse:ms|shiftregister_9bit:sr|new_new_data[7]                                     ; 1       ;
 ; pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|horizontal~9                                                       ; 1       ;
 ; pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|horizontal~8                                                       ; 1       ;
 ; pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|horizontal~7                                                       ; 1       ;
@@ -1416,14 +1402,25 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|horizontal~2                                                       ; 1       ;
 ; pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|horizontal~1                                                       ; 1       ;
 ; pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|horizontal~0                                                       ; 1       ;
+; pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|Gout~2                                                             ; 1       ;
 ; pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|Gout~1                                                             ; 1       ;
+; pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|Bout~3                                                             ; 1       ;
 ; pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|Bout~1                                                             ; 1       ;
 ; pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|process_0~1                                                   ; 1       ;
 ; pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|logic_vga_colour[1]~0                                         ; 1       ;
-; pixel:inst2|mouse_logic:ml|mouse:ms|sendFSM:sfsm|clkTrans                                                     ; 1       ;
-; pixel:inst2|mouse_logic:ml|mouse:ms|mux:mx|dataSwitch~1                                                       ; 1       ;
-; pixel:inst2|mouse_logic:ml|mouse:ms|mux:mx|dataSwitch~0                                                       ; 1       ;
-; pixel:inst2|mouse_logic:ml|mouse:ms|shiftregister_9bit:sr|new_new_data[8]                                     ; 1       ;
+; pixel:inst2|mouse_logic:ml|mouse:ms|main_fsm:mfsm|Selector0~0                                                 ; 1       ;
+; pixel:inst2|mouse_logic:ml|mouse:ms|main_fsm:mfsm|WideOr3~3                                                   ; 1       ;
+; pixel:inst2|mouse_logic:ml|mouse:ms|main_fsm:mfsm|WideOr3~2                                                   ; 1       ;
+; pixel:inst2|mouse_logic:ml|mouse:ms|main_fsm:mfsm|WideOr3~1                                                   ; 1       ;
+; pixel:inst2|mouse_logic:ml|mouse:ms|mux:mx2|dataSwitch~0                                                      ; 1       ;
+; pixel:inst2|mouse_logic:ml|mouse:ms|edge_debounce:ed|state~6                                                  ; 1       ;
+; pixel:inst2|mouse_logic:ml|mouse:ms|edge_debounce:ed|LessThan0~1                                              ; 1       ;
+; pixel:inst2|mouse_logic:ml|mouse:ms|edge_debounce:ed|LessThan0~0                                              ; 1       ;
+; pixel:inst2|mouse_logic:ml|mouse:ms|shiftregister_9bit:sr|new_new_data~3                                      ; 1       ;
+; pixel:inst2|mouse_logic:ml|mouse:ms|shiftregister_9bit:sr|new_new_data[6]                                     ; 1       ;
+; pixel:inst2|mouse_logic:ml|mouse:ms|sendFSM:sfsm|state~25                                                     ; 1       ;
+; pixel:inst2|mouse_logic:ml|mouse:ms|sendFSM:sfsm|LessThan0~0                                                  ; 1       ;
+; pixel:inst2|mouse_logic:ml|mouse:ms|main_fsm:mfsm|Selector4~0                                                 ; 1       ;
 ; pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|vpulse~2                                                           ; 1       ;
 ; pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|scale_vertical[5]                                                  ; 1       ;
 ; pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|scale_vertical[6]                                                  ; 1       ;
@@ -1434,6 +1431,33 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|hpulse~2                                                           ; 1       ;
 ; pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|hpulse~1                                                           ; 1       ;
 ; pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|hpulse~0                                                           ; 1       ;
+; pixel:inst2|graphic_toplvl:gl|vga_buffer:vga_buf|flipflop:G1|Q                                                ; 1       ;
+; pixel:inst2|graphic_toplvl:gl|vga_buffer:vga_buf|flipflop:B1|Q                                                ; 1       ;
+; pixel:inst2|mouse_logic:ml|mouse:ms|sendFSM:sfsm|state~24                                                     ; 1       ;
+; pixel:inst2|mouse_logic:ml|mouse:ms|sendFSM:sfsm|state~23                                                     ; 1       ;
+; pixel:inst2|mouse_logic:ml|mouse:ms|sendFSM:sfsm|state~22                                                     ; 1       ;
+; pixel:inst2|mouse_logic:ml|mouse:ms|sendFSM:sfsm|LessThan4~2                                                  ; 1       ;
+; pixel:inst2|mouse_logic:ml|mouse:ms|sendFSM:sfsm|state~21                                                     ; 1       ;
+; pixel:inst2|mouse_logic:ml|mouse:ms|sendFSM:sfsm|state~20                                                     ; 1       ;
+; pixel:inst2|mouse_logic:ml|mouse:ms|sendFSM:sfsm|state~19                                                     ; 1       ;
+; pixel:inst2|mouse_logic:ml|mouse:ms|sendFSM:sfsm|state~18                                                     ; 1       ;
+; pixel:inst2|mouse_logic:ml|mouse:ms|sendFSM:sfsm|LessThan3~1                                                  ; 1       ;
+; pixel:inst2|mouse_logic:ml|mouse:ms|sendFSM:sfsm|LessThan3~0                                                  ; 1       ;
+; pixel:inst2|mouse_logic:ml|mouse:ms|sendFSM:sfsm|state~17                                                     ; 1       ;
+; pixel:inst2|mouse_logic:ml|mouse:ms|sendFSM:sfsm|LessThan1~1                                                  ; 1       ;
+; pixel:inst2|mouse_logic:ml|mouse:ms|sendFSM:sfsm|LessThan1~0                                                  ; 1       ;
+; pixel:inst2|mouse_logic:ml|mouse:ms|sendFSM:sfsm|LessThan2~0                                                  ; 1       ;
+; pixel:inst2|mouse_logic:ml|mouse:ms|sendFSM:sfsm|LessThan4~0                                                  ; 1       ;
+; pixel:inst2|mouse_logic:ml|mouse:ms|shiftregister_9bit:sr|new_new_data~1                                      ; 1       ;
+; pixel:inst2|mouse_logic:ml|mouse:ms|shiftregister_9bit:sr|new_new_data[7]                                     ; 1       ;
+; pixel:inst2|graphic_toplvl:gl|vga_buffer:vga_buf|flipflop:V1|Q                                                ; 1       ;
+; pixel:inst2|graphic_toplvl:gl|vga_buffer:vga_buf|flipflop:H1|Q                                                ; 1       ;
+; pixel:inst2|mouse_logic:ml|mouse:ms|sendFSM:sfsm|clkTrans                                                     ; 1       ;
+; pixel:inst2|mouse_logic:ml|mouse:ms|mux:mx|dataSwitch~1                                                       ; 1       ;
+; pixel:inst2|mouse_logic:ml|mouse:ms|mux:mx|dataSwitch~0                                                       ; 1       ;
+; pixel:inst2|mouse_logic:ml|mouse:ms|shiftregister_9bit:sr|new_new_data[8]                                     ; 1       ;
+; pixel:inst2|graphic_toplvl:gl|vga_buffer:vga_buf|flipflop:V2|Q                                                ; 1       ;
+; pixel:inst2|graphic_toplvl:gl|vga_buffer:vga_buf|flipflop:H2|Q                                                ; 1       ;
 ; pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|e_counter:le|Add0~18                                          ; 1       ;
 ; pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|e_counter:le|Add0~17                                          ; 1       ;
 ; pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|e_counter:le|Add0~16                                          ; 1       ;
@@ -1453,61 +1477,6 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|e_counter:le|Add0~2                                           ; 1       ;
 ; pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|e_counter:le|Add0~1                                           ; 1       ;
 ; pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|e_counter:le|Add0~0                                           ; 1       ;
-; pixel:inst2|mouse_logic:ml|mouse:ms|counter25mhz:cntD|count[12]~37                                            ; 1       ;
-; pixel:inst2|mouse_logic:ml|mouse:ms|counter25mhz:cntD|count[11]~36                                            ; 1       ;
-; pixel:inst2|mouse_logic:ml|mouse:ms|counter25mhz:cntD|count[11]~35                                            ; 1       ;
-; pixel:inst2|mouse_logic:ml|mouse:ms|counter25mhz:cntD|count[10]~34                                            ; 1       ;
-; pixel:inst2|mouse_logic:ml|mouse:ms|counter25mhz:cntD|count[10]~33                                            ; 1       ;
-; pixel:inst2|mouse_logic:ml|mouse:ms|counter25mhz:cntD|count[9]~32                                             ; 1       ;
-; pixel:inst2|mouse_logic:ml|mouse:ms|counter25mhz:cntD|count[9]~31                                             ; 1       ;
-; pixel:inst2|mouse_logic:ml|mouse:ms|counter25mhz:cntD|count[8]~30                                             ; 1       ;
-; pixel:inst2|mouse_logic:ml|mouse:ms|counter25mhz:cntD|count[8]~29                                             ; 1       ;
-; pixel:inst2|mouse_logic:ml|mouse:ms|counter25mhz:cntD|count[7]~28                                             ; 1       ;
-; pixel:inst2|mouse_logic:ml|mouse:ms|counter25mhz:cntD|count[7]~27                                             ; 1       ;
-; pixel:inst2|mouse_logic:ml|mouse:ms|counter25mhz:cntD|count[6]~26                                             ; 1       ;
-; pixel:inst2|mouse_logic:ml|mouse:ms|counter25mhz:cntD|count[6]~25                                             ; 1       ;
-; pixel:inst2|mouse_logic:ml|mouse:ms|counter25mhz:cntD|count[5]~24                                             ; 1       ;
-; pixel:inst2|mouse_logic:ml|mouse:ms|counter25mhz:cntD|count[5]~23                                             ; 1       ;
-; pixel:inst2|mouse_logic:ml|mouse:ms|counter25mhz:cntD|count[4]~22                                             ; 1       ;
-; pixel:inst2|mouse_logic:ml|mouse:ms|counter25mhz:cntD|count[4]~21                                             ; 1       ;
-; pixel:inst2|mouse_logic:ml|mouse:ms|counter25mhz:cntD|count[3]~20                                             ; 1       ;
-; pixel:inst2|mouse_logic:ml|mouse:ms|counter25mhz:cntD|count[3]~19                                             ; 1       ;
-; pixel:inst2|mouse_logic:ml|mouse:ms|counter25mhz:cntD|count[2]~18                                             ; 1       ;
-; pixel:inst2|mouse_logic:ml|mouse:ms|counter25mhz:cntD|count[2]~17                                             ; 1       ;
-; pixel:inst2|mouse_logic:ml|mouse:ms|counter25mhz:cntD|count[1]~16                                             ; 1       ;
-; pixel:inst2|mouse_logic:ml|mouse:ms|counter25mhz:cntD|count[1]~15                                             ; 1       ;
-; pixel:inst2|mouse_logic:ml|mouse:ms|counter25mhz:cntD|count[0]~14                                             ; 1       ;
-; pixel:inst2|mouse_logic:ml|mouse:ms|counter25mhz:cntD|count[0]~13                                             ; 1       ;
-; pixel:inst2|mouse_logic:ml|mouse:ms|counter25mhz:cntD|count[0]                                                ; 1       ;
-; pixel:inst2|mouse_logic:ml|mouse:ms|counter25mhz:cntD|count[1]                                                ; 1       ;
-; pixel:inst2|mouse_logic:ml|mouse:ms|counter25mhz:cntD|count[2]                                                ; 1       ;
-; pixel:inst2|mouse_logic:ml|mouse:ms|counter25mhz:cnt|count[12]~37                                             ; 1       ;
-; pixel:inst2|mouse_logic:ml|mouse:ms|counter25mhz:cnt|count[11]~36                                             ; 1       ;
-; pixel:inst2|mouse_logic:ml|mouse:ms|counter25mhz:cnt|count[11]~35                                             ; 1       ;
-; pixel:inst2|mouse_logic:ml|mouse:ms|counter25mhz:cnt|count[10]~34                                             ; 1       ;
-; pixel:inst2|mouse_logic:ml|mouse:ms|counter25mhz:cnt|count[10]~33                                             ; 1       ;
-; pixel:inst2|mouse_logic:ml|mouse:ms|counter25mhz:cnt|count[9]~32                                              ; 1       ;
-; pixel:inst2|mouse_logic:ml|mouse:ms|counter25mhz:cnt|count[9]~31                                              ; 1       ;
-; pixel:inst2|mouse_logic:ml|mouse:ms|counter25mhz:cnt|count[8]~30                                              ; 1       ;
-; pixel:inst2|mouse_logic:ml|mouse:ms|counter25mhz:cnt|count[8]~29                                              ; 1       ;
-; pixel:inst2|mouse_logic:ml|mouse:ms|counter25mhz:cnt|count[7]~28                                              ; 1       ;
-; pixel:inst2|mouse_logic:ml|mouse:ms|counter25mhz:cnt|count[7]~27                                              ; 1       ;
-; pixel:inst2|mouse_logic:ml|mouse:ms|counter25mhz:cnt|count[6]~26                                              ; 1       ;
-; pixel:inst2|mouse_logic:ml|mouse:ms|counter25mhz:cnt|count[6]~25                                              ; 1       ;
-; pixel:inst2|mouse_logic:ml|mouse:ms|counter25mhz:cnt|count[5]~24                                              ; 1       ;
-; pixel:inst2|mouse_logic:ml|mouse:ms|counter25mhz:cnt|count[5]~23                                              ; 1       ;
-; pixel:inst2|mouse_logic:ml|mouse:ms|counter25mhz:cnt|count[4]~22                                              ; 1       ;
-; pixel:inst2|mouse_logic:ml|mouse:ms|counter25mhz:cnt|count[4]~21                                              ; 1       ;
-; pixel:inst2|mouse_logic:ml|mouse:ms|counter25mhz:cnt|count[3]~20                                              ; 1       ;
-; pixel:inst2|mouse_logic:ml|mouse:ms|counter25mhz:cnt|count[3]~19                                              ; 1       ;
-; pixel:inst2|mouse_logic:ml|mouse:ms|counter25mhz:cnt|count[2]~18                                              ; 1       ;
-; pixel:inst2|mouse_logic:ml|mouse:ms|counter25mhz:cnt|count[2]~17                                              ; 1       ;
-; pixel:inst2|mouse_logic:ml|mouse:ms|counter25mhz:cnt|count[1]~16                                              ; 1       ;
-; pixel:inst2|mouse_logic:ml|mouse:ms|counter25mhz:cnt|count[1]~15                                              ; 1       ;
-; pixel:inst2|mouse_logic:ml|mouse:ms|counter25mhz:cnt|count[0]~14                                              ; 1       ;
-; pixel:inst2|mouse_logic:ml|mouse:ms|counter25mhz:cnt|count[0]~13                                              ; 1       ;
-; pixel:inst2|mouse_logic:ml|mouse:ms|counter25mhz:cnt|count[0]                                                 ; 1       ;
-; pixel:inst2|mouse_logic:ml|mouse:ms|counter25mhz:cnt|count[1]                                                 ; 1       ;
 ; pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|Add1~18                                                            ; 1       ;
 ; pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|Add1~17                                                            ; 1       ;
 ; pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|Add1~16                                                            ; 1       ;
@@ -1546,7 +1515,62 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|Add2~2                                                             ; 1       ;
 ; pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|Add2~1                                                             ; 1       ;
 ; pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|Add2~0                                                             ; 1       ;
+; pixel:inst2|mouse_logic:ml|mouse:ms|counter25mhz:cntD|count[12]~37                                            ; 1       ;
+; pixel:inst2|mouse_logic:ml|mouse:ms|counter25mhz:cntD|count[11]~36                                            ; 1       ;
+; pixel:inst2|mouse_logic:ml|mouse:ms|counter25mhz:cntD|count[11]~35                                            ; 1       ;
+; pixel:inst2|mouse_logic:ml|mouse:ms|counter25mhz:cntD|count[10]~34                                            ; 1       ;
+; pixel:inst2|mouse_logic:ml|mouse:ms|counter25mhz:cntD|count[10]~33                                            ; 1       ;
+; pixel:inst2|mouse_logic:ml|mouse:ms|counter25mhz:cntD|count[9]~32                                             ; 1       ;
+; pixel:inst2|mouse_logic:ml|mouse:ms|counter25mhz:cntD|count[9]~31                                             ; 1       ;
+; pixel:inst2|mouse_logic:ml|mouse:ms|counter25mhz:cntD|count[8]~30                                             ; 1       ;
+; pixel:inst2|mouse_logic:ml|mouse:ms|counter25mhz:cntD|count[8]~29                                             ; 1       ;
+; pixel:inst2|mouse_logic:ml|mouse:ms|counter25mhz:cntD|count[7]~28                                             ; 1       ;
+; pixel:inst2|mouse_logic:ml|mouse:ms|counter25mhz:cntD|count[7]~27                                             ; 1       ;
+; pixel:inst2|mouse_logic:ml|mouse:ms|counter25mhz:cntD|count[6]~26                                             ; 1       ;
+; pixel:inst2|mouse_logic:ml|mouse:ms|counter25mhz:cntD|count[6]~25                                             ; 1       ;
+; pixel:inst2|mouse_logic:ml|mouse:ms|counter25mhz:cntD|count[5]~24                                             ; 1       ;
+; pixel:inst2|mouse_logic:ml|mouse:ms|counter25mhz:cntD|count[5]~23                                             ; 1       ;
+; pixel:inst2|mouse_logic:ml|mouse:ms|counter25mhz:cntD|count[4]~22                                             ; 1       ;
+; pixel:inst2|mouse_logic:ml|mouse:ms|counter25mhz:cntD|count[4]~21                                             ; 1       ;
+; pixel:inst2|mouse_logic:ml|mouse:ms|counter25mhz:cntD|count[3]~20                                             ; 1       ;
+; pixel:inst2|mouse_logic:ml|mouse:ms|counter25mhz:cntD|count[3]~19                                             ; 1       ;
+; pixel:inst2|mouse_logic:ml|mouse:ms|counter25mhz:cntD|count[2]~18                                             ; 1       ;
+; pixel:inst2|mouse_logic:ml|mouse:ms|counter25mhz:cntD|count[2]~17                                             ; 1       ;
+; pixel:inst2|mouse_logic:ml|mouse:ms|counter25mhz:cntD|count[1]~16                                             ; 1       ;
+; pixel:inst2|mouse_logic:ml|mouse:ms|counter25mhz:cntD|count[1]~15                                             ; 1       ;
+; pixel:inst2|mouse_logic:ml|mouse:ms|counter25mhz:cntD|count[0]~14                                             ; 1       ;
+; pixel:inst2|mouse_logic:ml|mouse:ms|counter25mhz:cntD|count[0]~13                                             ; 1       ;
+; pixel:inst2|mouse_logic:ml|mouse:ms|counter25mhz:cntD|count[0]                                                ; 1       ;
+; pixel:inst2|mouse_logic:ml|mouse:ms|counter25mhz:cntD|count[1]                                                ; 1       ;
+; pixel:inst2|mouse_logic:ml|mouse:ms|counter25mhz:cntD|count[2]                                                ; 1       ;
 ; pixel:inst2|graphic_toplvl:gl|rom_cursor:rom|altsyncram:rom_rtl_0|altsyncram_rn61:auto_generated|ram_block1a1 ; 1       ;
+; pixel:inst2|mouse_logic:ml|mouse:ms|counter25mhz:cnt|count[12]~37                                             ; 1       ;
+; pixel:inst2|mouse_logic:ml|mouse:ms|counter25mhz:cnt|count[11]~36                                             ; 1       ;
+; pixel:inst2|mouse_logic:ml|mouse:ms|counter25mhz:cnt|count[11]~35                                             ; 1       ;
+; pixel:inst2|mouse_logic:ml|mouse:ms|counter25mhz:cnt|count[10]~34                                             ; 1       ;
+; pixel:inst2|mouse_logic:ml|mouse:ms|counter25mhz:cnt|count[10]~33                                             ; 1       ;
+; pixel:inst2|mouse_logic:ml|mouse:ms|counter25mhz:cnt|count[9]~32                                              ; 1       ;
+; pixel:inst2|mouse_logic:ml|mouse:ms|counter25mhz:cnt|count[9]~31                                              ; 1       ;
+; pixel:inst2|mouse_logic:ml|mouse:ms|counter25mhz:cnt|count[8]~30                                              ; 1       ;
+; pixel:inst2|mouse_logic:ml|mouse:ms|counter25mhz:cnt|count[8]~29                                              ; 1       ;
+; pixel:inst2|mouse_logic:ml|mouse:ms|counter25mhz:cnt|count[7]~28                                              ; 1       ;
+; pixel:inst2|mouse_logic:ml|mouse:ms|counter25mhz:cnt|count[7]~27                                              ; 1       ;
+; pixel:inst2|mouse_logic:ml|mouse:ms|counter25mhz:cnt|count[6]~26                                              ; 1       ;
+; pixel:inst2|mouse_logic:ml|mouse:ms|counter25mhz:cnt|count[6]~25                                              ; 1       ;
+; pixel:inst2|mouse_logic:ml|mouse:ms|counter25mhz:cnt|count[5]~24                                              ; 1       ;
+; pixel:inst2|mouse_logic:ml|mouse:ms|counter25mhz:cnt|count[5]~23                                              ; 1       ;
+; pixel:inst2|mouse_logic:ml|mouse:ms|counter25mhz:cnt|count[4]~22                                              ; 1       ;
+; pixel:inst2|mouse_logic:ml|mouse:ms|counter25mhz:cnt|count[4]~21                                              ; 1       ;
+; pixel:inst2|mouse_logic:ml|mouse:ms|counter25mhz:cnt|count[3]~20                                              ; 1       ;
+; pixel:inst2|mouse_logic:ml|mouse:ms|counter25mhz:cnt|count[3]~19                                              ; 1       ;
+; pixel:inst2|mouse_logic:ml|mouse:ms|counter25mhz:cnt|count[2]~18                                              ; 1       ;
+; pixel:inst2|mouse_logic:ml|mouse:ms|counter25mhz:cnt|count[2]~17                                              ; 1       ;
+; pixel:inst2|mouse_logic:ml|mouse:ms|counter25mhz:cnt|count[1]~16                                              ; 1       ;
+; pixel:inst2|mouse_logic:ml|mouse:ms|counter25mhz:cnt|count[1]~15                                              ; 1       ;
+; pixel:inst2|mouse_logic:ml|mouse:ms|counter25mhz:cnt|count[0]~14                                              ; 1       ;
+; pixel:inst2|mouse_logic:ml|mouse:ms|counter25mhz:cnt|count[0]~13                                              ; 1       ;
+; pixel:inst2|mouse_logic:ml|mouse:ms|counter25mhz:cnt|count[0]                                                 ; 1       ;
+; pixel:inst2|mouse_logic:ml|mouse:ms|counter25mhz:cnt|count[1]                                                 ; 1       ;
 +---------------------------------------------------------------------------------------------------------------+---------+
 
 
@@ -1555,7 +1579,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-------------------------------------------------------------------------------------------------------------+------+------+--------------+--------------+--------------+--------------+--------------+------------------------+-------------------------+------------------------+-------------------------+------+-----------------------------+-----------------------------+-----------------------------+-----------------------------+---------------------+------+-----------------------------------------+-------------+----------------------+-----------------+-----------------+
 ; Name                                                                                                        ; Type ; Mode ; Clock Mode   ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Port A Input Registers ; Port A Output Registers ; Port B Input Registers ; Port B Output Registers ; Size ; Implementation Port A Depth ; Implementation Port A Width ; Implementation Port B Depth ; Implementation Port B Width ; Implementation Bits ; M4Ks ; MIF                                     ; Location    ; Mixed Width RDW Mode ; Port A RDW Mode ; Port B RDW Mode ;
 +-------------------------------------------------------------------------------------------------------------+------+------+--------------+--------------+--------------+--------------+--------------+------------------------+-------------------------+------------------------+-------------------------+------+-----------------------------+-----------------------------+-----------------------------+-----------------------------+---------------------+------+-----------------------------------------+-------------+----------------------+-----------------+-----------------+
-; pixel:inst2|graphic_toplvl:gl|rom_cursor:rom|altsyncram:rom_rtl_0|altsyncram_rn61:auto_generated|ALTSYNCRAM ; AUTO ; ROM  ; Single Clock ; 1024         ; 2            ; --           ; --           ; yes                    ; no                      ; --                     ; --                      ; 2048 ; 1024                        ; 2                           ; --                          ; --                          ; 2048                ; 1    ; db/de1.ram0_rom_cursor_f1823f6e.hdl.mif ; M4K_X17_Y15 ; Don't care           ; Don't care      ; Don't care      ;
+; pixel:inst2|graphic_toplvl:gl|rom_cursor:rom|altsyncram:rom_rtl_0|altsyncram_rn61:auto_generated|ALTSYNCRAM ; AUTO ; ROM  ; Single Clock ; 1024         ; 2            ; --           ; --           ; yes                    ; no                      ; --                     ; --                      ; 2048 ; 1024                        ; 2                           ; --                          ; --                          ; 2048                ; 1    ; db/de1.ram0_rom_cursor_f1823f6e.hdl.mif ; M4K_X17_Y14 ; Don't care           ; Don't care      ; Don't care      ;
 +-------------------------------------------------------------------------------------------------------------+------+------+--------------+--------------+--------------+--------------+--------------+------------------------+-------------------------+------------------------+-------------------------+------+-----------------------------+-----------------------------+-----------------------------+-----------------------------+---------------------+------+-----------------------------------------+-------------+----------------------+-----------------+-----------------+
 Note: Fitter may spread logical memories into multiple blocks to improve timing. The actual required RAM blocks can be found in the Fitter Resource Usage section.
 
@@ -1565,24 +1589,24 @@ Note: Fitter may spread logical memories into multiple blocks to improve timing.
 +-----------------------------+------------------------+
 ; Other Routing Resource Type ; Usage                  ;
 +-----------------------------+------------------------+
-; Block interconnects         ; 286 / 54,004 ( < 1 % ) ;
-; C16 interconnects           ; 2 / 2,100 ( < 1 % )    ;
-; C4 interconnects            ; 58 / 36,000 ( < 1 % )  ;
-; Direct links                ; 144 / 54,004 ( < 1 % ) ;
+; Block interconnects         ; 259 / 54,004 ( < 1 % ) ;
+; C16 interconnects           ; 1 / 2,100 ( < 1 % )    ;
+; C4 interconnects            ; 46 / 36,000 ( < 1 % )  ;
+; Direct links                ; 154 / 54,004 ( < 1 % ) ;
 ; Global clocks               ; 2 / 16 ( 13 % )        ;
-; Local interconnects         ; 178 / 18,752 ( < 1 % ) ;
-; R24 interconnects           ; 3 / 1,900 ( < 1 % )    ;
-; R4 interconnects            ; 104 / 46,920 ( < 1 % ) ;
+; Local interconnects         ; 192 / 18,752 ( 1 % )   ;
+; R24 interconnects           ; 5 / 1,900 ( < 1 % )    ;
+; R4 interconnects            ; 85 / 46,920 ( < 1 % )  ;
 +-----------------------------+------------------------+
 
 
 +----------------------------------------------------------------------------+
 ; LAB Logic Elements                                                         ;
 +---------------------------------------------+------------------------------+
-; Number of Logic Elements  (Average = 11.95) ; Number of LABs  (Total = 22) ;
+; Number of Logic Elements  (Average = 14.00) ; Number of LABs  (Total = 19) ;
 +---------------------------------------------+------------------------------+
-; 1                                           ; 3                            ;
-; 2                                           ; 2                            ;
+; 1                                           ; 1                            ;
+; 2                                           ; 0                            ;
 ; 3                                           ; 0                            ;
 ; 4                                           ; 0                            ;
 ; 5                                           ; 0                            ;
@@ -1592,34 +1616,36 @@ Note: Fitter may spread logical memories into multiple blocks to improve timing.
 ; 9                                           ; 0                            ;
 ; 10                                          ; 0                            ;
 ; 11                                          ; 0                            ;
-; 12                                          ; 1                            ;
-; 13                                          ; 0                            ;
-; 14                                          ; 1                            ;
+; 12                                          ; 0                            ;
+; 13                                          ; 1                            ;
+; 14                                          ; 5                            ;
 ; 15                                          ; 1                            ;
-; 16                                          ; 13                           ;
+; 16                                          ; 10                           ;
 +---------------------------------------------+------------------------------+
 
 
 +-------------------------------------------------------------------+
 ; LAB-wide Signals                                                  ;
 +------------------------------------+------------------------------+
-; LAB-wide Signals  (Average = 1.14) ; Number of LABs  (Total = 22) ;
+; LAB-wide Signals  (Average = 1.16) ; Number of LABs  (Total = 19) ;
 +------------------------------------+------------------------------+
-; 1 Clock                            ; 20                           ;
-; 1 Sync. clear                      ; 5                            ;
+; 1 Clock                            ; 17                           ;
+; 1 Sync. clear                      ; 3                            ;
+; 2 Clock enables                    ; 1                            ;
+; 2 Clocks                           ; 1                            ;
 +------------------------------------+------------------------------+
 
 
 +-----------------------------------------------------------------------------+
 ; LAB Signals Sourced                                                         ;
 +----------------------------------------------+------------------------------+
-; Number of Signals Sourced  (Average = 18.23) ; Number of LABs  (Total = 22) ;
+; Number of Signals Sourced  (Average = 21.68) ; Number of LABs  (Total = 19) ;
 +----------------------------------------------+------------------------------+
 ; 0                                            ; 0                            ;
-; 1                                            ; 2                            ;
-; 2                                            ; 1                            ;
+; 1                                            ; 1                            ;
+; 2                                            ; 0                            ;
 ; 3                                            ; 0                            ;
-; 4                                            ; 2                            ;
+; 4                                            ; 0                            ;
 ; 5                                            ; 0                            ;
 ; 6                                            ; 0                            ;
 ; 7                                            ; 0                            ;
@@ -1630,83 +1656,77 @@ Note: Fitter may spread logical memories into multiple blocks to improve timing.
 ; 12                                           ; 0                            ;
 ; 13                                           ; 0                            ;
 ; 14                                           ; 0                            ;
-; 15                                           ; 0                            ;
-; 16                                           ; 2                            ;
+; 15                                           ; 1                            ;
+; 16                                           ; 0                            ;
 ; 17                                           ; 0                            ;
-; 18                                           ; 0                            ;
-; 19                                           ; 2                            ;
-; 20                                           ; 1                            ;
-; 21                                           ; 1                            ;
-; 22                                           ; 1                            ;
-; 23                                           ; 0                            ;
-; 24                                           ; 0                            ;
-; 25                                           ; 2                            ;
+; 18                                           ; 2                            ;
+; 19                                           ; 0                            ;
+; 20                                           ; 0                            ;
+; 21                                           ; 2                            ;
+; 22                                           ; 0                            ;
+; 23                                           ; 3                            ;
+; 24                                           ; 2                            ;
+; 25                                           ; 1                            ;
 ; 26                                           ; 2                            ;
-; 27                                           ; 1                            ;
+; 27                                           ; 0                            ;
 ; 28                                           ; 1                            ;
-; 29                                           ; 1                            ;
-; 30                                           ; 1                            ;
-; 31                                           ; 1                            ;
+; 29                                           ; 3                            ;
 +----------------------------------------------+------------------------------+
 
 
 +--------------------------------------------------------------------------------+
 ; LAB Signals Sourced Out                                                        ;
 +-------------------------------------------------+------------------------------+
-; Number of Signals Sourced Out  (Average = 7.36) ; Number of LABs  (Total = 22) ;
+; Number of Signals Sourced Out  (Average = 8.11) ; Number of LABs  (Total = 19) ;
 +-------------------------------------------------+------------------------------+
 ; 0                                               ; 0                            ;
-; 1                                               ; 5                            ;
-; 2                                               ; 1                            ;
-; 3                                               ; 1                            ;
-; 4                                               ; 1                            ;
+; 1                                               ; 1                            ;
+; 2                                               ; 0                            ;
+; 3                                               ; 2                            ;
+; 4                                               ; 3                            ;
 ; 5                                               ; 1                            ;
 ; 6                                               ; 1                            ;
 ; 7                                               ; 2                            ;
 ; 8                                               ; 1                            ;
-; 9                                               ; 1                            ;
-; 10                                              ; 2                            ;
+; 9                                               ; 2                            ;
+; 10                                              ; 1                            ;
 ; 11                                              ; 1                            ;
-; 12                                              ; 1                            ;
-; 13                                              ; 2                            ;
-; 14                                              ; 0                            ;
+; 12                                              ; 0                            ;
+; 13                                              ; 1                            ;
+; 14                                              ; 1                            ;
 ; 15                                              ; 0                            ;
 ; 16                                              ; 0                            ;
 ; 17                                              ; 1                            ;
 ; 18                                              ; 0                            ;
-; 19                                              ; 0                            ;
-; 20                                              ; 1                            ;
+; 19                                              ; 1                            ;
 +-------------------------------------------------+------------------------------+
 
 
 +-----------------------------------------------------------------------------+
 ; LAB Distinct Inputs                                                         ;
 +----------------------------------------------+------------------------------+
-; Number of Distinct Inputs  (Average = 10.32) ; Number of LABs  (Total = 22) ;
+; Number of Distinct Inputs  (Average = 10.32) ; Number of LABs  (Total = 19) ;
 +----------------------------------------------+------------------------------+
 ; 0                                            ; 0                            ;
 ; 1                                            ; 0                            ;
 ; 2                                            ; 2                            ;
-; 3                                            ; 2                            ;
-; 4                                            ; 2                            ;
-; 5                                            ; 1                            ;
-; 6                                            ; 1                            ;
+; 3                                            ; 1                            ;
+; 4                                            ; 1                            ;
+; 5                                            ; 0                            ;
+; 6                                            ; 0                            ;
 ; 7                                            ; 0                            ;
-; 8                                            ; 0                            ;
-; 9                                            ; 1                            ;
-; 10                                           ; 1                            ;
-; 11                                           ; 3                            ;
-; 12                                           ; 1                            ;
-; 13                                           ; 2                            ;
+; 8                                            ; 1                            ;
+; 9                                            ; 2                            ;
+; 10                                           ; 2                            ;
+; 11                                           ; 0                            ;
+; 12                                           ; 3                            ;
+; 13                                           ; 4                            ;
 ; 14                                           ; 0                            ;
-; 15                                           ; 0                            ;
-; 16                                           ; 2                            ;
-; 17                                           ; 2                            ;
+; 15                                           ; 1                            ;
+; 16                                           ; 0                            ;
+; 17                                           ; 1                            ;
 ; 18                                           ; 0                            ;
-; 19                                           ; 0                            ;
-; 20                                           ; 1                            ;
-; 21                                           ; 0                            ;
-; 22                                           ; 1                            ;
+; 19                                           ; 1                            ;
 +----------------------------------------------+------------------------------+
 
 
@@ -1763,14 +1783,14 @@ Info (332130): Timing requirements not specified -- quality metrics such as perf
 Info (176353): Automatically promoted node gen25mhz:inst1|count[0] 
     Info (176355): Automatically promoted destinations to use location or clock signal Global Clock
     Info (176356): Following destination nodes may be non-global or may not use global or regional clocks
-        Info (176357): Destination node pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|v_counter:lv|count_v[0]
         Info (176357): Destination node pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|v_counter:lv|count_v[1]
-        Info (176357): Destination node pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|v_counter:lv|count_v[2]
-        Info (176357): Destination node pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|v_counter:lv|count_v[3]
-        Info (176357): Destination node pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|h_counter:lh|count_h[0]
-        Info (176357): Destination node pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|h_counter:lh|count_h[1]
+        Info (176357): Destination node pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|v_counter:lv|count_v[0]
         Info (176357): Destination node pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|h_counter:lh|count_h[2]
+        Info (176357): Destination node pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|h_counter:lh|count_h[1]
+        Info (176357): Destination node pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|h_counter:lh|count_h[0]
         Info (176357): Destination node pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|h_counter:lh|count_h[3]
+        Info (176357): Destination node pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|v_counter:lv|count_v[3]
+        Info (176357): Destination node pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|v_counter:lv|count_v[2]
         Info (176357): Destination node pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|e_counter:le|new_count_e[1]~0
         Info (176357): Destination node gen25mhz:inst1|count[0]~0
 Info (176353): Automatically promoted node pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|e_counter:le|new_count_e[1]~0 
@@ -1783,14 +1803,14 @@ Info (170189): Fitter placement preparation operations beginning
 Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:00
 Info (170191): Fitter placement operations beginning
 Info (170137): Fitter placement was successful
-Info (170192): Fitter placement operations ending: elapsed time is 00:00:03
+Info (170192): Fitter placement operations ending: elapsed time is 00:00:04
 Info (170193): Fitter routing operations beginning
 Info (170195): Router estimated average interconnect usage is 0% of the available device resources
     Info (170196): Router estimated peak interconnect usage is 0% of the available device resources in the region that extends from location X12_Y14 to location X24_Y27
 Info (170194): Fitter routing operations ending: elapsed time is 00:00:02
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
-Info (11888): Total time spent on timing analysis during the Fitter is 0.96 seconds.
+Info (11888): Total time spent on timing analysis during the Fitter is 1.10 seconds.
 Info (306004): Started post-fitting delay annotation
 Warning (306006): Found 16 output pins without output pin load capacitance assignment
     Info (306007): Pin "vga_hsync" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
@@ -1817,9 +1837,9 @@ Info (176045): Design uses memory blocks. Violating setup or hold times of memor
 Warning (169174): The Reserve All Unused Pins setting has not been specified, and will default to 'As output driving ground'.
 Info (144001): Generated suppressed messages file /home/ghpdohmen/epo3/epo3/help/quartus_DE1/top_de1.fit.smsg
 Info: Quartus II 32-bit Fitter was successful. 0 errors, 4 warnings
-    Info: Peak virtual memory: 667 megabytes
-    Info: Processing ended: Wed Jan 18 09:53:43 2023
-    Info: Elapsed time: 00:00:15
+    Info: Peak virtual memory: 657 megabytes
+    Info: Processing ended: Wed Jan 18 17:29:06 2023
+    Info: Elapsed time: 00:00:16
     Info: Total CPU time (on all processors): 00:00:13
 
 

@@ -679,10 +679,6 @@ dx[1] => Add1.IN3
 dx[1] => Add0.IN3
 dx[2] => Add1.IN2
 dx[2] => Add0.IN2
-dx[3] => bound_low[3].OUTPUTSELECT
-dx[3] => bound_low[2].OUTPUTSELECT
-dx[3] => bound_low[1].OUTPUTSELECT
-dx[3] => bound_low[0].OUTPUTSELECT
 dx[3] => locx_unsigned[3].OUTPUTSELECT
 dx[3] => locx_unsigned[2].OUTPUTSELECT
 dx[3] => locx_unsigned[1].OUTPUTSELECT
@@ -716,10 +712,6 @@ dy[1] => Add1.IN3
 dy[1] => Add0.IN3
 dy[2] => Add1.IN2
 dy[2] => Add0.IN2
-dy[3] => bound_low[3].OUTPUTSELECT
-dy[3] => bound_low[2].OUTPUTSELECT
-dy[3] => bound_low[1].OUTPUTSELECT
-dy[3] => bound_low[0].OUTPUTSELECT
 dy[3] => locy_unsigned[3].OUTPUTSELECT
 dy[3] => locy_unsigned[2].OUTPUTSELECT
 dy[3] => locy_unsigned[1].OUTPUTSELECT
@@ -771,9 +763,11 @@ handshakeimc <= handshakeimc.DB_MAX_OUTPUT_PORT_TYPE
 clk => colour_storage:ram.clk
 clk => rom_cursor:rom.clk
 clk => vgadrive:vgd.clock
+clk => vga_buffer:vga_buf.clk
 clk => graph_logic:gr_lg.clk
 reset => colour_storage:ram.reset
 reset => vgadrive:vgd.reset
+reset => vga_buffer:vga_buf.reset
 reset => graph_logic:gr_lg.reset
 logic_x[0] => colour_storage:ram.ram_x[0]
 logic_x[0] => graph_logic:gr_lg.logic_x[0]
@@ -802,11 +796,11 @@ countdown_aan => colour_storage:ram.counter_aan
 middelste_knop => colour_storage:ram.middelste_knop
 middelste_knop => graph_logic:gr_lg.middelste_knop
 countdown_klaar <= graph_logic:gr_lg.countdown_klaar
-R <= vgadrive:vgd.Rout
-G <= vgadrive:vgd.Gout
-B <= vgadrive:vgd.Bout
-H <= vgadrive:vgd.H
-V <= vgadrive:vgd.V
+R <= vga_buffer:vga_buf.Rout
+G <= vga_buffer:vga_buf.Gout
+B <= vga_buffer:vga_buf.Bout
+H <= vga_buffer:vga_buf.Hout
+V <= vga_buffer:vga_buf.Vout
 
 
 |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram
@@ -2259,6 +2253,109 @@ Gout <= Gout.DB_MAX_OUTPUT_PORT_TYPE
 Bout <= Bout.DB_MAX_OUTPUT_PORT_TYPE
 H <= hpulse.DB_MAX_OUTPUT_PORT_TYPE
 V <= vpulse.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|top_de1|pixel:inst2|graphic_toplvl:gl|vga_buffer:vga_buf
+clk => flipflop:R1.clk
+clk => flipflop:R2.clk
+clk => flipflop:G1.clk
+clk => flipflop:G2.clk
+clk => flipflop:B1.clk
+clk => flipflop:B2.clk
+clk => flipflop:V1.clk
+clk => flipflop:V2.clk
+clk => flipflop:H1.clk
+clk => flipflop:H2.clk
+reset => flipflop:R1.activate
+reset => flipflop:R2.activate
+reset => flipflop:G1.activate
+reset => flipflop:G2.activate
+reset => flipflop:B1.activate
+reset => flipflop:B2.activate
+reset => flipflop:V1.activate
+reset => flipflop:V2.activate
+reset => flipflop:H1.activate
+reset => flipflop:H2.activate
+R => flipflop:R1.D
+G => flipflop:G1.D
+B => flipflop:B1.D
+V => flipflop:V1.D
+H => flipflop:H1.D
+Rout <= flipflop:R2.Q
+Gout <= flipflop:G2.Q
+Bout <= flipflop:B2.Q
+Vout <= flipflop:V2.Q
+Hout <= flipflop:H2.Q
+
+
+|top_de1|pixel:inst2|graphic_toplvl:gl|vga_buffer:vga_buf|flipflop:R1
+clk => Q~reg0.CLK
+activate => Q~reg0.ENA
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|top_de1|pixel:inst2|graphic_toplvl:gl|vga_buffer:vga_buf|flipflop:R2
+clk => Q~reg0.CLK
+activate => Q~reg0.ENA
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|top_de1|pixel:inst2|graphic_toplvl:gl|vga_buffer:vga_buf|flipflop:G1
+clk => Q~reg0.CLK
+activate => Q~reg0.ENA
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|top_de1|pixel:inst2|graphic_toplvl:gl|vga_buffer:vga_buf|flipflop:G2
+clk => Q~reg0.CLK
+activate => Q~reg0.ENA
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|top_de1|pixel:inst2|graphic_toplvl:gl|vga_buffer:vga_buf|flipflop:B1
+clk => Q~reg0.CLK
+activate => Q~reg0.ENA
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|top_de1|pixel:inst2|graphic_toplvl:gl|vga_buffer:vga_buf|flipflop:B2
+clk => Q~reg0.CLK
+activate => Q~reg0.ENA
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|top_de1|pixel:inst2|graphic_toplvl:gl|vga_buffer:vga_buf|flipflop:V1
+clk => Q~reg0.CLK
+activate => Q~reg0.ENA
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|top_de1|pixel:inst2|graphic_toplvl:gl|vga_buffer:vga_buf|flipflop:V2
+clk => Q~reg0.CLK
+activate => Q~reg0.ENA
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|top_de1|pixel:inst2|graphic_toplvl:gl|vga_buffer:vga_buf|flipflop:H1
+clk => Q~reg0.CLK
+activate => Q~reg0.ENA
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|top_de1|pixel:inst2|graphic_toplvl:gl|vga_buffer:vga_buf|flipflop:H2
+clk => Q~reg0.CLK
+activate => Q~reg0.ENA
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |top_de1|pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg

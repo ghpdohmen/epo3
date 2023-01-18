@@ -12,49 +12,54 @@
 # //  18 U.S.C. Section 1905.
 # //
 # vsim graphic_toplvl_tb_behaviour_cfg -lib work -L TSMCLib -do "/data/public/common/software/opprog/do_files/init_simulator.do" 
-# Start time: 16:19:44 on Jan 18,2023
-# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Start time: 16:47:41 on Jan 18,2023
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Error: (vopt-1512) Configuration "config" requires native code of architecture "work.flipflop(behav)".
+# ** Error: (vopt-7) Failed to open asm file "/home/ghpdohmen/epo3/epo3/help/work/flipflop/behav.asm64" in read mode.
+# No such file or directory. (errno = ENOENT)
+# ** Error: VHDL/flipflop_behav_cfg.vhd(4): Vopt Compiler exiting
+# ** Error: (vopt-2064) Compiler back-end code generation process terminated with code 7.
+# Error loading design
+# End time: 16:47:44 on Jan 18,2023, Elapsed time: 0:00:03
+# Errors: 4, Warnings: 0
+vsim -novopt work.graphic_toplvl_tb
+# vsim -novopt work.graphic_toplvl_tb 
+# Start time: 16:48:12 on Jan 18,2023
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
 # Loading std.standard
+# Refreshing /home/ghpdohmen/epo3/epo3/help/work.graphic_toplvl_tb(behaviour)
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
+# Loading work.graphic_toplvl_tb(behaviour)
+# Refreshing /home/ghpdohmen/epo3/epo3/help/work.graphic_toplvl(behaviour)
 # Loading ieee.numeric_std(body)
+# Loading work.graphic_toplvl(behaviour)
+# Refreshing /home/ghpdohmen/epo3/epo3/help/work.colour_storage(behavioral)
+# Loading work.colour_storage(behavioral)
+# Refreshing /home/ghpdohmen/epo3/epo3/help/work.rom_cursor(behavioral)
+# Loading work.rom_cursor(behavioral)
+# Refreshing /home/ghpdohmen/epo3/epo3/help/work.vgadrive(behaviour)
 # Loading ieee.std_logic_arith(body)
 # Loading ieee.std_logic_unsigned(body)
-# Loading work.graphic_toplvl_tb_behaviour_cfg#1
-# Loading work.graphic_toplvl_tb(behaviour)#1
-# Loading work.graphic_toplvl_behaviour_cfg#1
-# Loading work.graphic_toplvl(behaviour)#1
-# Loading work.colour_storage_behavioral_cfg#1
-# Loading work.colour_storage(behavioral)#1
-# Loading work.rom_cursor_behavioral_cfg#1
-# Loading work.rom_cursor(behavioral)#1
-# Loading work.vgadrive_behaviour_cfg#1
-# Loading work.vgadrive(behaviour)#1
-# Loading work.vga_buffer_behav_cfg#1
-# Loading work.vga_buffer(behav)#1
-# Loading work.flipflop_behav_cfg#1
-# Loading work.flipflop(behav)#1
-# Loading work.graph_logic_behav_cfg#1
-# Loading work.graph_logic(behav)#1
-# Loading work.v_counter_behav_cfg#1
-# Loading work.v_counter(behav)#1
-# Loading work.edge_detector_behav_cfg#1
-# Loading work.edge_detector(behav)#1
-# Loading work.h_counter_behav_cfg#1
-# Loading work.h_counter(behav)#1
-# Loading work.e_counter_behav_cfg#1
-# Loading work.e_counter(behav)#1
-# Loading work.countdown_bar_behav_cfg#1
-# Loading work.countdown_bar(behav)#1
-# Loading work.edge_det_fall_behav_cfg#1
-# Loading work.edge_det_fall(behav)#1
-# ** Warning: (vsim-8683) Uninitialized out port /graphic_toplvl_tb/test/logic_x_asked(3 downto 0) has no driver.
-# This port will contribute value (4'hX) to the signal network.
-# ** Warning: (vsim-8683) Uninitialized out port /graphic_toplvl_tb/test/logic_y_asked(3 downto 0) has no driver.
-# This port will contribute value (4'hX) to the signal network.
-# ** Warning: (vsim-8683) Uninitialized out port /graphic_toplvl_tb/test/logic_e_asked(9 downto 0) has no driver.
-# This port will contribute value (10'hXXX) to the signal network.
-# do /data/public/common/software/opprog/do_files/init_simulator.do
+# Loading work.vgadrive(behaviour)
+# Refreshing /home/ghpdohmen/epo3/epo3/help/work.vga_buffer(behav)
+# Loading work.vga_buffer(behav)
+# Refreshing /home/ghpdohmen/epo3/epo3/help/work.flipflop(behav)
+# Loading work.flipflop(behav)
+# Refreshing /home/ghpdohmen/epo3/epo3/help/work.graph_logic(behav)
+# Loading work.graph_logic(behav)
+# Refreshing /home/ghpdohmen/epo3/epo3/help/work.v_counter(behav)
+# Loading work.v_counter(behav)
+# Refreshing /home/ghpdohmen/epo3/epo3/help/work.edge_detector(behav)
+# Loading work.edge_detector(behav)
+# Refreshing /home/ghpdohmen/epo3/epo3/help/work.h_counter(behav)
+# Loading work.h_counter(behav)
+# Refreshing /home/ghpdohmen/epo3/epo3/help/work.e_counter(behav)
+# Loading work.e_counter(behav)
+# Refreshing /home/ghpdohmen/epo3/epo3/help/work.countdown_bar(behav)
+# Loading work.countdown_bar(behav)
+# Refreshing /home/ghpdohmen/epo3/epo3/help/work.edge_det_fall(behav)
+# Loading work.edge_det_fall(behav)
 run
 # ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
 #    Time: 0 ps  Iteration: 0  Instance: /graphic_toplvl_tb/test/gr_lg
@@ -71,20 +76,22 @@ run
 # ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
 #    Time: 0 ps  Iteration: 0  Instance: /graphic_toplvl_tb/test/ram
 add wave -position insertpoint  \
-sim:/graphic_toplvl_tb/test/sig_scale_h \
-sim:/graphic_toplvl_tb/test/sig_scale_v
-add wave -position insertpoint  \
-sim:/graphic_toplvl_tb/test/gr_lg/local_y \
-sim:/graphic_toplvl_tb/test/gr_lg/local_x
-run
+sim:/graphic_toplvl_tb/clk \
+sim:/graphic_toplvl_tb/reset \
+sim:/graphic_toplvl_tb/logic_x \
+sim:/graphic_toplvl_tb/logic_y \
+sim:/graphic_toplvl_tb/loaded_color \
+sim:/graphic_toplvl_tb/draw \
+sim:/graphic_toplvl_tb/countdown_aan \
+sim:/graphic_toplvl_tb/countdown_klaar \
+sim:/graphic_toplvl_tb/middelste_knop \
+sim:/graphic_toplvl_tb/r \
+sim:/graphic_toplvl_tb/g \
+sim:/graphic_toplvl_tb/b \
+sim:/graphic_toplvl_tb/h \
+sim:/graphic_toplvl_tb/v
 restart
-# ** Note: (vsim-8009) Loading existing optimized design _opt
-# ** Warning: (vsim-8683) Uninitialized out port /graphic_toplvl_tb/test/logic_x_asked(3 downto 0) has no driver.
-# This port will contribute value (4'hX) to the signal network.
-# ** Warning: (vsim-8683) Uninitialized out port /graphic_toplvl_tb/test/logic_y_asked(3 downto 0) has no driver.
-# This port will contribute value (4'hX) to the signal network.
-# ** Warning: (vsim-8683) Uninitialized out port /graphic_toplvl_tb/test/logic_e_asked(9 downto 0) has no driver.
-# This port will contribute value (10'hXXX) to the signal network.
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
 run
 # ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
 #    Time: 0 ps  Iteration: 0  Instance: /graphic_toplvl_tb/test/gr_lg
@@ -100,5 +107,5 @@ run
 #    Time: 0 ps  Iteration: 0  Instance: /graphic_toplvl_tb/test/ram
 # ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
 #    Time: 0 ps  Iteration: 0  Instance: /graphic_toplvl_tb/test/ram
-# End time: 16:37:48 on Jan 18,2023, Elapsed time: 0:18:04
-# Errors: 0, Warnings: 20
+# End time: 18:51:54 on Jan 18,2023, Elapsed time: 2:03:42
+# Errors: 0, Warnings: 16

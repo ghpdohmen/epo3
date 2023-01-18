@@ -25,9 +25,9 @@ architecture behaviour of vgadrive is
  -- signal sig_v_rising: std_logic;
 
   constant B : natural := 93;  -- horizontal blank: 3.77 us
-  constant C : natural := 45;  -- front guard: 1.89 us
-  constant D : natural := 640; -- horizontal columns: 25.17 us
-  constant E : natural := 22;  -- rear guard: 0.94 us
+  constant C : natural := 125;  -- front guard: 1.89 us
+  constant D : natural := 480; -- horizontal columns: 25.17 us
+  constant E : natural := 102;  -- rear guard: 0.94 us
   
 
   constant A : natural := B + C + D + E;  -- one horizontal sync cycle: 31.77 us
