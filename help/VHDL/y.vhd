@@ -7,6 +7,6 @@ entity y is
         dy          : in  std_logic_vector(3 downto 0);
         handshakemi : in  std_logic;
         tempy       : buffer std_logic_vector(3 downto 0);
-        handshakeim : out std_logic);
+        handshakeimy : out std_logic);
 end y;
 
