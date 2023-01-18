@@ -518,7 +518,7 @@ begin
 		y_out(2)      		<= data_in(4);
 		bit11_reg_rst   <= '1';
 
-		new_state <= data_1;
+		new_state <= handshake_state;
 		test <= "10101";	
 		when handshake_state => --maybe we want to add a state to read the data while not reseting the register yet cuz this might give problems. The shit inside processes is sequential tho.
 		

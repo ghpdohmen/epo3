@@ -489,11 +489,11 @@ x_flipflop <= x_flipflop.DB_MAX_OUTPUT_PORT_TYPE
 y_flipflop <= y_out.DB_MAX_OUTPUT_PORT_TYPE
 btn_flipflop <= buttons.DB_MAX_OUTPUT_PORT_TYPE
 handshake_out <= handshake_out.DB_MAX_OUTPUT_PORT_TYPE
-test[0] <= WideOr21.DB_MAX_OUTPUT_PORT_TYPE
-test[1] <= WideOr20.DB_MAX_OUTPUT_PORT_TYPE
-test[2] <= WideOr19.DB_MAX_OUTPUT_PORT_TYPE
-test[3] <= WideOr18.DB_MAX_OUTPUT_PORT_TYPE
-test[4] <= WideOr17.DB_MAX_OUTPUT_PORT_TYPE
+test[0] <= WideOr20.DB_MAX_OUTPUT_PORT_TYPE
+test[1] <= WideOr19.DB_MAX_OUTPUT_PORT_TYPE
+test[2] <= WideOr18.DB_MAX_OUTPUT_PORT_TYPE
+test[3] <= WideOr17.DB_MAX_OUTPUT_PORT_TYPE
+test[4] <= WideOr16.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |top_de1|pixel:inst2|mouse_logic:ml|mouse:ms|flipflop:flipflop1
