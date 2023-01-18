@@ -122,4 +122,6 @@ set_global_assignment -name VHDL_FILE "../VHDL/color-behaviour_color.vhd"
 set_global_assignment -name BDF_FILE top_de1.bdf
 set_global_assignment -name VHDL_FILE pre_vga_dac_4.vhd
 set_global_assignment -name VHDL_FILE gen25mhz.vhd
+set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "3.3-V LVTTL"
+set_location_assignment PIN_R22 -to reset
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

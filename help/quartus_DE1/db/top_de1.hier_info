@@ -2373,15 +2373,7 @@ logic_e_out[9] <= count_e[9].DB_MAX_OUTPUT_PORT_TYPE
 
 
 |top_de1|pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|countdown_bar:lcountdown
-enable => edge_det_fall:l_edge.input
-middelste_knop => count_c.OUTPUTSELECT
-middelste_knop => count_c.OUTPUTSELECT
-middelste_knop => count_c.OUTPUTSELECT
-middelste_knop => count_c.OUTPUTSELECT
-middelste_knop => count_c.OUTPUTSELECT
-middelste_knop => count_c.OUTPUTSELECT
-middelste_knop => count_c.OUTPUTSELECT
-middelste_knop => count_c.OUTPUTSELECT
+v_count => edge_det_fall:l_edge.input
 middelste_knop => count_c.OUTPUTSELECT
 middelste_knop => count_c.OUTPUTSELECT
 middelste_knop => count_c.OUTPUTSELECT
@@ -2405,22 +2397,6 @@ clk => count_c[7].CLK
 clk => count_c[8].CLK
 clk => count_c[9].CLK
 clk => count_c[10].CLK
-clk => count_c[11].CLK
-clk => count_c[12].CLK
-clk => count_c[13].CLK
-clk => count_c[14].CLK
-clk => count_c[15].CLK
-clk => count_c[16].CLK
-clk => count_c[17].CLK
-clk => count_c[18].CLK
-reset => count_c.OUTPUTSELECT
-reset => count_c.OUTPUTSELECT
-reset => count_c.OUTPUTSELECT
-reset => count_c.OUTPUTSELECT
-reset => count_c.OUTPUTSELECT
-reset => count_c.OUTPUTSELECT
-reset => count_c.OUTPUTSELECT
-reset => count_c.OUTPUTSELECT
 reset => count_c.OUTPUTSELECT
 reset => count_c.OUTPUTSELECT
 reset => count_c.OUTPUTSELECT
@@ -2444,14 +2420,6 @@ countdown_out[7] <= count_c[7].DB_MAX_OUTPUT_PORT_TYPE
 countdown_out[8] <= count_c[8].DB_MAX_OUTPUT_PORT_TYPE
 countdown_out[9] <= count_c[9].DB_MAX_OUTPUT_PORT_TYPE
 countdown_out[10] <= count_c[10].DB_MAX_OUTPUT_PORT_TYPE
-countdown_out[11] <= count_c[11].DB_MAX_OUTPUT_PORT_TYPE
-countdown_out[12] <= count_c[12].DB_MAX_OUTPUT_PORT_TYPE
-countdown_out[13] <= count_c[13].DB_MAX_OUTPUT_PORT_TYPE
-countdown_out[14] <= count_c[14].DB_MAX_OUTPUT_PORT_TYPE
-countdown_out[15] <= count_c[15].DB_MAX_OUTPUT_PORT_TYPE
-countdown_out[16] <= count_c[16].DB_MAX_OUTPUT_PORT_TYPE
-countdown_out[17] <= count_c[17].DB_MAX_OUTPUT_PORT_TYPE
-countdown_out[18] <= count_c[18].DB_MAX_OUTPUT_PORT_TYPE
 
 
 |top_de1|pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|countdown_bar:lcountdown|edge_det_fall:l_edge
