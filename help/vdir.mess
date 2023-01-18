@@ -1083,6 +1083,23 @@ ENTITY pixel
     Compiled in vopt flow
     Compile options: -quiet -nologo -2008 -just E -lower -explicit -work work
     Compile defaults: Explicit=1 CvgOpt=0
+  ARCHITECTURE BODY behav
+    Depends on: E work pixel InmaJ6JT=D20PQ3iHgL>`0
+    Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
+    Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
+    HDL source file: VHDL/pixel-behav.vhd
+    Source file: VHDL/pixel-behav.vhd
+    Start location: VHDL/pixel-behav.vhd:4
+    Version string: F2gEOT591E[=GNfSfOQGN2
+    Opcode format: 10.5b; VCOM SE-64 Object version 63
+    VHDL language standard: 3 (VHDL-2008)
+    Compile time: Wed Jan 18 09:15:54 2023
+    Debug Symbol file exists
+    Compiled in vopt flow
+    Compile options: -quiet -nologo -2008 -lower -explicit -work work
+    Compile defaults: Explicit=1 CvgOpt=0
+    Source directory: /home/ghpdohmen/epo3/epo3/help
+    Source modified time: Tue Jan 17 18:51:28 2023
   ARCHITECTURE BODY synthesised
     Depends on: E work pixel InmaJ6JT=D20PQ3iHgL>`0
     Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
@@ -1117,23 +1134,6 @@ ENTITY pixel
     Compile defaults: Explicit=1 CvgOpt=0
     Source directory: /home/ghpdohmen/epo3/epo3/help
     Source modified time: Tue Jan 17 18:51:28 2023
-  ARCHITECTURE BODY behav
-    Depends on: E work pixel InmaJ6JT=D20PQ3iHgL>`0
-    Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
-    Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
-    HDL source file: VHDL/pixel-behav.vhd
-    Source file: VHDL/pixel-behav.vhd
-    Start location: VHDL/pixel-behav.vhd:4
-    Version string: zFP=?:UXVKB8nn^PBQB=22
-    Opcode format: 10.5b; VCOM SE-64 Object version 63
-    VHDL language standard: 3 (VHDL-2008)
-    Compile time: Tue Jan 17 19:10:01 2023
-    Debug Symbol file exists
-    Compiled in vopt flow
-    Compile options: -quiet -nologo -2008 -just A -lower -explicit -work work
-    Compile defaults: Explicit=1 CvgOpt=0
-    Source directory: /home/ghpdohmen/epo3/epo3/help
-    Source modified time: Tue Jan 17 18:51:28 2023
 VHDL CONFIGURATION pixel_behav_cfg
     Configuration applies to entity: pixel
     Block configuration applies to architecture: behav
@@ -1142,7 +1142,7 @@ VHDL CONFIGURATION pixel_behav_cfg
     Depends on: P ieee numeric_std :ASDNFgHXf_ih3J@9F3Ze1
     Depends on: C work graphic_toplvl_behaviour_cfg LAiKbWojSlER1^Gbf4zW20
     Depends on: C work mouse_logic_behav_cfg Jah4[dFbF@^@E:CCg250c3
-    Depends on: A work pixel behav zFP=?:UXVKB8nn^PBQB=22
+    Depends on: A work pixel behav F2gEOT591E[=GNfSfOQGN2
     Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
     Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
     Depends on: E work pixel InmaJ6JT=D20PQ3iHgL>`0
@@ -1151,12 +1151,31 @@ VHDL CONFIGURATION pixel_behav_cfg
     HDL source file: VHDL/pixel_behav_cfg.vhd
     Source file: VHDL/pixel_behav_cfg.vhd
     Start location: VHDL/pixel_behav_cfg.vhd:1
-    Version string: V8EMTk9A3LbR@WJ[ESPLb0
+    Version string: kVSG3=JY9S_XB5Wh3_k6T1
     Opcode format: 10.5b; VCOM SE-64 Object version 63
     VHDL language standard: 3 (VHDL-2008)
-    Compile time: Tue Jan 17 19:10:08 2023
+    Compile time: Wed Jan 18 09:15:54 2023
     Compiled in vopt flow
-    Compile options: -quiet -nologo -2008 -just C -lower -explicit -work work
+    Compile options: -quiet -nologo -2008 -lower -explicit -work work
+    Compile defaults: Explicit=1 CvgOpt=0
+VHDL CONFIGURATION pixel_routed_cfg
+    Configuration applies to entity: pixel
+    Block configuration applies to architecture: routed
+    Depends on: A work pixel routed fOm6DO=^GzS>^Y:nzE?D=0
+    Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
+    Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
+    Depends on: E work pixel InmaJ6JT=D20PQ3iHgL>`0
+    Source modified time: Wed Jan 18 09:15:59 2023
+    Source directory: /home/ghpdohmen/epo3/epo3/help
+    HDL source file: VHDL/pixel_routed_cfg.vhd
+    Source file: VHDL/pixel_routed_cfg.vhd
+    Start location: VHDL/pixel_routed_cfg.vhd:1
+    Version string: _fkkYG2eo;lcXFdnU6YQV0
+    Opcode format: 10.5b; VCOM SE-64 Object version 63
+    VHDL language standard: 3 (VHDL-2008)
+    Compile time: Wed Jan 18 09:15:59 2023
+    Compiled in vopt flow
+    Compile options: -quiet -nologo -2008 -lower -explicit -work work
     Compile defaults: Explicit=1 CvgOpt=0
 VHDL CONFIGURATION pixel_synthesised_cfg
     Configuration applies to entity: pixel

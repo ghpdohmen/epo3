@@ -123,8 +123,6 @@ begin
 	end if;
 		
 	end case;
- else
- end if;
 
 
 end process;

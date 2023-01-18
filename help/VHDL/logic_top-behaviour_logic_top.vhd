@@ -35,7 +35,7 @@ component color is
 end component;
 
 begin
-x1: x port map (clk=>clk,reset=>reset,dx=>dx,handshakemi=>handshakemi,tempx=>tempx,handshakeim=>handshakeim);  
+x1: x port map (clk=>clk,reset=>reset,dx=>dx,handshakemi=>handshakemi,tempx=>tempx,handshakeimx=>handshakeim);  
 y1: y port map (clk=>clk,reset=>reset,dy=>dy,handshakemi=>handshakemi,tempy=>tempy,handshakeim=>handshakeim);  
 color1: color port map (clk=>clk,reset=>reset,buttons=>buttons,handshakemi=>handshakemi,countlow=>countlow,output_color=>output_color,draw=>draw,rescount=>rescount,middelstemuisknop => middelstemuisknop,handshakeim=>handshakeim); 
 end behaviour_logic_top;
