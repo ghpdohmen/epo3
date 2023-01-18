@@ -12,8 +12,8 @@ signal input_register: std_logic_vector( 3 downto 0);
 signal locx_unsigned: unsigned(3 downto 0);
 signal locx : std_logic_vector(3 downto 0);
 signal sel: std_logic;
-constant minimal : unsigned ( 3 downto 0):= "0000" ;
-constant maximal : unsigned ( 3 downto 0):= "1110";
+constant minimal : integer:= 0 ;
+constant maximal : integer:= 14;
 signal bound_low: unsigned ( 3 downto 0);
 
 begin
@@ -83,18 +83,18 @@ input_unsigned <= unsigned(dx);
 process(dx, output_unsigned, input_unsigned)
 begin
     if (dx(3)='1') then
-     	bound_low <= unsigned(input_register) - ('0' & input_unsigned(2 downto 0));
-	if(bound_low < minimal) then
-		locx_unsigned <= minimal;
+     	--bound_low <= unsigned(input_register) - ('0' & input_unsigned(2 downto 0));
+	if((to_integer(unsigned(input_register))-to_integer(unsigned(dx(2 downto 0))))< minimal) then
+		locx_unsigned <= (others=>'0');
 	else
-		locx_unsigned<=bound_low;
+		locx_unsigned <= unsigned(input_register)-('0' & input_unsigned(2 downto 0));
 	end if;
     else
-    	bound_low<= unsigned(input_register) + ('0' & input_unsigned(2 downto 0));
-		if(bound_low > maximal) then
-			locx_unsigned <= maximal;
+    	--bound_low<= unsigned(input_register) + ('0' & input_unsigned(2 downto 0));
+		if((to_integer(unsigned(input_register)) + to_integer(unsigned(dx(2 downto 0)))) > maximal) then
+			locx_unsigned <= "1110";
 		else
-			locx_unsigned <= bound_low;
+			locx_unsigned <= unsigned(input_register) + ('0' & input_unsigned(2 downto 0));
 		end if;
     end if;
 	    	    
