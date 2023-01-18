@@ -9,7 +9,7 @@ component x is
         dx          : in  std_logic_vector(3 downto 0);
         handshakemi : in  std_logic;
         tempx       : out std_logic_vector(3 downto 0);
-        handshakeim : out std_logic);
+        handshakeimx : out std_logic);
 end component;
 
 component y is
@@ -18,7 +18,7 @@ component y is
         dy          : in  std_logic_vector(3 downto 0);
         handshakemi : in  std_logic;
         tempy       : out std_logic_vector(3 downto 0);
-        handshakeim : out std_logic);
+        handshakeimy : out std_logic);
 end component;
 
 component color is
@@ -31,11 +31,12 @@ component color is
 	draw: out std_logic;
 	rescount: out std_logic;
 	middelstemuisknop: out std_logic;
-	handshakeim: out std_logic);
+	handshakeimc: out std_logic);
 end component;
-
+signal handshakeimx, handshakeimy,handshakeimc:std_logic;
 begin
-x1: x port map (clk=>clk,reset=>reset,dx=>dx,handshakemi=>handshakemi,tempx=>tempx,handshakeimx=>handshakeim);  
-y1: y port map (clk=>clk,reset=>reset,dy=>dy,handshakemi=>handshakemi,tempy=>tempy,handshakeim=>handshakeim);  
-color1: color port map (clk=>clk,reset=>reset,buttons=>buttons,handshakemi=>handshakemi,countlow=>countlow,output_color=>output_color,draw=>draw,rescount=>rescount,middelstemuisknop => middelstemuisknop,handshakeim=>handshakeim); 
+handshakeim <= (handshakeimx and handshakeimy and handshakeimc);
+x1: x port map (clk=>clk,reset=>reset,dx=>dx,handshakemi=>handshakemi,tempx=>tempx,handshakeimx=>handshakeimx);  
+y1: y port map (clk=>clk,reset=>reset,dy=>dy,handshakemi=>handshakemi,tempy=>tempy,handshakeimy=>handshakeimy);  
+color1: color port map (clk=>clk,reset=>reset,buttons=>buttons,handshakemi=>handshakemi,countlow=>countlow,output_color=>output_color,draw=>draw,rescount=>rescount,middelstemuisknop => middelstemuisknop,handshakeimc=>handshakeimc); 
 end behaviour_logic_top;
