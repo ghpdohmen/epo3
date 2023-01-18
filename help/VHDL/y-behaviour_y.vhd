@@ -31,7 +31,7 @@ Handshake: process(handshakemi, state)
         when idle => 
             sel<='0';
             handshakeim<='0';
-            if (handshakemi='1') then 
+            if (handshakemiy='1') then 
                 next_state<=increment;
             else 
                 next_state<= idle;
@@ -39,13 +39,13 @@ Handshake: process(handshakemi, state)
 
         when increment =>
             sel<= '1';
-            handshakeim<= '0';
+            handshakeimy<= '0';
             next_state<=ready;
 
         when ready =>
             sel<='0';
             handshakeim<= '1';
-            if (handshakemi='0') then 
+            if (handshakemiy='0') then 
                 next_state<= idle;
             else 
                 next_state<= ready;
