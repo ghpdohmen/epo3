@@ -11,6 +11,6 @@ entity color is
 	draw: out std_logic;
 	rescount: out std_logic;
 	middelstemuisknop: out std_logic;
-	handshakeim: out std_logic);
+	handshakeimc: out std_logic);
 end color;
 
