@@ -6,12 +6,15 @@ architecture behaviour_y of y is
 
 type state_type is (idle, increment, ready); 
 signal state, next_state: state_type;
-signal input_signed: signed(3 downto 0);
-signal output_signed: signed(3 downto 0);
+signal input_unsigned: unsigned(3 downto 0);
+signal output_unsigned: unsigned(3 downto 0);
 signal input_register: std_logic_vector( 3 downto 0);
-signal locy_signed: signed(3 downto 0);
+signal locy_unsigned: unsigned(3 downto 0);
 signal locy : std_logic_vector(3 downto 0);
 signal sel: std_logic;
+constant minimal : unsigned ( 3 downto 0):= "0000" ;
+constant maximal : unsigned ( 3 downto 0):= "1110";
+signal bound_low: unsigned ( 3 downto 0);
 
 begin
 reg2: process(clk)
@@ -73,21 +76,29 @@ reg: process(clk)
         end if;
     end if;
 end process;
-output_signed<= signed(tempy);
+output_unsigned<= unsigned(tempy);
 
-input_signed <= signed(dy);
+input_unsigned <= unsigned(dy);
 
-process(dy, output_signed, input_signed)
+process(dy, output_unsigned, input_unsigned)
 begin
     if (dy(3)='1') then
-     	locy_signed <= signed(input_register) - ('0' & input_signed(2 downto 0));
-	
+     	bound_low <= unsigned(input_register) - ('0' & input_unsigned(2 downto 0));
+	if(bound_low < minimal) then
+		locy_unsigned <= minimal;
+	else
+		locy_unsigned <= bound_low;
+	end if;
     else
-    	locy_signed<= signed(input_register) + ('0' & input_signed(2 downto 0));
+    	bound_low<= unsigned(input_register) + ('0' & input_unsigned(2 downto 0));
+		if(bound_low > maximal) then
+			locy_unsigned <= maximal;
+		else
+			locy_unsigned <= bound_low;
+		end if;
     end if;
 end process;
 
-locy <= std_logic_vector(locy_signed);
+locy <= std_logic_vector(locy_unsigned);
 
 end behaviour_y;
-
