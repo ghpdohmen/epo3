@@ -120,14 +120,7 @@ component flipflop is
     );
 end component;
 
-component flipflop_bufr is
-   port(clk : in  std_logic;
-        D   : in  std_logic;
-        Q   : out std_logic);
-end component;
-
-
-signal cntReset25M, cntReset25M_main, cntReset25M_send, mux_select_main, bit9_reg_rst, reset_send, mux_select, muxReg, muxFSM, actBit, output_edgedet, cntReset15K, bit11_reg_rst, xflipfloprst, yflipfloprst, btnflipfloprst, count_debounce_reset, Data_in_intermediate, Data_in_buffered, Clk15k_intermediate, Clk15k_buffered			:std_logic;
+signal cntReset25M, cntReset25M_main, cntReset25M_send, mux_select_main, bit9_reg_rst, reset_send, mux_select, muxReg, muxFSM, actBit, output_edgedet, cntReset15K, bit11_reg_rst, xflipfloprst, yflipfloprst, btnflipfloprst, count_debounce_reset			:std_logic;
 signal count25M		:std_logic_vector(12 downto 0);
 signal count15k		:std_logic_vector(3 downto 0);
 signal data_sr_9bit:		std_logic_vector(8 downto 0);
@@ -160,7 +153,7 @@ cnt: counter25mhz port map (clk, cntReset25M, count25M);
 
 cntD: counter25mhz port map (clk, count_debounce_reset, count_debounce);
 
-ed: edge_debounce port map (clk, Clk15k_buffered, reset, count_debounce, count_debounce_reset, output_edgedet);
+ed: edge_debounce port map (clk, clk15k, reset, count_debounce, count_debounce_reset, output_edgedet);
 
 sr: shiftregister_9bit port map (clk, output_edgedet, data_sr_9bit, bit9_reg_rst, muxReg);
 
@@ -185,14 +178,7 @@ flipflop9: flipflop port map(clk, btnflipfloprst, btns(2),buttons(2));
 flipflop10: flipflop port map(clk, btnflipfloprst, btns(1),buttons(1));
 flipflop11: flipflop port map(clk, btnflipfloprst, btns(0),buttons(0));
 
-
-data_buffer1: flipflop_bufr port map(clk, Data_in, Data_in_intermediate);
-data_buffer2: flipflop_bufr port map(clk, Data_in_intermediate, Data_in_buffered);
-
-clk_buffer1: flipflop_bufr port map(clk, Clk15k, Clk15k_intermediate);
-clk_buffer2: flipflop_bufr port map(clk, Clk15k_intermediate, Clk15k_buffered);
-
-sr11: shiftregister_11bit port map (clk, output_edgedet, Data_in_buffered, reset, data_sr_11bit);
+sr11: shiftregister_11bit port map (clk, output_edgedet, Data_in, reset, data_sr_11bit);
 
 end behav;
 
