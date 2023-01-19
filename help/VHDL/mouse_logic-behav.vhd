@@ -44,7 +44,6 @@ component logic_top is
 	handshakeim: out std_logic);
 end component;
 
-signal rst, led0, led1, led2, led3, led5, led6, led7, led8, led9 : std_logic;
 
 signal handshake_mouse_out, handshake_mouse_in 								: std_logic;
 signal mouseX, mouseY			: std_logic_vector(2 downto 0);
