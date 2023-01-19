@@ -1096,39 +1096,39 @@ ENTITY pixel
     Compile options: -quiet -nologo -2008 -lower -explicit -work work
     Compile defaults: Explicit=1 CvgOpt=0
   ARCHITECTURE BODY routed
+    Source modified time: Thu Jan 19 09:54:50 2023
     Depends on: E work pixel S_j@<DcZ^fl@5@aCZmB0H3
     Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
     Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
     HDL source file: VHDL/pixel_PAR.vhd
     Source file: VHDL/pixel_PAR.vhd
     Start location: VHDL/pixel_PAR.vhd:7
-    Version string: ;41Dz@CB9n<PHO8K]0D5d3
+    Version string: N8XHQQFm=NCa?kID9Y0Ea2
     Opcode format: 10.5b; VCOM SE-64 Object version 63
     VHDL language standard: 3 (VHDL-2008)
-    Compile time: Thu Jan 19 09:33:54 2023
+    Compile time: Thu Jan 19 11:22:38 2023
     Debug Symbol file exists
     Compiled in vopt flow
     Compile options: -quiet -nologo -2008 -lower -explicit -work work
     Compile defaults: Explicit=1 CvgOpt=0
     Source directory: /home/ghpdohmen/epo3/epo3/help
-    Source modified time: Tue Jan 17 18:51:28 2023
   ARCHITECTURE BODY synthesised
+    Source modified time: Thu Jan 19 09:49:40 2023
     Depends on: E work pixel S_j@<DcZ^fl@5@aCZmB0H3
     Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
     Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
     HDL source file: VHDL/pixel_SYN.vhd
     Source file: VHDL/pixel_SYN.vhd
     Start location: VHDL/pixel_SYN.vhd:7
-    Version string: `f7HEL_g?0^T_Zl3M2nke2
+    Version string: 8`5IY:4bUDA4TNfNg@DJ[1
     Opcode format: 10.5b; VCOM SE-64 Object version 63
     VHDL language standard: 3 (VHDL-2008)
-    Compile time: Thu Jan 19 09:33:53 2023
+    Compile time: Thu Jan 19 09:50:28 2023
     Debug Symbol file exists
     Compiled in vopt flow
     Compile options: -quiet -nologo -2008 -lower -explicit -work work
     Compile defaults: Explicit=1 CvgOpt=0
     Source directory: /home/ghpdohmen/epo3/epo3/help
-    Source modified time: Tue Jan 17 18:51:28 2023
   ARCHITECTURE BODY behav
     Depends on: E work pixel S_j@<DcZ^fl@5@aCZmB0H3
     Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3

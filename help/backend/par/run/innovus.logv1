@@ -1,0 +1,404 @@
+[01/19 11:34:56      0s] 
+[01/19 11:34:56      0s] Cadence Innovus(TM) Implementation System.
+[01/19 11:34:56      0s] Copyright 2017 Cadence Design Systems, Inc. All rights reserved worldwide.
+[01/19 11:34:56      0s] 
+[01/19 11:34:56      0s] Version:	v17.11-s080_1, built Fri Aug 4 11:13:11 PDT 2017
+[01/19 11:34:56      0s] Options:	-files ../tcl/view2.tcl 
+[01/19 11:34:56      0s] Date:		Thu Jan 19 11:34:56 2023
+[01/19 11:34:56      0s] Host:		ce-epo3-cad.ewi.tudelft.nl (x86_64 w/Linux 3.10.0-1160.76.1.el7.x86_64) (1core*8cpus*Intel(R) Xeon(R) CPU E5-2683 v3 @ 2.00GHz 35840KB)
+[01/19 11:34:56      0s] OS:		Red Hat Enterprise Linux Server release 7.9 (Maipo)
+[01/19 11:34:56      0s] 
+[01/19 11:34:56      0s] License:
+[01/19 11:34:56      0s] 		invs	Innovus Implementation System	17.1	checkout succeeded
+[01/19 11:34:56      0s] 		8 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.
+[01/19 11:35:06      9s] @(#)CDS: Innovus v17.11-s080_1 (64bit) 08/04/2017 11:13 (Linux 2.6.18-194.el5)
+[01/19 11:35:06      9s] @(#)CDS: NanoRoute 17.11-s080_1 NR170721-2155/17_11-UB (database version 2.30, 390.7.1) {superthreading v1.44}
+[01/19 11:35:06      9s] @(#)CDS: AAE 17.11-s034 (64bit) 08/04/2017 (Linux 2.6.18-194.el5)
+[01/19 11:35:06      9s] @(#)CDS: CTE 17.11-s053_1 () Aug  1 2017 23:31:41 ( )
+[01/19 11:35:06      9s] @(#)CDS: SYNTECH 17.11-s012_1 () Jul 21 2017 02:29:12 ( )
+[01/19 11:35:06      9s] @(#)CDS: CPE v17.11-s095
+[01/19 11:35:06      9s] @(#)CDS: IQRC/TQRC 16.1.1-s215 (64bit) Thu Jul  6 20:18:10 PDT 2017 (Linux 2.6.18-194.el5)
+[01/19 11:35:06      9s] @(#)CDS: OA 22.50-p063 Fri Feb  3 19:45:13 2017
+[01/19 11:35:06      9s] @(#)CDS: SGN 10.10-p124 (19-Aug-2014) (64 bit executable)
+[01/19 11:35:06      9s] @(#)CDS: RCDB 11.10
+[01/19 11:35:06      9s] --- Running on ce-epo3-cad.ewi.tudelft.nl (x86_64 w/Linux 3.10.0-1160.76.1.el7.x86_64) (1core*8cpus*Intel(R) Xeon(R) CPU E5-2683 v3 @ 2.00GHz 35840KB) ---
+[01/19 11:35:06      9s] Create and set the environment variable TMPDIR to /tmp/innovus_temp_55213_ce-epo3-cad.ewi.tudelft.nl_ghpdohmen_cULheq.
+
+[01/19 11:35:06      9s] Change the soft stacksize limit to 0.2%RAM (31 mbytes). Set global soft_stack_size_limit to change the value.
+[01/19 11:35:06     10s] 
+[01/19 11:35:06     10s] **INFO:  MMMC transition support version v31-84 
+[01/19 11:35:06     10s] 
+[01/19 11:35:06     10s] <CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+[01/19 11:35:06     10s] <CMD> suppressMessage ENCEXT-2799
+[01/19 11:35:07     10s] <CMD> getDrawView
+[01/19 11:35:07     10s] <CMD> loadWorkspace -name Physical
+[01/19 11:35:07     10s] Sourcing file "../tcl/view2.tcl" ...
+[01/19 11:35:07     10s] <CMD> restoreDesign /home/ghpdohmen/epo3/epo3/help/backend/par/out/pixel.enc.dat pixel
+[01/19 11:35:07     10s] #% Begin load design ... (date=01/19 11:35:07, mem=441.9M)
+[01/19 11:35:07     10s] Set Default Input Pin Transition as 0.1 ps.
+[01/19 11:35:07     10s] **WARN: (GLOBAL-100):	Global 'timing_enable_default_delay_arc' has become obsolete. It will be removed in the next release.
+[01/19 11:35:07     10s] % Begin Load MMMC data ... (date=01/19 11:35:07, mem=443.2M)
+[01/19 11:35:07     10s] % End Load MMMC data ... (date=01/19 11:35:07, total cpu=0:00:00.0, real=0:00:00.0, peak res=443.4M, current mem=443.4M)
+[01/19 11:35:07     10s] 
+[01/19 11:35:07     10s] Loading LEF file /home/ghpdohmen/epo3/epo3/help/backend/par/out/pixel.enc.dat/libs/lef/tcb018gbwp7t_6lm.lef ...
+[01/19 11:35:07     10s] Set DBUPerIGU to M2 pitch 1120.
+[01/19 11:35:07     10s] **WARN: (IMPLF-200):	Pin 'I' in macro 'ANTENNABWP7T' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[01/19 11:35:07     10s] Type 'man IMPLF-200' for more detail.
+[01/19 11:35:07     10s] 
+[01/19 11:35:07     10s] viaInitial starts at Thu Jan 19 11:35:07 2023
+viaInitial ends at Thu Jan 19 11:35:07 2023
+Loading view definition file from /home/ghpdohmen/epo3/epo3/help/backend/par/out/pixel.enc.dat/viewDefinition.tcl
+[01/19 11:35:07     10s] Reading wc timing library '/data/designkit/tsmc-180nm/lib/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcb018gbwp7t_270a/tcb018gbwp7twc.lib' ...
+[01/19 11:35:07     10s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN2D0BWP7T' is not defined in the library. (File /data/designkit/tsmc-180nm/lib/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcb018gbwp7t_270a/tcb018gbwp7twc.lib)
+[01/19 11:35:07     10s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN2D1BWP7T' is not defined in the library. (File /data/designkit/tsmc-180nm/lib/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcb018gbwp7t_270a/tcb018gbwp7twc.lib)
+[01/19 11:35:07     10s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN2D2BWP7T' is not defined in the library. (File /data/designkit/tsmc-180nm/lib/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcb018gbwp7t_270a/tcb018gbwp7twc.lib)
+[01/19 11:35:07     10s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN2D4BWP7T' is not defined in the library. (File /data/designkit/tsmc-180nm/lib/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcb018gbwp7t_270a/tcb018gbwp7twc.lib)
+[01/19 11:35:07     10s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN2XD1BWP7T' is not defined in the library. (File /data/designkit/tsmc-180nm/lib/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcb018gbwp7t_270a/tcb018gbwp7twc.lib)
+[01/19 11:35:07     10s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN3D0BWP7T' is not defined in the library. (File /data/designkit/tsmc-180nm/lib/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcb018gbwp7t_270a/tcb018gbwp7twc.lib)
+[01/19 11:35:07     10s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN3D1BWP7T' is not defined in the library. (File /data/designkit/tsmc-180nm/lib/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcb018gbwp7t_270a/tcb018gbwp7twc.lib)
+[01/19 11:35:07     10s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN3D2BWP7T' is not defined in the library. (File /data/designkit/tsmc-180nm/lib/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcb018gbwp7t_270a/tcb018gbwp7twc.lib)
+[01/19 11:35:07     10s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN3D4BWP7T' is not defined in the library. (File /data/designkit/tsmc-180nm/lib/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcb018gbwp7t_270a/tcb018gbwp7twc.lib)
+[01/19 11:35:07     10s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN3XD1BWP7T' is not defined in the library. (File /data/designkit/tsmc-180nm/lib/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcb018gbwp7t_270a/tcb018gbwp7twc.lib)
+[01/19 11:35:07     10s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN4D0BWP7T' is not defined in the library. (File /data/designkit/tsmc-180nm/lib/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcb018gbwp7t_270a/tcb018gbwp7twc.lib)
+[01/19 11:35:07     10s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN4D1BWP7T' is not defined in the library. (File /data/designkit/tsmc-180nm/lib/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcb018gbwp7t_270a/tcb018gbwp7twc.lib)
+[01/19 11:35:07     10s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN4D2BWP7T' is not defined in the library. (File /data/designkit/tsmc-180nm/lib/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcb018gbwp7t_270a/tcb018gbwp7twc.lib)
+[01/19 11:35:07     10s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN4D4BWP7T' is not defined in the library. (File /data/designkit/tsmc-180nm/lib/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcb018gbwp7t_270a/tcb018gbwp7twc.lib)
+[01/19 11:35:07     10s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN4XD1BWP7T' is not defined in the library. (File /data/designkit/tsmc-180nm/lib/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcb018gbwp7t_270a/tcb018gbwp7twc.lib)
+[01/19 11:35:07     10s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AO211D0BWP7T' is not defined in the library. (File /data/designkit/tsmc-180nm/lib/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcb018gbwp7t_270a/tcb018gbwp7twc.lib)
+[01/19 11:35:07     10s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AO211D1BWP7T' is not defined in the library. (File /data/designkit/tsmc-180nm/lib/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcb018gbwp7t_270a/tcb018gbwp7twc.lib)
+[01/19 11:35:07     10s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AO211D2BWP7T' is not defined in the library. (File /data/designkit/tsmc-180nm/lib/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcb018gbwp7t_270a/tcb018gbwp7twc.lib)
+[01/19 11:35:07     10s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AO21D0BWP7T' is not defined in the library. (File /data/designkit/tsmc-180nm/lib/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcb018gbwp7t_270a/tcb018gbwp7twc.lib)
+[01/19 11:35:07     10s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AO21D1BWP7T' is not defined in the library. (File /data/designkit/tsmc-180nm/lib/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcb018gbwp7t_270a/tcb018gbwp7twc.lib)
+[01/19 11:35:07     10s] Message <TECHLIB-436> has exceeded the message display limit of '20'. Use 'set_message -no_limit -id list_of_msgIDs' to reset the message limit.
+[01/19 11:35:08     11s] **WARN: (TECHLIB-302):	No function defined for cell 'DCAPBWP7T'. The cell will only be used for analysis. (File /data/designkit/tsmc-180nm/lib/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcb018gbwp7t_270a/tcb018gbwp7twc.lib)
+[01/19 11:35:08     11s] **WARN: (TECHLIB-302):	No function defined for cell 'DCAP8BWP7T'. The cell will only be used for analysis. (File /data/designkit/tsmc-180nm/lib/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcb018gbwp7t_270a/tcb018gbwp7twc.lib)
+[01/19 11:35:08     11s] **WARN: (TECHLIB-302):	No function defined for cell 'DCAP64BWP7T'. The cell will only be used for analysis. (File /data/designkit/tsmc-180nm/lib/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcb018gbwp7t_270a/tcb018gbwp7twc.lib)
+[01/19 11:35:08     11s] **WARN: (TECHLIB-302):	No function defined for cell 'DCAP4BWP7T'. The cell will only be used for analysis. (File /data/designkit/tsmc-180nm/lib/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcb018gbwp7t_270a/tcb018gbwp7twc.lib)
+[01/19 11:35:08     11s] **WARN: (TECHLIB-302):	No function defined for cell 'DCAP32BWP7T'. The cell will only be used for analysis. (File /data/designkit/tsmc-180nm/lib/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcb018gbwp7t_270a/tcb018gbwp7twc.lib)
+[01/19 11:35:08     11s] **WARN: (TECHLIB-302):	No function defined for cell 'DCAP16BWP7T'. The cell will only be used for analysis. (File /data/designkit/tsmc-180nm/lib/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcb018gbwp7t_270a/tcb018gbwp7twc.lib)
+[01/19 11:35:08     11s] **WARN: (TECHLIB-302):	No function defined for cell 'ANTENNABWP7T'. The cell will only be used for analysis. (File /data/designkit/tsmc-180nm/lib/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcb018gbwp7t_270a/tcb018gbwp7twc.lib)
+[01/19 11:35:08     11s] Read 560 cells in library 'tcb018gbwp7twc' 
+[01/19 11:35:08     11s] Reading bc timing library '/data/designkit/tsmc-180nm/lib/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcb018gbwp7t_270a/tcb018gbwp7tbc.lib' ...
+[01/19 11:35:09     12s] **WARN: (TECHLIB-302):	No function defined for cell 'DCAPBWP7T'. The cell will only be used for analysis. (File /data/designkit/tsmc-180nm/lib/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcb018gbwp7t_270a/tcb018gbwp7tbc.lib)
+[01/19 11:35:09     12s] **WARN: (TECHLIB-302):	No function defined for cell 'DCAP8BWP7T'. The cell will only be used for analysis. (File /data/designkit/tsmc-180nm/lib/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcb018gbwp7t_270a/tcb018gbwp7tbc.lib)
+[01/19 11:35:09     12s] **WARN: (TECHLIB-302):	No function defined for cell 'DCAP64BWP7T'. The cell will only be used for analysis. (File /data/designkit/tsmc-180nm/lib/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcb018gbwp7t_270a/tcb018gbwp7tbc.lib)
+[01/19 11:35:09     12s] **WARN: (TECHLIB-302):	No function defined for cell 'DCAP4BWP7T'. The cell will only be used for analysis. (File /data/designkit/tsmc-180nm/lib/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcb018gbwp7t_270a/tcb018gbwp7tbc.lib)
+[01/19 11:35:09     12s] **WARN: (TECHLIB-302):	No function defined for cell 'DCAP32BWP7T'. The cell will only be used for analysis. (File /data/designkit/tsmc-180nm/lib/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcb018gbwp7t_270a/tcb018gbwp7tbc.lib)
+[01/19 11:35:09     12s] **WARN: (TECHLIB-302):	No function defined for cell 'DCAP16BWP7T'. The cell will only be used for analysis. (File /data/designkit/tsmc-180nm/lib/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcb018gbwp7t_270a/tcb018gbwp7tbc.lib)
+[01/19 11:35:09     12s] **WARN: (TECHLIB-302):	No function defined for cell 'ANTENNABWP7T'. The cell will only be used for analysis. (File /data/designkit/tsmc-180nm/lib/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcb018gbwp7t_270a/tcb018gbwp7tbc.lib)
+[01/19 11:35:09     12s] Read 560 cells in library 'tcb018gbwp7tbc' 
+[01/19 11:35:09     12s] *** End library_loading (cpu=0.04min, real=0.03min, mem=32.9M, fe_cpu=0.22min, fe_real=0.22min, fe_mem=524.8M) ***
+[01/19 11:35:09     12s] % Begin Load netlist data ... (date=01/19 11:35:09, mem=567.2M)
+[01/19 11:35:09     12s] *** Begin netlist parsing (mem=524.8M) ***
+[01/19 11:35:09     12s] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR4D2BWP7T' is defined in LEF but not in the timing library.
+[01/19 11:35:09     12s] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR4D2BWP7T' is defined in LEF but not in the timing library.
+[01/19 11:35:09     12s] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR4D1BWP7T' is defined in LEF but not in the timing library.
+[01/19 11:35:09     12s] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR4D1BWP7T' is defined in LEF but not in the timing library.
+[01/19 11:35:09     12s] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR4D0BWP7T' is defined in LEF but not in the timing library.
+[01/19 11:35:09     12s] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR4D0BWP7T' is defined in LEF but not in the timing library.
+[01/19 11:35:09     12s] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR3D2BWP7T' is defined in LEF but not in the timing library.
+[01/19 11:35:09     12s] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR3D2BWP7T' is defined in LEF but not in the timing library.
+[01/19 11:35:09     12s] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR3D1BWP7T' is defined in LEF but not in the timing library.
+[01/19 11:35:09     12s] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR3D1BWP7T' is defined in LEF but not in the timing library.
+[01/19 11:35:09     12s] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR3D0BWP7T' is defined in LEF but not in the timing library.
+[01/19 11:35:09     12s] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR3D0BWP7T' is defined in LEF but not in the timing library.
+[01/19 11:35:09     12s] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR2D2BWP7T' is defined in LEF but not in the timing library.
+[01/19 11:35:09     12s] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR2D2BWP7T' is defined in LEF but not in the timing library.
+[01/19 11:35:09     12s] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR2D1BWP7T' is defined in LEF but not in the timing library.
+[01/19 11:35:09     12s] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR2D1BWP7T' is defined in LEF but not in the timing library.
+[01/19 11:35:09     12s] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR2D0BWP7T' is defined in LEF but not in the timing library.
+[01/19 11:35:09     12s] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR2D0BWP7T' is defined in LEF but not in the timing library.
+[01/19 11:35:09     12s] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'XNR4D2BWP7T' is defined in LEF but not in the timing library.
+[01/19 11:35:09     12s] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'XNR4D2BWP7T' is defined in LEF but not in the timing library.
+[01/19 11:35:09     12s] **WARN: (EMS-27):	Message (IMPVL-159) has exceeded the current message display limit of 20.
+[01/19 11:35:09     12s] To increase the message display limit, refer to the product command reference manual.
+[01/19 11:35:09     12s] Created 560 new cells from 2 timing libraries.
+[01/19 11:35:09     12s] Reading netlist ...
+[01/19 11:35:09     12s] Backslashed names will retain backslash and a trailing blank character.
+[01/19 11:35:09     12s] Reading verilogBinary netlist '/home/ghpdohmen/epo3/epo3/help/backend/par/out/pixel.enc.dat/pixel.v.bin'
+[01/19 11:35:09     12s] Reading binary database version 1
+[01/19 11:35:09     12s] 
+[01/19 11:35:09     12s] *** Memory Usage v#1 (Current mem = 532.812M, initial mem = 187.680M) ***
+[01/19 11:35:09     12s] *** End netlist parsing (cpu=0:00:00.0, real=0:00:00.0, mem=532.8M) ***
+[01/19 11:35:09     12s] % End Load netlist data ... (date=01/19 11:35:09, total cpu=0:00:00.0, real=0:00:00.0, peak res=567.2M, current mem=487.2M)
+[01/19 11:35:09     12s] Set top cell to pixel.
+[01/19 11:35:10     13s] Hooked 1120 DB cells to tlib cells.
+[01/19 11:35:10     13s] Starting recursive module instantiation check.
+[01/19 11:35:10     13s] No recursion found.
+[01/19 11:35:10     13s] Building hierarchical netlist for Cell pixel ...
+[01/19 11:35:10     13s] *** Netlist is unique.
+[01/19 11:35:10     13s] ** info: there are 1129 modules.
+[01/19 11:35:10     13s] ** info: there are 4205 stdCell insts.
+[01/19 11:35:10     13s] 
+[01/19 11:35:10     13s] *** Memory Usage v#1 (Current mem = 578.488M, initial mem = 187.680M) ***
+[01/19 11:35:10     13s] *info: set bottom ioPad orient R0
+[01/19 11:35:10     13s] **WARN: (IMPFP-3961):	The techSite 'dcore7T' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[01/19 11:35:10     13s] Type 'man IMPFP-3961' for more detail.
+[01/19 11:35:10     13s] **WARN: (IMPFP-3961):	The techSite 'ccore7T' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[01/19 11:35:10     13s] Type 'man IMPFP-3961' for more detail.
+[01/19 11:35:10     13s] **WARN: (IMPFP-3961):	The techSite 'bcoreExt7T' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[01/19 11:35:10     13s] Type 'man IMPFP-3961' for more detail.
+[01/19 11:35:10     13s] **WARN: (IMPFP-3961):	The techSite 'bcore7T' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[01/19 11:35:10     13s] Type 'man IMPFP-3961' for more detail.
+[01/19 11:35:10     13s] Generated pitch 1.12 in METAL6 is different from 0.9 defined in technology file in preferred direction.
+[01/19 11:35:10     13s] Set Default Net Delay as 1000 ps.
+[01/19 11:35:10     13s] Set Default Net Load as 0.5 pF. 
+[01/19 11:35:10     13s] Set Default Input Pin Transition as 0.1 ps.
+[01/19 11:35:10     13s] Loading preference file /home/ghpdohmen/epo3/epo3/help/backend/par/out/pixel.enc.dat/gui.pref.tcl ...
+[01/19 11:35:10     13s] #WARNING (NRIF-80) When droutePostRouteSwapVia is set to 'multiCut', the post route via swapping step will be performed on all nets, and to double cut vias. To swap to DFM vias based on via weight, please set the option to 'true'.
+[01/19 11:35:10     13s] **WARN: (IMPTCM-77):	Option "-drouteStartIteration" for command setNanoRouteMode is obsolete and will be removed in a future release. The obsolete option still works in this release but to avoid this warning and to ensure compatibility with future releases, remove the obsolete option from your script.
+[01/19 11:35:10     13s] Extraction setup Started 
+[01/19 11:35:10     13s] Initializing multi-corner RC extraction with 2 active RC Corners ...
+[01/19 11:35:10     13s] Reading Capacitance Table File /home/ghpdohmen/epo3/epo3/help/backend/par/out/pixel.enc.dat/libs/mmmc/t018lo_1p6m_typical.captable ...
+[01/19 11:35:10     13s] Reading Capacitance Table File /home/ghpdohmen/epo3/epo3/help/backend/par/out/pixel.enc.dat/libs/mmmc/t018lo_1p6m_typical.captable ...
+[01/19 11:35:10     13s] Importing multi-corner RC tables ... 
+[01/19 11:35:10     13s] Summary of Active RC-Corners : 
+[01/19 11:35:10     13s]  
+[01/19 11:35:10     13s]  Analysis View: setup_wc
+[01/19 11:35:10     13s]     RC-Corner Name        : rc_wc
+[01/19 11:35:10     13s]     RC-Corner Index       : 0
+[01/19 11:35:10     13s]     RC-Corner Temperature : 125 Celsius
+[01/19 11:35:10     13s]     RC-Corner Cap Table   : '/home/ghpdohmen/epo3/epo3/help/backend/par/out/pixel.enc.dat/libs/mmmc/t018lo_1p6m_typical.captable'
+[01/19 11:35:10     13s]     RC-Corner PreRoute Res Factor         : 1
+[01/19 11:35:10     13s]     RC-Corner PreRoute Cap Factor         : 1
+[01/19 11:35:10     13s]     RC-Corner PostRoute Res Factor        : 1 {1 1 1}
+[01/19 11:35:10     13s]     RC-Corner PostRoute Cap Factor        : 1 {1 1 1}
+[01/19 11:35:10     13s]     RC-Corner PostRoute XCap Factor       : 1 {1 1 1}
+[01/19 11:35:10     13s]     RC-Corner PreRoute Clock Res Factor   : 1	[Derived from postRoute_res (effortLevel low)]
+[01/19 11:35:10     13s]     RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from postRoute_cap (effortLevel low)]
+[01/19 11:35:10     13s]     RC-Corner PostRoute Clock Cap Factor  : 1 {1 1 1} 	[Derived from postRoute_cap (effortLevel low)]
+[01/19 11:35:10     13s]     RC-Corner PostRoute Clock Res Factor  : 1 {1 1 1} 	[Derived from postRoute_res (effortLevel low)]
+[01/19 11:35:10     13s]  
+[01/19 11:35:10     13s]  Analysis View: hold_bc
+[01/19 11:35:10     13s]     RC-Corner Name        : rc_bc
+[01/19 11:35:10     13s]     RC-Corner Index       : 1
+[01/19 11:35:10     13s]     RC-Corner Temperature : 0 Celsius
+[01/19 11:35:10     13s]     RC-Corner Cap Table   : '/home/ghpdohmen/epo3/epo3/help/backend/par/out/pixel.enc.dat/libs/mmmc/t018lo_1p6m_typical.captable'
+[01/19 11:35:10     13s]     RC-Corner PreRoute Res Factor         : 1
+[01/19 11:35:10     13s]     RC-Corner PreRoute Cap Factor         : 1
+[01/19 11:35:10     13s]     RC-Corner PostRoute Res Factor        : 1 {1 1 1}
+[01/19 11:35:10     13s]     RC-Corner PostRoute Cap Factor        : 1 {1 1 1}
+[01/19 11:35:10     13s]     RC-Corner PostRoute XCap Factor       : 1 {1 1 1}
+[01/19 11:35:10     13s]     RC-Corner PreRoute Clock Res Factor   : 1	[Derived from postRoute_res (effortLevel low)]
+[01/19 11:35:10     13s]     RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from postRoute_cap (effortLevel low)]
+[01/19 11:35:10     13s]     RC-Corner PostRoute Clock Cap Factor  : 1 {1 1 1} 	[Derived from postRoute_cap (effortLevel low)]
+[01/19 11:35:10     13s]     RC-Corner PostRoute Clock Res Factor  : 1 {1 1 1} 	[Derived from postRoute_res (effortLevel low)]
+[01/19 11:35:10     13s] *Info: initialize multi-corner CTS.
+[01/19 11:35:10     13s] Reading timing constraints file '/home/ghpdohmen/epo3/epo3/help/backend/par/out/pixel.enc.dat/mmmc/modes/timing_constrain/timing_constrain.sdc' ...
+[01/19 11:35:10     13s] Current (total cpu=0:00:13.6, real=0:00:14.0, peak res=646.8M, current mem=646.8M)
+[01/19 11:35:10     13s] **WARN: (IMPCTE-290):	Could not locate cell INVD0BWP7T in any library for view hold_bc.
+[01/19 11:35:10     13s] **WARN: (IMPCTE-290):	Could not locate cell INVD0BWP7T in any library for view hold_bc.
+[01/19 11:35:10     13s] **WARN: (IMPCTE-290):	Could not locate cell INVD0BWP7T in any library for view hold_bc.
+[01/19 11:35:10     13s] **WARN: (IMPCTE-290):	Could not locate cell INVD0BWP7T in any library for view hold_bc.
+[01/19 11:35:10     13s] **WARN: (IMPCTE-290):	Could not locate cell INVD0BWP7T in any library for view hold_bc.
+[01/19 11:35:10     13s] **WARN: (IMPCTE-290):	Could not locate cell INVD0BWP7T in any library for view hold_bc.
+[01/19 11:35:10     13s] **WARN: (IMPCTE-290):	Could not locate cell INVD0BWP7T in any library for view hold_bc.
+[01/19 11:35:10     13s] **WARN: (IMPCTE-290):	Could not locate cell INVD0BWP7T in any library for view hold_bc.
+[01/19 11:35:10     13s] **WARN: (IMPCTE-290):	Could not locate cell INVD0BWP7T in any library for view hold_bc.
+[01/19 11:35:10     13s] **WARN: (IMPCTE-290):	Could not locate cell INVD0BWP7T in any library for view hold_bc.
+[01/19 11:35:10     13s] **WARN: (IMPCTE-290):	Could not locate cell INVD0BWP7T in any library for view hold_bc.
+[01/19 11:35:10     13s] **WARN: (IMPCTE-290):	Could not locate cell INVD0BWP7T in any library for view hold_bc.
+[01/19 11:35:10     13s] **WARN: (IMPCTE-290):	Could not locate cell INVD0BWP7T in any library for view hold_bc.
+[01/19 11:35:10     13s] **WARN: (IMPCTE-290):	Could not locate cell INVD0BWP7T in any library for view hold_bc.
+[01/19 11:35:10     13s] **WARN: (IMPCTE-290):	Could not locate cell INVD0BWP7T in any library for view hold_bc.
+[01/19 11:35:10     13s] **WARN: (IMPCTE-290):	Could not locate cell INVD0BWP7T in any library for view hold_bc.
+[01/19 11:35:10     13s] INFO (CTE): Constraints read successfully.
+[01/19 11:35:10     13s] Ending "Constraint file reading stats" (total cpu=0:00:00.0, real=0:00:00.0, peak res=660.5M, current mem=660.5M)
+[01/19 11:35:10     13s] Current (total cpu=0:00:13.7, real=0:00:14.0, peak res=660.5M, current mem=660.5M)
+[01/19 11:35:10     13s] Creating Cell Server ...(0, 1, 1, 1)
+[01/19 11:35:10     13s] Summary for sequential cells identification: 
+[01/19 11:35:10     13s]   Identified SBFF number: 126
+[01/19 11:35:10     13s]   Identified MBFF number: 0
+[01/19 11:35:10     13s]   Identified SB Latch number: 0
+[01/19 11:35:10     13s]   Identified MB Latch number: 0
+[01/19 11:35:10     13s]   Not identified SBFF number: 0
+[01/19 11:35:10     13s]   Not identified MBFF number: 0
+[01/19 11:35:10     13s]   Not identified SB Latch number: 0
+[01/19 11:35:10     13s]   Not identified MB Latch number: 0
+[01/19 11:35:10     13s]   Number of sequential cells which are not FFs: 34
+[01/19 11:35:10     13s] Total number of combinational cells: 393
+[01/19 11:35:10     13s] Total number of sequential cells: 160
+[01/19 11:35:10     13s] Total number of tristate cells: 7
+[01/19 11:35:10     13s] Total number of level shifter cells: 0
+[01/19 11:35:10     13s] Total number of power gating cells: 0
+[01/19 11:35:10     13s] Total number of isolation cells: 0
+[01/19 11:35:10     13s] Total number of power switch cells: 0
+[01/19 11:35:10     13s] Total number of pulse generator cells: 0
+[01/19 11:35:10     13s] Total number of always on buffers: 0
+[01/19 11:35:10     13s] Total number of retention cells: 0
+[01/19 11:35:10     13s] List of usable buffers: BUFFD0BWP7T BUFFD10BWP7T BUFFD12BWP7T BUFFD1BWP7T BUFFD1P5BWP7T BUFFD2BWP7T BUFFD2P5BWP7T CKBD0BWP7T BUFFD3BWP7T BUFFD4BWP7T BUFFD5BWP7T BUFFD6BWP7T BUFFD8BWP7T CKBD10BWP7T CKBD12BWP7T CKBD1BWP7T CKBD2BWP7T CKBD3BWP7T CKBD4BWP7T CKBD6BWP7T CKBD8BWP7T DEL015BWP7T DEL02BWP7T DEL01BWP7T GBUFFD1BWP7T GBUFFD3BWP7T GBUFFD2BWP7T GBUFFD8BWP7T
+[01/19 11:35:10     13s] Total number of usable buffers: 28
+[01/19 11:35:10     13s] List of unusable buffers:
+[01/19 11:35:10     13s] Total number of unusable buffers: 0
+[01/19 11:35:10     13s] List of usable inverters: CKND0BWP7T CKND10BWP7T CKND12BWP7T CKND1BWP7T CKND2BWP7T CKND3BWP7T CKND4BWP7T CKND6BWP7T CKND8BWP7T GINVD2BWP7T GINVD1BWP7T GINVD3BWP7T GINVD8BWP7T INVD0BWP7T INVD10BWP7T INVD12BWP7T INVD1BWP7T INVD2BWP7T INVD1P5BWP7T INVD2P5BWP7T INVD3BWP7T INVD4BWP7T INVD5BWP7T INVD6BWP7T INVD8BWP7T
+[01/19 11:35:10     13s] Total number of usable inverters: 25
+[01/19 11:35:10     13s] List of unusable inverters:
+[01/19 11:35:10     13s] Total number of unusable inverters: 0
+[01/19 11:35:10     13s] List of identified usable delay cells: DEL0BWP7T DEL1BWP7T DEL2BWP7T DEL3BWP7T DEL4BWP7T
+[01/19 11:35:10     13s] Total number of identified usable delay cells: 5
+[01/19 11:35:10     13s] List of identified unusable delay cells:
+[01/19 11:35:10     13s] Total number of identified unusable delay cells: 0
+[01/19 11:35:10     13s] Creating Cell Server, finished. 
+[01/19 11:35:10     13s] 
+[01/19 11:35:10     13s] Deleting Cell Server ...
+[01/19 11:35:10     13s] % Begin Load floorplan data ... (date=01/19 11:35:10, mem=663.5M)
+[01/19 11:35:10     13s] Reading floorplan file - /home/ghpdohmen/epo3/epo3/help/backend/par/out/pixel.enc.dat/pixel.fp.gz (mem = 722.6M).
+[01/19 11:35:10     13s] % Begin Load floorplan data ... (date=01/19 11:35:10, mem=663.6M)
+[01/19 11:35:10     13s] *info: reset 6381 existing net BottomPreferredLayer and AvoidDetour
+[01/19 11:35:10     13s] Deleting old partition specification.
+[01/19 11:35:10     13s] Set FPlanBox to (0 0 649600 649600)
+[01/19 11:35:10     13s] Generated pitch 1.12 in METAL6 is different from 0.9 defined in technology file in preferred direction.
+[01/19 11:35:10     13s]  ... processed partition successfully.
+[01/19 11:35:10     13s] Reading binary special route file /home/ghpdohmen/epo3/epo3/help/backend/par/out/pixel.enc.dat/pixel.fp.spr.gz (Created by Innovus v17.11-s080_1 on Thu Jan 19 09:54:39 2023, version: 1)
+[01/19 11:35:10     13s] There are 8 nets with weight being set
+[01/19 11:35:10     13s] There are 8 nets with bottomPreferredRoutingLayer being set
+[01/19 11:35:10     13s] There are 8 nets with avoidDetour being set
+[01/19 11:35:10     13s] Extracting standard cell pins and blockage ...... 
+[01/19 11:35:10     13s] Pin and blockage extraction finished
+[01/19 11:35:10     13s] % End Load floorplan data ... (date=01/19 11:35:10, total cpu=0:00:00.0, real=0:00:00.0, peak res=666.8M, current mem=666.8M)
+[01/19 11:35:10     13s] % End Load floorplan data ... (date=01/19 11:35:10, total cpu=0:00:00.1, real=0:00:00.0, peak res=666.8M, current mem=666.8M)
+[01/19 11:35:10     13s] % Begin Load SymbolTable ... (date=01/19 11:35:10, mem=666.8M)
+[01/19 11:35:10     13s] % End Load SymbolTable ... (date=01/19 11:35:10, total cpu=0:00:00.0, real=0:00:00.0, peak res=668.1M, current mem=668.1M)
+[01/19 11:35:10     13s] % Begin Load placement data ... (date=01/19 11:35:10, mem=668.1M)
+[01/19 11:35:10     13s] Reading placement file - /home/ghpdohmen/epo3/epo3/help/backend/par/out/pixel.enc.dat/pixel.place.gz.
+[01/19 11:35:10     13s] ** Reading stdCellPlacement_binary (Created by Innovus v17.11-s080_1 on Thu Jan 19 09:54:39 2023, version# 1) ...
+[01/19 11:35:11     13s] *** Completed restorePlace (cpu=0:00:00.0 real=0:00:01.0 mem=725.6M) ***
+[01/19 11:35:11     13s] Total net length = 1.617e+05 (7.014e+04 9.153e+04) (ext = 7.092e+02)
+[01/19 11:35:11     13s] % End Load placement data ... (date=01/19 11:35:11, total cpu=0:00:00.1, real=0:00:01.0, peak res=670.8M, current mem=670.8M)
+[01/19 11:35:11     13s] % Begin Load routing data ... (date=01/19 11:35:11, mem=670.8M)
+[01/19 11:35:11     13s] Reading routing file - /home/ghpdohmen/epo3/epo3/help/backend/par/out/pixel.enc.dat/pixel.route.gz.
+[01/19 11:35:11     13s] Reading Innovus routing data (Created by Innovus v17.11-s080_1 on Thu Jan 19 09:54:39 2023 Format: 16.2) ...
+[01/19 11:35:11     13s] Suppress "**WARN ..." messages.
+[01/19 11:35:11     13s] routingBox: (-1120 -1120) (650720 650720)
+[01/19 11:35:11     13s] coreBox:    (0 0) (649600 649600)
+[01/19 11:35:11     13s] Un-suppress "**WARN ..." messages.
+[01/19 11:35:11     13s] *** Total 6340 nets are successfully restored.
+[01/19 11:35:11     13s] *** Completed restoreRoute (cpu=0:00:00.1 real=0:00:00.0 mem=736.6M) ***
+[01/19 11:35:11     13s] % End Load routing data ... (date=01/19 11:35:11, total cpu=0:00:00.1, real=0:00:00.0, peak res=685.7M, current mem=685.7M)
+[01/19 11:35:11     13s] Loading Drc markers ...
+[01/19 11:35:11     13s] ... 83 markers are loaded ...
+[01/19 11:35:11     13s] ... 0 geometry drc markers are loaded ...
+[01/19 11:35:11     13s] ... 0 antenna drc markers are loaded ...
+[01/19 11:35:11     13s] Reading property file /home/ghpdohmen/epo3/epo3/help/backend/par/out/pixel.enc.dat/pixel.prop
+[01/19 11:35:11     13s] *** Completed restoreProperty (cpu=0:00:00.0 real=0:00:00.0 mem=736.6M) ***
+[01/19 11:35:11     14s] Set Default Input Pin Transition as 0.1 ps.
+[01/19 11:35:11     14s] **WARN: (GLOBAL-100):	Global 'timing_enable_default_delay_arc' has become obsolete. It will be removed in the next release.
+[01/19 11:35:11     14s] **WARN: (IMPEXT-7040):	A horizontal wire, passing through or close to location (78400,-470), lies outside of design boundary. Correct the wire routing and rerun extraction.
+[01/19 11:35:11     14s] **WARN: (IMPEXT-7040):	A horizontal wire, passing through or close to location (156800,-470), lies outside of design boundary. Correct the wire routing and rerun extraction.
+[01/19 11:35:11     14s] **WARN: (IMPEXT-7040):	A horizontal wire, passing through or close to location (235200,-470), lies outside of design boundary. Correct the wire routing and rerun extraction.
+[01/19 11:35:11     14s] **WARN: (IMPEXT-7040):	A horizontal wire, passing through or close to location (313600,-470), lies outside of design boundary. Correct the wire routing and rerun extraction.
+[01/19 11:35:11     14s] **WARN: (IMPEXT-7040):	A horizontal wire, passing through or close to location (392000,-470), lies outside of design boundary. Correct the wire routing and rerun extraction.
+[01/19 11:35:11     14s] **WARN: (IMPEXT-7040):	A horizontal wire, passing through or close to location (470400,-470), lies outside of design boundary. Correct the wire routing and rerun extraction.
+[01/19 11:35:11     14s] **WARN: (IMPEXT-7040):	A horizontal wire, passing through or close to location (548800,-470), lies outside of design boundary. Correct the wire routing and rerun extraction.
+[01/19 11:35:11     14s] **WARN: (IMPEXT-7040):	A horizontal wire, passing through or close to location (0,-470), lies outside of design boundary. Correct the wire routing and rerun extraction.
+[01/19 11:35:11     14s] **WARN: (IMPEXT-7040):	A horizontal wire, passing through or close to location (627200,-470), lies outside of design boundary. Correct the wire routing and rerun extraction.
+[01/19 11:35:11     14s] Initializing multi-corner capacitance tables ... 
+[01/19 11:35:11     14s] Initializing multi-corner resistance tables ...
+[01/19 11:35:11     14s] % Begin Load power constraints ... (date=01/19 11:35:11, mem=686.1M)
+[01/19 11:35:11     14s] % End Load power constraints ... (date=01/19 11:35:11, total cpu=0:00:00.0, real=0:00:00.0, peak res=686.1M, current mem=679.7M)
+[01/19 11:35:11     14s] Start generating vias ...
+[01/19 11:35:11     14s] #Skip building auto via since it is not turned on.
+[01/19 11:35:11     14s] Via generation completed.
+[01/19 11:35:11     14s] % Begin load AAE data ... (date=01/19 11:35:11, mem=682.1M)
+[01/19 11:35:11     14s] AAE DB initialization (MEM=766.707 CPU=0:00:00.1 REAL=0:00:00.0) 
+[01/19 11:35:11     14s] % End load AAE data ... (date=01/19 11:35:11, total cpu=0:00:00.1, real=0:00:00.0, peak res=684.9M, current mem=684.9M)
+[01/19 11:35:11     14s] Restoring CCOpt config...
+[01/19 11:35:11     14s] Creating Cell Server ...(0, 0, 0, 0)
+[01/19 11:35:11     14s] Summary for sequential cells identification: 
+[01/19 11:35:11     14s]   Identified SBFF number: 126
+[01/19 11:35:11     14s]   Identified MBFF number: 0
+[01/19 11:35:11     14s]   Identified SB Latch number: 0
+[01/19 11:35:11     14s]   Identified MB Latch number: 0
+[01/19 11:35:11     14s]   Not identified SBFF number: 0
+[01/19 11:35:11     14s]   Not identified MBFF number: 0
+[01/19 11:35:11     14s]   Not identified SB Latch number: 0
+[01/19 11:35:11     14s]   Not identified MB Latch number: 0
+[01/19 11:35:11     14s]   Number of sequential cells which are not FFs: 34
+[01/19 11:35:11     14s] Creating Cell Server, finished. 
+[01/19 11:35:11     14s] 
+[01/19 11:35:11     14s] 
+[01/19 11:35:11     14s]  View setup_wc  Weighted 0 StdDelay unweighted 49.90, weightedFactor 1.000 
+[01/19 11:35:11     14s]   
+[01/19 11:35:11     14s]  View hold_bc  Weighted 0 StdDelay unweighted 24.00, weightedFactor 1.000 
+[01/19 11:35:11     14s]     Extracting original clock gating for clk...
+[01/19 11:35:11     14s]     clock_tree clk contains 502 sinks and 0 clock gates.
+[01/19 11:35:11     14s]     Extraction for clk complete.
+[01/19 11:35:11     14s]   Extracting original clock gating for clk done.
+[01/19 11:35:11     14s] Restoring CCOpt config done.
+[01/19 11:35:11     14s] Deleting Cell Server ...
+[01/19 11:35:11     14s] Creating Cell Server ...(0, 1, 1, 1)
+[01/19 11:35:11     14s] Summary for sequential cells identification: 
+[01/19 11:35:11     14s]   Identified SBFF number: 126
+[01/19 11:35:11     14s]   Identified MBFF number: 0
+[01/19 11:35:11     14s]   Identified SB Latch number: 0
+[01/19 11:35:11     14s]   Identified MB Latch number: 0
+[01/19 11:35:11     14s]   Not identified SBFF number: 0
+[01/19 11:35:11     14s]   Not identified MBFF number: 0
+[01/19 11:35:11     14s]   Not identified SB Latch number: 0
+[01/19 11:35:11     14s]   Not identified MB Latch number: 0
+[01/19 11:35:11     14s]   Number of sequential cells which are not FFs: 34
+[01/19 11:35:11     14s] Total number of combinational cells: 393
+[01/19 11:35:11     14s] Total number of sequential cells: 160
+[01/19 11:35:11     14s] Total number of tristate cells: 7
+[01/19 11:35:11     14s] Total number of level shifter cells: 0
+[01/19 11:35:11     14s] Total number of power gating cells: 0
+[01/19 11:35:11     14s] Total number of isolation cells: 0
+[01/19 11:35:11     14s] Total number of power switch cells: 0
+[01/19 11:35:11     14s] Total number of pulse generator cells: 0
+[01/19 11:35:11     14s] Total number of always on buffers: 0
+[01/19 11:35:11     14s] Total number of retention cells: 0
+[01/19 11:35:11     14s] List of usable buffers: BUFFD0BWP7T BUFFD10BWP7T BUFFD12BWP7T BUFFD1BWP7T BUFFD1P5BWP7T BUFFD2BWP7T BUFFD2P5BWP7T CKBD0BWP7T BUFFD3BWP7T BUFFD4BWP7T BUFFD5BWP7T BUFFD6BWP7T BUFFD8BWP7T CKBD10BWP7T CKBD12BWP7T CKBD1BWP7T CKBD2BWP7T CKBD3BWP7T CKBD4BWP7T CKBD6BWP7T CKBD8BWP7T DEL015BWP7T DEL02BWP7T DEL01BWP7T
+[01/19 11:35:11     14s] Total number of usable buffers: 24
+[01/19 11:35:11     14s] List of unusable buffers: GBUFFD1BWP7T GBUFFD3BWP7T GBUFFD2BWP7T GBUFFD8BWP7T
+[01/19 11:35:11     14s] Total number of unusable buffers: 4
+[01/19 11:35:11     14s] List of usable inverters: CKND0BWP7T CKND10BWP7T CKND12BWP7T CKND1BWP7T CKND2BWP7T CKND3BWP7T CKND4BWP7T CKND6BWP7T CKND8BWP7T INVD0BWP7T INVD10BWP7T INVD12BWP7T INVD1BWP7T INVD2BWP7T INVD1P5BWP7T INVD2P5BWP7T INVD3BWP7T INVD4BWP7T INVD5BWP7T INVD6BWP7T INVD8BWP7T
+[01/19 11:35:11     14s] Total number of usable inverters: 21
+[01/19 11:35:11     14s] List of unusable inverters: GINVD2BWP7T GINVD1BWP7T GINVD3BWP7T GINVD8BWP7T
+[01/19 11:35:11     14s] Total number of unusable inverters: 4
+[01/19 11:35:11     14s] List of identified usable delay cells: DEL0BWP7T DEL1BWP7T DEL2BWP7T DEL3BWP7T DEL4BWP7T
+[01/19 11:35:11     14s] Total number of identified usable delay cells: 5
+[01/19 11:35:11     14s] List of identified unusable delay cells:
+[01/19 11:35:11     14s] Total number of identified unusable delay cells: 0
+[01/19 11:35:11     14s] Creating Cell Server, finished. 
+[01/19 11:35:11     14s] 
+[01/19 11:35:11     14s] Deleting Cell Server ...
+[01/19 11:35:11     14s] #% End load design ... (date=01/19 11:35:11, total cpu=0:00:04.2, real=0:00:04.0, peak res=690.0M, current mem=690.0M)
+[01/19 11:35:11     14s] 
+[01/19 11:35:11     14s] *** Summary of all messages that are not suppressed in this session:
+[01/19 11:35:11     14s] Severity  ID               Count  Summary                                  
+[01/19 11:35:11     14s] WARNING   IMPLF-200            1  Pin '%s' in macro '%s' has no ANTENNAGAT...
+[01/19 11:35:11     14s] WARNING   IMPFP-3961           4  The techSite '%s' has no related standar...
+[01/19 11:35:11     14s] WARNING   IMPEXT-7040          9  A %s wire, passing through or close to l...
+[01/19 11:35:11     14s] WARNING   IMPVL-159         1120  Pin '%s' of cell '%s' is defined in LEF ...
+[01/19 11:35:11     14s] WARNING   IMPCTE-290          16  Could not locate cell %s in any library ...
+[01/19 11:35:11     14s] WARNING   IMPTCM-77            1  Option "%s" for command %s is obsolete a...
+[01/19 11:35:11     14s] WARNING   GLOBAL-100           2  Global '%s' has become obsolete. It will...
+[01/19 11:35:11     14s] WARNING   TECHLIB-302         14  No function defined for cell '%s'. The c...
+[01/19 11:35:11     14s] WARNING   TECHLIB-436         20  Attribute '%s' on '%s' pin '%s' of cell ...
+[01/19 11:35:11     14s] *** Message Summary: 1187 warning(s), 0 error(s)
+[01/19 11:35:11     14s] 
+[01/19 11:35:11     14s] <CMD> win
+[01/19 11:35:18     14s] <CMD> fit
+[01/19 12:25:47   2089s] <CMD> panPage 0 1
+[01/19 12:25:49   2089s] <CMD> panPage 0 -1
+[01/19 12:25:51   2089s] <CMD> panPage 0 -1
+[01/19 12:25:51   2089s] <CMD> panPage 0 1
+[01/19 12:25:53   2089s] <CMD> panPage 1 0
+[01/19 12:25:54   2089s] <CMD> panPage -1 0
+[01/19 12:26:50   2092s] 
+[01/19 12:26:50   2092s] *** Memory Usage v#1 (Current mem = 1086.953M, initial mem = 187.680M) ***
+[01/19 12:26:50   2092s] 
+[01/19 12:26:50   2092s] *** Summary of all messages that are not suppressed in this session:
+[01/19 12:26:50   2092s] Severity  ID               Count  Summary                                  
+[01/19 12:26:50   2092s] WARNING   IMPLF-200            1  Pin '%s' in macro '%s' has no ANTENNAGAT...
+[01/19 12:26:50   2092s] WARNING   IMPFP-3961           4  The techSite '%s' has no related standar...
+[01/19 12:26:50   2092s] WARNING   IMPEXT-7040          9  A %s wire, passing through or close to l...
+[01/19 12:26:50   2092s] WARNING   IMPVL-159         1120  Pin '%s' of cell '%s' is defined in LEF ...
+[01/19 12:26:50   2092s] WARNING   IMPCTE-290          16  Could not locate cell %s in any library ...
+[01/19 12:26:50   2092s] WARNING   IMPTCM-77            1  Option "%s" for command %s is obsolete a...
+[01/19 12:26:50   2092s] WARNING   GLOBAL-100           2  Global '%s' has become obsolete. It will...
+[01/19 12:26:50   2092s] WARNING   TECHLIB-302         14  No function defined for cell '%s'. The c...
+[01/19 12:26:50   2092s] WARNING   TECHLIB-436         20  Attribute '%s' on '%s' pin '%s' of cell ...
+[01/19 12:26:50   2092s] *** Message Summary: 1187 warning(s), 0 error(s)
+[01/19 12:26:50   2092s] 
+[01/19 12:26:50   2092s] --- Ending "Innovus" (totcpu=0:34:52, real=0:51:54, mem=1087.0M) ---

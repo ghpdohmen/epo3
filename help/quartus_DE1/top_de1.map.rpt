@@ -1,5 +1,5 @@
 Analysis & Synthesis report for top_de1
-Wed Jan 18 19:17:57 2023
+Thu Jan 19 12:28:37 2023
 Quartus II 32-bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
 
 
@@ -65,15 +65,15 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                          ;
 +------------------------------------+--------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Wed Jan 18 19:17:57 2023            ;
+; Analysis & Synthesis Status        ; Successful - Thu Jan 19 12:28:37 2023            ;
 ; Quartus II 32-bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Full Version ;
 ; Revision Name                      ; top_de1                                          ;
 ; Top-level Entity Name              ; top_de1                                          ;
 ; Family                             ; Cyclone II                                       ;
-; Total logic elements               ; 363                                              ;
+; Total logic elements               ; 364                                              ;
 ;     Total combinational functions  ; 345                                              ;
-;     Dedicated logic registers      ; 188                                              ;
-; Total registers                    ; 188                                              ;
+;     Dedicated logic registers      ; 189                                              ;
+; Total registers                    ; 189                                              ;
 ; Total pins                         ; 20                                               ;
 ; Total virtual pins                 ; 0                                                ;
 ; Total memory bits                  ; 2,048                                            ;
@@ -268,29 +268,29 @@ applicable agreement for further details.
 +---------------------------------------------+-------------------------+
 ; Resource                                    ; Usage                   ;
 +---------------------------------------------+-------------------------+
-; Estimated Total logic elements              ; 363                     ;
+; Estimated Total logic elements              ; 364                     ;
 ;                                             ;                         ;
 ; Total combinational functions               ; 345                     ;
 ; Logic element usage by number of LUT inputs ;                         ;
-;     -- 4 input functions                    ; 134                     ;
-;     -- 3 input functions                    ; 78                      ;
-;     -- <=2 input functions                  ; 133                     ;
+;     -- 4 input functions                    ; 131                     ;
+;     -- 3 input functions                    ; 85                      ;
+;     -- <=2 input functions                  ; 129                     ;
 ;                                             ;                         ;
 ; Logic elements by mode                      ;                         ;
 ;     -- normal mode                          ; 278                     ;
 ;     -- arithmetic mode                      ; 67                      ;
 ;                                             ;                         ;
-; Total registers                             ; 188                     ;
-;     -- Dedicated logic registers            ; 188                     ;
+; Total registers                             ; 189                     ;
+;     -- Dedicated logic registers            ; 189                     ;
 ;     -- I/O registers                        ; 0                       ;
 ;                                             ;                         ;
 ; I/O pins                                    ; 20                      ;
 ; Total memory bits                           ; 2048                    ;
 ; Embedded Multiplier 9-bit elements          ; 0                       ;
 ; Maximum fan-out node                        ; gen25mhz:inst1|count[0] ;
-; Maximum fan-out                             ; 191                     ;
-; Total fan-out                               ; 1528                    ;
-; Average fan-out                             ; 2.75                    ;
+; Maximum fan-out                             ; 192                     ;
+; Total fan-out                               ; 1537                    ;
+; Average fan-out                             ; 2.76                    ;
 +---------------------------------------------+-------------------------+
 
 
@@ -299,16 +299,16 @@ applicable agreement for further details.
 +-------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node                      ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                       ; Library Name ;
 +-------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------------------------------------------------+--------------+
-; |top_de1                                        ; 345 (0)           ; 188 (0)      ; 2048        ; 0            ; 0       ; 0         ; 20   ; 0            ; |top_de1                                                                                                  ; work         ;
+; |top_de1                                        ; 345 (0)           ; 189 (0)      ; 2048        ; 0            ; 0       ; 0         ; 20   ; 0            ; |top_de1                                                                                                  ; work         ;
 ;    |gen25mhz:inst1|                             ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|gen25mhz:inst1                                                                                   ; work         ;
-;    |pixel:inst2|                                ; 344 (0)           ; 187 (0)      ; 2048        ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|pixel:inst2                                                                                      ; work         ;
-;       |graphic_toplvl:gl|                       ; 143 (0)           ; 72 (0)       ; 2048        ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|pixel:inst2|graphic_toplvl:gl                                                                    ; work         ;
-;          |graph_logic:gr_lg|                    ; 56 (9)            ; 22 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg                                                  ; work         ;
+;    |pixel:inst2|                                ; 344 (0)           ; 188 (0)      ; 2048        ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|pixel:inst2                                                                                      ; work         ;
+;       |graphic_toplvl:gl|                       ; 142 (0)           ; 72 (0)       ; 2048        ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|pixel:inst2|graphic_toplvl:gl                                                                    ; work         ;
+;          |graph_logic:gr_lg|                    ; 55 (9)            ; 22 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg                                                  ; work         ;
 ;             |e_counter:le|                      ; 31 (31)           ; 10 (10)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|e_counter:le                                     ; work         ;
 ;             |h_counter:lh|                      ; 7 (7)             ; 6 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|h_counter:lh                                     ; work         ;
 ;                |edge_detector:l_edge|           ; 0 (0)             ; 2 (2)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|h_counter:lh|edge_detector:l_edge                ; work         ;
-;             |v_counter:lv|                      ; 9 (8)             ; 6 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|v_counter:lv                                     ; work         ;
-;                |edge_detector:l_edge|           ; 1 (1)             ; 2 (2)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|v_counter:lv|edge_detector:l_edge                ; work         ;
+;             |v_counter:lv|                      ; 8 (8)             ; 6 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|v_counter:lv                                     ; work         ;
+;                |edge_detector:l_edge|           ; 0 (0)             ; 2 (2)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|v_counter:lv|edge_detector:l_edge                ; work         ;
 ;          |rom_cursor:rom|                       ; 0 (0)             ; 0 (0)        ; 2048        ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|pixel:inst2|graphic_toplvl:gl|rom_cursor:rom                                                     ; work         ;
 ;             |altsyncram:rom_rtl_0|              ; 0 (0)             ; 0 (0)        ; 2048        ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|pixel:inst2|graphic_toplvl:gl|rom_cursor:rom|altsyncram:rom_rtl_0                                ; work         ;
 ;                |altsyncram_rn61:auto_generated| ; 0 (0)             ; 0 (0)        ; 2048        ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|pixel:inst2|graphic_toplvl:gl|rom_cursor:rom|altsyncram:rom_rtl_0|altsyncram_rn61:auto_generated ; work         ;
@@ -324,12 +324,12 @@ applicable agreement for further details.
 ;             |flipflop:V1|                       ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|pixel:inst2|graphic_toplvl:gl|vga_buffer:vga_buf|flipflop:V1                                     ; work         ;
 ;             |flipflop:V2|                       ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|pixel:inst2|graphic_toplvl:gl|vga_buffer:vga_buf|flipflop:V2                                     ; work         ;
 ;          |vgadrive:vgd|                         ; 87 (87)           ; 40 (40)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|pixel:inst2|graphic_toplvl:gl|vgadrive:vgd                                                       ; work         ;
-;       |mouse_logic:ml|                          ; 201 (0)           ; 115 (0)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|pixel:inst2|mouse_logic:ml                                                                       ; work         ;
+;       |mouse_logic:ml|                          ; 202 (0)           ; 116 (0)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|pixel:inst2|mouse_logic:ml                                                                       ; work         ;
 ;          |logic_top:il|                         ; 65 (0)            ; 18 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|pixel:inst2|mouse_logic:ml|logic_top:il                                                          ; work         ;
 ;             |color:color1|                      ; 11 (11)           ; 10 (10)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|pixel:inst2|mouse_logic:ml|logic_top:il|color:color1                                             ; work         ;
 ;             |x:x1|                              ; 27 (27)           ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|pixel:inst2|mouse_logic:ml|logic_top:il|x:x1                                                     ; work         ;
 ;             |y:y1|                              ; 27 (27)           ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|pixel:inst2|mouse_logic:ml|logic_top:il|y:y1                                                     ; work         ;
-;          |mouse:ms|                             ; 136 (0)           ; 97 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|pixel:inst2|mouse_logic:ml|mouse:ms                                                              ; work         ;
+;          |mouse:ms|                             ; 137 (0)           ; 98 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|pixel:inst2|mouse_logic:ml|mouse:ms                                                              ; work         ;
 ;             |counter25mhz:cntD|                 ; 13 (13)           ; 13 (13)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|pixel:inst2|mouse_logic:ml|mouse:ms|counter25mhz:cntD                                            ; work         ;
 ;             |counter25mhz:cnt|                  ; 13 (13)           ; 13 (13)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|pixel:inst2|mouse_logic:ml|mouse:ms|counter25mhz:cnt                                             ; work         ;
 ;             |edge_debounce:ed|                  ; 10 (10)           ; 6 (6)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|pixel:inst2|mouse_logic:ml|mouse:ms|edge_debounce:ed                                             ; work         ;
@@ -341,8 +341,9 @@ applicable agreement for further details.
 ;             |flipflop:flipflop4|                ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|pixel:inst2|mouse_logic:ml|mouse:ms|flipflop:flipflop4                                           ; work         ;
 ;             |flipflop:flipflop5|                ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|pixel:inst2|mouse_logic:ml|mouse:ms|flipflop:flipflop5                                           ; work         ;
 ;             |flipflop:flipflop6|                ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|pixel:inst2|mouse_logic:ml|mouse:ms|flipflop:flipflop6                                           ; work         ;
+;             |flipflop:flipflop8|                ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|pixel:inst2|mouse_logic:ml|mouse:ms|flipflop:flipflop8                                           ; work         ;
 ;             |flipflop:flipflop9|                ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|pixel:inst2|mouse_logic:ml|mouse:ms|flipflop:flipflop9                                           ; work         ;
-;             |main_fsm:mfsm|                     ; 42 (42)           ; 26 (26)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|pixel:inst2|mouse_logic:ml|mouse:ms|main_fsm:mfsm                                                ; work         ;
+;             |main_fsm:mfsm|                     ; 43 (43)           ; 26 (26)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|pixel:inst2|mouse_logic:ml|mouse:ms|main_fsm:mfsm                                                ; work         ;
 ;             |mux:mx2|                           ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|pixel:inst2|mouse_logic:ml|mouse:ms|mux:mx2                                                      ; work         ;
 ;             |mux:mx|                            ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|pixel:inst2|mouse_logic:ml|mouse:ms|mux:mx                                                       ; work         ;
 ;             |sendFSM:sfsm|                      ; 29 (29)           ; 9 (9)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|pixel:inst2|mouse_logic:ml|mouse:ms|sendFSM:sfsm                                                 ; work         ;
@@ -582,7 +583,6 @@ Note: All cells listed above may not be present at the end of synthesis due to v
 ; pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|countdown_bar:lcountdown|edge_det_fall:l_edge|reg2 ; Lost fanout                                                                         ;
 ; pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|countdown_bar:lcountdown|edge_det_fall:l_edge|reg1 ; Lost fanout                                                                         ;
 ; pixel:inst2|mouse_logic:ml|logic_top:il|color:color1|rescount                                      ; Lost fanout                                                                         ;
-; pixel:inst2|mouse_logic:ml|mouse:ms|flipflop:flipflop8|Q                                           ; Lost fanout                                                                         ;
 ; pixel:inst2|mouse_logic:ml|logic_top:il|color:color1|draw                                          ; Lost fanout                                                                         ;
 ; pixel:inst2|mouse_logic:ml|mouse:ms|flipflop:flipflop7|Q                                           ; Lost fanout                                                                         ;
 ; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram_position[0,2..6]                              ; Lost fanout                                                                         ;
@@ -900,7 +900,7 @@ Note: All cells listed above may not be present at the end of synthesis due to v
 ; pixel:inst2|mouse_logic:ml|logic_top:il|x:x1|state.idle                                            ; Merged with pixel:inst2|mouse_logic:ml|logic_top:il|color:color1|state_hs.idle      ;
 ; pixel:inst2|mouse_logic:ml|logic_top:il|y:y1|state.idle                                            ; Merged with pixel:inst2|mouse_logic:ml|logic_top:il|color:color1|state_hs.idle      ;
 ; pixel:inst2|mouse_logic:ml|mouse:ms|main_fsm:mfsm|state.delay_1                                    ; Stuck at GND due to stuck port data_in                                              ;
-; Total Number of Removed Registers = 386                                                            ;                                                                                     ;
+; Total Number of Removed Registers = 385                                                            ;                                                                                     ;
 +----------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------+
 
 
@@ -918,7 +918,6 @@ Note: All cells listed above may not be present at the end of synthesis due to v
 ;                                                                                                    ;                    ; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|y_grid[2],                                        ;
 ;                                                                                                    ;                    ; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|y_grid[3]                                         ;
 ; pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|countdown_bar:lcountdown|edge_det_fall:l_edge|reg2 ; Lost Fanouts       ; pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|countdown_bar:lcountdown|edge_det_fall:l_edge|reg1 ;
-; pixel:inst2|mouse_logic:ml|logic_top:il|color:color1|rescount                                      ; Lost Fanouts       ; pixel:inst2|mouse_logic:ml|mouse:ms|flipflop:flipflop8|Q                                           ;
 ; pixel:inst2|mouse_logic:ml|logic_top:il|color:color1|draw                                          ; Lost Fanouts       ; pixel:inst2|mouse_logic:ml|mouse:ms|flipflop:flipflop7|Q                                           ;
 ; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram_position[0]                                   ; Lost Fanouts       ; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|x_grid[0]                                         ;
 +----------------------------------------------------------------------------------------------------+--------------------+----------------------------------------------------------------------------------------------------+
@@ -929,12 +928,12 @@ Note: All cells listed above may not be present at the end of synthesis due to v
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 188   ;
-; Number of registers using Synchronous Clear  ; 40    ;
+; Total registers                              ; 189   ;
+; Number of registers using Synchronous Clear  ; 41    ;
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 0     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 51    ;
+; Number of registers using Clock Enable       ; 56    ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -948,125 +947,125 @@ Note: All cells listed above may not be present at the end of synthesis due to v
 +------------------------------------------------------------------+--------------------------------------------------------+------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                                              ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------------------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                                    ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------------------------------------+
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top_de1|pixel:inst2|mouse_logic:ml|mouse:ms|shiftregister_11bit:sr11|data_out[1]             ;
-; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |top_de1|pixel:inst2|mouse_logic:ml|mouse:ms|timebase:tb|count[0]                             ;
-; 3:1                ; 5 bits    ; 10 LEs        ; 5 LEs                ; 5 LEs                  ; Yes        ; |top_de1|pixel:inst2|mouse_logic:ml|mouse:ms|shiftregister_9bit:sr|new_new_data[3]            ;
-; 3:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; Yes        ; |top_de1|pixel:inst2|mouse_logic:ml|mouse:ms|shiftregister_9bit:sr|new_new_data[5]            ;
-; 3:1                ; 10 bits   ; 20 LEs        ; 20 LEs               ; 0 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|scale_vertical_counter[4]                 ;
-; 4:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|h_counter:lh|count_h[0]              ;
-; 4:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|v_counter:lv|count_v[0]              ;
-; 5:1                ; 3 bits    ; 9 LEs         ; 0 LEs                ; 9 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[99][0]                          ;
-; 5:1                ; 3 bits    ; 9 LEs         ; 0 LEs                ; 9 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[98][0]                          ;
-; 5:1                ; 3 bits    ; 9 LEs         ; 0 LEs                ; 9 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[97][0]                          ;
-; 5:1                ; 3 bits    ; 9 LEs         ; 0 LEs                ; 9 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[96][0]                          ;
-; 5:1                ; 3 bits    ; 9 LEs         ; 0 LEs                ; 9 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[95][2]                          ;
-; 5:1                ; 3 bits    ; 9 LEs         ; 0 LEs                ; 9 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[94][2]                          ;
-; 5:1                ; 3 bits    ; 9 LEs         ; 0 LEs                ; 9 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[93][2]                          ;
-; 5:1                ; 3 bits    ; 9 LEs         ; 0 LEs                ; 9 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[92][0]                          ;
-; 5:1                ; 3 bits    ; 9 LEs         ; 0 LEs                ; 9 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[91][0]                          ;
-; 5:1                ; 3 bits    ; 9 LEs         ; 0 LEs                ; 9 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[90][0]                          ;
-; 5:1                ; 3 bits    ; 9 LEs         ; 0 LEs                ; 9 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[89][0]                          ;
-; 5:1                ; 3 bits    ; 9 LEs         ; 0 LEs                ; 9 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[88][0]                          ;
-; 5:1                ; 3 bits    ; 9 LEs         ; 0 LEs                ; 9 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[87][1]                          ;
-; 5:1                ; 3 bits    ; 9 LEs         ; 0 LEs                ; 9 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[86][1]                          ;
-; 5:1                ; 3 bits    ; 9 LEs         ; 0 LEs                ; 9 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[85][1]                          ;
-; 5:1                ; 3 bits    ; 9 LEs         ; 0 LEs                ; 9 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[84][0]                          ;
-; 5:1                ; 3 bits    ; 9 LEs         ; 0 LEs                ; 9 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[83][0]                          ;
-; 5:1                ; 3 bits    ; 9 LEs         ; 0 LEs                ; 9 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[82][0]                          ;
-; 5:1                ; 3 bits    ; 9 LEs         ; 0 LEs                ; 9 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[81][2]                          ;
-; 5:1                ; 3 bits    ; 9 LEs         ; 0 LEs                ; 9 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[80][1]                          ;
-; 5:1                ; 3 bits    ; 9 LEs         ; 0 LEs                ; 9 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[79][1]                          ;
-; 5:1                ; 3 bits    ; 9 LEs         ; 0 LEs                ; 9 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[78][0]                          ;
-; 5:1                ; 3 bits    ; 9 LEs         ; 0 LEs                ; 9 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[77][1]                          ;
-; 5:1                ; 3 bits    ; 9 LEs         ; 0 LEs                ; 9 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[76][0]                          ;
-; 5:1                ; 3 bits    ; 9 LEs         ; 0 LEs                ; 9 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[75][2]                          ;
-; 5:1                ; 3 bits    ; 9 LEs         ; 0 LEs                ; 9 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[74][0]                          ;
-; 5:1                ; 3 bits    ; 9 LEs         ; 0 LEs                ; 9 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[73][0]                          ;
-; 5:1                ; 3 bits    ; 9 LEs         ; 0 LEs                ; 9 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[72][0]                          ;
-; 5:1                ; 3 bits    ; 9 LEs         ; 0 LEs                ; 9 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[71][0]                          ;
-; 5:1                ; 3 bits    ; 9 LEs         ; 0 LEs                ; 9 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[70][2]                          ;
-; 5:1                ; 3 bits    ; 9 LEs         ; 0 LEs                ; 9 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[69][0]                          ;
-; 5:1                ; 3 bits    ; 9 LEs         ; 0 LEs                ; 9 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[68][0]                          ;
-; 5:1                ; 3 bits    ; 9 LEs         ; 0 LEs                ; 9 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[67][0]                          ;
-; 5:1                ; 3 bits    ; 9 LEs         ; 0 LEs                ; 9 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[66][0]                          ;
-; 5:1                ; 3 bits    ; 9 LEs         ; 0 LEs                ; 9 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[65][0]                          ;
-; 5:1                ; 3 bits    ; 9 LEs         ; 0 LEs                ; 9 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[64][0]                          ;
-; 5:1                ; 3 bits    ; 9 LEs         ; 0 LEs                ; 9 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[63][0]                          ;
-; 5:1                ; 3 bits    ; 9 LEs         ; 0 LEs                ; 9 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[62][0]                          ;
-; 5:1                ; 3 bits    ; 9 LEs         ; 0 LEs                ; 9 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[61][0]                          ;
-; 5:1                ; 3 bits    ; 9 LEs         ; 0 LEs                ; 9 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[60][0]                          ;
-; 5:1                ; 3 bits    ; 9 LEs         ; 0 LEs                ; 9 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[59][2]                          ;
-; 5:1                ; 3 bits    ; 9 LEs         ; 0 LEs                ; 9 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[58][1]                          ;
-; 5:1                ; 3 bits    ; 9 LEs         ; 0 LEs                ; 9 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[57][1]                          ;
-; 5:1                ; 3 bits    ; 9 LEs         ; 0 LEs                ; 9 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[56][2]                          ;
-; 5:1                ; 3 bits    ; 9 LEs         ; 0 LEs                ; 9 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[55][2]                          ;
-; 5:1                ; 3 bits    ; 9 LEs         ; 0 LEs                ; 9 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[54][1]                          ;
-; 5:1                ; 3 bits    ; 9 LEs         ; 0 LEs                ; 9 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[53][1]                          ;
-; 5:1                ; 3 bits    ; 9 LEs         ; 0 LEs                ; 9 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[52][0]                          ;
-; 5:1                ; 3 bits    ; 9 LEs         ; 0 LEs                ; 9 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[51][1]                          ;
-; 5:1                ; 3 bits    ; 9 LEs         ; 0 LEs                ; 9 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[50][0]                          ;
-; 5:1                ; 3 bits    ; 9 LEs         ; 0 LEs                ; 9 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[49][0]                          ;
-; 5:1                ; 3 bits    ; 9 LEs         ; 0 LEs                ; 9 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[48][1]                          ;
-; 5:1                ; 3 bits    ; 9 LEs         ; 0 LEs                ; 9 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[47][0]                          ;
-; 5:1                ; 3 bits    ; 9 LEs         ; 0 LEs                ; 9 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[46][2]                          ;
-; 5:1                ; 3 bits    ; 9 LEs         ; 0 LEs                ; 9 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[45][2]                          ;
-; 5:1                ; 3 bits    ; 9 LEs         ; 0 LEs                ; 9 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[44][2]                          ;
-; 5:1                ; 3 bits    ; 9 LEs         ; 0 LEs                ; 9 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[43][2]                          ;
-; 5:1                ; 3 bits    ; 9 LEs         ; 0 LEs                ; 9 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[42][2]                          ;
-; 5:1                ; 3 bits    ; 9 LEs         ; 0 LEs                ; 9 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[41][2]                          ;
-; 5:1                ; 3 bits    ; 9 LEs         ; 0 LEs                ; 9 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[40][2]                          ;
-; 5:1                ; 3 bits    ; 9 LEs         ; 0 LEs                ; 9 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[39][2]                          ;
-; 5:1                ; 3 bits    ; 9 LEs         ; 0 LEs                ; 9 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[38][1]                          ;
-; 5:1                ; 3 bits    ; 9 LEs         ; 0 LEs                ; 9 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[37][1]                          ;
-; 5:1                ; 3 bits    ; 9 LEs         ; 0 LEs                ; 9 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[36][1]                          ;
-; 5:1                ; 3 bits    ; 9 LEs         ; 0 LEs                ; 9 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[35][1]                          ;
-; 5:1                ; 3 bits    ; 9 LEs         ; 0 LEs                ; 9 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[34][2]                          ;
-; 5:1                ; 3 bits    ; 9 LEs         ; 0 LEs                ; 9 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[33][1]                          ;
-; 5:1                ; 3 bits    ; 9 LEs         ; 0 LEs                ; 9 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[32][1]                          ;
-; 5:1                ; 3 bits    ; 9 LEs         ; 0 LEs                ; 9 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[31][0]                          ;
-; 5:1                ; 3 bits    ; 9 LEs         ; 0 LEs                ; 9 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[30][2]                          ;
-; 5:1                ; 3 bits    ; 9 LEs         ; 0 LEs                ; 9 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[29][1]                          ;
-; 5:1                ; 3 bits    ; 9 LEs         ; 0 LEs                ; 9 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[28][2]                          ;
-; 5:1                ; 3 bits    ; 9 LEs         ; 0 LEs                ; 9 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[27][2]                          ;
-; 5:1                ; 3 bits    ; 9 LEs         ; 0 LEs                ; 9 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[26][1]                          ;
-; 5:1                ; 3 bits    ; 9 LEs         ; 0 LEs                ; 9 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[25][2]                          ;
-; 5:1                ; 3 bits    ; 9 LEs         ; 0 LEs                ; 9 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[24][2]                          ;
-; 5:1                ; 3 bits    ; 9 LEs         ; 0 LEs                ; 9 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[23][2]                          ;
-; 5:1                ; 3 bits    ; 9 LEs         ; 0 LEs                ; 9 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[22][2]                          ;
-; 5:1                ; 3 bits    ; 9 LEs         ; 0 LEs                ; 9 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[21][2]                          ;
-; 5:1                ; 3 bits    ; 9 LEs         ; 0 LEs                ; 9 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[20][2]                          ;
-; 5:1                ; 3 bits    ; 9 LEs         ; 0 LEs                ; 9 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[19][1]                          ;
-; 5:1                ; 3 bits    ; 9 LEs         ; 0 LEs                ; 9 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[18][1]                          ;
-; 5:1                ; 3 bits    ; 9 LEs         ; 0 LEs                ; 9 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[17][0]                          ;
-; 5:1                ; 3 bits    ; 9 LEs         ; 0 LEs                ; 9 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[16][2]                          ;
-; 5:1                ; 3 bits    ; 9 LEs         ; 0 LEs                ; 9 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[15][2]                          ;
-; 5:1                ; 3 bits    ; 9 LEs         ; 0 LEs                ; 9 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[14][2]                          ;
-; 5:1                ; 3 bits    ; 9 LEs         ; 0 LEs                ; 9 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[13][2]                          ;
-; 5:1                ; 3 bits    ; 9 LEs         ; 0 LEs                ; 9 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[12][1]                          ;
-; 5:1                ; 3 bits    ; 9 LEs         ; 0 LEs                ; 9 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[11][1]                          ;
-; 5:1                ; 3 bits    ; 9 LEs         ; 0 LEs                ; 9 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[10][2]                          ;
-; 5:1                ; 3 bits    ; 9 LEs         ; 0 LEs                ; 9 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[9][2]                           ;
-; 5:1                ; 3 bits    ; 9 LEs         ; 0 LEs                ; 9 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[8][0]                           ;
-; 5:1                ; 3 bits    ; 9 LEs         ; 0 LEs                ; 9 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[7][0]                           ;
-; 5:1                ; 3 bits    ; 9 LEs         ; 0 LEs                ; 9 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[6][1]                           ;
-; 5:1                ; 3 bits    ; 9 LEs         ; 0 LEs                ; 9 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[5][2]                           ;
-; 5:1                ; 3 bits    ; 9 LEs         ; 0 LEs                ; 9 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[4][0]                           ;
-; 5:1                ; 3 bits    ; 9 LEs         ; 0 LEs                ; 9 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[3][1]                           ;
-; 5:1                ; 3 bits    ; 9 LEs         ; 0 LEs                ; 9 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[2][0]                           ;
-; 5:1                ; 3 bits    ; 9 LEs         ; 0 LEs                ; 9 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[1][1]                           ;
-; 5:1                ; 3 bits    ; 9 LEs         ; 0 LEs                ; 9 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[0][1]                           ;
-; 105:1              ; 2 bits    ; 140 LEs       ; 140 LEs              ; 0 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|vga_buffer:vga_buf|flipflop:R1|Q                       ;
-; 4:1                ; 11 bits   ; 22 LEs        ; 0 LEs                ; 22 LEs                 ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|countdown_bar:lcountdown|count_c[10] ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |top_de1|pixel:inst2|mouse_logic:ml|logic_top:il|color:color1|state                           ;
-; 5:1                ; 4 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; No         ; |top_de1|pixel:inst2|mouse_logic:ml|logic_top:il|y:y1|input_register[3]                       ;
-; 5:1                ; 4 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; No         ; |top_de1|pixel:inst2|mouse_logic:ml|logic_top:il|x:x1|input_register[3]                       ;
-; 101:1              ; 3 bits    ; 201 LEs       ; 201 LEs              ; 0 LEs                  ; No         ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram                                 ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------------------------------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                                             ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                                   ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------------------------------------+
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top_de1|pixel:inst2|mouse_logic:ml|mouse:ms|shiftregister_11bit:sr11|data_out[6]            ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |top_de1|pixel:inst2|mouse_logic:ml|mouse:ms|timebase:tb|count[3]                            ;
+; 3:1                ; 5 bits    ; 10 LEs        ; 5 LEs                ; 5 LEs                  ; Yes        ; |top_de1|pixel:inst2|mouse_logic:ml|mouse:ms|shiftregister_9bit:sr|new_new_data[1]           ;
+; 3:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; Yes        ; |top_de1|pixel:inst2|mouse_logic:ml|mouse:ms|shiftregister_9bit:sr|new_new_data[8]           ;
+; 3:1                ; 10 bits   ; 20 LEs        ; 20 LEs               ; 0 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|scale_vertical_counter[9]                ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|h_counter:lh|count_h[0]             ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|v_counter:lv|count_v[1]             ;
+; 5:1                ; 3 bits    ; 9 LEs         ; 0 LEs                ; 9 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[99][2]                         ;
+; 5:1                ; 3 bits    ; 9 LEs         ; 0 LEs                ; 9 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[98][0]                         ;
+; 5:1                ; 3 bits    ; 9 LEs         ; 0 LEs                ; 9 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[97][1]                         ;
+; 5:1                ; 3 bits    ; 9 LEs         ; 0 LEs                ; 9 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[96][0]                         ;
+; 5:1                ; 3 bits    ; 9 LEs         ; 0 LEs                ; 9 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[95][1]                         ;
+; 5:1                ; 3 bits    ; 9 LEs         ; 0 LEs                ; 9 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[94][0]                         ;
+; 5:1                ; 3 bits    ; 9 LEs         ; 0 LEs                ; 9 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[93][0]                         ;
+; 5:1                ; 3 bits    ; 9 LEs         ; 0 LEs                ; 9 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[92][0]                         ;
+; 5:1                ; 3 bits    ; 9 LEs         ; 0 LEs                ; 9 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[91][0]                         ;
+; 5:1                ; 3 bits    ; 9 LEs         ; 0 LEs                ; 9 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[90][1]                         ;
+; 5:1                ; 3 bits    ; 9 LEs         ; 0 LEs                ; 9 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[89][0]                         ;
+; 5:1                ; 3 bits    ; 9 LEs         ; 0 LEs                ; 9 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[88][1]                         ;
+; 5:1                ; 3 bits    ; 9 LEs         ; 0 LEs                ; 9 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[87][2]                         ;
+; 5:1                ; 3 bits    ; 9 LEs         ; 0 LEs                ; 9 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[86][2]                         ;
+; 5:1                ; 3 bits    ; 9 LEs         ; 0 LEs                ; 9 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[85][1]                         ;
+; 5:1                ; 3 bits    ; 9 LEs         ; 0 LEs                ; 9 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[84][2]                         ;
+; 5:1                ; 3 bits    ; 9 LEs         ; 0 LEs                ; 9 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[83][1]                         ;
+; 5:1                ; 3 bits    ; 9 LEs         ; 0 LEs                ; 9 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[82][1]                         ;
+; 5:1                ; 3 bits    ; 9 LEs         ; 0 LEs                ; 9 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[81][2]                         ;
+; 5:1                ; 3 bits    ; 9 LEs         ; 0 LEs                ; 9 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[80][2]                         ;
+; 5:1                ; 3 bits    ; 9 LEs         ; 0 LEs                ; 9 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[79][2]                         ;
+; 5:1                ; 3 bits    ; 9 LEs         ; 0 LEs                ; 9 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[78][2]                         ;
+; 5:1                ; 3 bits    ; 9 LEs         ; 0 LEs                ; 9 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[77][0]                         ;
+; 5:1                ; 3 bits    ; 9 LEs         ; 0 LEs                ; 9 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[76][0]                         ;
+; 5:1                ; 3 bits    ; 9 LEs         ; 0 LEs                ; 9 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[75][0]                         ;
+; 5:1                ; 3 bits    ; 9 LEs         ; 0 LEs                ; 9 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[74][0]                         ;
+; 5:1                ; 3 bits    ; 9 LEs         ; 0 LEs                ; 9 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[73][1]                         ;
+; 5:1                ; 3 bits    ; 9 LEs         ; 0 LEs                ; 9 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[72][0]                         ;
+; 5:1                ; 3 bits    ; 9 LEs         ; 0 LEs                ; 9 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[71][1]                         ;
+; 5:1                ; 3 bits    ; 9 LEs         ; 0 LEs                ; 9 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[70][1]                         ;
+; 5:1                ; 3 bits    ; 9 LEs         ; 0 LEs                ; 9 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[69][1]                         ;
+; 5:1                ; 3 bits    ; 9 LEs         ; 0 LEs                ; 9 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[68][1]                         ;
+; 5:1                ; 3 bits    ; 9 LEs         ; 0 LEs                ; 9 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[67][2]                         ;
+; 5:1                ; 3 bits    ; 9 LEs         ; 0 LEs                ; 9 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[66][2]                         ;
+; 5:1                ; 3 bits    ; 9 LEs         ; 0 LEs                ; 9 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[65][2]                         ;
+; 5:1                ; 3 bits    ; 9 LEs         ; 0 LEs                ; 9 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[64][2]                         ;
+; 5:1                ; 3 bits    ; 9 LEs         ; 0 LEs                ; 9 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[63][2]                         ;
+; 5:1                ; 3 bits    ; 9 LEs         ; 0 LEs                ; 9 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[62][0]                         ;
+; 5:1                ; 3 bits    ; 9 LEs         ; 0 LEs                ; 9 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[61][1]                         ;
+; 5:1                ; 3 bits    ; 9 LEs         ; 0 LEs                ; 9 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[60][1]                         ;
+; 5:1                ; 3 bits    ; 9 LEs         ; 0 LEs                ; 9 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[59][1]                         ;
+; 5:1                ; 3 bits    ; 9 LEs         ; 0 LEs                ; 9 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[58][1]                         ;
+; 5:1                ; 3 bits    ; 9 LEs         ; 0 LEs                ; 9 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[57][2]                         ;
+; 5:1                ; 3 bits    ; 9 LEs         ; 0 LEs                ; 9 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[56][0]                         ;
+; 5:1                ; 3 bits    ; 9 LEs         ; 0 LEs                ; 9 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[55][2]                         ;
+; 5:1                ; 3 bits    ; 9 LEs         ; 0 LEs                ; 9 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[54][2]                         ;
+; 5:1                ; 3 bits    ; 9 LEs         ; 0 LEs                ; 9 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[53][2]                         ;
+; 5:1                ; 3 bits    ; 9 LEs         ; 0 LEs                ; 9 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[52][2]                         ;
+; 5:1                ; 3 bits    ; 9 LEs         ; 0 LEs                ; 9 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[51][2]                         ;
+; 5:1                ; 3 bits    ; 9 LEs         ; 0 LEs                ; 9 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[50][2]                         ;
+; 5:1                ; 3 bits    ; 9 LEs         ; 0 LEs                ; 9 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[49][2]                         ;
+; 5:1                ; 3 bits    ; 9 LEs         ; 0 LEs                ; 9 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[48][1]                         ;
+; 5:1                ; 3 bits    ; 9 LEs         ; 0 LEs                ; 9 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[47][1]                         ;
+; 5:1                ; 3 bits    ; 9 LEs         ; 0 LEs                ; 9 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[46][0]                         ;
+; 5:1                ; 3 bits    ; 9 LEs         ; 0 LEs                ; 9 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[45][1]                         ;
+; 5:1                ; 3 bits    ; 9 LEs         ; 0 LEs                ; 9 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[44][1]                         ;
+; 5:1                ; 3 bits    ; 9 LEs         ; 0 LEs                ; 9 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[43][1]                         ;
+; 5:1                ; 3 bits    ; 9 LEs         ; 0 LEs                ; 9 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[42][1]                         ;
+; 5:1                ; 3 bits    ; 9 LEs         ; 0 LEs                ; 9 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[41][0]                         ;
+; 5:1                ; 3 bits    ; 9 LEs         ; 0 LEs                ; 9 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[40][2]                         ;
+; 5:1                ; 3 bits    ; 9 LEs         ; 0 LEs                ; 9 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[39][2]                         ;
+; 5:1                ; 3 bits    ; 9 LEs         ; 0 LEs                ; 9 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[38][2]                         ;
+; 5:1                ; 3 bits    ; 9 LEs         ; 0 LEs                ; 9 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[37][2]                         ;
+; 5:1                ; 3 bits    ; 9 LEs         ; 0 LEs                ; 9 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[36][2]                         ;
+; 5:1                ; 3 bits    ; 9 LEs         ; 0 LEs                ; 9 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[35][1]                         ;
+; 5:1                ; 3 bits    ; 9 LEs         ; 0 LEs                ; 9 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[34][0]                         ;
+; 5:1                ; 3 bits    ; 9 LEs         ; 0 LEs                ; 9 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[33][0]                         ;
+; 5:1                ; 3 bits    ; 9 LEs         ; 0 LEs                ; 9 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[32][1]                         ;
+; 5:1                ; 3 bits    ; 9 LEs         ; 0 LEs                ; 9 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[31][0]                         ;
+; 5:1                ; 3 bits    ; 9 LEs         ; 0 LEs                ; 9 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[30][2]                         ;
+; 5:1                ; 3 bits    ; 9 LEs         ; 0 LEs                ; 9 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[29][1]                         ;
+; 5:1                ; 3 bits    ; 9 LEs         ; 0 LEs                ; 9 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[28][1]                         ;
+; 5:1                ; 3 bits    ; 9 LEs         ; 0 LEs                ; 9 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[27][0]                         ;
+; 5:1                ; 3 bits    ; 9 LEs         ; 0 LEs                ; 9 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[26][0]                         ;
+; 5:1                ; 3 bits    ; 9 LEs         ; 0 LEs                ; 9 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[25][0]                         ;
+; 5:1                ; 3 bits    ; 9 LEs         ; 0 LEs                ; 9 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[24][1]                         ;
+; 5:1                ; 3 bits    ; 9 LEs         ; 0 LEs                ; 9 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[23][1]                         ;
+; 5:1                ; 3 bits    ; 9 LEs         ; 0 LEs                ; 9 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[22][0]                         ;
+; 5:1                ; 3 bits    ; 9 LEs         ; 0 LEs                ; 9 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[21][0]                         ;
+; 5:1                ; 3 bits    ; 9 LEs         ; 0 LEs                ; 9 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[20][1]                         ;
+; 5:1                ; 3 bits    ; 9 LEs         ; 0 LEs                ; 9 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[19][0]                         ;
+; 5:1                ; 3 bits    ; 9 LEs         ; 0 LEs                ; 9 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[18][0]                         ;
+; 5:1                ; 3 bits    ; 9 LEs         ; 0 LEs                ; 9 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[17][0]                         ;
+; 5:1                ; 3 bits    ; 9 LEs         ; 0 LEs                ; 9 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[16][0]                         ;
+; 5:1                ; 3 bits    ; 9 LEs         ; 0 LEs                ; 9 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[15][0]                         ;
+; 5:1                ; 3 bits    ; 9 LEs         ; 0 LEs                ; 9 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[14][2]                         ;
+; 5:1                ; 3 bits    ; 9 LEs         ; 0 LEs                ; 9 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[13][2]                         ;
+; 5:1                ; 3 bits    ; 9 LEs         ; 0 LEs                ; 9 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[12][0]                         ;
+; 5:1                ; 3 bits    ; 9 LEs         ; 0 LEs                ; 9 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[11][1]                         ;
+; 5:1                ; 3 bits    ; 9 LEs         ; 0 LEs                ; 9 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[10][1]                         ;
+; 5:1                ; 3 bits    ; 9 LEs         ; 0 LEs                ; 9 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[9][1]                          ;
+; 5:1                ; 3 bits    ; 9 LEs         ; 0 LEs                ; 9 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[8][0]                          ;
+; 5:1                ; 3 bits    ; 9 LEs         ; 0 LEs                ; 9 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[7][0]                          ;
+; 5:1                ; 3 bits    ; 9 LEs         ; 0 LEs                ; 9 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[6][0]                          ;
+; 5:1                ; 3 bits    ; 9 LEs         ; 0 LEs                ; 9 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[5][0]                          ;
+; 5:1                ; 3 bits    ; 9 LEs         ; 0 LEs                ; 9 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[4][1]                          ;
+; 5:1                ; 3 bits    ; 9 LEs         ; 0 LEs                ; 9 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[3][0]                          ;
+; 5:1                ; 3 bits    ; 9 LEs         ; 0 LEs                ; 9 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[2][1]                          ;
+; 5:1                ; 3 bits    ; 9 LEs         ; 0 LEs                ; 9 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[1][1]                          ;
+; 5:1                ; 3 bits    ; 9 LEs         ; 0 LEs                ; 9 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[0][1]                          ;
+; 105:1              ; 2 bits    ; 140 LEs       ; 140 LEs              ; 0 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|vga_buffer:vga_buf|flipflop:B1|Q                      ;
+; 4:1                ; 11 bits   ; 22 LEs        ; 0 LEs                ; 22 LEs                 ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|countdown_bar:lcountdown|count_c[0] ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |top_de1|pixel:inst2|mouse_logic:ml|logic_top:il|color:color1|state                          ;
+; 5:1                ; 4 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; No         ; |top_de1|pixel:inst2|mouse_logic:ml|logic_top:il|y:y1|input_register[1]                      ;
+; 5:1                ; 4 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; No         ; |top_de1|pixel:inst2|mouse_logic:ml|logic_top:il|x:x1|input_register[0]                      ;
+; 101:1              ; 3 bits    ; 201 LEs       ; 201 LEs              ; 0 LEs                  ; No         ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram                                ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------------------------------------+
 
 
 +-------------------------------------------------------------------------------------------------------------------------+
@@ -1253,7 +1252,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:03     ;
+; Top            ; 00:00:04     ;
 +----------------+--------------+
 
 
@@ -1263,7 +1262,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 32-bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
-    Info: Processing started: Wed Jan 18 19:17:47 2023
+    Info: Processing started: Thu Jan 19 12:28:27 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off de1 -c top_de1
 Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
 Info (12021): Found 1 design units, including 0 entities, in source file /home/ghpdohmen/epo3/epo3/help/VHDL/vga_buffer-behav.vhd
@@ -1465,6 +1464,8 @@ Warning (10492): VHDL Process Statement warning at main_fsm-behav.vhd(567): sign
 Info (12128): Elaborating entity "flipflop" for hierarchy "pixel:inst2|mouse_logic:ml|mouse:ms|flipflop:flipflop1"
 Info (12128): Elaborating entity "shiftregister_11bit" for hierarchy "pixel:inst2|mouse_logic:ml|mouse:ms|shiftregister_11bit:sr11"
 Info (12128): Elaborating entity "logic_top" for hierarchy "pixel:inst2|mouse_logic:ml|logic_top:il"
+Warning (10492): VHDL Process Statement warning at logic_top-behaviour_logic_top.vhd(44): signal "sig_x" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at logic_top-behaviour_logic_top.vhd(45): signal "sig_y" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
 Info (12128): Elaborating entity "x" for hierarchy "pixel:inst2|mouse_logic:ml|logic_top:il|x:x1"
 Warning (10036): Verilog HDL or VHDL warning at x-behaviour_x.vhd(10): object "output_unsigned" assigned a value but never read
 Warning (10492): VHDL Process Statement warning at x-behaviour_x.vhd(87): signal "input_register" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
@@ -1583,18 +1584,18 @@ Info (12021): Found 1 design units, including 1 entities, in source file db/add_
     Info (12023): Found entity 1: add_sub_lkc
 Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_mkc.tdf
     Info (12023): Found entity 1: add_sub_mkc
-Info (17049): 29 registers lost all their fanouts during netlist optimizations.
+Info (17049): 28 registers lost all their fanouts during netlist optimizations.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 398 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 399 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 4 input pins
     Info (21059): Implemented 16 output pins
-    Info (21061): Implemented 376 logic cells
+    Info (21061): Implemented 377 logic cells
     Info (21064): Implemented 2 RAM segments
-Info: Quartus II 32-bit Analysis & Synthesis was successful. 0 errors, 111 warnings
-    Info: Peak virtual memory: 388 megabytes
-    Info: Processing ended: Wed Jan 18 19:17:57 2023
+Info: Quartus II 32-bit Analysis & Synthesis was successful. 0 errors, 113 warnings
+    Info: Peak virtual memory: 390 megabytes
+    Info: Processing ended: Thu Jan 19 12:28:37 2023
     Info: Elapsed time: 00:00:10
-    Info: Total CPU time (on all processors): 00:00:06
+    Info: Total CPU time (on all processors): 00:00:07
 
 
