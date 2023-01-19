@@ -774,7 +774,6 @@ reset => state.OUTPUTSELECT
 reset => state.OUTPUTSELECT
 buttons[0] => process_3.IN1
 buttons[1] => process_5.IN0
-buttons[1] => middelstemuisknop.DATAIN
 buttons[2] => draw~reg0.DATAIN
 handshakemi => next_state_hs.increment.DATAB
 handshakemi => Selector1.IN2
@@ -785,7 +784,7 @@ output_color[1] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
 output_color[2] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
 draw <= draw~reg0.DB_MAX_OUTPUT_PORT_TYPE
 rescount <= rescount~reg0.DB_MAX_OUTPUT_PORT_TYPE
-middelstemuisknop <= buttons[1].DB_MAX_OUTPUT_PORT_TYPE
+middelstemuisknop <= comb.DB_MAX_OUTPUT_PORT_TYPE
 handshakeimc <= handshakeimc.DB_MAX_OUTPUT_PORT_TYPE
 
 

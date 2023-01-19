@@ -1,13 +1,13 @@
 
 State Machine - |top_de1|pixel:inst2|mouse_logic:ml|logic_top:il|color:color1|state
-Name state.paars state.rood state.zwart state.wit state.groen state.geel state.blauw state.cyaan 
-state.cyaan 0 0 0 0 0 0 0 0 
+Name state.paars state.zwart state.cyaan state.wit state.groen state.geel state.blauw state.rood 
+state.rood 0 0 0 0 0 0 0 0 
 state.blauw 0 0 0 0 0 0 1 1 
 state.geel 0 0 0 0 0 1 0 1 
 state.groen 0 0 0 0 1 0 0 1 
 state.wit 0 0 0 1 0 0 0 1 
-state.zwart 0 0 1 0 0 0 0 1 
-state.rood 0 1 0 0 0 0 0 1 
+state.cyaan 0 0 1 0 0 0 0 1 
+state.zwart 0 1 0 0 0 0 0 1 
 state.paars 1 0 0 0 0 0 0 1 
 
 State Machine - |top_de1|pixel:inst2|mouse_logic:ml|logic_top:il|color:color1|state_hs
