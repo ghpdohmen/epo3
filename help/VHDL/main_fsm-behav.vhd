@@ -542,7 +542,7 @@ begin
 		if(handshake_in = '1') then
 			new_state <= handshake_state2 ;
 		else
-			new_state <= handshake_state2;
+			new_state <= handshake_state;
 		end if;
 		test <= "10110";	
 		when handshake_state2 => --maybe we want to add a state to read the data while not reseting the register yet cuz this might give problems. The shit inside processes is sequential tho.
@@ -567,7 +567,7 @@ begin
 		if(handshake_in = '0') then
 			new_state <= data_1;
 		else
-			new_state <= data_1;
+			new_state <= handshake_state2;
 		end if;
 		test <= "10111";	
 
