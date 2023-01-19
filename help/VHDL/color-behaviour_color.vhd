@@ -7,9 +7,18 @@ type state_type_hs is ( idle, increment, ready);
 signal state, next_state , input_register: state_type;
 signal state_hs,next_state_hs: state_type_hs;
 signal sel: std_logic;
+signal sig_edges: std_logic;
+
+component edge_detector is
+port(
+	clk 	: in std_logic;
+	input	: in std_logic;
+	edges 	: out std_logic);
+end component;
 
 begin
-
+l_edges: edge_detector port map (clk=>clk,input=>buttons(0),edges=>sig_edges);
+	
 reg2: process(clk)
     begin 
     if (clk'event and clk='1') then
@@ -71,7 +80,7 @@ begin
 	case state is 
 	when zwart=>
 	output_color<="000";
-	if (buttons(0)='1' and sel= '1') then
+	if (sig_edges='1' and sel= '1') then
 		next_state<= blauw;
 		
 	else
@@ -80,7 +89,7 @@ begin
 	end if;
 	when blauw=>
 	output_color<="100";
-	if (buttons(0)='1' and sel= '1') then
+	if (sig_edges='1' and sel= '1') then
 		next_state<= groen;
 		
 	else
@@ -89,7 +98,7 @@ begin
 	end if;
 	when groen=>
 	output_color<="010";
-	if (buttons(0)='1' and sel= '1') then
+	if (sig_edges='1' and sel= '1') then
 		next_state<= cyaan;
 		
 	else
@@ -98,7 +107,7 @@ begin
 	end if;
 	when cyaan=>
 	output_color<="110";
-	if (buttons(0)='1' and sel= '1') then
+	if (sig_edges='1' and sel= '1') then
 		next_state<= rood;
 		
 	else
@@ -107,7 +116,7 @@ begin
 	end if;
 	when rood=>
 	output_color<="001";
-	if (buttons(0)='1' and sel= '1') then
+	if (sig_edges='1' and sel= '1') then
 		next_state<= paars;
 		
 	else
@@ -116,7 +125,7 @@ begin
 	end if;
 	when paars=>
 	output_color<="101";
-	if (buttons(0)='1' and sel= '1') then
+	if (sig_edges='1' and sel= '1') then
 		next_state<= geel;
 		
 	else
@@ -125,7 +134,7 @@ begin
 	end if;
 	when geel=>
 	output_color<="011";
-	if (buttons(0)='1' and sel= '1') then
+	if (sig_edges='1' and sel= '1') then
 		next_state<= wit;
 		
 	else
@@ -134,7 +143,7 @@ begin
 	end if;
 	when wit=>
 	output_color<="111";
-	if (buttons(0)='1' and sel= '1') then
+	if (sig_edges='1' and sel= '1') then
 		next_state<= zwart;
 		
 	else
