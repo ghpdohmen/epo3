@@ -1,7 +1,7 @@
 #######################################################
 #                                                     
 #  Innovus Command Logging File                     
-#  Created on Tue Jan 17 13:29:38 2023                
+#  Created on Thu Jan 19 09:51:01 2023                
 #                                                     
 #######################################################
 
@@ -83,44 +83,454 @@ encMessage info 1
 reportGateCount
 win
 panPage -1 0
+panPage 0 -1
+panPage 0 -1
+panPage 0 1
+panPage 0 1
 zoomOut
 zoomIn
 zoomIn
 zoomIn
 panPage 0 1
-panPage 1 0
-panPage 1 0
-panPage 1 0
-panPage 1 0
-zoomOut
 panPage -1 0
-panPage 1 0
+panPage 0 1
 panPage 0 1
 panPage -1 0
+panPage 0 1
+panPage -1 0
+panPage 0 1
+panPage -1 0
+panPage 0 1
+panPage -1 0
+panPage 0 1
+panPage 0 1
+panPage 0 1
+panPage 0 1
+panPage 1 0
+panPage 1 0
+panPage 1 0
+panPage 1 0
+panPage 1 0
+panPage 0 1
+panPage 1 0
+panPage 0 -1
+panPage 0 -1
+panPage 1 0
+panPage 1 0
+panPage 1 0
+panPage 1 0
+panPage 1 0
+panPage 1 0
+panPage 1 0
+panPage 0 1
+panPage 0 -1
+panPage 0 -1
+panPage -1 0
+panPage -1 0
+panPage 0 -1
+panPage 0 -1
+panPage -1 0
+panPage 0 -1
+panPage 0 -1
+panPage -1 0
+panPage 0 -1
+panPage -1 0
+panPage 0 -1
+panPage -1 0
+panPage 0 -1
+panPage -1 0
+panPage 0 -1
+panPage -1 0
+panPage 0 -1
+panPage 1 0
+panPage 0 -1
+panPage 1 0
+panPage 0 -1
+panPage 0 -1
+panPage 1 0
+panPage 0 -1
+panPage 1 0
+panPage 0 -1
+panPage 1 0
+panPage 0 -1
+panPage 1 0
+panPage 0 -1
+panPage 0 -1
+panPage 1 0
+fit
+setLayerPreference violation -isVisible 1
+violationBrowser -all -no_display_false
+violationBrowserClose
 zoomOut
 zoomIn
-panPage 0 1
-panPage -1 0
-panPage 1 0
-panPage 1 0
-panPage -1 0
-panPage 0 1
-panPage 0 -1
+zoomIn
 zoomIn
 panPage 0 -1
 panPage 0 -1
 panPage 0 -1
 panPage 0 -1
 panPage 0 -1
-panPage 1 0
-panPage 1 0
-panPage 1 0
 panPage 0 -1
 panPage 0 -1
 panPage 0 -1
 panPage 0 -1
 panPage 0 -1
+panPage 0 -1
+panPage 0 -1
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
 zoomOut
+zoomOut
+panPage 0 1
+panPage 0 1
+panPage 1 0
+panPage 0 -1
+panPage 0 1
+fit
+selectWire 0.0000 15.4450 324.8000 15.9150 1 dvdd
+deselectAll
+selectInst FILLER_462
+deselectAll
+selectWire 37.1000 1.8200 37.3800 44.1000 2 FE_PHN376_gl_ram_n_308
+deselectAll
+selectWire 0.0000 97.7650 324.8000 98.2350 1 dgnd
+deselectAll
+selectWire 23.1000 61.1800 23.3800 116.9000 4 FE_PHN328_gl_vgd_vertical_counter_7
+deselectAll
+selectWire 15.8200 84.1400 16.1000 88.9000 2 gl_const_gr_lg_mul_88_58_n_20
+deselectAll
+selectWire 13.0200 60.6200 13.3000 150.5000 4 FE_PHN333_gl_vgd_vertical_counter_1
+deselectAll
+selectWire 28.1400 61.7400 28.4200 128.1000 4 {gl_vgd_vertical_counter[7]}
+deselectAll
+selectInst gl_const_gr_lg_mul_88_58_g479
+deselectAll
+selectWire 30.3800 100.3800 32.9000 100.6600 2 gl_gr_lg_lcountdown_n_14
+deselectAll
+selectWire 42.7000 113.8200 42.9800 202.0200 4 FE_PHN410_ml_ms_cnt_count_0
+deselectAll
+selectWire 33.1800 48.8600 33.4600 166.1800 4 FE_PHN358_gl_sig_scale_v
+deselectAll
+selectInst gl_vgd_g1619
+deselectAll
+selectWire 28.1400 159.7400 28.4200 237.8600 4 FE_PHN294_gl_ram_ram_82_2
+deselectAll
+selectWire 82.5750 0.0000 84.5750 324.8000 4 dvdd
+deselectAll
+selectInst FILLER_3396
+panPage 0 -1
+panPage 0 -1
+panPage 0 1
+panPage 0 1
+panPage 0 1
+zoomIn
+zoomIn
+zoomIn
+panPage 0 1
+panPage 0 1
+panPage -1 0
+panPage -1 0
+panPage 0 1
+panPage -1 0
+panPage 0 1
+panPage -1 0
+panPage 0 1
+panPage -1 0
+panPage 0 1
+panPage -1 0
+panPage 0 1
+panPage -1 0
+panPage 0 1
+panPage -1 0
+panPage 0 1
+panPage -1 0
+panPage 0 1
+panPage -1 0
+panPage 0 1
 panPage -1 0
 panPage 0 1
 panPage 0 1
+panPage 0 1
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage 1 0
+panPage 1 0
+panPage 0 -1
+panPage -1 0
+panPage -1 0
+panPage 0 1
+deselectAll
+selectVia 22.4900 323.7700 23.3900 324.1500 2 clk15k_in
+deselectAll
+selectVia 22.4900 323.7700 23.3900 324.1500 2 clk15k_in
+deselectAll
+selectWire 22.5650 323.8450 29.5150 324.0750 1 clk15k_in
+deselectAll
+selectVia 22.4900 323.7700 23.3900 324.1500 2 clk15k_in
+deselectAll
+selectWire 23.1000 267.2600 23.3800 322.9800 4 data_in
+deselectAll
+selectWire 23.1000 267.2600 23.3800 322.9800 4 data_in
+deselectAll
+selectWire 21.9800 322.7000 23.3800 322.9800 3 data_in
+deselectAll
+selectVia 21.9300 322.6500 22.8300 323.0300 3 data_in
+deselectAll
+selectVia 22.5300 322.6500 23.4300 323.0300 4 data_in
+gui_select -next -point {16.1455 324.272}
+deselectAll
+panPage 1 0
+panPage 1 0
+selectObject IO_Pin data_switch
+deselectAll
+selectObject IO_Pin clk15k_switch
+deselectAll
+selectObject IO_Pin R
+deselectAll
+selectObject IO_Pin V
+deselectAll
+selectObject IO_Pin H
+panPage 1 0
+panPage 1 0
+panPage 1 0
+panPage 1 0
+panPage 1 0
+panPage 1 0
+panPage 1 0
+panPage 1 0
+panPage 1 0
+panPage 1 0
+panPage 1 0
+panPage 1 0
+panPage 1 0
+panPage 0 -1
+panPage 0 -1
+panPage 0 1
+panPage 0 1
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage 0 -1
+panPage 0 -1
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage 0 1
+panPage 0 -1
+panPage 0 1
+panPage 0 -1
+panPage 0 -1
+panPage -1 0
+panPage -1 0
+panPage 0 1
+panPage 0 1
+panPage -1 0
+panPage 0 -1
+panPage -1 0
+panPage 0 1
+panPage 0 -1
+panPage -1 0
+panPage 0 -1
+panPage -1 0
+panPage 0 1
+panPage -1 0
+panPage -1 0
+panPage 0 1
+panPage 1 0
+panPage 1 0
+panPage -1 0
+panPage -1 0
+deselectAll
+selectPhyPin 0.0000 322.8000 2.0000 324.8000 4 dgnd
+deselectAll
+selectPhyPin 2.5000 322.8000 4.5000 324.8000 4 dvdd
+panPage 0 -1
+panPage 0 -1
+panPage 0 -1
+panPage 0 -1
+panPage 0 -1
+panPage 0 -1
+panPage 0 -1
+panPage 0 -1
+panPage 0 -1
+panPage 0 -1
+panPage 0 -1
+panPage 0 -1
+panPage 0 -1
+panPage 0 -1
+panPage 0 -1
+panPage 0 -1
+panPage 0 -1
+panPage 0 -1
+panPage 0 -1
+panPage 0 -1
+panPage 0 -1
+panPage 0 -1
+panPage 0 -1
+panPage 0 -1
+panPage 0 -1
+panPage 0 -1
+panPage 0 -1
+panPage 0 -1
+panPage 0 -1
+panPage 0 -1
+panPage 0 -1
+panPage 0 -1
+panPage 0 -1
+panPage 0 1
+panPage 0 1
+panPage 0 -1
+panPage 0 1
+panPage 0 -1
+panPage 1 0
+panPage 0 1
+panPage -1 0
+panPage 0 1
+panPage 0 1
+panPage 0 1
+panPage 0 1
+panPage 0 1
+panPage -1 0
+panPage 0 1
+panPage -1 0
+panPage -1 0
+panPage 0 1
+panPage 1 0
+panPage 0 -1
+panPage 0 -1
+panPage 0 -1
+panPage 0 -1
+panPage 0 -1
+panPage 0 -1
+panPage 1 0
+panPage 0 -1
+panPage 0 1
+panPage 1 0
+panPage 0 1
+panPage 0 1
+panPage 0 -1
+panPage 0 1
+panPage 0 1
+panPage 0 1
+panPage 0 1
+panPage 0 1
+panPage 0 1
+panPage 0 1
+panPage 0 1
+panPage 0 1
+panPage 0 1
+panPage 0 1
+panPage 0 1
+panPage 0 1
+panPage 0 1
+panPage 0 1
+panPage 0 1
+panPage 0 1
+panPage 0 1
+panPage 0 1
+panPage 0 1
+panPage 0 -1
+panPage 0 1
+panPage 0 1
+panPage 0 1
+panPage 0 1
+panPage 1 0
+panPage 0 1
+panPage 0 1
+panPage 0 1
+panPage 0 1
+panPage 0 1
+panPage 0 1
+panPage 0 1
+panPage 0 -1
+panPage 1 0
+panPage 1 0
+panPage 1 0
+panPage 1 0
+panPage 1 0
+panPage 0 1
+panPage 0 -1
+panPage -1 0
+panPage 0 1
+panPage -1 0
+panPage -1 0
+panPage -1 0
+panPage 0 -1
+panPage 0 -1
+panPage -1 0
+panPage 0 1
+panPage 0 1
+panPage 0 1
+panPage 1 0
+panPage 0 -1
+panPage 0 -1
+panPage 1 0
+panPage 1 0
+panPage 0 1
+panPage 1 0
+panPage 1 0
+panPage 1 0
+panPage 1 0
+panPage 1 0
+panPage 1 0
+panPage 1 0
+panPage 1 0
+panPage 1 0
+panPage 1 0
+panPage 1 0
+panPage 1 0
+panPage 1 0
+panPage 1 0
+panPage 1 0
+panPage 1 0
+panPage 1 0
+panPage 1 0
+panPage 0 -1
+panPage 1 0
+panPage 1 0
+panPage 1 0
+panPage 1 0
+panPage 1 0
+panPage 1 0
+panPage 1 0
+panPage 1 0
+panPage 1 0
+panPage 1 0
+panPage 1 0
+panPage 1 0
+panPage 1 0
+panPage 1 0
+panPage 1 0
+panPage 1 0
+panPage 1 0
+panPage 1 0
+panPage 1 0
+panPage 0 -1
+panPage 1 0
+zoomOut
+zoomOut
+zoomOut
+panPage 0 -1
+panPage 0 -1
+panPage 0 -1
+panPage -1 0
+panPage 0 1
+panPage 0 1
+fit
+panPage 0 -1
+panPage 0 1
+panPage -1 0
+panPage 1 0
