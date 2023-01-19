@@ -72,7 +72,9 @@ set_location_assignment PIN_A13 -to Clk15k_Switch
 set_location_assignment PIN_B14 -to data_in
 set_location_assignment PIN_A14 -to clk15k_in
 set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "3.3-V LVTTL"
-set_location_assignment PIN_R22 -to reset
+set_location_assignment PIN_L22 -to reset
+set_global_assignment -name VHDL_FILE ../VHDL/flipflop_bufr.vhd
+set_global_assignment -name VHDL_FILE "../VHDL/flipflop_bufr-behaviour.vhd"
 set_global_assignment -name VHDL_FILE "../VHDL/vga_buffer-behav.vhd"
 set_global_assignment -name VHDL_FILE ../VHDL/vga_buffer.vhd
 set_global_assignment -name VHDL_FILE ../VHDL/RAMbestand.vhd

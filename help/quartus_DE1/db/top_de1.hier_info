@@ -28,13 +28,13 @@ reset => mouse_logic:ml.reset
 reset => graphic_toplvl:gl.reset
 data_in => mouse_logic:ml.Data_in
 clk15k_in => mouse_logic:ml.Clk15k
-data_switch <= mouse_logic:ml.DataSwitch
-clk15k_switch <= mouse_logic:ml.ClkSwitch
 R <= graphic_toplvl:gl.R
 G <= graphic_toplvl:gl.G
 B <= graphic_toplvl:gl.B
 V <= graphic_toplvl:gl.V
 H <= graphic_toplvl:gl.H
+data_switch <= mouse_logic:ml.DataSwitch
+clk15k_switch <= mouse_logic:ml.ClkSwitch
 
 
 |top_de1|pixel:inst2|mouse_logic:ml
@@ -79,9 +79,9 @@ Handshake_out <= main_fsm:mfsm.handshake_out
 DataSwitch <= mux:mx.dataSwitch
 ClkSwitch <= sendFSM:sfsm.clkTrans
 Handshake_in => main_fsm:mfsm.handshake_in
-Data_in => shiftregister_11bit:sr11.data_in
-Clk15k => edge_debounce:ed.input
+Data_in => flipflop_bufr:data_buffer1.D
 Clk15k => sendFSM:sfsm.clk15k
+Clk15k => flipflop_bufr:clk_buffer1.D
 clk => counter25mhz:cnt.clk
 clk => counter25mhz:cntD.clk
 clk => edge_debounce:ed.clk
@@ -100,6 +100,10 @@ clk => flipflop:flipflop8.clk
 clk => flipflop:flipflop9.clk
 clk => flipflop:flipflop10.clk
 clk => flipflop:flipflop11.clk
+clk => flipflop_bufr:data_buffer1.clk
+clk => flipflop_bufr:data_buffer2.clk
+clk => flipflop_bufr:clk_buffer1.clk
+clk => flipflop_bufr:clk_buffer2.clk
 clk => shiftregister_11bit:sr11.clk
 reset => edge_debounce:ed.reset
 reset => main_fsm:mfsm.reset
@@ -571,6 +575,30 @@ Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
 |top_de1|pixel:inst2|mouse_logic:ml|mouse:ms|flipflop:flipflop11
 clk => Q~reg0.CLK
 activate => Q~reg0.ENA
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|top_de1|pixel:inst2|mouse_logic:ml|mouse:ms|flipflop_bufr:data_buffer1
+clk => Q~reg0.CLK
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|top_de1|pixel:inst2|mouse_logic:ml|mouse:ms|flipflop_bufr:data_buffer2
+clk => Q~reg0.CLK
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|top_de1|pixel:inst2|mouse_logic:ml|mouse:ms|flipflop_bufr:clk_buffer1
+clk => Q~reg0.CLK
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|top_de1|pixel:inst2|mouse_logic:ml|mouse:ms|flipflop_bufr:clk_buffer2
+clk => Q~reg0.CLK
 D => Q~reg0.DATAIN
 Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
 

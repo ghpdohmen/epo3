@@ -1,5 +1,5 @@
 Analysis & Synthesis report for top_de1
-Thu Jan 19 12:28:37 2023
+Thu Jan 19 16:26:56 2023
 Quartus II 32-bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
 
 
@@ -65,15 +65,15 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                          ;
 +------------------------------------+--------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu Jan 19 12:28:37 2023            ;
+; Analysis & Synthesis Status        ; Successful - Thu Jan 19 16:26:56 2023            ;
 ; Quartus II 32-bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Full Version ;
 ; Revision Name                      ; top_de1                                          ;
 ; Top-level Entity Name              ; top_de1                                          ;
 ; Family                             ; Cyclone II                                       ;
-; Total logic elements               ; 364                                              ;
+; Total logic elements               ; 368                                              ;
 ;     Total combinational functions  ; 345                                              ;
-;     Dedicated logic registers      ; 189                                              ;
-; Total registers                    ; 189                                              ;
+;     Dedicated logic registers      ; 193                                              ;
+; Total registers                    ; 193                                              ;
 ; Total pins                         ; 20                                               ;
 ; Total virtual pins                 ; 0                                                ;
 ; Total memory bits                  ; 2,048                                            ;
@@ -189,6 +189,8 @@ applicable agreement for further details.
 +-------------------------------------------+-----------------+-------------------------------------------------------+---------------------------------------------------------------------------------------------------+---------+
 ; File Name with User-Entered Path          ; Used in Netlist ; File Type                                             ; File Name with Absolute Path                                                                      ; Library ;
 +-------------------------------------------+-----------------+-------------------------------------------------------+---------------------------------------------------------------------------------------------------+---------+
+; ../VHDL/flipflop_bufr.vhd                 ; yes             ; User VHDL File                                        ; /home/ghpdohmen/epo3/epo3/help/VHDL/flipflop_bufr.vhd                                             ;         ;
+; ../VHDL/flipflop_bufr-behaviour.vhd       ; yes             ; User VHDL File                                        ; /home/ghpdohmen/epo3/epo3/help/VHDL/flipflop_bufr-behaviour.vhd                                   ;         ;
 ; ../VHDL/vga_buffer-behav.vhd              ; yes             ; User VHDL File                                        ; /home/ghpdohmen/epo3/epo3/help/VHDL/vga_buffer-behav.vhd                                          ;         ;
 ; ../VHDL/vga_buffer.vhd                    ; yes             ; User VHDL File                                        ; /home/ghpdohmen/epo3/epo3/help/VHDL/vga_buffer.vhd                                                ;         ;
 ; ../VHDL/RAMbestand.vhd                    ; yes             ; User VHDL File                                        ; /home/ghpdohmen/epo3/epo3/help/VHDL/RAMbestand.vhd                                                ;         ;
@@ -268,7 +270,7 @@ applicable agreement for further details.
 +---------------------------------------------+-------------------------+
 ; Resource                                    ; Usage                   ;
 +---------------------------------------------+-------------------------+
-; Estimated Total logic elements              ; 364                     ;
+; Estimated Total logic elements              ; 368                     ;
 ;                                             ;                         ;
 ; Total combinational functions               ; 345                     ;
 ; Logic element usage by number of LUT inputs ;                         ;
@@ -280,16 +282,16 @@ applicable agreement for further details.
 ;     -- normal mode                          ; 278                     ;
 ;     -- arithmetic mode                      ; 67                      ;
 ;                                             ;                         ;
-; Total registers                             ; 189                     ;
-;     -- Dedicated logic registers            ; 189                     ;
+; Total registers                             ; 193                     ;
+;     -- Dedicated logic registers            ; 193                     ;
 ;     -- I/O registers                        ; 0                       ;
 ;                                             ;                         ;
 ; I/O pins                                    ; 20                      ;
 ; Total memory bits                           ; 2048                    ;
 ; Embedded Multiplier 9-bit elements          ; 0                       ;
 ; Maximum fan-out node                        ; gen25mhz:inst1|count[0] ;
-; Maximum fan-out                             ; 192                     ;
-; Total fan-out                               ; 1537                    ;
+; Maximum fan-out                             ; 196                     ;
+; Total fan-out                               ; 1545                    ;
 ; Average fan-out                             ; 2.76                    ;
 +---------------------------------------------+-------------------------+
 
@@ -299,11 +301,11 @@ applicable agreement for further details.
 +-------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node                      ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                       ; Library Name ;
 +-------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------------------------------------------------+--------------+
-; |top_de1                                        ; 345 (0)           ; 189 (0)      ; 2048        ; 0            ; 0       ; 0         ; 20   ; 0            ; |top_de1                                                                                                  ; work         ;
+; |top_de1                                        ; 345 (0)           ; 193 (0)      ; 2048        ; 0            ; 0       ; 0         ; 20   ; 0            ; |top_de1                                                                                                  ; work         ;
 ;    |gen25mhz:inst1|                             ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|gen25mhz:inst1                                                                                   ; work         ;
-;    |pixel:inst2|                                ; 344 (0)           ; 188 (0)      ; 2048        ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|pixel:inst2                                                                                      ; work         ;
+;    |pixel:inst2|                                ; 344 (0)           ; 192 (0)      ; 2048        ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|pixel:inst2                                                                                      ; work         ;
 ;       |graphic_toplvl:gl|                       ; 142 (0)           ; 72 (0)       ; 2048        ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|pixel:inst2|graphic_toplvl:gl                                                                    ; work         ;
-;          |graph_logic:gr_lg|                    ; 55 (9)            ; 22 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg                                                  ; work         ;
+;          |graph_logic:gr_lg|                    ; 60 (14)           ; 22 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg                                                  ; work         ;
 ;             |e_counter:le|                      ; 31 (31)           ; 10 (10)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|e_counter:le                                     ; work         ;
 ;             |h_counter:lh|                      ; 7 (7)             ; 6 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|h_counter:lh                                     ; work         ;
 ;                |edge_detector:l_edge|           ; 0 (0)             ; 2 (2)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|h_counter:lh|edge_detector:l_edge                ; work         ;
@@ -323,13 +325,13 @@ applicable agreement for further details.
 ;             |flipflop:R2|                       ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|pixel:inst2|graphic_toplvl:gl|vga_buffer:vga_buf|flipflop:R2                                     ; work         ;
 ;             |flipflop:V1|                       ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|pixel:inst2|graphic_toplvl:gl|vga_buffer:vga_buf|flipflop:V1                                     ; work         ;
 ;             |flipflop:V2|                       ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|pixel:inst2|graphic_toplvl:gl|vga_buffer:vga_buf|flipflop:V2                                     ; work         ;
-;          |vgadrive:vgd|                         ; 87 (87)           ; 40 (40)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|pixel:inst2|graphic_toplvl:gl|vgadrive:vgd                                                       ; work         ;
-;       |mouse_logic:ml|                          ; 202 (0)           ; 116 (0)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|pixel:inst2|mouse_logic:ml                                                                       ; work         ;
+;          |vgadrive:vgd|                         ; 82 (82)           ; 40 (40)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|pixel:inst2|graphic_toplvl:gl|vgadrive:vgd                                                       ; work         ;
+;       |mouse_logic:ml|                          ; 202 (0)           ; 120 (0)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|pixel:inst2|mouse_logic:ml                                                                       ; work         ;
 ;          |logic_top:il|                         ; 65 (0)            ; 18 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|pixel:inst2|mouse_logic:ml|logic_top:il                                                          ; work         ;
 ;             |color:color1|                      ; 11 (11)           ; 10 (10)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|pixel:inst2|mouse_logic:ml|logic_top:il|color:color1                                             ; work         ;
 ;             |x:x1|                              ; 27 (27)           ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|pixel:inst2|mouse_logic:ml|logic_top:il|x:x1                                                     ; work         ;
 ;             |y:y1|                              ; 27 (27)           ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|pixel:inst2|mouse_logic:ml|logic_top:il|y:y1                                                     ; work         ;
-;          |mouse:ms|                             ; 137 (0)           ; 98 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|pixel:inst2|mouse_logic:ml|mouse:ms                                                              ; work         ;
+;          |mouse:ms|                             ; 137 (0)           ; 102 (0)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|pixel:inst2|mouse_logic:ml|mouse:ms                                                              ; work         ;
 ;             |counter25mhz:cntD|                 ; 13 (13)           ; 13 (13)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|pixel:inst2|mouse_logic:ml|mouse:ms|counter25mhz:cntD                                            ; work         ;
 ;             |counter25mhz:cnt|                  ; 13 (13)           ; 13 (13)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|pixel:inst2|mouse_logic:ml|mouse:ms|counter25mhz:cnt                                             ; work         ;
 ;             |edge_debounce:ed|                  ; 10 (10)           ; 6 (6)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|pixel:inst2|mouse_logic:ml|mouse:ms|edge_debounce:ed                                             ; work         ;
@@ -343,6 +345,10 @@ applicable agreement for further details.
 ;             |flipflop:flipflop6|                ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|pixel:inst2|mouse_logic:ml|mouse:ms|flipflop:flipflop6                                           ; work         ;
 ;             |flipflop:flipflop8|                ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|pixel:inst2|mouse_logic:ml|mouse:ms|flipflop:flipflop8                                           ; work         ;
 ;             |flipflop:flipflop9|                ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|pixel:inst2|mouse_logic:ml|mouse:ms|flipflop:flipflop9                                           ; work         ;
+;             |flipflop_bufr:clk_buffer1|         ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|pixel:inst2|mouse_logic:ml|mouse:ms|flipflop_bufr:clk_buffer1                                    ; work         ;
+;             |flipflop_bufr:clk_buffer2|         ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|pixel:inst2|mouse_logic:ml|mouse:ms|flipflop_bufr:clk_buffer2                                    ; work         ;
+;             |flipflop_bufr:data_buffer1|        ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|pixel:inst2|mouse_logic:ml|mouse:ms|flipflop_bufr:data_buffer1                                   ; work         ;
+;             |flipflop_bufr:data_buffer2|        ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|pixel:inst2|mouse_logic:ml|mouse:ms|flipflop_bufr:data_buffer2                                   ; work         ;
 ;             |main_fsm:mfsm|                     ; 43 (43)           ; 26 (26)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|pixel:inst2|mouse_logic:ml|mouse:ms|main_fsm:mfsm                                                ; work         ;
 ;             |mux:mx2|                           ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|pixel:inst2|mouse_logic:ml|mouse:ms|mux:mx2                                                      ; work         ;
 ;             |mux:mx|                            ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|pixel:inst2|mouse_logic:ml|mouse:ms|mux:mx                                                       ; work         ;
@@ -367,14 +373,14 @@ Encoding Type:  One-Hot
 +-------------------------------------------------------------------------------------------------------------------------+
 ; State Machine - |top_de1|pixel:inst2|mouse_logic:ml|logic_top:il|color:color1|state                                     ;
 +-------------+-------------+------------+-------------+-----------+-------------+------------+-------------+-------------+
-; Name        ; state.paars ; state.rood ; state.cyaan ; state.wit ; state.groen ; state.geel ; state.blauw ; state.zwart ;
+; Name        ; state.paars ; state.rood ; state.zwart ; state.wit ; state.groen ; state.geel ; state.blauw ; state.cyaan ;
 +-------------+-------------+------------+-------------+-----------+-------------+------------+-------------+-------------+
-; state.zwart ; 0           ; 0          ; 0           ; 0         ; 0           ; 0          ; 0           ; 0           ;
+; state.cyaan ; 0           ; 0          ; 0           ; 0         ; 0           ; 0          ; 0           ; 0           ;
 ; state.blauw ; 0           ; 0          ; 0           ; 0         ; 0           ; 0          ; 1           ; 1           ;
 ; state.geel  ; 0           ; 0          ; 0           ; 0         ; 0           ; 1          ; 0           ; 1           ;
 ; state.groen ; 0           ; 0          ; 0           ; 0         ; 1           ; 0          ; 0           ; 1           ;
 ; state.wit   ; 0           ; 0          ; 0           ; 1         ; 0           ; 0          ; 0           ; 1           ;
-; state.cyaan ; 0           ; 0          ; 1           ; 0         ; 0           ; 0          ; 0           ; 1           ;
+; state.zwart ; 0           ; 0          ; 1           ; 0         ; 0           ; 0          ; 0           ; 1           ;
 ; state.rood  ; 0           ; 1          ; 0           ; 0         ; 0           ; 0          ; 0           ; 1           ;
 ; state.paars ; 1           ; 0          ; 0           ; 0         ; 0           ; 0          ; 0           ; 1           ;
 +-------------+-------------+------------+-------------+-----------+-------------+------------+-------------+-------------+
@@ -928,7 +934,7 @@ Note: All cells listed above may not be present at the end of synthesis due to v
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 189   ;
+; Total registers                              ; 193   ;
 ; Number of registers using Synchronous Clear  ; 41    ;
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 0     ;
@@ -1262,9 +1268,13 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 32-bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
-    Info: Processing started: Thu Jan 19 12:28:27 2023
+    Info: Processing started: Thu Jan 19 16:26:45 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off de1 -c top_de1
 Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file /home/ghpdohmen/epo3/epo3/help/VHDL/flipflop_bufr.vhd
+    Info (12023): Found entity 1: flipflop_bufr
+Info (12021): Found 1 design units, including 0 entities, in source file /home/ghpdohmen/epo3/epo3/help/VHDL/flipflop_bufr-behaviour.vhd
+    Info (12022): Found design unit 1: flipflop_bufr-behav
 Info (12021): Found 1 design units, including 0 entities, in source file /home/ghpdohmen/epo3/epo3/help/VHDL/vga_buffer-behav.vhd
     Info (12022): Found design unit 1: vga_buffer-behav
 Info (12021): Found 1 design units, including 1 entities, in source file /home/ghpdohmen/epo3/epo3/help/VHDL/vga_buffer.vhd
@@ -1395,17 +1405,17 @@ Warning (10036): Verilog HDL or VHDL warning at mouse_logic-behav.vhd(47): objec
 Warning (10036): Verilog HDL or VHDL warning at mouse_logic-behav.vhd(47): object "led8" assigned a value but never read
 Warning (10036): Verilog HDL or VHDL warning at mouse_logic-behav.vhd(47): object "led9" assigned a value but never read
 Info (12128): Elaborating entity "mouse" for hierarchy "pixel:inst2|mouse_logic:ml|mouse:ms"
-Warning (10036): Verilog HDL or VHDL warning at mouse-behav.vhd(123): object "bit11_reg_rst" assigned a value but never read
-Warning (10492): VHDL Process Statement warning at mouse-behav.vhd(140): signal "reset" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at mouse-behav.vhd(141): signal "count15k" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at mouse-behav.vhd(142): signal "count15k" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at mouse-behav.vhd(143): signal "count15k" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at mouse-behav.vhd(144): signal "count15k" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at mouse-behav.vhd(145): signal "leds_mainfsm" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at mouse-behav.vhd(146): signal "leds_mainfsm" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at mouse-behav.vhd(147): signal "leds_mainfsm" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at mouse-behav.vhd(148): signal "leds_mainfsm" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at mouse-behav.vhd(149): signal "leds_mainfsm" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10036): Verilog HDL or VHDL warning at mouse-behav.vhd(130): object "bit11_reg_rst" assigned a value but never read
+Warning (10492): VHDL Process Statement warning at mouse-behav.vhd(147): signal "reset" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at mouse-behav.vhd(148): signal "count15k" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at mouse-behav.vhd(149): signal "count15k" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at mouse-behav.vhd(150): signal "count15k" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at mouse-behav.vhd(151): signal "count15k" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at mouse-behav.vhd(152): signal "leds_mainfsm" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at mouse-behav.vhd(153): signal "leds_mainfsm" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at mouse-behav.vhd(154): signal "leds_mainfsm" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at mouse-behav.vhd(155): signal "leds_mainfsm" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at mouse-behav.vhd(156): signal "leds_mainfsm" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
 Info (12128): Elaborating entity "counter25mhz" for hierarchy "pixel:inst2|mouse_logic:ml|mouse:ms|counter25mhz:cnt"
 Info (12128): Elaborating entity "edge_debounce" for hierarchy "pixel:inst2|mouse_logic:ml|mouse:ms|edge_debounce:ed"
 Warning (10492): VHDL Process Statement warning at edge_debounce-behav.vhd(70): signal "reg1" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
@@ -1462,6 +1472,7 @@ Warning (10492): VHDL Process Statement warning at main_fsm-behav.vhd(518): sign
 Warning (10492): VHDL Process Statement warning at main_fsm-behav.vhd(542): signal "handshake_in" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
 Warning (10492): VHDL Process Statement warning at main_fsm-behav.vhd(567): signal "handshake_in" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
 Info (12128): Elaborating entity "flipflop" for hierarchy "pixel:inst2|mouse_logic:ml|mouse:ms|flipflop:flipflop1"
+Info (12128): Elaborating entity "flipflop_bufr" for hierarchy "pixel:inst2|mouse_logic:ml|mouse:ms|flipflop_bufr:data_buffer1"
 Info (12128): Elaborating entity "shiftregister_11bit" for hierarchy "pixel:inst2|mouse_logic:ml|mouse:ms|shiftregister_11bit:sr11"
 Info (12128): Elaborating entity "logic_top" for hierarchy "pixel:inst2|mouse_logic:ml|logic_top:il"
 Warning (10492): VHDL Process Statement warning at logic_top-behaviour_logic_top.vhd(44): signal "sig_x" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
@@ -1587,15 +1598,15 @@ Info (12021): Found 1 design units, including 1 entities, in source file db/add_
 Info (17049): 28 registers lost all their fanouts during netlist optimizations.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 399 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 403 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 4 input pins
     Info (21059): Implemented 16 output pins
-    Info (21061): Implemented 377 logic cells
+    Info (21061): Implemented 381 logic cells
     Info (21064): Implemented 2 RAM segments
 Info: Quartus II 32-bit Analysis & Synthesis was successful. 0 errors, 113 warnings
-    Info: Peak virtual memory: 390 megabytes
-    Info: Processing ended: Thu Jan 19 12:28:37 2023
-    Info: Elapsed time: 00:00:10
+    Info: Peak virtual memory: 386 megabytes
+    Info: Processing ended: Thu Jan 19 16:26:56 2023
+    Info: Elapsed time: 00:00:11
     Info: Total CPU time (on all processors): 00:00:07
 
 

@@ -130,7 +130,7 @@ begin
       else
         enable <= '0';
         Rout <= '0';
-        Gout <= '1';
+        Gout <= '0';
         Bout <= '0';
       end if;
 end process;

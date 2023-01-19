@@ -16,6 +16,8 @@ configuration mouse_behav_cfg of mouse is
       end for;
       for all: flipflop use configuration work.flipflop_behav_cfg;
       end for;
+      for all: flipflop_bufr use configuration work.flipflop_bufr_behav_cfg;
+      end for;
       for all: shiftregister_11bit use configuration work.shiftregister_11bit_behav_cfg;
       end for;
    end for;
