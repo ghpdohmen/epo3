@@ -81,15 +81,15 @@ tempy[3] <= logic_top:il.tempy[3]
 draw <= logic_top:il.draw
 middelsteknop <= comb.DB_MAX_OUTPUT_PORT_TYPE
 rst <= mouse:ms.rst
-led0 <= mouse:ms.led0
-led1 <= mouse:ms.led1
-led2 <= mouse:ms.led2
-led3 <= mouse:ms.led3
-led5 <= mouse:ms.led5
-led6 <= mouse:ms.led6
-led7 <= mouse:ms.led7
-led8 <= mouse:ms.led8
-led9 <= mouse:ms.led9
+led0 <= logic_top:il.middelstemuisknop
+led1 <= logic_top:il.led0
+led2 <= logic_top:il.led1
+led3 <= logic_top:il.led2
+led5 <= logic_top:il.led3
+led6 <= logic_top:il.led5
+led7 <= logic_top:il.led6
+led8 <= logic_top:il.led7
+led9 <= logic_top:il.led8
 
 
 |top_de1|pixel:inst2|mouse_logic:ml|mouse:ms
@@ -728,6 +728,15 @@ tempy[3] <= y:y1.tempy[3]
 draw <= color:color1.draw
 handshakeim <= handshakeim~reg0.DB_MAX_OUTPUT_PORT_TYPE
 middelstemuisknop <= comb.DB_MAX_OUTPUT_PORT_TYPE
+led0 <= x:x1.tempx[0]
+led1 <= x:x1.tempx[1]
+led2 <= x:x1.tempx[2]
+led3 <= x:x1.tempx[3]
+led5 <= color:color1.draw
+led6 <= y:y1.tempy[0]
+led7 <= y:y1.tempy[1]
+led8 <= y:y1.tempy[2]
+led9 <= y:y1.tempy[3]
 
 
 |top_de1|pixel:inst2|mouse_logic:ml|logic_top:il|x:x1
@@ -2552,7 +2561,7 @@ muis_y[0] => Equal0.IN7
 muis_y[1] => Equal0.IN6
 muis_y[2] => Equal0.IN5
 muis_y[3] => Equal0.IN4
-clk => new_count_e[1].IN1
+clk => new_count_e[0].IN1
 clk => count_e[0].CLK
 clk => count_e[1].CLK
 clk => count_e[2].CLK

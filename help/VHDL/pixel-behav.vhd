@@ -16,7 +16,7 @@ port(
 	-- input/muis
 	--mouse_count: in std_logic;
     	countdown_aan: in std_logic;
-    	middelste_knop:in std_logic;
+    	middelste_knop: in std_logic;
     	countdown_klaar: out std_logic;
 
 	-- outputs from vga

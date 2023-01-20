@@ -28,7 +28,7 @@ component mouse is
 end component;
 
 component logic_top is
-   port(clk   : in  std_logic;
+   	port (clk   : in  std_logic;
         reset : in  std_logic;
 	buttons: in std_logic_vector(2 downto 0);
 	dx: in std_logic_vector(3 downto 0);
@@ -40,8 +40,17 @@ component logic_top is
 	tempx: out std_logic_vector(3 downto 0);
 	tempy: out std_logic_vector(3 downto 0);
 	draw: out std_logic;
+	handshakeim: out std_logic;
 	middelstemuisknop: out std_logic;
-	handshakeim: out std_logic);
+	led0 : out std_logic;
+	led1 : out std_logic;
+	led2 : out std_logic;
+	led3 : out std_logic;
+	led5 : out std_logic;
+	led6 : out std_logic;
+	led7 : out std_logic;
+	led8 : out std_logic;
+	led9 : out std_logic);
 end component;
 
 
@@ -56,9 +65,9 @@ signal buttons			: std_logic_vector(2 downto 0);
 begin
 
 
-buttons(0) <= buttons_mouse(2);
+buttons(0) <= buttons_mouse(4);
 buttons(1) <= buttons_mouse(3);
-buttons(2) <= buttons_mouse(4);
+buttons(2) <= buttons_mouse(2);
 
 dx(0) <= mouseX(0);
 dx(1) <= mouseX(1);
