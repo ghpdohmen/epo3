@@ -123,7 +123,7 @@ process(local_y, local_x, logic_y, logic_x, logic_ram_colour, logic_rom_colour, 
     begin
     if (local_y=logic_y and local_x=logic_x) then -- is the cursor on the cell              
         if (logic_rom_colour = "01" ) then -- behind the cursor
-            if (("0000"<local_x) and (local_x<"1011") and ("0011"<local_y) and (local_y/="1100")) then --canvas
+            if (("0000"<local_x) and (local_x<"1011") and ("0011"<local_y) and (local_y<"1110")) then --canvas
 		x_grid_asked <= to_integer(unsigned(local_x))- 1; 
 		y_grid_asked <= to_integer(unsigned(local_y))- 4; 
                 colour_output <= logic_ram_colour;
@@ -145,7 +145,7 @@ process(local_y, local_x, logic_y, logic_x, logic_ram_colour, logic_rom_colour, 
         else
            colour_output <= "111";
         end if;
-   elsif (("0000"<local_x) and (local_x<"1011") and ("0011"<local_y) and (local_y/="1100")) then--canvas
+   elsif (("0000"<local_x) and (local_x<"1011") and ("0011"<local_y) and (local_y<"1110")) then--canvas
         colour_output <= logic_ram_colour;
 	x_grid_asked <= to_integer(unsigned(local_x))- 1;
 	y_grid_asked <= to_integer(unsigned(local_y))- 4;

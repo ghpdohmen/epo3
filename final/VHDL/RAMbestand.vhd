@@ -47,7 +47,7 @@ if(rising_edge(clk)) then
 		if (middelste_knop='1') then		-- local reset
 			ram <= (OTHERS => (OTHERS => '1'));
 		else
-			if ((x_test >= 1) and (y_test>=5) and (y_test/=14)) then
+			if ((x_test >= 1) and (y_test>=4) and (y_test<14)) then
 				x_grid <= x_test - 1; 
 				y_grid <= y_test - 4;
 				ram_position <= N*y_grid+ x_grid;

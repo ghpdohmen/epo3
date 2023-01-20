@@ -7,10 +7,12 @@ entity main_fsm is
         data_in:        in std_logic_vector(10 downto 0);
         count15k_in:    in std_logic_vector(3 downto 0);
 	count25M:		in std_logic_vector(12 downto 0);
+	mouse_timer:		in std_logic_vector(21 downto 0);
 	handshake_in:   in std_logic;
         bit11_reg_rst:  out std_logic;
         cntReset15k:    out std_logic;
 	cntReset25M:		out std_logic;
+	timerReset:		out std_logic;
 	mux_select_main: out std_logic;
         actBit:         out std_logic;
         send_reset:     out std_logic;

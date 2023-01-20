@@ -13,7 +13,6 @@ entity pixel is
         H             : out std_logic;
         data_switch   : out std_logic;
         clk15k_switch : out std_logic;
-		  rst				 : out std_logic;
 	led0		: out std_logic;
 	led1		: out std_logic;
 	led2		: out std_logic;

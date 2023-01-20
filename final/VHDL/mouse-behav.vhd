@@ -20,6 +20,13 @@ component counter25mhz is
         count_out : out  std_logic_vector(12 downto 0));
 end component;
 
+component mouse_timer is
+   port(clk       : in  std_logic;
+        reset     : in  std_logic;
+        count_out : out  std_logic_vector(21 downto 0));
+end component;
+
+
 
 --SR 9 bit
 component shiftregister_9bit is
@@ -90,10 +97,12 @@ component main_fsm is
         data_in:        in std_logic_vector(10 downto 0);
         count15k_in:    in std_logic_vector(3 downto 0);
 	count25M:		in std_logic_vector(12 downto 0);
+	mouse_timer:		in std_logic_vector(21 downto 0);
 	handshake_in:   in std_logic;
         bit11_reg_rst:  out std_logic;
         cntReset15k:    out std_logic;
 	cntReset25M:		out std_logic;
+	timerReset:		out std_logic;
 	mux_select_main: out std_logic;
         actBit:         out std_logic;
         send_reset:     out std_logic;
@@ -118,7 +127,7 @@ component flipflop is
         clk     :   in  std_logic;
 	activate:	  in 	std_logic;
         D       :   in  std_logic;
-        Q       :   out std_logic
+        Q       :   buffer std_logic
     );
 end component;
 
@@ -129,7 +138,7 @@ component flipflop_bufr is
 end component;
 
 
-signal cntReset25M, cntReset25M_main, cntReset25M_send, mux_select_main, bit9_reg_rst, reset_send, mux_select, muxReg, muxFSM, actBit, output_edgedet, cntReset15K, bit11_reg_rst, xflipfloprst, yflipfloprst, btnflipfloprst, count_debounce_reset, Data_in_intermediate, Data_in_buffered, Clk15k_intermediate, Clk15k_buffered			:std_logic;
+signal cntReset25M, cntReset25M_main, cntReset25M_send, mux_select_main, bit9_reg_rst, reset_send, mux_select, muxReg, muxFSM, actBit, output_edgedet, cntReset15K, bit11_reg_rst, xflipfloprst, yflipfloprst, btnflipfloprst, count_debounce_reset, Data_in_intermediate, Data_in_buffered, Clk15k_intermediate, Clk15k_buffered, timerReset			:std_logic;
 signal count25M		:std_logic_vector(12 downto 0);
 signal count15k		:std_logic_vector(3 downto 0);
 signal data_sr_9bit:		std_logic_vector(8 downto 0);
@@ -137,6 +146,7 @@ signal data_sr_11bit: std_logic_vector(10 downto 0);
 signal mouse_x,mouse_y: std_logic_vector (2 downto 0);
 signal btns, leds_mainfsm:	std_logic_vector(4 downto 0);
 signal count_debounce : std_logic_vector(12 downto 0);
+signal timer_count :	std_logic_vector(21 downto 0);
 
 
 begin
@@ -160,6 +170,8 @@ end process;
 
 cnt: counter25mhz port map (clk, cntReset25M, count25M);
 
+timr: mouse_timer port map (clk, timerReset, timer_count);
+
 cntD: counter25mhz port map (clk, count_debounce_reset, count_debounce);
 
 ed: edge_debounce port map (clk, Clk15k_buffered, reset, count_debounce, count_debounce_reset, output_edgedet);
@@ -173,7 +185,7 @@ mx2: mux port map(mux_select_main, cntReset25M_main, cntReset25M_send, cntReset2
 
 tb: timebase port map (clk, output_edgedet, cntReset15K, count15k);
 
-mfsm: main_fsm port map (clk, reset, data_sr_11bit, count15k, count25M, Handshake_in, bit11_reg_rst, cntReset15K, cntReset25M_main, mux_select_main, actBit, reset_send, mouse_x, mouse_y, btns, xflipfloprst, yflipfloprst, btnflipfloprst, handshake_out, leds_mainfsm, buttons(0), buttons(1));
+mfsm: main_fsm port map (clk, reset, data_sr_11bit, count15k, count25M, timer_count, Handshake_in, bit11_reg_rst, cntReset15K, cntReset25M_main, timerReset, mux_select_main, actBit, reset_send, mouse_x, mouse_y, btns, xflipfloprst, yflipfloprst, btnflipfloprst, handshake_out, leds_mainfsm, buttons(0), buttons(1));
 
 flipflop1: flipflop port map(clk, xflipfloprst, mouse_x(2),mouseX(2));
 flipflop2: flipflop port map(clk, xflipfloprst, mouse_x(1),mouseX(1));

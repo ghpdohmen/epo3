@@ -82,6 +82,8 @@ set_location_assignment PIN_Y18 -to led6
 set_location_assignment PIN_U18 -to led7
 set_location_assignment PIN_R18 -to led8
 set_location_assignment PIN_R17 -to led9
+set_global_assignment -name VHDL_FILE ../../final/VHDL/mouse_timer.vhd
+set_global_assignment -name VHDL_FILE "../../final/VHDL/mouse_timer-behav.vhd"
 set_global_assignment -name VHDL_FILE ../../final/VHDL/y.vhd
 set_global_assignment -name VHDL_FILE "../../final/VHDL/y-behaviour_y.vhd"
 set_global_assignment -name VHDL_FILE "../../final/VHDL/x-behaviour_x.vhd"

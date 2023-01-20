@@ -46,7 +46,7 @@ component mouse_logic is
 	led9		: out std_logic);
 end component;
 
-signal sig_draw, sig_middelsteknop : std_logic;
+signal sig_draw, sig_middelsteknop, rst : std_logic;
 signal sig_logic_x, sig_logic_y : std_logic_vector(3 downto 0);
 signal sig_output_color : std_logic_vector (2 downto 0);
 begin

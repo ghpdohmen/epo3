@@ -1,5 +1,5 @@
 Analysis & Synthesis report for top_de1
-Fri Jan 20 19:30:02 2023
+Fri Jan 20 21:33:33 2023
 Quartus II 32-bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
 
 
@@ -33,8 +33,9 @@ Quartus II 32-bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Ver
  25. Port Connectivity Checks: "pixel:inst2|mouse_logic:ml|logic_top:il"
  26. Port Connectivity Checks: "pixel:inst2|mouse_logic:ml|mouse:ms|main_fsm:mfsm"
  27. Port Connectivity Checks: "pixel:inst2|mouse_logic:ml|mouse:ms"
- 28. Elapsed Time Per Partition
- 29. Analysis & Synthesis Messages
+ 28. Port Connectivity Checks: "pixel:inst2|mouse_logic:ml"
+ 29. Elapsed Time Per Partition
+ 30. Analysis & Synthesis Messages
 
 
 
@@ -60,15 +61,15 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                          ;
 +------------------------------------+--------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Fri Jan 20 19:30:01 2023            ;
+; Analysis & Synthesis Status        ; Successful - Fri Jan 20 21:33:33 2023            ;
 ; Quartus II 32-bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Full Version ;
 ; Revision Name                      ; top_de1                                          ;
 ; Top-level Entity Name              ; top_de1                                          ;
 ; Family                             ; Cyclone II                                       ;
-; Total logic elements               ; 1,351                                            ;
-;     Total combinational functions  ; 1,024                                            ;
-;     Dedicated logic registers      ; 531                                              ;
-; Total registers                    ; 531                                              ;
+; Total logic elements               ; 1,381                                            ;
+;     Total combinational functions  ; 1,058                                            ;
+;     Dedicated logic registers      ; 553                                              ;
+; Total registers                    ; 553                                              ;
 ; Total pins                         ; 29                                               ;
 ; Total virtual pins                 ; 0                                                ;
 ; Total memory bits                  ; 2,048                                            ;
@@ -184,6 +185,8 @@ applicable agreement for further details.
 +----------------------------------------------------+-----------------+-------------------------------------------------------+---------------------------------------------------------------------------------------------------+---------+
 ; File Name with User-Entered Path                   ; Used in Netlist ; File Type                                             ; File Name with Absolute Path                                                                      ; Library ;
 +----------------------------------------------------+-----------------+-------------------------------------------------------+---------------------------------------------------------------------------------------------------+---------+
+; ../../final/VHDL/mouse_timer.vhd                   ; yes             ; User VHDL File                                        ; /home/ghpdohmen/epo3/epo3/final/VHDL/mouse_timer.vhd                                              ;         ;
+; ../../final/VHDL/mouse_timer-behav.vhd             ; yes             ; User VHDL File                                        ; /home/ghpdohmen/epo3/epo3/final/VHDL/mouse_timer-behav.vhd                                        ;         ;
 ; ../../final/VHDL/y.vhd                             ; yes             ; User VHDL File                                        ; /home/ghpdohmen/epo3/epo3/final/VHDL/y.vhd                                                        ;         ;
 ; ../../final/VHDL/y-behaviour_y.vhd                 ; yes             ; User VHDL File                                        ; /home/ghpdohmen/epo3/epo3/final/VHDL/y-behaviour_y.vhd                                            ;         ;
 ; ../../final/VHDL/x-behaviour_x.vhd                 ; yes             ; User VHDL File                                        ; /home/ghpdohmen/epo3/epo3/final/VHDL/x-behaviour_x.vhd                                            ;         ;
@@ -255,29 +258,29 @@ applicable agreement for further details.
 +---------------------------------------------+-------------------------+
 ; Resource                                    ; Usage                   ;
 +---------------------------------------------+-------------------------+
-; Estimated Total logic elements              ; 1,351                   ;
+; Estimated Total logic elements              ; 1,381                   ;
 ;                                             ;                         ;
-; Total combinational functions               ; 1024                    ;
+; Total combinational functions               ; 1058                    ;
 ; Logic element usage by number of LUT inputs ;                         ;
-;     -- 4 input functions                    ; 729                     ;
-;     -- 3 input functions                    ; 118                     ;
-;     -- <=2 input functions                  ; 177                     ;
+;     -- 4 input functions                    ; 730                     ;
+;     -- 3 input functions                    ; 129                     ;
+;     -- <=2 input functions                  ; 199                     ;
 ;                                             ;                         ;
 ; Logic elements by mode                      ;                         ;
-;     -- normal mode                          ; 946                     ;
-;     -- arithmetic mode                      ; 78                      ;
+;     -- normal mode                          ; 958                     ;
+;     -- arithmetic mode                      ; 100                     ;
 ;                                             ;                         ;
-; Total registers                             ; 531                     ;
-;     -- Dedicated logic registers            ; 531                     ;
+; Total registers                             ; 553                     ;
+;     -- Dedicated logic registers            ; 553                     ;
 ;     -- I/O registers                        ; 0                       ;
 ;                                             ;                         ;
 ; I/O pins                                    ; 29                      ;
 ; Total memory bits                           ; 2048                    ;
 ; Embedded Multiplier 9-bit elements          ; 0                       ;
 ; Maximum fan-out node                        ; gen25mhz:inst1|count[0] ;
-; Maximum fan-out                             ; 534                     ;
-; Total fan-out                               ; 5150                    ;
-; Average fan-out                             ; 3.25                    ;
+; Maximum fan-out                             ; 556                     ;
+; Total fan-out                               ; 5299                    ;
+; Average fan-out                             ; 3.23                    ;
 +---------------------------------------------+-------------------------+
 
 
@@ -286,29 +289,29 @@ applicable agreement for further details.
 +-------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node                      ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                       ; Library Name ;
 +-------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------------------------------------------------+--------------+
-; |top_de1                                        ; 1024 (0)          ; 531 (0)      ; 2048        ; 0            ; 0       ; 0         ; 29   ; 0            ; |top_de1                                                                                                  ; work         ;
+; |top_de1                                        ; 1058 (0)          ; 553 (0)      ; 2048        ; 0            ; 0       ; 0         ; 29   ; 0            ; |top_de1                                                                                                  ; work         ;
 ;    |gen25mhz:inst1|                             ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|gen25mhz:inst1                                                                                   ; work         ;
-;    |pixel:inst2|                                ; 1023 (0)          ; 530 (0)      ; 2048        ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|pixel:inst2                                                                                      ; work         ;
-;       |graphic_toplvl:gl|                       ; 834 (0)           ; 399 (0)      ; 2048        ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|pixel:inst2|graphic_toplvl:gl                                                                    ; work         ;
-;          |colour_storage:ram|                   ; 426 (426)         ; 315 (315)    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram                                                 ; work         ;
-;          |graph_logic:gr_lg|                    ; 189 (100)         ; 44 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg                                                  ; work         ;
+;    |pixel:inst2|                                ; 1057 (0)          ; 552 (0)      ; 2048        ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|pixel:inst2                                                                                      ; work         ;
+;       |graphic_toplvl:gl|                       ; 830 (0)           ; 399 (0)      ; 2048        ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|pixel:inst2|graphic_toplvl:gl                                                                    ; work         ;
+;          |colour_storage:ram|                   ; 424 (424)         ; 315 (315)    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram                                                 ; work         ;
+;          |graph_logic:gr_lg|                    ; 187 (99)          ; 44 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg                                                  ; work         ;
 ;             |countdown_bar:lcountdown|          ; 37 (37)           ; 14 (12)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|countdown_bar:lcountdown                         ; work         ;
 ;                |edge_det_fall:l_edge|           ; 0 (0)             ; 2 (2)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|countdown_bar:lcountdown|edge_det_fall:l_edge    ; work         ;
 ;             |e_counter:le|                      ; 37 (37)           ; 18 (18)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|e_counter:le                                     ; work         ;
 ;             |h_counter:lh|                      ; 7 (7)             ; 6 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|h_counter:lh                                     ; work         ;
 ;                |edge_detector:l_edge|           ; 0 (0)             ; 2 (2)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|h_counter:lh|edge_detector:l_edge                ; work         ;
-;             |v_counter:lv|                      ; 8 (8)             ; 6 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|v_counter:lv                                     ; work         ;
+;             |v_counter:lv|                      ; 7 (7)             ; 6 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|v_counter:lv                                     ; work         ;
 ;                |edge_detector:l_edge|           ; 0 (0)             ; 2 (2)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|v_counter:lv|edge_detector:l_edge                ; work         ;
 ;          |rom_cursor:rom|                       ; 0 (0)             ; 0 (0)        ; 2048        ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|pixel:inst2|graphic_toplvl:gl|rom_cursor:rom                                                     ; work         ;
 ;             |altsyncram:rom_rtl_0|              ; 0 (0)             ; 0 (0)        ; 2048        ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|pixel:inst2|graphic_toplvl:gl|rom_cursor:rom|altsyncram:rom_rtl_0                                ; work         ;
 ;                |altsyncram_rn61:auto_generated| ; 0 (0)             ; 0 (0)        ; 2048        ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|pixel:inst2|graphic_toplvl:gl|rom_cursor:rom|altsyncram:rom_rtl_0|altsyncram_rn61:auto_generated ; work         ;
 ;          |vgadrive:vgd|                         ; 219 (219)         ; 40 (40)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|pixel:inst2|graphic_toplvl:gl|vgadrive:vgd                                                       ; work         ;
-;       |mouse_logic:ml|                          ; 189 (0)           ; 131 (0)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|pixel:inst2|mouse_logic:ml                                                                       ; work         ;
-;          |logic_top:il|                         ; 45 (0)            ; 26 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|pixel:inst2|mouse_logic:ml|logic_top:il                                                          ; work         ;
+;       |mouse_logic:ml|                          ; 227 (0)           ; 153 (0)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|pixel:inst2|mouse_logic:ml                                                                       ; work         ;
+;          |logic_top:il|                         ; 54 (0)            ; 26 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|pixel:inst2|mouse_logic:ml|logic_top:il                                                          ; work         ;
 ;             |color:color1|                      ; 12 (12)           ; 10 (10)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|pixel:inst2|mouse_logic:ml|logic_top:il|color:color1                                             ; work         ;
 ;             |x:x1|                              ; 18 (18)           ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|pixel:inst2|mouse_logic:ml|logic_top:il|x:x1                                                     ; work         ;
-;             |y:y1|                              ; 15 (15)           ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|pixel:inst2|mouse_logic:ml|logic_top:il|y:y1                                                     ; work         ;
-;          |mouse:ms|                             ; 144 (0)           ; 105 (0)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|pixel:inst2|mouse_logic:ml|mouse:ms                                                              ; work         ;
+;             |y:y1|                              ; 24 (24)           ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|pixel:inst2|mouse_logic:ml|logic_top:il|y:y1                                                     ; work         ;
+;          |mouse:ms|                             ; 173 (0)           ; 127 (0)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|pixel:inst2|mouse_logic:ml|mouse:ms                                                              ; work         ;
 ;             |counter25mhz:cntD|                 ; 13 (13)           ; 13 (13)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|pixel:inst2|mouse_logic:ml|mouse:ms|counter25mhz:cntD                                            ; work         ;
 ;             |counter25mhz:cnt|                  ; 13 (13)           ; 13 (13)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|pixel:inst2|mouse_logic:ml|mouse:ms|counter25mhz:cnt                                             ; work         ;
 ;             |edge_debounce:ed|                  ; 14 (14)           ; 6 (6)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|pixel:inst2|mouse_logic:ml|mouse:ms|edge_debounce:ed                                             ; work         ;
@@ -327,7 +330,8 @@ applicable agreement for further details.
 ;             |flipflop_bufr:clk_buffer2|         ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|pixel:inst2|mouse_logic:ml|mouse:ms|flipflop_bufr:clk_buffer2                                    ; work         ;
 ;             |flipflop_bufr:data_buffer1|        ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|pixel:inst2|mouse_logic:ml|mouse:ms|flipflop_bufr:data_buffer1                                   ; work         ;
 ;             |flipflop_bufr:data_buffer2|        ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|pixel:inst2|mouse_logic:ml|mouse:ms|flipflop_bufr:data_buffer2                                   ; work         ;
-;             |main_fsm:mfsm|                     ; 45 (45)           ; 26 (26)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|pixel:inst2|mouse_logic:ml|mouse:ms|main_fsm:mfsm                                                ; work         ;
+;             |main_fsm:mfsm|                     ; 52 (52)           ; 26 (26)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|pixel:inst2|mouse_logic:ml|mouse:ms|main_fsm:mfsm                                                ; work         ;
+;             |mouse_timer:timr|                  ; 22 (22)           ; 22 (22)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|pixel:inst2|mouse_logic:ml|mouse:ms|mouse_timer:timr                                             ; work         ;
 ;             |mux:mx2|                           ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|pixel:inst2|mouse_logic:ml|mouse:ms|mux:mx2                                                      ; work         ;
 ;             |mux:mx|                            ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|pixel:inst2|mouse_logic:ml|mouse:ms|mux:mx                                                       ; work         ;
 ;             |sendFSM:sfsm|                      ; 28 (28)           ; 9 (9)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|pixel:inst2|mouse_logic:ml|mouse:ms|sendFSM:sfsm                                                 ; work         ;
@@ -448,8 +452,8 @@ Encoding Type:  One-Hot
 +-----------------------------------------------------------------------------+-----------------------------------------------------------------------------+------------------------+
 ; Latch Name                                                                  ; Latch Enable Signal                                                         ; Free of Timing Hazards ;
 +-----------------------------------------------------------------------------+-----------------------------------------------------------------------------+------------------------+
-; pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|y_grid_asked[0]             ; pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|x_grid_asked[3]             ; yes                    ;
 ; pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|x_grid_asked[1]             ; pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|x_grid_asked[3]             ; yes                    ;
+; pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|y_grid_asked[0]             ; pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|x_grid_asked[3]             ; yes                    ;
 ; pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|x_grid_asked[0]             ; pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|x_grid_asked[3]             ; yes                    ;
 ; pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|y_grid_asked[2]             ; pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|x_grid_asked[3]             ; yes                    ;
 ; pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|x_grid_asked[3]             ; pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|x_grid_asked[3]             ; yes                    ;
@@ -518,12 +522,11 @@ Note: All latches listed above may not be present at the end of synthesis due to
 ; pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|scale_horizontal_counter[8] ; Merged with pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|horizontal_counter[8]     ;
 ; pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|scale_horizontal_counter[9] ; Merged with pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|horizontal_counter[9]     ;
 ; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|x_grid[6]             ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|x_grid[5]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|y_grid[4,5]           ; Stuck at GND due to stuck port data_in                                           ;
 ; pixel:inst2|mouse_logic:ml|logic_top:il|color:color1|state_hs.ready    ; Lost fanout                                                                      ;
-; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|y_grid[5]             ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|y_grid[4]           ;
 ; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|x_grid[5]             ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|x_grid[4]           ;
 ; pixel:inst2|mouse_logic:ml|mouse:ms|main_fsm:mfsm|state.delay_1        ; Stuck at GND due to stuck port data_in                                           ;
 ; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|x_grid[4]             ; Stuck at GND due to stuck port data_in                                           ;
-; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|y_grid[4]             ; Stuck at GND due to stuck port data_in                                           ;
 ; Total Number of Removed Registers = 48                                 ;                                                                                  ;
 +------------------------------------------------------------------------+----------------------------------------------------------------------------------+
 
@@ -533,8 +536,8 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 531   ;
-; Number of registers using Synchronous Clear  ; 52    ;
+; Total registers                              ; 553   ;
+; Number of registers using Synchronous Clear  ; 75    ;
 ; Number of registers using Synchronous Load   ; 3     ;
 ; Number of registers using Asynchronous Clear ; 0     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
@@ -557,118 +560,120 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                                   ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------------------------------------+
-; 3:1                ; 10 bits   ; 20 LEs        ; 10 LEs               ; 10 LEs                 ; Yes        ; |top_de1|pixel:inst2|mouse_logic:ml|mouse:ms|shiftregister_11bit:sr11|data_out[3]            ;
-; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |top_de1|pixel:inst2|mouse_logic:ml|mouse:ms|timebase:tb|count[0]                            ;
-; 3:1                ; 5 bits    ; 10 LEs        ; 5 LEs                ; 5 LEs                  ; Yes        ; |top_de1|pixel:inst2|mouse_logic:ml|mouse:ms|shiftregister_9bit:sr|new_new_data[6]           ;
-; 3:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; Yes        ; |top_de1|pixel:inst2|mouse_logic:ml|mouse:ms|shiftregister_9bit:sr|new_new_data[5]           ;
-; 3:1                ; 10 bits   ; 20 LEs        ; 20 LEs               ; 0 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|scale_vertical_counter[1]                ;
-; 3:1                ; 10 bits   ; 20 LEs        ; 10 LEs               ; 10 LEs                 ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|e_counter:le|count_e[9]             ;
-; 4:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|h_counter:lh|count_h[1]             ;
+; 3:1                ; 10 bits   ; 20 LEs        ; 10 LEs               ; 10 LEs                 ; Yes        ; |top_de1|pixel:inst2|mouse_logic:ml|mouse:ms|shiftregister_11bit:sr11|data_out[6]            ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |top_de1|pixel:inst2|mouse_logic:ml|mouse:ms|timebase:tb|count[2]                            ;
+; 3:1                ; 5 bits    ; 10 LEs        ; 5 LEs                ; 5 LEs                  ; Yes        ; |top_de1|pixel:inst2|mouse_logic:ml|mouse:ms|shiftregister_9bit:sr|new_new_data[1]           ;
+; 3:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; Yes        ; |top_de1|pixel:inst2|mouse_logic:ml|mouse:ms|shiftregister_9bit:sr|new_new_data[7]           ;
+; 3:1                ; 10 bits   ; 20 LEs        ; 20 LEs               ; 0 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|scale_vertical_counter[0]                ;
+; 3:1                ; 10 bits   ; 20 LEs        ; 10 LEs               ; 10 LEs                 ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|e_counter:le|count_e[8]             ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|h_counter:lh|count_h[0]             ;
 ; 4:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|v_counter:lv|count_v[2]             ;
-; 5:1                ; 3 bits    ; 9 LEs         ; 3 LEs                ; 6 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[99][2]                         ;
+; 5:1                ; 3 bits    ; 9 LEs         ; 3 LEs                ; 6 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[99][1]                         ;
 ; 5:1                ; 3 bits    ; 9 LEs         ; 3 LEs                ; 6 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[98][0]                         ;
-; 5:1                ; 3 bits    ; 9 LEs         ; 3 LEs                ; 6 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[97][0]                         ;
-; 5:1                ; 3 bits    ; 9 LEs         ; 3 LEs                ; 6 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[96][0]                         ;
-; 5:1                ; 3 bits    ; 9 LEs         ; 3 LEs                ; 6 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[95][0]                         ;
-; 5:1                ; 3 bits    ; 9 LEs         ; 3 LEs                ; 6 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[94][1]                         ;
-; 5:1                ; 3 bits    ; 9 LEs         ; 3 LEs                ; 6 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[93][1]                         ;
+; 5:1                ; 3 bits    ; 9 LEs         ; 3 LEs                ; 6 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[97][1]                         ;
+; 5:1                ; 3 bits    ; 9 LEs         ; 3 LEs                ; 6 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[96][1]                         ;
+; 5:1                ; 3 bits    ; 9 LEs         ; 3 LEs                ; 6 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[95][1]                         ;
+; 5:1                ; 3 bits    ; 9 LEs         ; 3 LEs                ; 6 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[94][2]                         ;
+; 5:1                ; 3 bits    ; 9 LEs         ; 3 LEs                ; 6 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[93][0]                         ;
 ; 5:1                ; 3 bits    ; 9 LEs         ; 3 LEs                ; 6 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[92][0]                         ;
 ; 5:1                ; 3 bits    ; 9 LEs         ; 3 LEs                ; 6 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[91][0]                         ;
-; 5:1                ; 3 bits    ; 9 LEs         ; 3 LEs                ; 6 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[90][1]                         ;
+; 5:1                ; 3 bits    ; 9 LEs         ; 3 LEs                ; 6 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[90][2]                         ;
 ; 5:1                ; 3 bits    ; 9 LEs         ; 3 LEs                ; 6 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[89][0]                         ;
-; 5:1                ; 3 bits    ; 9 LEs         ; 3 LEs                ; 6 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[88][2]                         ;
+; 5:1                ; 3 bits    ; 9 LEs         ; 3 LEs                ; 6 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[88][1]                         ;
 ; 5:1                ; 3 bits    ; 9 LEs         ; 3 LEs                ; 6 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[87][0]                         ;
-; 5:1                ; 3 bits    ; 9 LEs         ; 3 LEs                ; 6 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[86][0]                         ;
-; 5:1                ; 3 bits    ; 9 LEs         ; 3 LEs                ; 6 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[85][0]                         ;
-; 5:1                ; 3 bits    ; 9 LEs         ; 3 LEs                ; 6 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[84][0]                         ;
-; 5:1                ; 3 bits    ; 9 LEs         ; 3 LEs                ; 6 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[83][0]                         ;
-; 5:1                ; 3 bits    ; 9 LEs         ; 3 LEs                ; 6 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[82][0]                         ;
-; 5:1                ; 3 bits    ; 9 LEs         ; 3 LEs                ; 6 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[81][0]                         ;
-; 5:1                ; 3 bits    ; 9 LEs         ; 3 LEs                ; 6 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[80][0]                         ;
-; 5:1                ; 3 bits    ; 9 LEs         ; 3 LEs                ; 6 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[79][0]                         ;
-; 5:1                ; 3 bits    ; 9 LEs         ; 3 LEs                ; 6 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[78][0]                         ;
+; 5:1                ; 3 bits    ; 9 LEs         ; 3 LEs                ; 6 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[86][2]                         ;
+; 5:1                ; 3 bits    ; 9 LEs         ; 3 LEs                ; 6 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[85][2]                         ;
+; 5:1                ; 3 bits    ; 9 LEs         ; 3 LEs                ; 6 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[84][2]                         ;
+; 5:1                ; 3 bits    ; 9 LEs         ; 3 LEs                ; 6 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[83][2]                         ;
+; 5:1                ; 3 bits    ; 9 LEs         ; 3 LEs                ; 6 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[82][2]                         ;
+; 5:1                ; 3 bits    ; 9 LEs         ; 3 LEs                ; 6 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[81][1]                         ;
+; 5:1                ; 3 bits    ; 9 LEs         ; 3 LEs                ; 6 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[80][1]                         ;
+; 5:1                ; 3 bits    ; 9 LEs         ; 3 LEs                ; 6 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[79][2]                         ;
+; 5:1                ; 3 bits    ; 9 LEs         ; 3 LEs                ; 6 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[78][1]                         ;
 ; 5:1                ; 3 bits    ; 9 LEs         ; 3 LEs                ; 6 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[77][0]                         ;
-; 5:1                ; 3 bits    ; 9 LEs         ; 3 LEs                ; 6 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[76][0]                         ;
+; 5:1                ; 3 bits    ; 9 LEs         ; 3 LEs                ; 6 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[76][1]                         ;
 ; 5:1                ; 3 bits    ; 9 LEs         ; 3 LEs                ; 6 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[75][0]                         ;
-; 5:1                ; 3 bits    ; 9 LEs         ; 3 LEs                ; 6 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[74][0]                         ;
-; 5:1                ; 3 bits    ; 9 LEs         ; 3 LEs                ; 6 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[73][0]                         ;
+; 5:1                ; 3 bits    ; 9 LEs         ; 3 LEs                ; 6 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[74][2]                         ;
+; 5:1                ; 3 bits    ; 9 LEs         ; 3 LEs                ; 6 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[73][1]                         ;
 ; 5:1                ; 3 bits    ; 9 LEs         ; 3 LEs                ; 6 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[72][0]                         ;
 ; 5:1                ; 3 bits    ; 9 LEs         ; 3 LEs                ; 6 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[71][0]                         ;
-; 5:1                ; 3 bits    ; 9 LEs         ; 3 LEs                ; 6 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[70][2]                         ;
+; 5:1                ; 3 bits    ; 9 LEs         ; 3 LEs                ; 6 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[70][0]                         ;
 ; 5:1                ; 3 bits    ; 9 LEs         ; 3 LEs                ; 6 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[69][0]                         ;
-; 5:1                ; 3 bits    ; 9 LEs         ; 3 LEs                ; 6 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[68][0]                         ;
-; 5:1                ; 3 bits    ; 9 LEs         ; 3 LEs                ; 6 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[67][0]                         ;
-; 5:1                ; 3 bits    ; 9 LEs         ; 3 LEs                ; 6 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[66][0]                         ;
+; 5:1                ; 3 bits    ; 9 LEs         ; 3 LEs                ; 6 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[68][1]                         ;
+; 5:1                ; 3 bits    ; 9 LEs         ; 3 LEs                ; 6 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[67][1]                         ;
+; 5:1                ; 3 bits    ; 9 LEs         ; 3 LEs                ; 6 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[66][1]                         ;
 ; 5:1                ; 3 bits    ; 9 LEs         ; 3 LEs                ; 6 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[65][2]                         ;
-; 5:1                ; 3 bits    ; 9 LEs         ; 3 LEs                ; 6 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[64][2]                         ;
-; 5:1                ; 3 bits    ; 9 LEs         ; 3 LEs                ; 6 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[63][2]                         ;
+; 5:1                ; 3 bits    ; 9 LEs         ; 3 LEs                ; 6 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[64][1]                         ;
+; 5:1                ; 3 bits    ; 9 LEs         ; 3 LEs                ; 6 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[63][1]                         ;
 ; 5:1                ; 3 bits    ; 9 LEs         ; 3 LEs                ; 6 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[62][2]                         ;
-; 5:1                ; 3 bits    ; 9 LEs         ; 3 LEs                ; 6 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[61][2]                         ;
-; 5:1                ; 3 bits    ; 9 LEs         ; 3 LEs                ; 6 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[60][0]                         ;
-; 5:1                ; 3 bits    ; 9 LEs         ; 3 LEs                ; 6 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[59][1]                         ;
+; 5:1                ; 3 bits    ; 9 LEs         ; 3 LEs                ; 6 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[61][1]                         ;
+; 5:1                ; 3 bits    ; 9 LEs         ; 3 LEs                ; 6 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[60][1]                         ;
+; 5:1                ; 3 bits    ; 9 LEs         ; 3 LEs                ; 6 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[59][2]                         ;
 ; 5:1                ; 3 bits    ; 9 LEs         ; 3 LEs                ; 6 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[58][0]                         ;
-; 5:1                ; 3 bits    ; 9 LEs         ; 3 LEs                ; 6 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[57][0]                         ;
-; 5:1                ; 3 bits    ; 9 LEs         ; 3 LEs                ; 6 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[56][0]                         ;
-; 5:1                ; 3 bits    ; 9 LEs         ; 3 LEs                ; 6 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[55][1]                         ;
-; 5:1                ; 3 bits    ; 9 LEs         ; 3 LEs                ; 6 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[54][0]                         ;
+; 5:1                ; 3 bits    ; 9 LEs         ; 3 LEs                ; 6 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[57][2]                         ;
+; 5:1                ; 3 bits    ; 9 LEs         ; 3 LEs                ; 6 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[56][2]                         ;
+; 5:1                ; 3 bits    ; 9 LEs         ; 3 LEs                ; 6 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[55][2]                         ;
+; 5:1                ; 3 bits    ; 9 LEs         ; 3 LEs                ; 6 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[54][2]                         ;
 ; 5:1                ; 3 bits    ; 9 LEs         ; 3 LEs                ; 6 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[53][2]                         ;
-; 5:1                ; 3 bits    ; 9 LEs         ; 3 LEs                ; 6 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[52][0]                         ;
+; 5:1                ; 3 bits    ; 9 LEs         ; 3 LEs                ; 6 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[52][2]                         ;
 ; 5:1                ; 3 bits    ; 9 LEs         ; 3 LEs                ; 6 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[51][2]                         ;
 ; 5:1                ; 3 bits    ; 9 LEs         ; 3 LEs                ; 6 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[50][2]                         ;
-; 5:1                ; 3 bits    ; 9 LEs         ; 3 LEs                ; 6 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[49][1]                         ;
-; 5:1                ; 3 bits    ; 9 LEs         ; 3 LEs                ; 6 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[48][1]                         ;
-; 5:1                ; 3 bits    ; 9 LEs         ; 3 LEs                ; 6 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[47][0]                         ;
-; 5:1                ; 3 bits    ; 9 LEs         ; 3 LEs                ; 6 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[46][0]                         ;
-; 5:1                ; 3 bits    ; 9 LEs         ; 3 LEs                ; 6 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[45][0]                         ;
-; 5:1                ; 3 bits    ; 9 LEs         ; 3 LEs                ; 6 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[44][0]                         ;
-; 5:1                ; 3 bits    ; 9 LEs         ; 3 LEs                ; 6 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[43][0]                         ;
+; 5:1                ; 3 bits    ; 9 LEs         ; 3 LEs                ; 6 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[49][2]                         ;
+; 5:1                ; 3 bits    ; 9 LEs         ; 3 LEs                ; 6 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[48][0]                         ;
+; 5:1                ; 3 bits    ; 9 LEs         ; 3 LEs                ; 6 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[47][2]                         ;
+; 5:1                ; 3 bits    ; 9 LEs         ; 3 LEs                ; 6 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[46][2]                         ;
+; 5:1                ; 3 bits    ; 9 LEs         ; 3 LEs                ; 6 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[45][2]                         ;
+; 5:1                ; 3 bits    ; 9 LEs         ; 3 LEs                ; 6 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[44][2]                         ;
+; 5:1                ; 3 bits    ; 9 LEs         ; 3 LEs                ; 6 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[43][1]                         ;
 ; 5:1                ; 3 bits    ; 9 LEs         ; 3 LEs                ; 6 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[42][1]                         ;
 ; 5:1                ; 3 bits    ; 9 LEs         ; 3 LEs                ; 6 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[41][1]                         ;
-; 5:1                ; 3 bits    ; 9 LEs         ; 3 LEs                ; 6 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[40][1]                         ;
-; 5:1                ; 3 bits    ; 9 LEs         ; 3 LEs                ; 6 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[39][2]                         ;
-; 5:1                ; 3 bits    ; 9 LEs         ; 3 LEs                ; 6 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[38][2]                         ;
-; 5:1                ; 3 bits    ; 9 LEs         ; 3 LEs                ; 6 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[37][0]                         ;
-; 5:1                ; 3 bits    ; 9 LEs         ; 3 LEs                ; 6 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[36][1]                         ;
+; 5:1                ; 3 bits    ; 9 LEs         ; 3 LEs                ; 6 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[40][2]                         ;
+; 5:1                ; 3 bits    ; 9 LEs         ; 3 LEs                ; 6 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[39][1]                         ;
+; 5:1                ; 3 bits    ; 9 LEs         ; 3 LEs                ; 6 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[38][1]                         ;
+; 5:1                ; 3 bits    ; 9 LEs         ; 3 LEs                ; 6 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[37][1]                         ;
+; 5:1                ; 3 bits    ; 9 LEs         ; 3 LEs                ; 6 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[36][2]                         ;
 ; 5:1                ; 3 bits    ; 9 LEs         ; 3 LEs                ; 6 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[35][1]                         ;
-; 5:1                ; 3 bits    ; 9 LEs         ; 3 LEs                ; 6 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[34][1]                         ;
+; 5:1                ; 3 bits    ; 9 LEs         ; 3 LEs                ; 6 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[34][0]                         ;
 ; 5:1                ; 3 bits    ; 9 LEs         ; 3 LEs                ; 6 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[33][0]                         ;
 ; 5:1                ; 3 bits    ; 9 LEs         ; 3 LEs                ; 6 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[32][0]                         ;
-; 5:1                ; 3 bits    ; 9 LEs         ; 3 LEs                ; 6 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[31][0]                         ;
-; 5:1                ; 3 bits    ; 9 LEs         ; 3 LEs                ; 6 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[30][0]                         ;
-; 5:1                ; 3 bits    ; 9 LEs         ; 3 LEs                ; 6 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[29][0]                         ;
+; 5:1                ; 3 bits    ; 9 LEs         ; 3 LEs                ; 6 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[31][1]                         ;
+; 5:1                ; 3 bits    ; 9 LEs         ; 3 LEs                ; 6 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[30][1]                         ;
+; 5:1                ; 3 bits    ; 9 LEs         ; 3 LEs                ; 6 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[29][1]                         ;
 ; 5:1                ; 3 bits    ; 9 LEs         ; 3 LEs                ; 6 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[28][0]                         ;
 ; 5:1                ; 3 bits    ; 9 LEs         ; 3 LEs                ; 6 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[27][1]                         ;
-; 5:1                ; 3 bits    ; 9 LEs         ; 3 LEs                ; 6 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[26][2]                         ;
-; 5:1                ; 3 bits    ; 9 LEs         ; 3 LEs                ; 6 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[25][1]                         ;
-; 5:1                ; 3 bits    ; 9 LEs         ; 3 LEs                ; 6 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[24][2]                         ;
-; 5:1                ; 3 bits    ; 9 LEs         ; 3 LEs                ; 6 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[23][0]                         ;
+; 5:1                ; 3 bits    ; 9 LEs         ; 3 LEs                ; 6 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[26][0]                         ;
+; 5:1                ; 3 bits    ; 9 LEs         ; 3 LEs                ; 6 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[25][0]                         ;
+; 5:1                ; 3 bits    ; 9 LEs         ; 3 LEs                ; 6 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[24][1]                         ;
+; 5:1                ; 3 bits    ; 9 LEs         ; 3 LEs                ; 6 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[23][1]                         ;
 ; 5:1                ; 3 bits    ; 9 LEs         ; 3 LEs                ; 6 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[22][0]                         ;
 ; 5:1                ; 3 bits    ; 9 LEs         ; 3 LEs                ; 6 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[21][0]                         ;
 ; 5:1                ; 3 bits    ; 9 LEs         ; 3 LEs                ; 6 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[20][1]                         ;
-; 5:1                ; 3 bits    ; 9 LEs         ; 3 LEs                ; 6 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[19][0]                         ;
-; 5:1                ; 3 bits    ; 9 LEs         ; 3 LEs                ; 6 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[18][0]                         ;
-; 5:1                ; 3 bits    ; 9 LEs         ; 3 LEs                ; 6 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[17][0]                         ;
-; 5:1                ; 3 bits    ; 9 LEs         ; 3 LEs                ; 6 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[16][1]                         ;
+; 5:1                ; 3 bits    ; 9 LEs         ; 3 LEs                ; 6 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[19][2]                         ;
+; 5:1                ; 3 bits    ; 9 LEs         ; 3 LEs                ; 6 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[18][1]                         ;
+; 5:1                ; 3 bits    ; 9 LEs         ; 3 LEs                ; 6 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[17][2]                         ;
+; 5:1                ; 3 bits    ; 9 LEs         ; 3 LEs                ; 6 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[16][2]                         ;
 ; 5:1                ; 3 bits    ; 9 LEs         ; 3 LEs                ; 6 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[15][0]                         ;
-; 5:1                ; 3 bits    ; 9 LEs         ; 3 LEs                ; 6 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[14][0]                         ;
+; 5:1                ; 3 bits    ; 9 LEs         ; 3 LEs                ; 6 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[14][1]                         ;
 ; 5:1                ; 3 bits    ; 9 LEs         ; 3 LEs                ; 6 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[13][1]                         ;
 ; 5:1                ; 3 bits    ; 9 LEs         ; 3 LEs                ; 6 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[12][1]                         ;
-; 5:1                ; 3 bits    ; 9 LEs         ; 3 LEs                ; 6 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[11][1]                         ;
-; 5:1                ; 3 bits    ; 9 LEs         ; 3 LEs                ; 6 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[10][2]                         ;
+; 5:1                ; 3 bits    ; 9 LEs         ; 3 LEs                ; 6 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[11][2]                         ;
+; 5:1                ; 3 bits    ; 9 LEs         ; 3 LEs                ; 6 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[10][1]                         ;
 ; 5:1                ; 3 bits    ; 9 LEs         ; 3 LEs                ; 6 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[9][1]                          ;
-; 5:1                ; 3 bits    ; 9 LEs         ; 3 LEs                ; 6 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[8][0]                          ;
-; 5:1                ; 3 bits    ; 9 LEs         ; 3 LEs                ; 6 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[7][0]                          ;
-; 5:1                ; 3 bits    ; 9 LEs         ; 3 LEs                ; 6 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[6][1]                          ;
-; 5:1                ; 3 bits    ; 9 LEs         ; 3 LEs                ; 6 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[5][1]                          ;
-; 5:1                ; 3 bits    ; 9 LEs         ; 3 LEs                ; 6 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[4][2]                          ;
-; 5:1                ; 3 bits    ; 9 LEs         ; 3 LEs                ; 6 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[3][2]                          ;
-; 5:1                ; 3 bits    ; 9 LEs         ; 3 LEs                ; 6 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[2][2]                          ;
+; 5:1                ; 3 bits    ; 9 LEs         ; 3 LEs                ; 6 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[8][2]                          ;
+; 5:1                ; 3 bits    ; 9 LEs         ; 3 LEs                ; 6 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[7][2]                          ;
+; 5:1                ; 3 bits    ; 9 LEs         ; 3 LEs                ; 6 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[6][2]                          ;
+; 5:1                ; 3 bits    ; 9 LEs         ; 3 LEs                ; 6 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[5][2]                          ;
+; 5:1                ; 3 bits    ; 9 LEs         ; 3 LEs                ; 6 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[4][0]                          ;
+; 5:1                ; 3 bits    ; 9 LEs         ; 3 LEs                ; 6 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[3][0]                          ;
+; 5:1                ; 3 bits    ; 9 LEs         ; 3 LEs                ; 6 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[2][0]                          ;
 ; 5:1                ; 3 bits    ; 9 LEs         ; 3 LEs                ; 6 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[1][0]                          ;
-; 5:1                ; 3 bits    ; 9 LEs         ; 3 LEs                ; 6 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[0][0]                          ;
+; 5:1                ; 3 bits    ; 9 LEs         ; 3 LEs                ; 6 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[0][1]                          ;
 ; 5:1                ; 11 bits   ; 33 LEs        ; 22 LEs               ; 11 LEs                 ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|countdown_bar:lcountdown|count_c[8] ;
-; 5:1                ; 4 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; Yes        ; |top_de1|pixel:inst2|mouse_logic:ml|logic_top:il|y:y1|tempy[1]                               ;
-; 5:1                ; 4 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; Yes        ; |top_de1|pixel:inst2|mouse_logic:ml|logic_top:il|x:x1|tempx[0]                               ;
+; 5:1                ; 4 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; Yes        ; |top_de1|pixel:inst2|mouse_logic:ml|logic_top:il|x:x1|tempx[1]                               ;
 ; 3:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |top_de1|pixel:inst2|mouse_logic:ml|logic_top:il|color:color1|state                          ;
+; 3:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |top_de1|pixel:inst2|mouse_logic:ml|mouse:ms|main_fsm:mfsm|y_out                             ;
+; 3:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |top_de1|pixel:inst2|mouse_logic:ml|mouse:ms|main_fsm:mfsm|x_out                             ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |top_de1|pixel:inst2|mouse_logic:ml|logic_top:il|y:y1|locy_unsigned[3]                       ;
 ; 101:1              ; 3 bits    ; 201 LEs       ; 201 LEs              ; 0 LEs                  ; No         ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram                                ;
 ; 105:1              ; 2 bits    ; 140 LEs       ; 140 LEs              ; 0 LEs                  ; No         ; |top_de1|pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|Bout                                     ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------------------------------------+
@@ -838,6 +843,15 @@ Note: In order to hide this table in the UI and the text report file, please set
 +------+--------+----------+-------------------------------------------------------------------------------------+
 
 
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "pixel:inst2|mouse_logic:ml"                                                         ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; rst  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
 +-------------------------------+
 ; Elapsed Time Per Partition    ;
 +----------------+--------------+
@@ -853,9 +867,13 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 32-bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
-    Info: Processing started: Fri Jan 20 19:29:48 2023
+    Info: Processing started: Fri Jan 20 21:33:20 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off de1 -c top_de1
 Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file /home/ghpdohmen/epo3/epo3/final/VHDL/mouse_timer.vhd
+    Info (12023): Found entity 1: mouse_timer
+Info (12021): Found 1 design units, including 0 entities, in source file /home/ghpdohmen/epo3/epo3/final/VHDL/mouse_timer-behav.vhd
+    Info (12022): Found design unit 1: mouse_timer-behav
 Info (12021): Found 1 design units, including 1 entities, in source file /home/ghpdohmen/epo3/epo3/final/VHDL/y.vhd
     Info (12023): Found entity 1: y
 Info (12021): Found 1 design units, including 0 entities, in source file /home/ghpdohmen/epo3/epo3/final/VHDL/y-behaviour_y.vhd
@@ -976,22 +994,23 @@ Info (12021): Found 2 design units, including 1 entities, in source file gen25mh
     Info (12023): Found entity 1: gen25mhz
 Info (12127): Elaborating entity "top_de1" for the top level hierarchy
 Info (12128): Elaborating entity "pixel" for hierarchy "pixel:inst2"
+Warning (10036): Verilog HDL or VHDL warning at pixel-behav.vhd(49): object "rst" assigned a value but never read
 Info (12128): Elaborating entity "mouse_logic" for hierarchy "pixel:inst2|mouse_logic:ml"
 Warning (10541): VHDL Signal Declaration warning at mouse_logic.vhd(17): used implicit default value for signal "rst" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
-Warning (10541): VHDL Signal Declaration warning at mouse_logic.vhd(26): used implicit default value for signal "led9" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
 Info (12128): Elaborating entity "mouse" for hierarchy "pixel:inst2|mouse_logic:ml|mouse:ms"
-Warning (10036): Verilog HDL or VHDL warning at mouse-behav.vhd(132): object "bit11_reg_rst" assigned a value but never read
-Warning (10492): VHDL Process Statement warning at mouse-behav.vhd(149): signal "reset" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at mouse-behav.vhd(150): signal "count15k" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at mouse-behav.vhd(151): signal "count15k" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at mouse-behav.vhd(152): signal "count15k" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at mouse-behav.vhd(153): signal "count15k" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at mouse-behav.vhd(154): signal "leds_mainfsm" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at mouse-behav.vhd(155): signal "leds_mainfsm" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at mouse-behav.vhd(156): signal "leds_mainfsm" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at mouse-behav.vhd(157): signal "leds_mainfsm" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at mouse-behav.vhd(158): signal "leds_mainfsm" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10036): Verilog HDL or VHDL warning at mouse-behav.vhd(141): object "bit11_reg_rst" assigned a value but never read
+Warning (10492): VHDL Process Statement warning at mouse-behav.vhd(159): signal "reset" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at mouse-behav.vhd(160): signal "count15k" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at mouse-behav.vhd(161): signal "count15k" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at mouse-behav.vhd(162): signal "count15k" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at mouse-behav.vhd(163): signal "count15k" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at mouse-behav.vhd(164): signal "leds_mainfsm" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at mouse-behav.vhd(165): signal "leds_mainfsm" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at mouse-behav.vhd(166): signal "leds_mainfsm" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at mouse-behav.vhd(167): signal "leds_mainfsm" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at mouse-behav.vhd(168): signal "leds_mainfsm" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
 Info (12128): Elaborating entity "counter25mhz" for hierarchy "pixel:inst2|mouse_logic:ml|mouse:ms|counter25mhz:cnt"
+Info (12128): Elaborating entity "mouse_timer" for hierarchy "pixel:inst2|mouse_logic:ml|mouse:ms|mouse_timer:timr"
 Info (12128): Elaborating entity "edge_debounce" for hierarchy "pixel:inst2|mouse_logic:ml|mouse:ms|edge_debounce:ed"
 Warning (10492): VHDL Process Statement warning at edge_debounce-behav.vhd(70): signal "reg1" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
 Warning (10492): VHDL Process Statement warning at edge_debounce-behav.vhd(70): signal "reg2" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
@@ -1010,58 +1029,62 @@ Warning (10492): VHDL Process Statement warning at sendFSM-behav.vhd(163): signa
 Info (12128): Elaborating entity "mux" for hierarchy "pixel:inst2|mouse_logic:ml|mouse:ms|mux:mx"
 Info (12128): Elaborating entity "timebase" for hierarchy "pixel:inst2|mouse_logic:ml|mouse:ms|timebase:tb"
 Info (12128): Elaborating entity "main_fsm" for hierarchy "pixel:inst2|mouse_logic:ml|mouse:ms|main_fsm:mfsm"
-Warning (10492): VHDL Process Statement warning at main_fsm-behav.vhd(57): signal "count15k_in" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at main_fsm-behav.vhd(93): signal "count15k_in" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at main_fsm-behav.vhd(129): signal "count15k_in" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at main_fsm-behav.vhd(165): signal "count15k_in" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at main_fsm-behav.vhd(202): signal "count15k_in" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at main_fsm-behav.vhd(238): signal "count15k_in" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at main_fsm-behav.vhd(274): signal "count15k_in" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at main_fsm-behav.vhd(296): signal "count25M" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at main_fsm-behav.vhd(317): signal "data_in" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at main_fsm-behav.vhd(318): signal "data_in" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at main_fsm-behav.vhd(319): signal "data_in" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at main_fsm-behav.vhd(320): signal "data_in" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at main_fsm-behav.vhd(321): signal "data_in" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at main_fsm-behav.vhd(59): signal "count15k_in" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at main_fsm-behav.vhd(97): signal "count15k_in" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at main_fsm-behav.vhd(135): signal "count15k_in" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at main_fsm-behav.vhd(173): signal "count15k_in" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at main_fsm-behav.vhd(212): signal "count15k_in" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at main_fsm-behav.vhd(250): signal "count15k_in" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at main_fsm-behav.vhd(292): signal "count15k_in" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at main_fsm-behav.vhd(315): signal "count25M" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at main_fsm-behav.vhd(336): signal "data_in" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at main_fsm-behav.vhd(337): signal "data_in" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at main_fsm-behav.vhd(338): signal "data_in" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
 Warning (10492): VHDL Process Statement warning at main_fsm-behav.vhd(339): signal "data_in" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
 Warning (10492): VHDL Process Statement warning at main_fsm-behav.vhd(340): signal "data_in" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at main_fsm-behav.vhd(341): signal "data_in" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at main_fsm-behav.vhd(342): signal "data_in" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at main_fsm-behav.vhd(343): signal "data_in" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at main_fsm-behav.vhd(365): signal "count15k_in" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at main_fsm-behav.vhd(387): signal "count25M" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at main_fsm-behav.vhd(412): signal "x_sign" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at main_fsm-behav.vhd(413): signal "data_in" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at main_fsm-behav.vhd(414): signal "data_in" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at main_fsm-behav.vhd(415): signal "data_in" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at main_fsm-behav.vhd(417): signal "data_in" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at main_fsm-behav.vhd(418): signal "data_in" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at main_fsm-behav.vhd(419): signal "data_in" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at main_fsm-behav.vhd(439): signal "x_sign" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at main_fsm-behav.vhd(359): signal "data_in" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at main_fsm-behav.vhd(360): signal "data_in" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at main_fsm-behav.vhd(361): signal "data_in" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at main_fsm-behav.vhd(362): signal "data_in" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at main_fsm-behav.vhd(363): signal "data_in" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at main_fsm-behav.vhd(387): signal "count15k_in" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at main_fsm-behav.vhd(411): signal "count25M" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at main_fsm-behav.vhd(436): signal "mouse_timer" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at main_fsm-behav.vhd(437): signal "x_sign" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at main_fsm-behav.vhd(438): signal "data_in" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at main_fsm-behav.vhd(439): signal "data_in" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
 Warning (10492): VHDL Process Statement warning at main_fsm-behav.vhd(440): signal "data_in" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at main_fsm-behav.vhd(441): signal "data_in" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
 Warning (10492): VHDL Process Statement warning at main_fsm-behav.vhd(442): signal "data_in" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at main_fsm-behav.vhd(443): signal "data_in" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
 Warning (10492): VHDL Process Statement warning at main_fsm-behav.vhd(444): signal "data_in" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at main_fsm-behav.vhd(445): signal "data_in" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at main_fsm-behav.vhd(446): signal "data_in" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at main_fsm-behav.vhd(466): signal "count15k_in" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at main_fsm-behav.vhd(488): signal "count25M" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at main_fsm-behav.vhd(513): signal "y_sign" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at main_fsm-behav.vhd(514): signal "data_in" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at main_fsm-behav.vhd(515): signal "data_in" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at main_fsm-behav.vhd(516): signal "data_in" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at main_fsm-behav.vhd(518): signal "data_in" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at main_fsm-behav.vhd(519): signal "data_in" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at main_fsm-behav.vhd(520): signal "data_in" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at main_fsm-behav.vhd(544): signal "y_sign" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at main_fsm-behav.vhd(545): signal "data_in" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at main_fsm-behav.vhd(546): signal "data_in" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at main_fsm-behav.vhd(547): signal "data_in" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at main_fsm-behav.vhd(549): signal "data_in" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at main_fsm-behav.vhd(468): signal "mouse_timer" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at main_fsm-behav.vhd(469): signal "x_sign" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at main_fsm-behav.vhd(470): signal "data_in" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at main_fsm-behav.vhd(471): signal "data_in" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at main_fsm-behav.vhd(472): signal "data_in" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at main_fsm-behav.vhd(474): signal "data_in" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at main_fsm-behav.vhd(475): signal "data_in" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at main_fsm-behav.vhd(476): signal "data_in" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at main_fsm-behav.vhd(500): signal "count15k_in" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at main_fsm-behav.vhd(523): signal "count25M" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at main_fsm-behav.vhd(548): signal "mouse_timer" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at main_fsm-behav.vhd(549): signal "y_sign" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
 Warning (10492): VHDL Process Statement warning at main_fsm-behav.vhd(550): signal "data_in" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
 Warning (10492): VHDL Process Statement warning at main_fsm-behav.vhd(551): signal "data_in" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at main_fsm-behav.vhd(577): signal "handshake_in" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at main_fsm-behav.vhd(602): signal "handshake_in" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at main_fsm-behav.vhd(552): signal "data_in" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at main_fsm-behav.vhd(554): signal "data_in" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at main_fsm-behav.vhd(555): signal "data_in" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at main_fsm-behav.vhd(556): signal "data_in" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at main_fsm-behav.vhd(583): signal "mouse_timer" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at main_fsm-behav.vhd(585): signal "y_sign" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at main_fsm-behav.vhd(586): signal "data_in" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at main_fsm-behav.vhd(587): signal "data_in" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at main_fsm-behav.vhd(588): signal "data_in" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at main_fsm-behav.vhd(590): signal "data_in" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at main_fsm-behav.vhd(591): signal "data_in" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at main_fsm-behav.vhd(592): signal "data_in" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at main_fsm-behav.vhd(622): signal "handshake_in" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at main_fsm-behav.vhd(647): signal "handshake_in" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
 Info (12128): Elaborating entity "flipflop" for hierarchy "pixel:inst2|mouse_logic:ml|mouse:ms|flipflop:flipflop1"
 Info (12128): Elaborating entity "flipflop_bufr" for hierarchy "pixel:inst2|mouse_logic:ml|mouse:ms|flipflop_bufr:data_buffer1"
 Info (12128): Elaborating entity "shiftregister_11bit" for hierarchy "pixel:inst2|mouse_logic:ml|mouse:ms|shiftregister_11bit:sr11"
@@ -1085,10 +1108,11 @@ Warning (10492): VHDL Process Statement warning at x-behaviour_x.vhd(58): signal
 Info (12128): Elaborating entity "y" for hierarchy "pixel:inst2|mouse_logic:ml|logic_top:il|y:y1"
 Warning (10541): VHDL Signal Declaration warning at y.vhd(10): used implicit default value for signal "handshakeimy" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
 Warning (10036): Verilog HDL or VHDL warning at y-behaviour_y.vhd(10): object "output_unsigned" assigned a value but never read
-Warning (10492): VHDL Process Statement warning at y-behaviour_y.vhd(48): signal "input_register" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at y-behaviour_y.vhd(51): signal "input_register" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at y-behaviour_y.vhd(55): signal "input_register" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at y-behaviour_y.vhd(58): signal "input_register" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at y-behaviour_y.vhd(22): signal "clk" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at y-behaviour_y.vhd(53): signal "input_register" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at y-behaviour_y.vhd(56): signal "input_register" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at y-behaviour_y.vhd(60): signal "input_register" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at y-behaviour_y.vhd(63): signal "input_register" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
 Info (12128): Elaborating entity "color" for hierarchy "pixel:inst2|mouse_logic:ml|logic_top:il|color:color1"
 Info (12128): Elaborating entity "graphic_toplvl" for hierarchy "pixel:inst2|graphic_toplvl:gl"
 Warning (10036): Verilog HDL or VHDL warning at graphic_toplvl-behaviour.vhd(61): object "sig_enable" assigned a value but never read
@@ -1162,10 +1186,10 @@ Info (12133): Instantiated megafunction "pixel:inst2|graphic_toplvl:gl|rom_curso
     Info (12134): Parameter "INIT_FILE" = "db/de1.ram0_rom_cursor_f1823f6e.hdl.mif"
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_rn61.tdf
     Info (12023): Found entity 1: altsyncram_rn61
-Warning (13012): Latch pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|y_grid_asked[0] has unsafe behavior
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|v_counter:lv|count_v[0]
 Warning (13012): Latch pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|x_grid_asked[1] has unsafe behavior
     Warning (13013): Ports D and ENA on the latch are fed by the same signal pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|h_counter:lh|count_h[1]
+Warning (13012): Latch pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|y_grid_asked[0] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|v_counter:lv|count_v[0]
 Warning (13012): Latch pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|x_grid_asked[0] has unsafe behavior
     Warning (13013): Ports D and ENA on the latch are fed by the same signal pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|h_counter:lh|count_h[0]
 Warning (13012): Latch pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|y_grid_asked[2] has unsafe behavior
@@ -1177,21 +1201,19 @@ Warning (13012): Latch pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|x_grid_as
 Warning (13012): Latch pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|y_grid_asked[1] has unsafe behavior
     Warning (13013): Ports D and ENA on the latch are fed by the same signal pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|v_counter:lv|count_v[1]
 Warning (13012): Latch pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|y_grid_asked[3] has unsafe behavior
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|v_counter:lv|count_v[3]
-Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "led9" is stuck at GND
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|v_counter:lv|count_v[2]
 Info (17049): 2 registers lost all their fanouts during netlist optimizations.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 1400 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 1432 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 4 input pins
     Info (21059): Implemented 25 output pins
-    Info (21061): Implemented 1369 logic cells
+    Info (21061): Implemented 1401 logic cells
     Info (21064): Implemented 2 RAM segments
-Info: Quartus II 32-bit Analysis & Synthesis was successful. 0 errors, 132 warnings
-    Info: Peak virtual memory: 387 megabytes
-    Info: Processing ended: Fri Jan 20 19:30:02 2023
+Info: Quartus II 32-bit Analysis & Synthesis was successful. 0 errors, 135 warnings
+    Info: Peak virtual memory: 383 megabytes
+    Info: Processing ended: Fri Jan 20 21:33:34 2023
     Info: Elapsed time: 00:00:14
-    Info: Total CPU time (on all processors): 00:00:10
+    Info: Total CPU time (on all processors): 00:00:09
 
 

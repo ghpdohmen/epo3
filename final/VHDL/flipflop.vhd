@@ -7,6 +7,6 @@ entity flipflop is
         clk     :   in  std_logic;
 	activate:	  in 	std_logic;
         D       :   in  std_logic;
-        Q       :   out std_logic
+        Q       :   buffer std_logic
     );
 end entity flipflop;

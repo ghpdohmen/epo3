@@ -4,9 +4,9 @@ use IEEE.std_logic_1164.ALL;
 architecture behav of mouse_logic is
 
 component mouse is
-   port(mouseX        : out std_logic_vector(2 downto 0);
-        buttons       : out std_logic_vector(4 downto 0);
-        mouseY        : out std_logic_vector(2 downto 0);
+   port(mouseX        : buffer std_logic_vector(2 downto 0);
+        buttons       : buffer std_logic_vector(4 downto 0);
+        mouseY        : buffer std_logic_vector(2 downto 0);
         Handshake_out : out std_logic;
         DataSwitch    : out std_logic;
         ClkSwitch     : out std_logic;
@@ -35,9 +35,9 @@ component logic_top is
 	dy: in std_logic_vector(3 downto 0);
 	handshakemi: in std_logic;
 	output_color: out std_logic_vector(2 downto 0);
-	tempx: out std_logic_vector(3 downto 0);
-	tempy: out std_logic_vector(3 downto 0);
-	draw: out std_logic;
+	tempx: buffer std_logic_vector(3 downto 0);
+	tempy: buffer std_logic_vector(3 downto 0);
+	draw: buffer std_logic;
 	handshakeim: out std_logic;
 	middelsteknop: out std_logic;
 	led0 : out std_logic;
@@ -52,16 +52,19 @@ component logic_top is
 end component;
 
 
-signal handshake_mouse_out, handshake_mouse_in 								: std_logic;
-signal mouseX, mouseY			: std_logic_vector(2 downto 0);
+signal handshake_mouse_out, handshake_mouse_in, draw2 								: std_logic;
+signal mouseX, mouseY		: std_logic_vector(2 downto 0);
 signal buttons_mouse		: std_logic_vector(4 downto 0);
-signal dx, dy			: std_logic_vector(3 downto 0);
+signal dx, dy, tempx2,tempy2				: std_logic_vector(3 downto 0);
 signal buttons			: std_logic_vector(2 downto 0);
 
 
 
 begin
 
+tempx <= tempx2;
+tempy <= tempy2;
+draw <= draw2;
 
 buttons(0) <= buttons_mouse(4);
 buttons(1) <= buttons_mouse(3);
@@ -77,14 +80,14 @@ dy(1) <= mouseY(1);
 dy(2) <= mouseY(2);
 dy(3) <= buttons_mouse(1);
 
---led0 <= buttons(0); --links
+led5 <= buttons(0); --links
 --led1 <= buttons(1); --midden
 --led2 <= buttons(2); --rechts
 
-led5 <= dx(3);
-led6 <= dx(2);
-led7 <= dx(1);
-led8 <= dx(0);
+led6 <= dx(3);
+led7 <= dx(2);
+led8 <= dx(1);
+led9 <= dx(0);
 
 led0 <= dy(3);
 led1 <= dy(2);
@@ -94,7 +97,7 @@ led3 <= dy(0);
 
 ms: mouse port map(mouseX, buttons_mouse, mouseY, handshake_mouse_out, DataSwitch, ClkSwitch, handshake_mouse_in, Data_in, Clk15k, clk, reset);
 
-il: logic_top port map(clk, reset, buttons, dx, dy, handshake_mouse_out, output_color, tempx, tempy, draw, handshake_mouse_in, middelsteknop);
+il: logic_top port map(clk, reset, buttons, dx, dy, handshake_mouse_out, output_color, tempx2, tempy2, draw2, handshake_mouse_in, middelsteknop);
 
 
 end behav;
