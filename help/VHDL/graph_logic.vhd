@@ -10,7 +10,6 @@ port (
     v_count: in std_logic; -- V from the vga
     middelste_knop:in std_logic;
     --countdown_in: in std_logic_vector (4 downto 0);
-    countdown_klaar: out std_logic;
     --vga
     logic_h_32_minis: in std_logic;
     logic_v_32_minis: in std_logic;
@@ -25,6 +24,7 @@ port (
     --to VGA
     logic_vga_colour: out std_logic_vector (2 downto 0);
     --to rom/ram
+    countdown_aan: out std_logic;
     logic_x_asked: out std_logic_vector (3 downto 0);
     logic_y_asked: out std_logic_vector (3 downto 0);
     logic_e_asked: out std_logic_vector (9 downto 0)
@@ -61,11 +61,10 @@ end component;
 component countdown_bar is      
    port(
     v_count: in std_logic;
-    --countdown_aan: in std_logic;
+    countdown_aan: out std_logic;
     middelste_knop: in std_logic;
     clk: in std_logic;
     reset: in std_logic;
-    countdown_klaar: out std_logic;
     countdown_out: out std_logic_vector(10 downto 0)
     );
 end component;
@@ -80,9 +79,9 @@ lv: v_counter port map (logic_v_32 => logic_v_32_minis, logic_v_out => local_y, 
 lh: h_counter port map (logic_h_32 => logic_h_32_minis, logic_h_out => local_x, clk => clk, reset => reset);
 le: e_counter port map (logic_v_out => local_y, logic_h_out => local_x, 
 			muis_x => logic_x, muis_y => logic_y, logic_e_out => logic_e_asked, clk => clk, reset => reset);
-lcountdown: countdown_bar port map (v_count => v_count, middelste_knop => middelste_knop, 
+lcountdown: countdown_bar port map (v_count => v_count, middelste_knop => middelste_knop, countdown_aan => countdown_aan,
 				countdown_out => sig_countdown, 
-				countdown_klaar => countdown_klaar, clk => clk, reset => reset ); 
+				clk => clk, reset => reset ); 
 logic_x_asked <= std_logic_vector(to_unsigned(x_grid_asked, logic_x_asked'length));
 logic_y_asked <= std_logic_vector(to_unsigned(y_grid_asked, logic_y_asked'length));
 countdown_case <= to_integer(unsigned(sig_countdown));
@@ -150,7 +149,7 @@ process(local_y, local_x, logic_y, logic_x, logic_ram_colour, logic_rom_colour, 
         colour_output <= logic_ram_colour;
 	x_grid_asked <= to_integer(unsigned(local_x))- 1;
 	y_grid_asked <= to_integer(unsigned(local_y))- 5;
-    elsif((local_y="0011") and (local_x /= "1110") and (local_x /= "0000")) then --countdown
+   elsif((local_y="0011") and (local_x /= "1110") and (local_x /= "0000")) then --countdown
          if (countdown_int < to_integer(unsigned(local_x))) then
                      colour_output <= "000";
                  else
