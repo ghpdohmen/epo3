@@ -26,6 +26,16 @@ reg: process(clk)
         end if;
     end if;
 end process;
+        
+ reg2: process(clk)
+       begin
+        if (clk'event and clk='1') then
+        
+            input_register<=tempx;
+        end if;
+       
+ end process;
+        
 output_unsigned<= unsigned(tempx);
 
 input_unsigned <= unsigned(dx);
@@ -37,7 +47,7 @@ begin
       --bound_low <= unsigned(input_register) - ('0' & input_unsigned(2 downto 0));
 --( (to_integer(unsigned(input_register)) - to_integer(input_unsigned(2 downto 0))) < 0)
 if ((to_integer(unsigned(input_register)) - to_integer(unsigned(dx( 1 downto 0)))) < minimal ) then
-locx_unsigned<=(others=> '0');
+locx_unsigned<=("0001");
 else
 locx_unsigned<=  unsigned(input_register) - ("00" & input_unsigned(1 downto 0));
 end if;
