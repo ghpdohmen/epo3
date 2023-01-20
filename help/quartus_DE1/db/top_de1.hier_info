@@ -79,17 +79,17 @@ tempy[1] <= logic_top:il.tempy[1]
 tempy[2] <= logic_top:il.tempy[2]
 tempy[3] <= logic_top:il.tempy[3]
 draw <= logic_top:il.draw
-middelsteknop <= comb.DB_MAX_OUTPUT_PORT_TYPE
+middelsteknop <= logic_top:il.middelsteknop
 rst <= mouse:ms.rst
-led0 <= logic_top:il.middelstemuisknop
-led1 <= logic_top:il.led0
-led2 <= logic_top:il.led1
-led3 <= logic_top:il.led2
-led5 <= logic_top:il.led3
-led6 <= logic_top:il.led5
-led7 <= logic_top:il.led6
-led8 <= logic_top:il.led7
-led9 <= logic_top:il.led8
+led0 <= logic_top:il.led0
+led1 <= logic_top:il.led1
+led2 <= logic_top:il.led2
+led3 <= logic_top:il.led3
+led5 <= logic_top:il.led5
+led6 <= logic_top:il.led6
+led7 <= logic_top:il.led7
+led8 <= logic_top:il.led8
+led9 <= logic_top:il.led9
 
 
 |top_de1|pixel:inst2|mouse_logic:ml|mouse:ms
@@ -739,7 +739,7 @@ tempy[2] <= y:y1.tempy[2]
 tempy[3] <= y:y1.tempy[3]
 draw <= color:color1.draw
 handshakeim <= handshakeim~reg0.DB_MAX_OUTPUT_PORT_TYPE
-middelstemuisknop <= comb.DB_MAX_OUTPUT_PORT_TYPE
+middelsteknop <= comb.DB_MAX_OUTPUT_PORT_TYPE
 led0 <= x:x1.tempx[0]
 led1 <= x:x1.tempx[1]
 led2 <= x:x1.tempx[2]
@@ -835,6 +835,7 @@ reset => state.OUTPUTSELECT
 reset => state.OUTPUTSELECT
 buttons[0] => process_3.IN1
 buttons[1] => process_5.IN0
+buttons[1] => middelsteknop.DATAIN
 buttons[2] => draw~reg0.DATAIN
 handshakemi => next_state_hs.increment.DATAB
 handshakemi => Selector1.IN2
@@ -845,7 +846,7 @@ output_color[1] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
 output_color[2] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
 draw <= draw~reg0.DB_MAX_OUTPUT_PORT_TYPE
 rescount <= rescount~reg0.DB_MAX_OUTPUT_PORT_TYPE
-middelstemuisknop <= comb.DB_MAX_OUTPUT_PORT_TYPE
+middelsteknop <= buttons[1].DB_MAX_OUTPUT_PORT_TYPE
 handshakeimc <= handshakeimc.DB_MAX_OUTPUT_PORT_TYPE
 
 

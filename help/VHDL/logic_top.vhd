@@ -15,7 +15,7 @@ entity logic_top is
 	tempy: buffer std_logic_vector(3 downto 0);
 	draw: buffer std_logic;
 	handshakeim: out std_logic;
-	middelstemuisknop: out std_logic;
+	middelsteknop: out std_logic;
 	led0 : out std_logic;
 	led1 : out std_logic;
 	led2 : out std_logic;
