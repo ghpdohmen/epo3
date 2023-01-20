@@ -9,8 +9,6 @@ entity mouse_logic is
         reset         : in  std_logic;
 	DataSwitch    : out std_logic;
         ClkSwitch     : out std_logic;
-	countlow: in std_logic;
-	rescount: out std_logic;
 	output_color: out std_logic_vector(2 downto 0);
 	tempx: out std_logic_vector(3 downto 0);
 	tempy: out std_logic_vector(3 downto 0);
