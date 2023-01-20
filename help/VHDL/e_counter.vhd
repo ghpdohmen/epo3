@@ -15,7 +15,10 @@ logic_e_out: out std_logic_vector (9 downto 0)
 end;
 architecture behav of e_counter is
     signal count_e, new_count_e: unsigned (9 downto 0);
+    signal x_old: std_logic_vector(3 downto 0); 
+    signal y_old: std_logic_vector(3 downto 0);
 begin
+
     process(clk)
         begin
             if (rising_edge(clk)) then
@@ -27,18 +30,23 @@ begin
             end if;
     end process;
  
-    process(clk, count_e)
+    process(clk, count_e, muis_x, muis_y, x_old, y_old)
     begin
-	if((logic_v_out = muis_y) and (logic_h_out = muis_x)) then
-
-		if (clk ='1') then
-        		new_count_e <= count_e + 1;
+	if((logic_v_out = muis_y) and (logic_h_out = muis_x)) then -- only count when the vga is reading the cursor
+		if (clk='1') then
+			if ((x_old /= muis_x) or  (y_old /= muis_y)) then
+				count_e <= (others =>'0');
+			else 
+        			new_count_e <= count_e + 1;
+			end if;
 		else 
 			new_count_e <= new_count_e;
 		end if;
 	else 
 		new_count_e <= count_e;
 	end if;
+	x_old<= muis_x;
+	y_old<= muis_y;
     end process;
 logic_e_out <= std_logic_vector(count_e);
 end architecture behav;
