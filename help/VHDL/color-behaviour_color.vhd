@@ -4,14 +4,14 @@ use IEEE.std_logic_1164.ALL;
 architecture behaviour_color of color is
 type state_type is (zwart, blauw, geel, groen, wit, cyaan, rood, paars);
 type state_type_hs is ( idle, increment, ready);
-signal state, next_state , input_register: state_type;
+signal state, next_state : state_type;
 signal state_hs,next_state_hs: state_type_hs;
 signal sel: std_logic;
 
 begin
 
 reg2: process(clk)
-    begin 
+    begin
     if (clk'event and clk='1') then
         if (reset='1') then
             state_hs<=idle;
@@ -21,15 +21,15 @@ reg2: process(clk)
     end if;
 end process;
 
-Handshake: process(handshakemi, state)
-    begin 
-    case state_hs is 
-        when idle => 
+Handshake: process(handshakemi, state_hs)
+    begin
+    case state_hs is
+        when idle =>
             sel<='0';
             handshakeimc<='0';
-            if (handshakemi='1') then 
+            if (handshakemi='1') then
                 next_state_hs<=increment;
-            else 
+            else
                 next_state_hs<= idle;
             end if;
 
@@ -41,9 +41,9 @@ Handshake: process(handshakemi, state)
         when ready =>
             sel<='0';
             handshakeimc<= '1';
-            if (handshakemi='0') then 
+            if (handshakemi='0') then
                 next_state_hs<= idle;
-            else 
+            else
                 next_state_hs<= ready;
             end if;
         end case;
@@ -52,122 +52,111 @@ Handshake: process(handshakemi, state)
 
 
 reg: process(clk)
-	begin
-	if (clk'event and clk='1') then
-		if (reset='1') then
-			state <= rood;
-		else
-			state <= next_state;
-		end if;
-	
-	end if;
+begin
+if (clk'event and clk='1') then
+if (reset='1') then
+state <= zwart;
+else
+state <= next_state;
+end if;
+
+end if;
 end process;
 
 
 
-process(buttons,state,sel)
+process(buttons,state,handshakemi, sel)
 begin
 
-	case state is 
-	when zwart=>
-	output_color<="000";
-	if (buttons(0)='1' and sel = '1') then
-		next_state<= blauw;
-		
-	else
-		next_state<=zwart;
-		
-	end if;
-	when blauw=>
-	output_color<="100";
-	if (buttons(0)='1'and sel = '1') then
-		next_state<= groen;
-		
-	else
-		next_state<=blauw;
-		
-	end if;
-	when groen=>
-	output_color<="010";
-	if (buttons(0)='1'and sel = '1') then
-		next_state<= cyaan;
-		
-	else
-		next_state<=groen;
-		
-	end if;
-	when cyaan=>
-	output_color<="110";
-	if (buttons(0)='1' and sel = '1') then
-		next_state<= rood;
-		
-	else
-		next_state<=cyaan;
-		
-	end if;
-	when rood=>
-	output_color<="001";
-	if (buttons(0)='1' and sel = '1') then
-		next_state<= paars;
-		
-	else
-		next_state<=rood;
-		
-	end if;
-	when paars=>
-	output_color<="101";
-	if (buttons(0)='1' and sel = '1') then
-		next_state<= geel;
-		
-	else
-		next_state<=paars;
-		
-	end if;
-	when geel=>
-	output_color<="011";
-	if (buttons(0)='1' and sel = '1') then
-		next_state<= wit;
-		
-	else
-		next_state<=geel;
-		
-	end if;
-	when wit=>
-	output_color<="111";
-	if (buttons(0)='1' and sel = '1') then
-		next_state<= zwart;
-		
-	else
-		next_state<=wit;
-		
-	end if;
-		
-	end case;
- 
- 
+case state is
+when zwart=>
+output_color<="000";
+if (buttons(0)='1' and sel= '1') then
+next_state<= blauw;
 
+else
+next_state<=zwart;
 
-end process;
+end if;
+when blauw=>
+output_color<="100";
+if (buttons(0)='1' and sel= '1') then
+next_state<= groen;
 
-process (clk)
-begin
-	if(clk'event and clk='1') then
-		draw<= buttons(2);
-	end if;
+else
+next_state<=blauw;
+
+end if;
+when groen=>
+output_color<="010";
+if (buttons(0)='1' and sel= '1') then
+next_state<= cyaan;
+
+else
+next_state<=groen;
+
+end if;
+when cyaan=>
+output_color<="110";
+if (buttons(0)='1' and sel= '1') then
+next_state<= rood;
+
+else
+next_state<=cyaan;
+
+end if;
+when rood=>
+output_color<="001";
+if (buttons(0)='1' and sel= '1') then
+next_state<= paars;
+
+else
+next_state<=rood;
+
+end if;
+when paars=>
+output_color<="101";
+if (buttons(0)='1' and sel= '1') then
+next_state<= geel;
+
+else
+next_state<=paars;
+
+end if;
+when geel=>
+output_color<="011";
+if (buttons(0)='1' and sel= '1') then
+next_state<= wit;
+
+else
+next_state<=geel;
+
+end if;
+when wit=>
+output_color<="111";
+if (buttons(0)='1' and sel= '1') then
+next_state<= zwart;
+
+else
+next_state<=wit;
+
+end if;
+
+end case;
 end process;
 
 process(clk,buttons,countlow)
 begin
-	if(clk'event and clk='1')then
-		if(buttons(1)='1'and countlow='0')then
-			rescount<='1';
-		else
-			rescount<='0';
-		end if;
-	
-	end if;
-end process;
-		middelsteknop <= buttons(1);
+if(clk'event and clk='1')then
+if(buttons(1)='1'and countlow='0')then
+rescount<='1';
+else
+rescount<='0';
+end if;
 
+end if;
+end process;
+	middelsteknop <= buttons(1);
+	draw<= buttons(2);
 end behaviour_color;
 
