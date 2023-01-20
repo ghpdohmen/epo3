@@ -17,6 +17,18 @@ constant maximal : integer:= 13;
 signal bound_low: unsigned ( 3 downto 0);
 
 begin
+mux: process(handshakemi, locy, tempy)
+    begin
+    if (clk'event and clk='1') then
+    if (handshakemi='1') then
+        input_register<=std_logic_vector(locy);
+    else
+        input_register<=tempy;
+    end if;
+    end if;
+end process;
+
+	
 reg: process(clk) 
     begin 
     if (clk'event and clk='1') then
@@ -28,14 +40,7 @@ reg: process(clk)
     end if;
 end process;
 	    
- reg2: process(clk)
-       begin
-        if (clk'event and clk='1') then
-        
-            input_register<=tempy;
-        end if;
-       
- end process;
+
 		
 output_unsigned<= unsigned(tempy);
 
