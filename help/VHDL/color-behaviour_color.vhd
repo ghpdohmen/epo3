@@ -55,7 +55,7 @@ reg: process(clk)
 begin
 if (clk'event and clk='1') then
 if (reset='1') then
-state <= zwart;
+state <= rood;
 else
 state <= next_state;
 end if;
