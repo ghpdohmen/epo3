@@ -1,5 +1,5 @@
 Flow report for top_de1
-Fri Jan 20 13:57:25 2023
+Fri Jan 20 14:27:58 2023
 Quartus II 32-bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
 
 
@@ -40,22 +40,22 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------------+
 ; Flow Summary                                                                          ;
 +------------------------------------+--------------------------------------------------+
-; Flow Status                        ; Successful - Fri Jan 20 13:57:18 2023            ;
+; Flow Status                        ; Flow Failed - Fri Jan 20 14:27:58 2023           ;
 ; Quartus II 32-bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Full Version ;
 ; Revision Name                      ; top_de1                                          ;
 ; Top-level Entity Name              ; top_de1                                          ;
 ; Family                             ; Cyclone II                                       ;
 ; Device                             ; EP2C20F484C7                                     ;
 ; Timing Models                      ; Final                                            ;
-; Total logic elements               ; 340 / 18,752 ( 2 % )                             ;
-;     Total combinational functions  ; 325 / 18,752 ( 2 % )                             ;
-;     Dedicated logic registers      ; 193 / 18,752 ( 1 % )                             ;
-; Total registers                    ; 193                                              ;
-; Total pins                         ; 29 / 315 ( 9 % )                                 ;
-; Total virtual pins                 ; 0                                                ;
-; Total memory bits                  ; 2,048 / 239,616 ( < 1 % )                        ;
-; Embedded Multiplier 9-bit elements ; 0 / 52 ( 0 % )                                   ;
-; Total PLLs                         ; 0 / 4 ( 0 % )                                    ;
+; Total logic elements               ; N/A until Partition Merge                        ;
+;     Total combinational functions  ; N/A until Partition Merge                        ;
+;     Dedicated logic registers      ; N/A until Partition Merge                        ;
+; Total registers                    ; N/A until Partition Merge                        ;
+; Total pins                         ; N/A until Partition Merge                        ;
+; Total virtual pins                 ; N/A until Partition Merge                        ;
+; Total memory bits                  ; N/A until Partition Merge                        ;
+; Embedded Multiplier 9-bit elements ; N/A until Partition Merge                        ;
+; Total PLLs                         ; N/A until Partition Merge                        ;
 +------------------------------------+--------------------------------------------------+
 
 
@@ -64,7 +64,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 01/20/2023 13:56:42 ;
+; Start date & time ; 01/20/2023 14:27:55 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; top_de1             ;
 +-------------------+---------------------+
@@ -75,7 +75,7 @@ applicable agreement for further details.
 +-------------------------------------+---------------------------------------+---------------+-------------+------------+
 ; Assignment Name                     ; Value                                 ; Default Value ; Entity Name ; Section Id ;
 +-------------------------------------+---------------------------------------+---------------+-------------+------------+
-; COMPILER_SIGNATURE_ID               ; 345050658445.167421940248788          ; --            ; --          ; --         ;
+; COMPILER_SIGNATURE_ID               ; 345050658445.167422127561132          ; --            ; --          ; --         ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                                    ; --            ; --          ; --         ;
 ; MIN_CORE_JUNCTION_TEMP              ; 0                                     ; --            ; --          ; --         ;
 ; PARTITION_COLOR                     ; 16764057                              ; --            ; --          ; Top        ;
@@ -86,38 +86,29 @@ applicable agreement for further details.
 +-------------------------------------+---------------------------------------+---------------+-------------+------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------+
-; Flow Elapsed Time                                                                                                             ;
-+---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
-+---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:08     ; 1.0                     ; 383 MB              ; 00:00:06                           ;
-; Fitter                    ; 00:00:18     ; 4.6                     ; 671 MB              ; 00:00:16                           ;
-; Assembler                 ; 00:00:03     ; 1.0                     ; 341 MB              ; 00:00:03                           ;
-; TimeQuest Timing Analyzer ; 00:00:04     ; 1.0                     ; 326 MB              ; 00:00:03                           ;
-; Total                     ; 00:00:33     ; --                      ; --                  ; 00:00:28                           ;
-+---------------------------+--------------+-------------------------+---------------------+------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------+
+; Flow Elapsed Time                                                                                                        ;
++----------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
++----------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Analysis & Synthesis ; 00:00:04     ; 1.0                     ; 355 MB              ; 00:00:02                           ;
+; Total                ; 00:00:04     ; --                      ; --                  ; 00:00:02                           ;
++----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
-+---------------------------------------------------------------------------------------------------+
-; Flow OS Summary                                                                                   ;
-+---------------------------+------------------------+--------------+--------------+----------------+
-; Module Name               ; Machine Hostname       ; OS Name      ; OS Version   ; Processor type ;
-+---------------------------+------------------------+--------------+--------------+----------------+
-; Analysis & Synthesis      ; ce-epo3.ewi.tudelft.nl ; CentOS Linux ; CentOS Linux ; x86_64         ;
-; Fitter                    ; ce-epo3.ewi.tudelft.nl ; CentOS Linux ; CentOS Linux ; x86_64         ;
-; Assembler                 ; ce-epo3.ewi.tudelft.nl ; CentOS Linux ; CentOS Linux ; x86_64         ;
-; TimeQuest Timing Analyzer ; ce-epo3.ewi.tudelft.nl ; CentOS Linux ; CentOS Linux ; x86_64         ;
-+---------------------------+------------------------+--------------+--------------+----------------+
++----------------------------------------------------------------------------------------------+
+; Flow OS Summary                                                                              ;
++----------------------+------------------------+--------------+--------------+----------------+
+; Module Name          ; Machine Hostname       ; OS Name      ; OS Version   ; Processor type ;
++----------------------+------------------------+--------------+--------------+----------------+
+; Analysis & Synthesis ; ce-epo3.ewi.tudelft.nl ; CentOS Linux ; CentOS Linux ; x86_64         ;
++----------------------+------------------------+--------------+--------------+----------------+
 
 
 ------------
 ; Flow Log ;
 ------------
 quartus_map --read_settings_files=on --write_settings_files=off de1 -c top_de1
-quartus_fit --read_settings_files=off --write_settings_files=off de1 -c top_de1
-quartus_asm --read_settings_files=off --write_settings_files=off de1 -c top_de1
-quartus_sta de1 -c top_de1
 
 
 
