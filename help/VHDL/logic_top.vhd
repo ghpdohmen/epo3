@@ -8,8 +8,6 @@ entity logic_top is
 	dx: in std_logic_vector(3 downto 0);
 	dy: in std_logic_vector(3 downto 0);
 	handshakemi: in std_logic;
-	countlow: in std_logic;
-	rescount: out std_logic;
 	output_color: out std_logic_vector(2 downto 0);
 	tempx: buffer std_logic_vector(3 downto 0);
 	tempy: buffer std_logic_vector(3 downto 0);
