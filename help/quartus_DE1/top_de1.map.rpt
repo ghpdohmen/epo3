@@ -1,5 +1,5 @@
 Analysis & Synthesis report for top_de1
-Fri Jan 20 13:37:46 2023
+Fri Jan 20 13:56:50 2023
 Quartus II 32-bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
 
 
@@ -64,13 +64,13 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                          ;
 +------------------------------------+--------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Fri Jan 20 13:37:46 2023            ;
+; Analysis & Synthesis Status        ; Successful - Fri Jan 20 13:56:50 2023            ;
 ; Quartus II 32-bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Full Version ;
 ; Revision Name                      ; top_de1                                          ;
 ; Top-level Entity Name              ; top_de1                                          ;
 ; Family                             ; Cyclone II                                       ;
-; Total logic elements               ; 348                                              ;
-;     Total combinational functions  ; 324                                              ;
+; Total logic elements               ; 349                                              ;
+;     Total combinational functions  ; 325                                              ;
 ;     Dedicated logic registers      ; 193                                              ;
 ; Total registers                    ; 193                                              ;
 ; Total pins                         ; 29                                               ;
@@ -261,16 +261,16 @@ applicable agreement for further details.
 +---------------------------------------------+-------------------------+
 ; Resource                                    ; Usage                   ;
 +---------------------------------------------+-------------------------+
-; Estimated Total logic elements              ; 348                     ;
+; Estimated Total logic elements              ; 349                     ;
 ;                                             ;                         ;
-; Total combinational functions               ; 324                     ;
+; Total combinational functions               ; 325                     ;
 ; Logic element usage by number of LUT inputs ;                         ;
-;     -- 4 input functions                    ; 120                     ;
-;     -- 3 input functions                    ; 81                      ;
-;     -- <=2 input functions                  ; 123                     ;
+;     -- 4 input functions                    ; 123                     ;
+;     -- 3 input functions                    ; 77                      ;
+;     -- <=2 input functions                  ; 125                     ;
 ;                                             ;                         ;
 ; Logic elements by mode                      ;                         ;
-;     -- normal mode                          ; 265                     ;
+;     -- normal mode                          ; 266                     ;
 ;     -- arithmetic mode                      ; 59                      ;
 ;                                             ;                         ;
 ; Total registers                             ; 193                     ;
@@ -282,7 +282,7 @@ applicable agreement for further details.
 ; Embedded Multiplier 9-bit elements          ; 0                       ;
 ; Maximum fan-out node                        ; gen25mhz:inst1|count[0] ;
 ; Maximum fan-out                             ; 196                     ;
-; Total fan-out                               ; 1490                    ;
+; Total fan-out                               ; 1494                    ;
 ; Average fan-out                             ; 2.72                    ;
 +---------------------------------------------+-------------------------+
 
@@ -292,11 +292,11 @@ applicable agreement for further details.
 +-------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node                      ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                       ; Library Name ;
 +-------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------------------------------------------------+--------------+
-; |top_de1                                        ; 324 (0)           ; 193 (0)      ; 2048        ; 0            ; 0       ; 0         ; 29   ; 0            ; |top_de1                                                                                                  ; work         ;
+; |top_de1                                        ; 325 (0)           ; 193 (0)      ; 2048        ; 0            ; 0       ; 0         ; 29   ; 0            ; |top_de1                                                                                                  ; work         ;
 ;    |gen25mhz:inst1|                             ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|gen25mhz:inst1                                                                                   ; work         ;
-;    |pixel:inst2|                                ; 323 (0)           ; 192 (0)      ; 2048        ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|pixel:inst2                                                                                      ; work         ;
-;       |graphic_toplvl:gl|                       ; 142 (0)           ; 72 (0)       ; 2048        ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|pixel:inst2|graphic_toplvl:gl                                                                    ; work         ;
-;          |graph_logic:gr_lg|                    ; 56 (10)           ; 22 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg                                                  ; work         ;
+;    |pixel:inst2|                                ; 324 (0)           ; 192 (0)      ; 2048        ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|pixel:inst2                                                                                      ; work         ;
+;       |graphic_toplvl:gl|                       ; 143 (0)           ; 72 (0)       ; 2048        ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|pixel:inst2|graphic_toplvl:gl                                                                    ; work         ;
+;          |graph_logic:gr_lg|                    ; 58 (12)           ; 22 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg                                                  ; work         ;
 ;             |e_counter:le|                      ; 31 (31)           ; 10 (10)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|e_counter:le                                     ; work         ;
 ;             |h_counter:lh|                      ; 7 (7)             ; 6 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|h_counter:lh                                     ; work         ;
 ;                |edge_detector:l_edge|           ; 0 (0)             ; 2 (2)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|h_counter:lh|edge_detector:l_edge                ; work         ;
@@ -316,7 +316,7 @@ applicable agreement for further details.
 ;             |flipflop:R2|                       ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|pixel:inst2|graphic_toplvl:gl|vga_buffer:vga_buf|flipflop:R2                                     ; work         ;
 ;             |flipflop:V1|                       ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|pixel:inst2|graphic_toplvl:gl|vga_buffer:vga_buf|flipflop:V1                                     ; work         ;
 ;             |flipflop:V2|                       ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|pixel:inst2|graphic_toplvl:gl|vga_buffer:vga_buf|flipflop:V2                                     ; work         ;
-;          |vgadrive:vgd|                         ; 86 (86)           ; 40 (40)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|pixel:inst2|graphic_toplvl:gl|vgadrive:vgd                                                       ; work         ;
+;          |vgadrive:vgd|                         ; 85 (85)           ; 40 (40)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|pixel:inst2|graphic_toplvl:gl|vgadrive:vgd                                                       ; work         ;
 ;       |mouse_logic:ml|                          ; 181 (0)           ; 120 (0)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|pixel:inst2|mouse_logic:ml                                                                       ; work         ;
 ;          |logic_top:il|                         ; 42 (0)            ; 18 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|pixel:inst2|mouse_logic:ml|logic_top:il                                                          ; work         ;
 ;             |color:color1|                      ; 12 (12)           ; 11 (11)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|pixel:inst2|mouse_logic:ml|logic_top:il|color:color1                                             ; work         ;
@@ -1510,7 +1510,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:02     ;
+; Top            ; 00:00:03     ;
 +----------------+--------------+
 
 
@@ -1520,7 +1520,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 32-bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
-    Info: Processing started: Fri Jan 20 13:37:37 2023
+    Info: Processing started: Fri Jan 20 13:56:41 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off de1 -c top_de1
 Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file /home/ghpdohmen/epo3/epo3/help/VHDL/flipflop_bufr.vhd
@@ -1759,19 +1759,17 @@ Warning (10492): VHDL Process Statement warning at vgadrive_behaviour.vhd(156): 
 Info (12128): Elaborating entity "vga_buffer" for hierarchy "pixel:inst2|graphic_toplvl:gl|vga_buffer:vga_buf"
 Warning (10492): VHDL Process Statement warning at vga_buffer-behav.vhd(17): signal "reset" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
 Info (12128): Elaborating entity "graph_logic" for hierarchy "pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg"
-Warning (10492): VHDL Process Statement warning at graph_logic.vhd(131): signal "countdown_int" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at graph_logic.vhd(144): signal "loaded_colour" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at graph_logic.vhd(153): signal "countdown_int" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10631): VHDL Process Statement warning at graph_logic.vhd(122): inferring latch(es) for signal or variable "x_grid_asked", which holds its previous value in one or more paths through the process
-Warning (10631): VHDL Process Statement warning at graph_logic.vhd(122): inferring latch(es) for signal or variable "y_grid_asked", which holds its previous value in one or more paths through the process
-Info (10041): Inferred latch for "y_grid_asked[0]" at graph_logic.vhd(122)
-Info (10041): Inferred latch for "y_grid_asked[1]" at graph_logic.vhd(122)
-Info (10041): Inferred latch for "y_grid_asked[2]" at graph_logic.vhd(122)
-Info (10041): Inferred latch for "y_grid_asked[3]" at graph_logic.vhd(122)
-Info (10041): Inferred latch for "x_grid_asked[0]" at graph_logic.vhd(122)
-Info (10041): Inferred latch for "x_grid_asked[1]" at graph_logic.vhd(122)
-Info (10041): Inferred latch for "x_grid_asked[2]" at graph_logic.vhd(122)
-Info (10041): Inferred latch for "x_grid_asked[3]" at graph_logic.vhd(122)
+Warning (10492): VHDL Process Statement warning at graph_logic.vhd(145): signal "loaded_colour" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10631): VHDL Process Statement warning at graph_logic.vhd(123): inferring latch(es) for signal or variable "x_grid_asked", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at graph_logic.vhd(123): inferring latch(es) for signal or variable "y_grid_asked", which holds its previous value in one or more paths through the process
+Info (10041): Inferred latch for "y_grid_asked[0]" at graph_logic.vhd(123)
+Info (10041): Inferred latch for "y_grid_asked[1]" at graph_logic.vhd(123)
+Info (10041): Inferred latch for "y_grid_asked[2]" at graph_logic.vhd(123)
+Info (10041): Inferred latch for "y_grid_asked[3]" at graph_logic.vhd(123)
+Info (10041): Inferred latch for "x_grid_asked[0]" at graph_logic.vhd(123)
+Info (10041): Inferred latch for "x_grid_asked[1]" at graph_logic.vhd(123)
+Info (10041): Inferred latch for "x_grid_asked[2]" at graph_logic.vhd(123)
+Info (10041): Inferred latch for "x_grid_asked[3]" at graph_logic.vhd(123)
 Info (12128): Elaborating entity "v_counter" for hierarchy "pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|v_counter:lv"
 Info (12128): Elaborating entity "edge_detector" for hierarchy "pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|v_counter:lv|edge_detector:l_edge"
 Info (12128): Elaborating entity "h_counter" for hierarchy "pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|h_counter:lh"
@@ -1829,14 +1827,14 @@ Warning (13024): Output pins are stuck at VCC or GND
 Info (17049): 26 registers lost all their fanouts during netlist optimizations.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 398 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 393 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 4 input pins
     Info (21059): Implemented 25 output pins
-    Info (21061): Implemented 367 logic cells
+    Info (21061): Implemented 362 logic cells
     Info (21064): Implemented 2 RAM segments
-Info: Quartus II 32-bit Analysis & Synthesis was successful. 0 errors, 110 warnings
-    Info: Peak virtual memory: 378 megabytes
-    Info: Processing ended: Fri Jan 20 13:37:46 2023
+Info: Quartus II 32-bit Analysis & Synthesis was successful. 0 errors, 108 warnings
+    Info: Peak virtual memory: 383 megabytes
+    Info: Processing ended: Fri Jan 20 13:56:50 2023
     Info: Elapsed time: 00:00:09
     Info: Total CPU time (on all processors): 00:00:06
 

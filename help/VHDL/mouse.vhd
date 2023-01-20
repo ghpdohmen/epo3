@@ -3,7 +3,7 @@ use IEEE.std_logic_1164.ALL;
 
 entity mouse is
    port(mouseX        : out std_logic_vector(2 downto 0);
-        buttons       : out std_logic_vector(4 downto 0);
+        buttons       : buffer std_logic_vector(4 downto 0);
         mouseY        : out std_logic_vector(2 downto 0);
         Handshake_out : out std_logic;
         DataSwitch    : out std_logic;

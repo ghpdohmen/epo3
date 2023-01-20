@@ -32,8 +32,7 @@ component color is
 	rescount: out std_logic;
 	handshakeimc: out std_logic);
 end component;
-signal s_handshakeimx, s_handshakeimy, s_handshakeimc, s_draw: std_logic;
-signal s_tempx,s_tempy : std_logic_vector(3 downto 0);
+signal s_handshakeimx, s_handshakeimy, s_handshakeimc: std_logic;
 
 begin
 
@@ -42,22 +41,21 @@ begin
 	if (clk'event and clk='1') then
 		handshakeim<=( s_handshakeimx and s_handshakeimy and s_handshakeimc);
 	end if;
-	led0 <= s_tempx(0);
-	led1 <= s_tempx(1);
-	led2 <= s_tempx(2);
-	led3 <= s_tempx(3);
-	led5 <= s_draw;
-	led6 <= s_tempy(0);
-	led7 <= s_tempy(1);
-	led8 <= s_tempy(2);
-	led9 <= s_tempy(3);
-end process;
-tempx <= s_tempx;
-tempy <= s_tempy;
-draw <= s_draw;
+	led0 <= tempx(0);
+	led1 <= tempx(1);
+	led2 <= tempx(2);
+	led3 <= tempx(3);
+	led5 <= draw;
+	led6 <= tempy(0);
+	led7 <= tempy(1);
+	led8 <= tempy(2);
+	led9 <= tempy(3);
 
-x1: x port map (clk=>clk,reset=>reset,dx=>dx,handshakemi=>handshakemi,tempx=>s_tempx,handshakeimx=>s_handshakeimx);  
-y1: y port map (clk=>clk,reset=>reset,dy=>dy,handshakemi=>handshakemi,tempy=>s_tempy,handshakeimy=>s_handshakeimy);  
-color1: color port map (clk=>clk,reset=>reset,buttons=>buttons,handshakemi=>handshakemi,countlow=>countlow,output_color=>output_color,draw=>s_draw,rescount=>rescount,handshakeimc=>s_handshakeimc);  
+	
+end process;
+
+x1: x port map (clk=>clk,reset=>reset,dx=>dx,handshakemi=>handshakemi,tempx=>tempx,handshakeimx=>s_handshakeimx);  
+y1: y port map (clk=>clk,reset=>reset,dy=>dy,handshakemi=>handshakemi,tempy=>tempy,handshakeimy=>s_handshakeimy);  
+color1: color port map (clk=>clk,reset=>reset,buttons=>buttons,handshakemi=>handshakemi,countlow=>countlow,output_color=>output_color,draw=>draw,rescount=>rescount,handshakeimc=>s_handshakeimc);  
 end behaviour_top;
 

@@ -314,11 +314,12 @@ begin
 	
 		--assuming that least significant bit is data_in(9)
 		--data bits are contained in data_in(2 t/m 9)
-                buttons(1)      <= data_in(7); --y sign bit 
-		buttons(0)      <= data_in(6); --x sign bit 
-		buttons(2)      <= data_in(2); --left button
-		buttons(3)      <= data_in(4); --middle button 
-		buttons(4)      <= data_in(3); --right button
+			buttons(1)      <= data_in(7); --y sign bit 
+			buttons(0)      <= data_in(6); --x sign bit 
+			buttons(2)      <= data_in(2); --left button
+			buttons(3)      <= data_in(4); --middle button 
+			buttons(4)      <= data_in(3); --right button
+
                 y_out           <= (others => '0');
                 x_out		         <= (others => '0');
 		bit11_reg_rst   <= '0';
@@ -335,11 +336,13 @@ begin
                 y_flipflop      <= '0';
                 btn_flipflop    <= '1';
 	
-                buttons(1)      <= data_in(7); --y sign bit 
-		buttons(0)      <= data_in(6); --x sign bit 
-		buttons(2)      <= data_in(2); --left button
-		buttons(3)      <= data_in(4); --middle button 
-		buttons(4)      <= data_in(3); --right button
+			buttons(1)      <= data_in(7); --y sign bit 
+			buttons(0)      <= data_in(6); --x sign bit 
+			buttons(2)      <= data_in(2); --left button
+			buttons(3)      <= data_in(4); --middle button 
+			buttons(4)      <= data_in(3); --right button
+	
+
 		y_out           <= (others => '0');
                 x_out		         <= (others => '0');
 		bit11_reg_rst   <= '1';
@@ -405,9 +408,17 @@ begin
 		--data bits are contained in data_in(2 t/m 9)
                 buttons				<= (others => '0');
                 y_out           <= (others => '0');
-                x_out(0)      		<= data_in(4);
-		x_out(1)      		<= data_in(3);
-		x_out(2)      		<= data_in(2);
+                
+		if(x_sign = '0') then
+			x_out(0)      		<= data_in(4);
+			x_out(1)      		<= data_in(3);
+			x_out(2)      		<= data_in(2);
+		else
+			x_out(0)      		<= not(data_in(4));
+			x_out(1)      		<= not(data_in(3));
+			x_out(2)      		<= not(data_in(2));
+		end if;
+
 		bit11_reg_rst   <= '0';
 		new_state		<= data_2_cnt_rst_2;
 		test <= "10001";	
@@ -424,9 +435,17 @@ begin
 	
                 buttons 				<= (others => '0');
                 y_out           <= (others => '0');
-                x_out(0)      		<= data_in(4);
-		x_out(1)      		<= data_in(3);
-		x_out(2)      		<= data_in(2);
+                
+		if(x_sign = '0') then
+			x_out(0)      		<= data_in(4);
+			x_out(1)      		<= data_in(3);
+			x_out(2)      		<= data_in(2);
+		else
+			x_out(0)      		<= not(data_in(4));
+			x_out(1)      		<= not(data_in(3));
+			x_out(2)      		<= not(data_in(2));
+		end if;
+
 		bit11_reg_rst   <= '1';
 		new_state		<= data_3;
 		test <= "10010";	
@@ -490,9 +509,17 @@ begin
 		--data bits are contained in data_in(2 t/m 9)
                 buttons				<= (others => '0');
                 x_out           <= (others => '0');
-                y_out(0)      		<= data_in(4);
-		y_out(1)      		<= data_in(3);
-		y_out(2)      		<= data_in(2);
+
+                if(y_sign = '0') then
+			y_out(0)      		<= data_in(4);
+			y_out(1)      		<= data_in(3);
+			y_out(2)      		<= data_in(2);
+		else
+			y_out(0)      		<= not(data_in(4));
+			y_out(1)      		<= not(data_in(3));
+			y_out(2)      		<= not(data_in(2));
+		end if;
+
 		bit11_reg_rst   <= '0';
 
 		new_state <= data_3_cnt_rst_2;
@@ -513,9 +540,17 @@ begin
 		--data bits are contained in data_in(2 t/m 9)
                 buttons				<= (others => '0');
                 x_out           <= (others => '0');
-                y_out(0)      		<= data_in(4);
-		y_out(1)      		<= data_in(3);
-		y_out(2)      		<= data_in(2);
+                
+		if(y_sign = '0') then
+			y_out(0)      		<= data_in(4);
+			y_out(1)      		<= data_in(3);
+			y_out(2)      		<= data_in(2);
+		else
+			y_out(0)      		<= not(data_in(4));
+			y_out(1)      		<= not(data_in(3));
+			y_out(2)      		<= not(data_in(2));
+		end if;
+
 		bit11_reg_rst   <= '1';
 
 		new_state <= handshake_state;
