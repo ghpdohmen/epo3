@@ -11,9 +11,8 @@ port(
 	loaded_color: in std_logic_vector(2 downto 0);
 	draw	: in std_logic;
 	-- input/muis
-    	countdown_aan: in std_logic;
+    	--countdown_aan: in std_logic;
     	middelste_knop:in std_logic;
-    	countdown_klaar: out std_logic;
 	-- outputs from vga
 	R, G, B, H, V : out std_logic
 );
@@ -30,7 +29,7 @@ port (
     -- countdown
     v_count: in std_logic;
     middelste_knop:in std_logic;
-    countdown_klaar: out std_logic;
+
     --vga
     logic_h_32_minis: in std_logic;
     logic_v_32_minis: in std_logic;
@@ -86,7 +85,7 @@ end component;
 	signal sig_x, sig_y : std_logic_vector(3 downto 0);
 	signal sig_rom: std_logic_vector(1 downto 0);
 	signal sig_ram: std_logic_vector(2 downto 0);
-	--signal sig_countdown: std_logic_vector (10 downto 0);
+	signal sig_countdown_aan: std_logic;
 	signal sig_v: std_logic;
 	
 	
@@ -96,7 +95,7 @@ begin
 --logic_x_asked <= sig_x;
 --logic_y_asked <= sig_y;
 V <= sig_v;
-ram: colour_storage port map( counter_aan => countdown_aan,
+ram: colour_storage port map( counter_aan => sig_countdown_aan,
 	clk => clk, reset=>reset, middelste_knop=> middelste_knop,
 	ram_x => logic_x, ram_y => logic_y, ram_colour_in => loaded_color,
 	draw => draw, 
@@ -115,7 +114,7 @@ gr_lg: graph_logic port map (
 	reset => reset,
 	v_count => sig_v,
 	middelste_knop => middelste_knop,
-	countdown_klaar => countdown_klaar,
+	countdown_aan => sig_countdown_aan,
 	logic_h_32_minis => sig_scale_h,
 	logic_v_32_minis => sig_scale_v,
 	logic_x => logic_x,
