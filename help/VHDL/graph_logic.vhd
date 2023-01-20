@@ -89,7 +89,7 @@ countdown_case <= to_integer(unsigned(sig_countdown));
 process (countdown_case, countdown_int)
 begin
 case countdown_case is
-	when 1 to 157 =>
+	when 0 to 157 =>
 		countdown_int <= 13;
 	when 158 to 315 =>
 		countdown_int <= 12;
@@ -119,7 +119,8 @@ case countdown_case is
 		countdown_int <= 0;
 end case;
 end process;
-process(local_y, local_x, logic_y, logic_x, logic_ram_colour, logic_rom_colour) --countdown_int
+
+process(local_y, local_x, logic_y, logic_x, logic_ram_colour, logic_rom_colour, countdown_int)
     begin
     if (local_y=logic_y and local_x=logic_x) then -- is the cursor on the cell              
         if (logic_rom_colour = "01" ) then -- behind the cursor
@@ -149,8 +150,8 @@ process(local_y, local_x, logic_y, logic_x, logic_ram_colour, logic_rom_colour) 
         colour_output <= logic_ram_colour;
 	x_grid_asked <= to_integer(unsigned(local_x))- 1;
 	y_grid_asked <= to_integer(unsigned(local_y))- 5;
-    elsif((local_y="0011") and (local_x/="1110")) then --countdown
-         if (countdown_int > to_integer(unsigned(local_x))) then
+    elsif((local_y="0011") and (local_x /= "1110") and (local_x /= "0000")) then --countdown
+         if (countdown_int < to_integer(unsigned(local_x))) then
                      colour_output <= "000";
                  else
                      colour_output <= "010";
