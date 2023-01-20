@@ -8,8 +8,8 @@ port (
     -- INPUTS
     --countdown
     v_count: in std_logic; -- V from the vga
-    middelste_knop: in std_logic;
-    --countdown_in: in std_logic_vector (4 downto 0);
+    middelste_knop:in std_logic;
+
     --vga
     logic_h_32_minis: in std_logic;
     logic_v_32_minis: in std_logic;
@@ -123,11 +123,11 @@ process(local_y, local_x, logic_y, logic_x, logic_ram_colour, logic_rom_colour, 
     begin
     if (local_y=logic_y and local_x=logic_x) then -- is the cursor on the cell              
         if (logic_rom_colour = "01" ) then -- behind the cursor
-            if (("0000"<local_x) and (local_x<"1011") and ("0100"<local_y)) then --canvas
+            if (("0000"<local_x) and (local_x<"1011") and ("0011"<local_y) and (local_y/="1100")) then --canvas
 		x_grid_asked <= to_integer(unsigned(local_x))- 1; 
-		y_grid_asked <= to_integer(unsigned(local_y))- 5; 
+		y_grid_asked <= to_integer(unsigned(local_y))- 4; 
                 colour_output <= logic_ram_colour;
-            elsif((local_y = "0011") and (local_x /= "1110") and (local_x /= "0000")) then --countdown
+            elsif((local_y = "0010") and (local_x /= "1110") and (local_x /= "0000")) then --countdown
                  if (countdown_int < to_integer(unsigned(local_x))) then
                      colour_output <= "000";
                  else
@@ -145,11 +145,11 @@ process(local_y, local_x, logic_y, logic_x, logic_ram_colour, logic_rom_colour, 
         else
            colour_output <= "111";
         end if;
-   elsif (("0000"<local_x) and (local_x<"1011") and ("0100"<local_y)) then--canvas
+   elsif (("0000"<local_x) and (local_x<"1011") and ("0011"<local_y) and (local_y/="1100")) then--canvas
         colour_output <= logic_ram_colour;
 	x_grid_asked <= to_integer(unsigned(local_x))- 1;
-	y_grid_asked <= to_integer(unsigned(local_y))- 5;
-   elsif((local_y="0011") and (local_x /= "1110") and (local_x /= "0000")) then --countdown
+	y_grid_asked <= to_integer(unsigned(local_y))- 4;
+   elsif((local_y="0010") and (local_x /= "1110") and (local_x /= "0000")) then --countdown
          if (countdown_int < to_integer(unsigned(local_x))) then
                      colour_output <= "000";
                  else
