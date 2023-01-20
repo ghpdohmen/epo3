@@ -6,9 +6,8 @@ port (
     -- INPUTS
     -- countdown
     v_count: in std_logic;
-    
     middelste_knop:in std_logic;
-    countdown_klaar: out std_logic;
+
     --vga
     logic_h_32_minis: in std_logic;
     logic_v_32_minis: in std_logic;
@@ -25,7 +24,8 @@ port (
     --to storage
     logic_x_asked: out std_logic_vector (3 downto 0);
     logic_y_asked: out std_logic_vector (3 downto 0);
-    logic_e_asked: out std_logic_vector (9 downto 0)
+    logic_e_asked: out std_logic_vector (9 downto 0);
+    countdown_aan: out std_logic
 );
 end component;
 component rom_cursor is port (
@@ -33,20 +33,6 @@ component rom_cursor is port (
         rom_e_asked    : in  std_logic_vector(9 downto 0);
         rom_colour_out : out std_logic_vector(1 downto 0)
 );
-end component;
-component vga_buffer is
-port(clk   : in  std_logic;
-        reset : in  std_logic;
-        R     : in  std_logic;
-        G     : in  std_logic;
-        B     : in  std_logic;
-        V     : in  std_logic;
-        H     : in  std_logic;
-        Rout     : out std_logic;
-        Gout     : out std_logic;
-        Bout     : out std_logic;
-        Vout     : out std_logic;
-        Hout     : out std_logic);
 end component;
 component colour_storage is port(
  	ram_y: in std_logic_vector(3 downto 0);
@@ -77,17 +63,17 @@ end component;
 	signal sig_x, sig_y : std_logic_vector(3 downto 0);
 	signal sig_rom: std_logic_vector(1 downto 0);
 	signal sig_ram: std_logic_vector(2 downto 0);
-	--signal sig_countdown: std_logic_vector (10 downto 0);
+	signal sig_countdown_aan: std_logic;
 	signal sig_v: std_logic;
-	signal Rint,Gint,Bint,Vint,Hint : std_logic;
+	
 	
 	
 begin
 --logic_e_asked <= sig_e;
 --logic_x_asked <= sig_x;
 --logic_y_asked <= sig_y;
-V <= Vint;
-ram: colour_storage port map( counter_aan => countdown_aan,
+V <= sig_v;
+ram: colour_storage port map( counter_aan => sig_countdown_aan,
 	clk => clk, reset=>reset, middelste_knop=> middelste_knop,
 	ram_x => logic_x, ram_y => logic_y, ram_colour_in => loaded_color,
 	draw => draw, 
@@ -100,15 +86,13 @@ vgd: vgadrive port map (
 	clock => clk, red => sig_red, green => sig_green, blue => sig_blue,
 	reset => reset,
         enable => sig_enable, scale_h => sig_scale_h, scale_v => sig_scale_v,
-        Rout => Rint, Gout => Gint, Bout => Bint, H => Hint, V => sig_v);
-vga_buf: vga_buffer port map (
-	clk, reset, Rint, Gint, Bint, sig_v, Hint, R, G, B, Vint, H);
+        Rout => R, Gout => G, Bout => B, H => H, V => sig_v);
 gr_lg: graph_logic port map (
 	clk => clk,
 	reset => reset,
 	v_count => sig_v,
 	middelste_knop => middelste_knop,
-	countdown_klaar => countdown_klaar,
+	countdown_aan => sig_countdown_aan,
 	logic_h_32_minis => sig_scale_h,
 	logic_v_32_minis => sig_scale_v,
 	logic_x => logic_x,

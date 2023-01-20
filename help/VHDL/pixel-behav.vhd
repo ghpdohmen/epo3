@@ -15,9 +15,7 @@ port(
 	draw	: in std_logic;
 	-- input/muis
 	--mouse_count: in std_logic;
-    	countdown_aan: in std_logic;
     	middelste_knop: in std_logic;
-    	countdown_klaar: out std_logic;
 
 	-- outputs from vga
 	R, G, B, H, V : out std_logic
@@ -31,8 +29,6 @@ component mouse_logic is
         reset         : in  std_logic;
 	DataSwitch    : out std_logic;
         ClkSwitch     : out std_logic;
-	countlow: in std_logic;
-	rescount: out std_logic;
 	output_color: out std_logic_vector(2 downto 0);
 	tempx: out std_logic_vector(3 downto 0);
 	tempy: out std_logic_vector(3 downto 0);
@@ -50,7 +46,7 @@ component mouse_logic is
 	led9		: out std_logic);
 end component;
 
-signal sig_draw, sig_rescount, sig_countlow, sig_middelsteknop : std_logic;
+signal sig_draw, sig_middelsteknop : std_logic;
 signal sig_logic_x, sig_logic_y : std_logic_vector(3 downto 0);
 signal sig_output_color : std_logic_vector (2 downto 0);
 begin
@@ -61,8 +57,6 @@ ml: mouse_logic port map (
 	reset => reset,
 	DataSwitch => data_switch,
 	ClkSwitch => clk15k_switch,
-	countlow => sig_countlow,
-	rescount => sig_rescount,
 	output_color => sig_output_color,
 	tempx => sig_logic_x,
 	tempy => sig_logic_y,
@@ -87,9 +81,7 @@ gl: graphic_toplvl port map (
 	logic_y => sig_logic_y,
 	loaded_color => sig_output_color,
 	draw => sig_draw,
-	countdown_aan => sig_rescount,
 	middelste_knop => sig_middelsteknop,
-	countdown_klaar => sig_countlow,
 	R => R,
 	G => G,
 	B => B,

@@ -11,9 +11,8 @@ port(
 	loaded_color: in std_logic_vector(2 downto 0);
 	draw	: in std_logic;
 	-- input/muis
-    	countdown_aan: in std_logic;
+    	--countdown_aan: in std_logic;
     	middelste_knop:in std_logic;
-    	countdown_klaar: out std_logic;
 	-- outputs from vga
 	R, G, B, H, V : out std_logic
 );
