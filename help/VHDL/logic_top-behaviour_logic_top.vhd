@@ -26,10 +26,8 @@ component color is
         reset : in  std_logic;
 	buttons: in std_logic_vector(2 downto 0);
 	handshakemi: in std_logic;
-	countlow: in std_logic;
 	output_color: out std_logic_vector(2 downto 0);
 	draw: out std_logic;
-	rescount: out std_logic;
 	handshakeimc: out std_logic;
         middelsteknop: out std_logic);
 end component;
@@ -57,6 +55,6 @@ end process;
 
 x1: x port map (clk=>clk,reset=>reset,dx=>dx,handshakemi=>handshakemi,tempx=>tempx,handshakeimx=>s_handshakeimx);  
 y1: y port map (clk=>clk,reset=>reset,dy=>dy,handshakemi=>handshakemi,tempy=>tempy,handshakeimy=>s_handshakeimy);  
-color1: color port map (clk=>clk,reset=>reset,buttons=>buttons,handshakemi=>handshakemi,countlow=>countlow,output_color=>output_color,draw=>draw,rescount=>rescount,handshakeimc=>s_handshakeimc, middelsteknop=>middelsteknop);  
+color1: color port map (clk=>clk,reset=>reset,buttons=>buttons,handshakemi=>handshakemi,output_color=>output_color,draw=>draw,handshakeimc=>s_handshakeimc, middelsteknop=>middelsteknop);  
 end behaviour_top;
 
