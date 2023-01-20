@@ -16,6 +16,8 @@ end;
 architecture behav of e_counter is
     signal count_e, new_count_e: unsigned (9 downto 0);
 begin
+
+ 
     process(clk)
         begin
             if (rising_edge(clk)) then

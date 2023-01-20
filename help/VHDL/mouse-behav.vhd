@@ -164,7 +164,7 @@ ed: edge_debounce port map (clk, Clk15k_buffered, reset, count_debounce, count_d
 
 sr: shiftregister_9bit port map (clk, output_edgedet, data_sr_9bit, bit9_reg_rst, muxReg);
 
-sfsm: sendFSM port map (actBit, reset_send, count25M, clk, Clk15k, ClkSwitch, muxFSM, cntReset25M_send, data_sr_9bit, bit9_reg_rst, mux_select);
+sfsm: sendFSM port map (actBit, reset_send, count25M, clk, Clk15k_buffered, ClkSwitch, muxFSM, cntReset25M_send, data_sr_9bit, bit9_reg_rst, mux_select);
 
 mx: mux port map (mux_select, muxFSM, muxReg, dataSwitch);
 mx2: mux port map(mux_select_main, cntReset25M_main, cntReset25M_send, cntReset25M);

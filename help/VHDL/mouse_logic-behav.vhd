@@ -56,9 +56,9 @@ signal buttons			: std_logic_vector(2 downto 0);
 begin
 
 
-buttons(0) <= buttons_mouse(2);
+buttons(0) <= buttons_mouse(4);
 buttons(1) <= buttons_mouse(3);
-buttons(2) <= buttons_mouse(4);
+buttons(2) <= buttons_mouse(2);
 
 dx(0) <= mouseX(0);
 dx(1) <= mouseX(1);

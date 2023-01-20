@@ -405,9 +405,9 @@ begin
 		--data bits are contained in data_in(2 t/m 9)
                 buttons				<= (others => '0');
                 y_out           <= (others => '0');
-                x_out(0)      		<= data_in(2);
+                x_out(0)      		<= data_in(4);
 		x_out(1)      		<= data_in(3);
-		x_out(2)      		<= data_in(4);
+		x_out(2)      		<= data_in(2);
 		bit11_reg_rst   <= '0';
 		new_state		<= data_2_cnt_rst_2;
 		test <= "10001";	
@@ -424,9 +424,9 @@ begin
 	
                 buttons 				<= (others => '0');
                 y_out           <= (others => '0');
-                x_out(0)      		<= data_in(2);
+                x_out(0)      		<= data_in(4);
 		x_out(1)      		<= data_in(3);
-		x_out(2)      		<= data_in(4);
+		x_out(2)      		<= data_in(2);
 		bit11_reg_rst   <= '1';
 		new_state		<= data_3;
 		test <= "10010";	
@@ -490,9 +490,9 @@ begin
 		--data bits are contained in data_in(2 t/m 9)
                 buttons				<= (others => '0');
                 x_out           <= (others => '0');
-                y_out(0)      		<= data_in(2);
+                y_out(0)      		<= data_in(4);
 		y_out(1)      		<= data_in(3);
-		y_out(2)      		<= data_in(4);
+		y_out(2)      		<= data_in(2);
 		bit11_reg_rst   <= '0';
 
 		new_state <= data_3_cnt_rst_2;
@@ -513,9 +513,9 @@ begin
 		--data bits are contained in data_in(2 t/m 9)
                 buttons				<= (others => '0');
                 x_out           <= (others => '0');
-                y_out(0)      		<= data_in(2);
+                y_out(0)      		<= data_in(4);
 		y_out(1)      		<= data_in(3);
-		y_out(2)      		<= data_in(4);
+		y_out(2)      		<= data_in(2);
 		bit11_reg_rst   <= '1';
 
 		new_state <= handshake_state;
@@ -542,7 +542,7 @@ begin
 		if(handshake_in = '1') then
 			new_state <= handshake_state2 ;
 		else
-			new_state <= handshake_state;
+			new_state <= handshake_state2;
 		end if;
 		test <= "10110";	
 		when handshake_state2 => --maybe we want to add a state to read the data while not reseting the register yet cuz this might give problems. The shit inside processes is sequential tho.
@@ -567,7 +567,7 @@ begin
 		if(handshake_in = '0') then
 			new_state <= data_1;
 		else
-			new_state <= handshake_state2;
+			new_state <= data_1;
 		end if;
 		test <= "10111";	
 

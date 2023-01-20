@@ -567,7 +567,7 @@ begin
 		if(handshake_in = '0') then
 			new_state <= data_1;
 		else
-			new_state <= data_1;
+			new_state <= handshake_state2;
 		end if;
 		test <= "10111";	
 
