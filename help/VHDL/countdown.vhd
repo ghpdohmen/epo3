@@ -19,30 +19,24 @@ port(
         edges : out std_logic
 );
 end component;
-component edge_detector is 
-port(
-	clk     : in  std_logic;
-        input  : in  std_logic;
-        edges : out std_logic
-);
-end component;
-signal sig_edges_muis: std_logic;
+
 signal sig_edge_fall: std_logic;
 signal count_c, new_count_c: unsigned (10 downto 0);
 begin
 l_edge: edge_det_fall port map (clk => clk, input => v_count, edges=>sig_edge_fall);
-l_edge_muis: edge_det_fall port map (clk => clk, input => middelste_knop, edges=>sig_edge_muis);
 process(clk, reset, new_count_c, sig_edge_muis) 
         begin
             if (rising_edge(clk)) then
                 if (reset = '1') then	-- global reset
                     count_c <= (others => '0');  
                 else
-                    if(sig_edge_muis='1') then		-- local reset
+                    if(middelste_knop='1') then		-- local reset
                         count_c <= (others => '0');
-                    else
+                    elsif (count_c = "1111111111") then
+			count_c <= "11111111111";
+		    else
                         count_c <= new_count_c;
-                    end if;	
+                    end if;
                 end if;
             end if;
 end process;
