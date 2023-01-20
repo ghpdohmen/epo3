@@ -16,6 +16,18 @@ constant minimal : integer:= 1;
 constant maximal : integer:= 10;
 signal bound_low: unsigned ( 3 downto 0);
 begin
+mux: process(handshakemi, locx, tempx)
+    begin
+    if (clk'event and clk='1') then
+    if (handshakemi='1') then
+        input_register<=std_logic_vector(locx);
+    else
+        input_register<=tempx;
+    end if;
+    end if;
+end process;
+
+    
 reg: process(clk)
     begin
     if (clk'event and clk='1') then
@@ -26,15 +38,6 @@ reg: process(clk)
         end if;
     end if;
 end process;
-        
- reg2: process(clk)
-       begin
-        if (clk'event and clk='1') then
-        
-            input_register<=tempx;
-        end if;
-       
- end process;
         
 output_unsigned<= unsigned(tempx);
 
