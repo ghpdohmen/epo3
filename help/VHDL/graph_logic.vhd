@@ -93,7 +93,7 @@ case countdown_case is
 		countdown_int <= 13;
 	when 158 to 315 =>
 		countdown_int <= 12;
-	when 319 to 472 =>
+	when 316 to 472 =>
 		countdown_int <= 11;
 	when 473 to 630 =>
 		countdown_int <= 10;
