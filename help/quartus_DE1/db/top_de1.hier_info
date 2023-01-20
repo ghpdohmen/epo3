@@ -7,6 +7,15 @@ clk15k_in => pixel:inst2.clk15k_in
 vga_vsync <= pixel:inst2.V
 Data_Switch <= pixel:inst2.data_switch
 Clk15k_Switch <= pixel:inst2.clk15k_switch
+led0 <= pixel:inst2.led0
+led1 <= pixel:inst2.led1
+led2 <= pixel:inst2.led2
+led3 <= pixel:inst2.led3
+led5 <= pixel:inst2.led5
+led6 <= pixel:inst2.led6
+led7 <= pixel:inst2.led7
+led8 <= pixel:inst2.led8
+led9 <= pixel:inst2.led9
 vga_b[0] <= pre_vga_dac_4:inst.vga_b[0]
 vga_b[1] <= pre_vga_dac_4:inst.vga_b[1]
 vga_b[2] <= pre_vga_dac_4:inst.vga_b[2]
@@ -35,6 +44,16 @@ V <= graphic_toplvl:gl.V
 H <= graphic_toplvl:gl.H
 data_switch <= mouse_logic:ml.DataSwitch
 clk15k_switch <= mouse_logic:ml.ClkSwitch
+rst <= mouse_logic:ml.rst
+led0 <= mouse_logic:ml.led0
+led1 <= mouse_logic:ml.led1
+led2 <= mouse_logic:ml.led2
+led3 <= mouse_logic:ml.led3
+led5 <= mouse_logic:ml.led5
+led6 <= mouse_logic:ml.led6
+led7 <= mouse_logic:ml.led7
+led8 <= mouse_logic:ml.led8
+led9 <= mouse_logic:ml.led9
 
 
 |top_de1|pixel:inst2|mouse_logic:ml
@@ -61,6 +80,16 @@ tempy[2] <= logic_top:il.tempy[2]
 tempy[3] <= logic_top:il.tempy[3]
 draw <= logic_top:il.draw
 middelsteknop <= comb.DB_MAX_OUTPUT_PORT_TYPE
+rst <= mouse:ms.rst
+led0 <= mouse:ms.led0
+led1 <= mouse:ms.led1
+led2 <= mouse:ms.led2
+led3 <= mouse:ms.led3
+led5 <= mouse:ms.led5
+led6 <= mouse:ms.led6
+led7 <= mouse:ms.led7
+led8 <= mouse:ms.led8
+led9 <= mouse:ms.led9
 
 
 |top_de1|pixel:inst2|mouse_logic:ml|mouse:ms
@@ -653,6 +682,7 @@ data_out[10] <= data_out[10]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 |top_de1|pixel:inst2|mouse_logic:ml|logic_top:il
 clk => x:x1.clk
+clk => handshakeim~reg0.CLK
 clk => y:y1.clk
 clk => color:color1.clk
 reset => x:x1.reset
@@ -686,8 +716,8 @@ tempy[1] <= y:y1.tempy[1]
 tempy[2] <= y:y1.tempy[2]
 tempy[3] <= y:y1.tempy[3]
 draw <= color:color1.draw
-handshakeim <= handshakeim.DB_MAX_OUTPUT_PORT_TYPE
-middelstemuisknop <= color:color1.middelstemuisknop
+handshakeim <= handshakeim~reg0.DB_MAX_OUTPUT_PORT_TYPE
+middelstemuisknop <= comb.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |top_de1|pixel:inst2|mouse_logic:ml|logic_top:il|x:x1

@@ -1,7 +1,7 @@
 library IEEE;
 use IEEE.std_logic_1164.ALL;
 
-architecture behaviour_top of top is
+architecture behaviour_top of logic_top is
 
 component x is
    port(clk         : in  std_logic;

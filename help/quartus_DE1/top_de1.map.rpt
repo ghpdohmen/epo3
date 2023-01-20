@@ -1,5 +1,5 @@
 Analysis & Synthesis report for top_de1
-Thu Jan 19 16:45:18 2023
+Thu Jan 19 18:03:09 2023
 Quartus II 32-bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
 
 
@@ -35,9 +35,9 @@ Quartus II 32-bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Ver
  27. Parameter Settings for Inferred Entity Instance: pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|lpm_divide:Div0
  28. altsyncram Parameter Settings by Entity Instance
  29. Port Connectivity Checks: "pixel:inst2|graphic_toplvl:gl|vgadrive:vgd"
- 30. Port Connectivity Checks: "pixel:inst2|mouse_logic:ml|logic_top:il"
- 31. Port Connectivity Checks: "pixel:inst2|mouse_logic:ml|mouse:ms|main_fsm:mfsm"
- 32. Port Connectivity Checks: "pixel:inst2|mouse_logic:ml|mouse:ms"
+ 30. Port Connectivity Checks: "pixel:inst2|mouse_logic:ml|logic_top:il|color:color1"
+ 31. Port Connectivity Checks: "pixel:inst2|mouse_logic:ml|logic_top:il"
+ 32. Port Connectivity Checks: "pixel:inst2|mouse_logic:ml|mouse:ms|main_fsm:mfsm"
  33. Elapsed Time Per Partition
  34. Analysis & Synthesis Messages
 
@@ -65,16 +65,16 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                          ;
 +------------------------------------+--------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu Jan 19 16:45:18 2023            ;
+; Analysis & Synthesis Status        ; Successful - Thu Jan 19 18:03:09 2023            ;
 ; Quartus II 32-bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Full Version ;
 ; Revision Name                      ; top_de1                                          ;
 ; Top-level Entity Name              ; top_de1                                          ;
 ; Family                             ; Cyclone II                                       ;
-; Total logic elements               ; 363                                              ;
-;     Total combinational functions  ; 341                                              ;
+; Total logic elements               ; 377                                              ;
+;     Total combinational functions  ; 355                                              ;
 ;     Dedicated logic registers      ; 191                                              ;
 ; Total registers                    ; 191                                              ;
-; Total pins                         ; 20                                               ;
+; Total pins                         ; 29                                               ;
 ; Total virtual pins                 ; 0                                                ;
 ; Total memory bits                  ; 2,048                                            ;
 ; Embedded Multiplier 9-bit elements ; 0                                                ;
@@ -270,29 +270,29 @@ applicable agreement for further details.
 +---------------------------------------------+-------------------------+
 ; Resource                                    ; Usage                   ;
 +---------------------------------------------+-------------------------+
-; Estimated Total logic elements              ; 363                     ;
+; Estimated Total logic elements              ; 377                     ;
 ;                                             ;                         ;
-; Total combinational functions               ; 341                     ;
+; Total combinational functions               ; 355                     ;
 ; Logic element usage by number of LUT inputs ;                         ;
-;     -- 4 input functions                    ; 131                     ;
-;     -- 3 input functions                    ; 84                      ;
-;     -- <=2 input functions                  ; 126                     ;
+;     -- 4 input functions                    ; 139                     ;
+;     -- 3 input functions                    ; 87                      ;
+;     -- <=2 input functions                  ; 129                     ;
 ;                                             ;                         ;
 ; Logic elements by mode                      ;                         ;
-;     -- normal mode                          ; 274                     ;
+;     -- normal mode                          ; 288                     ;
 ;     -- arithmetic mode                      ; 67                      ;
 ;                                             ;                         ;
 ; Total registers                             ; 191                     ;
 ;     -- Dedicated logic registers            ; 191                     ;
 ;     -- I/O registers                        ; 0                       ;
 ;                                             ;                         ;
-; I/O pins                                    ; 20                      ;
+; I/O pins                                    ; 29                      ;
 ; Total memory bits                           ; 2048                    ;
 ; Embedded Multiplier 9-bit elements          ; 0                       ;
 ; Maximum fan-out node                        ; gen25mhz:inst1|count[0] ;
 ; Maximum fan-out                             ; 194                     ;
-; Total fan-out                               ; 1530                    ;
-; Average fan-out                             ; 2.76                    ;
+; Total fan-out                               ; 1586                    ;
+; Average fan-out                             ; 2.75                    ;
 +---------------------------------------------+-------------------------+
 
 
@@ -301,9 +301,9 @@ applicable agreement for further details.
 +-------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node                      ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                       ; Library Name ;
 +-------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------------------------------------------------+--------------+
-; |top_de1                                        ; 341 (0)           ; 191 (0)      ; 2048        ; 0            ; 0       ; 0         ; 20   ; 0            ; |top_de1                                                                                                  ; work         ;
+; |top_de1                                        ; 355 (0)           ; 191 (0)      ; 2048        ; 0            ; 0       ; 0         ; 29   ; 0            ; |top_de1                                                                                                  ; work         ;
 ;    |gen25mhz:inst1|                             ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|gen25mhz:inst1                                                                                   ; work         ;
-;    |pixel:inst2|                                ; 340 (0)           ; 190 (0)      ; 2048        ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|pixel:inst2                                                                                      ; work         ;
+;    |pixel:inst2|                                ; 354 (0)           ; 190 (0)      ; 2048        ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|pixel:inst2                                                                                      ; work         ;
 ;       |graphic_toplvl:gl|                       ; 142 (0)           ; 72 (0)       ; 2048        ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|pixel:inst2|graphic_toplvl:gl                                                                    ; work         ;
 ;          |graph_logic:gr_lg|                    ; 60 (14)           ; 22 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg                                                  ; work         ;
 ;             |e_counter:le|                      ; 31 (31)           ; 10 (10)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|e_counter:le                                     ; work         ;
@@ -326,12 +326,12 @@ applicable agreement for further details.
 ;             |flipflop:V1|                       ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|pixel:inst2|graphic_toplvl:gl|vga_buffer:vga_buf|flipflop:V1                                     ; work         ;
 ;             |flipflop:V2|                       ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|pixel:inst2|graphic_toplvl:gl|vga_buffer:vga_buf|flipflop:V2                                     ; work         ;
 ;          |vgadrive:vgd|                         ; 82 (82)           ; 40 (40)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|pixel:inst2|graphic_toplvl:gl|vgadrive:vgd                                                       ; work         ;
-;       |mouse_logic:ml|                          ; 198 (0)           ; 118 (0)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|pixel:inst2|mouse_logic:ml                                                                       ; work         ;
+;       |mouse_logic:ml|                          ; 212 (0)           ; 118 (0)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|pixel:inst2|mouse_logic:ml                                                                       ; work         ;
 ;          |logic_top:il|                         ; 65 (0)            ; 18 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|pixel:inst2|mouse_logic:ml|logic_top:il                                                          ; work         ;
 ;             |color:color1|                      ; 11 (11)           ; 10 (10)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|pixel:inst2|mouse_logic:ml|logic_top:il|color:color1                                             ; work         ;
 ;             |x:x1|                              ; 27 (27)           ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|pixel:inst2|mouse_logic:ml|logic_top:il|x:x1                                                     ; work         ;
 ;             |y:y1|                              ; 27 (27)           ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|pixel:inst2|mouse_logic:ml|logic_top:il|y:y1                                                     ; work         ;
-;          |mouse:ms|                             ; 133 (0)           ; 100 (0)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|pixel:inst2|mouse_logic:ml|mouse:ms                                                              ; work         ;
+;          |mouse:ms|                             ; 147 (0)           ; 100 (0)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|pixel:inst2|mouse_logic:ml|mouse:ms                                                              ; work         ;
 ;             |counter25mhz:cntD|                 ; 13 (13)           ; 13 (13)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|pixel:inst2|mouse_logic:ml|mouse:ms|counter25mhz:cntD                                            ; work         ;
 ;             |counter25mhz:cnt|                  ; 13 (13)           ; 13 (13)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|pixel:inst2|mouse_logic:ml|mouse:ms|counter25mhz:cnt                                             ; work         ;
 ;             |edge_debounce:ed|                  ; 10 (10)           ; 6 (6)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|pixel:inst2|mouse_logic:ml|mouse:ms|edge_debounce:ed                                             ; work         ;
@@ -348,8 +348,8 @@ applicable agreement for further details.
 ;             |flipflop_bufr:clk_buffer2|         ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|pixel:inst2|mouse_logic:ml|mouse:ms|flipflop_bufr:clk_buffer2                                    ; work         ;
 ;             |flipflop_bufr:data_buffer1|        ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|pixel:inst2|mouse_logic:ml|mouse:ms|flipflop_bufr:data_buffer1                                   ; work         ;
 ;             |flipflop_bufr:data_buffer2|        ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|pixel:inst2|mouse_logic:ml|mouse:ms|flipflop_bufr:data_buffer2                                   ; work         ;
-;             |main_fsm:mfsm|                     ; 37 (37)           ; 25 (25)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|pixel:inst2|mouse_logic:ml|mouse:ms|main_fsm:mfsm                                                ; work         ;
-;             |mux:mx2|                           ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|pixel:inst2|mouse_logic:ml|mouse:ms|mux:mx2                                                      ; work         ;
+;             |main_fsm:mfsm|                     ; 52 (52)           ; 25 (25)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|pixel:inst2|mouse_logic:ml|mouse:ms|main_fsm:mfsm                                                ; work         ;
+;             |mux:mx2|                           ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|pixel:inst2|mouse_logic:ml|mouse:ms|mux:mx2                                                      ; work         ;
 ;             |mux:mx|                            ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|pixel:inst2|mouse_logic:ml|mouse:ms|mux:mx                                                       ; work         ;
 ;             |sendFSM:sfsm|                      ; 29 (29)           ; 9 (9)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|pixel:inst2|mouse_logic:ml|mouse:ms|sendFSM:sfsm                                                 ; work         ;
 ;             |shiftregister_11bit:sr11|          ; 9 (9)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|pixel:inst2|mouse_logic:ml|mouse:ms|shiftregister_11bit:sr11                                     ; work         ;
@@ -1219,6 +1219,15 @@ Note: In order to hide this table in the UI and the text report file, please set
 +--------+--------+----------+-------------------------------------------------------------------------------------+
 
 
++--------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "pixel:inst2|mouse_logic:ml|logic_top:il|color:color1"                                                                 ;
++-------------------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; Port              ; Type   ; Severity ; Details                                                                                                  ;
++-------------------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; middelstemuisknop ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
++-------------------+--------+----------+----------------------------------------------------------------------------------------------------------+
+
+
 +-----------------------------------------------------------------------------------------------------------------------+
 ; Port Connectivity Checks: "pixel:inst2|mouse_logic:ml|logic_top:il"                                                   ;
 +-------------+--------+----------+-------------------------------------------------------------------------------------+
@@ -1237,24 +1246,6 @@ Note: In order to hide this table in the UI and the text report file, please set
 +---------------+--------+----------+-------------------------------------------------------------------------------------+
 
 
-+----------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "pixel:inst2|mouse_logic:ml|mouse:ms"                                                ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-; Port ; Type   ; Severity ; Details                                                                             ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-; rst  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; led0 ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; led1 ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; led2 ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; led3 ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; led5 ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; led6 ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; led7 ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; led8 ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; led9 ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-
-
 +-------------------------------+
 ; Elapsed Time Per Partition    ;
 +----------------+--------------+
@@ -1270,7 +1261,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 32-bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
-    Info: Processing started: Thu Jan 19 16:45:07 2023
+    Info: Processing started: Thu Jan 19 18:02:59 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off de1 -c top_de1
 Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file /home/ghpdohmen/epo3/epo3/help/VHDL/flipflop_bufr.vhd
@@ -1341,7 +1332,7 @@ Info (12021): Found 1 design units, including 1 entities, in source file /home/g
 Info (12021): Found 1 design units, including 0 entities, in source file /home/ghpdohmen/epo3/epo3/help/VHDL/main_fsm-behav.vhd
     Info (12022): Found design unit 1: main_fsm-behav
 Info (12021): Found 1 design units, including 0 entities, in source file /home/ghpdohmen/epo3/epo3/help/VHDL/logic_top-behaviour_logic_top.vhd
-    Info (12022): Found design unit 1: logic_top-behaviour_logic_top
+    Info (12022): Found design unit 1: logic_top-behaviour_top
 Info (12021): Found 1 design units, including 1 entities, in source file /home/ghpdohmen/epo3/epo3/help/VHDL/logic_top.vhd
     Info (12023): Found entity 1: logic_top
 Info (12021): Found 2 design units, including 1 entities, in source file /home/ghpdohmen/epo3/epo3/help/VHDL/H_counter.vhd
@@ -1396,16 +1387,6 @@ Info (12127): Elaborating entity "top_de1" for the top level hierarchy
 Info (12128): Elaborating entity "pixel" for hierarchy "pixel:inst2"
 Info (12128): Elaborating entity "mouse_logic" for hierarchy "pixel:inst2|mouse_logic:ml"
 Warning (10541): VHDL Signal Declaration warning at mouse_logic.vhd(18): used implicit default value for signal "middelsteknop" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
-Warning (10036): Verilog HDL or VHDL warning at mouse_logic-behav.vhd(47): object "rst" assigned a value but never read
-Warning (10036): Verilog HDL or VHDL warning at mouse_logic-behav.vhd(47): object "led0" assigned a value but never read
-Warning (10036): Verilog HDL or VHDL warning at mouse_logic-behav.vhd(47): object "led1" assigned a value but never read
-Warning (10036): Verilog HDL or VHDL warning at mouse_logic-behav.vhd(47): object "led2" assigned a value but never read
-Warning (10036): Verilog HDL or VHDL warning at mouse_logic-behav.vhd(47): object "led3" assigned a value but never read
-Warning (10036): Verilog HDL or VHDL warning at mouse_logic-behav.vhd(47): object "led5" assigned a value but never read
-Warning (10036): Verilog HDL or VHDL warning at mouse_logic-behav.vhd(47): object "led6" assigned a value but never read
-Warning (10036): Verilog HDL or VHDL warning at mouse_logic-behav.vhd(47): object "led7" assigned a value but never read
-Warning (10036): Verilog HDL or VHDL warning at mouse_logic-behav.vhd(47): object "led8" assigned a value but never read
-Warning (10036): Verilog HDL or VHDL warning at mouse_logic-behav.vhd(47): object "led9" assigned a value but never read
 Info (12128): Elaborating entity "mouse" for hierarchy "pixel:inst2|mouse_logic:ml|mouse:ms"
 Warning (10036): Verilog HDL or VHDL warning at mouse-behav.vhd(130): object "bit11_reg_rst" assigned a value but never read
 Warning (10492): VHDL Process Statement warning at mouse-behav.vhd(147): signal "reset" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
@@ -1477,8 +1458,7 @@ Info (12128): Elaborating entity "flipflop" for hierarchy "pixel:inst2|mouse_log
 Info (12128): Elaborating entity "flipflop_bufr" for hierarchy "pixel:inst2|mouse_logic:ml|mouse:ms|flipflop_bufr:data_buffer1"
 Info (12128): Elaborating entity "shiftregister_11bit" for hierarchy "pixel:inst2|mouse_logic:ml|mouse:ms|shiftregister_11bit:sr11"
 Info (12128): Elaborating entity "logic_top" for hierarchy "pixel:inst2|mouse_logic:ml|logic_top:il"
-Warning (10492): VHDL Process Statement warning at logic_top-behaviour_logic_top.vhd(44): signal "sig_x" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at logic_top-behaviour_logic_top.vhd(45): signal "sig_y" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10541): VHDL Signal Declaration warning at logic_top.vhd(18): used implicit default value for signal "middelstemuisknop" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
 Info (12128): Elaborating entity "x" for hierarchy "pixel:inst2|mouse_logic:ml|logic_top:il|x:x1"
 Warning (10036): Verilog HDL or VHDL warning at x-behaviour_x.vhd(10): object "output_unsigned" assigned a value but never read
 Warning (10492): VHDL Process Statement warning at x-behaviour_x.vhd(87): signal "input_register" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
@@ -1598,17 +1578,18 @@ Info (12021): Found 1 design units, including 1 entities, in source file db/add_
     Info (12023): Found entity 1: add_sub_lkc
 Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_mkc.tdf
     Info (12023): Found entity 1: add_sub_mkc
+Warning (12241): 1 hierarchies have connectivity warnings - see the Connectivity Checks report folder
 Info (17049): 30 registers lost all their fanouts during netlist optimizations.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 398 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 421 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 4 input pins
-    Info (21059): Implemented 16 output pins
-    Info (21061): Implemented 376 logic cells
+    Info (21059): Implemented 25 output pins
+    Info (21061): Implemented 390 logic cells
     Info (21064): Implemented 2 RAM segments
-Info: Quartus II 32-bit Analysis & Synthesis was successful. 0 errors, 114 warnings
-    Info: Peak virtual memory: 386 megabytes
-    Info: Processing ended: Thu Jan 19 16:45:18 2023
+Info: Quartus II 32-bit Analysis & Synthesis was successful. 0 errors, 104 warnings
+    Info: Peak virtual memory: 382 megabytes
+    Info: Processing ended: Thu Jan 19 18:03:10 2023
     Info: Elapsed time: 00:00:11
     Info: Total CPU time (on all processors): 00:00:07
 
