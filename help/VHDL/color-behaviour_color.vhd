@@ -144,18 +144,6 @@ end if;
 
 end case;
 end process;
-
-process(clk,buttons,countlow)
-begin
-if(clk'event and clk='1')then
-if(buttons(1)='1'and countlow='0')then
-rescount<='1';
-else
-rescount<='0';
-end if;
-
-end if;
-end process;
 	middelsteknop <= buttons(1);
 	draw<= buttons(2);
 end behaviour_color;
