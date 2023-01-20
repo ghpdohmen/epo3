@@ -128,7 +128,7 @@ process(local_y, local_x, logic_y, logic_x, logic_ram_colour, logic_rom_colour) 
 		y_grid_asked <= to_integer(unsigned(local_y))- 5; 
                 colour_output <= logic_ram_colour;
             elsif((local_y = "0011") and (local_x /= "1110") and (local_x /= "0000")) then --countdown
-                 if (countdown_int > to_integer(unsigned(local_x))) then
+                 if (countdown_int < to_integer(unsigned(local_x))) then
                      colour_output <= "000";
                  else
                     colour_output <= "010";
