@@ -32,7 +32,7 @@ process(clk, reset, new_count_c, middelste_knop)
                 else
                     if(middelste_knop='1') then		-- local reset
                         count_c <= (others => '0');
-                    elsif (count_c = "1111111111") then
+                    elsif (count_c = "11111111111") then
 			count_c <= "11111111111";
 			countdown_aan <= '0';
 		    else
