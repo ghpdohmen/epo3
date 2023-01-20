@@ -1,5 +1,6 @@
 <?xml version="1.0" ?>
 <LOG_ROOT>
 	<PROJECT NAME="top_de1">
+		<CBX_INST_ENTRY INSTANCE_NAME="|top_de1|pixel:inst2|graphic_toplvl:gl|rom_cursor:rom|altsyncram:rom_rtl_0" CBX_FILE_NAME="altsyncram_rn61.tdf"/>
 	</PROJECT>
 </LOG_ROOT>

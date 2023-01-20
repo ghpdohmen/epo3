@@ -11,9 +11,9 @@ entity logic_top is
 	countlow: in std_logic;
 	rescount: out std_logic;
 	output_color: out std_logic_vector(2 downto 0);
-	tempx: out std_logic_vector(3 downto 0);
-	tempy: out std_logic_vector(3 downto 0);
-	draw: out std_logic;
+	tempx: buffer std_logic_vector(3 downto 0);
+	tempy: buffer std_logic_vector(3 downto 0);
+	draw: buffer std_logic;
 	handshakeim: out std_logic;
 	middelstemuisknop: out std_logic;
 	led0 : out std_logic;
