@@ -34,8 +34,6 @@ component logic_top is
 	dx: in std_logic_vector(3 downto 0);
 	dy: in std_logic_vector(3 downto 0);
 	handshakemi: in std_logic;
-	countlow: in std_logic;
-	rescount: out std_logic;
 	output_color: out std_logic_vector(2 downto 0);
 	tempx: out std_logic_vector(3 downto 0);
 	tempy: out std_logic_vector(3 downto 0);
@@ -84,7 +82,7 @@ dy(3) <= buttons_mouse(1);
 
 ms: mouse port map(mouseX, buttons_mouse, mouseY, handshake_mouse_out, DataSwitch, ClkSwitch, handshake_mouse_in, Data_in, Clk15k, clk, reset, rst);
 
-il: logic_top port map(clk, reset, buttons, dx, dy, handshake_mouse_out, countlow, rescount, output_color, tempx, tempy, draw, handshake_mouse_in, middelsteknop, led0, led1, led2, led3, led5, led6, led7, led8, led9);
+il: logic_top port map(clk, reset, buttons, dx, dy, handshake_mouse_out, output_color, tempx, tempy, draw, handshake_mouse_in, middelsteknop, led0, led1, led2, led3, led5, led6, led7, led8, led9);
 
 
 
