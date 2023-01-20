@@ -52,7 +52,7 @@ if(rising_edge(clk)) then
 				y_grid <= y_test - 5;
 				ram_position <= N*y_grid+ x_grid;
 
-				if (draw='1' and counter_aan='1' ) then -- Only writes when draw = 1 and the countdown started (counter_aan= 1)
+				if (draw='1') then -- Only writes when draw = 1 and the countdown started (counter_aan= 1)
  					ram(ram_position) <= ram_colour_in;
 				else 
 					ram(ram_position) <= ram(ram_position);

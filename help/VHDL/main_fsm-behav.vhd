@@ -314,11 +314,11 @@ begin
 	
 		--assuming that least significant bit is data_in(9)
 		--data bits are contained in data_in(2 t/m 9)
-			buttons(1)      <= data_in(7); --y sign bit 
-			buttons(0)      <= data_in(6); --x sign bit 
-			buttons(2)      <= data_in(2); --left button
-			buttons(3)      <= data_in(4); --middle button 
-			buttons(4)      <= data_in(3); --right button
+			buttons(0)      <= data_in(5); --y sign bit 
+			buttons(1)      <= data_in(4); --x sign bit 
+			buttons(2)      <= data_in(9); --left button
+			buttons(3)      <= data_in(7); --middle button 
+			buttons(4)      <= data_in(8); --right button
 
                 y_out           <= (others => '0');
                 x_out		         <= (others => '0');
@@ -336,11 +336,11 @@ begin
                 y_flipflop      <= '0';
                 btn_flipflop    <= '1';
 	
-			buttons(1)      <= data_in(7); --y sign bit 
-			buttons(0)      <= data_in(6); --x sign bit 
-			buttons(2)      <= data_in(2); --left button
-			buttons(3)      <= data_in(4); --middle button 
-			buttons(4)      <= data_in(3); --right button
+			buttons(0)      <= data_in(5); --y sign bit 
+			buttons(1)      <= data_in(4); --x sign bit 
+			buttons(2)      <= data_in(9); --left button
+			buttons(3)      <= data_in(7); --middle button 
+			buttons(4)      <= data_in(8); --right button
 	
 
 		y_out           <= (others => '0');
@@ -410,13 +410,13 @@ begin
                 y_out           <= (others => '0');
                 
 		if(x_sign = '0') then
-			x_out(0)      		<= data_in(4);
-			x_out(1)      		<= data_in(3);
-			x_out(2)      		<= data_in(2);
+			x_out(0)      		<= data_in(6);
+			x_out(1)      		<= data_in(5);
+			x_out(2)      		<= data_in(4);
 		else
-			x_out(0)      		<= not(data_in(4));
-			x_out(1)      		<= not(data_in(3));
-			x_out(2)      		<= not(data_in(2));
+			x_out(0)      		<= not(data_in(6));
+			x_out(1)      		<= not(data_in(5));
+			x_out(2)      		<= not(data_in(4));
 		end if;
 
 		bit11_reg_rst   <= '0';
@@ -437,13 +437,13 @@ begin
                 y_out           <= (others => '0');
                 
 		if(x_sign = '0') then
-			x_out(0)      		<= data_in(4);
-			x_out(1)      		<= data_in(3);
-			x_out(2)      		<= data_in(2);
+			x_out(0)      		<= data_in(6);
+			x_out(1)      		<= data_in(5);
+			x_out(2)      		<= data_in(4);
 		else
-			x_out(0)      		<= not(data_in(4));
-			x_out(1)      		<= not(data_in(3));
-			x_out(2)      		<= not(data_in(2));
+			x_out(0)      		<= not(data_in(6));
+			x_out(1)      		<= not(data_in(5));
+			x_out(2)      		<= not(data_in(4));
 		end if;
 
 		bit11_reg_rst   <= '1';
@@ -511,13 +511,13 @@ begin
                 x_out           <= (others => '0');
 
                 if(y_sign = '0') then
-			y_out(0)      		<= data_in(4);
-			y_out(1)      		<= data_in(3);
-			y_out(2)      		<= data_in(2);
+			y_out(0)      		<= data_in(6);
+			y_out(1)      		<= data_in(5);
+			y_out(2)      		<= data_in(4);
 		else
-			y_out(0)      		<= not(data_in(4));
-			y_out(1)      		<= not(data_in(3));
-			y_out(2)      		<= not(data_in(2));
+			y_out(0)      		<= not(data_in(6));
+			y_out(1)      		<= not(data_in(5));
+			y_out(2)      		<= not(data_in(4));
 		end if;
 
 		bit11_reg_rst   <= '0';
@@ -542,13 +542,13 @@ begin
                 x_out           <= (others => '0');
                 
 		if(y_sign = '0') then
-			y_out(0)      		<= data_in(4);
-			y_out(1)      		<= data_in(3);
-			y_out(2)      		<= data_in(2);
+			y_out(0)      		<= data_in(6);
+			y_out(1)      		<= data_in(5);
+			y_out(2)      		<= data_in(4);
 		else
-			y_out(0)      		<= not(data_in(4));
-			y_out(1)      		<= not(data_in(3));
-			y_out(2)      		<= not(data_in(2));
+			y_out(0)      		<= not(data_in(6));
+			y_out(1)      		<= not(data_in(5));
+			y_out(2)      		<= not(data_in(4));
 		end if;
 
 		bit11_reg_rst   <= '1';

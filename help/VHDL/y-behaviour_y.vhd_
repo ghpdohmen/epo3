@@ -84,21 +84,17 @@ process(dy, output_unsigned, input_unsigned)
 begin
     if (dy(3)='1') then
      	--bound_low <= unsigned(input_register) - ('0' & input_unsigned(2 downto 0));
-	if((to_integer(unsigned(input_register)) - to_integer(unsigned(dy(2 downto 0)))) < minimal) then
+	if((to_integer(unsigned(input_register)) - to_integer(unsigned(dy(2 downto 1)))) < minimal) then
 		locy_unsigned <= (others=>'0');
 	else
-<<<<<<< Updated upstream
-		locy_unsigned <= unsigned(input_register) - ('0' & input_unsigned(2 downto 0));
-=======
-		locy_unsigned <= (unsigned(input_register) - ('0' & input_register(2 downto 0)));
->>>>>>> Stashed changes
+		locy_unsigned <= unsigned(input_register) - ("00" & input_unsigned(2 downto 1));
 	end if;
     else
     	--bound_low<= unsigned(input_register) + ('0' & input_unsigned(2 downto 0));
-		if((to_integer(unsigned(input_register)) + to_integer(unsigned(dy(2 downto 0)))) > maximal) then
+		if((to_integer(unsigned(input_register)) + to_integer(unsigned(dy(2 downto 1)))) > maximal) then
 			locy_unsigned <= "1110";
 		else
-			locy_unsigned <= (unsigned(input_register) + ('0' & input_unsigned(2 downto 0)));
+			locy_unsigned <= (unsigned(input_register) + ("00" & input_unsigned(2 downto 1)));
 		end if;
     end if;
 end process;

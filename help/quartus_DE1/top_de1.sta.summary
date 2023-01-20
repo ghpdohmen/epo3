@@ -3,51 +3,75 @@ TimeQuest Timing Analyzer Summary
 ------------------------------------------------------------
 
 Type  : Slow Model Setup 'gen25mhz:inst1|count[0]'
-Slack : -20.208
-TNS   : -585.682
+Slack : -22.938
+TNS   : -4154.485
+
+Type  : Slow Model Setup 'pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|h_counter:lh|count_h[0]'
+Slack : -1.303
+TNS   : -12.076
 
 Type  : Slow Model Setup 'clock_50mhz'
-Slack : 3.385
+Slack : 3.492
 TNS   : 0.000
 
-Type  : Slow Model Hold 'clock_50mhz'
-Slack : -3.133
-TNS   : -3.133
+Type  : Slow Model Hold 'pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|h_counter:lh|count_h[0]'
+Slack : -3.701
+TNS   : -38.468
 
 Type  : Slow Model Hold 'gen25mhz:inst1|count[0]'
-Slack : -1.343
-TNS   : -4.187
+Slack : -3.349
+TNS   : -14.042
+
+Type  : Slow Model Hold 'clock_50mhz'
+Slack : -3.240
+TNS   : -3.240
 
 Type  : Slow Model Minimum Pulse Width 'gen25mhz:inst1|count[0]'
 Slack : -1.814
-TNS   : -281.902
+TNS   : -683.940
 
 Type  : Slow Model Minimum Pulse Width 'clock_50mhz'
 Slack : -1.631
 TNS   : -2.853
 
-Type  : Fast Model Setup 'gen25mhz:inst1|count[0]'
-Slack : -7.185
-TNS   : -132.836
+Type  : Slow Model Minimum Pulse Width 'pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|h_counter:lh|count_h[0]'
+Slack : -0.160
+TNS   : -6.080
 
-Type  : Fast Model Setup 'clock_50mhz'
-Slack : 1.900
+Type  : Fast Model Setup 'gen25mhz:inst1|count[0]'
+Slack : -8.441
+TNS   : -1269.023
+
+Type  : Fast Model Setup 'pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|h_counter:lh|count_h[0]'
+Slack : 0.074
 TNS   : 0.000
 
-Type  : Fast Model Hold 'clock_50mhz'
-Slack : -1.520
-TNS   : -1.520
+Type  : Fast Model Setup 'clock_50mhz'
+Slack : 1.899
+TNS   : 0.000
+
+Type  : Fast Model Hold 'pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|h_counter:lh|count_h[0]'
+Slack : -1.929
+TNS   : -24.361
 
 Type  : Fast Model Hold 'gen25mhz:inst1|count[0]'
-Slack : -0.999
-TNS   : -5.812
+Slack : -1.923
+TNS   : -23.600
+
+Type  : Fast Model Hold 'clock_50mhz'
+Slack : -1.519
+TNS   : -1.519
 
 Type  : Fast Model Minimum Pulse Width 'gen25mhz:inst1|count[0]'
 Slack : -1.423
-TNS   : -229.460
+TNS   : -558.460
 
 Type  : Fast Model Minimum Pulse Width 'clock_50mhz'
 Slack : -1.380
 TNS   : -2.380
+
+Type  : Fast Model Minimum Pulse Width 'pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|h_counter:lh|count_h[0]'
+Slack : 0.286
+TNS   : 0.000
 
 ------------------------------------------------------------

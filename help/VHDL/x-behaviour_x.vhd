@@ -85,16 +85,16 @@ begin
     if (dx(3)='1') then
       --bound_low <= unsigned(input_register) - ('0' & input_unsigned(2 downto 0));
 --( (to_integer(unsigned(input_register)) - to_integer(input_unsigned(2 downto 0))) < 0)
-if ((to_integer(unsigned(input_register)) - to_integer(unsigned(dx( 2 downto 0)))) < minimal ) then
+if ((to_integer(unsigned(input_register)) - to_integer(unsigned(dx( 1 downto 0)))) < minimal ) then
 locx_unsigned<=(others=> '0');
 else
-locx_unsigned<=  unsigned(input_register) - ('0' & input_unsigned(2 downto 0));
+locx_unsigned<=  unsigned(input_register) - ("00" & input_unsigned(1 downto 0));
 end if;
     else
-if ((to_integer(unsigned(input_register)) + to_integer(unsigned(dx( 2 downto 0)))) > maximal ) then
+if ((to_integer(unsigned(input_register)) + to_integer(unsigned(dx( 1 downto 0)))) > maximal ) then
     locx_unsigned<= "1110";
 else
-locx_unsigned<= unsigned(input_register) + ('0' & input_unsigned(2 downto 0));
+locx_unsigned<= unsigned(input_register) + ("00" & input_unsigned(1 downto 0));
 end if;
     end if;
 end process;
