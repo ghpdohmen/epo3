@@ -167,6 +167,7 @@ begin
 	
 	end if;
 end process;
+		middelsteknop <= buttons(1);
 
 end behaviour_color;
 
