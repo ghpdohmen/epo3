@@ -12,67 +12,18 @@ signal input_register: std_logic_vector( 3 downto 0);
 signal locy_unsigned: unsigned(3 downto 0);
 signal locy : std_logic_vector(3 downto 0);
 signal sel: std_logic;
-constant minimal : integer:= 0 ;
+constant minimal : integer:= 5 ;
 constant maximal : integer:= 14;
 signal bound_low: unsigned ( 3 downto 0);
 
 begin
-reg2: process(clk)
-    begin 
-    if (clk'event and clk='1') then
-        if (reset='1') then
-            state<=idle;
-        else
-            state<=next_state;
-        end if;
-    end if;
-end process;
-
-Handshake: process(handshakemi, state)
-    begin 
-    case state is 
-        when idle => 
-            sel<='0';
-            handshakeimy<='0';
-            if (handshakemi='1') then 
-                next_state<=increment;
-            else 
-                next_state<= idle;
-            end if;
-
-        when increment =>
-            sel<= '1';
-            handshakeimy<= '0';
-            next_state<=ready;
-
-        when ready =>
-            sel<='0';
-            handshakeimy<= '1';
-            if (handshakemi='0') then 
-                next_state<= idle;
-            else 
-                next_state<= ready;
-            end if;
-        end case;
-    end process;
-
-mux: process(sel, locy, tempy)
-    begin
-    if (sel='1') then
-        input_register<=std_logic_vector(locy);
-    else 
-        input_register<=tempy;
-    end if;
-end process;
-
-
 reg: process(clk) 
     begin 
     if (clk'event and clk='1') then
         if (reset='1') then
             tempy<="0000";
         else
-            tempy<=input_register;
+            tempy<=locy;
         end if;
     end if;
 end process;

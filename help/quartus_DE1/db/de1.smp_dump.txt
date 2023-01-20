@@ -16,18 +16,6 @@ state_hs.idle 0 0 0
 state_hs.increment 0 1 1 
 state_hs.ready 1 0 1 
 
-State Machine - |top_de1|pixel:inst2|mouse_logic:ml|logic_top:il|y:y1|state
-Name state.ready state.increment state.idle 
-state.idle 0 0 0 
-state.increment 0 1 1 
-state.ready 1 0 1 
-
-State Machine - |top_de1|pixel:inst2|mouse_logic:ml|logic_top:il|x:x1|state
-Name state.ready state.increment state.idle 
-state.idle 0 0 0 
-state.increment 0 1 1 
-state.ready 1 0 1 
-
 State Machine - |top_de1|pixel:inst2|mouse_logic:ml|mouse:ms|main_fsm:mfsm|state
 Name state.handshake_state2 state.handshake_state state.data_3_cnt_rst_2 state.data_3_cnt_rst state.delay_3 state.data_3 state.data_2_cnt_rst_2 state.data_2_cnt_rst state.delay_2 state.data_2 state.data_1_cnt_rst_2 state.data_1_cnt_rst state.delay_1 state.data_1 state.wachtFA2_cnt_rst state.wachtFA2 state.enableF4_cnt_rst state.enableF4 state.wachtID_cnt_rst state.wachtID state.wachtAA_cnt_rst state.wachtAA state.wachtFA_cnt_rst state.wachtFA state.sendFF_cnt_rst state.sendFF state.reset_state 
 state.reset_state 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 

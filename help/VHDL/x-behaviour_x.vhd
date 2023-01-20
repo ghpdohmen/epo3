@@ -12,66 +12,17 @@ signal input_register: std_logic_vector( 3 downto 0);
 signal locx_unsigned: unsigned(3 downto 0);
 signal locx : std_logic_vector(3 downto 0);
 signal sel: std_logic;
-constant minimal : integer:= 0;
-constant maximal : integer:= 14;
+constant minimal : integer:= 1;
+constant maximal : integer:= 10;
 signal bound_low: unsigned ( 3 downto 0);
 begin
-reg2: process(clk)
-    begin
-    if (clk'event and clk='1') then
-        if (reset='1') then
-            state<=idle;
-        else
-            state<=next_state;
-        end if;
-    end if;
-end process;
-
-Handshake: process(handshakemi, state)
-    begin
-    case state is
-        when idle =>
-            sel<='0';
-            handshakeimx<='0';
-            if (handshakemi='1') then
-                next_state<=increment;
-            else
-                next_state<= idle;
-            end if;
-
-        when increment =>
-            sel<= '1';
-            handshakeimx<= '0';
-            next_state<=ready;
-
-        when ready =>
-            sel<='0';
-            handshakeimx<= '1';
-            if (handshakemi='0') then
-                next_state<= idle;
-            else
-                next_state<= ready;
-            end if;
-        end case;
-    end process;
-
-mux: process(sel, locx, tempx)
-    begin
-    if (sel='1') then
-        input_register<=std_logic_vector(locx);
-    else
-        input_register<=tempx;
-    end if;
-end process;
-
-
 reg: process(clk)
     begin
     if (clk'event and clk='1') then
         if (reset='1') then
-            tempx<="0000";
+            tempx<="0001";
         else
-            tempx<=input_register;
+            tempx<=locx;
         end if;
     end if;
 end process;
@@ -92,7 +43,7 @@ locx_unsigned<=  unsigned(input_register) - ("00" & input_unsigned(1 downto 0));
 end if;
     else
 if ((to_integer(unsigned(input_register)) + to_integer(unsigned(dx( 1 downto 0)))) > maximal ) then
-    locx_unsigned<= "1110";
+    locx_unsigned<= "1010";
 else
 locx_unsigned<= unsigned(input_register) + ("00" & input_unsigned(1 downto 0));
 end if;

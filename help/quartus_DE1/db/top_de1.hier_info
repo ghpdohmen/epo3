@@ -65,8 +65,6 @@ reset => mouse:ms.reset
 reset => logic_top:il.reset
 DataSwitch <= mouse:ms.DataSwitch
 ClkSwitch <= mouse:ms.ClkSwitch
-countlow => logic_top:il.countlow
-rescount <= logic_top:il.rescount
 output_color[0] <= logic_top:il.output_color[0]
 output_color[1] <= logic_top:il.output_color[1]
 output_color[2] <= logic_top:il.output_color[2]
@@ -81,10 +79,10 @@ tempy[3] <= logic_top:il.tempy[3]
 draw <= logic_top:il.draw
 middelsteknop <= logic_top:il.middelsteknop
 rst <= rst.DB_MAX_OUTPUT_PORT_TYPE
-led0 <= mouse:ms.buttons[4]
-led1 <= mouse:ms.buttons[3]
-led2 <= mouse:ms.buttons[2]
-led3 <= led3.DB_MAX_OUTPUT_PORT_TYPE
+led0 <= mouse:ms.buttons[1]
+led1 <= mouse:ms.mouseY[2]
+led2 <= mouse:ms.mouseY[1]
+led3 <= mouse:ms.mouseY[0]
 led5 <= mouse:ms.buttons[0]
 led6 <= mouse:ms.mouseX[2]
 led7 <= mouse:ms.mouseX[1]
@@ -723,8 +721,6 @@ dy[3] => y:y1.dy[3]
 handshakemi => x:x1.handshakemi
 handshakemi => y:y1.handshakemi
 handshakemi => color:color1.handshakemi
-countlow => color:color1.countlow
-rescount <= color:color1.rescount
 output_color[0] <= color:color1.output_color[0]
 output_color[1] <= color:color1.output_color[1]
 output_color[2] <= color:color1.output_color[2]
@@ -755,31 +751,25 @@ clk => tempx[0]~reg0.CLK
 clk => tempx[1]~reg0.CLK
 clk => tempx[2]~reg0.CLK
 clk => tempx[3]~reg0.CLK
-clk => state~1.DATAIN
-reset => state.OUTPUTSELECT
-reset => state.OUTPUTSELECT
-reset => state.OUTPUTSELECT
 reset => tempx.OUTPUTSELECT
 reset => tempx.OUTPUTSELECT
 reset => tempx.OUTPUTSELECT
 reset => tempx.OUTPUTSELECT
-dx[0] => Add1.IN4
+dx[0] => Add1.IN8
 dx[0] => Add0.IN4
-dx[1] => Add1.IN3
+dx[1] => Add1.IN7
 dx[1] => Add0.IN3
 dx[2] => ~NO_FANOUT~
 dx[3] => locx_unsigned[3].OUTPUTSELECT
 dx[3] => locx_unsigned[2].OUTPUTSELECT
 dx[3] => locx_unsigned[1].OUTPUTSELECT
 dx[3] => locx_unsigned[0].OUTPUTSELECT
-handshakemi => next_state.increment.DATAB
-handshakemi => Selector1.IN2
-handshakemi => Selector0.IN1
+handshakemi => ~NO_FANOUT~
 tempx[0] <= tempx[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 tempx[1] <= tempx[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 tempx[2] <= tempx[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 tempx[3] <= tempx[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-handshakeimx <= handshakeimx.DB_MAX_OUTPUT_PORT_TYPE
+handshakeimx <= comb.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |top_de1|pixel:inst2|mouse_logic:ml|logic_top:il|y:y1
@@ -787,35 +777,28 @@ clk => tempy[0]~reg0.CLK
 clk => tempy[1]~reg0.CLK
 clk => tempy[2]~reg0.CLK
 clk => tempy[3]~reg0.CLK
-clk => state~1.DATAIN
-reset => state.OUTPUTSELECT
-reset => state.OUTPUTSELECT
-reset => state.OUTPUTSELECT
 reset => tempy.OUTPUTSELECT
 reset => tempy.OUTPUTSELECT
 reset => tempy.OUTPUTSELECT
 reset => tempy.OUTPUTSELECT
-dy[0] => Add1.IN4
+dy[0] => Add1.IN8
 dy[0] => Add0.IN4
-dy[1] => Add1.IN3
+dy[1] => Add1.IN7
 dy[1] => Add0.IN3
 dy[2] => ~NO_FANOUT~
 dy[3] => locy_unsigned[3].OUTPUTSELECT
 dy[3] => locy_unsigned[2].OUTPUTSELECT
 dy[3] => locy_unsigned[1].OUTPUTSELECT
 dy[3] => locy_unsigned[0].OUTPUTSELECT
-handshakemi => next_state.increment.DATAB
-handshakemi => Selector1.IN2
-handshakemi => Selector0.IN1
+handshakemi => ~NO_FANOUT~
 tempy[0] <= tempy[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 tempy[1] <= tempy[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 tempy[2] <= tempy[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 tempy[3] <= tempy[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-handshakeimy <= handshakeimy.DB_MAX_OUTPUT_PORT_TYPE
+handshakeimy <= comb.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |top_de1|pixel:inst2|mouse_logic:ml|logic_top:il|color:color1
-clk => rescount~reg0.CLK
 clk => state~1.DATAIN
 clk => state_hs~1.DATAIN
 reset => state_hs.OUTPUTSELECT
@@ -830,18 +813,15 @@ reset => state.OUTPUTSELECT
 reset => state.OUTPUTSELECT
 reset => state.OUTPUTSELECT
 buttons[0] => process_3.IN1
-buttons[1] => process_4.IN0
 buttons[1] => middelsteknop.DATAIN
 buttons[2] => draw.DATAIN
 handshakemi => next_state_hs.increment.DATAB
 handshakemi => Selector1.IN2
 handshakemi => Selector0.IN1
-countlow => process_4.IN1
 output_color[0] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
 output_color[1] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
 output_color[2] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
 draw <= buttons[2].DB_MAX_OUTPUT_PORT_TYPE
-rescount <= rescount~reg0.DB_MAX_OUTPUT_PORT_TYPE
 middelsteknop <= buttons[1].DB_MAX_OUTPUT_PORT_TYPE
 handshakeimc <= handshakeimc.DB_MAX_OUTPUT_PORT_TYPE
 
@@ -850,11 +830,9 @@ handshakeimc <= handshakeimc.DB_MAX_OUTPUT_PORT_TYPE
 clk => colour_storage:ram.clk
 clk => rom_cursor:rom.clk
 clk => vgadrive:vgd.clock
-clk => vga_buffer:vga_buf.clk
 clk => graph_logic:gr_lg.clk
 reset => colour_storage:ram.reset
 reset => vgadrive:vgd.reset
-reset => vga_buffer:vga_buf.reset
 reset => graph_logic:gr_lg.reset
 logic_x[0] => colour_storage:ram.ram_x[0]
 logic_x[0] => graph_logic:gr_lg.logic_x[0]
@@ -879,15 +857,13 @@ loaded_color[1] => graph_logic:gr_lg.loaded_colour[1]
 loaded_color[2] => colour_storage:ram.ram_colour_in[2]
 loaded_color[2] => graph_logic:gr_lg.loaded_colour[2]
 draw => colour_storage:ram.draw
-countdown_aan => colour_storage:ram.counter_aan
 middelste_knop => colour_storage:ram.middelste_knop
 middelste_knop => graph_logic:gr_lg.middelste_knop
-countdown_klaar <= graph_logic:gr_lg.countdown_klaar
-R <= vga_buffer:vga_buf.Rout
-G <= vga_buffer:vga_buf.Gout
-B <= vga_buffer:vga_buf.Bout
-H <= vga_buffer:vga_buf.Hout
-V <= vga_buffer:vga_buf.Vout
+R <= vgadrive:vgd.Rout
+G <= vgadrive:vgd.Gout
+B <= vgadrive:vgd.Bout
+H <= vgadrive:vgd.H
+V <= vgadrive:vgd.V
 
 
 |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram
@@ -2641,109 +2617,6 @@ H <= hpulse.DB_MAX_OUTPUT_PORT_TYPE
 V <= vpulse.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|top_de1|pixel:inst2|graphic_toplvl:gl|vga_buffer:vga_buf
-clk => flipflop:R1.clk
-clk => flipflop:R2.clk
-clk => flipflop:G1.clk
-clk => flipflop:G2.clk
-clk => flipflop:B1.clk
-clk => flipflop:B2.clk
-clk => flipflop:V1.clk
-clk => flipflop:V2.clk
-clk => flipflop:H1.clk
-clk => flipflop:H2.clk
-reset => flipflop:R1.activate
-reset => flipflop:R2.activate
-reset => flipflop:G1.activate
-reset => flipflop:G2.activate
-reset => flipflop:B1.activate
-reset => flipflop:B2.activate
-reset => flipflop:V1.activate
-reset => flipflop:V2.activate
-reset => flipflop:H1.activate
-reset => flipflop:H2.activate
-R => flipflop:R1.D
-G => flipflop:G1.D
-B => flipflop:B1.D
-V => flipflop:V1.D
-H => flipflop:H1.D
-Rout <= flipflop:R2.Q
-Gout <= flipflop:G2.Q
-Bout <= flipflop:B2.Q
-Vout <= flipflop:V2.Q
-Hout <= flipflop:H2.Q
-
-
-|top_de1|pixel:inst2|graphic_toplvl:gl|vga_buffer:vga_buf|flipflop:R1
-clk => Q~reg0.CLK
-activate => Q~reg0.ENA
-D => Q~reg0.DATAIN
-Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|top_de1|pixel:inst2|graphic_toplvl:gl|vga_buffer:vga_buf|flipflop:R2
-clk => Q~reg0.CLK
-activate => Q~reg0.ENA
-D => Q~reg0.DATAIN
-Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|top_de1|pixel:inst2|graphic_toplvl:gl|vga_buffer:vga_buf|flipflop:G1
-clk => Q~reg0.CLK
-activate => Q~reg0.ENA
-D => Q~reg0.DATAIN
-Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|top_de1|pixel:inst2|graphic_toplvl:gl|vga_buffer:vga_buf|flipflop:G2
-clk => Q~reg0.CLK
-activate => Q~reg0.ENA
-D => Q~reg0.DATAIN
-Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|top_de1|pixel:inst2|graphic_toplvl:gl|vga_buffer:vga_buf|flipflop:B1
-clk => Q~reg0.CLK
-activate => Q~reg0.ENA
-D => Q~reg0.DATAIN
-Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|top_de1|pixel:inst2|graphic_toplvl:gl|vga_buffer:vga_buf|flipflop:B2
-clk => Q~reg0.CLK
-activate => Q~reg0.ENA
-D => Q~reg0.DATAIN
-Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|top_de1|pixel:inst2|graphic_toplvl:gl|vga_buffer:vga_buf|flipflop:V1
-clk => Q~reg0.CLK
-activate => Q~reg0.ENA
-D => Q~reg0.DATAIN
-Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|top_de1|pixel:inst2|graphic_toplvl:gl|vga_buffer:vga_buf|flipflop:V2
-clk => Q~reg0.CLK
-activate => Q~reg0.ENA
-D => Q~reg0.DATAIN
-Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|top_de1|pixel:inst2|graphic_toplvl:gl|vga_buffer:vga_buf|flipflop:H1
-clk => Q~reg0.CLK
-activate => Q~reg0.ENA
-D => Q~reg0.DATAIN
-Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|top_de1|pixel:inst2|graphic_toplvl:gl|vga_buffer:vga_buf|flipflop:H2
-clk => Q~reg0.CLK
-activate => Q~reg0.ENA
-D => Q~reg0.DATAIN
-Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
-
-
 |top_de1|pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg
 clk => v_counter:lv.clk
 clk => h_counter:lh.clk
@@ -2755,7 +2628,6 @@ reset => e_counter:le.reset
 reset => countdown_bar:lcountdown.reset
 v_count => countdown_bar:lcountdown.v_count
 middelste_knop => countdown_bar:lcountdown.middelste_knop
-countdown_klaar <= countdown_bar:lcountdown.countdown_klaar
 logic_h_32_minis => h_counter:lh.logic_h_32
 logic_v_32_minis => v_counter:lv.logic_v_32
 logic_x[0] => Equal1.IN3
@@ -2789,6 +2661,7 @@ logic_rom_colour[1] => Equal4.IN0
 logic_vga_colour[0] <= colour_output.DB_MAX_OUTPUT_PORT_TYPE
 logic_vga_colour[1] <= colour_output.DB_MAX_OUTPUT_PORT_TYPE
 logic_vga_colour[2] <= colour_output.DB_MAX_OUTPUT_PORT_TYPE
+countdown_aan <= countdown_bar:lcountdown.countdown_aan
 logic_x_asked[0] <= x_grid_asked[0].DB_MAX_OUTPUT_PORT_TYPE
 logic_x_asked[1] <= x_grid_asked[1].DB_MAX_OUTPUT_PORT_TYPE
 logic_x_asked[2] <= x_grid_asked[2].DB_MAX_OUTPUT_PORT_TYPE

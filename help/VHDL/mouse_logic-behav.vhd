@@ -77,14 +77,19 @@ dy(1) <= mouseY(1);
 dy(2) <= mouseY(2);
 dy(3) <= buttons_mouse(1);
 
-led0 <= buttons(0); --links
-led1 <= buttons(1); --midden
-led2 <= buttons(2); --rechts
+--led0 <= buttons(0); --links
+--led1 <= buttons(1); --midden
+--led2 <= buttons(2); --rechts
 
 led5 <= dx(3);
 led6 <= dx(2);
 led7 <= dx(1);
 led8 <= dx(0);
+
+led0 <= dy(3);
+led1 <= dy(2);
+led2 <= dy(1);
+led3 <= dy(0);
 
 
 ms: mouse port map(mouseX, buttons_mouse, mouseY, handshake_mouse_out, DataSwitch, ClkSwitch, handshake_mouse_in, Data_in, Clk15k, clk, reset);

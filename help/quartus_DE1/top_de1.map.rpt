@@ -1,5 +1,5 @@
 Analysis & Synthesis report for top_de1
-Fri Jan 20 17:27:03 2023
+Fri Jan 20 18:05:50 2023
 Quartus II 32-bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
 
 
@@ -10,14 +10,32 @@ Quartus II 32-bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Ver
   2. Analysis & Synthesis Summary
   3. Analysis & Synthesis Settings
   4. Parallel Compilation
-  5. Parameter Settings for User Entity Instance: pixel:inst2|graphic_toplvl:gl|colour_storage:ram
-  6. Parameter Settings for User Entity Instance: pixel:inst2|graphic_toplvl:gl|rom_cursor:rom
-  7. Port Connectivity Checks: "pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|countdown_bar:lcountdown"
-  8. Port Connectivity Checks: "pixel:inst2|graphic_toplvl:gl|vgadrive:vgd"
-  9. Port Connectivity Checks: "pixel:inst2|mouse_logic:ml|logic_top:il"
- 10. Port Connectivity Checks: "pixel:inst2|mouse_logic:ml|mouse:ms|main_fsm:mfsm"
- 11. Port Connectivity Checks: "pixel:inst2|mouse_logic:ml|mouse:ms"
- 12. Analysis & Synthesis Messages
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. Analysis & Synthesis RAM Summary
+  9. State Machine - |top_de1|pixel:inst2|mouse_logic:ml|logic_top:il|color:color1|state
+ 10. State Machine - |top_de1|pixel:inst2|mouse_logic:ml|logic_top:il|color:color1|state_hs
+ 11. State Machine - |top_de1|pixel:inst2|mouse_logic:ml|mouse:ms|main_fsm:mfsm|state
+ 12. State Machine - |top_de1|pixel:inst2|mouse_logic:ml|mouse:ms|sendFSM:sfsm|state
+ 13. State Machine - |top_de1|pixel:inst2|mouse_logic:ml|mouse:ms|edge_debounce:ed|state
+ 14. User-Specified and Inferred Latches
+ 15. Registers Removed During Synthesis
+ 16. Removed Registers Triggering Further Register Optimizations
+ 17. General Register Statistics
+ 18. Registers Packed Into Inferred Megafunctions
+ 19. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 20. Source assignments for pixel:inst2|graphic_toplvl:gl|rom_cursor:rom|altsyncram:rom_rtl_0|altsyncram_rn61:auto_generated
+ 21. Parameter Settings for User Entity Instance: pixel:inst2|graphic_toplvl:gl|colour_storage:ram
+ 22. Parameter Settings for User Entity Instance: pixel:inst2|graphic_toplvl:gl|rom_cursor:rom
+ 23. Parameter Settings for Inferred Entity Instance: pixel:inst2|graphic_toplvl:gl|rom_cursor:rom|altsyncram:rom_rtl_0
+ 24. altsyncram Parameter Settings by Entity Instance
+ 25. Port Connectivity Checks: "pixel:inst2|graphic_toplvl:gl|vgadrive:vgd"
+ 26. Port Connectivity Checks: "pixel:inst2|mouse_logic:ml|logic_top:il"
+ 27. Port Connectivity Checks: "pixel:inst2|mouse_logic:ml|mouse:ms|main_fsm:mfsm"
+ 28. Port Connectivity Checks: "pixel:inst2|mouse_logic:ml|mouse:ms"
+ 29. Elapsed Time Per Partition
+ 30. Analysis & Synthesis Messages
 
 
 
@@ -43,20 +61,20 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                          ;
 +------------------------------------+--------------------------------------------------+
-; Analysis & Synthesis Status        ; Failed - Fri Jan 20 17:27:02 2023                ;
+; Analysis & Synthesis Status        ; Successful - Fri Jan 20 18:05:50 2023            ;
 ; Quartus II 32-bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Full Version ;
 ; Revision Name                      ; top_de1                                          ;
 ; Top-level Entity Name              ; top_de1                                          ;
 ; Family                             ; Cyclone II                                       ;
-; Total logic elements               ; N/A until Partition Merge                        ;
-;     Total combinational functions  ; N/A until Partition Merge                        ;
-;     Dedicated logic registers      ; N/A until Partition Merge                        ;
-; Total registers                    ; N/A until Partition Merge                        ;
-; Total pins                         ; N/A until Partition Merge                        ;
-; Total virtual pins                 ; N/A until Partition Merge                        ;
-; Total memory bits                  ; N/A until Partition Merge                        ;
-; Embedded Multiplier 9-bit elements ; N/A until Partition Merge                        ;
-; Total PLLs                         ; N/A until Partition Merge                        ;
+; Total logic elements               ; 467                                              ;
+;     Total combinational functions  ; 450                                              ;
+;     Dedicated logic registers      ; 197                                              ;
+; Total registers                    ; 197                                              ;
+; Total pins                         ; 29                                               ;
+; Total virtual pins                 ; 0                                                ;
+; Total memory bits                  ; 2,048                                            ;
+; Embedded Multiplier 9-bit elements ; 0                                                ;
+; Total PLLs                         ; 0                                                ;
 +------------------------------------+--------------------------------------------------+
 
 
@@ -162,6 +180,750 @@ applicable agreement for further details.
 +----------------------------+-------------+
 
 
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                                            ;
++-------------------------------------------+-----------------+-------------------------------------------------------+---------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path          ; Used in Netlist ; File Type                                             ; File Name with Absolute Path                                                                      ; Library ;
++-------------------------------------------+-----------------+-------------------------------------------------------+---------------------------------------------------------------------------------------------------+---------+
+; ../VHDL/flipflop_bufr.vhd                 ; yes             ; User VHDL File                                        ; /home/ghpdohmen/epo3/epo3/help/VHDL/flipflop_bufr.vhd                                             ;         ;
+; ../VHDL/flipflop_bufr-behaviour.vhd       ; yes             ; User VHDL File                                        ; /home/ghpdohmen/epo3/epo3/help/VHDL/flipflop_bufr-behaviour.vhd                                   ;         ;
+; ../VHDL/RAMbestand.vhd                    ; yes             ; User VHDL File                                        ; /home/ghpdohmen/epo3/epo3/help/VHDL/RAMbestand.vhd                                                ;         ;
+; ../VHDL/y.vhd                             ; yes             ; User VHDL File                                        ; /home/ghpdohmen/epo3/epo3/help/VHDL/y.vhd                                                         ;         ;
+; ../VHDL/y-behaviour_y.vhd                 ; yes             ; User VHDL File                                        ; /home/ghpdohmen/epo3/epo3/help/VHDL/y-behaviour_y.vhd                                             ;         ;
+; ../VHDL/x.vhd                             ; yes             ; User VHDL File                                        ; /home/ghpdohmen/epo3/epo3/help/VHDL/x.vhd                                                         ;         ;
+; ../VHDL/x-behaviour_x.vhd                 ; yes             ; User VHDL File                                        ; /home/ghpdohmen/epo3/epo3/help/VHDL/x-behaviour_x.vhd                                             ;         ;
+; ../VHDL/vgadrive_behaviour.vhd            ; yes             ; User VHDL File                                        ; /home/ghpdohmen/epo3/epo3/help/VHDL/vgadrive_behaviour.vhd                                        ;         ;
+; ../VHDL/vgadrive.vhd                      ; yes             ; User VHDL File                                        ; /home/ghpdohmen/epo3/epo3/help/VHDL/vgadrive.vhd                                                  ;         ;
+; ../VHDL/V_counter_behav.vhd               ; yes             ; User VHDL File                                        ; /home/ghpdohmen/epo3/epo3/help/VHDL/V_counter_behav.vhd                                           ;         ;
+; ../VHDL/V_counter.vhd                     ; yes             ; User VHDL File                                        ; /home/ghpdohmen/epo3/epo3/help/VHDL/V_counter.vhd                                                 ;         ;
+; ../VHDL/timebase-behav.vhd                ; yes             ; User VHDL File                                        ; /home/ghpdohmen/epo3/epo3/help/VHDL/timebase-behav.vhd                                            ;         ;
+; ../VHDL/timebase.vhd                      ; yes             ; User VHDL File                                        ; /home/ghpdohmen/epo3/epo3/help/VHDL/timebase.vhd                                                  ;         ;
+; ../VHDL/shiftregister_11bit-behav.vhd     ; yes             ; User VHDL File                                        ; /home/ghpdohmen/epo3/epo3/help/VHDL/shiftregister_11bit-behav.vhd                                 ;         ;
+; ../VHDL/shiftregister_9bit.vhd            ; yes             ; User VHDL File                                        ; /home/ghpdohmen/epo3/epo3/help/VHDL/shiftregister_9bit.vhd                                        ;         ;
+; ../VHDL/shiftregister_9bit-behav.vhd      ; yes             ; User VHDL File                                        ; /home/ghpdohmen/epo3/epo3/help/VHDL/shiftregister_9bit-behav.vhd                                  ;         ;
+; ../VHDL/shfitregister_11bit.vhd           ; yes             ; User VHDL File                                        ; /home/ghpdohmen/epo3/epo3/help/VHDL/shfitregister_11bit.vhd                                       ;         ;
+; ../VHDL/sendFSM.vhd                       ; yes             ; User VHDL File                                        ; /home/ghpdohmen/epo3/epo3/help/VHDL/sendFSM.vhd                                                   ;         ;
+; ../VHDL/sendFSM-behav.vhd                 ; yes             ; User VHDL File                                        ; /home/ghpdohmen/epo3/epo3/help/VHDL/sendFSM-behav.vhd                                             ;         ;
+; ../VHDL/ROM.vhd                           ; yes             ; User VHDL File                                        ; /home/ghpdohmen/epo3/epo3/help/VHDL/ROM.vhd                                                       ;         ;
+; ../VHDL/pixel.vhd                         ; yes             ; User VHDL File                                        ; /home/ghpdohmen/epo3/epo3/help/VHDL/pixel.vhd                                                     ;         ;
+; ../VHDL/pixel-behav.vhd                   ; yes             ; User VHDL File                                        ; /home/ghpdohmen/epo3/epo3/help/VHDL/pixel-behav.vhd                                               ;         ;
+; ../VHDL/mux.vhd                           ; yes             ; User VHDL File                                        ; /home/ghpdohmen/epo3/epo3/help/VHDL/mux.vhd                                                       ;         ;
+; ../VHDL/mux-behav.vhd                     ; yes             ; User VHDL File                                        ; /home/ghpdohmen/epo3/epo3/help/VHDL/mux-behav.vhd                                                 ;         ;
+; ../VHDL/mouse_logic.vhd                   ; yes             ; User VHDL File                                        ; /home/ghpdohmen/epo3/epo3/help/VHDL/mouse_logic.vhd                                               ;         ;
+; ../VHDL/mouse_logic-behav.vhd             ; yes             ; User VHDL File                                        ; /home/ghpdohmen/epo3/epo3/help/VHDL/mouse_logic-behav.vhd                                         ;         ;
+; ../VHDL/mouse.vhd                         ; yes             ; User VHDL File                                        ; /home/ghpdohmen/epo3/epo3/help/VHDL/mouse.vhd                                                     ;         ;
+; ../VHDL/mouse-behav.vhd                   ; yes             ; User VHDL File                                        ; /home/ghpdohmen/epo3/epo3/help/VHDL/mouse-behav.vhd                                               ;         ;
+; ../VHDL/main_fsm.vhd                      ; yes             ; User VHDL File                                        ; /home/ghpdohmen/epo3/epo3/help/VHDL/main_fsm.vhd                                                  ;         ;
+; ../VHDL/main_fsm-behav.vhd                ; yes             ; User VHDL File                                        ; /home/ghpdohmen/epo3/epo3/help/VHDL/main_fsm-behav.vhd                                            ;         ;
+; ../VHDL/logic_top-behaviour_logic_top.vhd ; yes             ; User VHDL File                                        ; /home/ghpdohmen/epo3/epo3/help/VHDL/logic_top-behaviour_logic_top.vhd                             ;         ;
+; ../VHDL/logic_top.vhd                     ; yes             ; User VHDL File                                        ; /home/ghpdohmen/epo3/epo3/help/VHDL/logic_top.vhd                                                 ;         ;
+; ../VHDL/H_counter.vhd                     ; yes             ; User VHDL File                                        ; /home/ghpdohmen/epo3/epo3/help/VHDL/H_counter.vhd                                                 ;         ;
+; ../VHDL/graphic_toplvl-behaviour.vhd      ; yes             ; User VHDL File                                        ; /home/ghpdohmen/epo3/epo3/help/VHDL/graphic_toplvl-behaviour.vhd                                  ;         ;
+; ../VHDL/graphic_toplvl.vhd                ; yes             ; User VHDL File                                        ; /home/ghpdohmen/epo3/epo3/help/VHDL/graphic_toplvl.vhd                                            ;         ;
+; ../VHDL/graph_logic.vhd                   ; yes             ; User VHDL File                                        ; /home/ghpdohmen/epo3/epo3/help/VHDL/graph_logic.vhd                                               ;         ;
+; ../VHDL/flipflop.vhd                      ; yes             ; User VHDL File                                        ; /home/ghpdohmen/epo3/epo3/help/VHDL/flipflop.vhd                                                  ;         ;
+; ../VHDL/flipflop-behav.vhd                ; yes             ; User VHDL File                                        ; /home/ghpdohmen/epo3/epo3/help/VHDL/flipflop-behav.vhd                                            ;         ;
+; ../VHDL/edge_fall.vhd                     ; yes             ; User VHDL File                                        ; /home/ghpdohmen/epo3/epo3/help/VHDL/edge_fall.vhd                                                 ;         ;
+; ../VHDL/edge_detector.vhd                 ; yes             ; User VHDL File                                        ; /home/ghpdohmen/epo3/epo3/help/VHDL/edge_detector.vhd                                             ;         ;
+; ../VHDL/edge_detector-behav.vhd           ; yes             ; User VHDL File                                        ; /home/ghpdohmen/epo3/epo3/help/VHDL/edge_detector-behav.vhd                                       ;         ;
+; ../VHDL/edge_debounce.vhd                 ; yes             ; User VHDL File                                        ; /home/ghpdohmen/epo3/epo3/help/VHDL/edge_debounce.vhd                                             ;         ;
+; ../VHDL/edge_debounce-behav.vhd           ; yes             ; User VHDL File                                        ; /home/ghpdohmen/epo3/epo3/help/VHDL/edge_debounce-behav.vhd                                       ;         ;
+; ../VHDL/e_counter.vhd                     ; yes             ; User VHDL File                                        ; /home/ghpdohmen/epo3/epo3/help/VHDL/e_counter.vhd                                                 ;         ;
+; ../VHDL/counter25mhz-behav.vhd            ; yes             ; User VHDL File                                        ; /home/ghpdohmen/epo3/epo3/help/VHDL/counter25mhz-behav.vhd                                        ;         ;
+; ../VHDL/counter25mhz.vhd                  ; yes             ; User VHDL File                                        ; /home/ghpdohmen/epo3/epo3/help/VHDL/counter25mhz.vhd                                              ;         ;
+; ../VHDL/countdown.vhd                     ; yes             ; User VHDL File                                        ; /home/ghpdohmen/epo3/epo3/help/VHDL/countdown.vhd                                                 ;         ;
+; ../VHDL/color.vhd                         ; yes             ; User VHDL File                                        ; /home/ghpdohmen/epo3/epo3/help/VHDL/color.vhd                                                     ;         ;
+; ../VHDL/color-behaviour_color.vhd         ; yes             ; User VHDL File                                        ; /home/ghpdohmen/epo3/epo3/help/VHDL/color-behaviour_color.vhd                                     ;         ;
+; top_de1.bdf                               ; yes             ; User Block Diagram/Schematic File                     ; /home/ghpdohmen/epo3/epo3/help/quartus_DE1/top_de1.bdf                                            ;         ;
+; pre_vga_dac_4.vhd                         ; yes             ; User VHDL File                                        ; /home/ghpdohmen/epo3/epo3/help/quartus_DE1/pre_vga_dac_4.vhd                                      ;         ;
+; gen25mhz.vhd                              ; yes             ; User VHDL File                                        ; /home/ghpdohmen/epo3/epo3/help/quartus_DE1/gen25mhz.vhd                                           ;         ;
+; altsyncram.tdf                            ; yes             ; Megafunction                                          ; /data/public/common/software/altera/13.0sp1/quartus/libraries/megafunctions/altsyncram.tdf        ;         ;
+; stratix_ram_block.inc                     ; yes             ; Megafunction                                          ; /data/public/common/software/altera/13.0sp1/quartus/libraries/megafunctions/stratix_ram_block.inc ;         ;
+; lpm_mux.inc                               ; yes             ; Megafunction                                          ; /data/public/common/software/altera/13.0sp1/quartus/libraries/megafunctions/lpm_mux.inc           ;         ;
+; lpm_decode.inc                            ; yes             ; Megafunction                                          ; /data/public/common/software/altera/13.0sp1/quartus/libraries/megafunctions/lpm_decode.inc        ;         ;
+; aglobal130.inc                            ; yes             ; Megafunction                                          ; /data/public/common/software/altera/13.0sp1/quartus/libraries/megafunctions/aglobal130.inc        ;         ;
+; a_rdenreg.inc                             ; yes             ; Megafunction                                          ; /data/public/common/software/altera/13.0sp1/quartus/libraries/megafunctions/a_rdenreg.inc         ;         ;
+; altrom.inc                                ; yes             ; Megafunction                                          ; /data/public/common/software/altera/13.0sp1/quartus/libraries/megafunctions/altrom.inc            ;         ;
+; altram.inc                                ; yes             ; Megafunction                                          ; /data/public/common/software/altera/13.0sp1/quartus/libraries/megafunctions/altram.inc            ;         ;
+; altdpram.inc                              ; yes             ; Megafunction                                          ; /data/public/common/software/altera/13.0sp1/quartus/libraries/megafunctions/altdpram.inc          ;         ;
+; db/altsyncram_rn61.tdf                    ; yes             ; Auto-Generated Megafunction                           ; /home/ghpdohmen/epo3/epo3/help/quartus_DE1/db/altsyncram_rn61.tdf                                 ;         ;
+; db/de1.ram0_rom_cursor_f1823f6e.hdl.mif   ; yes             ; Auto-Generated Auto-Found Memory Initialization File  ; /home/ghpdohmen/epo3/epo3/help/quartus_DE1/db/de1.ram0_rom_cursor_f1823f6e.hdl.mif                ;         ;
++-------------------------------------------+-----------------+-------------------------------------------------------+---------------------------------------------------------------------------------------------------+---------+
+
+
++-----------------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                           ;
++---------------------------------------------+-------------------------+
+; Resource                                    ; Usage                   ;
++---------------------------------------------+-------------------------+
+; Estimated Total logic elements              ; 467                     ;
+;                                             ;                         ;
+; Total combinational functions               ; 450                     ;
+; Logic element usage by number of LUT inputs ;                         ;
+;     -- 4 input functions                    ; 200                     ;
+;     -- 3 input functions                    ; 111                     ;
+;     -- <=2 input functions                  ; 139                     ;
+;                                             ;                         ;
+; Logic elements by mode                      ;                         ;
+;     -- normal mode                          ; 384                     ;
+;     -- arithmetic mode                      ; 66                      ;
+;                                             ;                         ;
+; Total registers                             ; 197                     ;
+;     -- Dedicated logic registers            ; 197                     ;
+;     -- I/O registers                        ; 0                       ;
+;                                             ;                         ;
+; I/O pins                                    ; 29                      ;
+; Total memory bits                           ; 2048                    ;
+; Embedded Multiplier 9-bit elements          ; 0                       ;
+; Maximum fan-out node                        ; gen25mhz:inst1|count[0] ;
+; Maximum fan-out                             ; 200                     ;
+; Total fan-out                               ; 1938                    ;
+; Average fan-out                             ; 2.86                    ;
++---------------------------------------------+-------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                    ;
++-------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------------------------------------------------+--------------+
+; Compilation Hierarchy Node                      ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                       ; Library Name ;
++-------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------------------------------------------------+--------------+
+; |top_de1                                        ; 450 (0)           ; 197 (0)      ; 2048        ; 0            ; 0       ; 0         ; 29   ; 0            ; |top_de1                                                                                                  ; work         ;
+;    |gen25mhz:inst1|                             ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|gen25mhz:inst1                                                                                   ; work         ;
+;    |pixel:inst2|                                ; 449 (0)           ; 196 (0)      ; 2048        ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|pixel:inst2                                                                                      ; work         ;
+;       |graphic_toplvl:gl|                       ; 288 (0)           ; 79 (0)       ; 2048        ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|pixel:inst2|graphic_toplvl:gl                                                                    ; work         ;
+;          |colour_storage:ram|                   ; 10 (10)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|pixel:inst2|graphic_toplvl:gl|colour_storage:ram                                                 ; work         ;
+;          |graph_logic:gr_lg|                    ; 192 (109)         ; 39 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg                                                  ; work         ;
+;             |countdown_bar:lcountdown|          ; 36 (36)           ; 13 (11)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|countdown_bar:lcountdown                         ; work         ;
+;                |edge_det_fall:l_edge|           ; 0 (0)             ; 2 (2)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|countdown_bar:lcountdown|edge_det_fall:l_edge    ; work         ;
+;             |e_counter:le|                      ; 33 (33)           ; 14 (14)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|e_counter:le                                     ; work         ;
+;             |h_counter:lh|                      ; 7 (7)             ; 6 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|h_counter:lh                                     ; work         ;
+;                |edge_detector:l_edge|           ; 0 (0)             ; 2 (2)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|h_counter:lh|edge_detector:l_edge                ; work         ;
+;             |v_counter:lv|                      ; 7 (7)             ; 6 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|v_counter:lv                                     ; work         ;
+;                |edge_detector:l_edge|           ; 0 (0)             ; 2 (2)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|v_counter:lv|edge_detector:l_edge                ; work         ;
+;          |rom_cursor:rom|                       ; 0 (0)             ; 0 (0)        ; 2048        ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|pixel:inst2|graphic_toplvl:gl|rom_cursor:rom                                                     ; work         ;
+;             |altsyncram:rom_rtl_0|              ; 0 (0)             ; 0 (0)        ; 2048        ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|pixel:inst2|graphic_toplvl:gl|rom_cursor:rom|altsyncram:rom_rtl_0                                ; work         ;
+;                |altsyncram_rn61:auto_generated| ; 0 (0)             ; 0 (0)        ; 2048        ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|pixel:inst2|graphic_toplvl:gl|rom_cursor:rom|altsyncram:rom_rtl_0|altsyncram_rn61:auto_generated ; work         ;
+;          |vgadrive:vgd|                         ; 86 (86)           ; 40 (40)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|pixel:inst2|graphic_toplvl:gl|vgadrive:vgd                                                       ; work         ;
+;       |mouse_logic:ml|                          ; 161 (0)           ; 117 (0)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|pixel:inst2|mouse_logic:ml                                                                       ; work         ;
+;          |logic_top:il|                         ; 16 (0)            ; 14 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|pixel:inst2|mouse_logic:ml|logic_top:il                                                          ; work         ;
+;             |color:color1|                      ; 12 (12)           ; 10 (10)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|pixel:inst2|mouse_logic:ml|logic_top:il|color:color1                                             ; work         ;
+;             |x:x1|                              ; 2 (2)             ; 2 (2)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|pixel:inst2|mouse_logic:ml|logic_top:il|x:x1                                                     ; work         ;
+;             |y:y1|                              ; 2 (2)             ; 2 (2)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|pixel:inst2|mouse_logic:ml|logic_top:il|y:y1                                                     ; work         ;
+;          |mouse:ms|                             ; 145 (0)           ; 103 (0)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|pixel:inst2|mouse_logic:ml|mouse:ms                                                              ; work         ;
+;             |counter25mhz:cntD|                 ; 13 (13)           ; 13 (13)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|pixel:inst2|mouse_logic:ml|mouse:ms|counter25mhz:cntD                                            ; work         ;
+;             |counter25mhz:cnt|                  ; 13 (13)           ; 13 (13)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|pixel:inst2|mouse_logic:ml|mouse:ms|counter25mhz:cnt                                             ; work         ;
+;             |edge_debounce:ed|                  ; 14 (14)           ; 6 (6)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|pixel:inst2|mouse_logic:ml|mouse:ms|edge_debounce:ed                                             ; work         ;
+;             |flipflop:flipflop10|               ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|pixel:inst2|mouse_logic:ml|mouse:ms|flipflop:flipflop10                                          ; work         ;
+;             |flipflop:flipflop11|               ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|pixel:inst2|mouse_logic:ml|mouse:ms|flipflop:flipflop11                                          ; work         ;
+;             |flipflop:flipflop1|                ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|pixel:inst2|mouse_logic:ml|mouse:ms|flipflop:flipflop1                                           ; work         ;
+;             |flipflop:flipflop2|                ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|pixel:inst2|mouse_logic:ml|mouse:ms|flipflop:flipflop2                                           ; work         ;
+;             |flipflop:flipflop3|                ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|pixel:inst2|mouse_logic:ml|mouse:ms|flipflop:flipflop3                                           ; work         ;
+;             |flipflop:flipflop4|                ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|pixel:inst2|mouse_logic:ml|mouse:ms|flipflop:flipflop4                                           ; work         ;
+;             |flipflop:flipflop5|                ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|pixel:inst2|mouse_logic:ml|mouse:ms|flipflop:flipflop5                                           ; work         ;
+;             |flipflop:flipflop6|                ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|pixel:inst2|mouse_logic:ml|mouse:ms|flipflop:flipflop6                                           ; work         ;
+;             |flipflop:flipflop7|                ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|pixel:inst2|mouse_logic:ml|mouse:ms|flipflop:flipflop7                                           ; work         ;
+;             |flipflop:flipflop8|                ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|pixel:inst2|mouse_logic:ml|mouse:ms|flipflop:flipflop8                                           ; work         ;
+;             |flipflop_bufr:clk_buffer1|         ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|pixel:inst2|mouse_logic:ml|mouse:ms|flipflop_bufr:clk_buffer1                                    ; work         ;
+;             |flipflop_bufr:clk_buffer2|         ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|pixel:inst2|mouse_logic:ml|mouse:ms|flipflop_bufr:clk_buffer2                                    ; work         ;
+;             |flipflop_bufr:data_buffer1|        ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|pixel:inst2|mouse_logic:ml|mouse:ms|flipflop_bufr:data_buffer1                                   ; work         ;
+;             |flipflop_bufr:data_buffer2|        ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|pixel:inst2|mouse_logic:ml|mouse:ms|flipflop_bufr:data_buffer2                                   ; work         ;
+;             |main_fsm:mfsm|                     ; 47 (47)           ; 26 (26)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|pixel:inst2|mouse_logic:ml|mouse:ms|main_fsm:mfsm                                                ; work         ;
+;             |mux:mx2|                           ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|pixel:inst2|mouse_logic:ml|mouse:ms|mux:mx2                                                      ; work         ;
+;             |mux:mx|                            ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|pixel:inst2|mouse_logic:ml|mouse:ms|mux:mx                                                       ; work         ;
+;             |sendFSM:sfsm|                      ; 28 (28)           ; 9 (9)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|pixel:inst2|mouse_logic:ml|mouse:ms|sendFSM:sfsm                                                 ; work         ;
+;             |shiftregister_11bit:sr11|          ; 10 (10)           ; 9 (9)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|pixel:inst2|mouse_logic:ml|mouse:ms|shiftregister_11bit:sr11                                     ; work         ;
+;             |shiftregister_9bit:sr|             ; 11 (11)           ; 9 (9)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|pixel:inst2|mouse_logic:ml|mouse:ms|shiftregister_9bit:sr                                        ; work         ;
+;             |timebase:tb|                       ; 5 (5)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|pixel:inst2|mouse_logic:ml|mouse:ms|timebase:tb                                                  ; work         ;
++-------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------------------------------------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis RAM Summary                                                                                                                                                                                                       ;
++-------------------------------------------------------------------------------------------------------------+------+------+--------------+--------------+--------------+--------------+------+-----------------------------------------+
+; Name                                                                                                        ; Type ; Mode ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Size ; MIF                                     ;
++-------------------------------------------------------------------------------------------------------------+------+------+--------------+--------------+--------------+--------------+------+-----------------------------------------+
+; pixel:inst2|graphic_toplvl:gl|rom_cursor:rom|altsyncram:rom_rtl_0|altsyncram_rn61:auto_generated|ALTSYNCRAM ; AUTO ; ROM  ; 1024         ; 2            ; --           ; --           ; 2048 ; db/de1.ram0_rom_cursor_f1823f6e.hdl.mif ;
++-------------------------------------------------------------------------------------------------------------+------+------+--------------+--------------+--------------+--------------+------+-----------------------------------------+
+
+
+Encoding Type:  One-Hot
++-------------------------------------------------------------------------------------------------------------------------+
+; State Machine - |top_de1|pixel:inst2|mouse_logic:ml|logic_top:il|color:color1|state                                     ;
++-------------+-------------+-------------+-------------+-----------+-------------+------------+-------------+------------+
+; Name        ; state.paars ; state.zwart ; state.cyaan ; state.wit ; state.groen ; state.geel ; state.blauw ; state.rood ;
++-------------+-------------+-------------+-------------+-----------+-------------+------------+-------------+------------+
+; state.rood  ; 0           ; 0           ; 0           ; 0         ; 0           ; 0          ; 0           ; 0          ;
+; state.blauw ; 0           ; 0           ; 0           ; 0         ; 0           ; 0          ; 1           ; 1          ;
+; state.geel  ; 0           ; 0           ; 0           ; 0         ; 0           ; 1          ; 0           ; 1          ;
+; state.groen ; 0           ; 0           ; 0           ; 0         ; 1           ; 0          ; 0           ; 1          ;
+; state.wit   ; 0           ; 0           ; 0           ; 1         ; 0           ; 0          ; 0           ; 1          ;
+; state.cyaan ; 0           ; 0           ; 1           ; 0         ; 0           ; 0          ; 0           ; 1          ;
+; state.zwart ; 0           ; 1           ; 0           ; 0         ; 0           ; 0          ; 0           ; 1          ;
+; state.paars ; 1           ; 0           ; 0           ; 0         ; 0           ; 0          ; 0           ; 1          ;
++-------------+-------------+-------------+-------------+-----------+-------------+------------+-------------+------------+
+
+
+Encoding Type:  One-Hot
++----------------------------------------------------------------------------------------+
+; State Machine - |top_de1|pixel:inst2|mouse_logic:ml|logic_top:il|color:color1|state_hs ;
++--------------------+----------------+--------------------+-----------------------------+
+; Name               ; state_hs.ready ; state_hs.increment ; state_hs.idle               ;
++--------------------+----------------+--------------------+-----------------------------+
+; state_hs.idle      ; 0              ; 0                  ; 0                           ;
+; state_hs.increment ; 0              ; 1                  ; 1                           ;
+; state_hs.ready     ; 1              ; 0                  ; 1                           ;
++--------------------+----------------+--------------------+-----------------------------+
+
+
+Encoding Type:  One-Hot
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; State Machine - |top_de1|pixel:inst2|mouse_logic:ml|mouse:ms|main_fsm:mfsm|state                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           ;
++------------------------+------------------------+-----------------------+------------------------+----------------------+---------------+--------------+------------------------+----------------------+---------------+--------------+------------------------+----------------------+---------------+--------------+------------------------+----------------+------------------------+----------------+-----------------------+---------------+-----------------------+---------------+-----------------------+---------------+----------------------+--------------+-------------------+
+; Name                   ; state.handshake_state2 ; state.handshake_state ; state.data_3_cnt_rst_2 ; state.data_3_cnt_rst ; state.delay_3 ; state.data_3 ; state.data_2_cnt_rst_2 ; state.data_2_cnt_rst ; state.delay_2 ; state.data_2 ; state.data_1_cnt_rst_2 ; state.data_1_cnt_rst ; state.delay_1 ; state.data_1 ; state.wachtFA2_cnt_rst ; state.wachtFA2 ; state.enableF4_cnt_rst ; state.enableF4 ; state.wachtID_cnt_rst ; state.wachtID ; state.wachtAA_cnt_rst ; state.wachtAA ; state.wachtFA_cnt_rst ; state.wachtFA ; state.sendFF_cnt_rst ; state.sendFF ; state.reset_state ;
++------------------------+------------------------+-----------------------+------------------------+----------------------+---------------+--------------+------------------------+----------------------+---------------+--------------+------------------------+----------------------+---------------+--------------+------------------------+----------------+------------------------+----------------+-----------------------+---------------+-----------------------+---------------+-----------------------+---------------+----------------------+--------------+-------------------+
+; state.reset_state      ; 0                      ; 0                     ; 0                      ; 0                    ; 0             ; 0            ; 0                      ; 0                    ; 0             ; 0            ; 0                      ; 0                    ; 0             ; 0            ; 0                      ; 0              ; 0                      ; 0              ; 0                     ; 0             ; 0                     ; 0             ; 0                     ; 0             ; 0                    ; 0            ; 0                 ;
+; state.sendFF           ; 0                      ; 0                     ; 0                      ; 0                    ; 0             ; 0            ; 0                      ; 0                    ; 0             ; 0            ; 0                      ; 0                    ; 0             ; 0            ; 0                      ; 0              ; 0                      ; 0              ; 0                     ; 0             ; 0                     ; 0             ; 0                     ; 0             ; 0                    ; 1            ; 1                 ;
+; state.sendFF_cnt_rst   ; 0                      ; 0                     ; 0                      ; 0                    ; 0             ; 0            ; 0                      ; 0                    ; 0             ; 0            ; 0                      ; 0                    ; 0             ; 0            ; 0                      ; 0              ; 0                      ; 0              ; 0                     ; 0             ; 0                     ; 0             ; 0                     ; 0             ; 1                    ; 0            ; 1                 ;
+; state.wachtFA          ; 0                      ; 0                     ; 0                      ; 0                    ; 0             ; 0            ; 0                      ; 0                    ; 0             ; 0            ; 0                      ; 0                    ; 0             ; 0            ; 0                      ; 0              ; 0                      ; 0              ; 0                     ; 0             ; 0                     ; 0             ; 0                     ; 1             ; 0                    ; 0            ; 1                 ;
+; state.wachtFA_cnt_rst  ; 0                      ; 0                     ; 0                      ; 0                    ; 0             ; 0            ; 0                      ; 0                    ; 0             ; 0            ; 0                      ; 0                    ; 0             ; 0            ; 0                      ; 0              ; 0                      ; 0              ; 0                     ; 0             ; 0                     ; 0             ; 1                     ; 0             ; 0                    ; 0            ; 1                 ;
+; state.wachtAA          ; 0                      ; 0                     ; 0                      ; 0                    ; 0             ; 0            ; 0                      ; 0                    ; 0             ; 0            ; 0                      ; 0                    ; 0             ; 0            ; 0                      ; 0              ; 0                      ; 0              ; 0                     ; 0             ; 0                     ; 1             ; 0                     ; 0             ; 0                    ; 0            ; 1                 ;
+; state.wachtAA_cnt_rst  ; 0                      ; 0                     ; 0                      ; 0                    ; 0             ; 0            ; 0                      ; 0                    ; 0             ; 0            ; 0                      ; 0                    ; 0             ; 0            ; 0                      ; 0              ; 0                      ; 0              ; 0                     ; 0             ; 1                     ; 0             ; 0                     ; 0             ; 0                    ; 0            ; 1                 ;
+; state.wachtID          ; 0                      ; 0                     ; 0                      ; 0                    ; 0             ; 0            ; 0                      ; 0                    ; 0             ; 0            ; 0                      ; 0                    ; 0             ; 0            ; 0                      ; 0              ; 0                      ; 0              ; 0                     ; 1             ; 0                     ; 0             ; 0                     ; 0             ; 0                    ; 0            ; 1                 ;
+; state.wachtID_cnt_rst  ; 0                      ; 0                     ; 0                      ; 0                    ; 0             ; 0            ; 0                      ; 0                    ; 0             ; 0            ; 0                      ; 0                    ; 0             ; 0            ; 0                      ; 0              ; 0                      ; 0              ; 1                     ; 0             ; 0                     ; 0             ; 0                     ; 0             ; 0                    ; 0            ; 1                 ;
+; state.enableF4         ; 0                      ; 0                     ; 0                      ; 0                    ; 0             ; 0            ; 0                      ; 0                    ; 0             ; 0            ; 0                      ; 0                    ; 0             ; 0            ; 0                      ; 0              ; 0                      ; 1              ; 0                     ; 0             ; 0                     ; 0             ; 0                     ; 0             ; 0                    ; 0            ; 1                 ;
+; state.enableF4_cnt_rst ; 0                      ; 0                     ; 0                      ; 0                    ; 0             ; 0            ; 0                      ; 0                    ; 0             ; 0            ; 0                      ; 0                    ; 0             ; 0            ; 0                      ; 0              ; 1                      ; 0              ; 0                     ; 0             ; 0                     ; 0             ; 0                     ; 0             ; 0                    ; 0            ; 1                 ;
+; state.wachtFA2         ; 0                      ; 0                     ; 0                      ; 0                    ; 0             ; 0            ; 0                      ; 0                    ; 0             ; 0            ; 0                      ; 0                    ; 0             ; 0            ; 0                      ; 1              ; 0                      ; 0              ; 0                     ; 0             ; 0                     ; 0             ; 0                     ; 0             ; 0                    ; 0            ; 1                 ;
+; state.wachtFA2_cnt_rst ; 0                      ; 0                     ; 0                      ; 0                    ; 0             ; 0            ; 0                      ; 0                    ; 0             ; 0            ; 0                      ; 0                    ; 0             ; 0            ; 1                      ; 0              ; 0                      ; 0              ; 0                     ; 0             ; 0                     ; 0             ; 0                     ; 0             ; 0                    ; 0            ; 1                 ;
+; state.data_1           ; 0                      ; 0                     ; 0                      ; 0                    ; 0             ; 0            ; 0                      ; 0                    ; 0             ; 0            ; 0                      ; 0                    ; 0             ; 1            ; 0                      ; 0              ; 0                      ; 0              ; 0                     ; 0             ; 0                     ; 0             ; 0                     ; 0             ; 0                    ; 0            ; 1                 ;
+; state.delay_1          ; 0                      ; 0                     ; 0                      ; 0                    ; 0             ; 0            ; 0                      ; 0                    ; 0             ; 0            ; 0                      ; 0                    ; 1             ; 0            ; 0                      ; 0              ; 0                      ; 0              ; 0                     ; 0             ; 0                     ; 0             ; 0                     ; 0             ; 0                    ; 0            ; 1                 ;
+; state.data_1_cnt_rst   ; 0                      ; 0                     ; 0                      ; 0                    ; 0             ; 0            ; 0                      ; 0                    ; 0             ; 0            ; 0                      ; 1                    ; 0             ; 0            ; 0                      ; 0              ; 0                      ; 0              ; 0                     ; 0             ; 0                     ; 0             ; 0                     ; 0             ; 0                    ; 0            ; 1                 ;
+; state.data_1_cnt_rst_2 ; 0                      ; 0                     ; 0                      ; 0                    ; 0             ; 0            ; 0                      ; 0                    ; 0             ; 0            ; 1                      ; 0                    ; 0             ; 0            ; 0                      ; 0              ; 0                      ; 0              ; 0                     ; 0             ; 0                     ; 0             ; 0                     ; 0             ; 0                    ; 0            ; 1                 ;
+; state.data_2           ; 0                      ; 0                     ; 0                      ; 0                    ; 0             ; 0            ; 0                      ; 0                    ; 0             ; 1            ; 0                      ; 0                    ; 0             ; 0            ; 0                      ; 0              ; 0                      ; 0              ; 0                     ; 0             ; 0                     ; 0             ; 0                     ; 0             ; 0                    ; 0            ; 1                 ;
+; state.delay_2          ; 0                      ; 0                     ; 0                      ; 0                    ; 0             ; 0            ; 0                      ; 0                    ; 1             ; 0            ; 0                      ; 0                    ; 0             ; 0            ; 0                      ; 0              ; 0                      ; 0              ; 0                     ; 0             ; 0                     ; 0             ; 0                     ; 0             ; 0                    ; 0            ; 1                 ;
+; state.data_2_cnt_rst   ; 0                      ; 0                     ; 0                      ; 0                    ; 0             ; 0            ; 0                      ; 1                    ; 0             ; 0            ; 0                      ; 0                    ; 0             ; 0            ; 0                      ; 0              ; 0                      ; 0              ; 0                     ; 0             ; 0                     ; 0             ; 0                     ; 0             ; 0                    ; 0            ; 1                 ;
+; state.data_2_cnt_rst_2 ; 0                      ; 0                     ; 0                      ; 0                    ; 0             ; 0            ; 1                      ; 0                    ; 0             ; 0            ; 0                      ; 0                    ; 0             ; 0            ; 0                      ; 0              ; 0                      ; 0              ; 0                     ; 0             ; 0                     ; 0             ; 0                     ; 0             ; 0                    ; 0            ; 1                 ;
+; state.data_3           ; 0                      ; 0                     ; 0                      ; 0                    ; 0             ; 1            ; 0                      ; 0                    ; 0             ; 0            ; 0                      ; 0                    ; 0             ; 0            ; 0                      ; 0              ; 0                      ; 0              ; 0                     ; 0             ; 0                     ; 0             ; 0                     ; 0             ; 0                    ; 0            ; 1                 ;
+; state.delay_3          ; 0                      ; 0                     ; 0                      ; 0                    ; 1             ; 0            ; 0                      ; 0                    ; 0             ; 0            ; 0                      ; 0                    ; 0             ; 0            ; 0                      ; 0              ; 0                      ; 0              ; 0                     ; 0             ; 0                     ; 0             ; 0                     ; 0             ; 0                    ; 0            ; 1                 ;
+; state.data_3_cnt_rst   ; 0                      ; 0                     ; 0                      ; 1                    ; 0             ; 0            ; 0                      ; 0                    ; 0             ; 0            ; 0                      ; 0                    ; 0             ; 0            ; 0                      ; 0              ; 0                      ; 0              ; 0                     ; 0             ; 0                     ; 0             ; 0                     ; 0             ; 0                    ; 0            ; 1                 ;
+; state.data_3_cnt_rst_2 ; 0                      ; 0                     ; 1                      ; 0                    ; 0             ; 0            ; 0                      ; 0                    ; 0             ; 0            ; 0                      ; 0                    ; 0             ; 0            ; 0                      ; 0              ; 0                      ; 0              ; 0                     ; 0             ; 0                     ; 0             ; 0                     ; 0             ; 0                    ; 0            ; 1                 ;
+; state.handshake_state  ; 0                      ; 1                     ; 0                      ; 0                    ; 0             ; 0            ; 0                      ; 0                    ; 0             ; 0            ; 0                      ; 0                    ; 0             ; 0            ; 0                      ; 0              ; 0                      ; 0              ; 0                     ; 0             ; 0                     ; 0             ; 0                     ; 0             ; 0                    ; 0            ; 1                 ;
+; state.handshake_state2 ; 1                      ; 0                     ; 0                      ; 0                    ; 0             ; 0            ; 0                      ; 0                    ; 0             ; 0            ; 0                      ; 0                    ; 0             ; 0            ; 0                      ; 0              ; 0                      ; 0              ; 0                     ; 0             ; 0                     ; 0             ; 0                     ; 0             ; 0                    ; 0            ; 1                 ;
++------------------------+------------------------+-----------------------+------------------------+----------------------+---------------+--------------+------------------------+----------------------+---------------+--------------+------------------------+----------------------+---------------+--------------+------------------------+----------------+------------------------+----------------+-----------------------+---------------+-----------------------+---------------+-----------------------+---------------+----------------------+--------------+-------------------+
+
+
+Encoding Type:  One-Hot
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; State Machine - |top_de1|pixel:inst2|mouse_logic:ml|mouse:ms|sendFSM:sfsm|state                                                                                                                                    ;
++-------------------------+----------------+--------------------+-------------------------+--------------------+--------------------+-------------------+----------------------+-----------------+-------------------+
+; Name                    ; state.mouseclk ; state.datalowextra ; state.waitforclockstate ; state.datalowstate ; state.bothlowstate ; state.clklowstate ; state.waitcountreset ; state.waitstate ; state.reset_state ;
++-------------------------+----------------+--------------------+-------------------------+--------------------+--------------------+-------------------+----------------------+-----------------+-------------------+
+; state.reset_state       ; 0              ; 0                  ; 0                       ; 0                  ; 0                  ; 0                 ; 0                    ; 0               ; 0                 ;
+; state.waitstate         ; 0              ; 0                  ; 0                       ; 0                  ; 0                  ; 0                 ; 0                    ; 1               ; 1                 ;
+; state.waitcountreset    ; 0              ; 0                  ; 0                       ; 0                  ; 0                  ; 0                 ; 1                    ; 0               ; 1                 ;
+; state.clklowstate       ; 0              ; 0                  ; 0                       ; 0                  ; 0                  ; 1                 ; 0                    ; 0               ; 1                 ;
+; state.bothlowstate      ; 0              ; 0                  ; 0                       ; 0                  ; 1                  ; 0                 ; 0                    ; 0               ; 1                 ;
+; state.datalowstate      ; 0              ; 0                  ; 0                       ; 1                  ; 0                  ; 0                 ; 0                    ; 0               ; 1                 ;
+; state.waitforclockstate ; 0              ; 0                  ; 1                       ; 0                  ; 0                  ; 0                 ; 0                    ; 0               ; 1                 ;
+; state.datalowextra      ; 0              ; 1                  ; 0                       ; 0                  ; 0                  ; 0                 ; 0                    ; 0               ; 1                 ;
+; state.mouseclk          ; 1              ; 0                  ; 0                       ; 0                  ; 0                  ; 0                 ; 0                    ; 0               ; 1                 ;
++-------------------------+----------------+--------------------+-------------------------+--------------------+--------------------+-------------------+----------------------+-----------------+-------------------+
+
+
+Encoding Type:  One-Hot
++-------------------------------------------------------------------------------------+
+; State Machine - |top_de1|pixel:inst2|mouse_logic:ml|mouse:ms|edge_debounce:ed|state ;
++-------------------+----------------+------------+-------------+---------------------+
+; Name              ; state.debounce ; state.edge ; state.pause ; state.reset_state   ;
++-------------------+----------------+------------+-------------+---------------------+
+; state.reset_state ; 0              ; 0          ; 0           ; 0                   ;
+; state.pause       ; 0              ; 0          ; 1           ; 1                   ;
+; state.edge        ; 0              ; 1          ; 0           ; 1                   ;
+; state.debounce    ; 1              ; 0          ; 0           ; 1                   ;
++-------------------+----------------+------------+-------------+---------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; User-Specified and Inferred Latches                                                                                                                                                ;
++-----------------------------------------------------------------------------+-----------------------------------------------------------------------------+------------------------+
+; Latch Name                                                                  ; Latch Enable Signal                                                         ; Free of Timing Hazards ;
++-----------------------------------------------------------------------------+-----------------------------------------------------------------------------+------------------------+
+; pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|x_grid_asked[2]             ; pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|x_grid_asked[3]             ; yes                    ;
+; pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|y_grid_asked[1]             ; pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|x_grid_asked[3]             ; yes                    ;
+; pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|y_grid_asked[0]             ; pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|x_grid_asked[3]             ; yes                    ;
+; pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|x_grid_asked[1]             ; pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|x_grid_asked[3]             ; yes                    ;
+; pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|y_grid_asked[2]             ; pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|x_grid_asked[3]             ; yes                    ;
+; pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|x_grid_asked[3]             ; pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|x_grid_asked[3]             ; yes                    ;
+; pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|y_grid_asked[3]             ; pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|x_grid_asked[3]             ; yes                    ;
+; pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|e_counter:le|new_count_e[0] ; pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|e_counter:le|new_count_e[0] ; yes                    ;
+; pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|e_counter:le|new_count_e[1] ; pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|e_counter:le|new_count_e[0] ; yes                    ;
+; pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|e_counter:le|new_count_e[2] ; pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|e_counter:le|new_count_e[0] ; yes                    ;
+; pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|e_counter:le|new_count_e[3] ; pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|e_counter:le|new_count_e[0] ; yes                    ;
+; pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|e_counter:le|new_count_e[4] ; pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|e_counter:le|new_count_e[0] ; yes                    ;
+; pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|e_counter:le|new_count_e[5] ; pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|e_counter:le|new_count_e[0] ; yes                    ;
+; pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|e_counter:le|new_count_e[6] ; pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|e_counter:le|new_count_e[0] ; yes                    ;
+; pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|e_counter:le|new_count_e[7] ; pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|e_counter:le|new_count_e[0] ; yes                    ;
+; pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|e_counter:le|new_count_e[8] ; pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|e_counter:le|new_count_e[0] ; yes                    ;
+; pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|e_counter:le|new_count_e[9] ; pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|e_counter:le|new_count_e[0] ; yes                    ;
+; Number of user-specified and inferred latches = 17                          ;                                                                             ;                        ;
++-----------------------------------------------------------------------------+-----------------------------------------------------------------------------+------------------------+
+Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                                                                                           ;
++--------------------------------------------------------------------------+-----------------------------------------------------------------------------------+
+; Register name                                                            ; Reason for Removal                                                                ;
++--------------------------------------------------------------------------+-----------------------------------------------------------------------------------+
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|y_grid[6]               ; Lost fanout                                                                       ;
+; pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|scale_horizontal[1]           ; Merged with pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|horizontal[1]              ;
+; pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|scale_horizontal[0]           ; Merged with pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|horizontal[0]              ;
+; pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|vertical[9]                   ; Merged with pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|scale_vertical[9]          ;
+; pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|vertical[8]                   ; Merged with pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|scale_vertical[8]          ;
+; pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|vertical[7]                   ; Merged with pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|scale_vertical[7]          ;
+; pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|vertical[6]                   ; Merged with pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|scale_vertical[6]          ;
+; pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|vertical[5]                   ; Merged with pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|scale_vertical[5]          ;
+; pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|vertical[4]                   ; Merged with pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|scale_vertical[4]          ;
+; pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|vertical[3]                   ; Merged with pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|scale_vertical[3]          ;
+; pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|vertical[2]                   ; Merged with pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|scale_vertical[2]          ;
+; pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|vertical[1]                   ; Merged with pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|scale_vertical[1]          ;
+; pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|vertical[0]                   ; Merged with pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|scale_vertical[0]          ;
+; pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|scale_horizontal[9]           ; Merged with pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|horizontal[9]              ;
+; pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|scale_horizontal[8]           ; Merged with pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|horizontal[8]              ;
+; pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|scale_horizontal[7]           ; Merged with pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|horizontal[7]              ;
+; pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|scale_horizontal[6]           ; Merged with pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|horizontal[6]              ;
+; pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|scale_horizontal[5]           ; Merged with pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|horizontal[5]              ;
+; pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|scale_horizontal[4]           ; Merged with pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|horizontal[4]              ;
+; pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|scale_horizontal[3]           ; Merged with pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|horizontal[3]              ;
+; pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|scale_horizontal[2]           ; Merged with pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|horizontal[2]              ;
+; pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|vertical_counter[0]           ; Merged with pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|scale_vertical_counter[0]  ;
+; pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|vertical_counter[1]           ; Merged with pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|scale_vertical_counter[1]  ;
+; pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|vertical_counter[2]           ; Merged with pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|scale_vertical_counter[2]  ;
+; pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|vertical_counter[3]           ; Merged with pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|scale_vertical_counter[3]  ;
+; pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|vertical_counter[4]           ; Merged with pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|scale_vertical_counter[4]  ;
+; pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|vertical_counter[5]           ; Merged with pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|scale_vertical_counter[5]  ;
+; pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|vertical_counter[6]           ; Merged with pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|scale_vertical_counter[6]  ;
+; pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|vertical_counter[7]           ; Merged with pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|scale_vertical_counter[7]  ;
+; pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|vertical_counter[8]           ; Merged with pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|scale_vertical_counter[8]  ;
+; pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|vertical_counter[9]           ; Merged with pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|scale_vertical_counter[9]  ;
+; pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|scale_horizontal_counter[0]   ; Merged with pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|horizontal_counter[0]      ;
+; pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|scale_horizontal_counter[1]   ; Merged with pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|horizontal_counter[1]      ;
+; pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|scale_horizontal_counter[2]   ; Merged with pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|horizontal_counter[2]      ;
+; pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|scale_horizontal_counter[3]   ; Merged with pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|horizontal_counter[3]      ;
+; pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|scale_horizontal_counter[4]   ; Merged with pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|horizontal_counter[4]      ;
+; pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|scale_horizontal_counter[5]   ; Merged with pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|horizontal_counter[5]      ;
+; pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|scale_horizontal_counter[6]   ; Merged with pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|horizontal_counter[6]      ;
+; pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|scale_horizontal_counter[7]   ; Merged with pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|horizontal_counter[7]      ;
+; pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|scale_horizontal_counter[8]   ; Merged with pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|horizontal_counter[8]      ;
+; pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|scale_horizontal_counter[9]   ; Merged with pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|horizontal_counter[9]      ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|x_grid[6]               ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|x_grid[5]            ;
+; pixel:inst2|mouse_logic:ml|logic_top:il|y:y1|tempy[2,3]                  ; Stuck at GND due to stuck port data_in                                            ;
+; pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|e_counter:le|y_old[2,3]  ; Stuck at GND due to stuck port data_in                                            ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram_position[1..6]      ; Stuck at GND due to stuck port data_in                                            ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|y_grid[0..5]            ; Stuck at GND due to stuck port data_in                                            ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|x_grid[0..5]            ; Stuck at GND due to stuck port data_in                                            ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram_position[0]         ; Stuck at GND due to stuck port data_in                                            ;
+; pixel:inst2|mouse_logic:ml|mouse:ms|flipflop:flipflop9|Q                 ; Lost fanout                                                                       ;
+; pixel:inst2|mouse_logic:ml|mouse:ms|shiftregister_11bit:sr11|data_out[9] ; Lost fanout                                                                       ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[9][2]               ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[99][0]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[61][2]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[99][0]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[8][1]               ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[99][0]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[87][2]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[99][0]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[7][0]               ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[99][0]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[60][1]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[99][0]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[7][2]               ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[99][0]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[99][2]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[99][0]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[6][1]               ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[99][0]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[59][0]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[99][0]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[5][0]               ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[99][0]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[86][1]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[99][0]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[5][2]               ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[99][0]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[59][2]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[99][0]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[4][1]               ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[99][0]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[3][0]               ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[99][0]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[58][1]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[99][0]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[3][2]               ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[99][0]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[85][0]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[99][0]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[2][1]               ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[99][0]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[57][0]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[99][0]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[1][0]               ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[99][0]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[1][2]               ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[99][0]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[57][2]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[99][0]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[0][1]               ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[99][0]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[85][2]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[99][0]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[56][1]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[99][0]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[84][1]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[99][0]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[98][1]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[99][0]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[92][2]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[99][0]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[70][0]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[99][0]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[28][2]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[99][0]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[40][0]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[99][1]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[76][0]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[99][1]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[39][1]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[99][1]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[38][2]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[99][1]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[75][1]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[99][1]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[36][0]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[99][1]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[94][2]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[99][1]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[35][1]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[99][1]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[74][2]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[99][1]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[34][2]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[99][1]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[32][0]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[99][1]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[72][0]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[99][1]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[31][1]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[99][1]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[92][0]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[99][1]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[30][2]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[99][1]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[71][1]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[99][1]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[27][1]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[99][1]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[28][0]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[99][1]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[70][2]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[99][1]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[26][2]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[99][1]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[91][1]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[99][1]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[24][0]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[99][1]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[68][0]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[99][1]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[23][1]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[99][1]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[22][2]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[99][1]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[67][1]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[99][1]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[20][0]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[99][1]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[90][2]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[99][1]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[19][1]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[99][1]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[66][2]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[99][1]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[18][2]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[99][1]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[53][0]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[99][1]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[16][0]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[99][1]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[64][0]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[99][1]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[15][1]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[99][1]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[88][0]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[99][1]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[14][2]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[99][1]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[63][1]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[99][1]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[12][0]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[99][1]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[11][1]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[99][1]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[62][2]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[99][1]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[10][2]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[99][1]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[87][1]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[99][1]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[8][0]               ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[99][1]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[60][0]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[99][1]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[7][1]               ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[99][1]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[55][2]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[99][1]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[6][2]               ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[99][1]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[59][1]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[99][1]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[4][0]               ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[99][1]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[86][2]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[99][1]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[3][1]               ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[99][1]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[58][2]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[99][1]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[2][2]               ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[99][1]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[0][0]               ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[99][1]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[56][0]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[99][1]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[84][0]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[99][1]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[55][1]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[99][1]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[54][2]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[99][1]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[83][1]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[99][1]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[83][2]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[99][1]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[52][1]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[99][1]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[51][0]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[99][1]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[82][1]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[99][1]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[51][2]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[99][1]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[97][0]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[99][1]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[50][1]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[99][1]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[81][0]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[99][1]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[49][0]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[99][1]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[49][2]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[99][1]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[81][2]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[99][1]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[48][1]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[99][1]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[97][2]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[99][1]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[47][0]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[99][1]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[80][1]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[99][1]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[47][2]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[99][1]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[46][1]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[99][1]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[79][0]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[99][1]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[45][0]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[99][1]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[96][1]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[99][1]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[45][2]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[99][1]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[79][2]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[99][1]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[44][1]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[99][1]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[43][0]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[99][1]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[78][1]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[99][1]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[6][0]               ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[98][0]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[49][1]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[98][0]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[81][1]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[98][0]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[17][1]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[98][0]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[38][0]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[98][0]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[60][2]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[98][0]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[97][1]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[98][0]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[44][2]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[98][0]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[76][2]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[98][0]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[22][0]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[98][0]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[33][1]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[98][0]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[65][1]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[98][0]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[12][2]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[98][0]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[86][0]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[98][0]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[1][1]               ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[98][0]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[54][0]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[98][0]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[52][2]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[98][0]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[46][0]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[98][0]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[78][0]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[98][0]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[41][1]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[98][0]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[94][0]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[98][0]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[36][2]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[98][0]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[73][1]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[98][0]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[25][1]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[98][0]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[30][0]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[98][0]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[68][2]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[98][0]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[20][2]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[98][0]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[89][1]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[98][0]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[14][0]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[98][0]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[62][0]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[98][0]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[9][1]               ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[98][0]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[4][2]               ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[98][0]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[57][1]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[98][0]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[84][2]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[98][0]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[82][0]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[98][0]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[50][0]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[98][0]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[48][2]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[98][0]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[80][2]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[98][0]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[45][1]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[98][0]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[96][2]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[98][0]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[42][0]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[98][0]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[77][1]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[98][0]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[40][2]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[98][0]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[37][1]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[98][0]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[74][0]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[98][0]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[34][0]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[98][0]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[93][1]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[98][0]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[32][2]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[98][0]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[72][2]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[98][0]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[26][0]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[98][0]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[29][1]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[98][0]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[69][1]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[98][0]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[24][2]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[98][0]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[90][0]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[98][0]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[21][1]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[98][0]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[66][0]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[98][0]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[18][0]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[98][0]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[16][2]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[98][0]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[64][2]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[98][0]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[13][1]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[98][0]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[88][2]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[98][0]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[10][0]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[98][0]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[61][1]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[98][0]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[8][2]               ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[98][0]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[5][1]               ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[98][0]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[58][0]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[98][0]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[2][0]               ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[98][0]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[85][1]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[98][0]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[0][2]               ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[98][0]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[56][2]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[98][0]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[53][1]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[98][0]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[52][0]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[98][0]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[98][2]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[98][0]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[51][1]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[98][0]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[82][2]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[98][0]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[50][2]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[98][0]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[48][0]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[98][0]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[80][0]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[98][0]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[47][1]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[98][0]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[96][0]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[98][0]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[46][2]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[98][0]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[79][1]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[98][0]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[44][0]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[98][0]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[43][1]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[98][0]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[78][2]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[98][0]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[42][2]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[98][0]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[95][1]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[98][0]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[43][2]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[95][0]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[42][1]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[95][0]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[77][0]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[95][0]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[41][0]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[95][0]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[41][2]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[95][0]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[77][2]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[95][0]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[40][1]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[95][0]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[95][2]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[95][0]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[39][0]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[95][0]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[76][1]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[95][0]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[39][2]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[95][0]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[38][1]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[95][0]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[75][0]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[95][0]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[37][0]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[95][0]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[94][1]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[95][0]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[37][2]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[95][0]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[75][2]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[95][0]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[36][1]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[95][0]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[35][0]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[95][0]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[74][1]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[95][0]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[35][2]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[95][0]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[93][0]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[95][0]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[34][1]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[95][0]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[73][0]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[95][0]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[33][0]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[95][0]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[33][2]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[95][0]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[73][2]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[95][0]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[32][1]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[95][0]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[93][2]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[95][0]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[31][0]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[95][0]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[72][1]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[95][0]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[31][2]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[95][0]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[53][2]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[95][0]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[30][1]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[95][0]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[71][0]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[95][0]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[29][0]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[95][0]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[92][1]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[95][0]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[29][2]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[95][0]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[71][2]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[95][0]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[27][0]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[95][0]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[28][1]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[95][0]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[70][1]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[95][0]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[27][2]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[95][0]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[91][0]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[95][0]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[26][1]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[95][0]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[69][0]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[95][0]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[25][0]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[95][0]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[25][2]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[95][0]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[69][2]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[95][0]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[24][1]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[95][0]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[91][2]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[95][0]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[23][0]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[95][0]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[68][1]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[95][0]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[23][2]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[95][0]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[55][0]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[95][0]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[22][1]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[95][0]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[67][0]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[95][0]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[21][0]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[95][0]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[90][1]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[95][0]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[21][2]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[95][0]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[67][2]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[95][0]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[20][1]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[95][0]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[19][0]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[95][0]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[66][1]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[95][0]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[19][2]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[95][0]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[89][0]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[95][0]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[18][1]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[95][0]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[65][0]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[95][0]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[17][0]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[95][0]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[17][2]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[95][0]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[65][2]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[95][0]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[16][1]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[95][0]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[89][2]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[95][0]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[15][0]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[95][0]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[64][1]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[95][0]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[15][2]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[95][0]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[83][0]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[95][0]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[14][1]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[95][0]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[63][0]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[95][0]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[13][0]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[95][0]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[88][1]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[95][0]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[13][2]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[95][0]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[63][2]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[95][0]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[12][1]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[95][0]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[54][1]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[95][0]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[11][0]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[95][0]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[62][1]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[95][0]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[11][2]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[95][0]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[87][0]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[95][0]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[10][1]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[95][0]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[61][0]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[95][0]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[9][0]               ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[95][0]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[95][0]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[99][0]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[99][1]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[99][0]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[98][0]              ; Merged with pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[99][0]           ;
+; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[99][0]              ; Stuck at VCC due to stuck port data_in                                            ;
+; pixel:inst2|mouse_logic:ml|logic_top:il|color:color1|state_hs.ready      ; Lost fanout                                                                       ;
+; pixel:inst2|mouse_logic:ml|logic_top:il|x:x1|tempx[2]                    ; Merged with pixel:inst2|mouse_logic:ml|logic_top:il|x:x1|tempx[3]                 ;
+; pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|e_counter:le|x_old[2]    ; Merged with pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|e_counter:le|x_old[3] ;
+; pixel:inst2|mouse_logic:ml|mouse:ms|main_fsm:mfsm|state.delay_1          ; Stuck at GND due to stuck port data_in                                            ;
+; pixel:inst2|mouse_logic:ml|logic_top:il|x:x1|tempx[3]                    ; Stuck at GND due to stuck port data_in                                            ;
+; pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|e_counter:le|x_old[3]    ; Stuck at GND due to stuck port data_in                                            ;
+; Total Number of Removed Registers = 373                                  ;                                                                                   ;
++--------------------------------------------------------------------------+-----------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Removed Registers Triggering Further Register Optimizations                                                                                                   ;
++-------------------------------------------------------+---------------------------+---------------------------------------------------------------------------+
+; Register name                                         ; Reason for Removal        ; Registers Removed due to This Register                                    ;
++-------------------------------------------------------+---------------------------+---------------------------------------------------------------------------+
+; pixel:inst2|mouse_logic:ml|logic_top:il|y:y1|tempy[3] ; Stuck at GND              ; pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|e_counter:le|y_old[3],    ;
+;                                                       ; due to stuck port data_in ; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram_position[1],         ;
+;                                                       ;                           ; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram_position[2],         ;
+;                                                       ;                           ; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram_position[3],         ;
+;                                                       ;                           ; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram_position[4],         ;
+;                                                       ;                           ; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram_position[5],         ;
+;                                                       ;                           ; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram_position[6],         ;
+;                                                       ;                           ; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|y_grid[0],               ;
+;                                                       ;                           ; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|y_grid[1],               ;
+;                                                       ;                           ; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|y_grid[2],               ;
+;                                                       ;                           ; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|y_grid[3],               ;
+;                                                       ;                           ; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|y_grid[4],               ;
+;                                                       ;                           ; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|y_grid[5],               ;
+;                                                       ;                           ; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|x_grid[0],               ;
+;                                                       ;                           ; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|x_grid[1],               ;
+;                                                       ;                           ; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|x_grid[2],               ;
+;                                                       ;                           ; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|x_grid[3],               ;
+;                                                       ;                           ; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|x_grid[4],               ;
+;                                                       ;                           ; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|x_grid[5],               ;
+;                                                       ;                           ; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram_position[0],         ;
+;                                                       ;                           ; pixel:inst2|mouse_logic:ml|mouse:ms|flipflop:flipflop9|Q,                 ;
+;                                                       ;                           ; pixel:inst2|mouse_logic:ml|mouse:ms|shiftregister_11bit:sr11|data_out[9], ;
+;                                                       ;                           ; pixel:inst2|graphic_toplvl:gl|colour_storage:ram|ram[99][0]               ;
+; pixel:inst2|mouse_logic:ml|logic_top:il|y:y1|tempy[2] ; Stuck at GND              ; pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|e_counter:le|y_old[2]     ;
+;                                                       ; due to stuck port data_in ;                                                                           ;
+; pixel:inst2|mouse_logic:ml|logic_top:il|x:x1|tempx[3] ; Stuck at GND              ; pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|e_counter:le|x_old[3]     ;
+;                                                       ; due to stuck port data_in ;                                                                           ;
++-------------------------------------------------------+---------------------------+---------------------------------------------------------------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 197   ;
+; Number of registers using Synchronous Clear  ; 42    ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 51    ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------+
+; Registers Packed Into Inferred Megafunctions                                                                                     ;
++------------------------------------------------------------------+--------------------------------------------------------+------+
+; Register Name                                                    ; Megafunction                                           ; Type ;
++------------------------------------------------------------------+--------------------------------------------------------+------+
+; pixel:inst2|graphic_toplvl:gl|rom_cursor:rom|rom_colour_out[0,1] ; pixel:inst2|graphic_toplvl:gl|rom_cursor:rom|rom_rtl_0 ; RAM  ;
++------------------------------------------------------------------+--------------------------------------------------------+------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                                             ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                                   ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------------------------------------+
+; 3:1                ; 9 bits    ; 18 LEs        ; 9 LEs                ; 9 LEs                  ; Yes        ; |top_de1|pixel:inst2|mouse_logic:ml|mouse:ms|shiftregister_11bit:sr11|data_out[2]            ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |top_de1|pixel:inst2|mouse_logic:ml|mouse:ms|timebase:tb|count[1]                            ;
+; 3:1                ; 5 bits    ; 10 LEs        ; 5 LEs                ; 5 LEs                  ; Yes        ; |top_de1|pixel:inst2|mouse_logic:ml|mouse:ms|shiftregister_9bit:sr|new_new_data[1]           ;
+; 3:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; Yes        ; |top_de1|pixel:inst2|mouse_logic:ml|mouse:ms|shiftregister_9bit:sr|new_new_data[8]           ;
+; 3:1                ; 10 bits   ; 20 LEs        ; 20 LEs               ; 0 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|scale_vertical_counter[8]                ;
+; 3:1                ; 10 bits   ; 20 LEs        ; 10 LEs               ; 10 LEs                 ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|e_counter:le|count_e[4]             ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|h_counter:lh|count_h[2]             ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|v_counter:lv|count_v[0]             ;
+; 5:1                ; 11 bits   ; 33 LEs        ; 22 LEs               ; 11 LEs                 ; Yes        ; |top_de1|pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|countdown_bar:lcountdown|count_c[9] ;
+; 5:1                ; 4 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; Yes        ; |top_de1|pixel:inst2|mouse_logic:ml|logic_top:il|x:x1|tempx[3]                               ;
+; 5:1                ; 2 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; Yes        ; |top_de1|pixel:inst2|mouse_logic:ml|logic_top:il|y:y1|tempy[0]                               ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |top_de1|pixel:inst2|mouse_logic:ml|logic_top:il|color:color1|state                          ;
+; 8:1                ; 2 bits    ; 10 LEs        ; 8 LEs                ; 2 LEs                  ; No         ; |top_de1|pixel:inst2|graphic_toplvl:gl|vgadrive:vgd|Rout                                     ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------+
+; Source assignments for pixel:inst2|graphic_toplvl:gl|rom_cursor:rom|altsyncram:rom_rtl_0|altsyncram_rn61:auto_generated ;
++---------------------------------+--------------------+------+-----------------------------------------------------------+
+; Assignment                      ; Value              ; From ; To                                                        ;
++---------------------------------+--------------------+------+-----------------------------------------------------------+
+; OPTIMIZE_POWER_DURING_SYNTHESIS ; NORMAL_COMPILATION ; -    ; -                                                         ;
++---------------------------------+--------------------+------+-----------------------------------------------------------+
+
+
 +-----------------------------------------------------------------------------------------------+
 ; Parameter Settings for User Entity Instance: pixel:inst2|graphic_toplvl:gl|colour_storage:ram ;
 +----------------+-------+----------------------------------------------------------------------+
@@ -183,14 +945,85 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|countdown_bar:lcountdown"                                                    ;
-+-----------------+---------+------------------+----------------------------------------------------------------------------------------------------------+
-; Port            ; Type    ; Severity         ; Details                                                                                                  ;
-+-----------------+---------+------------------+----------------------------------------------------------------------------------------------------------+
-; countdown_klaar ; Unknown ; Critical Warning ; Named port was not declared by the instantiated entity                                                   ;
-; countdown_aan   ; Output  ; Warning          ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
-+-----------------+---------+------------------+----------------------------------------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: pixel:inst2|graphic_toplvl:gl|rom_cursor:rom|altsyncram:rom_rtl_0 ;
++------------------------------------+-----------------------------------------+-------------------------------------+
+; Parameter Name                     ; Value                                   ; Type                                ;
++------------------------------------+-----------------------------------------+-------------------------------------+
+; BYTE_SIZE_BLOCK                    ; 8                                       ; Untyped                             ;
+; AUTO_CARRY_CHAINS                  ; ON                                      ; AUTO_CARRY                          ;
+; IGNORE_CARRY_BUFFERS               ; OFF                                     ; IGNORE_CARRY                        ;
+; AUTO_CASCADE_CHAINS                ; ON                                      ; AUTO_CASCADE                        ;
+; IGNORE_CASCADE_BUFFERS             ; OFF                                     ; IGNORE_CASCADE                      ;
+; WIDTH_BYTEENA                      ; 1                                       ; Untyped                             ;
+; OPERATION_MODE                     ; ROM                                     ; Untyped                             ;
+; WIDTH_A                            ; 2                                       ; Untyped                             ;
+; WIDTHAD_A                          ; 10                                      ; Untyped                             ;
+; NUMWORDS_A                         ; 1024                                    ; Untyped                             ;
+; OUTDATA_REG_A                      ; UNREGISTERED                            ; Untyped                             ;
+; ADDRESS_ACLR_A                     ; NONE                                    ; Untyped                             ;
+; OUTDATA_ACLR_A                     ; NONE                                    ; Untyped                             ;
+; WRCONTROL_ACLR_A                   ; NONE                                    ; Untyped                             ;
+; INDATA_ACLR_A                      ; NONE                                    ; Untyped                             ;
+; BYTEENA_ACLR_A                     ; NONE                                    ; Untyped                             ;
+; WIDTH_B                            ; 1                                       ; Untyped                             ;
+; WIDTHAD_B                          ; 1                                       ; Untyped                             ;
+; NUMWORDS_B                         ; 1                                       ; Untyped                             ;
+; INDATA_REG_B                       ; CLOCK1                                  ; Untyped                             ;
+; WRCONTROL_WRADDRESS_REG_B          ; CLOCK1                                  ; Untyped                             ;
+; RDCONTROL_REG_B                    ; CLOCK1                                  ; Untyped                             ;
+; ADDRESS_REG_B                      ; CLOCK1                                  ; Untyped                             ;
+; OUTDATA_REG_B                      ; UNREGISTERED                            ; Untyped                             ;
+; BYTEENA_REG_B                      ; CLOCK1                                  ; Untyped                             ;
+; INDATA_ACLR_B                      ; NONE                                    ; Untyped                             ;
+; WRCONTROL_ACLR_B                   ; NONE                                    ; Untyped                             ;
+; ADDRESS_ACLR_B                     ; NONE                                    ; Untyped                             ;
+; OUTDATA_ACLR_B                     ; NONE                                    ; Untyped                             ;
+; RDCONTROL_ACLR_B                   ; NONE                                    ; Untyped                             ;
+; BYTEENA_ACLR_B                     ; NONE                                    ; Untyped                             ;
+; WIDTH_BYTEENA_A                    ; 1                                       ; Untyped                             ;
+; WIDTH_BYTEENA_B                    ; 1                                       ; Untyped                             ;
+; RAM_BLOCK_TYPE                     ; AUTO                                    ; Untyped                             ;
+; BYTE_SIZE                          ; 8                                       ; Untyped                             ;
+; READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                               ; Untyped                             ;
+; READ_DURING_WRITE_MODE_PORT_A      ; NEW_DATA_NO_NBE_READ                    ; Untyped                             ;
+; READ_DURING_WRITE_MODE_PORT_B      ; NEW_DATA_NO_NBE_READ                    ; Untyped                             ;
+; INIT_FILE                          ; db/de1.ram0_rom_cursor_f1823f6e.hdl.mif ; Untyped                             ;
+; INIT_FILE_LAYOUT                   ; PORT_A                                  ; Untyped                             ;
+; MAXIMUM_DEPTH                      ; 0                                       ; Untyped                             ;
+; CLOCK_ENABLE_INPUT_A               ; NORMAL                                  ; Untyped                             ;
+; CLOCK_ENABLE_INPUT_B               ; NORMAL                                  ; Untyped                             ;
+; CLOCK_ENABLE_OUTPUT_A              ; NORMAL                                  ; Untyped                             ;
+; CLOCK_ENABLE_OUTPUT_B              ; NORMAL                                  ; Untyped                             ;
+; CLOCK_ENABLE_CORE_A                ; USE_INPUT_CLKEN                         ; Untyped                             ;
+; CLOCK_ENABLE_CORE_B                ; USE_INPUT_CLKEN                         ; Untyped                             ;
+; ENABLE_ECC                         ; FALSE                                   ; Untyped                             ;
+; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                                   ; Untyped                             ;
+; WIDTH_ECCSTATUS                    ; 3                                       ; Untyped                             ;
+; DEVICE_FAMILY                      ; Cyclone II                              ; Untyped                             ;
+; CBXI_PARAMETER                     ; altsyncram_rn61                         ; Untyped                             ;
++------------------------------------+-----------------------------------------+-------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------------------+
+; altsyncram Parameter Settings by Entity Instance                                                              ;
++-------------------------------------------+-------------------------------------------------------------------+
+; Name                                      ; Value                                                             ;
++-------------------------------------------+-------------------------------------------------------------------+
+; Number of entity instances                ; 1                                                                 ;
+; Entity Instance                           ; pixel:inst2|graphic_toplvl:gl|rom_cursor:rom|altsyncram:rom_rtl_0 ;
+;     -- OPERATION_MODE                     ; ROM                                                               ;
+;     -- WIDTH_A                            ; 2                                                                 ;
+;     -- NUMWORDS_A                         ; 1024                                                              ;
+;     -- OUTDATA_REG_A                      ; UNREGISTERED                                                      ;
+;     -- WIDTH_B                            ; 1                                                                 ;
+;     -- NUMWORDS_B                         ; 1                                                                 ;
+;     -- ADDRESS_REG_B                      ; CLOCK1                                                            ;
+;     -- OUTDATA_REG_B                      ; UNREGISTERED                                                      ;
+;     -- RAM_BLOCK_TYPE                     ; AUTO                                                              ;
+;     -- READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                                                         ;
++-------------------------------------------+-------------------------------------------------------------------+
 
 
 +------------------------------------------------------------------------------------------------------------------+
@@ -247,12 +1080,21 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:03     ;
++----------------+--------------+
+
+
++-------------------------------+
 ; Analysis & Synthesis Messages ;
 +-------------------------------+
 Info: *******************************************************************
 Info: Running Quartus II 32-bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
-    Info: Processing started: Fri Jan 20 17:26:57 2023
+    Info: Processing started: Fri Jan 20 18:05:40 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off de1 -c top_de1
 Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file /home/ghpdohmen/epo3/epo3/help/VHDL/flipflop_bufr.vhd
@@ -377,9 +1219,8 @@ Info (12021): Found 2 design units, including 1 entities, in source file gen25mh
 Info (12127): Elaborating entity "top_de1" for the top level hierarchy
 Info (12128): Elaborating entity "pixel" for hierarchy "pixel:inst2"
 Info (12128): Elaborating entity "mouse_logic" for hierarchy "pixel:inst2|mouse_logic:ml"
-Warning (10541): VHDL Signal Declaration warning at mouse_logic.vhd(19): used implicit default value for signal "rst" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
-Warning (10541): VHDL Signal Declaration warning at mouse_logic.vhd(23): used implicit default value for signal "led3" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
-Warning (10541): VHDL Signal Declaration warning at mouse_logic.vhd(28): used implicit default value for signal "led9" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
+Warning (10541): VHDL Signal Declaration warning at mouse_logic.vhd(17): used implicit default value for signal "rst" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
+Warning (10541): VHDL Signal Declaration warning at mouse_logic.vhd(26): used implicit default value for signal "led9" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
 Info (12128): Elaborating entity "mouse" for hierarchy "pixel:inst2|mouse_logic:ml|mouse:ms"
 Warning (10036): Verilog HDL or VHDL warning at mouse-behav.vhd(132): object "bit11_reg_rst" assigned a value but never read
 Warning (10492): VHDL Process Statement warning at mouse-behav.vhd(149): signal "reset" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
@@ -467,30 +1308,34 @@ Info (12128): Elaborating entity "flipflop" for hierarchy "pixel:inst2|mouse_log
 Info (12128): Elaborating entity "flipflop_bufr" for hierarchy "pixel:inst2|mouse_logic:ml|mouse:ms|flipflop_bufr:data_buffer1"
 Info (12128): Elaborating entity "shiftregister_11bit" for hierarchy "pixel:inst2|mouse_logic:ml|mouse:ms|shiftregister_11bit:sr11"
 Info (12128): Elaborating entity "logic_top" for hierarchy "pixel:inst2|mouse_logic:ml|logic_top:il"
+Warning (10492): VHDL Process Statement warning at logic_top-behaviour_logic_top.vhd(43): signal "tempx" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at logic_top-behaviour_logic_top.vhd(44): signal "tempx" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
 Warning (10492): VHDL Process Statement warning at logic_top-behaviour_logic_top.vhd(45): signal "tempx" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
 Warning (10492): VHDL Process Statement warning at logic_top-behaviour_logic_top.vhd(46): signal "tempx" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at logic_top-behaviour_logic_top.vhd(47): signal "tempx" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at logic_top-behaviour_logic_top.vhd(48): signal "tempx" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at logic_top-behaviour_logic_top.vhd(49): signal "draw" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at logic_top-behaviour_logic_top.vhd(47): signal "draw" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at logic_top-behaviour_logic_top.vhd(48): signal "tempy" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at logic_top-behaviour_logic_top.vhd(49): signal "tempy" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
 Warning (10492): VHDL Process Statement warning at logic_top-behaviour_logic_top.vhd(50): signal "tempy" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
 Warning (10492): VHDL Process Statement warning at logic_top-behaviour_logic_top.vhd(51): signal "tempy" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at logic_top-behaviour_logic_top.vhd(52): signal "tempy" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at logic_top-behaviour_logic_top.vhd(53): signal "tempy" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
 Info (12128): Elaborating entity "x" for hierarchy "pixel:inst2|mouse_logic:ml|logic_top:il|x:x1"
+Warning (10541): VHDL Signal Declaration warning at x.vhd(10): used implicit default value for signal "handshakeimx" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
 Warning (10036): Verilog HDL or VHDL warning at x-behaviour_x.vhd(10): object "output_unsigned" assigned a value but never read
-Warning (10492): VHDL Process Statement warning at x-behaviour_x.vhd(88): signal "input_register" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at x-behaviour_x.vhd(91): signal "input_register" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at x-behaviour_x.vhd(94): signal "input_register" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at x-behaviour_x.vhd(97): signal "input_register" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10541): VHDL Signal Declaration warning at x-behaviour_x.vhd(11): used implicit default value for signal "input_register" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
+Warning (10492): VHDL Process Statement warning at x-behaviour_x.vhd(39): signal "input_register" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at x-behaviour_x.vhd(42): signal "input_register" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at x-behaviour_x.vhd(45): signal "input_register" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at x-behaviour_x.vhd(48): signal "input_register" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
 Info (12128): Elaborating entity "y" for hierarchy "pixel:inst2|mouse_logic:ml|logic_top:il|y:y1"
+Warning (10541): VHDL Signal Declaration warning at y.vhd(10): used implicit default value for signal "handshakeimy" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
 Warning (10036): Verilog HDL or VHDL warning at y-behaviour_y.vhd(10): object "output_unsigned" assigned a value but never read
-Warning (10492): VHDL Process Statement warning at y-behaviour_y.vhd(87): signal "input_register" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at y-behaviour_y.vhd(90): signal "input_register" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at y-behaviour_y.vhd(94): signal "input_register" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at y-behaviour_y.vhd(97): signal "input_register" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10541): VHDL Signal Declaration warning at y-behaviour_y.vhd(11): used implicit default value for signal "input_register" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
+Warning (10492): VHDL Process Statement warning at y-behaviour_y.vhd(38): signal "input_register" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at y-behaviour_y.vhd(41): signal "input_register" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at y-behaviour_y.vhd(45): signal "input_register" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at y-behaviour_y.vhd(48): signal "input_register" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
 Info (12128): Elaborating entity "color" for hierarchy "pixel:inst2|mouse_logic:ml|logic_top:il|color:color1"
 Info (12128): Elaborating entity "graphic_toplvl" for hierarchy "pixel:inst2|graphic_toplvl:gl"
-Warning (10036): Verilog HDL or VHDL warning at graphic_toplvl-behaviour.vhd(75): object "sig_enable" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at graphic_toplvl-behaviour.vhd(61): object "sig_enable" assigned a value but never read
 Info (12128): Elaborating entity "colour_storage" for hierarchy "pixel:inst2|graphic_toplvl:gl|colour_storage:ram"
 Warning (10492): VHDL Process Statement warning at RAMbestand.vhd(41): signal "ram_y" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
 Warning (10492): VHDL Process Statement warning at RAMbestand.vhd(42): signal "ram_x" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
@@ -501,20 +1346,18 @@ Warning (10492): VHDL Process Statement warning at vgadrive_behaviour.vhd(128): 
 Warning (10492): VHDL Process Statement warning at vgadrive_behaviour.vhd(129): signal "blue" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
 Warning (10492): VHDL Process Statement warning at vgadrive_behaviour.vhd(142): signal "scale_horizontal" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
 Warning (10492): VHDL Process Statement warning at vgadrive_behaviour.vhd(156): signal "scale_vertical" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Info (12128): Elaborating entity "vga_buffer" for hierarchy "pixel:inst2|graphic_toplvl:gl|vga_buffer:vga_buf"
-Warning (10492): VHDL Process Statement warning at vga_buffer-behav.vhd(17): signal "reset" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
 Info (12128): Elaborating entity "graph_logic" for hierarchy "pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg"
-Warning (10492): VHDL Process Statement warning at graph_logic.vhd(145): signal "loaded_colour" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10631): VHDL Process Statement warning at graph_logic.vhd(123): inferring latch(es) for signal or variable "x_grid_asked", which holds its previous value in one or more paths through the process
-Warning (10631): VHDL Process Statement warning at graph_logic.vhd(123): inferring latch(es) for signal or variable "y_grid_asked", which holds its previous value in one or more paths through the process
-Info (10041): Inferred latch for "y_grid_asked[0]" at graph_logic.vhd(123)
-Info (10041): Inferred latch for "y_grid_asked[1]" at graph_logic.vhd(123)
-Info (10041): Inferred latch for "y_grid_asked[2]" at graph_logic.vhd(123)
-Info (10041): Inferred latch for "y_grid_asked[3]" at graph_logic.vhd(123)
-Info (10041): Inferred latch for "x_grid_asked[0]" at graph_logic.vhd(123)
-Info (10041): Inferred latch for "x_grid_asked[1]" at graph_logic.vhd(123)
-Info (10041): Inferred latch for "x_grid_asked[2]" at graph_logic.vhd(123)
-Info (10041): Inferred latch for "x_grid_asked[3]" at graph_logic.vhd(123)
+Warning (10492): VHDL Process Statement warning at graph_logic.vhd(144): signal "loaded_colour" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10631): VHDL Process Statement warning at graph_logic.vhd(122): inferring latch(es) for signal or variable "x_grid_asked", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at graph_logic.vhd(122): inferring latch(es) for signal or variable "y_grid_asked", which holds its previous value in one or more paths through the process
+Info (10041): Inferred latch for "y_grid_asked[0]" at graph_logic.vhd(122)
+Info (10041): Inferred latch for "y_grid_asked[1]" at graph_logic.vhd(122)
+Info (10041): Inferred latch for "y_grid_asked[2]" at graph_logic.vhd(122)
+Info (10041): Inferred latch for "y_grid_asked[3]" at graph_logic.vhd(122)
+Info (10041): Inferred latch for "x_grid_asked[0]" at graph_logic.vhd(122)
+Info (10041): Inferred latch for "x_grid_asked[1]" at graph_logic.vhd(122)
+Info (10041): Inferred latch for "x_grid_asked[2]" at graph_logic.vhd(122)
+Info (10041): Inferred latch for "x_grid_asked[3]" at graph_logic.vhd(122)
 Info (12128): Elaborating entity "v_counter" for hierarchy "pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|v_counter:lv"
 Info (12128): Elaborating entity "edge_detector" for hierarchy "pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|v_counter:lv|edge_detector:l_edge"
 Info (12128): Elaborating entity "h_counter" for hierarchy "pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|h_counter:lh"
@@ -537,12 +1380,60 @@ Info (12128): Elaborating entity "countdown_bar" for hierarchy "pixel:inst2|grap
 Info (12128): Elaborating entity "edge_det_fall" for hierarchy "pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|countdown_bar:lcountdown|edge_det_fall:l_edge"
 Info (12128): Elaborating entity "gen25mhz" for hierarchy "gen25mhz:inst1"
 Info (12128): Elaborating entity "pre_vga_dac_4" for hierarchy "pre_vga_dac_4:inst"
-Error (12002): Port "countdown_klaar" does not exist in macrofunction "lcountdown" File: /home/ghpdohmen/epo3/epo3/help/VHDL/graph_logic.vhd Line: 83
-Warning (12241): 1 hierarchies have connectivity warnings - see the Connectivity Checks report folder
-Error: Quartus II 32-bit Analysis & Synthesis was unsuccessful. 1 error, 116 warnings
-    Error: Peak virtual memory: 360 megabytes
-    Error: Processing ended: Fri Jan 20 17:27:03 2023
-    Error: Elapsed time: 00:00:06
-    Error: Total CPU time (on all processors): 00:00:03
+Info (19000): Inferred 1 megafunctions from design logic
+    Info (276029): Inferred altsyncram megafunction from the following design logic: "pixel:inst2|graphic_toplvl:gl|rom_cursor:rom|rom_rtl_0" 
+        Info (286033): Parameter OPERATION_MODE set to ROM
+        Info (286033): Parameter WIDTH_A set to 2
+        Info (286033): Parameter WIDTHAD_A set to 10
+        Info (286033): Parameter NUMWORDS_A set to 1024
+        Info (286033): Parameter OUTDATA_REG_A set to UNREGISTERED
+        Info (286033): Parameter ADDRESS_ACLR_A set to NONE
+        Info (286033): Parameter OUTDATA_ACLR_A set to NONE
+        Info (286033): Parameter INDATA_ACLR_A set to NONE
+        Info (286033): Parameter WRCONTROL_ACLR_A set to NONE
+        Info (286033): Parameter INIT_FILE set to db/de1.ram0_rom_cursor_f1823f6e.hdl.mif
+Info (12130): Elaborated megafunction instantiation "pixel:inst2|graphic_toplvl:gl|rom_cursor:rom|altsyncram:rom_rtl_0"
+Info (12133): Instantiated megafunction "pixel:inst2|graphic_toplvl:gl|rom_cursor:rom|altsyncram:rom_rtl_0" with the following parameter:
+    Info (12134): Parameter "OPERATION_MODE" = "ROM"
+    Info (12134): Parameter "WIDTH_A" = "2"
+    Info (12134): Parameter "WIDTHAD_A" = "10"
+    Info (12134): Parameter "NUMWORDS_A" = "1024"
+    Info (12134): Parameter "OUTDATA_REG_A" = "UNREGISTERED"
+    Info (12134): Parameter "ADDRESS_ACLR_A" = "NONE"
+    Info (12134): Parameter "OUTDATA_ACLR_A" = "NONE"
+    Info (12134): Parameter "INDATA_ACLR_A" = "NONE"
+    Info (12134): Parameter "WRCONTROL_ACLR_A" = "NONE"
+    Info (12134): Parameter "INIT_FILE" = "db/de1.ram0_rom_cursor_f1823f6e.hdl.mif"
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_rn61.tdf
+    Info (12023): Found entity 1: altsyncram_rn61
+Warning (13012): Latch pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|x_grid_asked[2] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|h_counter:lh|count_h[2]
+Warning (13012): Latch pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|y_grid_asked[1] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|v_counter:lv|count_v[1]
+Warning (13012): Latch pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|y_grid_asked[0] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|v_counter:lv|count_v[0]
+Warning (13012): Latch pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|x_grid_asked[1] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|h_counter:lh|count_h[1]
+Warning (13012): Latch pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|y_grid_asked[2] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|v_counter:lv|count_v[2]
+Warning (13012): Latch pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|x_grid_asked[3] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|h_counter:lh|count_h[3]
+Warning (13012): Latch pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|y_grid_asked[3] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal pixel:inst2|graphic_toplvl:gl|graph_logic:gr_lg|v_counter:lv|count_v[3]
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "led9" is stuck at GND
+Info (17049): 4 registers lost all their fanouts during netlist optimizations.
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 516 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 4 input pins
+    Info (21059): Implemented 25 output pins
+    Info (21061): Implemented 485 logic cells
+    Info (21064): Implemented 2 RAM segments
+Info: Quartus II 32-bit Analysis & Synthesis was successful. 0 errors, 133 warnings
+    Info: Peak virtual memory: 379 megabytes
+    Info: Processing ended: Fri Jan 20 18:05:50 2023
+    Info: Elapsed time: 00:00:10
+    Info: Total CPU time (on all processors): 00:00:07
 
 

@@ -89,7 +89,7 @@ led8 <= dx(0);
 
 ms: mouse port map(mouseX, buttons_mouse, mouseY, handshake_mouse_out, DataSwitch, ClkSwitch, handshake_mouse_in, Data_in, Clk15k, clk, reset);
 
-il: logic_top port map(clk, reset, buttons, dx, dy, handshake_mouse_out, rescount, output_color, tempx, tempy, draw, handshake_mouse_in, middelsteknop);
+il: logic_top port map(clk, reset, buttons, dx, dy, handshake_mouse_out, output_color, tempx, tempy, draw, handshake_mouse_in, middelsteknop);
 
 
 end behav;
