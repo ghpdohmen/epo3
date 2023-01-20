@@ -10,7 +10,7 @@ entity color is
 	output_color: out std_logic_vector(2 downto 0);
 	draw: out std_logic;
 	rescount: out std_logic;
-	middelstemuisknop: out std_logic;
+	middelsteknop: out std_logic;
 	handshakeimc: out std_logic);
 end color;
 
