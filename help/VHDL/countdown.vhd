@@ -7,7 +7,7 @@ port(
     	middelste_knop: in std_logic;
 	clk: in std_logic;
 	reset: in std_logic;
-	countdown_klaar: out std_logic;
+	countdown_aan: out std_logic;
 	countdown_out: out std_logic_vector(10 downto 0)
 );
 end;
@@ -24,7 +24,7 @@ signal sig_edge_fall: std_logic;
 signal count_c, new_count_c: unsigned (10 downto 0);
 begin
 l_edge: edge_det_fall port map (clk => clk, input => v_count, edges=>sig_edge_fall);
-process(clk, reset, new_count_c, sig_edge_muis) 
+process(clk, reset, new_count_c, middelste_knop) 
         begin
             if (rising_edge(clk)) then
                 if (reset = '1') then	-- global reset
@@ -34,8 +34,10 @@ process(clk, reset, new_count_c, sig_edge_muis)
                         count_c <= (others => '0');
                     elsif (count_c = "1111111111") then
 			count_c <= "11111111111";
+			countdown_aan <= '0';
 		    else
                         count_c <= new_count_c;
+			countdown_aan <= '1';
                     end if;
                 end if;
             end if;
@@ -51,14 +53,6 @@ process(sig_edge_fall, count_c)  -- counting process, automatic overflow
 	end if;
 end process;
 
-process(count_c) -- when the countdown is at +-30 seconds countdown_klaar= 1
-	begin
-		if (count_c = "11111111111") then
-			countdown_klaar <= '1';
-		else
-			countdown_klaar <= '0';
-		end if;
-end process;
 
 countdown_out <= std_logic_vector(count_c);
 
