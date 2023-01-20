@@ -13,7 +13,7 @@ signal locy_unsigned: unsigned(3 downto 0);
 signal locy : std_logic_vector(3 downto 0);
 signal sel: std_logic;
 constant minimal : integer:= 5 ;
-constant maximal : integer:= 14;
+constant maximal : integer:= 13;
 signal bound_low: unsigned ( 3 downto 0);
 
 begin
@@ -53,7 +53,7 @@ begin
     else
     	--bound_low<= unsigned(input_register) + ('0' & input_unsigned(2 downto 0));
 		if((to_integer(unsigned(input_register)) + to_integer(unsigned(dy(1 downto 0)))) > maximal) then
-			locy_unsigned <= "1110";
+			locy_unsigned <= "1101";
 		else
 			locy_unsigned <= (unsigned(input_register) + ("00" & input_unsigned(1 downto 0)));
 		end if;
